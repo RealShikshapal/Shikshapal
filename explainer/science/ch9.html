@@ -15,26 +15,27 @@
     </style>
 </head>
 <body class="chapter-page">
+
+<div class="progress-bar-container"><div class="progress-bar"></div></div>
+
     <!-- Navigation Bar -->
     <nav class="nav-bar">
         <div class="nav-inner">
-            <div class="nav-logo">Class 6 Science</div>
+            <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
             <div class="nav-subjects">
-                <a href="./" class="nav-pill science active">Science</a>
-                <a href="../math/" class="nav-pill">Math</a>
-                <a href="../social/" class="nav-pill">Social</a>
-                <a href="../english/" class="nav-pill">English</a>
+                <a href="../science/ch1.html" class="nav-pill science active">Science</a>
+                <a href="../math/ch1.html" class="nav-pill math">Maths</a>
+                <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+                <a href="../english/unit1.html" class="nav-pill english">English</a>
             </div>
         </div>
     </nav>
 
     <!-- Progress Bar -->
-    <div id="progress-bar" style="height: 3px; background: linear-gradient(to right, var(--accent), var(--accent-light)); width: 0%; transition: width 0.3s;"></div>
-
     <!-- Chapter Header -->
     <header class="chapter-header">
         <div class="breadcrumb">
-            <a href="./">Science</a> / <span>Chapter 9</span>
+            <a href="ch1.html">Science</a> / <span>Chapter 9</span>
         </div>
         <h1>Methods of Separation in Everyday Life</h1>
         <p class="lead">From picking stones out of rice to separating salt from seawater, humans have invented clever methods to separate unwanted substances from useful ones. Journey across India with Malli and Valli and discover nine powerful techniques used in kitchens, farms, and factories every single day.</p>
@@ -470,9 +471,15 @@
         window.addEventListener('scroll', function() {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            document.getElementById('progress-bar').style.width = scrollPercent + '%';
-        });
+            const scrollPercent = (scrollTop / docHeight) * 100;});
     </script>
+<script>
+  const progressBar = document.querySelector('.progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+  });
+</script>
 </body>
 </html>

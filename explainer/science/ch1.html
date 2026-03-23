@@ -15,30 +15,27 @@
     </style>
 </head>
 <body>
+
+<div class="progress-bar-container"><div class="progress-bar"></div></div>
+
     <!-- Navigation Bar -->
     <nav class="nav-bar">
         <div class="nav-inner">
-            <div class="nav-logo">Curiosity</div>
+            <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
             <div class="nav-subjects">
-                <a href="./" class="nav-pill science active">Science</a>
-                <a href="../math/" class="nav-pill math">Math</a>
-                <a href="../social/" class="nav-pill social">Social</a>
-                <a href="../english/" class="nav-pill english">English</a>
+                <a href="../science/ch1.html" class="nav-pill science active">Science</a>
+                <a href="../math/ch1.html" class="nav-pill math">Maths</a>
+                <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+                <a href="../english/unit1.html" class="nav-pill english">English</a>
             </div>
         </div>
     </nav>
-
-    <!-- Progress Bar -->
-    <div style="height: 4px; background: #e0e0e0; position: sticky; top: 0; z-index: 10;">
-        <div id="progress-bar" style="height: 100%; width: 0%; background: linear-gradient(90deg, var(--science), var(--science-light)); transition: width 0.2s ease;"></div>
-    </div>
-
     <!-- Main Content -->
     <div class="chapter-page">
         <!-- Chapter Header -->
         <header class="chapter-header">
             <div class="breadcrumb">
-                <a href="/">Home</a> / <a href="./">Science</a> / Chapter 1
+                <a href="../index.html">Home</a> / <a href="ch1.html">Science</a> / Chapter 1
             </div>
             <h1>The Wonderful World of Science</h1>
             <p class="lead">Discover how curiosity is the gateway to understanding the universe around you, and learn that everyone can be a scientist!</p>
@@ -414,13 +411,13 @@
     </footer>
 
     <!-- Reading Progress Script -->
-    <script>
-        window.addEventListener('scroll', function() {
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolled = window.scrollY;
-            const progress = (scrolled / docHeight) * 100;
-            document.getElementById('progress-bar').style.width = progress + '%';
-        });
-    </script>
+<script>
+  const progressBar = document.querySelector('.progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+  });
+</script>
 </body>
 </html>

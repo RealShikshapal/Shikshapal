@@ -15,16 +15,19 @@
     </style>
 </head>
 <body>
+
+<div class="progress-bar-container"><div class="progress-bar"></div></div>
+
     <div class="chapter-page">
         <!-- Navigation Bar -->
         <nav class="nav-bar">
             <div class="nav-inner">
                 <div class="nav-logo">Science Portal</div>
                 <div class="nav-subjects">
-                    <a href="./" class="nav-pill science active">Science</a>
-                    <a href="../math/" class="nav-pill">Math</a>
-                    <a href="../social/" class="nav-pill">Social</a>
-                    <a href="../english/" class="nav-pill">English</a>
+                    <a href="../science/ch1.html" class="nav-pill science active">Science</a>
+                    <a href="../math/ch1.html" class="nav-pill math">Maths</a>
+                    <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+                    <a href="../english/unit1.html" class="nav-pill english">English</a>
                 </div>
             </div>
         </nav>
@@ -333,5 +336,13 @@
             document.querySelector('.chapter-page').style.setProperty('--scroll', scrolled);
         });
     </script>
+<script>
+  const progressBar = document.querySelector('.progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+  });
+</script>
 </body>
 </html>
