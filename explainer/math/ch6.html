@@ -3,522 +3,615 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 6: Perimeter and Area - The Logical Builder</title>
+    <title>Chapter 6: Perimeter and Area | Class 6 Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
-        .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
-        .feynman-bridge { border-color: var(--math); } .feynman-bridge .tag { background: var(--math); }
-        .step-number { background: var(--math); }
-        .deep-dive { border-left-color: var(--math); background: var(--math-light); } .deep-dive summary { color: var(--math); }
-        .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
-        .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
-        .error-trap { border-left: 4px solid var(--accent); background: var(--accent-light); padding: 16px; margin: 20px 0; border-radius: 4px; }
-        .error-trap h4 { color: var(--accent); margin-top: 0; }
+        .chapter-page {
+            --accent: var(--math);
+            --accent-light: var(--math-light);
+            --accent-glow: var(--math-glow);
+        }
+        .hook-box {
+            border-left-color: var(--math);
+        }
+        .hook-box::before {
+            color: var(--math);
+        }
+        .hook-box h3 {
+            color: var(--math);
+        }
+        .feynman-bridge {
+            border-color: var(--math);
+        }
+        .feynman-bridge .tag {
+            background: var(--math);
+        }
+        .step-number {
+            background: var(--math);
+        }
+        .deep-dive {
+            border-left-color: var(--math);
+            background: var(--math-light);
+        }
+        .deep-dive summary {
+            color: var(--math);
+        }
+        .quiz-section h3 {
+            border-bottom-color: var(--math);
+            color: var(--math);
+        }
+        .quiz-answer summary {
+            color: var(--math);
+        }
+        .quiz-answer .answer-body {
+            background: var(--math-light);
+        }
     </style>
 </head>
 <body>
-    <div class="chapter-page">
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="../index.html" class="nav-logo">The Logical Builder</a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-active">Math</a></li>
-                    <li class="nav-item"><a href="../../science/ch1/unit1.html" class="nav-link">Science</a></li>
-                    <li class="nav-item"><a href="../../english/ch1/unit1.html" class="nav-link">English</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div class="progress-bar-container"><div class="progress-bar"></div></div>
 
-        <!-- Progress Bar -->
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
+    <nav class="nav-bar"><div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+        <div class="nav-subjects">
+            <a href="../science/ch1.html" class="nav-pill science">Science</a>
+            <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+            <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+            <a href="../english/unit1.html" class="nav-pill english">English</a>
+        </div>
+    </div></nav>
+
+    <main class="chapter-page">
+        <div class="chapter-header">
+            <h1>Chapter 6: Perimeter and Area</h1>
+            <p class="subtitle">Measuring Boundaries and Enclosed Regions</p>
         </div>
 
-        <!-- Main Content -->
-        <main class="content-wrapper">
-            <!-- Chapter Header with Breadcrumb -->
-            <div class="chapter-header">
-                <div class="breadcrumb">
-                    <a href="../index.html">Mathematics</a> / <a href="ch5.html">Chapter 5</a> / <span>Chapter 6: Perimeter and Area</span>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> > <a href="../math/ch1.html">Maths</a> > Chapter 6
+        </div>
+
+        <div class="hook-box">
+            <h3>Opening Hook: Two Fundamental Measurements</h3>
+            <p>
+                Have you ever wondered how much fence a farmer needs to surround their field, or how much paint is required to cover a wall?
+                These practical questions lead us to two fundamental geometric concepts: <strong>perimeter</strong> (the distance around a shape)
+                and <strong>area</strong> (the region inside a shape). In this chapter, we'll explore these ideas through real-world scenarios and
+                discover beautiful mathematical relationships that help us solve everyday problems. A playground may have the same perimeter as
+                another playground but completely different area—understanding both opens up practical problem-solving!
+            </p>
+        </div>
+
+        <section class="feynman-bridge">
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <h3>Core Concepts Simplified</h3>
+            <p>
+                <strong>Perimeter</strong> is like the path you walk around the boundary of a playground. If you have a rectangular garden
+                10 m long and 6 m wide, the perimeter tells you how much rope you need to fence it all around: 2 × (10 + 6) = 32 m.
+                <br><strong>Area</strong> is like counting the number of tiles needed to cover that same garden floor. For a rectangle,
+                area is simply length × width, so 10 × 6 = 60 square metres. These two concepts are independent—you can have shapes with the same
+                area but different perimeters, and vice versa! This relationship matters in real life: two fields may need the same fence but
+                produce different crop quantities.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>6.1: Perimeter of Polygons</h2>
+
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Understanding Perimeter</h4>
+                        <p>
+                            The perimeter of any closed plane figure is the total distance covered along its boundary when you go around it once.
+                            For polygons (closed figures made of line segments), the perimeter is simply the <strong>sum of all side lengths</strong>.
+                            Imagine you're tracing the outline of the shape with your finger—the distance your finger travels is the perimeter.
+                        </p>
+                        <p><strong>Formula:</strong> Perimeter = sum of lengths of all sides</p>
+                    </div>
                 </div>
-                <h1>Chapter 6: Perimeter and Area</h1>
-                <p class="chapter-subtitle">Measuring Distances and Regions in Two Dimensions</p>
+
+                <div class="logic-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Perimeter of a Rectangle</h4>
+                        <p>
+                            Consider a rectangle with length 12 cm and breadth 8 cm. Since opposite sides of a rectangle are equal:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            Perimeter = 12 + 8 + 12 + 8 = 40 cm<br>
+                            <strong>OR: Perimeter = 2 × (length + breadth)</strong><br>
+                            = 2 × (12 + 8) = 2 × 20 = 40 cm
+                        </p>
+                        <p>
+                            This formula works because we have two lengths and two breadths.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Perimeter of a Square</h4>
+                        <p>
+                            A square has all four sides equal. If each side is 1 m:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            Perimeter = 1 + 1 + 1 + 1 = 4 m<br>
+                            <strong>OR: Perimeter = 4 × side = 4 × 1 m = 4 m</strong>
+                        </p>
+                        <p>
+                            For any square with side <em>s</em>: <strong>P = 4s</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Perimeter of a Triangle</h4>
+                        <p>
+                            A triangle has three sides. Add all three sides to find the perimeter:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            Triangle with sides 4 cm, 5 cm, 7 cm<br>
+                            Perimeter = 4 + 5 + 7 = <strong>16 cm</strong>
+                        </p>
+                        <p>
+                            For an <strong>equilateral triangle</strong> (all sides equal): <strong>P = 3 × side</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Regular Polygons</h4>
+                        <p>
+                            Regular polygons have all sides equal. A regular pentagon (5 sides) with side 6 cm has perimeter = 5 × 6 = 30 cm.
+                            A regular hexagon (6 sides) with side 5 cm has perimeter = 6 × 5 = 30 cm.
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            <strong>Perimeter = Number of sides × Side length</strong>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- The Hook -->
-            <section class="hook-box">
-                <h3>Two Ways to Measure 📏</h3>
-                <p>Imagine you're running around a park. The distance you travel around the boundary is the <strong>perimeter</strong>. But when you look down from above and see the entire grass area you're covering, that's the <strong>area</strong>. These are fundamentally different measurements, yet they're deeply connected!</p>
-                <p>You might have two plots of land with the same perimeter but different areas—or the same area but different perimeters! Understanding both helps us solve real problems: fencing a garden, carpeting a floor, or laying tiles on a patio.</p>
-            </section>
-
-            <!-- The Feynman Bridge -->
-            <section class="feynman-bridge">
-                <h2>Why Does This Matter?</h2>
-                <span class="tag">Key Concept</span>
-                <p>Perimeter and area are tools for quantifying the physical world. Architects use them to design buildings, farmers use them to plan irrigation, engineers use them to calculate material costs, and artists use them to understand composition. These aren't just abstract concepts—they're practical tools that professionals use daily to solve real problems efficiently and accurately.</p>
-            </section>
-
-            <!-- Section 1: Perimeter -->
-            <section class="learning-section">
-                <h2>6.1: Perimeter - The Distance Around</h2>
-
-                <h3>What Is Perimeter?</h3>
-                <p><strong>Perimeter</strong> is the distance you travel when walking around the entire boundary of a closed figure. For polygons (shapes made of straight lines), it's simply the sum of all side lengths.</p>
-                <p>Think of it as laying string around the edge of a shape. How much string do you need?</p>
-
-                <h3>Perimeter of a Rectangle</h3>
-                <p>A rectangle has two pairs of equal sides. If the length is 12 cm and breadth is 8 cm:</p>
-
-                <div class="logic-ladder">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">Identify the sides: length = 12 cm, breadth = 8 cm</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">A rectangle has opposite sides equal: 12, 8, 12, 8</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">Add them up: 12 + 8 + 12 + 8 = 40 cm</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">Or use the formula: 2 × (length + breadth) = 2 × (12 + 8) = 2 × 20 = 40 cm</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">Result</div>
-                        <div class="step-content"><strong>Perimeter = 2 × (l + b)</strong></div>
-                    </div>
+            <details class="deep-dive">
+                <summary><strong>Deep Dive:</strong> Perimeter in Real Life</summary>
+                <div class="deep-dive-content">
+                    <p>
+                        <strong>Fencing Problem:</strong> A rectangular park is 150 m long and 120 m wide. The fence costs ₹40 per metre.
+                        Find the total cost.
+                    </p>
+                    <p style="font-family: 'Fira Mono';">
+                        Perimeter = 2 × (150 + 120) = 2 × 270 = 540 m<br>
+                        Cost = 540 × 40 = ₹21,600
+                    </p>
+                    <p>
+                        <strong>Running Track Problem:</strong> A rectangular track has outer dimensions 70 m × 40 m. Akshi runs 5 rounds.
+                        How far does she run?
+                    </p>
+                    <p style="font-family: 'Fira Mono';">
+                        Perimeter of track = 2 × (70 + 40) = 220 m<br>
+                        Distance in 5 rounds = 5 × 220 = 1100 m
+                    </p>
                 </div>
+            </details>
 
-                <h3>Why This Formula Works: The "Why" Behind the Formula</h3>
-                <p>We use 2 × (length + breadth) because:</p>
-                <ul>
-                    <li>There are TWO sides of length L (top and bottom)</li>
-                    <li>There are TWO sides of breadth B (left and right)</li>
-                    <li>Total: L + B + L + B = 2L + 2B = 2(L + B)</li>
-                </ul>
-
-                <h3>Perimeter of a Square</h3>
-                <p>All four sides of a square are equal. If each side is 5 m:</p>
-                <p><strong>Perimeter = 4 × side = 4 × 5 = 20 m</strong></p>
-                <p>This makes sense: a square has 4 identical sides, so we multiply the side length by 4.</p>
-
-                <h3>Perimeter of a Triangle</h3>
-                <p>Simply add all three sides together.</p>
-                <p>Triangle with sides 4 cm, 5 cm, 7 cm:</p>
-                <p><strong>Perimeter = 4 + 5 + 7 = 16 cm</strong></p>
-
-                <details class="deep-dive">
-                    <summary>Regular Polygons and Perimeter</summary>
-                    <div class="deep-dive-content">
-                        <p>A <strong>regular polygon</strong> has all sides and all angles equal. Examples:</p>
-                        <ul>
-                            <li>Equilateral triangle: 3 equal sides, so Perimeter = 3 × side</li>
-                            <li>Regular pentagon: 5 equal sides, so Perimeter = 5 × side</li>
-                            <li>Regular hexagon: 6 equal sides, so Perimeter = 6 × side</li>
-                        </ul>
-                        <p><strong>General formula:</strong> For any regular polygon with N sides of length S:</p>
-                        <p><strong>Perimeter = N × S</strong></p>
-                    </div>
-                </details>
-
-                <h3>Application: Real-Life Perimeter Problems</h3>
-                <p><strong>Example 1:</strong> Akshi wants to put lace around a tablecloth that is 3 m long and 2 m wide. How much lace does she need?</p>
-                <p>Solution: Perimeter = 2 × (3 + 2) = 2 × 5 = 10 m</p>
-
-                <p><strong>Example 2:</strong> Usha runs around a square park of side 75 m three times. What total distance did she run?</p>
-                <p>Solution: Perimeter of one lap = 4 × 75 = 300 m. Three laps = 3 × 300 = 900 m</p>
-
-                <h3>Running Tracks and Competitive Fairness</h3>
-                <p>On running tracks with inner and outer lanes, runners on outer lanes have a longer perimeter to cover. To make races fair, runners on outer lanes are given a head start! This is a beautiful real-world application of perimeter mathematics.</p>
-
-                <details class="deep-dive">
-                    <summary>Perimeter Illusions: Straight vs. Diagonal</summary>
-                    <div class="deep-dive-content">
-                        <p>Consider a shape made of straight grid lines versus diagonal lines. Surprisingly, diagonals are longer than straight segments between the same points!</p>
-                        <p>If you have a shape with some sides being diagonal on a grid:</p>
-                        <ul>
-                            <li>Each straight unit on the grid = 1 unit</li>
-                            <li>Each diagonal unit on the grid = √2 ≈ 1.414 units</li>
-                        </ul>
-                        <p>This is why Toshi was right in the chapter problem—the diagonal path is longer than expected!</p>
-                    </div>
-                </details>
-            </section>
-
-            <!-- Section 2: Area -->
-            <section class="learning-section">
-                <h2>6.2: Area - The Surface Covered</h2>
-
-                <h3>What Is Area?</h3>
-                <p><strong>Area</strong> is the measure of the region enclosed by a closed figure. Imagine painting the entire interior of a shape—the area tells you how much paint you'd need.</p>
-                <p>Area is measured in square units: cm², m², etc. One square unit is a 1 × 1 square.</p>
-
-                <h3>Area of a Rectangle</h3>
-                <p>The most intuitive way to understand area is through rectangles. If you arrange 1 × 1 unit squares in a rectangle:</p>
-
-                <div class="logic-ladder">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">A rectangle 5 units long and 3 units wide</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">Can be filled with unit squares in 5 columns and 3 rows</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">Total unit squares = 5 × 3 = 15</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">Result</div>
-                        <div class="step-content"><strong>Area of rectangle = length × breadth = 5 × 3 = 15 square units</strong></div>
-                    </div>
-                </div>
-
-                <h3>Area of a Square</h3>
-                <p>Since a square has all sides equal (length = breadth = side):</p>
-                <p><strong>Area of square = side × side = side²</strong></p>
-                <p>Example: A square with side 4 m has area = 4 × 4 = 16 m²</p>
-
-                <h3>Area and Perimeter Are Independent!</h3>
-                <p>Here's a crucial insight: <strong>Two shapes can have the same perimeter but different areas, or the same area but different perimeters.</strong></p>
-                <p>Example: Consider rectangles with perimeter 24 units:</p>
-                <ul>
-                    <li>6 × 6 square: Area = 36 sq units</li>
-                    <li>8 × 4 rectangle: Area = 32 sq units</li>
-                    <li>10 × 2 rectangle: Area = 20 sq units</li>
-                </ul>
-                <p>Same perimeter, different areas! This shows they're independent measurements.</p>
-
-                <details class="deep-dive">
-                    <summary>Why Squares Give Maximum Area</summary>
-                    <div class="deep-dive-content">
-                        <p>Given a fixed perimeter, which shape encloses the most area? A square!</p>
-                        <p>This is why:
-                        <ul>
-                            <li>Perimeter of all these shapes = 24 units</li>
-                            <li>6 × 6 square: Area = 36 (maximum)</li>
-                            <li>8 × 4 rectangle: Area = 32</li>
-                            <li>10 × 2 rectangle: Area = 20</li>
-                            <li>12 × 0 degenerate: Area = 0 (minimum)</li>
-                        </ul>
-                        <p>The closer to a square (more balanced length and width), the larger the area for a given perimeter. This principle is used in design and engineering!</p>
-                    </div>
-                </details>
-
-                <h3>Estimating Area Using Grid Paper</h3>
-                <p>For irregular shapes, use the following convention on grid paper:</p>
-                <ul>
-                    <li>Each fully enclosed unit square = 1 sq unit</li>
-                    <li>Half or more of a square inside the shape = count it as 1 sq unit</li>
-                    <li>Less than half = ignore it</li>
-                    <li>Exactly half = count as 0.5 sq units</li>
-                </ul>
-
-                <details class="deep-dive">
-                    <summary>Why Squares Are Best for Measuring Area</summary>
-                    <div class="deep-dive-content">
-                        <p>You might wonder: Why not use circles or triangles for area units instead of squares?</p>
-                        <p><strong>Key reason:</strong> Shapes need to tessellate (fit together perfectly) to measure area without gaps or overlaps.</p>
-                        <ul>
-                            <li>Squares fit together perfectly with no gaps—ideal for measurement</li>
-                            <li>Circles don't—they always leave gaps between them</li>
-                            <li>Triangles can work but are less efficient</li>
-                        </ul>
-                        <p>This practical consideration is why we universally use square units for area measurement!</p>
-                    </div>
-                </details>
-
-                <h3>Real-Life Application: Tiling a Floor</h3>
-                <p><strong>Problem:</strong> A floor is 5 m long and 4 m wide. A square carpet of side 3 m is laid on it. What area remains untiled?</p>
-                <p>Solution:</p>
-                <ul>
-                    <li>Area of floor = 5 × 4 = 20 m²</li>
-                    <li>Area of carpet = 3 × 3 = 9 m²</li>
-                    <li>Untiled area = 20 - 9 = 11 m²</li>
-                </ul>
-            </section>
-
-            <!-- Section 3: Area of a Triangle -->
-            <section class="learning-section">
-                <h2>6.3: Area of a Triangle</h2>
-
-                <h3>The Discovery: Triangles Are Half-Rectangles</h3>
-                <p>Take any rectangle and draw a diagonal. It divides the rectangle into TWO identical triangles! This reveals the formula:</p>
-
-                <div class="logic-ladder">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">Start with a rectangle of length L and breadth B</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">Area of rectangle = L × B</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">Draw a diagonal—it splits the rectangle into two identical triangles</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">Each triangle has area = (L × B) ÷ 2</div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">Result</div>
-                        <div class="step-content"><strong>Area of triangle = ½ × base × height</strong></div>
-                    </div>
-                </div>
-
-                <h3>Understanding "Base" and "Height"</h3>
-                <p>In the formula <strong>Area = ½ × base × height</strong>:</p>
-                <ul>
-                    <li><strong>Base:</strong> Any side of the triangle (the side you're "standing on")</li>
-                    <li><strong>Height:</strong> The perpendicular distance from the opposite vertex to that base (NOT the slant side)</li>
-                </ul>
-
-                <p>This is crucial: Height must be perpendicular to the base, not the slant side of the triangle!</p>
-
-                <details class="deep-dive">
-                    <summary>Why the ½ Factor? The Deep Geometry</summary>
-                    <div class="deep-dive-content">
-                        <p>Why exactly ½? Consider how a triangle relates to rectangles:</p>
-                        <p>Imagine a triangle with base B and height H inside a rectangle of dimensions B × H. The triangle's area is exactly half the rectangle's area!</p>
-                        <p>Why? Because as you move up from the base, the triangle's width decreases linearly until it reaches a point at the top. On average, it fills only half the rectangle's width. This elegant relationship is why the ½ appears in the formula.</p>
-                        <p>Mathematically: ∫₀ᴴ (B × h/H) dh = ½ × B × H</p>
-                    </div>
-                </details>
-
-                <h3>Application: Breaking Irregular Shapes into Rectangles and Triangles</h3>
-                <p>Complex shapes can be divided into rectangles and triangles, then their areas calculated and added:</p>
-                <p><strong>Example:</strong> An L-shaped figure can be split into two rectangles, or an irregular shape can be split into rectangles and triangles, making calculation simple.</p>
-
-                <div class="error-trap">
-                    <h4>Common Error Trap: Using Slant Height Instead of Perpendicular Height</h4>
-                    <p><strong>WRONG:</strong> Using the slant side of a triangle as the height in the area formula</p>
-                    <p><strong>RIGHT:</strong> The height must be perpendicular (at 90°) to the base</p>
-                    <p><strong>Visual check:</strong> If you draw the height line, it should meet the base at a right angle. If not, you're using the wrong measurement!</p>
-                </div>
-            </section>
-
-            <!-- Section 4: Same Perimeter, Different Areas -->
-            <section class="learning-section">
-                <h2>Making Shapes More or Less</h2>
-
-                <h3>The 9-Square Challenge</h3>
-                <p>Using 9 unit squares (fixed area), you can arrange them to create vastly different perimeters:</p>
-                <ul>
-                    <li>Square arrangement (3 × 3): Perimeter = 12 units (minimum)</li>
-                    <li>Line arrangement (1 × 9): Perimeter = 20 units (maximum)</li>
-                    <li>Various other shapes: 14, 16, 18 units possible</li>
-                </ul>
-
-                <h3>The Key Insight</h3>
-                <p>For a fixed area, shapes that are more "spread out" have larger perimeters. Compact shapes (closer to squares) have smaller perimeters. This is why:</p>
-                <ul>
-                    <li>Animals curl up to conserve heat (smaller perimeter, less surface exposure)</li>
-                    <li>Circular designs are efficient for storage (most area for given perimeter)</li>
-                    <li>Architects balance compactness and usable space</li>
-                </ul>
-
-                <details class="deep-dive">
-                    <summary>The Isoperimetric Problem</summary>
-                    <div class="deep-dive-content">
-                        <p>One of the most famous problems in mathematics: Among all shapes with the same perimeter, which has the largest area?</p>
-                        <p><strong>Answer:</strong> A circle!</p>
-                        <p>For a given perimeter P, a circle encloses more area than any other shape. This is why:</p>
-                        <ul>
-                            <li>Drums and plates are circular</li>
-                            <li>Planets are spherical (2D version of circle)</li>
-                            <li>Optimizing space with a fixed boundary often leads to circular designs</li>
-                        </ul>
-                        <p>This deep mathematical principle guides engineering and design decisions!</p>
-                    </div>
-                </details>
-
-                <h3>Adding Squares Changes Both Perimeter and Area</h3>
-                <p>When you attach one unit square to an existing figure:</p>
-                <ul>
-                    <li><strong>Area always increases</strong> by 1 unit</li>
-                    <li><strong>Perimeter changes</strong> depending on WHERE you attach it:
-                        <ul>
-                            <li>Attach to a corner: Perimeter increases by 2</li>
-                            <li>Attach to the middle of a side: Perimeter stays the same</li>
-                            <li>Attach along an entire shared side: Perimeter decreases</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <details class="deep-dive">
-                    <summary>Why Perimeter Changes Depend on Attachment Position</summary>
-                    <div class="deep-dive-content">
-                        <p>When you attach a new square:</p>
-                        <p><strong>To a corner:</strong> You add 3 new exposed sides and hide 0 old sides. Net change: +3 - 1 = +2 (but actually counted as exposing 2 full new sides and removing 1 = +1...)</p>
-                        <p>Actually, the perimeter change is more nuanced: the number of newly exposed edges minus the number of hidden edges. This creates a beautiful optimization problem in discrete geometry!</p>
-                    </div>
-                </details>
-            </section>
-
-            <!-- Section 5: Tangrams and Flexible Shapes -->
-            <section class="learning-section">
-                <h2>Flexible Geometry: Tangrams</h2>
-
-                <h3>The Surprising Property</h3>
-                <p>Tangram pieces can be rearranged to form different shapes—a square or a rectangle—all with the SAME total area but DIFFERENT perimeters!</p>
-                <p>This beautifully demonstrates that area and perimeter are independent properties.</p>
-
-                <h3>Comparing Properties</h3>
-                <p>When the 7 tangram pieces form:</p>
-                <ul>
-                    <li><strong>A square:</strong> Minimal perimeter for the given area</li>
-                    <li><strong>A rectangle:</strong> Larger perimeter (same area, but more elongated)</li>
-                </ul>
-
-                <p>The formula relationship: The perimeters differ precisely because one shape is more compact (square) while the other is more stretched (rectangle).</p>
-            </section>
-
-            <!-- Common Error Trap -->
             <div class="error-trap">
-                <h4>Common Error Trap: Mixing Up Area and Perimeter</h4>
-                <p><strong>WRONG:</strong> "This rectangle is bigger because its perimeter is larger" or "They have the same area, so they must have the same perimeter"</p>
-                <p><strong>RIGHT:</strong> Area and perimeter measure different things and are independent.</p>
-                <p><strong>Memory trick:</strong> Perimeter is about the OUTLINE (how far you walk around), Area is about the INSIDE (how much it covers).</p>
-                <p><strong>Check yourself:</strong> A 10 × 1 rectangle has perimeter 22 but area 10. A 4 × 3 rectangle has perimeter 14 but area 12. Same perimeter isn't the same area!</p>
+                <h4>Common Mistake Alert!</h4>
+                <p>
+                    <strong>❌ Wrong:</strong> "A shape with a larger perimeter always has a larger area."<br>
+                    <strong>✓ Correct:</strong> Perimeter and area are independent. A 10 cm × 1 cm rectangle has perimeter 22 cm and area 10 cm²,
+                    while a 4 cm × 4 cm square has perimeter 16 cm but larger area 16 cm². The square has smaller perimeter but larger area!
+                </p>
             </div>
 
-            <!-- Socratic Quiz -->
-            <section class="quiz-section">
-                <h3>Test Your Understanding</h3>
-                <p>Work through these questions to assess your mastery of Perimeter and Area concepts.</p>
+            <div class="activity-box">
+                <h4>Exploration: String and Shapes</h4>
+                <p>
+                    A piece of string is 36 cm long. Find the side length if it forms:
+                </p>
+                <ul>
+                    <li>a. A square: Perimeter = 4s, so 36 = 4s, s = 9 cm</li>
+                    <li>b. An equilateral triangle: Perimeter = 3s, so 36 = 3s, s = 12 cm</li>
+                    <li>c. A regular hexagon: Perimeter = 6s, so 36 = 6s, s = 6 cm</li>
+                </ul>
+            </div>
+        </section>
 
-                <!-- Level 1 -->
-                <div class="quiz-level">
-                    <h4>Level 1: Building Foundations</h4>
+        <section class="content-section">
+            <h2>6.2: Area of Rectangles and Squares</h2>
 
-                    <details class="quiz-answer">
-                        <summary>Q1: Find the perimeter of a rectangle with length 8 m and breadth 5 m.</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 26 m</strong></p>
-                            <p>Perimeter = 2 × (length + breadth) = 2 × (8 + 5) = 2 × 13 = 26 m</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q2: What is the area of a square with side 6 cm?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 36 cm²</strong></p>
-                            <p>Area of square = side × side = 6 × 6 = 36 cm²</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q3: Find the area of a triangle with base 10 cm and height 6 cm.</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 30 cm²</strong></p>
-                            <p>Area of triangle = ½ × base × height = ½ × 10 × 6 = ½ × 60 = 30 cm²</p>
-                        </div>
-                    </details>
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Understanding Area: Counting Unit Squares</h4>
+                        <p>
+                            The <strong>area</strong> of a closed figure is the amount of region (or space) enclosed by that figure.
+                            We measure area in <strong>square units</strong> (cm², m², etc.). Imagine a grid of 1 cm × 1 cm squares—area
+                            is simply how many of these unit squares fit inside the shape.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Level 2 -->
-                <div class="quiz-level">
-                    <h4>Level 2: Applying Knowledge</h4>
-
-                    <details class="quiz-answer">
-                        <summary>Q4: A floor is 6 m long and 5 m wide. A square carpet of side 3 m is placed on it. What area remains exposed?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 21 m²</strong></p>
-                            <p>Area of floor = 6 × 5 = 30 m²</p>
-                            <p>Area of carpet = 3 × 3 = 9 m²</p>
-                            <p>Exposed area = 30 - 9 = 21 m²</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q5: Two rectangles have the same area (24 sq units). One is 6 × 4 and the other is 8 × 3. Do they have the same perimeter?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: NO</strong></p>
-                            <p>Both have area 24 sq units. But:</p>
-                            <p>Perimeter of 6 × 4 = 2 × (6 + 4) = 20 units</p>
-                            <p>Perimeter of 8 × 3 = 2 × (8 + 3) = 22 units</p>
-                            <p>Same area does NOT mean same perimeter!</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q6: What is the perimeter of a triangle with sides 7 cm, 8 cm, and 9 cm?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 24 cm</strong></p>
-                            <p>Perimeter = sum of all sides = 7 + 8 + 9 = 24 cm</p>
-                        </div>
-                    </details>
+                <div class="logic-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Area of a Rectangle</h4>
+                        <p>
+                            If a rectangle is 5 m long and 4 m wide, we can visualize it as a grid of 1 m × 1 m squares.
+                            Counting rows and columns: 5 columns × 4 rows = 20 square metres.
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            <strong>Area of Rectangle = length × width</strong><br>
+                            A = l × b<br>
+                            A = 5 × 4 = 20 m²
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Level 3 -->
-                <div class="quiz-level">
-                    <h4>Level 3: Deep Mastery</h4>
-
-                    <details class="quiz-answer">
-                        <summary>Q7: An L-shaped figure consists of two rectangles: one 8 × 3 and another 4 × 2 (arranged in an L). What is the total area?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 32 square units</strong></p>
-                            <p>Area of first rectangle = 8 × 3 = 24 sq units</p>
-                            <p>Area of second rectangle = 4 × 2 = 8 sq units</p>
-                            <p>Total area = 24 + 8 = 32 sq units</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q8: A farmer has a rectangular field 20 m × 15 m. He fences it with 3 rounds of rope. How much rope does he need?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 210 m</strong></p>
-                            <p>Perimeter = 2 × (20 + 15) = 2 × 35 = 70 m</p>
-                            <p>For 3 rounds = 3 × 70 = 210 m</p>
-                        </div>
-                    </details>
-
-                    <details class="quiz-answer">
-                        <summary>Q9: You have 9 unit squares. Arrange them in a square (3 × 3). What is the perimeter? Now arrange them in a line (1 × 9). What is the new perimeter? Why the difference?</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 12 units (square) vs. 20 units (line)</strong></p>
-                            <p>Square (3 × 3): Perimeter = 4 × 3 = 12 units</p>
-                            <p>Line (1 × 9): Perimeter = 2 × (1 + 9) = 20 units</p>
-                            <p><strong>Why?</strong> Compact shapes have smaller perimeters. The square is highly compact, while the line is extremely stretched out. Same area (9 sq units) but very different perimeters!</p>
-                        </div>
-                    </details>
+                <div class="logic-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Area of a Square</h4>
+                        <p>
+                            Since a square has length = width = side, the area becomes:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            <strong>Area of Square = side × side = s²</strong><br>
+                            A = s²<br>
+                            Example: A square with side 3 cm has area = 3 × 3 = 9 cm²
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-            <!-- Chapter Navigation -->
-            <nav class="chapter-nav">
-                <a href="ch5.html" class="nav-prev">← Previous: Chapter 5 - Prime Time</a>
-                <a href="ch7.html" class="nav-next">Next: Chapter 7 - Fractions →</a>
-            </nav>
-        </main>
+                <div class="logic-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Solving Composite Area Problems</h4>
+                        <p>
+                            When areas overlap or need to be combined, calculate each separately then add or subtract:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            Floor area = 5 × 4 = 20 m²<br>
+                            Carpet area = 3 × 3 = 9 m²<br>
+                            Uncarpeted area = 20 - 9 = 11 m²
+                        </p>
+                    </div>
+                </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2025 The Logical Builder. A Journey Through Mathematics. Built with pedagogical intent.</p>
-            <p>Mathematics | Grade 6 | Ganita Prakash Curriculum</p>
-        </footer>
-    </div>
+                <div class="logic-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Practical Applications</h4>
+                        <p>
+                            A rectangular coconut grove is 100 m long and 50 m wide. If each tree needs 25 m², how many trees fit?
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            Grove area = 100 × 50 = 5000 m²<br>
+                            Number of trees = 5000 ÷ 25 = 200 trees
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <details class="deep-dive">
+                <summary><strong>Deep Dive:</strong> Why Do We Use Squares for Area?</summary>
+                <div class="deep-dive-content">
+                    <p>
+                        <strong>The Question:</strong> Why measure area using squares instead of circles or triangles?
+                    </p>
+                    <p>
+                        <strong>The Answer:</strong> Squares pack perfectly with no gaps or overlaps!
+                        When you place circles side by side, gaps appear between them, making accurate measurement impossible.
+                        Rectangles also work well, but squares tile every region most efficiently and uniformly.
+                    </p>
+                    <p>
+                        This principle is why graph paper uses square grids—it's the most practical way to estimate and calculate areas accurately.
+                        For irregular shapes, we trace them onto graph paper and count: full squares as 1, ignored portions less than half, and
+                        portions more than half as 1 square unit.
+                    </p>
+                </div>
+            </details>
+
+            <div class="error-trap">
+                <h4>Common Mistake Alert!</h4>
+                <p>
+                    <strong>❌ Wrong:</strong> "Perimeter × something always equals area."<br>
+                    <strong>✓ Correct:</strong> Perimeter and area are completely different measurements with different units.
+                    A rectangle 10 m × 2 m has perimeter 24 m and area 20 m². You cannot derive area from perimeter without knowing dimensions!
+                </p>
+            </div>
+
+            <div class="activity-box">
+                <h4>Real-World Challenge</h4>
+                <p>
+                    <strong>House Plan Analysis:</strong> A house has a rectangular plot. Given: Master Bedroom (15 ft × 15 ft, area 225 sq ft),
+                    Kitchen (15 ft × 12 ft, area 180 sq ft). A floor covering costs ₹100 per 10 sq ft. Calculate the coverage cost for the entire house
+                    once you determine total area.
+                </p>
+                <p>
+                    This involves finding missing room dimensions and summing all areas—a complex but practical skill!
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>6.3: Area of a Triangle</h2>
+
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Discovery: The Diagonal Insight</h4>
+                        <p>
+                            Draw a diagonal across a rectangle and cut along it. You get two congruent triangles.
+                            These two triangles have <strong>exactly the same area</strong>, and together they form the complete rectangle.
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            <strong>Area of one triangle = ½ × Area of the rectangle</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Deriving the Triangle Formula</h4>
+                        <p>
+                            Since a rectangle with length <em>l</em> and width <em>w</em> has area = l × w, and the diagonal divides it into
+                            two equal triangles:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono'; margin: 12px 0;">
+                            <strong>Area of Triangle = ½ × base × height</strong><br>
+                            A = ½ × b × h
+                        </p>
+                        <p>
+                            The base is one side of the triangle, and the height is the perpendicular distance from the opposite vertex to that base.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Why the ½? The Critical Understanding</h4>
+                        <p>
+                            A triangle is always <strong>half</strong> of some rectangle. Whether the triangle is right-angled, acute, or obtuse,
+                            this relationship holds true! The ½ appears because we're taking half of a rectangle's area.
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            Triangle: base 8 cm, height 6 cm<br>
+                            Area = ½ × 8 × 6 = 24 cm²
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Composite Figures: Splitting Shapes</h4>
+                        <p>
+                            Complex shapes can be split into rectangles and triangles. Calculate each area separately, then add or subtract:
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            A trapezoid = Rectangle + Two triangles<br>
+                            An irregular pentagon = Split into rectangles/triangles
+                        </p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Practical Application: Composite Shapes</h4>
+                        <p>
+                            A house-shaped figure (rectangle with triangular roof): Rectangle 12 m × 8 m, Triangle (roof) base 12 m, height 3 m.
+                        </p>
+                        <p style="text-align: center; font-family: 'Fira Mono';">
+                            Rectangle area = 12 × 8 = 96 m²<br>
+                            Triangle area = ½ × 12 × 3 = 18 m²<br>
+                            Total = 96 + 18 = 114 m²
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <details class="deep-dive">
+                <summary><strong>Deep Dive:</strong> The ½ and Why It Matters</summary>
+                <div class="deep-dive-content">
+                    <p>
+                        <strong>Why does every triangle formula have ½?</strong>
+                    </p>
+                    <p>
+                        Imagine duplicating a triangle and flipping it to form a rectangle. The two triangles exactly fit together to create a rectangle.
+                        Therefore, the triangle occupies exactly half the rectangle's area. This works universally:
+                    </p>
+                    <ul>
+                        <li><strong>Right triangles:</strong> The hypotenuse forms one side; flip and it fits the rectangle perfectly.</li>
+                        <li><strong>Obtuse triangles:</strong> The rectangle extends beyond the triangle, but the triangle is still exactly half.</li>
+                        <li><strong>Acute triangles:</strong> All vertices touch the rectangle's edges; it's always half.</li>
+                    </ul>
+                    <p>
+                        This universal truth makes the ½ coefficient essential and beautiful—it's one of mathematics' elegant principles!
+                    </p>
+                </div>
+            </details>
+
+            <div class="error-trap">
+                <h4>Common Mistake Alert!</h4>
+                <p>
+                    <strong>❌ Wrong:</strong> "Area of triangle = base × height" (forgetting the ½)<br>
+                    <strong>✓ Correct:</strong> Area of triangle = <strong>½</strong> × base × height<br>
+                    <strong>Consequence:</strong> Forgetting the ½ doubles your answer! Always remember: a triangle is half a rectangle.
+                </p>
+            </div>
+
+            <div class="activity-box">
+                <h4>Complex Problem: Building Design</h4>
+                <p>
+                    A land plot has: Four flower beds at corners (each 4 m × 4 m) within a garden (12 m × 10 m).
+                    Find the remaining area for a lawn.
+                </p>
+                <p>
+                    <em>Solution:</em> Garden area = 12 × 10 = 120 m²<br>
+                    One flower bed = 4 × 4 = 16 m²<br>
+                    Four flower beds = 4 × 16 = 64 m²<br>
+                    Lawn area = 120 - 64 = <strong>56 m²</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h3>Knowledge Check: Test Your Understanding</h3>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> A square has a side of 5 cm. What is its perimeter?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 20 cm</strong></p>
+                        <p>Perimeter of square = 4 × side = 4 × 5 = 20 cm</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> A rectangle is 10 m long and 6 m wide. What is its area?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 60 m²</strong></p>
+                        <p>Area of rectangle = length × width = 10 × 6 = 60 m²</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> A triangle has base 12 cm and height 8 cm. What is its area?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 48 cm²</strong></p>
+                        <p>Area of triangle = ½ × base × height = ½ × 12 × 8 = 48 cm²</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><strong>Question:</strong> Why is the area of a triangle exactly half the area of a rectangle with the same base and height?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>
+                            <strong>Answer:</strong> When you draw a diagonal across a rectangle, it divides the rectangle into two congruent (identical) triangles.
+                            Since both triangles are equal in size and together they form the complete rectangle, each triangle must have exactly
+                            half the area of the rectangle. This is why we use the ½ in the triangle area formula: Area = ½ × base × height.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><strong>Question:</strong> Can two shapes have the same perimeter but different areas? Give an example.</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>
+                            <strong>Answer: Yes, absolutely!</strong> Perimeter and area are independent measurements.
+                        </p>
+                        <p>
+                            <strong>Example:</strong>
+                            <ul>
+                                <li>Rectangle A: 10 cm × 2 cm → Perimeter = 24 cm, Area = 20 cm²</li>
+                                <li>Rectangle B (square): 6 cm × 6 cm → Perimeter = 24 cm, Area = 36 cm²</li>
+                            </ul>
+                            Both have the same perimeter (24 cm) but different areas (20 cm² vs 36 cm²)! The square, being closer to regular,
+                            has greater area for the same perimeter.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> A farmer has a rectangular field 230 m long and 160 m wide. He wants to fence it with 3 rounds of rope.
+                What is the total length of rope needed?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 2340 m</strong></p>
+                        <p>
+                            Perimeter of field = 2 × (230 + 160) = 2 × 390 = 780 m<br>
+                            For 3 rounds: 3 × 780 = <strong>2340 m</strong>
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> A floor is 5 m long and 4 m wide. A square carpet of side 3 m is laid on it.
+                Find the area of the floor NOT covered by the carpet.</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 11 m²</strong></p>
+                        <p>
+                            Floor area = 5 × 4 = 20 m²<br>
+                            Carpet area = 3 × 3 = 9 m²<br>
+                            Uncovered area = 20 - 9 = <strong>11 m²</strong>
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> A complex property consists of: a main building (15 ft × 12 ft) and a triangular storage area
+                (base 15 ft, height 4 ft). Find the total area.</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 210 sq ft</strong></p>
+                        <p>
+                            Building area = 15 × 12 = 180 sq ft<br>
+                            Storage area = ½ × 15 × 4 = 30 sq ft<br>
+                            Total = 180 + 30 = <strong>210 sq ft</strong>
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <div class="chapter-nav">
+          <a href="ch5.html" class="prev"><span class="label">← Previous</span> Prime Time</a>
+          <a href="ch7.html" class="next"><span class="label">Next →</span> Fractions</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Class 6 Learning Portal. Educational content adapted from NCERT Mathematics Grade 6.</p>
+        <p>Source: Ganita Prakash, Grade 6, Reprint 2025-26 | Chapter 6: Perimeter and Area</p>
+    </footer>
 
     <script>
-        // Progress bar functionality
-        function updateProgressBar() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolled = (scrollTop / docHeight) * 100;
-            document.getElementById('progressBar').style.width = scrolled + '%';
-        }
-        window.addEventListener('scroll', updateProgressBar);
+        const progressBar = document.querySelector('.progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            progressBar.style.width = scrollPercentage + '%';
+        });
     </script>
 </body>
 </html>

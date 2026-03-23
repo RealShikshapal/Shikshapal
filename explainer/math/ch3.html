@@ -3,481 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chapter 3: Number Play - The Logical Builder</title>
+  <title>Chapter 3: Number Play — Class 6 Maths</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    .progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background: linear-gradient(to right, #FF6B35, #FF8C42);
-      width: 0%;
-      z-index: 1000;
-    }
-
-    .chapter-page {
-      --accent: var(--math);
-      --accent-light: var(--math-light);
-      --accent-glow: var(--math-glow);
-    }
-
-    .hook-box {
-      border-left-color: var(--math);
-      border-left: 4px solid var(--math);
-      padding: 20px;
-      background: var(--math-light);
-      border-radius: 4px;
-      margin: 30px 0;
-    }
-
-    .hook-box::before {
-      content: "🎯";
-      color: var(--math);
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .hook-box h3 {
-      color: var(--math);
-      margin-top: 0;
-    }
-
-    .feynman-bridge {
-      border: 2px solid var(--math);
-      padding: 20px;
-      margin: 30px 0;
-      background: #f9f9f9;
-      border-radius: 4px;
-    }
-
-    .feynman-bridge .tag {
-      display: inline-block;
-      background: var(--math);
-      color: white;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .step-number {
-      background: var(--math);
-      color: white;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      margin-right: 12px;
-      flex-shrink: 0;
-    }
-
-    .logic-step {
-      display: flex;
-      margin: 16px 0;
-      gap: 12px;
-    }
-
-    .deep-dive {
-      border-left: 4px solid var(--math);
-      background: var(--math-light);
-      padding: 16px;
-      margin: 20px 0;
-      border-radius: 4px;
-    }
-
-    .deep-dive summary {
-      color: var(--math);
-      font-weight: 600;
-      cursor: pointer;
-      padding: 8px 0;
-    }
-
-    .deep-dive summary:hover {
-      text-decoration: underline;
-    }
-
-    .error-trap {
-      background: #fff3cd;
-      border-left: 4px solid #ff6b6b;
-      padding: 16px;
-      margin: 20px 0;
-      border-radius: 4px;
-    }
-
-    .error-trap h4 {
-      color: #ff6b6b;
-      margin-top: 0;
-    }
-
-    .quiz-section {
-      margin: 40px 0;
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 4px;
-    }
-
-    .quiz-section h3 {
-      border-bottom: 2px solid var(--math);
-      color: var(--math);
-      padding-bottom: 10px;
-    }
-
-    .quiz-item {
-      margin: 20px 0;
-      padding: 16px;
-      background: white;
-      border-radius: 4px;
-      border-left: 3px solid #e0e0e0;
-    }
-
-    .quiz-answer {
-      margin: 12px 0;
-    }
-
-    .quiz-answer summary {
-      color: var(--math);
-      font-weight: 600;
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    .quiz-answer summary:hover {
-      text-decoration: underline;
-    }
-
-    .answer-body {
-      background: var(--math-light);
-      padding: 12px;
-      margin-top: 8px;
-      border-radius: 4px;
-    }
-
-    .chapter-nav {
-      display: flex;
-      justify-content: space-between;
-      margin: 40px 0;
-      gap: 20px;
-    }
-
-    .nav-link {
-      flex: 1;
-      padding: 16px;
-      background: var(--math-light);
-      border-left: 4px solid var(--math);
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--math);
-      font-weight: 600;
-      transition: all 0.3s;
-    }
-
-    .nav-link:hover {
-      background: var(--math);
-      color: white;
-    }
-
-    .nav-link.disabled {
-      opacity: 0.5;
-      pointer-events: none;
-    }
+    .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
+    .hook-box { border-left-color: var(--math); }
+    .hook-box::before { color: var(--math); }
+    .hook-box h3 { color: var(--math); }
+    .feynman-bridge { border-color: var(--math); }
+    .feynman-bridge .tag { background: var(--math); }
+    .step-number { background: var(--math); }
+    .deep-dive { border-left-color: var(--math); background: var(--math-light); }
+    .deep-dive summary { color: var(--math); }
+    .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
+    .quiz-answer summary { color: var(--math); }
+    .quiz-answer .answer-body { background: var(--math-light); }
   </style>
 </head>
 <body>
-  <div class="progress-bar"></div>
 
-  <!-- Navigation Bar -->
-  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: white; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100;">
-    <a href="../index.html" style="font-weight: 700; font-size: 18px; color: var(--math); text-decoration: none;">The Logical Builder</a>
-    <div style="display: flex; gap: 12px;">
-      <a href="../math/ch1.html" class="nav-pill" style="background: var(--math-light); color: var(--math); padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Maths</a>
-      <a href="../science/ch1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Science</a>
-      <a href="../social/ch1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Social</a>
-      <a href="../english/unit1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">English</a>
+<div class="progress-bar-container"><div class="progress-bar"></div></div>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+    <div class="nav-subjects">
+      <a href="../science/ch1.html" class="nav-pill science">Science</a>
+      <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+      <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+      <a href="../english/unit1.html" class="nav-pill english">English</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Main Content -->
-  <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+<main class="chapter-page">
+  <div class="chapter-header">
+    <p class="breadcrumb"><a href="../index.html">Home</a> → <a href="../math/ch1.html">Mathematics</a> → Chapter 3</p>
+    <h1>Number Play</h1>
+    <p class="lead">Numbers aren't just for counting — they carry hidden messages, form surprising patterns, and can even play games. Let's discover the secret life of numbers.</p>
+  </div>
 
-    <!-- Breadcrumb -->
-    <div style="font-size: 13px; color: #888; margin-bottom: 24px;">
-      <a href="../index.html" style="color: var(--math); text-decoration: none;">Home</a> > <a href="../math/ch1.html" style="color: var(--math); text-decoration: none;">Mathematics</a> > Chapter 3
+  <!-- THE HOOK -->
+  <div class="hook-box">
+    <h3>The Everyday Mystery</h3>
+    <p>Five children stand in a line at the park. Each child looks at the neighbours on either side and says a number: "0", "1", or "2". Nobody told them what to say — the numbers come from the <em>arrangement itself</em>. How can simply standing in a line create a number pattern?</p>
+    <p>Here's the clue: each child says how many <strong>taller neighbours</strong> they have. Rearrange the children and the entire pattern changes!</p>
+  </div>
+
+  <!-- FEYNMAN BRIDGE -->
+  <div class="feynman-bridge">
+    <span class="tag">FEYNMAN BRIDGE</span>
+    <h3>Numbers Are Addresses, Not Just Amounts</h3>
+    <p>Think of numbers like addresses on a street. The number "42" on a house doesn't mean there are 42 houses — it tells you <em>where</em> to find something. In this chapter, numbers do the same: they tell us about position, relationships, and hidden patterns. A number isn't just "how many" — it's a tiny message, and this chapter teaches you to read those messages.</p>
+  </div>
+
+  <!-- LOGIC LADDER: PART 1 -->
+  <div class="section-divider"><span>The Interactive Core</span></div>
+
+  <h2>Part 1: Numbers Can Tell Us Things</h2>
+
+  <div class="logic-ladder">
+    <div class="logic-step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h4>The Taller-Neighbour Game</h4>
+        <p>Line up 5 people of different heights. Each person looks left and right and counts how many immediate neighbours are taller than them. End-people only have one neighbour, so they can say at most "1".</p>
+        <p><strong>Key insight:</strong> A person at the end can <em>never</em> say "2". Any sequence starting or ending with "2" is impossible!</p>
+      </div>
     </div>
-
-    <!-- Chapter Header -->
-    <header style="margin-bottom: 40px;">
-      <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; color: var(--math); margin: 0 0 16px 0;">Number Play</h1>
-      <p style="font-size: 18px; color: #666; margin: 0;">Unlocking the patterns and stories hidden in numbers</p>
-    </header>
-
-    <!-- The Hook -->
-    <div class="hook-box">
-      <h3>Think About This...</h3>
-      <p>Numbers surround us every day. They help us count, measure, compare, and understand our world. But numbers do more than just tell us "how many"—they can reveal patterns, tell stories, and even reveal mysterious mathematical truths. What if a number could describe a person's height compared to their neighbors? What if we could discover a "magic number" that always appears no matter where we start?</p>
-      <p><strong>In this chapter, you'll discover how numbers can be used in surprising ways.</strong></p>
+    <div class="logic-step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h4>Can Everyone Say "0"?</h4>
+        <p>Yes! If heights go strictly from tallest to shortest (left to right), nobody has a taller neighbour. Each person beats the one next to them. Sequence: 0, 0, 0, 0, 0.</p>
+      </div>
     </div>
-
-    <!-- The Feynman Bridge -->
-    <div class="feynman-bridge">
-      <span class="tag">WHY THIS MATTERS</span>
-      <p>Numbers aren't just abstract symbols. They're tools for organizing information, finding patterns, and solving problems. When you understand how numbers work in different contexts, you develop "computational thinking"—the ability to break down complex problems and find solutions systematically.</p>
+    <div class="logic-step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h4>Maximising "2"s</h4>
+        <p>Put the <strong>shortest children in the middle</strong> sandwiched between taller ones. Pattern: Tall–Short–Tall–Short–Tall. You get up to <strong>2 children</strong> saying "2" in a line of 5.</p>
+      </div>
     </div>
+  </div>
 
-    <!-- Core Content -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Numbers Can Tell Us Things</h2>
+  <h2>Part 2: Supercells</h2>
 
-      <div style="margin: 24px 0;">
-        <p>Imagine children of different heights standing in a line. Each child says a number based on how many taller neighbors they have:</p>
-        <ul style="background: var(--math-light); padding: 20px; border-radius: 4px;">
-          <li>Say <strong>0</strong> if neither neighbor is taller</li>
-          <li>Say <strong>1</strong> if one neighbor is taller</li>
-          <li>Say <strong>2</strong> if both neighbors are taller</li>
-        </ul>
-        <p><strong>This single number tells us the relationship between one person and their neighbors!</strong></p>
+  <div class="logic-ladder">
+    <div class="logic-step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h4>What Is a Supercell?</h4>
+        <p>A row of boxes, each with a number. A box is a <strong>supercell</strong> if its number is larger than <em>all</em> its immediate neighbours.</p>
+        <p>Example: In <code>200 | 577 | 626 | 345 | 790</code>, 626 is a supercell (626 &gt; 577 and 626 &gt; 345). But 200 is NOT (200 &lt; 577). Edge cells only need to beat one neighbour.</p>
       </div>
-
-      <div class="logic-step">
-        <div class="step-number">1</div>
-        <div>
-          <p><strong>Observation:</strong> Numbers can describe positions and relationships, not just quantities.</p>
-        </div>
+    </div>
+    <div class="logic-step">
+      <div class="step-number">5</div>
+      <div class="step-content">
+        <h4>The Maximum Supercell Strategy</h4>
+        <p>Alternate big and small: <strong>Big, Small, Big, Small, Big…</strong> In 9 cells, you get <strong>5 supercells</strong> at positions 1, 3, 5, 7, 9.</p>
+        <p>Can you have zero supercells? <strong>Never!</strong> The largest number always beats its neighbours, so every row has at least 1 supercell.</p>
       </div>
+    </div>
+  </div>
 
-      <div class="logic-step">
-        <div class="step-number">2</div>
-        <div>
-          <p><strong>Pattern:</strong> Certain arrangements of numbers are possible (like 0,1,2,1,0) while others are impossible.</p>
-        </div>
+  <details class="deep-dive">
+    <summary>Deep Dive: 2D Supercells — When Neighbours Surround You</summary>
+    <p>In a grid, each cell has up to 4 neighbours (left, right, above, below). A supercell must beat ALL of them. The centre cell of a 3×3 grid has 4 neighbours while corners have only 2. The largest number in the entire grid is always a supercell, but maximising supercells in 2D is a much harder puzzle!</p>
+  </details>
+
+  <h2>Part 3: Palindromes</h2>
+
+  <div class="logic-ladder">
+    <div class="logic-step">
+      <div class="step-number">6</div>
+      <div class="step-content">
+        <h4>Numbers That Read Both Ways</h4>
+        <p>A palindromic number reads the same forwards and backwards: <strong>121, 1331, 45654, 9009</strong>. All single-digit numbers (0–9) are palindromes. There are exactly 9 two-digit palindromes: 11, 22, 33, … 99.</p>
       </div>
-
-      <div class="logic-step">
-        <div class="step-number">3</div>
-        <div>
-          <p><strong>Insight:</strong> Understanding constraints helps us think logically about arrangements.</p>
-        </div>
+    </div>
+    <div class="logic-step">
+      <div class="step-number">7</div>
+      <div class="step-content">
+        <h4>The Reverse-and-Add Magic</h4>
+        <p>Take <strong>48</strong>. Reverse: <strong>84</strong>. Add: 48 + 84 = <strong>132</strong>. Not a palindrome yet. Reverse 132 → 231. Add: 132 + 231 = <strong>363</strong>. Palindrome! Most numbers reach a palindrome within a few rounds.</p>
       </div>
+    </div>
+  </div>
 
-      <details class="deep-dive">
-        <summary>Deep Dive: Why can't all children say '1'?</summary>
-        <div class="answer-body">
-          <p>Think about it: the tallest child in the line has no one taller on one side. At least one of their neighbors is not taller (or doesn't exist). So the tallest child can never say '1'. Similarly, if children stand in order of height (shortest to tallest), they form a pattern where most say '1', but the first and last cannot.</p>
-        </div>
+  <h2>Part 4: Kaprekar's Magic & Digit Sums</h2>
+
+  <div class="logic-ladder">
+    <div class="logic-step">
+      <div class="step-number">8</div>
+      <div class="step-content">
+        <h4>The 6174 Mystery</h4>
+        <p>Pick any 4-digit number (not all same digits), e.g. <strong>3524</strong>. Descending order: <strong>5432</strong>. Ascending: <strong>2345</strong>. Subtract: 5432 − 2345 = <strong>3087</strong>. Repeat with 3087… within 7 steps you ALWAYS reach <strong>6174</strong> — Kaprekar's constant! Discovered by Indian mathematician <strong>D.R. Kaprekar</strong> in 1949.</p>
+      </div>
+    </div>
+    <div class="logic-step">
+      <div class="step-number">9</div>
+      <div class="step-content">
+        <h4>Digit Sums & Divisibility</h4>
+        <p>Add all digits of a number. If the sum is divisible by <strong>3</strong>, so is the number. If by <strong>9</strong>, the number is divisible by 9 too.</p>
+        <p>Example: 2025 → 2+0+2+5 = 9 → divisible by both 3 and 9!</p>
+      </div>
+    </div>
+  </div>
+
+  <details class="deep-dive">
+    <summary>Deep Dive: Why Does the Digit-Sum Rule Work?</summary>
+    <p>A 3-digit number with digits a, b, c has value 100a + 10b + c = (99a + 9b) + (a + b + c) = 9(11a + b) + (a + b + c). Since 9(11a + b) is always divisible by 9, the remainder depends entirely on (a + b + c). Checking the digit sum IS checking the number!</p>
+  </details>
+
+  <!-- ERROR TRAP -->
+  <div class="error-trap">
+    <h4>Common Error Trap</h4>
+    <p><strong>Mistake:</strong> "A bigger number has a bigger digit sum." Wrong! 1000 has digit sum 1, but 999 has digit sum 27.</p>
+    <p><strong>Kaprekar trap:</strong> If subtraction gives a 3-digit result (like 999), pad with a leading zero → treat as 0999 before rearranging.</p>
+  </div>
+
+  <!-- ACTIVITY -->
+  <div class="activity-box">
+    <h4>Home Mini-Activity: The Palindrome Race</h4>
+    <p><strong>You need:</strong> Paper and pencil.</p>
+    <p><strong>Step 1:</strong> Write 5 random 2-digit numbers (e.g., 56, 73, 28, 91, 44).</p>
+    <p><strong>Step 2:</strong> Apply reverse-and-add until each becomes a palindrome.</p>
+    <p><strong>Step 3:</strong> Which number reached a palindrome fastest? Can you find one that takes more than 3 rounds?</p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="quiz-section">
+    <h3>Socratic Sandbox</h3>
+
+    <div class="quiz-level">
+      <span class="quiz-level-tag predict">Level 1 — Predict</span>
+      <p class="quiz-question">1. In a row of 7 cells, what is the maximum number of supercells?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">4 supercells. Pattern: Big, Small, Big, Small, Big, Small, Big. Positions 1, 3, 5, 7 are supercells.</div>
       </details>
-    </section>
-
-    <!-- Palindromes Section -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Pretty Palindromic Patterns</h2>
-
-      <p>Have you ever noticed numbers that read the same forwards and backwards? These are called <strong>palindromes</strong>.</p>
-
-      <div style="background: var(--math-light); padding: 20px; border-radius: 4px; margin: 20px 0;">
-        <p><strong>Examples:</strong> 121, 313, 575, 797, 1111, 12321, 9009</p>
-        <p>These numbers have a special symmetry—they're identical whether you read them left-to-right or right-to-left!</p>
-      </div>
-
-      <details class="deep-dive">
-        <summary>Deep Dive: The Reverse-and-Add Method</summary>
-        <div class="answer-body">
-          <p>Start with any 2-digit number. Reverse its digits and add. If the result isn't a palindrome, repeat. For example:</p>
-          <ul>
-            <li>47 + 74 = 121 ✓ (palindrome!)</li>
-            <li>29 + 92 = 121 ✓ (palindrome!)</li>
-          </ul>
-          <p>Most numbers reach a palindrome quickly! (Note: A few numbers, like 196, might never reach one—this remains an unsolved mystery!)</p>
-        </div>
+      <p class="quiz-question">2. Is 12321 a palindrome?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">Yes! Backwards it reads 1-2-3-2-1 — the same. Fun fact: 111 × 111 = 12321.</div>
       </details>
-    </section>
-
-    <!-- Kaprekar's Constant -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">The Magic Number: Kaprekar's Constant</h2>
-
-      <p>In 1949, D.R. Kaprekar discovered a mathematical phenomenon that seems like magic. Here's the process:</p>
-
-      <div class="logic-step">
-        <div class="step-number">1</div>
-        <div><p><strong>Pick any 4-digit number</strong> with at least two different digits (e.g., 6382)</p></div>
-      </div>
-
-      <div class="logic-step">
-        <div class="step-number">2</div>
-        <div><p><strong>Arrange digits:</strong> Make the largest number (8632) and smallest (2368)</p></div>
-      </div>
-
-      <div class="logic-step">
-        <div class="step-number">3</div>
-        <div><p><strong>Subtract:</strong> 8632 - 2368 = 6264</p></div>
-      </div>
-
-      <div class="logic-step">
-        <div class="step-number">4</div>
-        <div><p><strong>Repeat:</strong> Use the same digits and repeat the process</p></div>
-      </div>
-
-      <p style="background: #fff9e6; padding: 16px; border-radius: 4px; margin: 20px 0; border-left: 4px solid var(--math);">
-        <strong>The amazing result:</strong> No matter which 4-digit number you start with, you'll always reach <strong>6174</strong> and then cycle. This special number is called the <strong>Kaprekar Constant</strong>!
-      </p>
-
-      <details class="deep-dive">
-        <summary>Deep Dive: What about 3-digit numbers?</summary>
-        <div class="answer-body">
-          <p>If you apply the same process to 3-digit numbers, you always reach <strong>495</strong>! This is sometimes called the Kaprekar constant for 3-digit numbers.</p>
-        </div>
+      <p class="quiz-question">3. In the taller-neighbour game with 5 children standing shortest to tallest, what's the sequence?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">1, 1, 1, 1, 0. Everyone except the tallest (at the end) has one taller neighbour to their right.</div>
       </details>
-    </section>
-
-    <!-- Digit Sums -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">The Power of Digit Sums</h2>
-
-      <p>A digit sum is found by adding all the digits in a number. For example:</p>
-      <ul style="background: var(--math-light); padding: 20px; border-radius: 4px;">
-        <li>68: 6 + 8 = 14</li>
-        <li>176: 1 + 7 + 6 = 14</li>
-        <li>545: 5 + 4 + 5 = 14</li>
-      </ul>
-
-      <p><strong>Key insight:</strong> Numbers can have the same digit sum even if they're very different in value!</p>
-
-      <details class="deep-dive">
-        <summary>Deep Dive: Digit Sums and Divisibility</summary>
-        <div class="answer-body">
-          <p>Digit sums are useful for checking if operations are correct. For instance, a number is divisible by 3 if its digit sum is divisible by 3. A number is divisible by 9 if its digit sum is divisible by 9. This is a quick way to verify calculations!</p>
-        </div>
-      </details>
-    </section>
-
-    <!-- Collatz Conjecture -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">An Unsolved Mystery: The Collatz Conjecture</h2>
-
-      <p>Some of the most interesting mathematical questions are the simplest ones. Here's a rule that seems to always lead to 1, but no one has proved it:</p>
-
-      <div style="background: var(--math-light); padding: 20px; border-radius: 4px; margin: 20px 0;">
-        <p><strong>The Collatz Rule:</strong></p>
-        <ul>
-          <li>If the number is <strong>even:</strong> divide by 2</li>
-          <li>If the number is <strong>odd:</strong> multiply by 3 and add 1</li>
-          <li><strong>Repeat</strong> until you reach 1</li>
-        </ul>
-      </div>
-
-      <p><strong>Example (starting with 12):</strong> 12 → 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1</p>
-
-      <p>Every number ever tested reaches 1, but mathematicians still haven't proved it always works. <strong>This is one of the most famous unsolved problems in mathematics!</strong></p>
-
-      <details class="deep-dive">
-        <summary>Deep Dive: Why is this hard to prove?</summary>
-        <div class="answer-body">
-          <p>The Collatz sequence can bounce around unpredictably. Some numbers climb very high before coming back down to 1. With infinitely many numbers to check, we can't verify them all manually. A proof must show why the process always converges to 1 for every possible starting number.</p>
-        </div>
-      </details>
-    </section>
-
-    <!-- Estimation -->
-    <section style="margin: 40px 0;">
-      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Simple Estimation: When Exact Isn't Needed</h2>
-
-      <p>Sometimes we don't need exact numbers—a reasonable estimate is enough. Estimation helps us:</p>
-      <ul>
-        <li>Understand the scale of things (Is this in the hundreds? Thousands? Millions?)</li>
-        <li>Check if an answer is reasonable</li>
-        <li>Make quick decisions</li>
-      </ul>
-
-      <div class="error-trap">
-        <h4>Common Estimation Mistakes:</h4>
-        <p><strong>❌ Mistake:</strong> Rounding too aggressively and losing all sense of magnitude.</p>
-        <p><strong>✓ Better:</strong> Keep enough precision to get a reasonable answer. For example, estimating the number of students in your school as "about 400" is better than "about 1000."</p>
-      </div>
-    </section>
-
-    <!-- Error Trap -->
-    <section style="margin: 40px 0;">
-      <div class="error-trap">
-        <h4>⚠️ Common Error Trap: Digit Confusion</h4>
-        <p><strong>The Mistake:</strong> Confusing "digit sum" with "number of digits." For example, thinking 456 has a digit sum of 3 because it has 3 digits.</p>
-        <p><strong>The Truth:</strong> The digit sum of 456 is 4 + 5 + 6 = 15. The number of digits is 3.</p>
-        <p><strong>How to Avoid It:</strong> Always add the individual digits. Say it aloud: "4 plus 5 plus 6 equals 15."</p>
-      </div>
-    </section>
-
-    <!-- Quiz Section -->
-    <section class="quiz-section">
-      <h3>Check Your Understanding</h3>
-
-      <div class="quiz-item">
-        <h4>Level 1: Predict (Can you figure this out?)</h4>
-        <details class="quiz-answer">
-          <summary>Q1: What would be a palindrome between 100 and 200?</summary>
-          <div class="answer-body">
-            <p><strong>Answer:</strong> 101, 111, 121, 131, 141, 151, 161, 171, 181, 191 are all palindromes in this range. Any number of the form 1X1 where X is a digit works!</p>
-          </div>
-        </details>
-      </div>
-
-      <div class="quiz-item">
-        <h4>Level 2: Why (Explain your thinking)</h4>
-        <details class="quiz-answer">
-          <summary>Q2: Why does the Kaprekar process work? Why always 6174?</summary>
-          <div class="answer-body">
-            <p><strong>Explanation:</strong> This is an unsolved mathematical puzzle! We know it works empirically (we've tested it), but no one has a complete proof of why 6174 appears. It demonstrates that mathematics still has mysteries—even simple-to-state problems can be profound.</p>
-          </div>
-        </details>
-      </div>
-
-      <div class="quiz-item">
-        <h4>Level 3: Apply (Use your knowledge)</h4>
-        <details class="quiz-answer">
-          <summary>Q3: If a number's digit sum is 18, is the number divisible by 9?</summary>
-          <div class="answer-body">
-            <p><strong>Answer:</strong> Yes! A number is divisible by 9 if and only if its digit sum is divisible by 9. Since 18 ÷ 9 = 2, any number with digit sum 18 is divisible by 9. Example: 387 has digit sum 3+8+7=18, and 387 ÷ 9 = 43.</p>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <!-- Key Takeaways -->
-    <section style="background: var(--math-light); padding: 24px; border-radius: 4px; margin: 40px 0;">
-      <h3 style="color: var(--math); margin-top: 0;">Key Takeaways</h3>
-      <ul>
-        <li><strong>Numbers tell stories:</strong> They can describe positions, relationships, and patterns—not just quantities.</li>
-        <li><strong>Patterns are everywhere:</strong> Palindromes, digit sums, and special constants reveal hidden structure in numbers.</li>
-        <li><strong>Some mysteries remain:</strong> Even simple-to-state problems (like the Collatz conjecture) can baffle mathematicians for decades.</li>
-        <li><strong>Computational thinking:</strong> Breaking down number problems systematically is a skill that applies far beyond mathematics.</li>
-      </ul>
-    </section>
-
-    <!-- Chapter Navigation -->
-    <div class="chapter-nav">
-      <a href="../math/ch2.html" class="nav-link">← Ch 2: Lines and Angles</a>
-      <a href="../math/ch4.html" class="nav-link">Ch 4: Data Handling →</a>
     </div>
 
-  </main>
+    <div class="quiz-level">
+      <span class="quiz-level-tag why">Level 2 — Why</span>
+      <p class="quiz-question">4. Why is it impossible to have a row with NO supercells?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">The largest number in the row is always a supercell — it is bigger than every other number, including its neighbours. So at least one supercell always exists.</div>
+      </details>
+      <p class="quiz-question">5. Why does the digit-sum rule work for divisibility by 9?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">Because every power of 10 leaves remainder 1 when divided by 9 (10 = 9+1, 100 = 99+1, etc.). So the number's remainder when divided by 9 equals the digit-sum's remainder.</div>
+      </details>
+    </div>
 
-  <!-- Footer -->
-  <footer style="background: #f5f5f5; padding: 40px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #e0e0e0;">
-    <p style="color: #666; font-size: 13px; margin: 0;">
-      The Logical Builder • Class 6 Mathematics • Designed for deeper understanding
-    </p>
-  </footer>
+    <div class="quiz-level">
+      <span class="quiz-level-tag apply">Level 3 — Apply</span>
+      <p class="quiz-question">6. A shopkeeper has 5 price tags (₹50, ₹120, ₹80, ₹200, ₹30). How should she arrange them so exactly 2 are supercells?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">One way: ₹50, ₹200, ₹30, ₹120, ₹80. Here ₹200 beats 50 and 30, ₹120 beats 30 and 80. Exactly 2 supercells!</div>
+      </details>
+      <p class="quiz-question">7. Your friend's 4-digit phone PIN is a palindrome with all different digits. How many possible PINs are there?</p>
+      <details class="quiz-answer"><summary>Reveal Answer</summary>
+        <div class="answer-body">Form ABBA: A has 9 choices (1–9, can't be 0), B has 9 choices (0–9 except A). Total: 9 × 9 = 81 possible PINs.</div>
+      </details>
+    </div>
+  </div>
 
-  <script>
-    const progressBar = document.querySelector('.progress-bar');
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-    });
-  </script>
+  <div class="chapter-nav">
+    <a href="ch2.html" class="prev"><span class="label">← Previous</span> Lines and Angles</a>
+    <a href="ch4.html" class="next"><span class="label">Next →</span> Data Handling and Presentation</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Class 6 Learning Portal — Built with the Feynman Technique, First-Principles Reasoning &amp; Socratic Inquiry</p>
+  <p style="margin-top:4px;">Source: NCERT "Ganita Prakash" — Mathematics for Grade 6</p>
+</footer>
+
+<script>
+  const progressBar = document.querySelector('.progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+  });
+</script>
 </body>
 </html>

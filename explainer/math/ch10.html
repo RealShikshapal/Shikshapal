@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 10: The Other Side of Zero (Integers) - The Logical Builder</title>
+    <title>Chapter 10: The Other Side of Zero — Integers | Class 6 Math Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
         .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
@@ -16,445 +18,476 @@
         .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
     </style>
 </head>
-<body class="chapter-page">
-    <!-- Navigation -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html">The Logical Builder</a>
-            </div>
-            <div class="nav-pills">
-                <a href="../lang/ch1.html">Language</a>
-                <a href="../science/ch1.html">Science</a>
-                <a href="../math/ch1.html" class="active">Math</a>
-                <a href="../social/ch1.html">Social</a>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <nav class="nav-bar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+            <div class="nav-subjects">
+                <a href="../science/ch1.html" class="nav-pill science">Science</a>
+                <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+                <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+                <a href="../english/unit1.html" class="nav-pill english">English</a>
             </div>
         </div>
     </nav>
 
-    <!-- Progress Bar -->
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-    </div>
+    <main class="chapter-page">
+        <div class="chapter-header">
+            <h1>Chapter 10: The Other Side of Zero — Integers</h1>
+            <p class="chapter-subtitle">Exploring numbers beyond zero and their real-world applications</p>
+        </div>
 
-    <!-- Main Content -->
-    <main class="chapter-container">
-        <!-- Chapter Header -->
-        <header class="chapter-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a>
-                <span>/</span>
-                <a href="../math/ch1.html">Math</a>
-                <span>/</span>
-                <span>Chapter 10</span>
-            </div>
-            <h1>The Other Side of Zero</h1>
-            <p class="chapter-number">Chapter 10: Integers</p>
-        </header>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt;
+            <a href="../math/ch1.html">Mathematics</a> &gt;
+            <span>Chapter 10</span>
+        </div>
 
-        <!-- The Hook -->
-        <section class="hook-box">
-            <h3>The Hook: What Happens Below Zero?</h3>
-            <p>You know the counting numbers: 1, 2, 3, 4, ... You know about zero. You know about fractions like 1/2 and 3/4. But what about a floor below the ground? A temperature below freezing? A bank balance in debt? A year before the Common Era?</p>
-            <p>These real-world situations point to something profound: there are numbers that go the opposite direction from the counting numbers. They go to the left on the number line, below zero. These are <strong>negative numbers</strong>, and together with positive numbers and zero, they form the complete set of <strong>integers</strong>.</p>
+        <div class="hook-box">
+            <h3>Why do we need numbers less than zero?</h3>
+            <p>You've learned about counting numbers (1, 2, 3, ...) and zero. But have you ever thought about what happens if you go below zero? When a building has floors below ground, or when it's so cold that the temperature drops below freezing, or when you owe money to someone — in all these cases, we need numbers to represent "less than zero." These are called <strong>negative numbers</strong>, and together with positive numbers and zero, they form a special set of numbers called <strong>integers</strong>.</p>
+        </div>
+
+        <section class="learning-objectives">
+            <h2>What You'll Learn</h2>
+            <ul>
+                <li>Why negative numbers exist and how they're used in real life</li>
+                <li>How to represent numbers on a complete number line</li>
+                <li>Adding and subtracting positive and negative integers</li>
+                <li>Comparing and ordering integers</li>
+                <li>Real-world contexts: debt, temperature, altitude, and more</li>
+            </ul>
         </section>
 
-        <!-- The Feynman Bridge -->
         <section class="feynman-bridge">
-            <h3>The Feynman Bridge: Why Negative Numbers Matter</h3>
-            <span class="tag">Concept</span>
-            <p>For centuries, mathematicians resisted negative numbers. But the moment we ask, "What's the opposite of going up?" or "What's the opposite of gaining money?" we need them. Negative numbers are not abstract—they describe real situations: debts, depths, temperatures, directions.</p>
-            <p>The key insight: <strong>integers form a complete number system</strong> where every positive number has a negative opposite. Together, they allow us to describe motion in both directions, changes in both directions, and balances that go both ways.</p>
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <h3>The Complete Number Line</h3>
+            <p>Imagine a lift (elevator) that can go up and down indefinitely. The ground floor is marked as 0. Floors above are positive (+1, +2, +3, ...) and floors below are negative (-1, -2, -3, ...). When we rotate this vertical lift into a horizontal line, we get the complete <strong>number line</strong>:</p>
+            <div style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 14px; overflow-x: auto;">
+                <div style="padding: 10px; background: var(--math-light); border-radius: 8px;">
+                    ... -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   0   +1   +2   +3   +4   +5   +6   +7   +8   +9  +10 ...
+                </div>
+            </div>
+            <p><strong>Key insight:</strong> Just as positive numbers go on forever to the right, negative numbers go on forever to the left. Together, they form the set of all <strong>integers</strong>: ..., -3, -2, -1, 0, 1, 2, 3, ...</p>
         </section>
 
-        <!-- Logic Ladder 1: Introduction to Integers -->
         <section class="logic-ladder">
-            <h3>Logic Ladder 1: From Positive Numbers to Integers</h3>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <h4>The Number Line Extends</h4>
-                        <p>You learned the number line starting at 0 going right: 0, 1, 2, 3, ... But the number line actually extends to the left of 0 as well: ..., -3, -2, -1, 0, 1, 2, 3, ... This extended line represents all <strong>integers</strong>.</p>
-                    </div>
+            <h2>Understanding Integers: A Step-by-Step Journey</h2>
+
+            <div class="logic-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>From Numbers to Negative Numbers</h4>
+                    <p>We started with counting numbers (1, 2, 3, ...). Then we added zero (0), which represents nothing. But what about "less than nothing"? Consider Bela's Building of Fun, which has floors both above and below ground level.</p>
+                    <p><strong>Positive numbers (+1, +2, +3, ...):</strong> Floors above ground level. You press the "+" button on the lift to go up.</p>
+                    <p><strong>Negative numbers (-1, -2, -3, ...):</strong> Floors below ground level. You press the "-" button on the lift to go down.</p>
+                    <p><strong>Zero (0):</strong> The ground floor — neither positive nor negative, but the reference point between them.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <h4>Positive vs. Negative Numbers</h4>
-                        <p>A <strong>positive number</strong> has a '+' sign (though we usually write just "5" instead of "+5"). A <strong>negative number</strong> has a '–' sign (written as "-5"). Zero is neither positive nor negative—it's the boundary, the reference point.</p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>The Lift Button Analogy</h4>
+                    <p>Think of a lift with two buttons:</p>
+                    <ul>
+                        <li><strong>+ (plus button):</strong> Pressing it once goes up 1 floor. Pressing it three times (+3) goes up 3 floors.</li>
+                        <li><strong>- (minus button):</strong> Pressing it once goes down 1 floor. Pressing it four times (-4) goes down 4 floors.</li>
+                    </ul>
+                    <p><strong>Example:</strong> If you start at Floor +2 (Art Centre) and press the + button twice, you perform the operation (+2) + (+2) = +4 and reach Floor +4 (Sports Centre).</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <h4>Bela's Building: A Real-World Model</h4>
-                        <p>Imagine a building with floors above and below ground. The ground floor is Floor 0. Going up: Floor +1, +2, +3, ... Going down: Floor -1, -2, -3, ... Each floor number tells you where you are relative to ground level. This concrete model makes negative numbers tangible.</p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Inverse Numbers and Zero</h4>
+                    <p>Every positive number has a "negative partner" that cancels it out. These are called <strong>inverse numbers</strong>.</p>
+                    <p><strong>Example:</strong> If you press +3, you go up 3 floors. To return to where you started (Floor 0), you must press -3. This is written as: (+3) + (-3) = 0.</p>
+                    <p><strong>Inverse pairs:</strong></p>
+                    <ul>
+                        <li>+5 and -5 are inverses</li>
+                        <li>+10 and -10 are inverses</li>
+                        <li>+1 and -1 are inverses</li>
+                    </ul>
+                    <p><strong>Fun fact:</strong> Zero is its own inverse: 0 + 0 = 0.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">4</span>
-                    <div class="step-content">
-                        <h4>Opposites and Inverses</h4>
-                        <p>Every positive integer has a negative opposite. The opposite of +5 is -5. The opposite of -3 is +3. These opposites are called <strong>additive inverses</strong>—when you add them together, you get zero: (+5) + (-5) = 0.</p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Addition of Integers Using the Lift</h4>
+                    <p>We can think of addition as combining button presses on the lift.</p>
+                    <p><strong>Addition rule:</strong> Starting Floor + Movement = Target Floor</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>(+1) + (+4) = +5  [Start at Floor +1, go up 4 floors, reach Floor +5]</li>
+                        <li>(+4) + (-3) = +1  [Start at Floor +4, go down 3 floors, reach Floor +1]</li>
+                        <li>(-1) + (+2) = +1  [Start at Floor -1, go up 2 floors, reach Floor +1]</li>
+                        <li>(-1) + (-4) = -5  [Start at Floor -1, go down 4 floors, reach Floor -5]</li>
+                    </ul>
+                    <p><strong>Key observation:</strong> Adding a positive number moves you up (to the right). Adding a negative number moves you down (to the left).</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Subtraction of Integers: Finding the Movement</h4>
+                    <p>Subtraction tells us what movement (button press) we need to go from one floor to another.</p>
+                    <p><strong>Subtraction rule:</strong> Target Floor - Starting Floor = Movement needed</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>(+5) - (+2) = +3  [To go from Floor +2 to Floor +5, press +3 (go up 3)]</li>
+                        <li>(-1) - (+3) = -4  [To go from Floor +3 to Floor -1, press -4 (go down 4)]</li>
+                        <li>(-1) - (-2) = +1  [To go from Floor -2 to Floor -1, press +1 (go up 1)]</li>
+                        <li>(+2) - (-2) = +4  [To go from Floor -2 to Floor +2, press +4 (go up 4)]</li>
+                    </ul>
+                    <p><strong>Important pattern:</strong> Subtracting a negative number is the same as adding the positive! For instance, (+5) - (-2) = (+5) + (+2) = +7.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h4>Comparing and Ordering Integers</h4>
+                    <p>On the number line, the rule is simple: <strong>numbers to the right are greater</strong>.</p>
+                    <p><strong>Comparison examples:</strong></p>
+                    <ul>
+                        <li>-5 &lt; -3  (because -5 is to the left of -3)</li>
+                        <li>-3 &lt; 0  (because -3 is to the left of 0)</li>
+                        <li>0 &lt; 3  (because 0 is to the left of 3)</li>
+                        <li>-10 &lt; 5  (because -10 is to the left of 5)</li>
+                    </ul>
+                    <p><strong>Number ordering:</strong> Any negative number is less than zero, and zero is less than any positive number. Among negatives, the one further left (more negative) is smaller. Among positives, the one further right (more positive) is larger.</p>
+                    <p><strong>Ordering from least to greatest:</strong> -5, -3, -1, 0, 2, 4, 7</p>
                 </div>
             </div>
         </section>
 
-        <!-- Deep Dive 1: Understanding the Lift Model -->
-        <details class="deep-dive">
-            <summary>Deep Dive: The Lift Model and Button Presses</summary>
-            <div class="dive-content">
-                <p>Bela's Building uses a lift with two buttons: '+' (go up) and '–' (go down). Pressing '+' three times (or pressing '+3') takes you three floors up. Pressing '–' twice takes you two floors down.</p>
-                <p><strong>Key relationships:</strong></p>
-                <ul>
-                    <li>Button press '+3' from Floor 0 takes you to Floor +3</li>
-                    <li>Button press '–2' from Floor 0 takes you to Floor -2</li>
-                    <li>Button press '+2' from Floor -1 takes you to Floor +1 (because -1 + 2 = 1)</li>
-                    <li>Button press '–3' from Floor +2 takes you to Floor -1 (because 2 - 3 = -1)</li>
-                </ul>
-                <p><em>Why this model is powerful:</em> It separates starting position from movement. The same button press has different results depending where you start. This mirrors real integers: the same debt (negative number) has different meanings depending on your current balance.</p>
-                <p><strong>Connecting to the Number Line:</strong> The lift model naturally extends to the number line. Moving right (up) is positive. Moving left (down) is negative. The number line becomes a tool for visualizing addition and subtraction.</p>
-            </div>
-        </details>
+        <section class="deep-dive-container">
+            <h2>Deep Dives: Extending Your Understanding</h2>
 
-        <!-- Logic Ladder 2: Ordering and Comparing Integers -->
-        <section class="logic-ladder">
-            <h3>Logic Ladder 2: Comparing and Ordering Integers</h3>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <h4>The Position Rule on the Number Line</h4>
-                        <p>On the number line, numbers to the right are larger than numbers to the left. So -1 > -3 (because -1 is to the right of -3), and -2 < 5 (because -2 is to the left of 5). Use the number line, not intuition.</p>
-                    </div>
+            <details class="deep-dive">
+                <summary>The Mine Shaft Analogy: Large Integers in Context</summary>
+                <div class="dive-content">
+                    <p>Just like Bela's Building of Fun, a mine has a ground level (0) with depths below and elevations above. The lift in a mine moves between different levels:</p>
+                    <ul>
+                        <li>Level +40 means 40 meters above ground</li>
+                        <li>Level -90 means 90 meters below ground</li>
+                    </ul>
+                    <p>The same rules apply: if you're at Level +40 and move to Level -50, you've descended 90 meters. We write this as: (-50) - (+40) = -90.</p>
+                    <p>This shows that integers scale up infinitely in both directions. As positive numbers become +1, +2, +3, ... without end, negative numbers become -1, -2, -3, ... without end. There's always another integer to go to, in both directions!</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <h4>Negative Numbers Get Larger (less negative)</h4>
-                        <p>This trips up many students: -2 > -5, even though we think of 2 and 5 as numbers where 5 > 2. The key: -2 is closer to zero and to the right on the number line. Think of floors: Floor -2 is higher than Floor -5.</p>
-                    </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Real-World Applications: Where Negative Numbers Live</summary>
+                <div class="dive-content">
+                    <h4>Temperature Below Zero</h4>
+                    <p>In winter, cities like Leh in Ladakh experience temperatures far below freezing. We use negative numbers for these:</p>
+                    <ul>
+                        <li>+14°C at 2:00 PM (warm afternoon)</li>
+                        <li>+8°C at 11:00 AM (cool morning)</li>
+                        <li>-2°C at 11:00 PM (freezing night)</li>
+                        <li>-4°C at 2:00 AM (coldest part)</li>
+                    </ul>
+                    <p><strong>Question:</strong> How much warmer is 2:00 PM than 2:00 AM? (+14) - (-4) = +18°C warmer.</p>
+
+                    <h4>Bank Accounts and Debt</h4>
+                    <p>Your bank balance can be positive (you have money) or negative (you owe money):</p>
+                    <ul>
+                        <li>+₹200 means you have 200 rupees</li>
+                        <li>-₹50 means you owe 50 rupees (debt)</li>
+                    </ul>
+                    <p>If you start with ₹100, get ₹60 credit, then spend ₹30, your balance is: 100 + 60 - 30 = 130 rupees. If you then spend ₹150, your balance becomes: 130 - 150 = -20 rupees (you owe ₹20).</p>
+
+                    <h4>Altitude and Depth</h4>
+                    <p>We measure heights and depths from sea level:</p>
+                    <ul>
+                        <li>Mount Everest: +8,848 m (8,848 meters above sea level)</li>
+                        <li>Challenger Deep: -10,994 m (10,994 meters below sea level — the deepest ocean point)</li>
+                    </ul>
+                    <p>The difference in elevation from Everest to Challenger Deep is: 8,848 - (-10,994) = 19,842 meters!</p>
+
+                    <h4>Time and History</h4>
+                    <p>In history, we use negative numbers for years BCE (Before Common Era):</p>
+                    <ul>
+                        <li>+500 CE (or just 500) = 500 years after the start of the Common Era</li>
+                        <li>-500 BCE = 500 years before the Common Era</li>
+                    </ul>
+                    <p>The time difference between year -500 and year +500 is: 500 - (-500) = 1,000 years.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <h4>Positive Numbers Are Always Greater</h4>
-                        <p>Any positive integer is greater than any negative integer: 1 > -100, 0 > -5, etc. Zero is greater than all negative integers but less than all positive integers. This establishes a complete ordering.</p>
-                    </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>India's Mathematical Gift: The Invention of Zero</summary>
+                <div class="dive-content">
+                    <p>Did you know? The concept of zero as both a number and a placeholder for digits was invented in India! This is one of India's greatest contributions to world mathematics.</p>
+                    <p><strong>Before zero:</strong> In ancient number systems (Roman numerals, for example), there was no symbol for "nothing." Imagine trying to write numbers without a way to show an empty place — it would be confusing and limiting!</p>
+                    <p><strong>After zero:</strong> With the Indian number system (0-9), we can write any number clearly. We can distinguish between 1, 10, 100, 1,000 using positional value. This revolutionized mathematics, astronomy, and commerce worldwide.</p>
+                    <p><strong>Why zero matters for integers:</strong> Zero is the bridge between positive and negative numbers. It's the reference point on our number line. It's neither positive nor negative, but it connects both sides. Without zero, the concept of integers wouldn't make complete sense!</p>
+                    <p>This chapter on integers honors that Indian mathematical tradition by showing how zero creates a complete, balanced number system extending infinitely in both directions.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">4</span>
-                    <div class="step-content">
-                        <h4>Finding the Lowest and Highest</h4>
-                        <p>Given several integers, the lowest is the one furthest to the left on the number line. The highest is furthest to the right. Example: among -7, -3, 2, and 5, the lowest is -7, and the highest is 5.</p>
-                    </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Token Method: Visual Representation of Integer Operations</summary>
+                <div class="dive-content">
+                    <p>To visualize integer operations, we can use a token method:</p>
+                    <ul>
+                        <li><strong>Positive token:</strong> Represents +1</li>
+                        <li><strong>Negative token:</strong> Represents -1</li>
+                        <li><strong>Zero pair:</strong> One positive and one negative token together equal zero (they cancel out)</li>
+                    </ul>
+                    <p><strong>Example: Calculate (-3) + (+2)</strong></p>
+                    <p>Start with 3 negative tokens. Add 2 positive tokens. Two of the positive tokens pair with two negative tokens to form zero pairs and vanish. What remains? 1 negative token = -1.</p>
+                    <p>Therefore: (-3) + (+2) = -1</p>
+                    <p><strong>Example: Calculate (-3) - (+5)</strong></p>
+                    <p>We need to subtract 5 positive tokens from 3 negative tokens. But we only have 3 negative! We must add enough zero pairs to have 5 positive tokens to remove. Adding 5 zero pairs gives us 5 positive (and adds 5 negatives). Now we remove the 5 positive, leaving 3 + 5 = 8 negative tokens = -8.</p>
+                    <p>Therefore: (-3) - (+5) = -8</p>
                 </div>
-            </div>
+            </details>
         </section>
 
-        <!-- Deep Dive 2: Addition of Integers -->
-        <details class="deep-dive">
-            <summary>Deep Dive: Adding Integers—Two Models</summary>
-            <div class="dive-content">
-                <p><strong>Model 1: The Lift (Building Floors)</strong></p>
-                <p>Start at a floor, press buttons (positive = up, negative = down). Example: Start at Floor +2, press -3. You go from +2 down three floors: +2 → +1 → 0 → -1. So (+2) + (-3) = -1.</p>
-                <p><strong>Model 2: The Number Line</strong></p>
-                <p>Start at a number on the line. Move right for positive, left for negative. Same example: Start at +2, move 3 steps left. You land at -1. So (+2) + (-3) = -1.</p>
-                <p><strong>Model 3: Credits and Debits (Money)</strong></p>
-                <p>Think of positive numbers as money you have (credits) and negative numbers as money you owe (debits). If you have +50 rupees and owe -30 rupees, your net position is +50 + (-30) = +20 rupees.</p>
-                <p><em>The Pattern:</em> All three models give the same answer because they represent the same underlying principle: combining two movements or two quantities results in a net position.</p>
-                <p><strong>Key Rules for Adding:</strong></p>
-                <ul>
-                    <li>Positive + Positive = Positive (further right)</li>
-                    <li>Negative + Negative = Negative (further left)</li>
-                    <li>Positive + Negative = depends on magnitudes (whichever has larger absolute value wins the sign)</li>
-                </ul>
-            </div>
-        </details>
-
-        <!-- Logic Ladder 3: Subtraction of Integers -->
-        <section class="logic-ladder">
-            <h3>Logic Ladder 3: Subtracting Integers</h3>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <h4>Subtraction as Finding a Movement</h4>
-                        <p>Instead of "starting floor + movement," think of subtraction as: "What movement gets me from start to end?" Example: From Floor +2 to Floor -1. We need: (+2) + ? = -1, so ? = -3. Thus, (+2) – (+3) = -1.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <h4>Subtracting Negatives = Adding Positives</h4>
-                        <p>This is the key insight students must grasp: (+3) – (-2) = (+3) + (+2) = +5. Why? Because subtracting a debt is like gaining money. If you owe someone -2 and they forgive the debt, it's like gaining +2.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <h4>The Rule: Subtract = Add the Opposite</h4>
-                        <p>a – b = a + (-b). To subtract any integer, add its opposite. So: 5 – 3 = 5 + (-3) = 2. And: 5 – (-3) = 5 + 3 = 8. This single rule handles all cases.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <span class="step-number">4</span>
-                    <div class="step-content">
-                        <h4>Using the Number Line to Check</h4>
-                        <p>For any subtraction, move on the number line. (+4) – (-3): Start at +4, move right 3 steps (adding the opposite of -3). You land at +7. This visual confirmation builds confidence.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Deep Dive 3: Real-World Applications -->
-        <details class="deep-dive">
-            <summary>Deep Dive: Integers in Real Life</summary>
-            <div class="dive-content">
-                <p><strong>Temperature:</strong> A thermometer shows positive temps (above freezing, 0°C) and negative temps (below freezing). If it's -5°C and rises by 8°C, the new temperature is -5 + 8 = +3°C. This is integer addition.</p>
-                <p><strong>Altitude (Height):</strong> Mountains are positive (above sea level). The Dead Sea is about -400m (below sea level). If you climb from -400m to +2000m, you've climbed 2000 – (-400) = 2400m. Integer subtraction.</p>
-                <p><strong>Bank Balance:</strong> A credit (positive) adds to your balance. A withdrawal or debt (negative) subtracts. Starting balance -100 rupees (you owe), you earn +500. New balance: -100 + 500 = +400 rupees (you now have 400).</p>
-                <p><strong>Timeline (BCE to CE):</strong> The year -100 (100 BCE) is 100 years before year 0 (the reference). The year +500 (500 CE) is 500 years after. The time between them is: 500 – (-100) = 600 years.</p>
-                <p><strong>Why Integers Matter:</strong> These scenarios would be impossible or confusing using only positive numbers and zero. Negative numbers make the math consistent and powerful.</p>
-            </div>
-        </details>
-
-        <!-- Common Error Trap -->
         <section class="error-trap">
-            <h3>Common Error Trap</h3>
-            <p><strong>Mistake 1:</strong> "A negative number is smaller than its positive opposite."</p>
-            <p><strong>Why it's wrong:</strong> -5 < 5, yes. But -5 is not "bigger in badness." On the number line, -5 is simply to the left of 5. The absolute values are equal (both 5 units from zero); the directions differ. A floor of -2 is not "smaller" than floor +2; it's just below ground instead of above.</p>
-            <hr>
-            <p><strong>Mistake 2:</strong> "-3 > -7 is false because 3 < 7."</p>
-            <p><strong>Why it's wrong:</strong> This confuses the numbers with their absolute values. On the number line, -3 is to the right of -7, so -3 > -7 is TRUE. Think of it as floors: Floor -3 is higher (closer to ground) than Floor -7. Compare positions on the line, not the digits.</p>
-            <hr>
-            <p><strong>Mistake 3:</strong> "Subtracting a negative always means subtraction becomes harder."</p>
-            <p><strong>Why it's wrong:</strong> Subtracting a negative actually gives you a larger answer (it's like adding a positive). Example: 5 – (-3) = 8, not 2. Forgetting a debt (subtracting a negative) is the same as gaining money (adding a positive).</p>
-            <hr>
-            <p><strong>Mistake 4:</strong> "The answer must always have the sign of the larger number."</p>
-            <p><strong>Why it's wrong:</strong> In (-2) + (+8), the larger number is +8, and the answer is indeed +6. But in (-2) + (-8), there is no "larger positive"; the answer is -10 (both negative). The rule only applies to mixed-sign addition; for same-sign addition, the answer has that sign.</p>
+            <h4>⚠️ Common Mistakes to Avoid</h4>
+            <div class="mistake-grid">
+                <div class="mistake">
+                    <p><strong>Mistake 1:</strong> Thinking all negative numbers are "less than" all positive numbers. ✓ TRUE — but don't forget zero! -100 &lt; 0 &lt; 1.</p>
+                </div>
+                <div class="mistake">
+                    <p><strong>Mistake 2:</strong> Confusing -5 with "5 times" or treating the minus sign carelessly. The minus sign indicates direction (left on the number line), not repetition. -5 is five units to the left of zero.</p>
+                </div>
+                <div class="mistake">
+                    <p><strong>Mistake 3:</strong> Forgetting that subtracting a negative is the same as adding a positive. (-2) - (-3) = (-2) + (+3) = +1. Don't forget to flip the sign!</p>
+                </div>
+                <div class="mistake">
+                    <p><strong>Mistake 4:</strong> Thinking the number line has an end. Both positive and negative integers continue infinitely. There's always a bigger positive number and a smaller (more negative) number.</p>
+                </div>
+                <div class="mistake">
+                    <p><strong>Mistake 5:</strong> Misunderstanding zero. Zero is neither positive nor negative, but it's crucial as the "reference point" separating positive from negative. It's the midpoint of the number line.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Socratic Quiz -->
+        <section class="activity-box">
+            <h4>🎯 Hands-On Activity: Build Your Own Number Line</h4>
+            <p><strong>Materials needed:</strong> A long rope or string, paper cards with numbers from -10 to +10, and a space on the floor.</p>
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Place the rope on the floor in a straight line — this is your number line.</li>
+                <li>Place the card "0" at the center of the rope — this is your reference point (ground floor).</li>
+                <li>To the right of 0, place positive numbers: +1, +2, +3, ... in order (these are the floors above ground).</li>
+                <li>To the left of 0, place negative numbers: -1, -2, -3, ... in order (these are the floors below ground).</li>
+                <li>Now practice: stand at 0 and take steps along the line.
+                    <ul>
+                        <li>"Move to +4" — take 4 steps right</li>
+                        <li>"Move to -3" — take 3 steps left from +4, which means you'd be at +1</li>
+                        <li>"What operation gets you from +2 to -1?" — you need to move left 3, so (+2) + (-3) = -1</li>
+                    </ul>
+                </li>
+                <li><strong>Challenge:</strong> Have a friend call out two numbers, and you perform operations: "From +3, go to -2 — what's the movement?" Answer: (-2) - (+3) = -5</li>
+            </ol>
+            <p><strong>What you learn:</strong> Walking this number line makes addition and subtraction of integers very concrete. You see visually why "subtracting a negative is like adding a positive" — moving left on the line!</p>
+        </section>
+
         <section class="quiz-section">
-            <h3>Socratic Quiz: Test Your Understanding</h3>
+            <h3>Check Your Understanding</h3>
+            <p>Test your mastery of integers with these questions at three different levels:</p>
 
-            <!-- Level 1: Recognition -->
             <div class="quiz-level">
-                <h4>Level 1: Recognition (Basic)</h4>
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><em>(Simple recall and basic application)</em></p>
 
-                <div class="quiz-item">
-                    <p><strong>Q1:</strong> Which of the following is an integer?</p>
-                    <p>a) 3.5</p>
-                    <p>b) -7</p>
-                    <p>c) 1/2</p>
-                    <p>d) Both b and the parts before</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: b) -7</strong></p>
-                            <p>Integers are whole numbers (positive, negative, or zero). -7 is a negative integer. 3.5 is a decimal (not an integer). 1/2 is a fraction (not an integer).</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q1: Which of these is a negative integer? -5, +3, 0, or 8?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: -5</strong></p>
+                        <p>A negative integer has a minus sign. -5 means 5 units to the left of zero on the number line. It represents something "less than zero" — like 5 floors below ground, or 5 degrees below freezing.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q2:</strong> Which number is to the right of -3 on the number line?</p>
-                    <p>a) -5</p>
-                    <p>b) -4</p>
-                    <p>c) -2</p>
-                    <p>d) -6</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: c) -2</strong></p>
-                            <p>The number line goes: ... -6, -5, -4, -3, -2, -1, 0, ... To the right (toward 0 and beyond), -2 comes after -3. Numbers to the right are larger, so -2 > -3.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q2: What is the inverse of +7?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: -7</strong></p>
+                        <p>Inverse numbers cancel out: (+7) + (-7) = 0. If you go up 7 floors (+7) and then down 7 floors (-7), you're back where you started (floor 0).</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q3:</strong> What is the opposite (additive inverse) of -8?</p>
-                    <p>a) -8</p>
-                    <p>b) 8</p>
-                    <p>c) 0</p>
-                    <p>d) 1/8</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: b) 8</strong></p>
-                            <p>The additive inverse of any number is what you add to it to get zero. -8 + 8 = 0. So the inverse of -8 is +8.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q3: Is -10 greater than or less than -3?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: -10 is less than -3</strong></p>
+                        <p>We write this as: -10 &lt; -3. On the number line, -10 is further to the left than -3. Smaller numbers are always to the left of bigger numbers.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q4:</strong> You start on Floor -2 and press the lift button to go up 5 floors. Which floor do you reach?</p>
-                    <p>a) Floor -7</p>
-                    <p>b) Floor +3</p>
-                    <p>c) Floor -3</p>
-                    <p>d) Floor 0</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: b) Floor +3</strong></p>
-                            <p>Starting floor + movement = result. (-2) + (+5) = +3. You go from -2 up five floors: -2 → -1 → 0 → +1 → +2 → +3.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q4: Calculate: (+3) + (-5)</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: -2</strong></p>
+                        <p>Start at floor +3. Go down 5 floors (-5). You end up at floor -2. Think of it: from +3, go back 3 to reach 0, then back 2 more to reach -2.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary>Q5: What does Floor 0 represent in Bela's Building of Fun?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: The ground floor (the reference point)</strong></p>
+                        <p>Zero is neither positive nor negative. It's the middle point. Floors above it are positive, floors below it are negative. This is why zero is so important — it's the anchor point for the entire integer system.</p>
+                    </div>
+                </details>
             </div>
 
-            <!-- Level 2: Application -->
             <div class="quiz-level">
-                <h4>Level 2: Application (Intermediate)</h4>
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><em>(Understanding concepts and relationships)</em></p>
 
-                <div class="quiz-item">
-                    <p><strong>Q5:</strong> Evaluate: (+4) + (-7)</p>
-                    <p>a) +11</p>
-                    <p>b) +3</p>
-                    <p>c) -3</p>
-                    <p>d) -11</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: c) -3</strong></p>
-                            <p>Start at +4 and move 7 steps left (negative = left). +4 → +3 → +2 → +1 → 0 → -1 → -2 → -3. Or: we have +4 but owe 7, leaving a debt of 3, so -3.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q1: Why does (-1) - (-2) = +1? Explain using the Building of Fun.</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Starting at Floor -2, you need to reach Floor -1. Movement = (-1) - (-2). From Floor -2, you need to go UP 1 floor to reach Floor -1. So the answer is +1. This shows that moving from a lower floor to a higher floor requires an upward (positive) movement.</p>
+                        <p><strong>Algebraic way:</strong> Subtracting a negative is like reversing a "go down" instruction. The -(-2) becomes +2. So: (-1) - (-2) = (-1) + (+2) = +1.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q6:</strong> Evaluate: (-5) – (-3)</p>
-                    <p>a) -8</p>
-                    <p>b) -2</p>
-                    <p>c) +2</p>
-                    <p>d) +8</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: b) -2</strong></p>
-                            <p>Subtract a negative = add the positive opposite. (-5) – (-3) = (-5) + (+3) = -2. You're on floor -5, and subtracting (removing) a debt of -3 is like gaining +3 floors, taking you to floor -2.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q2: Why do we say "all negative numbers are less than zero"? What does this mean in real life?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> On the number line, negative numbers are always to the left of zero, and numbers to the left are always smaller. In real life: -10°C is colder than 0°C (less warmth). A bank balance of -₹50 (owing money) is less than 0 (having no money). A position of -5 meters (5 meters below sea level) is lower than 0 meters (sea level). Negative literally means "less than the reference point."</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q7:</strong> The temperature is -8°C. It rises by 12°C. What is the new temperature?</p>
-                    <p>a) -20°C</p>
-                    <p>b) -4°C</p>
-                    <p>c) +4°C</p>
-                    <p>d) +20°C</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: c) +4°C</strong></p>
-                            <p>(-8) + (+12) = +4. Start at -8, add 12: -8 → -7 → ... → 0 → +1 → +2 → +3 → +4.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q3: A lift starts at Floor -3, presses +2, then presses -5. Where does it end, and what's the total expression?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> The expression is: (-3) + (+2) + (-5)</p>
+                        <p>Step by step:</p>
+                        <ul>
+                            <li>Start: -3</li>
+                            <li>After +2: (-3) + (+2) = -1</li>
+                            <li>After -5: (-1) + (-5) = -6</li>
+                        </ul>
+                        <p>So: (-3) + (+2) + (-5) = -6. The lift ends at Floor -6.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q8:</strong> Your bank account is -200 rupees (you owe 200). You earn 500 rupees. What is your new balance?</p>
-                    <p>a) -700 rupees</p>
-                    <p>b) -300 rupees</p>
-                    <p>c) +300 rupees</p>
-                    <p>d) +700 rupees</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: c) +300 rupees</strong></p>
-                            <p>(-200) + (+500) = +300. You owe 200 but earn 500, leaving a net credit of 300 rupees.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q4: Is zero (0) a positive or negative number? Why is this important?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Zero is NEITHER positive nor negative. This is important because:</p>
+                        <ul>
+                            <li>Zero is the reference point between positive and negative</li>
+                            <li>It marks the balance point (in bank accounts, 0 means you owe nothing and have nothing)</li>
+                            <li>It's the starting point for the lift in the Building of Fun</li>
+                            <li>Without zero as a neutral anchor, the integer system wouldn't work — we'd have no clear dividing line</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary>Q5: Explain why (+2) - (-3) = (+2) + (+3) = +5. What rule does this illustrate?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> This illustrates the rule: "Subtracting a negative number is the same as adding the corresponding positive number."</p>
+                        <p>Why does this work? Imagine you're at Floor +2. If you're told to subtract a "go down by 3" instruction, it's the same as adding a "go up by 3" instruction! The minus sign in front of the -3 flips the operation. So when you subtract a negative, you're really adding a positive.</p>
+                        <p><strong>Mathematical insight:</strong> - (- 3) = + 3. Two negatives make a positive!</p>
+                    </div>
+                </details>
             </div>
 
-            <!-- Level 3: Analysis -->
             <div class="quiz-level">
-                <h4>Level 3: Analysis (Advanced)</h4>
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><em>(Complex problems requiring integration of concepts)</em></p>
 
-                <div class="quiz-item">
-                    <p><strong>Q9:</strong> Order these integers from smallest to largest: -5, 0, -2, 3, -10, 1</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: -10, -5, -2, 0, 1, 3</strong></p>
-                            <p>The number line goes left to right: ..., -10, ..., -5, ..., -2, 0, 1, ..., 3, ... On a number line, leftmost is smallest, rightmost is largest. So the order is: -10 < -5 < -2 < 0 < 1 < 3.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q1: A bank account starts at ₹100. There's a credit of ₹60, then a debit of ₹30, then a debit of ₹150. What's the final balance? Is it positive or negative?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> The expression is: 100 + 60 - 30 - 150 = -20</p>
+                        <p>Step by step:</p>
+                        <ul>
+                            <li>Start: ₹100</li>
+                            <li>After credit of ₹60: 100 + 60 = ₹160</li>
+                            <li>After debit of ₹30: 160 - 30 = ₹130</li>
+                            <li>After debit of ₹150: 130 - 150 = -₹20</li>
+                        </ul>
+                        <p><strong>Final balance: -₹20 (negative)</strong> This means the account holder owes ₹20 to the bank.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q10:</strong> From the year 100 BCE (written as -100), how many years pass to reach the year 200 CE (written as +200)?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: 300 years</strong></p>
-                            <p>The time between two points on the number line is: (+200) – (-100) = (+200) + (+100) = +300. Or: start at -100, move to 0 (that's 100 years), then move to +200 (that's 200 more years), totaling 100 + 200 = 300 years.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q2: The temperature at noon is +14°C. By midnight, it has dropped to -4°C. What is the change in temperature?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Change = Final Temperature - Initial Temperature</p>
+                        <p>Change = (-4) - (+14) = -4 - 14 = -18</p>
+                        <p>The temperature has dropped 18°C. (We say "dropped" because the change is negative — the temperature decreased.)</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q11:</strong> True or False: The sum of an integer and its additive inverse is always 0.</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: True</strong></p>
-                            <p>By definition, the additive inverse of a is the number that when added to a gives 0. So a + (-a) = 0, always. Examples: 5 + (-5) = 0, (-7) + 7 = 0, 0 + 0 = 0.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q3: On a number line, you start at position -8. You need to reach position +6. What is the distance you must travel, and in which direction?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Movement = Target - Starting Position</p>
+                        <p>Movement = (+6) - (-8) = 6 + 8 = +14</p>
+                        <p>You must travel 14 units to the RIGHT. Why 14? From -8, you go right 8 units to reach 0, then right 6 more units to reach +6. Total: 8 + 6 = 14 units.</p>
+                    </div>
+                </details>
 
-                <div class="quiz-item">
-                    <p><strong>Q12:</strong> A submarine starts at sea level (0), descends 150 meters (-150), then rises 80 meters. What is its final depth?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer: -70 meters (70 meters below sea level)</strong></p>
-                            <p>Start at 0. Descend 150: 0 + (-150) = -150. Rise 80: (-150) + (+80) = -70. The submarine is 70 meters below sea level.</p>
-                        </div>
-                    </details>
-                </div>
+                <details class="quiz-answer">
+                    <summary>Q4: In a sequence, the numbers are: -5, -2, 1, 4, 7, .... If you continue this pattern, what are the next three numbers?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> The next three numbers are: 10, 13, 16</p>
+                        <p><strong>Pattern analysis:</strong></p>
+                        <ul>
+                            <li>-5 to -2: difference is +3</li>
+                            <li>-2 to 1: difference is +3</li>
+                            <li>1 to 4: difference is +3</li>
+                            <li>4 to 7: difference is +3</li>
+                        </ul>
+                        <p>Each term is 3 more than the previous. So: 7 + 3 = 10, 10 + 3 = 13, 13 + 3 = 16.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary>Q5: The height of Mount Everest above sea level is +8,848 m. The depth of the Challenger Deep below sea level is -10,994 m. What is the total vertical distance between the highest and lowest points?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Distance = Higher Point - Lower Point</p>
+                        <p>Distance = (+8,848) - (-10,994) = 8,848 + 10,994 = 19,842 meters</p>
+                        <p>The vertical distance between Mount Everest's peak and Challenger Deep's bottom is 19,842 meters — nearly 20 kilometers! This shows the incredible range of elevations on Earth.</p>
+                    </div>
+                </details>
             </div>
         </section>
 
-        <!-- Chapter Navigation -->
-        <nav class="chapter-nav">
-            <a href="ch9.html" class="nav-prev">
-                <span class="nav-arrow">←</span>
-                <div>
-                    <span class="nav-label">Previous Chapter</span>
-                    <span class="nav-title">Symmetry</span>
-                </div>
-            </a>
-            <a href="../index.html" class="nav-next">
-                <div>
-                    <span class="nav-label">End of Course</span>
-                    <span class="nav-title">Back to All Subjects</span>
-                </div>
-                <span class="nav-arrow">→</span>
-            </a>
-        </nav>
+        <div class="chapter-nav">
+          <a href="ch9.html" class="prev"><span class="label">← Previous</span> Symmetry</a>
+          
+        </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>This interactive learning portal was created to enhance understanding of mathematics concepts for Class 6 students.</p>
+            <p><strong>Source:</strong> Content based on the NCERT textbook "Ganita Prakash" (Mathematics) for Grade 6, Reprint 2025-26. We acknowledge the National Council of Educational Research and Training (NCERT) for providing quality educational materials.</p>
+        </footer>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 The Logical Builder. All rights reserved. | <a href="../index.html">Home</a> | <a href="../math/ch1.html">Math Home</a></p>
-    </footer>
-
-    <!-- Progress Bar Script -->
     <script>
-        function updateProgressBar() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-            document.getElementById('progressBar').style.width = scrollPercent + '%';
-        }
-        window.addEventListener('scroll', updateProgressBar);
-        updateProgressBar();
+        // Progress bar functionality
+        const progressBar = document.querySelector('.progress-bar');
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        window.addEventListener('scroll', () => {
+            if (scrollHeight > 0) {
+                const progress = (window.scrollY / scrollHeight) * 100;
+                progressBar.style.width = progress + '%';
+            }
+        });
     </script>
 </body>
 </html>

@@ -17,24 +17,19 @@
     </style>
 </head>
 <body class="chapter-page">
-    <!-- Navigation -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="../index.html">The Logical Builder</a>
-            </div>
-            <div class="nav-pills">
-                <a href="../lang/ch1.html">Language</a>
-                <a href="../science/ch1.html">Science</a>
-                <a href="../math/ch1.html" class="active">Math</a>
-                <a href="../social/ch1.html">Social</a>
-            </div>
-        </div>
-    </nav>
+    <div class="progress-bar-container"><div class="progress-bar"></div></div>
 
-    <!-- Progress Bar -->
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
+    <nav class="nav-bar">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+        <div class="nav-subjects">
+          <a href="../science/ch1.html" class="nav-pill science">Science</a>
+          <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+          <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+          <a href="../english/unit1.html" class="nav-pill english">English</a>
+        </div>
+      </div>
+    </nav>
     </div>
 
     <!-- Main Content -->
@@ -54,147 +49,383 @@
 
         <!-- The Hook -->
         <section class="hook-box">
-            <h3>The Hook: Patterns in Nature</h3>
-            <p>Look around you. A butterfly with matching wings. A flower with identical petals arranged in a circle. A rangoli with repeating patterns. An ice cream building with floors above and below ground. What do all these have in common?</p>
-            <p>They all display <strong>symmetry</strong>—a fundamental pattern where parts repeat in a definite, beautiful way. Symmetry isn't just about looks; it's a hidden language that nature, architects, and artists use to create balance and harmony.</p>
+            <h3>Why is a butterfly considered beautiful?</h3>
+            <p>Look at a butterfly, a flower, or a rangoli pattern. Notice how parts repeat and match perfectly? Symmetry is everywhere in nature—from flower petals to snowflakes to architectural wonders like the Taj Mahal. Symmetry isn't just about beauty; it's a fundamental mathematical property that reveals patterns and balance. In this chapter, you'll discover that symmetry comes in two main forms: reflection and rotation.</p>
         </section>
 
         <!-- The Feynman Bridge -->
         <section class="feynman-bridge">
-            <h3>The Feynman Bridge: What is Symmetry?</h3>
-            <span class="tag">Concept</span>
-            <p><strong>Symmetry</strong> refers to parts (or the whole) of a figure that repeat in a definite pattern. When a figure displays symmetry, it means certain parts are reflected, rotated, or repeated in a way that creates a sense of balance and order.</p>
-            <p>Think of a mirror placed on a figure. If one side mirrors the other perfectly, that's one type of symmetry. Or imagine spinning a shape—if it looks identical after rotation, that's another type. These two kinds of symmetry—<em>reflection symmetry</em> and <em>rotational symmetry</em>—are the main characters in this chapter.</p>
+            <h3>What is Symmetry?</h3>
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <p>Symmetry refers to parts of a figure that repeat in a definite pattern. A symmetrical figure has parts that match perfectly when folded or rotated. There are two main types:</p>
+            <ul style="margin-top: 1rem;">
+                <li><strong>Reflection symmetry (Line of symmetry):</strong> A figure can be folded along a line so that the two halves match exactly (mirror halves)</li>
+                <li><strong>Rotational symmetry:</strong> A figure looks exactly the same when rotated by a specific angle (less than 360°) around a fixed point</li>
+            </ul>
+            <p>Some figures have both types of symmetry, some have only one, and some have none.</p>
         </section>
 
-        <!-- Logic Ladder 1: Line of Symmetry -->
+        <!-- Logic Ladder: Understanding Symmetry -->
         <section class="logic-ladder">
-            <h3>Logic Ladder 1: Understanding Line Symmetry</h3>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <h4>What is a Line of Symmetry?</h4>
-                        <p>A <strong>line of symmetry</strong> is an imaginary line that cuts a figure into two parts such that when you fold the figure along this line, the two parts overlap exactly—like mirror images!</p>
-                    </div>
+            <h2>Building Block Logic: Understanding Symmetry</h2>
+
+            <div class="logic-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Recognizing Reflection Symmetry</h4>
+                    <p>A line of symmetry is an imaginary fold line. When you fold a figure along this line, both halves match perfectly—they're mirror images. Not all lines divide a figure symmetrically. Test a line: fold and check if both halves overlap exactly.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <h4>The Fold Test</h4>
-                        <p>To check if a line is a line of symmetry: fold the figure along the line. If both halves cover each other completely with no gaps or overlaps, you've found a line of symmetry. If the halves don't match, it's not a line of symmetry.</p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Finding All Lines of Symmetry</h4>
+                    <p>A figure can have zero, one, or multiple lines of symmetry. To find them all: test different fold directions. Common directions include vertical (up-down), horizontal (left-right), and diagonal folds. For regular shapes, lines pass through centers or opposite vertices.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <h4>Multiple Lines of Symmetry</h4>
-                        <p>A square has <strong>four</strong> lines of symmetry: two vertical/horizontal and two diagonal. A rectangle has only <strong>two</strong>. Some shapes (like scalene triangles or clouds) have none. The number of lines depends on the shape's regularity and structure.</p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Understanding Reflection</h4>
+                    <p>When you fold along a line of symmetry, points on one side "reflect" (mirror) to the other side. If point A is on one side, its reflection A' appears on the other side at the same distance from the fold line. The fold line itself acts as a mirror.</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">4</span>
-                    <div class="step-content">
-                        <h4>Why the Diagonal Test Fails for Non-Squares</h4>
-                        <p>For a square, the diagonals ARE lines of symmetry because the square's sides are all equal and all angles are equal. But for a rectangle (where opposite sides are equal but adjacent sides differ), the diagonals do NOT create mirror halves. <strong>This is the crucial difference!</strong></p>
-                    </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Discovering Rotational Symmetry</h4>
+                    <p>Some figures look identical after rotation (turning around a center point). The angle you rotate is called the angle of rotational symmetry. For example, a square looks the same after rotating 90°, 180°, 270°, and 360°.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Comparing Angles of Rotational Symmetry</h4>
+                    <p>If a figure has n angles of rotational symmetry (excluding 360°), the smallest angle divides 360° evenly. For instance, 4 angles of symmetry means 360° ÷ 4 = 90° is the smallest angle. All other angles are multiples: 180°, 270°, 360°.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h4>Finding Center of Rotation</h4>
+                    <p>The center of rotation is the fixed point around which the figure rotates. For shapes like squares and flowers, this is typically the geometric center. To find it, draw lines connecting opposite points or vertices; they intersect at the center.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">7</div>
+                <div class="step-content">
+                    <h4>Combining Both Symmetries</h4>
+                    <p>Some figures have both reflection and rotational symmetry (like squares and regular polygons), some have only one type (like isosceles triangles), and some have neither (like most irregular shapes). Understanding both types reveals the complete symmetry picture.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Deep Dive 1: Reflection Symmetry -->
-        <details class="deep-dive">
-            <summary>Deep Dive: Reflection Symmetry and Point Mapping</summary>
-            <div class="dive-content">
-                <p>When you fold a square along its vertical line of symmetry (the vertical middle line), points swap positions. For example, if the square has corners labeled A (top-left), B (top-right), C (bottom-right), and D (bottom-left):</p>
-                <ul>
-                    <li><strong>Point A</strong> (top-left) reflects to where <strong>Point B</strong> was (top-right)</li>
-                    <li><strong>Point B</strong> reflects to where <strong>Point A</strong> was (top-left)</li>
-                    <li><strong>Point D</strong> reflects to where <strong>Point C</strong> was (bottom-right)</li>
-                    <li><strong>Point C</strong> reflects to where <strong>Point D</strong> was (bottom-left)</li>
-                </ul>
-                <p><em>Why this matters:</em> Reflection symmetry is mathematical—it shows that geometry isn't just about shape, but about precise relationships. Each point has an "image" on the other side of the line, at an equal distance from the line.</p>
-                <p>This concept extends beyond shapes. In architecture, the Taj Mahal displays reflection symmetry—the left half is a mirror image of the right half. In nature, a butterfly's wings show the same principle.</p>
-            </div>
-        </details>
+        <!-- Content section: Line of Symmetry -->
+        <section class="content-block">
+            <h2>Line of Symmetry: Mirror Halves</h2>
+            <p>When you fold a figure along a line and both halves overlap perfectly, that line is a line of symmetry. It's like folding paper to create mirror images.</p>
 
-        <!-- Logic Ladder 2: Rotational Symmetry -->
-        <section class="logic-ladder">
-            <h3>Logic Ladder 2: Rotational Symmetry and Angles</h3>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <div class="step-content">
-                        <h4>What is Rotational Symmetry?</h4>
-                        <p>A figure has <strong>rotational symmetry</strong> if it looks exactly the same after being rotated (turned) about a fixed point called the <strong>centre of rotation</strong>. The angle through which you rotate is the <strong>angle of symmetry</strong>.</p>
-                    </div>
+            <details class="deep-dive">
+                <summary>Understanding Mirror Halves</summary>
+                <div class="content">
+                    <p>Take a triangular piece of paper. Draw a line through it. Fold along this line. Do the two halves match exactly? If yes, it's a line of symmetry. If not, try a different line.</p>
+                    <p><strong>Key principle:</strong> Every point on one side of the line has a corresponding point on the other side at the same distance from the line. For example, if point A is 2 cm to the left of the line, its mirror image A' is 2 cm to the right.</p>
+                    <p><strong>Testing lines:</strong> A figure might have no line of symmetry (like most random shapes), one line (like an isosceles triangle), or many lines (like a square with 4 lines).</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <div class="step-content">
-                        <h4>The Windmill Example</h4>
-                        <p>A paper windmill (with 4 identical arms) looks the same after a 90° rotation (quarter turn). It also looks the same after 180° (half turn), 270° (three-quarter turn), and 360° (full turn). So it has <strong>4 angles of symmetry</strong>.</p>
-                    </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Multiple Lines of Symmetry in Regular Shapes</summary>
+                <div class="content">
+                    <p><strong>Square:</strong> Has 4 lines of symmetry</p>
+                    <ul>
+                        <li>Vertical line through the center (top to bottom)</li>
+                        <li>Horizontal line through the center (left to right)</li>
+                        <li>Diagonal from bottom-left to top-right</li>
+                        <li>Diagonal from top-left to bottom-right</li>
+                    </ul>
+                    <p><strong>Rectangle (non-square):</strong> Has 2 lines of symmetry</p>
+                    <ul>
+                        <li>Vertical line through the center</li>
+                        <li>Horizontal line through the center</li>
+                        <li>Note: The diagonals are NOT lines of symmetry for non-square rectangles</li>
+                    </ul>
+                    <p><strong>Equilateral Triangle:</strong> Has 3 lines of symmetry (one through each vertex and the opposite side's midpoint)</p>
+                    <p><strong>Regular Hexagon:</strong> Has 6 lines of symmetry (through opposite vertices and opposite side midpoints)</p>
                 </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <div class="step-content">
-                        <h4>Order of Rotational Symmetry</h4>
-                        <p>The <strong>order of rotational symmetry</strong> is how many times a figure repeats itself during a full 360° rotation. A windmill has order 4. A square also has order 4 (90°, 180°, 270°, 360°). A figure that only looks the same at 360° has no rotational symmetry.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <span class="step-number">4</span>
-                    <div class="step-content">
-                        <h4>Finding Angles: The Division Rule</h4>
-                        <p>For a figure with rotational symmetry, if it has <strong>n</strong> equal arms or parts, the smallest angle of symmetry is <strong>360° ÷ n</strong>. All other angles are multiples of this smallest angle. Example: 3 arms → 360° ÷ 3 = 120°, so angles are 120°, 240°, 360°.</p>
-                    </div>
-                </div>
+            </details>
+
+            <div class="error-trap">
+                <h4>Mistake: Assuming Diagonals are Always Lines of Symmetry</h4>
+                <p>Many students think all diagonals of rectangles are lines of symmetry. This is false! Test it: fold a non-square rectangle along its diagonal. Do the halves match? No. Diagonals are lines of symmetry ONLY for squares (and some other special shapes), not for general rectangles.</p>
             </div>
         </section>
 
-        <!-- Deep Dive 2: Rotational Symmetry of Regular Figures -->
-        <details class="deep-dive">
-            <summary>Deep Dive: Building Rotational Symmetry with Radial Arms</summary>
-            <div class="dive-content">
-                <p><strong>The Key Insight:</strong> For a figure with radial arms (arms extending from a centre) to have rotational symmetry, the angles between adjacent arms must be equal.</p>
-                <ul>
-                    <li><strong>2 arms:</strong> Angle between them = 360° ÷ 2 = 180°. Angles of symmetry: 180°, 360°</li>
-                    <li><strong>3 arms:</strong> Angle between them = 360° ÷ 3 = 120°. Angles of symmetry: 120°, 240°, 360°</li>
-                    <li><strong>4 arms:</strong> Angle between them = 360° ÷ 4 = 90°. Angles of symmetry: 90°, 180°, 270°, 360°</li>
-                    <li><strong>5 arms:</strong> Angle between them = 360° ÷ 5 = 72°. Angles of symmetry: 72°, 144°, 216°, 288°, 360°</li>
-                </ul>
-                <p><em>Why this works:</em> If arms are equally spaced, rotating by the angle between any two adjacent arms brings the entire figure back to its original appearance. This is why wheels, flowers, and pinwheels display such perfect rotational symmetry.</p>
-                <p><strong>A Special Case—The Circle:</strong> A circle is infinitely symmetric! Every angle is an angle of symmetry (rotate by any amount, and it looks identical). Every diameter is a line of symmetry. The circle is the ultimate expression of rotational and reflection symmetry combined.</p>
-            </div>
-        </details>
+        <!-- Content section: Creating Symmetric Figures -->
+        <section class="content-block">
+            <h2>Creating Symmetric Figures: Hands-On Techniques</h2>
+            <p>You can create beautiful symmetric shapes using simple techniques like folding, cutting, and stamping.</p>
 
-        <!-- Common Error Trap -->
-        <section class="error-trap">
-            <h3>Common Error Trap</h3>
-            <p><strong>Mistake 1:</strong> "A rectangle's diagonal is a line of symmetry."</p>
-            <p><strong>Why it's wrong:</strong> When you fold a rectangle (where length ≠ width) along its diagonal, the two halves do NOT overlap completely. They only work for squares because squares have all sides equal. A rectangle's only lines of symmetry are vertical and horizontal (through its centre).</p>
-            <hr>
-            <p><strong>Mistake 2:</strong> "360° is the only angle of symmetry for any figure."</p>
-            <p><strong>Why it's wrong:</strong> Every figure returns to itself after a 360° rotation, but shapes like squares and windmills return to themselves BEFORE completing a full turn. A square looks identical at 90°, 180°, and 270°, so these are also angles of symmetry. Only count angles less than 360° if the figure truly repeats before a full turn.</p>
-            <hr>
-            <p><strong>Mistake 3:</strong> "Reflection symmetry and rotational symmetry are the same thing."</p>
-            <p><strong>Why it's wrong:</strong> They're different! A kite has reflection symmetry (fold it and halves match) but no rotational symmetry. A pinwheel (without a vertical/horizontal line through it) has rotational symmetry but no reflection symmetry. Some shapes (like squares) have both, but they're distinct properties.</p>
+            <details class="deep-dive">
+                <summary>Ink Blot Devils (Reflection Symmetry Activity)</summary>
+                <div class="content">
+                    <p><strong>Method:</strong></p>
+                    <ol>
+                        <li>Fold a piece of paper in half</li>
+                        <li>Drop ink (or paint) on one half</li>
+                        <li>Press the halves together firmly</li>
+                        <li>Open the paper carefully</li>
+                    </ol>
+                    <p><strong>Result:</strong> A perfectly symmetric figure! The fold line is the line of symmetry. The ink on one side reflects to create a matching pattern on the other side. This naturally demonstrates reflection symmetry—nature creates the symmetry through the folding process.</p>
+                </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Paper Folding and Cutting Symmetry</summary>
+                <div class="content">
+                    <p><strong>Basic technique:</strong></p>
+                    <ol>
+                        <li>Fold paper in half (this fold line becomes a line of symmetry)</li>
+                        <li>Make a cut along an edge or in the middle</li>
+                        <li>Unfold carefully to see the symmetric pattern</li>
+                    </ol>
+                    <p><strong>Advanced technique:</strong> Fold paper multiple times before cutting. For example, fold vertically and then horizontally (double fold). A single cut on this double-folded paper creates patterns with 2 or 4 lines of symmetry when unfolded!</p>
+                    <p><strong>Punching game:</strong> Fold paper and punch holes using a hole puncher. The unfolded paper shows symmetric patterns. By varying fold directions (vertical, horizontal, diagonal), you create different symmetric designs.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Create Your Own Symmetric Art</h4>
+                <p><strong>Experiment 1 (Ink Blots):</strong> Create 3 different ink blot patterns. For each, identify the fold line (line of symmetry) and verify that both halves are identical mirror images.</p>
+                <p><strong>Experiment 2 (Paper Cutting):</strong> Fold a square paper into 4 sections (fold vertically and horizontally). Make a cut at the center corner. Unfold to see how many symmetric copies appear. Repeat with different cuts at different positions.</p>
+                <p><strong>Experiment 3 (Predicting Symmetry):</strong> Before unfolding, predict what the final symmetric pattern will look like. Then unfold and check your prediction. This develops spatial reasoning.</p>
+            </div>
         </section>
 
-        <!-- Socratic Quiz -->
+        <!-- Content section: Rotational Symmetry -->
+        <section class="content-block">
+            <h2>Rotational Symmetry: Turning Around</h2>
+            <p>Some figures look identical when rotated (turned around a center point). This is different from reflection—it's about rotation angles and order of symmetry.</p>
+
+            <details class="deep-dive">
+                <summary>Understanding Rotational Symmetry and Order</summary>
+                <div class="content">
+                    <p><strong>Angle of rotational symmetry:</strong> The angle you rotate a figure to make it look identical to the original. For a square, this is 90° (quarter turn). For an equilateral triangle, this is 120° (one-third turn).</p>
+                    <p><strong>Order of rotational symmetry:</strong> How many times a figure looks identical as you make one complete 360° rotation. A square has order 4 (looks the same after 90°, 180°, 270°, 360°). An equilateral triangle has order 3 (looks the same after 120°, 240°, 360°).</p>
+                    <p><strong>Relationship:</strong> If a figure has order n, the smallest angle of rotational symmetry is 360° ÷ n. For example:</p>
+                    <ul>
+                        <li>Order 2: smallest angle = 360° ÷ 2 = 180°</li>
+                        <li>Order 3: smallest angle = 360° ÷ 3 = 120°</li>
+                        <li>Order 4: smallest angle = 360° ÷ 4 = 90°</li>
+                        <li>Order 6: smallest angle = 360° ÷ 6 = 60°</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Radial Symmetry and Angles</summary>
+                <div class="content">
+                    <p>Figures with radial arms (like flowers, wheels, or geometric stars) often have rotational symmetry. The number of arms determines the angles:</p>
+                    <ul>
+                        <li><strong>2 radial arms:</strong> Order 2, angles of symmetry = 180°, 360°</li>
+                        <li><strong>3 radial arms:</strong> Order 3, angles of symmetry = 120°, 240°, 360°</li>
+                        <li><strong>4 radial arms:</strong> Order 4, angles of symmetry = 90°, 180°, 270°, 360°</li>
+                        <li><strong>5 radial arms:</strong> Order 5, angles of symmetry = 72°, 144°, 216°, 288°, 360°</li>
+                    </ul>
+                    <p>To create a figure with n arms that has rotational symmetry, the angle between adjacent arms must be 360° ÷ n. This mathematical relationship is why regular flowers often have 3, 4, 5, or 6 petals—these numbers divide 360 evenly.</p>
+                </div>
+            </details>
+
+            <div class="error-trap">
+                <h4>Mistake: Confusing "No Rotational Symmetry" with "Not Symmetric"</h4>
+                <p>A figure with no rotational symmetry (only reflection symmetry) is still symmetric! For example, an isosceles triangle has one line of symmetry but no rotational symmetry. It's not symmetric under rotation, but it is symmetric under reflection. Always check both types.</p>
+            </div>
+        </section>
+
+        <!-- Content section: The Circle -->
+        <section class="content-block">
+            <h2>The Circle: Perfect Symmetry</h2>
+            <p>Circles are the ultimate example of symmetry. They have infinitely many lines of symmetry and can be rotated by any angle.</p>
+
+            <details class="deep-dive">
+                <summary>Infinite Symmetries of a Circle</summary>
+                <div class="content">
+                    <p><strong>Line of symmetry:</strong> Every diameter of a circle is a line of symmetry. Since a circle has infinitely many diameters, it has infinitely many lines of symmetry. This is unusual—most shapes have finitely many lines.</p>
+                    <p><strong>Rotational symmetry:</strong> A circle looks identical when rotated by ANY angle (not just specific angles). This is also unique. No other common shape has this property. The order of rotational symmetry for a circle is infinite.</p>
+                    <p><strong>Why circles are special:</strong> The circle is perfectly symmetric in all directions from its center. This is why wheels, flowers, and many natural structures are circular—circles distribute symmetry evenly in all directions.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Exploring Circle Symmetry with Colors</h4>
+                <p><strong>Task:</strong> Divide a circle into sectors (pie slices) and color them. Experiment with different coloring patterns and find how many angles of rotational symmetry the resulting figure has.</p>
+                <p><strong>Example 1:</strong> Color 3 alternating sectors (e.g., red, blue, red). How many times do you rotate before it looks the same? (Answer: 3 times = order 3)</p>
+                <p><strong>Example 2:</strong> Color 4 alternating sectors. Order = ? (Answer: 4)</p>
+                <p><strong>Challenge:</strong> Can you find all possible orders of rotational symmetry by coloring a circle divided into 12 equal sectors?</p>
+            </div>
+        </section>
+
+        <!-- Content section: Real World Symmetry -->
+        <section class="content-block">
+            <h2>Symmetry in Real World: Nature and Architecture</h2>
+            <p>Symmetry isn't just a mathematical concept—it's visible everywhere in nature and human design.</p>
+
+            <details class="deep-dive">
+                <summary>Natural Symmetry Examples</summary>
+                <div class="content">
+                    <p><strong>Butterflies:</strong> Bilateral (left-right) symmetry. One vertical line divides them into mirror halves. This helps them move symmetrically through air.</p>
+                    <p><strong>Flowers:</strong> Often have rotational symmetry with order equal to the number of petals. A 5-petaled flower has order 5 (72° rotation angles). This regular spacing helps with pollination.</p>
+                    <p><strong>Snowflakes:</strong> Have 6-fold rotational symmetry and 6 lines of reflection symmetry. Their crystalline structure naturally creates this symmetry.</p>
+                    <p><strong>Starfish:</strong> Typically have 5-fold rotational symmetry. Each arm looks like the others.</p>
+                </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Architectural Symmetry</summary>
+                <div class="content">
+                    <p><strong>Taj Mahal:</strong> Exhibits bilateral (mirror) symmetry. The left side mirrors the right side perfectly. This symmetry is intentional—it represents balance and harmony in Islamic design.</p>
+                    <p><strong>Gopurams (temple towers):</strong> Often have vertical bilateral symmetry with intricate patterns that repeat symmetrically on both sides.</p>
+                    <p><strong>Parliament Building in Delhi:</strong> The outer boundary has 3 lines of symmetry and rotational symmetry with order 3 (120° rotation angles). This design choice creates a sense of balance and importance.</p>
+                    <p><strong>Rangoli patterns:</strong> Traditional Indian decorative designs often use multiple lines of symmetry, sometimes 4, 6, or 8. The radial arrangement of petals and patterns creates both reflection and rotational symmetry.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Symmetry Hunt Around You</h4>
+                <p><strong>Task 1:</strong> Find 5 objects in your home with line symmetry. For each, draw the line(s) of symmetry.</p>
+                <p><strong>Task 2:</strong> Find 5 objects with rotational symmetry. For each, identify the order and angles of rotational symmetry.</p>
+                <p><strong>Task 3:</strong> Find 3 objects with both types of symmetry (e.g., flowers, rangoli patterns, architectural elements). Describe both their lines and angles of symmetry.</p>
+            </div>
+        </section>
+
+        <!-- Content section: Regular Polygons -->
+        <section class="content-block">
+            <h2>Regular Polygons and Their Symmetries</h2>
+            <p>Regular polygons (shapes with all equal sides and angles) have predictable and beautiful symmetries.</p>
+
+            <details class="deep-dive">
+                <summary>Symmetries of Regular Polygons</summary>
+                <div class="content">
+                    <p><strong>Pattern:</strong> A regular polygon with n sides has:</p>
+                    <ul>
+                        <li>n lines of symmetry</li>
+                        <li>Order n rotational symmetry</li>
+                        <li>Smallest rotation angle = 360° ÷ n</li>
+                    </ul>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li><strong>Equilateral triangle (3 sides):</strong> 3 lines of symmetry, order 3, smallest angle 120°</li>
+                        <li><strong>Square (4 sides):</strong> 4 lines of symmetry, order 4, smallest angle 90°</li>
+                        <li><strong>Regular pentagon (5 sides):</strong> 5 lines of symmetry, order 5, smallest angle 72°</li>
+                        <li><strong>Regular hexagon (6 sides):</strong> 6 lines of symmetry, order 6, smallest angle 60°</li>
+                    </ul>
+                    <p><strong>Ashoka Chakra:</strong> A 24-spoked wheel has 24 lines of symmetry and order 24 rotational symmetry. The smallest rotation angle is 360° ÷ 24 = 15°.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Exploring Regular Polygon Symmetry</h4>
+                <p><strong>Task 1:</strong> Draw a regular hexagon. Mark all 6 lines of symmetry. Verify that each line divides the hexagon into mirror halves.</p>
+                <p><strong>Task 2:</strong> Draw a regular pentagon. Find all angles of rotational symmetry. (Hint: Start with 72° and find multiples.)</p>
+                <p><strong>Task 3:</strong> Predict the number of lines of symmetry for a regular octagon (8 sides). Then verify by drawing or testing.</p>
+            </div>
+        </section>
+
+        <!-- Summary section -->
+        <section class="content-block">
+            <h2>Summary of Key Symmetry Concepts</h2>
+            <ul class="summary-list">
+                <li><strong>Reflection symmetry (Line of symmetry):</strong> A line that divides a figure into mirror halves. Points on opposite sides are equidistant from the line.</li>
+                <li><strong>Multiple lines of symmetry:</strong> Some figures have 0, 1, 2, or more lines. Squares have 4; circles have infinitely many.</li>
+                <li><strong>Rotational symmetry:</strong> A figure looks identical after rotation by an angle less than 360° around a center point.</li>
+                <li><strong>Angle of rotational symmetry:</strong> The specific rotation angle that makes the figure look identical. Must divide 360° evenly.</li>
+                <li><strong>Order of rotational symmetry:</strong> The number of times a figure looks identical in one full 360° rotation (including the starting position).</li>
+                <li><strong>Relationship:</strong> Order = 360° ÷ (smallest rotation angle)</li>
+                <li><strong>Unique properties:</strong> Some figures have only reflection symmetry, some have only rotational symmetry, some have both, and some have neither.</li>
+                <li><strong>Circle uniqueness:</strong> Has infinitely many lines of symmetry and can rotate by any angle (infinite rotational symmetry).</li>
+                <li><strong>Regular polygons:</strong> An n-sided regular polygon has n lines of symmetry and order n rotational symmetry.</li>
+                <li><strong>Nature and design:</strong> Symmetry appears in flowers, butterflies, architecture, and art—revealing the mathematical order in nature.</li>
+            </ul>
+        </section>
+
+        <!-- Self-Assessment Quiz -->
         <section class="quiz-section">
-            <h3>Socratic Quiz: Test Your Understanding</h3>
+            <h3>Self-Assessment Quiz</h3>
 
-            <!-- Level 1: Recognition -->
-            <div class="quiz-level">
-                <h4>Level 1: Recognition (Basic)</h4>
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> If you fold an equilateral triangle along a line from one vertex to the midpoint of the opposite side, will the two halves overlap exactly?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>Yes! An equilateral triangle has 3 lines of symmetry, each passing from a vertex through the midpoint of the opposite side. When you fold along any of these lines, the two halves are perfect mirror images.</p>
+                    </div>
+                </details>
+            </div>
 
-                <div class="quiz-item">
-                    <p><strong>Q1:</strong> Which of these figures has at least one line of symmetry?</p>
-                    <p>a) A scalene triangle (all sides different)</p>
-                    <p>b) A butterfly</p>
-                    <p>c) A cloud</p>
+            <div class="quiz-item">
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><strong>Question:</strong> Why does a square have 4 lines of symmetry while a rectangle (non-square) has only 2 lines?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>A square has all sides equal and all angles 90°. Its symmetry is complete in all directions: vertical, horizontal, and both diagonals all create mirror halves. A non-square rectangle has unequal adjacent sides, so diagonal folds don't create mirror halves. Only vertical and horizontal fold lines divide it into matching halves. The additional symmetry comes from the square's equal sides.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> A figure has rotational symmetry with a smallest angle of 40°. How many times will it look identical as you rotate it 360° (including the starting position)? What are all the angles of rotational symmetry?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Number of times:</strong> Order = 360° ÷ 40° = 9. The figure looks identical 9 times (at 40°, 80°, 120°, 160°, 200°, 240°, 280°, 320°, and 360°).</p>
+                        <p><strong>All angles of rotational symmetry:</strong> 40°, 80°, 120°, 160°, 200°, 240°, 280°, 320°, 360°. (Each is a multiple of 40°.)</p>
+                        <p>This would be like a figure with 9 identical radial arms arranged evenly around a center.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> You fold a paper twice (once vertically, once horizontally) and then punch a hole in the center. When you unfold, how many holes will appear?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>Four holes! The double fold (vertical and horizontal) means the paper is folded into 4 sections. One hole punched through all 4 sections creates 4 matching holes when unfolded. These 4 holes would be positioned symmetrically about both the vertical and horizontal fold lines.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><strong>Question:</strong> Why does a regular hexagon have the same number of lines of symmetry as its order of rotational symmetry (both equal 6)?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>For any regular polygon with n sides, both values always equal n. This is because of the polygon's perfect regularity: all sides are equal, all angles are equal, and all vertices are equivalent. The 6 lines of symmetry in a hexagon correspond to its 6-fold rotational symmetry. Both express the same underlying symmetry principle—the shape's 6-fold regularity creates both 6 reflection axes and 6 rotational positions.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> Design a quadrilateral (4-sided figure) that has rotational symmetry but NO reflection symmetry. Describe how many angles of rotational symmetry it has and what they are.</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Example shape:</strong> A non-rectangular parallelogram or slanted rectangle with unequal angles.</p>
+                        <p><strong>Simplest answer:</strong> A non-rectangular parallelogram has 180° rotational symmetry only, with order 2. The angles of rotational symmetry are 180° and 360°.</p>
+                        <p><strong>Why no reflection symmetry:</strong> Even though it can rotate 180° and look the same, no line divides it into mirror halves. This is possible because rotation is about turning (not flipping), which is mathematically different from reflection (mirror imaging).</p>
+                    </div>
+                </details>
                     <p>d) Both a and c</p>
                     <details class="quiz-answer">
                         <summary>Show Answer</summary>
@@ -326,13 +557,10 @@
         </section>
 
         <!-- Chapter Navigation -->
-        <nav class="chapter-nav">
-            <a href="ch8.html" class="nav-prev">
-                <span class="nav-arrow">←</span>
-                <div>
-                    <span class="nav-label">Previous Chapter</span>
-                    <span class="nav-title">Playing with Constructions</span>
-                </div>
+        <div class="chapter-nav">
+          <a href="ch8.html" class="prev"><span class="label">← Previous</span> Playing with Constructions</a>
+          <a href="ch10.html" class="next"><span class="label">Next →</span> The Other Side of Zero</a>
+        </div>
             </a>
             <a href="ch10.html" class="nav-next">
                 <div>
@@ -344,21 +572,18 @@
         </nav>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 The Logical Builder. All rights reserved. | <a href="../index.html">Home</a> | <a href="../math/ch1.html">Math Home</a></p>
+    <footer class="site-footer">
+      <p>Class 6 Learning Portal — Built with the Feynman Technique, First-Principles Reasoning &amp; Socratic Inquiry</p>
+      <p style="margin-top:4px;">Source: NCERT "Ganita Prakash" — Mathematics for Grade 6</p>
     </footer>
 
-    <!-- Progress Bar Script -->
     <script>
-        function updateProgressBar() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-            document.getElementById('progressBar').style.width = scrollPercent + '%';
-        }
-        window.addEventListener('scroll', updateProgressBar);
-        updateProgressBar();
+      const progressBar = document.querySelector('.progress-bar');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+      });
     </script>
 </body>
 </html>

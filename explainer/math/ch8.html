@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 8: Playing with Constructions | The Logical Builder</title>
+    <title>Chapter 8: Playing with Constructions | Class 6 Maths</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <style>
         .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
         .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
@@ -14,27 +16,24 @@
         .deep-dive { border-left-color: var(--math); background: var(--math-light); } .deep-dive summary { color: var(--math); }
         .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
         .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
+        .error-trap h4 { color: var(--math); }
+        .activity-box h4 { color: var(--math); }
     </style>
 </head>
 <body class="chapter-page">
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <a href="../index.html">The Logical Builder</a>
-            </div>
-            <div class="navbar-pills">
-                <a href="../index.html" class="nav-pill">Home</a>
-                <a href="ch1.html" class="nav-pill active">Math</a>
-                <a href="../../science/ch1.html" class="nav-pill">Science</a>
-                <a href="../../english/ch1.html" class="nav-pill">English</a>
-            </div>
-        </div>
-    </nav>
+    <div class="progress-bar-container"><div class="progress-bar"></div></div>
 
-    <!-- Progress Bar -->
-    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-fill" style="width: 80%;"></div>
+    <nav class="nav-bar">
+      <div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+        <div class="nav-subjects">
+          <a href="../science/ch1.html" class="nav-pill science">Science</a>
+          <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+          <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+          <a href="../english/unit1.html" class="nav-pill english">English</a>
+        </div>
+      </div>
+    </nav>
     </div>
 
     <!-- Main Content -->
@@ -56,292 +55,301 @@
 
         <!-- The Hook -->
         <section class="hook-box">
-            <h3>The Hook: From Freehand Sketches to Perfect Drawings</h3>
-            <p>Have you ever tried to draw a perfect circle by hand? Or tried to construct a square that looks actually square? With just a pencil, it's almost impossible to be accurate. But give an architect a ruler and compass, and they can construct buildings that stand for centuries. A civil engineer can mark roads with perfect right angles. A jeweler can create symmetric designs with precision.</p>
-            <p>The compass and ruler are not just tools—they're gateways to understanding how geometry works at its deepest level. They force you to think step-by-step, to plan before you act, and to verify that your logic is sound. This chapter teaches you the language of geometric construction.</p>
+            <h3>Why do we need instruments to draw?</h3>
+            <p>Have you tried drawing a perfect circle freehand? How about a square with equal sides and right angles? While freehand drawings are creative, geometric constructions using a compass and ruler allow us to create precise shapes with exact measurements. Architects designing buildings, engineers building bridges, and surveyors marking land all rely on these tools to ensure accuracy. In this chapter, we'll discover how a compass and ruler unlock the world of perfect geometry!</p>
         </section>
 
         <!-- The Feynman Bridge -->
         <section class="feynman-bridge">
-            <h3>The Feynman Bridge: Understanding Geometric Instruments</h3>
-            <p><span class="tag">Key Insight</span> A compass does one thing brilliantly: it marks all points at a fixed distance from a center. This is the definition of a circle. A ruler does two things: it connects points with straight lines and measures distances. Together, these simple tools reveal the hidden structure of geometry.</p>
-            <p>Every construction in this chapter begins with a question: "What points must satisfy these conditions?" For example, "All points 5 cm from point P form a circle of radius 5 cm." Once you answer that question, the construction becomes logical and inevitable.</p>
+            <h3>Understanding Constructions</h3>
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <p>A geometric construction is drawing a figure accurately using compass and ruler. A compass helps us draw circles and arcs (parts of circles) with exact radii. A ruler helps us draw straight lines and measure distances. Together, these tools let us create perfect geometric shapes.</p>
+            <p><strong>Key idea:</strong> All points on a circle are the same distance (called radius) from its center. This property is the foundation for many constructions.</p>
         </section>
 
         <!-- Logic Ladders -->
         <section class="logic-ladder">
-            <h2>Logic Ladder: The Circle—The Foundation of All Constructions</h2>
-            <div class="ladder-step">
-                <span class="step-number">1</span>
+            <h2>Building Block Logic: Compass Construction Steps</h2>
+
+            <div class="logic-step">
+                <div class="step-number">1</div>
                 <div class="step-content">
-                    <h4>Mark a Center Point</h4>
-                    <p>Choose any point P on your paper. This will be the center of your circle. A circle is defined as "all points equidistant from a center."</p>
+                    <h4>Understanding the Compass</h4>
+                    <p>A compass has two ends: a sharp point and a pencil. To use it, open the compass to the desired distance using a ruler, keeping the distance between the tip and pencil as your radius. This opening stays fixed as you rotate the pencil around the fixed point.</p>
                 </div>
             </div>
-            <div class="ladder-step">
-                <span class="step-number">2</span>
+
+            <div class="logic-step">
+                <div class="step-number">2</div>
                 <div class="step-content">
-                    <h4>Set the Compass to a Radius</h4>
-                    <p>Adjust the compass so the distance between the needle and pencil equals your desired radius (e.g., 4 cm). Place the needle at point P.</p>
+                    <h4>Drawing Circles and Finding Centers</h4>
+                    <p>Mark a point P and open the compass to 4 cm using a ruler. Place the sharp tip at P and rotate the pencil to draw a complete circle. Every point on this circle is exactly 4 cm from P. The distance 4 cm is the radius; point P is the center.</p>
                 </div>
             </div>
-            <div class="ladder-step">
-                <span class="step-number">3</span>
+
+            <div class="logic-step">
+                <div class="step-number">3</div>
                 <div class="step-content">
-                    <h4>Rotate to Trace the Circle</h4>
-                    <p>Keep the needle fixed at P and rotate the pencil around it. Every point marked is exactly the same distance from P. Together, they form a circle.</p>
+                    <h4>Drawing Line Segments with Exact Lengths</h4>
+                    <p>To draw a line segment AB of length 5 cm: First draw a line using a ruler. Mark point A. Open the compass to 5 cm using a ruler. Place the compass tip at A and mark point B where the pencil intersects the line. Now AB = 5 cm exactly.</p>
                 </div>
             </div>
-            <div class="ladder-step">
-                <span class="step-number">4</span>
+
+            <div class="logic-step">
+                <div class="step-number">4</div>
                 <div class="step-content">
-                    <h4>Verify Your Work</h4>
-                    <p>Measure several points on your circle. All should be equidistant from center P. If they are, you've successfully constructed a circle based on geometric principles.</p>
+                    <h4>Constructing Perpendiculars and Right Angles</h4>
+                    <p>To draw a perpendicular to a line at a point, use the compass to find points equidistant from the given point on either side of the line. Then use the compass to find the perpendicular line. This creates a 90° angle automatically.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Finding Points Equidistant from Two Locations</h4>
+                    <p>To find a point that is the same distance from two given points B and C, draw circles of equal radius centered at both B and C. The circles intersect at points that are equidistant from both B and C. This technique is crucial for many constructions.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h4>Combining Techniques into Complex Figures</h4>
+                    <p>Complex constructions combine these basic steps. Always start with a rough sketch to plan your construction. Identify which points or distances you know. Then use circles and perpendiculars to locate remaining points logically and systematically.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Deep-Dive: Constructing Basic Shapes -->
-        <details class="deep-dive">
-            <summary>Deep-Dive: Why Constructing a Square Requires a Right Angle</summary>
-            <div class="dive-content">
-                <p>A square must satisfy two properties: (1) All sides are equal in length, and (2) All angles are 90°. This means you can't just draw four equal sides—you must ensure they meet at right angles.</p>
-                <p><strong>The Construction Logic:</strong><br>
-                Step 1: Draw one side PQ with a ruler (length = 6 cm).<br>
-                Step 2: At point P, construct a line perpendicular to PQ using a compass. This line will contain point S such that ∠SPQ = 90°.<br>
-                Step 3: Mark point S on the perpendicular such that PS = 6 cm (same as PQ).<br>
-                Step 4: Repeat at Q to mark point R such that QR = 6 cm and QR is perpendicular to PQ.<br>
-                Step 5: Verify: RS should equal 6 cm and all angles should be 90°.</p>
-                <p><strong>Why This Works:</strong> By ensuring each side is equal and each angle is 90°, you automatically create a square. The right angle is the key—it guarantees the shape closes perfectly.</p>
-            </div>
-        </details>
+        <!-- Content section: Understanding Circles -->
+        <section class="content-block">
+            <h2>Understanding Circles: The Foundation</h2>
+            <p>Before building complex constructions, we must understand circles. A circle is the set of all points at the same fixed distance (radius) from a center point.</p>
 
-        <!-- Deep-Dive: Perpendicular Bisector -->
-        <details class="deep-dive">
-            <summary>Deep-Dive: The Perpendicular Bisector—Finding Points Equidistant from Two Points</summary>
-            <div class="dive-content">
-                <p>Imagine two points A and B. Is there a point that is equidistant (same distance) from both A and B? Yes—in fact, there are infinitely many such points, and they all lie on a line called the perpendicular bisector of AB.</p>
-                <p><strong>The Logic:</strong> If you take a compass and draw a circle of any radius centered at A, then draw another circle of the same radius centered at B, they intersect at two points. Both intersection points are equidistant from A and B! The line connecting these two points is the perpendicular bisector.</p>
-                <p><strong>The Construction:</strong><br>
-                1. Draw line segment AB.<br>
-                2. Open the compass to more than half the length of AB.<br>
-                3. With center A, draw an arc above and below AB.<br>
-                4. With the same radius and center B, draw arcs intersecting the first pair.<br>
-                5. Connect the two intersection points. This line is the perpendicular bisector.</p>
-                <p><strong>Applications:</strong> Finding the center of a circle, constructing a rectangle, locating points equidistant from two reference points (like city planners finding a location equidistant from two neighborhoods).</p>
-            </div>
-        </details>
+            <details class="deep-dive">
+                <summary>Explore: Discovering Circles Through Distance</summary>
+                <div class="content">
+                    <p>Mark a point P in your notebook. Now mark as many points as possible that are exactly 4 cm away from P in different directions. Use a ruler to check distances. What shape do these points form when joined? They form a circle!</p>
+                    <p>This shows that a circle isn't just a shape—it's the natural result of connecting all equidistant points from a center. The distance from P to any point on the circle is the radius. The compass lets us construct this shape perfectly.</p>
+                </div>
+            </details>
+        </section>
 
-        <!-- Deep-Dive: Constructing Angles -->
-        <details class="deep-dive">
-            <summary>Deep-Dive: Constructing Angles (60°, 45°, 30°, 90°)</summary>
-            <div class="dive-content">
-                <p>Angles can be constructed using only a compass and ruler. The most fundamental angles are 60° and 90°, from which others are derived.</p>
-                <p><strong>Constructing 60°:</strong> An equilateral triangle has three 60° angles. To construct it: (1) Draw a line segment AB. (2) Open the compass to length AB. (3) With center A, draw an arc above AB. (4) With center B and same radius, draw another arc intersecting the first. (5) Connect this intersection to A and B. Angle A = 60°.</p>
-                <p><strong>Constructing 90°:</strong> Draw a perpendicular bisector of a line segment. The perpendicular meets the segment at 90°. Alternatively, construct a semicircle (circle with center at the midpoint of a diameter). Any angle inscribed in a semicircle is 90°.</p>
-                <p><strong>Constructing 45°:</strong> Construct a 90° angle, then bisect it. (Bisecting means dividing into two equal parts using a compass.)</p>
-                <p><strong>Constructing 30°:</strong> Construct a 60° angle, then bisect it.</p>
-                <p><strong>The Logic:</strong> Every construction is based on the principle: "Mark all points satisfying a condition." For 60°, all points on the arc of a circle centered at A with radius AB define a specific angle when connected to A and B.</p>
-            </div>
-        </details>
+        <!-- Content section: Artwork and Curves -->
+        <section class="content-block">
+            <h2>Artwork and Curves: Making Shapes with Compass</h2>
+            <p>Once you understand circles, you can create beautiful artwork. By carefully choosing where to place the compass point and what radius to use, you can draw curves that form people, waves, eyes, and other figures.</p>
 
-        <!-- Deep-Dive: Constructing Regular Hexagon and Equilateral Triangle -->
-        <details class="deep-dive">
-            <summary>Deep-Dive: Regular Hexagon and Equilateral Triangle Inscribed in a Circle</summary>
-            <div class="dive-content">
-                <p><strong>Regular Hexagon Inscribed in a Circle:</strong> A regular hexagon is six equilateral triangles arranged around a center. Each interior angle is 120°, and the vertices divide the circle into six equal arcs.</p>
-                <p><strong>Construction:</strong><br>
-                1. Draw a circle with center O and radius r.<br>
-                2. Mark any point A on the circle.<br>
-                3. With compass set to radius r (same as circle's radius), place the center at A and mark an arc on the circle. Call this point B.<br>
-                4. Repeat from B, C, D, E, until you have six points evenly spaced around the circle.<br>
-                5. Connect consecutive points with a ruler.</p>
-                <p><strong>Why It Works:</strong> The six points are separated by 60° arcs. The side length of the inscribed hexagon equals the circle's radius—a beautiful relationship!</p>
-                <p><strong>Equilateral Triangle Inscribed in a Circle:</strong> Take every other vertex of the hexagon. You now have three points evenly spaced (120° apart) on the circle, forming an equilateral triangle.</p>
-                <p><strong>Key Insight:</strong> Regular polygons can be constructed by dividing a circle into equal parts using arcs. The radius of the circle becomes a crucial measurement.</p>
-            </div>
-        </details>
+            <details class="deep-dive">
+                <summary>Example: Drawing a "Person" Figure</summary>
+                <div class="content">
+                    <p>To draw a simple person figure using circles and arcs: Start with a circle for the head. The body can be constructed using two circles centered at different points. The challenge is finding the exact center point and radius for each circle. A helpful strategy: draw a rough sketch first, estimate where centers should be, then use the compass to verify and refine.</p>
+                    <p>For the "wavy wave" pattern: Use a central line as your base (say 8 cm long). Draw a half-circle with radius 4 cm using the midpoint as center. This creates the first wave. Repeat this pattern along the line for additional waves. For smaller waves (like those in a neck), use the same approach with smaller measurements.</p>
+                </div>
+            </details>
 
-        <!-- Common Error Trap -->
-        <section class="error-trap">
-            <h3>Common Error Trap: Construction Pitfalls</h3>
-            <div class="error-box">
-                <p><strong>Trap 1:</strong> "I'll keep the same compass opening for all steps, even when I need different radii."<br>
-                <strong>Why it's wrong:</strong> Each step in a construction often requires a specific radius based on the line segment or angle you're working with. Changing the compass opening is part of the construction process, not cheating.<br>
-                <strong>Fix:</strong> Always adjust the compass to the exact measurement needed for each step. Use the original line segments to calibrate.</p>
-            </div>
-            <div class="error-box">
-                <p><strong>Trap 2:</strong> "I'll draw light arcs first, then erase them later. No one needs to see them."<br>
-                <strong>Why it's wrong:</strong> In mathematical constructions, the arcs are evidence of your thinking. They show that you understand why a point is where it is. Erasing them hides the logic.<br>
-                <strong>Fix:</strong> Keep all construction lines visible. Use a pencil lightly so arcs don't dominate, but never erase them. In formal geometry, these auxiliary lines show proof.</p>
-            </div>
-            <div class="error-box">
-                <p><strong>Trap 3:</strong> "I can eyeball whether this angle is 90°. I don't need to verify it."<br>
-                <strong>Why it's wrong:</strong> "Eyeballing" defeats the entire purpose of construction. The point is to create shapes that are provably correct, not approximately correct.<br>
-                <strong>Fix:</strong> Always verify angles and distances. If constructing a rectangle, check that all four angles are 90° using a compass or protractor.</p>
+            <div class="error-trap">
+                <h4>Common Mistake: Compass Opening Changes</h4>
+                <p>Students often accidentally change the compass opening while drawing. To avoid this, set your compass opening very carefully, and don't let the pencil or tip touch anything until you're ready to draw. Keep the compass opening rigid throughout the entire arc or circle.</p>
             </div>
         </section>
 
-        <!-- Socratic Quiz -->
+        <!-- Content section: Constructing Squares and Rectangles -->
+        <section class="content-block">
+            <h2>Constructing Squares and Rectangles</h2>
+            <p>A square has four equal sides and four right angles (90°). A rectangle has opposite sides equal and four right angles. These are the simplest figures to construct precisely.</p>
+
+            <details class="deep-dive">
+                <summary>Square Properties and Construction</summary>
+                <div class="content">
+                    <p><strong>Square properties:</strong></p>
+                    <ul>
+                        <li>All four sides are equal in length</li>
+                        <li>All four angles are 90°</li>
+                        <li>Opposite sides are parallel</li>
+                        <li>Diagonals are equal and bisect each other at right angles</li>
+                    </ul>
+                    <p><strong>Constructing a 6 cm square:</strong></p>
+                    <ol>
+                        <li>Draw line segment PQ = 6 cm using ruler</li>
+                        <li>At point P, draw a perpendicular to PQ (using compass and ruler)</li>
+                        <li>On this perpendicular, mark point S such that PS = 6 cm</li>
+                        <li>At point Q, draw another perpendicular to PQ</li>
+                        <li>On this perpendicular, mark point R such that QR = 6 cm</li>
+                        <li>Join S and R to complete the square PQRS</li>
+                    </ol>
+                </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Rectangle Properties and Differences from Squares</summary>
+                <div class="content">
+                    <p><strong>Rectangle properties:</strong></p>
+                    <ul>
+                        <li>Opposite sides are equal in length (one pair differs from the other pair)</li>
+                        <li>All four angles are 90°</li>
+                        <li>Diagonals are equal but don't bisect at right angles (unless it's a square)</li>
+                    </ul>
+                    <p>Every square is a rectangle, but not every rectangle is a square. A square is a special rectangle where all sides are equal.</p>
+                    <p><strong>Why rotated squares are still squares:</strong> When you rotate a square, its side lengths and angles remain unchanged. So a rotated square still satisfies the definition of a square. The same applies to rotated rectangles.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Hands-On Activity: Constructing Rectangles with Given Sides</h4>
+                <p><strong>Task 1:</strong> Construct a rectangle with sides 4 cm and 6 cm. After drawing, verify it satisfies both rectangle properties: opposite sides equal and all angles 90°.</p>
+                <p><strong>Task 2:</strong> Construct a rectangle with sides 2 cm and 10 cm. Check the same properties.</p>
+                <p><strong>Question:</strong> Is it possible to construct a 4-sided figure with all angles equal to 90° but opposite sides not equal? Why or why not? (Hint: Think about how perpendiculars and equal measurements interact.)</p>
+            </div>
+        </section>
+
+        <!-- Content section: Diagonals -->
+        <section class="content-block">
+            <h2>Diagonals and Their Properties</h2>
+            <p>Diagonals are line segments joining opposite corners of a polygon. In rectangles and squares, diagonals have special properties.</p>
+
+            <details class="deep-dive">
+                <summary>Exploring Diagonal Properties</summary>
+                <div class="content">
+                    <p>When you draw both diagonals of a rectangle, they create interesting angle patterns.</p>
+                    <ul>
+                        <li>In any rectangle, both diagonals have equal length</li>
+                        <li>Each diagonal divides the opposite angles into two smaller angles</li>
+                        <li>In a square, the diagonals divide the corner angles equally (each becoming 45°)</li>
+                        <li>In a non-square rectangle, diagonals divide angles unequally</li>
+                    </ul>
+                    <p><strong>Special case—Square within a Rectangle:</strong> To construct a square inside a rectangle with the same center, determine the side length of the square first (it must equal the shorter dimension of the rectangle). Then position it centrally, ensuring equal spacing on all sides.</p>
+                </div>
+            </details>
+
+            <div class="error-trap">
+                <h4>Misconception: Rectangle Diagonals as Lines of Symmetry</h4>
+                <p>Many students think a rectangle's diagonals are lines of symmetry. Test this: fold a non-square rectangle along its diagonal. Do the two halves match perfectly? No! The diagonal is NOT a line of symmetry unless the rectangle is a square. This is a crucial distinction.</p>
+            </div>
+        </section>
+
+        <!-- Content section: Advanced Constructions -->
+        <section class="content-block">
+            <h2>Advanced Constructions: Finding Equidistant Points</h2>
+            <p>One of the most powerful construction techniques is finding a point that is the same distance from two given points. This opens doors to complex figures.</p>
+
+            <details class="deep-dive">
+                <summary>The House Construction: A Complete Example</summary>
+                <div class="content">
+                    <p>Construct a house shape where all border segments (sides and arcs) equal 5 cm:</p>
+                    <ol>
+                        <li><strong>Draw base:</strong> Construct line segment DE = 5 cm</li>
+                        <li><strong>Add sides:</strong> At D and E, draw perpendiculars and mark points C and B such that DC = EB = 5 cm</li>
+                        <li><strong>Find roof point:</strong> Draw circles of radius 5 cm centered at B and C. These circles intersect at point A, which is 5 cm from both B and C</li>
+                        <li><strong>Draw roof:</strong> From point A, draw an arc of radius 5 cm connecting B and C. This arc forms the roof</li>
+                    </ol>
+                    <p>This construction shows how circles of equal radius from two points find their intersection—the point equidistant from both. You don't need trial-and-error with a ruler; the compass finds it exactly.</p>
+                </div>
+            </details>
+
+            <details class="deep-dive">
+                <summary>Constructing Rectangles from Side and Diagonal</summary>
+                <div class="content">
+                    <p>Sometimes you're given one side (say 5 cm) and one diagonal (say 7 cm), but not the other side. Here's how to construct the rectangle:</p>
+                    <ol>
+                        <li>Draw the known side CD = 5 cm</li>
+                        <li>At C, draw a perpendicular to CD (this will contain side CB)</li>
+                        <li>From D, draw a circle of radius 7 cm (the diagonal length)</li>
+                        <li>The point where this circle intersects the perpendicular is point B</li>
+                        <li>Complete the rectangle by drawing perpendiculars and connecting</li>
+                    </ol>
+                    <p>The circle represents all points exactly 7 cm from D. Combined with the perpendicular (all points in a specific direction from C), their intersection is uniquely determined.</p>
+                </div>
+            </details>
+
+            <div class="activity-box">
+                <h4>Challenge Construction Problems</h4>
+                <p><strong>1. Rectangle with Divided Angles:</strong> Construct a rectangle where one diagonal divides the corner angles into 60° and 30°. (Hint: Plan your construction with a rough sketch showing angle measures first.)</p>
+                <p><strong>2. Rectangle from Side and Diagonal:</strong> Construct a rectangle where one side is 4 cm and the diagonal is 8 cm. Measure the other side after construction.</p>
+                <p><strong>3. Special Rectangles:</strong> Construct a rectangle that can be divided into exactly 2 identical squares. What must the rectangle's dimensions be in relation to each other?</p>
+                <p><strong>4. Square within Rectangle:</strong> Construct a rectangle of 8 cm × 4 cm, then construct a square inside it with the same center. The square should have the largest possible size.</p>
+            </div>
+        </section>
+
+        <!-- Summary section -->
+        <section class="content-block">
+            <h2>Summary of Key Construction Concepts</h2>
+            <ul class="summary-list">
+                <li><strong>Circle basics:</strong> All points on a circle are equidistant from the center. The distance is the radius.</li>
+                <li><strong>Compass use:</strong> Keeps a fixed distance constant while rotating around a center point.</li>
+                <li><strong>Ruler use:</strong> Draws straight lines and measures exact distances.</li>
+                <li><strong>Square construction:</strong> Requires perpendicular lines and equal sides.</li>
+                <li><strong>Rectangle construction:</strong> Requires perpendicular lines and two different side lengths.</li>
+                <li><strong>Perpendiculars:</strong> Can be constructed using compass by finding equidistant points.</li>
+                <li><strong>Equidistant points:</strong> The intersection of two circles is the point equidistant from both centers.</li>
+                <li><strong>Planning:</strong> Always sketch roughly first to understand the construction sequence.</li>
+            </ul>
+        </section>
+
+        <!-- Self-Assessment Quiz -->
         <section class="quiz-section">
-            <h3>Socratic Quiz: Test Your Construction Understanding</h3>
-            <p>These questions probe your understanding of construction principles. Think deeply before peeking at answers.</p>
+            <h3>Self-Assessment Quiz</h3>
 
-            <!-- Level 1 -->
-            <div class="quiz-level">
-                <h4>Level 1: Basic Circle and Instrument Knowledge</h4>
-
-                <div class="quiz-item">
-                    <p><strong>Question 1:</strong> What is a radius, and how does it relate to drawing a circle with a compass?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> The radius is the distance from the center of a circle to any point on the circle. It's the distance you set on the compass between the needle and pencil. All points on the circle are exactly one radius away from the center.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 2:</strong> You need to draw a circle of radius 5 cm. Describe the steps using a compass.</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong><br>
-                            1. Measure 5 cm on your ruler between the compass needle and pencil.<br>
-                            2. Mark a center point on your paper and place the needle there.<br>
-                            3. Keep the needle fixed and rotate the pencil around it to trace the circle.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 3:</strong> What two properties must a square have?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> (1) All four sides must be equal in length, and (2) All four angles must be 90°.</p>
-                            <p><strong>Note:</strong> If only one property holds, it's not a square. A rectangle has property 2 but not 1. A rhombus has property 1 but not 2.</p>
-                        </div>
-                    </details>
-                </div>
+            <div class="quiz-item">
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <p><strong>Question:</strong> If you draw a circle with center P and radius 5 cm, and then draw another circle with the same radius but center at point Q (which is 7 cm away from P), what will happen where the circles intersect?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>The two circles will intersect at two points. Each intersection point is exactly 5 cm from both P and Q (since it lies on both circles). These are the points equidistant from both centers—a fundamental construction principle.</p>
+                    </div>
+                </details>
             </div>
 
-            <!-- Level 2 -->
-            <div class="quiz-level">
-                <h4>Level 2: Planning and Geometric Reasoning</h4>
-
-                <div class="quiz-item">
-                    <p><strong>Question 1:</strong> You're constructing a square with side length 5 cm. What must you do immediately after drawing the first side PQ = 5 cm?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> Construct a line perpendicular to PQ at point P. This perpendicular will contain the second side PS. The perpendicular ensures the angle at P is 90°.</p>
-                            <p><strong>Explanation:</strong> Without the perpendicular, you can't guarantee a right angle. The perpendicular is the key to constructing a square rather than an arbitrary quadrilateral.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 2:</strong> You want to find a point that is equidistant from two given points A and B. What is this line called, and how do you construct it?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> This is the perpendicular bisector of line segment AB.</p>
-                            <p><strong>Construction:</strong> (1) Open compass to more than half the length of AB. (2) With center A, draw an arc above and below AB. (3) With the same radius and center B, draw intersecting arcs. (4) Connect the two intersection points. Any point on this line is equidistant from A and B.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 3:</strong> A rectangle has sides 8 cm and 4 cm. You want to construct a square inside it such that the square's center coincides with the rectangle's center. What should be the side length of the square?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> The side length should be 4 cm (equal to the shorter side of the rectangle).</p>
-                            <p><strong>Explanation:</strong> For the square to fit symmetrically inside with the same center, its maximum side length is limited by the shorter dimension of the rectangle. Place it centered so there's equal spacing (2 cm) on each side.</p>
-                        </div>
-                    </details>
-                </div>
+            <div class="quiz-item">
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <p><strong>Question:</strong> Why is it necessary to draw perpendiculars at exact right angles (90°) when constructing squares and rectangles?</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p>Squares and rectangles are defined by having all angles equal to 90°. If the angles aren't exactly right angles, the shape no longer satisfies the definition. The perpendicular ensures the 90° angle is created automatically using the geometric properties of circles and compass.</p>
+                    </div>
+                </details>
             </div>
 
-            <!-- Level 3 -->
-            <div class="quiz-level">
-                <h4>Level 3: Complex Constructions and Verification</h4>
-
-                <div class="quiz-item">
-                    <p><strong>Question 1:</strong> Explain how to construct a regular hexagon inscribed in a circle of radius 5 cm.</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong><br>
-                            1. Draw a circle with center O and radius 5 cm.<br>
-                            2. Mark a point A on the circle.<br>
-                            3. Set the compass to 5 cm (the radius).<br>
-                            4. With center A, mark point B on the circle.<br>
-                            5. With center B and same radius, mark point C on the circle.<br>
-                            6. Repeat until you have six evenly spaced points (A, B, C, D, E, F).<br>
-                            7. Connect consecutive points to form the hexagon.</p>
-                            <p><strong>Key Fact:</strong> The side length of the inscribed regular hexagon equals the circle's radius.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 2:</strong> You need to construct a rectangle where one side is 6 cm and the diagonal is 10 cm. What steps would you follow?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong><br>
-                            1. Draw the base CD = 6 cm.<br>
-                            2. Construct a perpendicular to CD at point C.<br>
-                            3. Set the compass to 10 cm (the diagonal length).<br>
-                            4. With center D, draw an arc that intersects the perpendicular at point B.<br>
-                            5. Point B is 10 cm from D (the diagonal) and lies on the perpendicular (ensuring the right angle).<br>
-                            6. Complete the rectangle by drawing perpendiculars at B and D to form point A.</p>
-                            <p><strong>Verification:</strong> Measure: CD should be 6 cm, and diagonal DB should be 10 cm. All angles should be 90°.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="quiz-item">
-                    <p><strong>Question 3:</strong> You want to construct an angle of 45°. Which two angles would you combine, or which angle would you bisect?</p>
-                    <details class="quiz-answer">
-                        <summary>Show Answer</summary>
-                        <div class="answer-body">
-                            <p><strong>Answer:</strong> Construct a 90° angle and bisect it (cut it in half).</p>
-                            <p><strong>Why:</strong> 45° = 90° ÷ 2. To bisect, use a compass to mark equal distances along the two rays of the 90° angle, then use the perpendicular bisector method to find the angle bisector.</p>
-                            <p><strong>Alternative:</strong> You could also bisect a 60° angle and add a 30° angle, but bisecting 90° is simpler.</p>
-                        </div>
-                    </details>
-                </div>
+            <div class="quiz-item">
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <p><strong>Question:</strong> You need to construct a square where one corner point A is at a specific location, and side AB lies along a given line, with side length 6 cm. Describe the full construction process using compass and ruler.</p>
+                <details class="quiz-answer">
+                    <summary>Show Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Construction steps:</strong></p>
+                        <ol>
+                            <li>Mark point A on the given line</li>
+                            <li>Using compass set to 6 cm, mark point B on the line such that AB = 6 cm</li>
+                            <li>At A, construct a perpendicular to the line (using compass to find equidistant points above and below the line)</li>
+                            <li>On this perpendicular, mark point D such that AD = 6 cm (using compass)</li>
+                            <li>At B, construct another perpendicular and mark point C such that BC = 6 cm</li>
+                            <li>Connect C and D to complete the square ABCD</li>
+                        </ol>
+                        <p>This applies all fundamental construction techniques: drawing exact lengths with compass, creating perpendiculars, and verifying the result is a square.</p>
+                    </div>
+                </details>
             </div>
         </section>
 
-        <!-- Chapter Navigation -->
-        <nav class="chapter-nav">
-            <a href="ch7.html" class="nav-button prev">← Previous: Fractions</a>
-            <a href="ch9.html" class="nav-button next">Next: Symmetry →</a>
-        </nav>
-
-        <!-- Footer -->
-        <footer class="chapter-footer">
-            <p>&copy; 2025 The Logical Builder. All rights reserved.</p>
-            <p>Based on Ganita Prakash | Grade 6 Mathematics Curriculum</p>
-        </footer>
+        <div class="chapter-nav">
+          <a href="ch7.html" class="prev"><span class="label">← Previous</span> Fractions</a>
+          <a href="ch9.html" class="next"><span class="label">Next →</span> Symmetry</a>
+        </div>
     </main>
 
-    <!-- Progress Bar JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const progressBar = document.querySelector('.progress-fill');
-            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    <footer class="site-footer">
+      <p>Class 6 Learning Portal — Built with the Feynman Technique, First-Principles Reasoning &amp; Socratic Inquiry</p>
+      <p style="margin-top:4px;">Source: NCERT "Ganita Prakash" — Mathematics for Grade 6</p>
+    </footer>
 
-            window.addEventListener('scroll', function() {
-                const scrolled = window.scrollY;
-                const scrollPercent = (scrolled / scrollHeight) * 100;
-                progressBar.style.width = scrollPercent + '%';
-            });
-        });
+    <script>
+      const progressBar = document.querySelector('.progress-bar');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight > 0) progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+      });
     </script>
 </body>
 </html>
