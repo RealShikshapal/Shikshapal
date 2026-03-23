@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Data Handling and Presentation - Class 6 Math</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
+        .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
+        .feynman-bridge { border-color: var(--math); } .feynman-bridge .tag { background: var(--math); }
+        .step-number { background: var(--math); }
+        .deep-dive { border-left-color: var(--math); background: var(--math-light); } .deep-dive summary { color: var(--math); }
+        .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
+        .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
+        .data-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .data-table th, .data-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .data-table th { background: var(--math-light); color: var(--math); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="progress-bar-container"><div class="progress-bar"></div></div>
+
+    <nav class="nav-bar"><div class="nav-inner">
+        <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+        <div class="nav-subjects">
+            <a href="../science/ch1.html" class="nav-pill science">Science</a>
+            <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+            <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+            <a href="../english/unit1.html" class="nav-pill english">English</a>
+        </div>
+    </div></nav>
+
+    <main class="chapter-page">
+        <div class="chapter-header">
+            <h1>Chapter 4: Data Handling and Presentation</h1>
+            <p class="chapter-subtitle">Understanding Data, Graphs, and Information</p>
+        </div>
+
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> / <a href="../math/ch1.html">Math</a> / Chapter 4
+        </div>
+
+        <div class="hook-box">
+            <h3>Why Do We Need to Understand Data?</h3>
+            <p>Imagine you ask your classmates about their favorite colors, or you measure the weight of each student in your class. You collect a list of information. This collection of facts, numbers, and observations is called <strong>data</strong>. Today, we live in an age of information where data is everywhere—in newspapers, on television, in sports statistics, and online. Learning how to organize, display, and understand data is a powerful skill that helps us make informed decisions!</p>
+        </div>
+
+        <section class="content-section">
+            <h2>What is Data?</h2>
+            <p>Data is any collection of facts, numbers, measures, observations, or descriptions of things that convey information. It can be:</p>
+            <ul>
+                <li>Numbers (test scores, temperatures, heights)</li>
+                <li>Colors or preferences (favorite games, TV shows)</li>
+                <li>Counts (number of students, vehicles, trees)</li>
+                <li>Measurements (weight, distance, time)</li>
+            </ul>
+            <p>Data becomes meaningful when it's organized and presented in a way that helps us understand patterns and answer questions.</p>
+        </section>
+
+        <div class="feynman-bridge">
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <h3>The Problem Navya and Naresh Faced</h3>
+            <p><strong>Situation:</strong> Navya and Naresh were discussing their favorite games. Navya believed cricket was the most popular game in their class, while Naresh wasn't sure. To settle the debate, they decided to collect data by asking each student in the class their favorite game.</p>
+            <p><strong>The Challenge:</strong> After collecting the data as a simple list, they realized they couldn't easily identify the most popular game just by looking at the raw data. They needed a better way to organize it.</p>
+            <p><strong>The Insight:</strong> By arranging the data systematically using tally marks and frequency tables, they could see patterns and answer their question clearly. Hockey turned out to be the most popular game with 8 votes!</p>
+        </div>
+
+        <div class="logic-ladder">
+            <h3>Steps to Collect and Organize Data</h3>
+
+            <div class="logic-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Ask a Clear Question</h4>
+                    <p>Decide what information you want to find out. Examples: "What is the most popular game in our class?" or "How many students like each sport?"</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Collect the Data</h4>
+                    <p>Survey or observe to gather responses. Go to each person and record their answer. Keep the responses in order as you collect them.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Use Tally Marks to Count</h4>
+                    <p>Record each response using tally marks (|). When you reach 5, cross through the four marks with a fifth mark: ||||. This makes counting easier and reduces errors.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Create a Frequency Table</h4>
+                    <p>Organize the data in a table with categories and their frequencies (how many times each appears). This gives you a clear picture of the data.</p>
+                </div>
+            </div>
+
+            <div class="logic-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h4>Analyze and Interpret</h4>
+                    <p>Look for patterns. Which category has the highest frequency? The lowest? Are any frequencies the same? What can you conclude?</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="content-section">
+            <h2>Organizing Data: Tally Marks and Frequency Tables</h2>
+            <p>When Shri Nilesh wanted to know which sweets students preferred, he used tally marks to record each choice:</p>
+            <table class="data-table">
+                <tr>
+                    <th>Sweet</th>
+                    <th>Tally Marks</th>
+                    <th>Frequency (Number of Students)</th>
+                </tr>
+                <tr>
+                    <td>Jalebi</td>
+                    <td>|||   ||||</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>||||   ||||</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Gujiya</td>
+                    <td>||||   ||||   |||</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Barfi</td>
+                    <td>|||</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Rasgulla</td>
+                    <td>||||   ||</td>
+                    <td>7</td>
+                </tr>
+            </table>
+            <p><strong>Key Learning:</strong> The <em>frequency</em> is the number of times something appears. In the table above, Gujiya has the highest frequency (13 students), so it's the most popular choice.</p>
+        </section>
+
+        <details class="deep-dive">
+            <summary>Going Deeper: How to Arrange Data in Order</summary>
+            <div class="dd-content">
+                <p>Sometimes, arranging data in a particular order helps us find answers faster. When Sushri Sandhya collected data on student shoe sizes, she arranged them in ascending order (from smallest to largest):</p>
+                <p style="text-align: center; font-family: 'JetBrains Mono'; background: #f0f0f0; padding: 10px; border-radius: 5px;">3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7</p>
+                <p>From this ordered list, we can quickly see:</p>
+                <ul>
+                    <li>Smallest shoe size: 3</li>
+                    <li>Largest shoe size: 7</li>
+                    <li>Most common size: 4 (appears 9 times)</li>
+                    <li>How many students wear size 5 or larger: 17 students</li>
+                </ul>
+                <p><strong>Tip:</strong> Arranged data is easier to count, compare, and analyze!</p>
+            </div>
+        </details>
+
+        <h2>Pictographs: Representing Data with Pictures</h2>
+        <p>A <strong>pictograph</strong> uses pictures or symbols to represent data. Instead of reading numbers, you can see information at a glance!</p>
+
+        <section class="content-section">
+            <h3>Understanding Pictographs</h3>
+            <p>A pictograph for "Modes of Travelling" uses symbols to show how many students use each mode. Each symbol represents a fixed number of students (called the scale).</p>
+            <p><strong>Advantages:</strong> Pictographs are fun, colorful, and you can understand the data quickly without reading numbers. <strong>Challenge:</strong> When numbers are large, drawing many symbols takes time and space!</p>
+        </section>
+
+        <details class="deep-dive">
+            <summary>Scales in Pictographs: Making Large Numbers Manageable</summary>
+            <div class="dd-content">
+                <p>When data numbers are large, one symbol might represent more than one item. For example:</p>
+                <ul>
+                    <li>Symbol = 1 student (for small numbers)</li>
+                    <li>Symbol = 5 students (for medium numbers)</li>
+                    <li>Symbol = 10 students (for large numbers)</li>
+                </ul>
+                <p>When Lakhanpal collected data on students present in each class, the numbers ranged from 20 to 35. Using Symbol = 10 students, he needed only 2-3.5 symbols per class instead of 20-35!</p>
+                <p><strong>Important Rule:</strong> The scale or key must always be shown so readers know what each symbol represents. Sometimes you also need half-symbols to show odd numbers accurately.</p>
+            </div>
+        </details>
+
+        <h2>Bar Graphs: Seeing Data at a Glance</h2>
+        <p>A <strong>bar graph</strong> uses rectangular bars to show frequencies. The height or length of each bar represents the data value. Bar graphs are excellent for comparing different categories.</p>
+
+        <section class="content-section">
+            <h3>How to Read a Bar Graph</h3>
+            <p>When reading a bar graph, look for:</p>
+            <ul>
+                <li><strong>Title:</strong> What does the graph show?</li>
+                <li><strong>Axes:</strong> The horizontal axis (left to right) shows categories. The vertical axis (bottom to top) shows quantities with a scale.</li>
+                <li><strong>Bars:</strong> Compare heights to see which category has the most, which has the least, and how they compare.</li>
+                <li><strong>Scale:</strong> Understand the scale to read exact values (e.g., 1 unit = 10 students).</li>
+            </ul>
+        </section>
+
+        <details class="deep-dive">
+            <summary>Real-World Example: Traffic at a Busy Crossing</summary>
+            <div class="dd-content">
+                <p>Traffic police studied vehicular traffic at a busy Delhi road crossing and created a bar graph showing vehicles per hour:</p>
+                <table class="data-table">
+                    <tr>
+                        <th>Time Interval</th>
+                        <th>Number of Vehicles</th>
+                    </tr>
+                    <tr>
+                        <td>6–7 a.m.</td>
+                        <td>~150</td>
+                    </tr>
+                    <tr>
+                        <td>7–8 a.m.</td>
+                        <td>1200 (peak traffic!)</td>
+                    </tr>
+                    <tr>
+                        <td>8–9 a.m.</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>9–10 a.m.</td>
+                        <td>800</td>
+                    </tr>
+                </table>
+                <p><strong>What the graph tells us:</strong> The busiest time is 7–8 a.m. (morning rush hour). Traffic decreases after that. Why? Most people commute to work or school during early morning hours. The bar graph makes this pattern obvious without reading every number!</p>
+            </div>
+        </details>
+
+        <h3>Drawing Your Own Bar Graph</h3>
+        <p><strong>Steps to create a bar graph:</strong></p>
+        <ol>
+            <li>Draw two perpendicular lines (horizontal and vertical)</li>
+            <li>On the horizontal line, write category labels with equal spacing</li>
+            <li>On the vertical line, write frequency values and choose an appropriate scale</li>
+            <li>Draw bars of equal width for each category, with heights matching the frequencies</li>
+            <li>Add a title, axis labels, and scale information</li>
+            <li>Make sure bars are evenly spaced</li>
+        </ol>
+
+        <details class="deep-dive">
+            <summary>Choosing the Right Scale for Your Bar Graph</summary>
+            <div class="dd-content">
+                <p>The scale must be chosen so the graph fits nicely on your paper and is easy to read.</p>
+                <p><strong>Example 1 — Small Numbers (0–15):</strong> If your data ranges from 3 to 13 items, use a scale of 1 unit = 1 item. The bars won't be too tall or too short.</p>
+                <p><strong>Example 2 — Large Numbers (100–1000):</strong> If your data shows runs scored in cricket (50 to 100), use 1 unit = 10 runs. This keeps the graph manageable.</p>
+                <p><strong>Example 3 — Very Large Numbers (1000+):</strong> When dealing with India's population (measured in crores), use 1 unit = 10 crores. This compresses the data without losing accuracy.</p>
+                <p><strong>Rule:</strong> Always start the vertical axis at zero and choose scales that are easy to calculate (multiples of 5 or 10 work well).</p>
+            </div>
+        </details>
+
+        <h2>From Frequency Tables to Visual Presentations</h2>
+        <p>Once you have organized data in a frequency table, you can visualize it using pictographs or bar graphs. Let's see how the sweet preferences data transforms:</p>
+
+        <section class="content-section">
+            <h3>The Same Data, Different Views</h3>
+            <table class="data-table">
+                <tr>
+                    <th>Sweet</th>
+                    <th>Frequency</th>
+                </tr>
+                <tr>
+                    <td>Jalebi</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Gulab Jamun</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Gujiya</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Barfi</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Rasgulla</td>
+                    <td>7</td>
+                </tr>
+            </table>
+            <p><strong>Pictograph:</strong> Using a symbol = 1 student, you'd draw 6 symbols for Jalebi, 9 for Gulab Jamun, etc. Quick to understand visually!</p>
+            <p><strong>Bar Graph:</strong> Draw 5 bars of different heights (6, 9, 13, 3, and 7 units). The tallest bar (Gujiya) is immediately obvious. You can compare all categories at once.</p>
+        </section>
+
+        <details class="deep-dive">
+            <summary>Artistic and Aesthetic Considerations in Data Visualization</summary>
+            <div class="dd-content">
+                <p>When presenting data, it's important to be both creative and accurate. Some considerations include:</p>
+                <ul>
+                    <li><strong>Visual Appeal:</strong> Use colors strategically (but not misleadingly)</li>
+                    <li><strong>Bar Orientation:</strong> Heights are naturally represented with vertical bars, while distances are naturally horizontal</li>
+                    <li><strong>Be Careful with Infographics:</strong> Making fancy pictures can accidentally mislead if widths, shapes, or other properties misrepresent the data</li>
+                    <li><strong>Scale Integrity:</strong> Always ensure bars have equal widths, proportional heights, and proper spacing</li>
+                    <li><strong>Clarity First:</strong> A clear, simple graph is better than a fancy, confusing one</li>
+                </ul>
+                <p><strong>Remember:</strong> Mount Everest appears twice as tall as Mount Elbrus, but if infographic triangles get wider as they get taller, it misrepresents the actual data!</p>
+            </div>
+        </details>
+
+        <div class="error-trap">
+            <h4>Common Mistakes When Creating Graphs</h4>
+            <ul>
+                <li><strong>Mistake 1:</strong> Forgetting to include a scale or key. Always show what each symbol or unit represents.</li>
+                <li><strong>Mistake 2:</strong> Using unequal spacing between bars or unequal bar widths. This can make comparisons confusing.</li>
+                <li><strong>Mistake 3:</strong> Not starting the vertical axis at zero. This can visually exaggerate differences.</li>
+                <li><strong>Mistake 4:</strong> Choosing a scale that makes the graph too large or too small. Test your scale before drawing.</li>
+                <li><strong>Mistake 5:</strong> Misreading the scale. Always check: Does 1 unit = 1 or 1 unit = 10?</li>
+                <li><strong>Mistake 6:</strong> Creating misleading infographics where symbol sizes don't match their data values.</li>
+            </ul>
+        </div>
+
+        <div class="activity-box">
+            <h4>Activity: Collect and Present Data</h4>
+            <p><strong>Objective:</strong> Gather real data and create both a frequency table and a bar graph.</p>
+            <p><strong>Steps:</strong></p>
+            <ol>
+                <li>Choose a question to investigate. Examples: "What is students' favorite subject?" or "How many hours do students study daily?"</li>
+                <li>Survey at least 20 students or observe an event (like counting vehicles).</li>
+                <li>Use tally marks to record responses.</li>
+                <li>Create a frequency table with totals.</li>
+                <li>Draw a bar graph on graph paper using an appropriate scale.</li>
+                <li>Write 2–3 sentences explaining what your graph shows.</li>
+            </ol>
+            <p><strong>Challenge:</strong> Create the same data as both a pictograph and a bar graph. Which is easier to understand? Why?</p>
+        </div>
+
+        <section class="quiz-section">
+            <h3>Assessment: Test Your Understanding</h3>
+
+            <div>
+                <span class="quiz-level-tag predict">Level 1 — Predict</span>
+                <details class="quiz-answer">
+                    <summary><strong>Q1:</strong> Which of the following requires data collection before answering? A) "What is the capital of France?" B) "What is the most popular TV show among students in your class?"</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: B</strong></p>
+                        <p>The capital of France is a known fact (you can look it up in a book). But to find the most popular TV show in your class, you must ask students and collect their preferences. This requires data collection!</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q2:</strong> Look at this tally mark: ||||. How many items does it represent?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 5 items</strong></p>
+                        <p>In tally marking, four vertical lines crossed by a diagonal line represents 5. This grouping of 5 makes counting easier and reduces mistakes.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q3:</strong> A pictograph shows three symbols next to "Apples" with a key "1 symbol = 2 apples". How many apples does this represent?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: 6 apples</strong></p>
+                        <p>Three symbols × 2 apples per symbol = 6 apples. Always multiply the number of symbols by the scale value.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div>
+                <span class="quiz-level-tag why">Level 2 — Why</span>
+                <details class="quiz-answer">
+                    <summary><strong>Q4:</strong> Why is a bar graph better than a frequency table for showing the most popular item in data?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> A bar graph shows data visually. The tallest bar immediately shows the most popular item without needing to read and compare numbers. Our eyes can compare heights faster than reading and comparing numbers in a table.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q5:</strong> Why must pictographs and bar graphs always include a scale or key?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Without a scale, readers don't know what each symbol or unit represents. For example, if you see 5 symbols, do they mean 5 items or 50 items? The scale/key clarifies this so everyone interprets the data the same way.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q6:</strong> A teacher collected data on how many books each student read. Most students read 2–5 books, but one read 50 books. What problem might you face when choosing a scale for a bar graph?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> If you use a scale where 1 unit = 1 book, the graph becomes very tall (50 units) just to show one bar! A better scale would be 1 unit = 5 books. This keeps the graph manageable while still showing all data accurately.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div>
+                <span class="quiz-level-tag apply">Level 3 — Apply</span>
+                <details class="quiz-answer">
+                    <summary><strong>Q7:</strong> You've collected data on 45 students' favorite sports: Cricket (18), Basketball (12), Tennis (10), Football (5). Create a frequency table and describe what scale you'd use for a bar graph. Why that scale?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer (Table):</strong></p>
+                        <table class="data-table">
+                            <tr><th>Sport</th><th>Frequency</th></tr>
+                            <tr><td>Cricket</td><td>18</td></tr>
+                            <tr><td>Basketball</td><td>12</td></tr>
+                            <tr><td>Tennis</td><td>10</td></tr>
+                            <tr><td>Football</td><td>5</td></tr>
+                        </table>
+                        <p><strong>Scale Choice:</strong> 1 unit = 2 students (or 1 unit = 1 student for more detail)</p>
+                        <p><strong>Why?</strong> The maximum value is 18. Using 1 unit = 2 students means the tallest bar is 9 units high—reasonable for standard paper. It's easy to scale (all numbers divide evenly by 2).</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q8:</strong> Interpret this scenario: A bar graph shows daily vehicle counts at a highway toll booth. The bars are tallest from 7–9 a.m., shorter from 10 a.m.–4 p.m., and tall again from 5–7 p.m. What real-world reasons might explain this pattern?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> The pattern shows two peak hours:</p>
+                        <ul>
+                            <li><strong>7–9 a.m.:</strong> Morning rush hour when people commute to work/school</li>
+                            <li><strong>5–7 p.m.:</strong> Evening rush hour when people return home from work/school</li>
+                            <li><strong>10 a.m.–4 p.m.:</strong> Lower traffic because most people have already reached their destinations</li>
+                        </ul>
+                        <p>This pattern is typical in most urban areas and helps traffic planning!</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q9:</strong> You want to compare the heights of the 10 tallest buildings in India. Would you use a horizontal bar graph or vertical bar graph? Explain your choice.</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: Vertical bar graph (column graph)</strong></p>
+                        <p><strong>Reasoning:</strong> Heights are measured vertically upward from the ground. Using vertical bars makes the visual representation more intuitive—taller bars literally represent taller buildings, matching how we think about height in the real world. Horizontal bars would be misleading because they don't match the actual orientation of the data.</p>
+                    </div>
+                </details>
+
+                <details class="quiz-answer">
+                    <summary><strong>Q10:</strong> If you were making an infographic comparing the longest rivers on each continent, would vertical or horizontal bars be more appropriate? Why?</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer: Horizontal bars</strong></p>
+                        <p><strong>Reasoning:</strong> River lengths are measured horizontally across the landscape. Using horizontal bars matches this natural orientation, making the visualization intuitive and accurate. Vertical bars would not represent the actual directional nature of rivers.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="key-takeaways">
+            <h3>Key Takeaways</h3>
+            <ul>
+                <li><strong>Data</strong> is any collection of facts, numbers, observations, or descriptions that convey information.</li>
+                <li><strong>Tally marks</strong> (||||) make counting and organizing data quick and accurate. Five tally marks are crossed together for easy grouping.</li>
+                <li><strong>Frequency tables</strong> organize data by listing categories and their frequencies (how many times each appears).</li>
+                <li><strong>Pictographs</strong> use pictures/symbols to represent data. They require a scale or key to show what each symbol represents.</li>
+                <li><strong>Bar graphs</strong> use rectangular bars to show data. The height or length represents the frequency. Bar graphs are excellent for comparing categories.</li>
+                <li><strong>Choosing the right scale</strong> is crucial. The scale should make the graph fit on your paper and be easy to understand.</li>
+                <li><strong>Accurate graphs require:</strong> clear titles, labeled axes, proper scales, and equal spacing between bars.</li>
+                <li><strong>Vertical vs. Horizontal:</strong> Use vertical bars for heights/measurements, horizontal bars for distances/lengths.</li>
+                <li><strong>By reading graphs carefully,</strong> we can quickly identify patterns, compare values, and make informed conclusions.</li>
+            </ul>
+        </section>
+
+        <div class="chapter-nav">
+          <a href="ch3.html" class="prev"><span class="label">← Previous</span> Number Play</a>
+          <a href="ch5.html" class="next"><span class="label">Next →</span> Prime Time</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Class 6 Learning Portal — A comprehensive guide to Class 6 Mathematics, Science, Social Studies, and English</p>
+        <p>Content based on NCERT Ganita Prakash Grade 6 Curriculum (2025-26)</p>
+        <p>&copy; 2025 Class 6 Portal. Educational Resource.</p>
+    </footer>
+
+    <script>
+        const progressBar = document.querySelector('.progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / scrollHeight) * 100;
+            progressBar.style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>

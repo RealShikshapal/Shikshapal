@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Lines and Angles - Class 6 Learning Portal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
+        .hook-box { border-left-color: var(--math); }
+        .hook-box::before { color: var(--math); }
+        .hook-box h3 { color: var(--math); }
+        .feynman-bridge { border-color: var(--math); }
+        .feynman-bridge .tag { background: var(--math); }
+        .step-number { background: var(--math); }
+        .deep-dive { border-left-color: var(--math); background: var(--math-light); }
+        .deep-dive summary { color: var(--math); }
+        .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
+        .quiz-answer summary { color: var(--math); }
+        .quiz-answer .answer-body { background: var(--math-light); }
+        .chapter-num { color: var(--math); background: var(--math-light); }
+
+        /* Additional styling */
+        .concept-card {
+            background: var(--math-light);
+            border-left: 4px solid var(--math);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .concept-card h4 {
+            color: var(--math);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .ascii-diagram {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+            line-height: 1.5;
+        }
+
+        .real-world {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .real-world h4 {
+            color: #2e7d32;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .error-trap {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .error-trap h4 {
+            color: #ff6f00;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .degree-measure {
+            display: inline-block;
+            background: var(--math-light);
+            padding: 0.2rem 0.6rem;
+            border-radius: 3px;
+            font-weight: 600;
+            color: var(--math);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="chapter-page">
+    <!-- Progress Bar -->
+    <div class="progress-bar-container"><div class="progress-bar"></div></div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+            <div class="nav-subjects">
+                <a href="../science/ch1.html" class="nav-pill science">Science</a>
+                <a href="../math/ch1.html" class="nav-pill math active">Maths</a>
+                <a href="../social/ch1.html" class="nav-pill social">Social Studies</a>
+                <a href="../english/unit1.html" class="nav-pill english">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Chapter Header with Breadcrumb -->
+        <div class="chapter-header">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> > <a href="../math/ch1.html">Mathematics</a> > Chapter 2
+            </div>
+            <h1>Lines and Angles</h1>
+            <div class="chapter-meta">
+                <span class="chapter-num">Chapter 2</span>
+                <span class="estimated-reading">Est. reading time: 30 minutes</span>
+            </div>
+        </div>
+
+        <!-- The Hook -->
+        <section class="hook-box">
+            <h3>The Hook: Where Are Lines and Angles?</h3>
+            <p>Look at your classroom right now. Can you spot a line? A right angle? An acute angle? You'll find them everywhere—in the edges of your desk, the corner of a window, the hands of a clock at different times, even in how the sun's rays hit the ground.</p>
+            <p><strong>Here's the challenge:</strong> Mathematicians needed a precise way to talk about these geometric ideas so they could describe the world accurately. How would you measure how wide a door is opened? Or explain exactly how much to turn a steering wheel? That's where angles come in. And before angles, we need to understand points, lines, rays, and line segments.</p>
+        </section>
+
+        <!-- The Feynman Bridge -->
+        <section class="feynman-bridge">
+            <span class="tag">FEYNMAN BRIDGE</span>
+            <h3>Making It Crystal Clear</h3>
+            <p>Think of geometry as building blocks. The smallest building block is a <strong>point</strong>—just a location, nothing more. Connect two points with the shortest path? You get a <strong>line segment</strong>. Extend that path forever in both directions? You get a <strong>line</strong>. Start at a point and go forever in one direction? You get a <strong>ray</strong>.</p>
+            <p>Now, twist two rays from the same starting point, and you create an <strong>angle</strong>—a measure of how much you've twisted. All of architecture, engineering, and design depends on understanding these simple ideas precisely.</p>
+        </section>
+
+        <!-- Section 2.1: Point -->
+        <section class="content-section">
+            <h2>2.1 Point: A Location in Space</h2>
+            <p>Mark a dot on paper with a sharp pencil. That dot represents a <strong>point</strong>. A point is the simplest geometric object: it's a location in space with no length, width, or height. It's infinitely small.</p>
+
+            <div class="concept-card">
+                <h4>Naming Points</h4>
+                <p>We label points with capital letters: A, B, C, P, Z, etc. This lets us talk about specific locations precisely. When you write "Point P," you're referring to one exact location.</p>
+            </div>
+
+            <div class="real-world">
+                <h4>Real-World Examples of Points</h4>
+                <ul>
+                    <li>The tip of a compass needle</li>
+                    <li>The tip of a sharpened pencil</li>
+                    <li>The pointed end of a needle</li>
+                    <li>The exact center of a circle</li>
+                    <li>A city on a map</li>
+                </ul>
+            </div>
+
+            <p><strong>Key insight:</strong> In real life, a point always has some size, but in mathematics, we imagine it as infinitely thin—a pure location with zero dimensions.</p>
+        </section>
+
+        <!-- Section 2.2: Line Segment -->
+        <section class="content-section">
+            <h2>2.2 Line Segment: The Shortest Path</h2>
+            <p>Take two points, A and B. The <strong>line segment AB</strong> is the shortest path connecting them. It has two endpoints (A and B) and every point in between.</p>
+
+            <div class="concept-card">
+                <h4>Why Line Segment?</h4>
+                <p>The word "segment" means a piece or portion. A line segment is literally a portion of a line—it has definite endpoints, unlike a full line.</p>
+            </div>
+
+            <div class="ascii-diagram">
+LINE SEGMENT AB:
+
+A ●────────────── ● B
+
+endpoint     segment      endpoint
+
+Think of it like a physical stick:
+- It has a definite beginning (A)
+- It has a definite end (B)
+- Everything between A and B is part of the segment
+            </div>
+
+            <p><strong>Key property:</strong> Between any two points, there is exactly one line segment. This is the most direct route.</p>
+        </section>
+
+        <!-- Section 2.3: Line -->
+        <section class="content-section">
+            <h2>2.3 Line: Extending Forever</h2>
+            <p>Imagine a line segment AB. Now extend it infinitely beyond A in one direction and infinitely beyond B in the other direction. This is a <strong>line</strong>. It has no endpoints—it stretches forever in both directions.</p>
+
+            <div class="ascii-diagram">
+LINE PASSING THROUGH A AND B:
+
+← ← ← ← ← A ●────────────── ● B → → → → →
+
+        Extends forever        Extends forever
+
+A line is infinite. You can never draw a complete line—you can only draw a portion
+and understand that it continues beyond what you can see.
+            </div>
+
+            <div class="concept-card">
+                <h4>Naming Lines</h4>
+                <p>A line can be named using two points on it (like "line AB") or by a single lowercase letter (like "line m" or "line l").</p>
+            </div>
+
+            <p><strong>Crucial fact:</strong> Any two distinct points determine exactly one unique line passing through both of them. This principle is fundamental to geometry.</p>
+        </section>
+
+        <!-- Section 2.4: Ray -->
+        <section class="content-section">
+            <h2>2.4 Ray: One Direction Forever</h2>
+            <p>A <strong>ray</strong> is like a half-line. It starts at a point (called the starting point or initial point) and extends forever in one direction.</p>
+
+            <div class="ascii-diagram">
+RAY STARTING AT A AND PASSING THROUGH P:
+
+A ● ──────────── P ●  → → → → → (extends forever)
+
+starting point       a point on the ray    direction of extension
+            </div>
+
+            <div class="concept-card">
+                <h4>Naming Rays</h4>
+                <p>A ray is named with its starting point first, then another point on the ray: "ray AP" or written as AP with an arrow above it (→AP). The starting point is always listed first.</p>
+            </div>
+
+            <div class="real-world">
+                <h4>Real-World Examples of Rays</h4>
+                <ul>
+                    <li>A beam of light from a lighthouse—it starts at the source and goes infinitely far</li>
+                    <li>A ray of sunlight</li>
+                    <li>A laser beam—it starts at one point and travels in one direction</li>
+                </ul>
+            </div>
+
+            <p><strong>Key difference from line segments:</strong> A ray has one fixed starting point and extends infinitely in one direction. If you reverse the direction, you get a different ray.</p>
+        </section>
+
+        <!-- Section 2.5: Angle -->
+        <section class="content-section">
+            <h2>2.5 Angle: Measuring Rotation</h2>
+            <p>An <strong>angle</strong> is formed by two rays that share a common starting point. The shared point is called the <strong>vertex</strong>, and the two rays are called the <strong>arms</strong>.</p>
+
+            <div class="ascii-diagram">
+ANGLE FORMED BY RAYS BD AND BE:
+
+        D
+        ↗
+       /
+      / ← arm
+     /
+B ●  ← vertex
+     \
+      \ ← arm
+       ↘
+        E
+
+The angle DBE (or ∠DBE) is the "turn" from ray BD to ray BE
+            </div>
+
+            <div class="concept-card">
+                <h4>Understanding "Size" of an Angle</h4>
+                <p>The size of an angle is <strong>the amount of rotation or turn needed to rotate one arm onto the other arm</strong>. It's not about how long the arms are—even if you make the arms longer or shorter, the angle stays the same.</p>
+            </div>
+
+            <h3>Angles in Everyday Life</h3>
+            <p>Think about these examples:</p>
+
+            <div class="two-column">
+                <div>
+                    <h4>Opening a Book</h4>
+                    <p>As you open a book, the cover makes different angles. Start with the book closed (tiny angle), then slowly open it (larger angles). The vertex is where the cover meets the spine.</p>
+                </div>
+                <div>
+                    <h4>Opening Scissors</h4>
+                    <p>When you open scissors to cut, the two blades form an angle. A wider opening = a larger angle. The vertex is where the blades meet.</p>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div>
+                    <h4>Compass/Divider</h4>
+                    <p>When you open a compass to draw a circle, the two arms form an angle at the joint. The angle determines the circle's radius.</p>
+                </div>
+                <div>
+                    <h4>Clock Hands</h4>
+                    <p>At 3:00, the hour and minute hands form a 90° angle. At 6:00, they form a 180° angle. The vertex is at the clock's center.</p>
+                </div>
+            </div>
+
+            <p><strong>Key insight:</strong> An angle is purely about rotation—not about the length of the arms or the position in space.</p>
+        </section>
+
+        <!-- Section 2.6: Comparing Angles -->
+        <section class="content-section">
+            <h2>2.6 Comparing Angles: Which One Is Bigger?</h2>
+            <p>How do we know which of two angles is larger? We can use two methods: <strong>superimposition</strong> (overlaying) or <strong>measurement with a protractor</strong>.</p>
+
+            <h3>Method 1: Superimposition (Physical Comparison)</h3>
+            <p>Place one angle exactly over the other, making sure their vertices overlap and the arms line up. The angle whose arm extends further is the larger angle.</p>
+
+            <div class="ascii-diagram">
+COMPARING TWO ANGLES BY OVERLAYING:
+
+Angle 1:        Angle 2:        Overlayed:
+  B              Y                 B (overlaps with Y)
+  ↗              ↗                 ↗ ← Angle 1's arm extends further
+ /              /                 /
+A ●            X ●              A ● (overlaps with X)
+ \              \                 \
+  C              Z                 C and Z both here, but different
+
+Conclusion: Angle 1 is LARGER than Angle 2
+            </div>
+
+            <h3>Method 2: Using a Transparent Circle</h3>
+            <p>Place a transparent circular piece of paper on the first angle with its center on the vertex. Mark where the arms pass through the circle. Then check if the same arms fit within this marked space on the second angle.</p>
+
+            <details class="deep-dive">
+                <summary>Deep Dive: Why These Methods Work</summary>
+                <div class="answer-body">
+                    <p><strong>Superimposition works because:</strong> If two angles have the same amount of rotation (turn), when you overlay them, the arms will match perfectly. If one arm extends further, that angle requires more rotation.</p>
+                    <p><strong>The circle method works because:</strong> A circle allows you to "copy" an angle. By marking where the arms intersect the circle, you create a physical record of the angle's size that you can move to compare with other angles.</p>
+                    <p>Both methods rely on the fundamental principle: <strong>angles with the same rotation are equal, regardless of where they're located or how long the arms are.</strong></p>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 2.7: Special Types of Angles -->
+        <section class="content-section">
+            <h2>2.7 Special Types of Angles</h2>
+            <p>Some angles are so important they have special names and properties. Let's explore them.</p>
+
+            <h3>Right Angle: The Perfect Corner</h3>
+            <p>When you fold a paper so that one edge perfectly overlaps another edge, you create a crease that divides a straight angle into two equal parts. Each part is called a <strong>right angle</strong>.</p>
+
+            <div class="ascii-diagram">
+CREATING A RIGHT ANGLE BY FOLDING:
+
+Original straight angle (fold the paper so edges line up):
+
+B ←————— O ————→ A     (This is a straight line = 180°)
+
+After folding, the crease OC divides it perfectly in half:
+
+B ←——— O ———→ A
+      |
+      | OC (the crease)
+      ↓
+      C
+
+∠BOC = ∠COA = 90°  (Each is a right angle)
+            </div>
+
+            <p><strong>A right angle measures 90 degrees (90°).</strong> It's called "right" not because it's correct, but from an old Latin word meaning "upright."</p>
+
+            <div class="concept-card">
+                <h4>Perpendicular Lines</h4>
+                <p>Two lines that meet at a right angle are called <strong>perpendicular lines</strong>. The symbol ⊥ means "is perpendicular to." For example: line AB ⊥ line CD.</p>
+            </div>
+
+            <h3>Straight Angle: A Half Turn</h3>
+            <p>When you open a book completely flat (like lying it on a table), the cover makes a <span class="degree-measure">180°</span> angle with the table. This is a <strong>straight angle</strong>—two rays pointing in opposite directions.</p>
+
+            <div class="ascii-diagram">
+STRAIGHT ANGLE - A HALF TURN:
+
+A ←————— O ————→ B
+
+This is a straight line. The angle ∠AOB = 180°
+            </div>
+
+            <h3>Classifying Angles by Size</h3>
+
+            <div class="two-column">
+                <div class="concept-card">
+                    <h4>Acute Angle</h4>
+                    <p><strong>Size:</strong> More than 0° and less than 90°</p>
+                    <p><strong>Visual:</strong> Sharp opening</p>
+                    <p><strong>Examples:</strong> 30°, 45°, 60°, 75°</p>
+                    <p>"Acute" means sharp—think of an acute angle as a sharp point.</p>
+                </div>
+                <div class="concept-card">
+                    <h4>Right Angle</h4>
+                    <p><strong>Size:</strong> Exactly 90°</p>
+                    <p><strong>Visual:</strong> Perfect corner (like an L)</p>
+                    <p><strong>Examples:</strong> Corners of a square, windows, doors</p>
+                    <p>This is the most important angle in geometry.</p>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="concept-card">
+                    <h4>Obtuse Angle</h4>
+                    <p><strong>Size:</strong> More than 90° and less than 180°</p>
+                    <p><strong>Visual:</strong> Wide opening</p>
+                    <p><strong>Examples:</strong> 100°, 120°, 150°</p>
+                    <p>"Obtuse" means blunt—think of a blunt, wide opening.</p>
+                </div>
+                <div class="concept-card">
+                    <h4>Reflex Angle</h4>
+                    <p><strong>Size:</strong> More than 180° and less than 360°</p>
+                    <p><strong>Visual:</strong> More than a straight angle</p>
+                    <p><strong>Examples:</strong> 200°, 270°, 315°</p>
+                    <p>The "other side" of an angle. Less commonly used but important to know.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2.8: Measuring Angles with Degrees -->
+        <section class="content-section">
+            <h2>2.8 Measuring Angles: Degrees and the Protractor</h2>
+            <p>To compare angles precisely without overlaying them, mathematicians created a <strong>unit of measurement</strong> called a <strong>degree</strong>.</p>
+
+            <h3>Why 360 Degrees?</h3>
+            <p>A full rotation (complete turn) is divided into <strong>360 equal parts</strong>. Each part is 1 degree (1°). Why 360? It's historical and practical:</p>
+
+            <div class="concept-card">
+                <h4>The History Behind 360°</h4>
+                <ul>
+                    <li>Ancient Babylonians divided circles into 360 parts</li>
+                    <li>Ancient Indian, Persian, Babylonian, and Egyptian calendars all had 360 days</li>
+                    <li>360 is the smallest number divisible by 1, 2, 3, 4, 5, 6, 8, 9, and 10 (not by 7)</li>
+                    <li>360 divides evenly by 12 (months) and 24 (hours)—very practical!</li>
+                </ul>
+            </div>
+
+            <h3>Key Degree Measures</h3>
+
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <strong>Full rotation:</strong> <span class="degree-measure">360°</span> (complete turn, back to start)
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <strong>Straight angle:</strong> <span class="degree-measure">180°</span> (half turn, rays opposite)
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <strong>Right angle:</strong> <span class="degree-measure">90°</span> (quarter turn, perfect corner)
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <strong>Any other angle:</strong> Measured as some value between 0° and 360°
+                    </div>
+                </div>
+            </div>
+
+            <h3>The Protractor: Your Angle-Measuring Tool</h3>
+            <p>A <strong>protractor</strong> is a semicircular tool divided into 180 equal parts, each representing 1°. It allows you to measure any angle's degree measure.</p>
+
+            <div class="ascii-diagram">
+A PROTRACTOR has:
+- A center point (vertex of the angle goes here)
+- A base line (0° mark)
+- Degree markings from 0° to 180° in both directions
+- Two scales (inner and outer) for convenience
+
+         180°
+          |
+    140° | 40°
+    130° | 50°
+    120° | 60°
+    110° | 70°
+    100° | 80°
+     90°   90°
+     |_____|
+     0°  0°
+
+The two scales let you measure from either direction.
+            </div>
+
+            <h3>How to Use a Protractor</h3>
+
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <strong>Place the center:</strong> Put the protractor's center point exactly on the vertex of your angle.
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <strong>Align a ray:</strong> Line up one arm of the angle with the 0° mark (baseline) of the protractor.
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <strong>Read the scale:</strong> Find where the other arm passes through the protractor's degree markings.
+                    </div>
+                </div>
+                <div class="logic-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <strong>Note the degree:</strong> That marking is your angle's degree measure. Pick the scale (inner or outer) that corresponds to your 0° line.
+                    </div>
+                </div>
+            </div>
+
+            <details class="deep-dive">
+                <summary>Deep Dive: Building Your Own Protractor by Folding</summary>
+                <div class="answer-body">
+                    <p><strong>You can make a protractor by folding paper!</strong> Here's how:</p>
+                    <ol>
+                        <li><strong>Draw a semicircle</strong> on paper and cut it out</li>
+                        <li><strong>Fold in half:</strong> Fold to create the 90° line (one quarter of the full circle)</li>
+                        <li><strong>Fold again:</strong> Each new fold cuts the angle in half, creating 45°, 22.5°, etc.</li>
+                        <li><strong>Mark creases:</strong> Each crease represents a specific degree measure</li>
+                    </ol>
+                    <p><strong>Why this works:</strong> When you fold, you're physically dividing angles. The number of folds tells you the degree measure of each new fold line.</p>
+                    <p>This hands-on approach reveals why the protractor works—it's based on dividing circles and angles systematically by halving.</p>
+                </div>
+            </details>
+        </section>
+
+        <!-- Section 2.9: Angle Bisector -->
+        <section class="content-section">
+            <h2>2.9 Angle Bisector: Splitting an Angle in Half</h2>
+            <p>An <strong>angle bisector</strong> is a ray that divides an angle into two equal parts. Bisect means "cut in two."</p>
+
+            <div class="concept-card">
+                <h4>Creating an Angle Bisector by Folding</h4>
+                <p>To bisect an angle:</p>
+                <ol>
+                    <li>Draw the angle on paper</li>
+                    <li>Fold the paper so that both arms of the angle overlap perfectly</li>
+                    <li>The crease you create is the angle bisector</li>
+                </ol>
+                <p><strong>Why this works:</strong> Folding aligns the arms perfectly, so the crease is equidistant (in terms of rotation) from both arms.</p>
+            </div>
+
+            <div class="ascii-diagram">
+BISECTING AN ANGLE:
+
+Original angle:         After folding (arms overlap):
+
+    B                          B
+    ↗                          ↗ (these align)
+   /                          /
+  / angle                 C / ← crease (angle bisector)
+ /                        /
+O ●                    O ●
+ \                        \
+  \ angle              D    \
+   \                        ↘ (these align too)
+    D
+
+Ray OC bisects angle BOD, so:
+∠BOC = ∠COD (both equal)
+            </div>
+        </section>
+
+        <!-- Section 2.10: Real-World Applications of Angles -->
+        <section class="content-section">
+            <h2>2.10 Where Are Angles in Your World?</h2>
+            <p>Angles aren't abstract—they're everywhere!</p>
+
+            <div class="real-world">
+                <h4>Angles on a Clock</h4>
+                <p>A clock's face is divided into 12 equal hours. Each hour represents <span class="degree-measure">30°</span> (since 360° ÷ 12 = 30°).</p>
+                <ul>
+                    <li>At 1:00 → angle between hands = 30°</li>
+                    <li>At 2:00 → angle between hands = 60°</li>
+                    <li>At 3:00 → angle between hands = 90° (right angle!)</li>
+                    <li>At 6:00 → angle between hands = 180° (straight angle!)</li>
+                </ul>
+            </div>
+
+            <div class="real-world">
+                <h4>Angles When Opening a Door</h4>
+                <p>The vertex is where the door meets the wall. One arm is the wall, the other is the door. A completely closed door = 0°. A completely open door = 90°. An angle expresses exactly how open the door is!</p>
+            </div>
+
+            <div class="real-world">
+                <h4>Angles on a Swing</h4>
+                <p>The angle at which you lean back on a swing determines how much potential energy you have. A larger initial angle means greater speed at the bottom of the swing.</p>
+            </div>
+
+            <div class="real-world">
+                <h4>Angles and Slopes</h4>
+                <p>The steepness of a ramp, hill, or roof is measured as an angle from the horizontal (flat) ground. A 45° slope is steeper than a 30° slope. A 90° slope is a vertical wall!</p>
+            </div>
+
+            <div class="real-world">
+                <h4>Angles in Navigation</h4>
+                <p>Directions are given as angles: "Turn 30° to the right" or "Fly at a bearing of 270°." These are angles measured from a reference direction (usually north = 0°).</p>
+            </div>
+        </section>
+
+        <!-- Section 2.11: Triangle Angle Sum Property -->
+        <section class="content-section">
+            <h2>2.11 A Remarkable Property: Triangle Angles</h2>
+            <p>Here's something fascinating: measure all three angles of any triangle and add them up. What do you get?</p>
+
+            <div class="concept-card">
+                <h4>The Triangle Angle Sum Property</h4>
+                <p><strong>In any triangle, the sum of the three angles is always 180°.</strong></p>
+                <p>Try measuring different triangles—tall ones, flat ones, right triangles—and adding up their angles. You'll always get 180°!</p>
+                <p><strong>Why?</strong> 180° is a straight angle. The three angles of any triangle, when placed back-to-back, form a straight line.</p>
+            </div>
+
+            <div class="ascii-diagram">
+When you arrange the three angles of a triangle back-to-back,
+they form a straight line (180°):
+
+   angle A + angle B + angle C = 180°
+
+|-------- 180° straight angle --------|
+A angle | B angle | C angle
+|_______|_________|_________|
+            </div>
+
+            <p>This property is so powerful that if you know any two angles of a triangle, you can instantly find the third one using: <strong>Unknown angle = 180° - (sum of known angles)</strong></p>
+        </section>
+
+        <!-- Common Error Trap -->
+        <section class="error-trap">
+            <h4>Common Error Trap: Confusing Angle Size with Arm Length</h4>
+            <p><strong>Mistake:</strong> Students often think that making the arms of an angle longer or shorter changes the angle's size. "A bigger angle must have longer arms!"</p>
+            <p><strong>Reality:</strong> Arm length has absolutely nothing to do with angle size. An angle of 30° has the same size whether the arms are 1 cm long or 10 cm long. The angle measures rotation, not distance.</p>
+
+            <div class="ascii-diagram">
+Both of these are the SAME angle (30°):
+
+    ↗            ↗
+   /            /
+  /             /
+ /              /
+●               ●
+Short arms      Long arms
+Same 30° angle!
+            </div>
+
+            <p><strong>Test yourself:</strong> Draw an angle. Now draw the same angle with much longer arms. Measure both with a protractor. You'll get the same degree measure!</p>
+        </section>
+
+        <!-- Socratic Sandbox Quiz -->
+        <section class="quiz-section">
+            <h3>Socratic Sandbox: Test Your Understanding of Lines and Angles</h3>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag predict">Level 1: Predict</span>
+                    Name That Angle
+                </h4>
+                <p>Two rays start at point O, with one pointing to the right (0°) and another pointing straight up (90°). What is the measure of the angle between them?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> 90° (a right angle)</p>
+                        <p><strong>Explanation:</strong> The difference between 90° and 0° is 90°. This is the classic "corner" angle you see in squares, windows, and rooms.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag predict">Level 1: Predict</span>
+                    Clock Angles
+                </h4>
+                <p>At what time do the hour and minute hands of a clock form a right angle (90°)?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> At 3:00 (and also at 9:00)</p>
+                        <p><strong>Explanation:</strong> At 3:00, the minute hand points at 12, and the hour hand points at 3. The angle between them is exactly 90°.</p>
+                        <p>At 9:00, the minute hand points at 12, hour hand at 9, which is also 90°.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag why">Level 2: Why</span>
+                    Why Does Folding Create a Right Angle?
+                </h4>
+                <p>When you fold a paper so that one edge overlaps another edge perfectly, why does the resulting crease create two equal angles?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Explanation:</strong> When you fold paper, you're creating a reflection. The fold line (crease) becomes a "mirror" that creates two identical angles on either side. Since both angles are identical, they must be equal in size.</p>
+                        <p>Because you're folding a straight angle (180°) in half, each resulting angle is 180° ÷ 2 = 90°.</p>
+                        <p><strong>Key insight:</strong> Folding is a physical way to bisect an angle—to divide it into two equal parts.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag why">Level 2: Why</span>
+                    Why Is It Called Perpendicular?
+                </h4>
+                <p>Two lines that meet at a right angle are perpendicular. Why is this relationship special in geometry and architecture?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Perpendicular lines are special because right angles (90°) are the most stable and symmetric configuration. Buildings, rooms, and furniture are built with perpendicular lines because:</p>
+                        <ul>
+                            <li>90° angles are perfectly vertical and horizontal—stable</li>
+                            <li>They divide space evenly and predictably</li>
+                            <li>Perpendicular lines are easiest to construct accurately</li>
+                            <li>Most structures in nature and human design use 90° angles</li>
+                        </ul>
+                        <p>Without perpendicular lines, buildings would collapse and furniture would be unstable!</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag apply">Level 3: Apply</span>
+                    Finding an Unknown Angle
+                </h4>
+                <p>In a triangle, two angles measure 50° and 60°. What is the measure of the third angle?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> 70°</p>
+                        <p><strong>Calculation:</strong> Since the sum of all angles in a triangle is 180°:</p>
+                        <p>Third angle = 180° - (50° + 60°) = 180° - 110° = 70°</p>
+                        <p><strong>Application:</strong> This triangle angle sum property applies to EVERY triangle, no matter what shape it is. It's one of the most fundamental properties in geometry!</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag apply">Level 3: Apply</span>
+                    Designing with Angles
+                </h4>
+                <p>An architect wants to design a ramp that climbs at a 30° angle from the horizontal ground. If the ramp must rise 3 meters, approximately how long does the ramp need to be?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> Approximately 6 meters (this requires trigonometry, which you'll study later)</p>
+                        <p><strong>Explanation:</strong> In a right triangle:</p>
+                        <ul>
+                            <li>The vertical rise = 3 meters</li>
+                            <li>The angle = 30°</li>
+                            <li>The ramp length = rise ÷ sin(30°) = 3 ÷ 0.5 = 6 meters</li>
+                        </ul>
+                        <p><strong>Why this matters:</strong> Architects, engineers, and construction workers use angles constantly to design structures. Understanding angles helps them build safely and accurately.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="quiz-item">
+                <h4>
+                    <span class="quiz-level-tag apply">Level 3: Apply</span>
+                    Angle Relationships in Real Objects
+                </h4>
+                <p>In the Ashoka Chakra (the wheel on India's flag) there are 24 equally-spaced spokes. What is the angle between any two adjacent spokes?</p>
+                <details class="quiz-answer">
+                    <summary>Reveal Answer</summary>
+                    <div class="answer-body">
+                        <p><strong>Answer:</strong> 15°</p>
+                        <p><strong>Calculation:</strong> A full rotation = 360°. With 24 equal spokes:</p>
+                        <p>Angle between adjacent spokes = 360° ÷ 24 = 15°</p>
+                        <p><strong>Application:</strong> This same principle applies to clock divisions, pie charts, wheels, and any circular design that's divided into equal parts.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Chapter Summary -->
+        <section class="chapter-summary">
+            <h2>Chapter Summary</h2>
+            <div class="summary-box">
+                <h4>Key Takeaways</h4>
+                <ul>
+                    <li>A <strong>point</strong> is a location with no dimensions</li>
+                    <li>A <strong>line segment</strong> connects two points (shortest path)</li>
+                    <li>A <strong>line</strong> extends forever in both directions through two points</li>
+                    <li>A <strong>ray</strong> starts at a point and extends forever in one direction</li>
+                    <li>An <strong>angle</strong> is formed by two rays from a common point and measures rotation</li>
+                    <li><strong>Angle types:</strong> acute (&lt;90°), right (90°), obtuse (90°-180°), straight (180°), reflex (&gt;180°)</li>
+                    <li>A <strong>protractor</strong> measures angles in degrees (full turn = 360°)</li>
+                    <li><strong>Perpendicular lines</strong> meet at right angles (90°)</li>
+                    <li>An <strong>angle bisector</strong> divides an angle into two equal parts</li>
+                    <li><strong>Triangle Angle Sum:</strong> The three angles of any triangle sum to 180°</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav">
+            <div class="prev">
+                <a href="ch1.html">
+                    <span class="nav-label">← Previous</span>
+                    <span class="nav-title">Chapter 1: Patterns in Mathematics</span>
+                </a>
+            </div>
+            <div class="next">
+                <a href="ch3.html">
+                    <span class="nav-label">Next →</span>
+                    <span class="nav-title">Chapter 3: Number Play</span>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Class 6 Learning Portal. All rights reserved.</p>
+            <p>Geometry is the study of shapes. Angles are the key to understanding them.</p>
+        </div>
+    </footer>
+
+    <!-- Progress Bar Script -->
+    <script>
+        const progressBar = document.querySelector('.progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+        });
+    </script>
+</body>
+</html>
