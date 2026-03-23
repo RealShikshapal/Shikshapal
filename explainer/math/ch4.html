@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 4: Data Handling and Presentation - The Logical Builder</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(to right, #FF6B35, #FF8C42);
+      width: 0%;
+      z-index: 1000;
+    }
+
+    .chapter-page {
+      --accent: var(--math);
+      --accent-light: var(--math-light);
+      --accent-glow: var(--math-glow);
+    }
+
+    .hook-box {
+      border-left-color: var(--math);
+      border-left: 4px solid var(--math);
+      padding: 20px;
+      background: var(--math-light);
+      border-radius: 4px;
+      margin: 30px 0;
+    }
+
+    .hook-box::before {
+      content: "🎯";
+      color: var(--math);
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .hook-box h3 {
+      color: var(--math);
+      margin-top: 0;
+    }
+
+    .feynman-bridge {
+      border: 2px solid var(--math);
+      padding: 20px;
+      margin: 30px 0;
+      background: #f9f9f9;
+      border-radius: 4px;
+    }
+
+    .feynman-bridge .tag {
+      display: inline-block;
+      background: var(--math);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .step-number {
+      background: var(--math);
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .logic-step {
+      display: flex;
+      margin: 16px 0;
+      gap: 12px;
+    }
+
+    .deep-dive {
+      border-left: 4px solid var(--math);
+      background: var(--math-light);
+      padding: 16px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .deep-dive summary {
+      color: var(--math);
+      font-weight: 600;
+      cursor: pointer;
+      padding: 8px 0;
+    }
+
+    .deep-dive summary:hover {
+      text-decoration: underline;
+    }
+
+    .error-trap {
+      background: #fff3cd;
+      border-left: 4px solid #ff6b6b;
+      padding: 16px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .error-trap h4 {
+      color: #ff6b6b;
+      margin-top: 0;
+    }
+
+    .quiz-section {
+      margin: 40px 0;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .quiz-section h3 {
+      border-bottom: 2px solid var(--math);
+      color: var(--math);
+      padding-bottom: 10px;
+    }
+
+    .quiz-item {
+      margin: 20px 0;
+      padding: 16px;
+      background: white;
+      border-radius: 4px;
+      border-left: 3px solid #e0e0e0;
+    }
+
+    .quiz-answer {
+      margin: 12px 0;
+    }
+
+    .quiz-answer summary {
+      color: var(--math);
+      font-weight: 600;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .quiz-answer summary:hover {
+      text-decoration: underline;
+    }
+
+    .answer-body {
+      background: var(--math-light);
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+      gap: 20px;
+    }
+
+    .nav-link {
+      flex: 1;
+      padding: 16px;
+      background: var(--math-light);
+      border-left: 4px solid var(--math);
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--math);
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .nav-link:hover {
+      background: var(--math);
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--math-light);
+      color: var(--math);
+      font-weight: 600;
+    }
+
+    .data-box {
+      background: var(--math-light);
+      padding: 20px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar"></div>
+
+  <!-- Navigation Bar -->
+  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: white; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100;">
+    <a href="../index.html" style="font-weight: 700; font-size: 18px; color: var(--math); text-decoration: none;">The Logical Builder</a>
+    <div style="display: flex; gap: 12px;">
+      <a href="../math/ch1.html" class="nav-pill" style="background: var(--math-light); color: var(--math); padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Maths</a>
+      <a href="../science/ch1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Science</a>
+      <a href="../social/ch1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">Social</a>
+      <a href="../english/unit1.html" class="nav-pill" style="background: #f0f0f0; color: #666; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600;">English</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+
+    <!-- Breadcrumb -->
+    <div style="font-size: 13px; color: #888; margin-bottom: 24px;">
+      <a href="../index.html" style="color: var(--math); text-decoration: none;">Home</a> > <a href="../math/ch1.html" style="color: var(--math); text-decoration: none;">Mathematics</a> > Chapter 4
+    </div>
+
+    <!-- Chapter Header -->
+    <header style="margin-bottom: 40px;">
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 48px; color: var(--math); margin: 0 0 16px 0;">Data Handling and Presentation</h1>
+      <p style="font-size: 18px; color: #666; margin: 0;">Turning raw information into meaningful insights</p>
+    </header>
+
+    <!-- The Hook -->
+    <div class="hook-box">
+      <h3>Think About This...</h3>
+      <p>Navya thinks cricket is the most popular game in her class, but Naresh isn't sure. How would they find out? They decide to ask every student in the class. Now they have a list of names and favorite games—but it's messy and hard to read. How can they organize this information to answer their question quickly?</p>
+      <p><strong>In this chapter, you'll learn to collect, organize, and present data so that the truth becomes crystal clear.</strong></p>
+    </div>
+
+    <!-- The Feynman Bridge -->
+    <div class="feynman-bridge">
+      <span class="tag">WHY THIS MATTERS</span>
+      <p>Every day, we're surrounded by data—surveys, charts, statistics in news articles, and social media trends. By learning to handle and present data effectively, you gain the power to understand information, ask smart questions, and even detect when data is being used to mislead you. This is the foundation of data literacy in the modern world.</p>
+    </div>
+
+    <!-- Collecting and Organizing Data -->
+    <section style="margin: 40px 0;">
+      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Collecting and Organizing Data</h2>
+
+      <p><strong>Data</strong> is any collection of facts, numbers, measurements, or observations. Before we can understand data, we must collect it and organize it.</p>
+
+      <div class="logic-step">
+        <div class="step-number">1</div>
+        <div><p><strong>Collect:</strong> Ask each student their favorite game</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">2</div>
+        <div><p><strong>Organize:</strong> Group answers together using tally marks or a table</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">3</div>
+        <div><p><strong>Count:</strong> Find the frequency (how many times each answer appears)</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">4</div>
+        <div><p><strong>Analyze:</strong> Look for patterns and draw conclusions</p></div>
+      </div>
+
+      <h3 style="color: var(--math);">Using Tally Marks</h3>
+      <p>Tally marks help us count quickly. We use 4 vertical lines with a diagonal line through them to represent 5:</p>
+
+      <div class="data-box">
+        <p><strong>Example: Counting sweet preferences</strong></p>
+        <table>
+          <tr>
+            <th>Sweet</th>
+            <th>Tally Marks</th>
+            <th>Frequency</th>
+          </tr>
+          <tr>
+            <td>Jalebi</td>
+            <td>|||| |</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Gulab Jamun</td>
+            <td>|||| |||| </td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Gujiya</td>
+            <td>|||| |||| |||</td>
+            <td>13</td>
+          </tr>
+        </table>
+      </div>
+
+      <details class="deep-dive">
+        <summary>Deep Dive: Why organize data before analyzing?</summary>
+        <div class="answer-body">
+          <p>When data is messy and unorganized, it's hard to see patterns. By arranging it in order, using tally marks, or creating a frequency table, patterns jump out immediately. For example, glancing at a tally count shows instantly which sweet is most popular—much faster than searching through a random list!</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Pictographs -->
+    <section style="margin: 40px 0;">
+      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Pictographs: Pictures Tell the Story</h2>
+
+      <p>A <strong>pictograph</strong> uses pictures or symbols to represent data. Each symbol represents a certain number of items—called the <strong>scale</strong>.</p>
+
+      <div class="data-box">
+        <p><strong>Example: Books borrowed from library</strong></p>
+        <p>If 📚 = 1 book, then:</p>
+        <p>Monday: 📚 📚 📚 📚 📚 = 5 books</p>
+        <p>Tuesday: 📚 📚 📚 = 3 books</p>
+      </div>
+
+      <h3 style="color: var(--math);">Advantages of Pictographs</h3>
+      <ul>
+        <li>Quick visual understanding—you don't need to read numbers</li>
+        <li>Comparisons are instant (longer rows = more data)</li>
+        <li>Visually interesting and engaging</li>
+      </ul>
+
+      <div class="error-trap">
+        <h4>⚠️ Common Pictograph Problem: Uneven Scales</h4>
+        <p><strong>The Challenge:</strong> What if you need to show 33 students and each symbol = 10? You can't draw 3.3 symbols!</p>
+        <p><strong>The Solution:</strong> Use two symbols—one for 10 and one for 5. So 33 students = 3 full symbols (30) + 1 half symbol (3 more) = about 3.3 symbols shown cleverly.</p>
+      </div>
+
+      <details class="deep-dive">
+        <summary>Deep Dive: Choosing the right scale</summary>
+        <div class="answer-body">
+          <p>For small numbers (1-20), use 📊 = 1. For medium numbers (20-100), use 📊 = 5 or 📊 = 10. For large numbers (100+), use 📊 = 50 or 📊 = 100. The goal: your pictograph fits nicely on the paper without being too crowded or too sparse.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Bar Graphs -->
+    <section style="margin: 40px 0;">
+      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Bar Graphs: Bars as Information</h2>
+
+      <p>A <strong>bar graph</strong> uses rectangular bars to show data. The height (or length) of each bar represents a number.</p>
+
+      <h3 style="color: var(--math);">Key Features of Bar Graphs</h3>
+
+      <div class="logic-step">
+        <div class="step-number">1</div>
+        <div><p><strong>Categories on one axis:</strong> Games, fruits, classes, time periods, etc.</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">2</div>
+        <div><p><strong>Frequency on the other axis:</strong> How many, how much, how tall, etc.</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">3</div>
+        <div><p><strong>Uniform bar width:</strong> All bars have the same width so we only compare heights</p></div>
+      </div>
+
+      <div class="logic-step">
+        <div class="step-number">4</div>
+        <div><p><strong>A scale:</strong> Tells us what each unit of height means (e.g., 1 cm = 10 students)</p></div>
+      </div>
+
+      <h3 style="color: var(--math);">Drawing a Bar Graph: Step by Step</h3>
+
+      <div class="data-box">
+        <p><strong>Data: Sweet preferences</strong></p>
+        <table>
+          <tr>
+            <th>Sweet</th>
+            <th>Number of Students</th>
+          </tr>
+          <tr>
+            <td>Jalebi</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Gulab Jamun</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Gujiya</td>
+            <td>13</td>
+          </tr>
+        </table>
+      </div>
+
+      <ol>
+        <li><strong>Draw two perpendicular lines</strong> (one horizontal, one vertical)</li>
+        <li><strong>Label categories</strong> along the horizontal axis (sweet names)</li>
+        <li><strong>Label frequencies</strong> along the vertical axis (0, 1, 2, ..., 15)</li>
+        <li><strong>Choose a scale</strong> (e.g., 1 cm height = 1 student)</li>
+        <li><strong>Draw bars</strong> with heights matching the data</li>
+      </ol>
+
+      <details class="deep-dive">
+        <summary>Deep Dive: Horizontal vs. Vertical Bars</summary>
+        <div class="answer-body">
+          <p>When representing heights or things that grow upward (population, temperature), vertical bars are more intuitive. When representing distances or comparisons along a line, horizontal bars work well. Choose what makes your data easiest to understand!</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Interpreting Graphs -->
+    <section style="margin: 40px 0;">
+      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Reading and Interpreting Graphs</h2>
+
+      <p>A good graph should answer questions at a glance:</p>
+
+      <ul style="background: var(--math-light); padding: 20px; border-radius: 4px;">
+        <li><strong>Which category has the highest value?</strong> Look for the tallest/longest bar</li>
+        <li><strong>Which has the lowest?</strong> Look for the shortest bar</li>
+        <li><strong>How do two categories compare?</strong> Compare their bar heights directly</li>
+        <li><strong>What's the total?</strong> Add all the bar heights</li>
+      </ul>
+
+      <details class="deep-dive">
+        <summary>Deep Dive: Spotting misleading graphs</summary>
+        <div class="answer-body">
+          <p>Graphs can be deliberately made misleading! For example, starting the vertical axis at 50 instead of 0 makes small differences look huge. Always check: Does the scale start at zero? Are bar widths consistent? Has the data been presented fairly? Critical thinking protects you from being fooled!</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Choosing Representations -->
+    <section style="margin: 40px 0;">
+      <h2 style="color: var(--math); border-bottom: 2px solid var(--math); padding-bottom: 12px;">Choosing the Right Representation</h2>
+
+      <p>Different data calls for different representations:</p>
+
+      <div class="data-box">
+        <table>
+          <tr>
+            <th>Type of Data</th>
+            <th>Best Representation</th>
+            <th>Why</th>
+          </tr>
+          <tr>
+            <td>Small numbers (≤20)</td>
+            <td>Pictograph</td>
+            <td>Quick visual, no scale confusion</td>
+          </tr>
+          <tr>
+            <td>Medium numbers (20-200)</td>
+            <td>Bar Graph</td>
+            <td>Clear, precise, easy to compare</td>
+          </tr>
+          <tr>
+            <td>Large numbers (200+)</td>
+            <td>Bar Graph with scale</td>
+            <td>Avoids crowding, uses space efficiently</td>
+          </tr>
+          <tr>
+            <td>Changes over time</td>
+            <td>Line Graph</td>
+            <td>Shows trends and patterns</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Common Error Trap -->
+    <section style="margin: 40px 0;">
+      <div class="error-trap">
+        <h4>⚠️ Common Error: Confusing Frequency with Data</h4>
+        <p><strong>The Mistake:</strong> A frequency table shows "6 students like jalebi," but this doesn't tell us which specific students like jalebi. If we wanted to distribute sweets to the correct students, this frequency table isn't enough!</p>
+        <p><strong>The Truth:</strong> A frequency table is great for understanding overall patterns, but if we need individual assignments, we need additional information (like each student's name and preference).</p>
+        <p><strong>Lesson:</strong> Always ask: "What question am I trying to answer?" Choose your representation accordingly.</p>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h3>Check Your Understanding</h3>
+
+      <div class="quiz-item">
+        <h4>Level 1: Predict (Can you read the data?)</h4>
+        <details class="quiz-answer">
+          <summary>Q1: If a pictograph shows 3.5 symbols and each symbol = 100, what's the total?</summary>
+          <div class="answer-body">
+            <p><strong>Answer:</strong> 3.5 × 100 = 350. Three full symbols = 300, and half a symbol = 50, so 300 + 50 = 350.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <h4>Level 2: Why (Explain your thinking)</h4>
+        <details class="quiz-answer">
+          <summary>Q2: Why is it important to use the same scale for all bars in a graph?</summary>
+          <div class="answer-body">
+            <p><strong>Explanation:</strong> If bars use different scales, comparisons become impossible or misleading. For example, if one bar represents 10 students per unit and another represents 5 students per unit, the same-height bars would mean different numbers! Consistent scales ensure fair, accurate comparisons.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <h4>Level 3: Apply (Make a judgment)</h4>
+        <details class="quiz-answer">
+          <summary>Q3: You need to show data on 500 vehicles passing an intersection each hour. Would you use a pictograph or bar graph? Why?</summary>
+          <div class="answer-body">
+            <p><strong>Answer:</strong> Bar graph! With pictographs, showing 500 with symbols would be cluttered (need 50 symbols if each = 10). A bar graph with a scale (1 unit = 100 vehicles) is much cleaner and more efficient.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section style="background: var(--math-light); padding: 24px; border-radius: 4px; margin: 40px 0;">
+      <h3 style="color: var(--math); margin-top: 0;">Key Takeaways</h3>
+      <ul>
+        <li><strong>Data needs organization:</strong> Raw data is messy. Tally marks and frequency tables organize it for analysis.</li>
+        <li><strong>Pictographs and bar graphs visualize data:</strong> They let us see patterns at a glance instead of wading through numbers.</li>
+        <li><strong>Choose your representation wisely:</strong> Small data → pictographs; large data → bar graphs with scales.</li>
+        <li><strong>Always check the scale:</strong> Graphs can mislead if scales start at non-zero or aren't consistent.</li>
+        <li><strong>Data literacy is power:</strong> Understanding how to read and present data protects you from misinformation.</li>
+      </ul>
+    </section>
+
+    <!-- Chapter Navigation -->
+    <div class="chapter-nav">
+      <a href="../math/ch3.html" class="nav-link">← Ch 3: Number Play</a>
+      <a href="../math/ch5.html" class="nav-link">Ch 5: Prime Time →</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #f5f5f5; padding: 40px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #e0e0e0;">
+    <p style="color: #666; font-size: 13px; margin: 0;">
+      The Logical Builder • Class 6 Mathematics • Designed for deeper understanding
+    </p>
+  </footer>
+
+  <script>
+    const progressBar = document.querySelector('.progress-bar');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+    });
+  </script>
+</body>
+</html>

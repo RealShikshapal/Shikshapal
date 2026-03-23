@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Fractions | The Logical Builder</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
+        .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
+        .feynman-bridge { border-color: var(--math); } .feynman-bridge .tag { background: var(--math); }
+        .step-number { background: var(--math); }
+        .deep-dive { border-left-color: var(--math); background: var(--math-light); } .deep-dive summary { color: var(--math); }
+        .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
+        .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
+    </style>
+</head>
+<body class="chapter-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="../index.html">The Logical Builder</a>
+            </div>
+            <div class="navbar-pills">
+                <a href="../index.html" class="nav-pill">Home</a>
+                <a href="ch1.html" class="nav-pill active">Math</a>
+                <a href="../../science/ch1.html" class="nav-pill">Science</a>
+                <a href="../../english/ch1.html" class="nav-pill">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-fill" style="width: 70%;"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="chapter-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <span><a href="../index.html">Home</a></span>
+            <span class="separator">/</span>
+            <span><a href="ch1.html">Mathematics</a></span>
+            <span class="separator">/</span>
+            <span class="current">Chapter 7: Fractions</span>
+        </div>
+
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Chapter 7: Fractions</h1>
+            <p class="chapter-subtitle">Understanding parts of a whole, equivalence, and operations with fractional units</p>
+        </header>
+
+        <!-- The Hook -->
+        <section class="hook-box">
+            <h3>The Hook: Why Fractions Matter</h3>
+            <p>Imagine you're sharing a pizza with friends. How do you describe "half a pizza"? Or if you eat 3 slices out of 8, what fraction is that? Fractions are the mathematical language for expressing equal parts of a whole—and they're everywhere in real life: cooking, splitting bills, measuring distances, and even time on a clock.</p>
+            <p>The beauty of fractions is that they show us how to think about quantities that don't fit into whole numbers. By mastering fractions, you unlock a deeper understanding of how numbers work and how to divide things fairly and precisely.</p>
+        </section>
+
+        <!-- The Feynman Bridge -->
+        <section class="feynman-bridge">
+            <h3>The Feynman Bridge: Seeing the Logic</h3>
+            <p><span class="tag">Key Insight</span> A fraction is not just a number—it's a story about equal parts. When we write 3/4, we're saying: "Divide one whole into 4 equal pieces (the denominator tells us the size of each piece), and take 3 of those pieces (the numerator tells us how many we take)."</p>
+            <p>The denominator (bottom number) defines the <strong>fractional unit</strong>—the size of each equal share. The numerator (top number) tells us <strong>how many of those units</strong> we have. This is the foundation for everything else in fractions.</p>
+        </section>
+
+        <!-- Logic Ladders -->
+        <section class="logic-ladder">
+            <h2>Logic Ladder: From Whole to Fraction</h2>
+            <div class="ladder-step">
+                <span class="step-number">1</span>
+                <div class="step-content">
+                    <h4>Start with a Whole</h4>
+                    <p>Take one whole unit (a pizza, a cake, a length of rope). This represents 1 or the complete whole.</p>
+                </div>
+            </div>
+            <div class="ladder-step">
+                <span class="step-number">2</span>
+                <div class="step-content">
+                    <h4>Divide into Equal Parts</h4>
+                    <p>Cut your whole into equal pieces. If you cut a pizza into 4 equal slices, each slice is 1/4 of the pizza. The denominator 4 tells us the number of equal parts.</p>
+                </div>
+            </div>
+            <div class="ladder-step">
+                <span class="step-number">3</span>
+                <div class="step-content">
+                    <h4>Count How Many You Have</h4>
+                    <p>If you take 3 of those 4 slices, you have 3/4. The numerator 3 tells us how many equal parts we're selecting.</p>
+                </div>
+            </div>
+            <div class="ladder-step">
+                <span class="step-number">4</span>
+                <div class="step-content">
+                    <h4>Express as a Fraction</h4>
+                    <p>Write the fraction as: numerator/denominator = 3/4. This is your mathematical representation of "three-quarters."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep-Dive: Equivalent Fractions -->
+        <details class="deep-dive">
+            <summary>Deep-Dive: Why Are Equivalent Fractions the Same?</summary>
+            <div class="dive-content">
+                <p>Here's a surprising truth: 2/4, 3/6, 4/8, and 1/2 are all the same amount! Why? Because they describe the same length on a number line and the same share of a whole.</p>
+                <p><strong>The Logic:</strong> If you fold a piece of paper in half and shade one part, you have 1/2. If you then fold it in half again (creating 4 parts total) and shade 2 parts, you still have the same shaded area. So 1/2 = 2/4.</p>
+                <p><strong>The Rule:</strong> When you multiply both the numerator and denominator by the same non-zero number, you create an equivalent fraction. For example:</p>
+                <ul>
+                    <li>1/2 × 2/2 = 2/4 (multiply both top and bottom by 2)</li>
+                    <li>1/2 × 3/3 = 3/6 (multiply both top and bottom by 3)</li>
+                    <li>2/3 × 5/5 = 10/15 (multiply both top and bottom by 5)</li>
+                </ul>
+                <p>This works because you're not changing the actual value—you're just expressing it with a different fractional unit.</p>
+            </div>
+        </details>
+
+        <!-- Deep-Dive: Comparing and Ordering Fractions -->
+        <details class="deep-dive">
+            <summary>Deep-Dive: How to Compare Fractions</summary>
+            <div class="dive-content">
+                <p>Comparing fractions at first seems confusing. Is 3/5 bigger than 2/3? To answer, we use equivalent fractions to create a <strong>common denominator</strong>—a denominator that appears in both fractions.</p>
+                <p><strong>The Method (Brahmagupta's approach):</strong></p>
+                <ol>
+                    <li><strong>Find a common denominator:</strong> For 3/5 and 2/3, multiply 5 × 3 = 15. This is a denominator both fractions can use.</li>
+                    <li><strong>Convert to equivalent fractions:</strong> 3/5 = 9/15 (multiply by 3/3) and 2/3 = 10/15 (multiply by 5/5).</li>
+                    <li><strong>Compare the numerators:</strong> Now compare 9/15 and 10/15. Since 9 < 10, we have 3/5 < 2/3.</li>
+                </ol>
+                <p><strong>Quick Tip:</strong> If two fractions have the same denominator, the one with the larger numerator is larger. If they have the same numerator, the one with the smaller denominator is larger (because fewer pieces to divide = bigger pieces).</p>
+            </div>
+        </details>
+
+        <!-- Deep-Dive: Adding and Subtracting Fractions -->
+        <details class="deep-dive">
+            <summary>Deep-Dive: Addition and Subtraction of Fractions</summary>
+            <div class="dive-content">
+                <p>Why can't you just add 1/3 + 1/5 by adding numerators and denominators to get 2/8? Because you'd be adding pieces of different sizes—like combining thirds with fifths!</p>
+                <p><strong>The Logic:</strong> You can only add or subtract fractions when they have the same fractional unit (same denominator). If they don't, first convert them to equivalent fractions with a common denominator.</p>
+                <p><strong>Brahmagupta's Method for Addition:</strong></p>
+                <ol>
+                    <li>Find equivalent fractions with a common denominator</li>
+                    <li>Add the numerators; keep the denominator the same</li>
+                    <li>Simplify the result if possible</li>
+                </ol>
+                <p><strong>Example:</strong> 1/3 + 1/5<br>
+                Common denominator: 3 × 5 = 15<br>
+                1/3 = 5/15 and 1/5 = 3/15<br>
+                5/15 + 3/15 = 8/15</p>
+                <p><strong>For Subtraction:</strong> The same method applies. First convert to a common denominator, then subtract the numerators.</p>
+            </div>
+        </details>
+
+        <!-- Deep-Dive: Mixed Fractions and Improper Fractions -->
+        <details class="deep-dive">
+            <summary>Deep-Dive: Mixed Fractions vs. Improper Fractions</summary>
+            <div class="dive-content">
+                <p><strong>Improper Fractions:</strong> When the numerator is equal to or greater than the denominator (e.g., 7/4, 5/5), the fraction is "improper." This doesn't mean it's wrong—it just means the fraction represents one whole or more than one whole.</p>
+                <p><strong>Mixed Fractions:</strong> These combine a whole number with a fraction (e.g., 1 3/4). They're easier to visualize in everyday situations.</p>
+                <p><strong>How to Convert:</strong><br>
+                Improper to Mixed: Divide the numerator by the denominator. The quotient is the whole number, and the remainder becomes the new numerator.<br>
+                Example: 7/4 ÷ 4 = 1 remainder 3, so 7/4 = 1 3/4<br><br>
+                Mixed to Improper: Multiply the whole number by the denominator and add the numerator.<br>
+                Example: 2 3/5 = (2 × 5 + 3)/5 = 13/5</p>
+            </div>
+        </details>
+
+        <!-- Common Error Trap -->
+        <section class="error-trap">
+            <h3>Common Error Trap: Fraction Misconceptions</h3>
+            <div class="error-box">
+                <p><strong>Trap 1:</strong> "3/8 is bigger than 1/2 because 3 > 1."<br>
+                <strong>Why it's wrong:</strong> You're only comparing numerators and ignoring the denominator entirely. 1/2 = 4/8, and 4/8 > 3/8.<br>
+                <strong>Fix:</strong> Always convert to the same denominator before comparing.</p>
+            </div>
+            <div class="error-box">
+                <p><strong>Trap 2:</strong> "1/4 + 1/4 = 2/8" (adding numerators AND denominators).<br>
+                <strong>Why it's wrong:</strong> When you add same-sized pieces (fourths + fourths), the denominator stays the same. You only add numerators.<br>
+                <strong>Fix:</strong> 1/4 + 1/4 = 2/4 = 1/2. The denominator never changes when adding like fractions.</p>
+            </div>
+            <div class="error-box">
+                <p><strong>Trap 3:</strong> "1/3 + 1/5 = 2/8" (ignoring the need for common denominators).<br>
+                <strong>Why it's wrong:</strong> You can't add thirds and fifths directly—they're different-sized pieces. You must first convert to a common unit.<br>
+                <strong>Fix:</strong> Find a common denominator (15), convert to 5/15 + 3/15 = 8/15.</p>
+            </div>
+        </section>
+
+        <!-- Socratic Quiz -->
+        <section class="quiz-section">
+            <h3>Socratic Quiz: Test Your Understanding</h3>
+            <p>Work through these questions to deepen your grasp of fractions. Try to answer each level before looking at the explanation.</p>
+
+            <!-- Level 1 -->
+            <div class="quiz-level">
+                <h4>Level 1: Foundational Understanding</h4>
+
+                <div class="quiz-item">
+                    <p><strong>Question 1:</strong> A chocolate bar is divided into 8 equal pieces. You eat 3 pieces. What fraction of the chocolate bar did you eat?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 3/8</strong></p>
+                            <p><strong>Explanation:</strong> The denominator (8) represents the total number of equal pieces. The numerator (3) represents how many pieces you ate. So the fraction is 3/8.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 2:</strong> Which fraction represents the shaded part of this shape if 1 whole = 4 equal pieces and 2 pieces are shaded?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 2/4 (or simplified as 1/2)</strong></p>
+                            <p><strong>Explanation:</strong> The whole is divided into 4 equal pieces, and 2 are shaded. So the fraction is 2/4. Since 2/4 = 1/2, both answers are correct.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 3:</strong> Mark the fraction 1/2 on a number line from 0 to 1. At which point should it go?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer:</strong> 1/2 should be marked at the midpoint of the number line, exactly halfway between 0 and 1.</p>
+                            <p><strong>Explanation:</strong> 1/2 means one out of two equal parts. So on a number line from 0 to 1, it divides that distance into two equal halves.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Level 2 -->
+            <div class="quiz-level">
+                <h4>Level 2: Applying Equivalence and Comparison</h4>
+
+                <div class="quiz-item">
+                    <p><strong>Question 1:</strong> Are 2/3 and 4/6 equivalent fractions? Explain why or why not.</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: Yes, they are equivalent.</strong></p>
+                            <p><strong>Explanation:</strong> When we multiply 2/3 by 2/2, we get (2 × 2)/(3 × 2) = 4/6. Both fractions represent the same amount on a number line and the same share of a whole.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 2:</strong> Compare these fractions: 3/5 and 2/4. Which is larger?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 3/5 is larger.</strong></p>
+                            <p><strong>Explanation:</strong> Convert to a common denominator (20). 3/5 = 12/20 and 2/4 = 10/20. Since 12/20 > 10/20, we know 3/5 > 2/4.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 3:</strong> Convert the improper fraction 9/4 to a mixed number.</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 2 1/4</strong></p>
+                            <p><strong>Explanation:</strong> Divide 9 by 4: 9 ÷ 4 = 2 remainder 1. So 9/4 = 2 1/4 (two wholes and one-fourth).</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Level 3 -->
+            <div class="quiz-level">
+                <h4>Level 3: Operations and Problem-Solving</h4>
+
+                <div class="quiz-item">
+                    <p><strong>Question 1:</strong> Add these fractions: 1/3 + 1/6. Simplify your answer.</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 1/2</strong></p>
+                            <p><strong>Explanation:</strong> Find a common denominator (6). Convert: 1/3 = 2/6. Now add: 2/6 + 1/6 = 3/6 = 1/2 (simplified).</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 2:</strong> You have 3/4 of a pizza. You eat 1/8 of the pizza. How much pizza is left?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 5/8 of the pizza</strong></p>
+                            <p><strong>Explanation:</strong> Set up the subtraction: 3/4 - 1/8. Convert to a common denominator (8): 3/4 = 6/8. Now subtract: 6/8 - 1/8 = 5/8.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="quiz-item">
+                    <p><strong>Question 3:</strong> A recipe calls for 2 1/2 cups of flour. If you want to double the recipe, how much flour do you need?</p>
+                    <details class="quiz-answer">
+                        <summary>Show Answer</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 5 cups of flour</strong></p>
+                            <p><strong>Explanation:</strong> First, convert 2 1/2 to an improper fraction: 2 1/2 = 5/2. Double it: 5/2 × 2 = 10/2 = 5 cups.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter Navigation -->
+        <nav class="chapter-nav">
+            <a href="ch6.html" class="nav-button prev">← Previous: Perimeter and Area</a>
+            <a href="ch8.html" class="nav-button next">Next: Playing with Constructions →</a>
+        </nav>
+
+        <!-- Footer -->
+        <footer class="chapter-footer">
+            <p>&copy; 2025 The Logical Builder. All rights reserved.</p>
+            <p>Based on Ganita Prakash | Grade 6 Mathematics Curriculum</p>
+        </footer>
+    </main>
+
+    <!-- Progress Bar JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBar = document.querySelector('.progress-fill');
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+            window.addEventListener('scroll', function() {
+                const scrolled = window.scrollY;
+                const scrollPercent = (scrolled / scrollHeight) * 100;
+                progressBar.style.width = scrollPercent + '%';
+            });
+        });
+    </script>
+</body>
+</html>

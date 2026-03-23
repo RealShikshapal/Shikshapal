@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Prime Time - The Logical Builder</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .chapter-page { --accent: var(--math); --accent-light: var(--math-light); --accent-glow: var(--math-glow); }
+        .hook-box { border-left-color: var(--math); } .hook-box::before { color: var(--math); } .hook-box h3 { color: var(--math); }
+        .feynman-bridge { border-color: var(--math); } .feynman-bridge .tag { background: var(--math); }
+        .step-number { background: var(--math); }
+        .deep-dive { border-left-color: var(--math); background: var(--math-light); } .deep-dive summary { color: var(--math); }
+        .quiz-section h3 { border-bottom-color: var(--math); color: var(--math); }
+        .quiz-answer summary { color: var(--math); } .quiz-answer .answer-body { background: var(--math-light); }
+        .error-trap { border-left: 4px solid var(--accent); background: var(--accent-light); padding: 16px; margin: 20px 0; border-radius: 4px; }
+        .error-trap h4 { color: var(--accent); margin-top: 0; }
+    </style>
+</head>
+<body>
+    <div class="chapter-page">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="../index.html" class="nav-logo">The Logical Builder</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link nav-active">Math</a></li>
+                    <li class="nav-item"><a href="../../science/ch1/unit1.html" class="nav-link">Science</a></li>
+                    <li class="nav-item"><a href="../../english/ch1/unit1.html" class="nav-link">English</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="content-wrapper">
+            <!-- Chapter Header with Breadcrumb -->
+            <div class="chapter-header">
+                <div class="breadcrumb">
+                    <a href="../index.html">Mathematics</a> / <a href="ch4.html">Chapter 4</a> / <span>Chapter 5: Prime Time</span>
+                </div>
+                <h1>Chapter 5: Prime Time</h1>
+                <p class="chapter-subtitle">Understanding Factors, Multiples, and the Building Blocks of Numbers</p>
+            </div>
+
+            <!-- The Hook -->
+            <section class="hook-box">
+                <h3>The Idli-Vada Game 🎮</h3>
+                <p>Imagine children sitting in a circle playing a numbers game. They count aloud: "1, 2, 3, 4, 5..." but with a twist! Whenever they reach a multiple of 3, they shout "idli" instead of the number. When they reach a multiple of 5, they say "vada". And when a number is BOTH a multiple of 3 and 5? They exclaim "idli-vada!"</p>
+                <p>This simple game introduces profound mathematical concepts: <strong>multiples</strong>, <strong>common factors</strong>, and the hidden structure of all numbers. By the end of this chapter, you'll understand why some numbers are special "building blocks" and others can be broken down into these blocks.</p>
+            </section>
+
+            <!-- The Feynman Bridge -->
+            <section class="feynman-bridge">
+                <h2>Why Does This Matter?</h2>
+                <span class="tag">Key Concept</span>
+                <p>Prime numbers are the fundamental building blocks of all whole numbers greater than 1. Every single number you encounter can be uniquely expressed as a product of prime numbers—like composing music using basic notes. Understanding factors and multiples helps us solve real problems: scheduling events, organizing items, finding patterns, and even encrypting secret messages online!</p>
+            </section>
+
+            <!-- Section 1: Multiples and Factors -->
+            <section class="learning-section">
+                <h2>5.1: Common Multiples and Common Factors</h2>
+
+                <h3>What are Multiples?</h3>
+                <p>A <strong>multiple</strong> of a number is what you get when you multiply that number by any whole number.</p>
+                <ul>
+                    <li>Multiples of 3: 3, 6, 9, 12, 15, 18, 21, ...</li>
+                    <li>Multiples of 5: 5, 10, 15, 20, 25, 30, ...</li>
+                </ul>
+                <p><strong>Common multiples</strong> are numbers that appear in both lists. For example, 15 is a common multiple of 3 and 5 because 15 = 3 × 5.</p>
+
+                <div class="logic-ladder">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <strong>List multiples of 3:</strong> 3, 6, 9, 12, 15, 18, 21, 24, 27, 30...
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <strong>List multiples of 5:</strong> 5, 10, 15, 20, 25, 30, 35...
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <strong>Find common ones:</strong> Circle the numbers that appear in BOTH lists: 15, 30, 45...
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <strong>The pattern:</strong> These common multiples are 15, 30, 45, 60... Notice they're all multiples of 15!
+                        </div>
+                    </div>
+                </div>
+
+                <h3>What are Factors?</h3>
+                <p>A <strong>factor</strong> (or divisor) of a number divides it exactly with no remainder. Think of the "Jump Jackpot" game: if Jumpy jumps in steps of size 4, he'll land exactly on 24 because 4 is a factor of 24.</p>
+                <ul>
+                    <li>Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24</li>
+                    <li>Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36</li>
+                </ul>
+                <p><strong>Common factors</strong> are numbers that divide both numbers exactly. For 24 and 36, the common factors are: 1, 2, 3, 4, 6, 12.</p>
+
+                <details class="deep-dive">
+                    <summary>Why This Matters: The Jump Jackpot Game</summary>
+                    <div class="deep-dive-content">
+                        <p>In the treasure-hunting game, Grumpy places treasures on two numbers (like 28 and 70), and Jumpy must choose a single jump size that lands on both treasures. The possible jump sizes are exactly the <strong>common factors</strong> of those numbers!</p>
+                        <p><strong>Factors of 28:</strong> 1, 2, 4, 7, 14, 28</p>
+                        <p><strong>Factors of 70:</strong> 1, 2, 5, 7, 10, 14, 35, 70</p>
+                        <p><strong>Common factors:</strong> 1, 2, 7, 14 — These are all the jump sizes that work!</p>
+                        <p>This connects to finding the <strong>Greatest Common Factor (GCF)</strong>, which is the largest number that divides both numbers. For 28 and 70, the GCF is 14.</p>
+                    </div>
+                </details>
+
+                <h3>Finding the LCM and GCF</h3>
+                <p>Two key concepts build on this foundation:</p>
+                <ul>
+                    <li><strong>LCM (Least Common Multiple):</strong> The smallest common multiple of two numbers. For 3 and 5, the LCM is 15.</li>
+                    <li><strong>GCF (Greatest Common Factor):</strong> The largest common factor of two numbers. For 24 and 36, the GCF is 12.</li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Prime and Composite Numbers -->
+            <section class="learning-section">
+                <h2>5.2: Prime Numbers and Composite Numbers</h2>
+
+                <h3>Prime Numbers: The Indivisible Building Blocks</h3>
+                <p>When Guna tries to arrange 7 figs in a rectangle, only one arrangement works: 7 × 1 (or 1 × 7). But when she arranges 12 figs, there are many possibilities: 12 × 1, 6 × 2, 4 × 3, and 3 × 4.</p>
+                <p>This reveals the definition: A <strong>prime number</strong> has exactly TWO factors: 1 and itself.</p>
+                <p><strong>Prime numbers up to 20:</strong> 2, 3, 5, 7, 11, 13, 17, 19</p>
+
+                <h3>Composite Numbers: Built from Primes</h3>
+                <p>A <strong>composite number</strong> has MORE than two factors. For example, 12 has factors 1, 2, 3, 4, 6, 12—that's six factors!</p>
+                <p><strong>Composite numbers up to 20:</strong> 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20</p>
+
+                <h3>The Special Case of 1</h3>
+                <p>The number 1 is neither prime nor composite. It has only ONE factor (itself), which makes it unique and incredibly important in multiplication.</p>
+
+                <h3>Finding All Primes: The Sieve of Eratosthenes</h3>
+                <p>Around 2,200 years ago, the Greek mathematician Eratosthenes invented an elegant method to find all primes up to any number:</p>
+
+                <div class="logic-ladder">
+                    <div class="step">
+                        <div class="step-number">Step 1</div>
+                        <div class="step-content">Write all numbers from 1 to 100. Cross out 1 (not prime, not composite).</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Step 2</div>
+                        <div class="step-content">Circle 2. Cross out all multiples of 2: 4, 6, 8, 10, 12...</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Step 3</div>
+                        <div class="step-content">Circle 3. Cross out all multiples of 3: 6, 9, 12, 15... (skip already crossed ones)</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Step 4</div>
+                        <div class="step-content">Circle 5. Cross out all multiples of 5: 10, 15, 20, 25...</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Step 5</div>
+                        <div class="step-content">Continue until all numbers are either circled or crossed.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Result</div>
+                        <div class="step-content"><strong>All circled numbers are prime!</strong> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97</div>
+                    </div>
+                </div>
+
+                <details class="deep-dive">
+                    <summary>Why Does the Sieve Work?</summary>
+                    <div class="deep-dive-content">
+                        <p>The sieve works because of a fundamental truth: If a number N is composite, it MUST have a factor less than or equal to √N. So when we eliminate all multiples of small primes (2, 3, 5, 7...), we're eliminating all composite numbers, leaving only the primes!</p>
+                        <p>This is why we only need to check primes up to 10 when finding all primes up to 100.</p>
+                    </div>
+                </details>
+
+                <h3>Special Prime Pairs: Twin Primes</h3>
+                <p><strong>Twin primes</strong> are pairs of primes that differ by 2. Examples include (3, 5), (5, 7), (11, 13), (17, 19), (29, 31), (41, 43), (59, 61), and (71, 73).</p>
+                <p>Mathematicians are still fascinated by twin primes. The "Twin Prime Conjecture" asks: Are there infinitely many twin primes? This remains unsolved!</p>
+            </section>
+
+            <!-- Section 3: Co-Prime Numbers -->
+            <section class="learning-section">
+                <h2>5.3: Co-Prime Numbers</h2>
+
+                <h3>Safe Pairs in the Treasure Game</h3>
+                <p>In Grumpy's treasure game, some pairs are "safe"—Jumpy can't reach both treasures with any jump size (except 1, which isn't allowed). For example, treasures on 4 and 9 are safe because the only common factor is 1.</p>
+                <p>Such numbers are called <strong>co-prime</strong> (or relatively prime). Two numbers are co-prime if they share NO common factor except 1.</p>
+
+                <h3>Examples of Co-Prime Pairs</h3>
+                <ul>
+                    <li>4 and 9: No common factors except 1 ✓ Co-prime</li>
+                    <li>15 and 28: No common factors except 1 ✓ Co-prime</li>
+                    <li>12 and 26: Both divisible by 2 ✗ NOT co-prime</li>
+                    <li>Any two different prime numbers are co-prime (e.g., 7 and 11)</li>
+                </ul>
+
+                <details class="deep-dive">
+                    <summary>Co-Prime Art: The Thread Patterns</summary>
+                    <div class="deep-dive-content">
+                        <p>There's beautiful artwork where thread is wrapped around pegs in a circle. On a pegboard with N pegs, if you jump by K pegs each time:</p>
+                        <ul>
+                            <li>If N and K are co-prime, the thread touches every peg before returning to start—creating a perfect, complete pattern.</li>
+                            <li>If N and K share a common factor, the thread creates a partial pattern, leaving some pegs untouched.</li>
+                        </ul>
+                        <p>Example: 12 pegs with jump-gap of 4 → 12 and 4 are NOT co-prime (GCF = 4) → The pattern repeats 4 times, each time touching 3 pegs.</p>
+                        <p>Example: 13 pegs with jump-gap of 3 → 13 and 3 are co-prime → The pattern touches all 13 pegs perfectly!</p>
+                    </div>
+                </details>
+
+                <h3>Why Co-Primes Matter</h3>
+                <p>When two co-prime numbers are multiplied, their LCM equals their product. This makes co-primes crucial in scheduling problems, gear design, and cryptography!</p>
+            </section>
+
+            <!-- Section 4: Prime Factorization -->
+            <section class="learning-section">
+                <h2>5.4: Prime Factorization</h2>
+
+                <h3>Breaking Numbers into Prime Pieces</h3>
+                <p><strong>Prime factorization</strong> is writing a number as a product of prime numbers. It's like expressing any number as a unique combination of basic building blocks.</p>
+
+                <h3>The Process: Dividing Down to Primes</h3>
+                <p>To find the prime factorization of 56:</p>
+
+                <div class="logic-ladder">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">Start: 56. Divide by the smallest prime that works: 56 ÷ 2 = 28</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">Continue with 28: 28 ÷ 2 = 14</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">Continue with 14: 14 ÷ 2 = 7</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">7 is prime, so stop!</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">Result</div>
+                        <div class="step-content"><strong>56 = 2 × 2 × 2 × 7</strong> or <strong>2³ × 7</strong></div>
+                    </div>
+                </div>
+
+                <h3>The Remarkable Uniqueness Theorem</h3>
+                <p>Here's something profound: Every number has EXACTLY ONE prime factorization (ignoring the order of factors). This means:</p>
+                <ul>
+                    <li>60 = 2 × 2 × 3 × 5 (always, no matter how you break it down)</li>
+                    <li>You might discover this via 60 = 6 × 10 = (2 × 3) × (2 × 5), but you always get the same primes!</li>
+                </ul>
+
+                <details class="deep-dive">
+                    <summary>Prime Factorization Shortcuts</summary>
+                    <div class="deep-dive-content">
+                        <p>To check if 168 is divisible by 12 without long division:</p>
+                        <p><strong>168 = 2³ × 3 × 7</strong></p>
+                        <p><strong>12 = 2² × 3</strong></p>
+                        <p>Since all prime factors of 12 appear in 168 (with at least the same frequency), 168 IS divisible by 12. (168 ÷ 12 = 14)</p>
+                        <p>But for 75 ÷ 21:</p>
+                        <p><strong>75 = 3 × 5²</strong></p>
+                        <p><strong>21 = 3 × 7</strong></p>
+                        <p>75 doesn't have the prime factor 7, so it's NOT divisible by 21.</p>
+                    </div>
+                </details>
+
+                <h3>Using Prime Factorization to Check Co-Primality</h3>
+                <p>To see if 80 and 63 are co-prime, write their prime factorizations:</p>
+                <ul>
+                    <li>80 = 2⁴ × 5</li>
+                    <li>63 = 3² × 7</li>
+                </ul>
+                <p>No common prime factors? Then they're co-prime! ✓</p>
+            </section>
+
+            <!-- Section 5: Divisibility Rules -->
+            <section class="learning-section">
+                <h2>5.5: Divisibility Rules</h2>
+
+                <h3>Quick Checks Without Division</h3>
+                <p>Instead of performing long division to check if 8560 is divisible by various numbers, we can use patterns:</p>
+
+                <h3>Divisibility by 10</h3>
+                <p><strong>Rule:</strong> A number is divisible by 10 if it ends in 0.</p>
+                <p>Why? Because 10 = 2 × 5, and numbers divisible by 10 must have both factors. A number ending in 0 automatically fits this pattern.</p>
+
+                <h3>Divisibility by 5</h3>
+                <p><strong>Rule:</strong> A number is divisible by 5 if it ends in 0 or 5.</p>
+                <p>Multiples of 5: 5, 10, 15, 20, 25, 30... → All end in 0 or 5!</p>
+
+                <h3>Divisibility by 2</h3>
+                <p><strong>Rule:</strong> A number is divisible by 2 if it ends in 0, 2, 4, 6, or 8 (any even digit).</p>
+                <p>All even numbers have 2 as a factor.</p>
+
+                <h3>Divisibility by 4</h3>
+                <p><strong>Rule:</strong> A number is divisible by 4 if its LAST TWO DIGITS form a number divisible by 4.</p>
+                <p>Example: Is 8536 divisible by 4? Check the last two digits: 36. Is 36 ÷ 4 = 9? Yes! So 8536 is divisible by 4.</p>
+
+                <h3>Divisibility by 8</h3>
+                <p><strong>Rule:</strong> A number is divisible by 8 if its LAST THREE DIGITS form a number divisible by 8.</p>
+                <p>Example: Is 5024 divisible by 8? Check the last three digits: 024. Is 24 ÷ 8 = 3? Yes! So 5024 is divisible by 8.</p>
+
+                <div class="error-trap">
+                    <h4>Common Error Trap: Testing Divisibility by 4</h4>
+                    <p><strong>WRONG:</strong> "14 and 24 have the same last digit (4), so they're both divisible by 4."</p>
+                    <p>Reality: 24 ÷ 4 = 6 ✓, but 14 ÷ 4 = 3.5 ✗</p>
+                    <p><strong>Remember:</strong> For divisibility by 4, you MUST check the LAST TWO DIGITS, not just the last one! 14 as a two-digit number isn't divisible by 4, but 24 is.</p>
+                </div>
+
+                <details class="deep-dive">
+                    <summary>Why These Rules Work: The Pattern Behind Divisibility</summary>
+                    <div class="deep-dive-content">
+                        <p>These rules work because of how our number system is built in powers of 10:</p>
+                        <p>A number like 5248 = 5000 + 200 + 40 + 8</p>
+                        <p>For divisibility by 4: Since 1000 = 250 × 4, any multiple of 1000 is divisible by 4. So we only need to check the last TWO digits (the part less than 1000).</p>
+                        <p>For divisibility by 8: Since 1000 = 125 × 8, we only need to check the LAST THREE DIGITS.</p>
+                        <p>This is the power of understanding place value and factorization!</p>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Section 6: Fun with Numbers -->
+            <section class="learning-section">
+                <h2>5.6: Fun with Numbers</h2>
+
+                <h3>Perfect Numbers</h3>
+                <p>A <strong>perfect number</strong> is special: the sum of all its factors (except itself) equals the number!</p>
+                <ul>
+                    <li>6: Factors are 1, 2, 3, 6. Sum of proper factors: 1 + 2 + 3 = 6 ✓</li>
+                    <li>28: Factors are 1, 2, 4, 7, 14, 28. Sum of proper factors: 1 + 2 + 4 + 7 + 14 = 28 ✓</li>
+                </ul>
+                <p>Perfect numbers were revered by ancient mathematicians! Finding new perfect numbers remains an active area of mathematical research.</p>
+
+                <h3>Prime Puzzles</h3>
+                <p>Prime numbers inspire countless puzzles and patterns. Challenge yourself with questions like:</p>
+                <ul>
+                    <li>What's the difference between consecutive primes? (Usually 2, but sometimes more!)</li>
+                    <li>Can you find primes where doubling and adding 1 gives another prime? (3 → 7, 5 → 11, 11 → 23...)</li>
+                    <li>How many twin prime pairs can you find?</li>
+                </ul>
+            </section>
+
+            <!-- Common Error Trap -->
+            <div class="error-trap">
+                <h4>Common Error Trap: Confusing Factors and Multiples</h4>
+                <p><strong>WRONG:</strong> "2 is a multiple of 8" or "8 is a factor of 2"</p>
+                <p><strong>RIGHT:</strong> 2 is a FACTOR of 8. Or, 8 is a MULTIPLE of 2.</p>
+                <p><strong>Memory trick:</strong> Factors are smaller (they divide IN). Multiples are larger (they go OUT).</p>
+                <p>To check: Is 4 a factor of 20? Can 20 ÷ 4 = 5 exactly? Yes! ✓</p>
+            </div>
+
+            <!-- Socratic Quiz -->
+            <section class="quiz-section">
+                <h3>Test Your Understanding</h3>
+                <p>Work through these questions to assess your mastery of Prime Time concepts.</p>
+
+                <!-- Level 1 -->
+                <div class="quiz-level">
+                    <h4>Level 1: Building Foundations</h4>
+
+                    <details class="quiz-answer">
+                        <summary>Q1: What is the LCM (Least Common Multiple) of 4 and 6?</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 12</strong></p>
+                            <p>Multiples of 4: 4, 8, 12, 16...</p>
+                            <p>Multiples of 6: 6, 12, 18...</p>
+                            <p>The smallest common multiple is 12.</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q2: List all factors of 20.</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 1, 2, 4, 5, 10, 20</strong></p>
+                            <p>Each of these divides 20 exactly with no remainder:</p>
+                            <p>20 ÷ 1 = 20, 20 ÷ 2 = 10, 20 ÷ 4 = 5, 20 ÷ 5 = 4, 20 ÷ 10 = 2, 20 ÷ 20 = 1</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q3: Is 17 prime or composite? Why?</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 17 is PRIME</strong></p>
+                            <p>It has exactly two factors: 1 and 17. We can't arrange 17 objects in any rectangular array except 17 × 1 or 1 × 17.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Level 2 -->
+                <div class="quiz-level">
+                    <h4>Level 2: Applying Knowledge</h4>
+
+                    <details class="quiz-answer">
+                        <summary>Q4: Find the prime factorization of 36.</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 36 = 2² × 3² (or 2 × 2 × 3 × 3)</strong></p>
+                            <p>36 ÷ 2 = 18</p>
+                            <p>18 ÷ 2 = 9</p>
+                            <p>9 ÷ 3 = 3</p>
+                            <p>3 is prime, so we stop.</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q5: Are 14 and 15 co-prime? Verify using prime factorization.</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: YES, they are co-prime</strong></p>
+                            <p>14 = 2 × 7</p>
+                            <p>15 = 3 × 5</p>
+                            <p>They share no common prime factors, so their only common factor is 1.</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q6: Without division, determine if 4,328 is divisible by 4.</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: YES</strong></p>
+                            <p>Look at the last two digits: 28</p>
+                            <p>Is 28 divisible by 4? Yes, 28 ÷ 4 = 7</p>
+                            <p>Therefore, 4,328 is divisible by 4.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Level 3 -->
+                <div class="quiz-level">
+                    <h4>Level 3: Deep Mastery</h4>
+
+                    <details class="quiz-answer">
+                        <summary>Q7: A number has prime factorization 2 × 3 × 7. What is the number, and how many factors does it have?</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: The number is 42, and it has 8 factors</strong></p>
+                            <p>2 × 3 × 7 = 42</p>
+                            <p>To count factors: Each prime can appear 0 or 1 time. That's (1+1) × (1+1) × (1+1) = 2 × 2 × 2 = 8 factors.</p>
+                            <p>Factors of 42: 1, 2, 3, 6, 7, 14, 21, 42</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q8: In the idli-vada game with 6 and 8, at what number would "idli-vada" be said for the 2nd time?</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: 48</strong></p>
+                            <p>Common multiples of 6 and 8: 24, 48, 72...</p>
+                            <p>The LCM is 24 (1st idli-vada), so the 2nd idli-vada would be at 24 × 2 = 48.</p>
+                        </div>
+                    </details>
+
+                    <details class="quiz-answer">
+                        <summary>Q9: Explain why 2 is the only even prime number.</summary>
+                        <div class="answer-body">
+                            <p><strong>Answer: Because all other even numbers are divisible by 2</strong></p>
+                            <p>A prime number has exactly 2 factors. The number 2 has factors {1, 2}, so it's prime.</p>
+                            <p>But 4 = 2 × 2 (factors: 1, 2, 4), 6 = 2 × 3 (factors: 1, 2, 3, 6), etc. All other even numbers have AT LEAST three factors: 1, themselves, and 2. So they're composite.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Chapter Navigation -->
+            <nav class="chapter-nav">
+                <a href="ch4.html" class="nav-prev">← Previous: Chapter 4 - Data Handling</a>
+                <a href="ch6.html" class="nav-next">Next: Chapter 6 - Perimeter and Area →</a>
+            </nav>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 The Logical Builder. A Journey Through Mathematics. Built with pedagogical intent.</p>
+            <p>Mathematics | Grade 6 | Ganita Prakash Curriculum</p>
+        </footer>
+    </div>
+
+    <script>
+        // Progress bar functionality
+        function updateProgressBar() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (scrollTop / docHeight) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        }
+        window.addEventListener('scroll', updateProgressBar);
+    </script>
+</body>
+</html>
