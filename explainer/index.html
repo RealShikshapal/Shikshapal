@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 6 Learning Portal — A Living Textbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;700&family=Playfair+Display:wght@600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Landing-page specific styles */
+    .landing-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--science-light), var(--math-light));
+      padding: 6px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+      letter-spacing: 0.02em;
+    }
+
+    .landing-tagline .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--science);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .philosophy-bar {
+      max-width: var(--page-width);
+      margin: 0 auto var(--space-2xl);
+      padding: 0 var(--space-xl);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-md);
+    }
+
+    .phil-card {
+      text-align: center;
+      padding: var(--space-lg);
+      border-radius: var(--radius-md);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+
+    .phil-card .phil-icon {
+      font-size: 1.6rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .phil-card h4 {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .phil-card p {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .subject-card .chapter-count {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      background: var(--color-bg);
+      padding: 2px 10px;
+      border-radius: var(--radius-full);
+      margin-bottom: var(--space-lg);
+    }
+
+    .subject-card .book-title {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+      margin-bottom: var(--space-md);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav-bar" role="navigation" aria-label="Subject navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Class 6 <span>Portal</span></a>
+    <div class="nav-subjects">
+      <a href="#science" class="nav-pill science">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v11l3 3H6l3-3V3z"/><path d="M6 21h12"/></svg>
+        Science
+      </a>
+      <a href="#math" class="nav-pill math">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Maths
+      </a>
+      <a href="#social" class="nav-pill social">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Social Studies
+      </a>
+      <a href="#english" class="nav-pill english">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        English
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="landing-tagline animate-in">
+    <span class="dot"></span>
+    NCERT Grade 6 — Interactive Explainer Edition
+  </div>
+  <h1 class="animate-in">Discover. Question.<br><span class="highlight">Understand from Zero.</span></h1>
+  <p class="lead animate-in">
+    A living textbook built on the Feynman Technique, First-Principles Reasoning, and Socratic Inquiry.
+    Every chapter strips assumptions, rebuilds from fundamentals, and lets you discover knowledge through interaction — not passive reading.
+  </p>
+</header>
+
+<!-- ===== PHILOSOPHY BAR ===== -->
+<section class="philosophy-bar" aria-label="Learning philosophy">
+  <div class="phil-card animate-in">
+    <div class="phil-icon">&#x1F9F1;</div>
+    <h4>First Principles</h4>
+    <p>Strip every assumption. Rebuild from what is provably true.</p>
+  </div>
+  <div class="phil-card animate-in">
+    <div class="phil-icon">&#x1F9D2;</div>
+    <h4>The 12-Year-Old Filter</h4>
+    <p>If it can't be explained simply, we haven't understood it yet.</p>
+  </div>
+  <div class="phil-card animate-in">
+    <div class="phil-icon">&#x1F50D;</div>
+    <h4>Socratic Inquiry</h4>
+    <p>Predict → Explain Why → Apply. Discover answers, don't memorise them.</p>
+  </div>
+  <div class="phil-card animate-in">
+    <div class="phil-icon">&#x1F3D7;&#xFE0F;</div>
+    <h4>Zero-Point Build</h4>
+    <p>What would you build using only the proven fundamentals?</p>
+  </div>
+</section>
+
+<!-- ===== SUBJECT CARDS ===== -->
+<section class="subjects-grid" aria-label="Subjects">
+
+  <!-- SCIENCE -->
+  <div class="subject-card science animate-in" id="science">
+    <div class="subject-icon">&#x1F52C;</div>
+    <h2>Science</h2>
+    <p class="subtitle">The Explorer's Lab</p>
+    <p class="book-title">NCERT "Curiosity" — Textbook of Science for Grade 6</p>
+    <span class="chapter-count">12 Chapters</span>
+    <div class="chapter-list">
+      <a href="science/ch1.html" class="chapter-link"><span class="chapter-num">01</span> The Wonderful World of Science</a>
+      <a href="science/ch2.html" class="chapter-link"><span class="chapter-num">02</span> Diversity in the Living World</a>
+      <a href="science/ch3.html" class="chapter-link"><span class="chapter-num">03</span> Mindful Eating: A Path to a Healthy Body</a>
+      <a href="science/ch4.html" class="chapter-link"><span class="chapter-num">04</span> Exploring Magnets</a>
+      <a href="science/ch5.html" class="chapter-link"><span class="chapter-num">05</span> Measurement of Length and Motion</a>
+      <a href="science/ch6.html" class="chapter-link"><span class="chapter-num">06</span> Materials Around Us</a>
+      <a href="science/ch7.html" class="chapter-link"><span class="chapter-num">07</span> Temperature and its Measurement</a>
+      <a href="science/ch8.html" class="chapter-link"><span class="chapter-num">08</span> A Journey through States of Water</a>
+      <a href="science/ch9.html" class="chapter-link"><span class="chapter-num">09</span> Methods of Separation in Everyday Life</a>
+      <a href="science/ch10.html" class="chapter-link"><span class="chapter-num">10</span> Living Creatures: Exploring their Characteristics</a>
+      <a href="science/ch11.html" class="chapter-link"><span class="chapter-num">11</span> Nature's Treasures</a>
+      <a href="science/ch12.html" class="chapter-link"><span class="chapter-num">12</span> Beyond Earth</a>
+    </div>
+  </div>
+
+  <!-- MATHEMATICS -->
+  <div class="subject-card math animate-in" id="math">
+    <div class="subject-icon">&#x1F4D0;</div>
+    <h2>Mathematics</h2>
+    <p class="subtitle">The Logical Builder</p>
+    <p class="book-title">NCERT "Ganita Prakash" — Mathematics for Grade 6</p>
+    <span class="chapter-count">10 Chapters</span>
+    <div class="chapter-list">
+      <a href="math/ch1.html" class="chapter-link"><span class="chapter-num">01</span> Patterns in Mathematics</a>
+      <a href="math/ch2.html" class="chapter-link"><span class="chapter-num">02</span> Lines and Angles</a>
+      <a href="math/ch3.html" class="chapter-link"><span class="chapter-num">03</span> Number Play</a>
+      <a href="math/ch4.html" class="chapter-link"><span class="chapter-num">04</span> Data Handling and Presentation</a>
+      <a href="math/ch5.html" class="chapter-link"><span class="chapter-num">05</span> Prime Time (Factors &amp; Multiples)</a>
+      <a href="math/ch6.html" class="chapter-link"><span class="chapter-num">06</span> Perimeter and Area</a>
+      <a href="math/ch7.html" class="chapter-link"><span class="chapter-num">07</span> Fractions</a>
+      <a href="math/ch8.html" class="chapter-link"><span class="chapter-num">08</span> Playing with Constructions</a>
+      <a href="math/ch9.html" class="chapter-link"><span class="chapter-num">09</span> Symmetry</a>
+      <a href="math/ch10.html" class="chapter-link"><span class="chapter-num">10</span> The Other Side of Zero (Integers)</a>
+    </div>
+  </div>
+
+  <!-- SOCIAL STUDIES -->
+  <div class="subject-card social animate-in" id="social">
+    <div class="subject-icon">&#x1F30D;</div>
+    <h2>Social Studies</h2>
+    <p class="subtitle">The Detective</p>
+    <p class="book-title">NCERT "Exploring Society: India and Beyond" for Grade 6</p>
+    <span class="chapter-count">14 Chapters</span>
+    <div class="chapter-list">
+      <a href="social/ch1.html" class="chapter-link"><span class="chapter-num">01</span> Introduction – Why Social Science?</a>
+      <a href="social/ch2.html" class="chapter-link"><span class="chapter-num">02</span> Oceans and Continents</a>
+      <a href="social/ch3.html" class="chapter-link"><span class="chapter-num">03</span> Landforms and Life</a>
+      <a href="social/ch4.html" class="chapter-link"><span class="chapter-num">04</span> Timeline and Sources of History</a>
+      <a href="social/ch5.html" class="chapter-link"><span class="chapter-num">05</span> India, That Is Bharat</a>
+      <a href="social/ch6.html" class="chapter-link"><span class="chapter-num">06</span> The Beginnings of Indian Civilisation</a>
+      <a href="social/ch7.html" class="chapter-link"><span class="chapter-num">07</span> India's Cultural Roots</a>
+      <a href="social/ch8.html" class="chapter-link"><span class="chapter-num">08</span> Unity in Diversity</a>
+      <a href="social/ch9.html" class="chapter-link"><span class="chapter-num">09</span> Family and Community</a>
+      <a href="social/ch10.html" class="chapter-link"><span class="chapter-num">10</span> Grassroots Democracy: Governance</a>
+      <a href="social/ch11.html" class="chapter-link"><span class="chapter-num">11</span> Grassroots Democracy: Rural Local Government</a>
+      <a href="social/ch12.html" class="chapter-link"><span class="chapter-num">12</span> Grassroots Democracy: Urban Local Government</a>
+      <a href="social/ch13.html" class="chapter-link"><span class="chapter-num">13</span> The Value of Work</a>
+      <a href="social/ch14.html" class="chapter-link"><span class="chapter-num">14</span> Economic Activities Around Us</a>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="subject-card english animate-in" id="english">
+    <div class="subject-icon">&#x1F4DA;</div>
+    <h2>English</h2>
+    <p class="subtitle">The Architect</p>
+    <p class="book-title">NCERT "Poorvi" — English for Grade 6</p>
+    <span class="chapter-count">5 Units · 16 Pieces</span>
+    <div class="chapter-list">
+      <a href="english/unit1.html" class="chapter-link"><span class="chapter-num">U1</span> Fables and Folk Tales</a>
+      <a href="english/unit1.html#bottle-of-dew" class="chapter-link" style="padding-left:2.5rem;font-size:0.84rem;color:var(--color-text-muted);">A Bottle of Dew · The Raven and the Fox · Rama to the Rescue</a>
+      <a href="english/unit2.html" class="chapter-link"><span class="chapter-num">U2</span> Friendship</a>
+      <a href="english/unit2.html#unlikely-best-friends" class="chapter-link" style="padding-left:2.5rem;font-size:0.84rem;color:var(--color-text-muted);">The Unlikely Best Friends · A Friend's Prayer · The Chair</a>
+      <a href="english/unit3.html" class="chapter-link"><span class="chapter-num">U3</span> Nurturing Nature</a>
+      <a href="english/unit3.html#neem-baba" class="chapter-link" style="padding-left:2.5rem;font-size:0.84rem;color:var(--color-text-muted);">Neem Baba · What a Bird Thought · Spices that Heal Us</a>
+      <a href="english/unit4.html" class="chapter-link"><span class="chapter-num">U4</span> Sports and Wellness</a>
+      <a href="english/unit4.html#change-of-heart" class="chapter-link" style="padding-left:2.5rem;font-size:0.84rem;color:var(--color-text-muted);">Change of Heart · The Winner · Yoga—A Way of Life</a>
+      <a href="english/unit5.html" class="chapter-link"><span class="chapter-num">U5</span> Culture and Tradition</a>
+      <a href="english/unit5.html#hamara-bharat" class="chapter-link" style="padding-left:2.5rem;font-size:0.84rem;color:var(--color-text-muted);">Hamara Bharat · The Kites · Ila Sachani · National War Memorial</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>Class 6 Learning Portal — Built with the Feynman Technique, First-Principles Reasoning &amp; Socratic Inquiry</p>
+  <p style="margin-top:4px;">Source: NCERT Textbooks for Grade 6 (2024–25 Edition)</p>
+</footer>
+
+<!-- ===== Scroll-based entrance animation ===== -->
+<script>
+  // Intersection Observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.animate-in').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
