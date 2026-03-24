@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 1: A Square and A Cube — Mathematics | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span class="logo-icon">8</span><span>Grade 8 Portal</span></a>
+      <div class="subject-switcher">
+        <a href="../science/index.html" class="subject-pill" data-subject="science">🔬 Science</a>
+        <a href="index.html" class="subject-pill active" data-subject="math">📐 Math</a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
+        <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <a href="index.html">Mathematics</a>
+      <span>/</span>
+      <span>Chapter 1: A Square and A Cube</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>A Square and A Cube</h1>
+      <p class="subtitle">Discover why some numbers are special and can be built in perfect geometric shapes</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- THE HOOK -->
+    <section class="content-block">
+      <div class="block-label hook">THE HOOK</div>
+      <div class="hook-block">
+        <h2>The Mystery of the 100 Lockers</h2>
+        <div class="hook-question">
+          <p>Queen Ratnamanjuri left her inheritance locked in 100 lockers. 100 people enter a room one by one. Person 1 opens every locker. Person 2 toggles (opens or closes) every 2nd locker. Person 3 toggles every 3rd locker, and so on.</p>
+          <p><strong>Which lockers will be open at the end?</strong></p>
+          <p>Here's the twist: Khoisnam figured out the answer instantly without watching all 100 people!</p>
+        </div>
+        <details style="margin-top: 1.5rem;">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Hint</summary>
+          <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+            <p>Think about how many times each locker gets toggled. A locker number tells you who will touch it!</p>
+            <p>For example, locker #6 gets touched by people 1, 2, 3, and 6 (the factors of 6). That's 4 times—an even number, so it ends up closed.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- THE FEYNMAN BRIDGE -->
+    <section class="content-block">
+      <div class="block-label bridge">THE FEYNMAN BRIDGE</div>
+      <div class="bridge-block">
+        <h2>Why Some Numbers Are Special</h2>
+        <p>Most numbers can be paired up into factors. For example, 6 pairs like this:</p>
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0;"><strong>6 = 1 × 6</strong> (person 1 and person 6 toggle it)</p>
+          <p style="margin: 0.5rem 0;"><strong>6 = 2 × 3</strong> (person 2 and person 3 toggle it)</p>
+          <p style="margin: 0.5rem 0;">Total toggles: 4 (even) → Locker stays <strong>closed</strong></p>
+        </div>
+        <p style="margin-top: 1.5rem;">But some numbers break the pattern! Look at 4:</p>
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0;"><strong>4 = 1 × 4</strong></p>
+          <p style="margin: 0.5rem 0;"><strong>4 = 2 × 2</strong> (same number twice!)</p>
+          <p style="margin: 0.5rem 0;">Total toggles: 3 (odd) → Locker stays <strong>open</strong></p>
+        </div>
+        <p style="margin-top: 1.5rem;"><strong>The secret:</strong> Numbers that are the product of two identical numbers always have an odd number of factors. These are the <em>square numbers</em>, and Khoisnam knew the open lockers would be 1, 4, 9, 16, 25... the perfect squares!</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE -->
+    <section class="content-block">
+      <div class="block-label core">INTERACTIVE CORE</div>
+
+      <!-- Square Numbers Section -->
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">What Are Square Numbers?</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 1: Understanding the Name</p>
+            <p style="margin-bottom: 0.5rem;">A <strong>square number</strong> is what you get when you multiply a number by itself.</p>
+            <p style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: 'JetBrains Mono', monospace;">
+              3 × 3 = 9 (we write this as 3²)<br>
+              5 × 5 = 25 (we write this as 5²)<br>
+              10 × 10 = 100 (we write this as 10²)
+            </p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 2: Why "Square"?</p>
+            <p style="margin-bottom: 0.5rem;">Imagine arranging dots in a perfect square grid:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; text-align: center; font-family: monospace;">
+              • • •<br>
+              • • •<br>
+              • • •<br>
+              <p style="margin-top: 0.5rem;">3 rows × 3 columns = 9 dots = 3²</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 3: The First Few Square Numbers</p>
+            <p style="margin-bottom: 0.5rem;">Build them step by step:</p>
+            <table style="width: 100%; margin: 0.5rem 0; border-collapse: collapse;">
+              <tr style="background: var(--surface);">
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Side Length</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Calculation</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Square Number</th>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">1</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">1 × 1</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">1</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">2</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">2 × 2</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">4</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3 × 3</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">9</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">4</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">4 × 4</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">16</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">5</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">5 × 5</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">25</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 4: A Pattern in the Last Digit</p>
+            <p style="margin-bottom: 0.5rem;">Look at what digit squares end in:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;">1² = <strong>1</strong>, 2² = <strong>4</strong>, 3² = <strong>9</strong>, 4² = 1<strong>6</strong>, 5² = 2<strong>5</strong>, 6² = 3<strong>6</strong>, 7² = 4<strong>9</strong>, 8² = 6<strong>4</strong>, 9² = 8<strong>1</strong>, 10² = 10<strong>0</strong></p>
+              <p style="margin-top: 0.5rem; color: var(--accent);">Squares only end in: 0, 1, 4, 5, 6, or 9</p>
+              <p style="color: var(--accent);">Never in: 2, 3, 7, or 8</p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Why?</strong> Because of the last digit of the base number (1 squared ends in 1, 2 squared ends in 4, etc.)</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 5: Sum of Odd Numbers = Squares!</p>
+            <p style="margin-bottom: 0.5rem;">Here's a mind-bending pattern:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              1 = 1²<br>
+              1 + 3 = 4 = 2²<br>
+              1 + 3 + 5 = 9 = 3²<br>
+              1 + 3 + 5 + 7 = 16 = 4²<br>
+              1 + 3 + 5 + 7 + 9 = 25 = 5²
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Why?</strong> Each new square is one row taller. That row has an odd number of dots (the next odd number in the sequence).</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 6: Square Roots (The Reverse Process)</p>
+            <p style="margin-bottom: 0.5rem;">If 7 × 7 = 49, then 7 is the <strong>square root</strong> of 49. We write it as √49 = 7.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0.5rem 0;">√9 = 3 (because 3 × 3 = 9)</p>
+              <p style="margin: 0.5rem 0;">√25 = 5 (because 5 × 5 = 25)</p>
+              <p style="margin: 0.5rem 0;">√100 = 10 (because 10 × 10 = 100)</p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Key fact:</strong> Every perfect square has two square roots. For example, both 8 and −8 squared equal 64. But we usually use the positive one.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Confusing Multiplication and Exponents</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> 4 × 4 × 4 = 4² = 16</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">NO! This is 4³ (four cubed), not 4² (four squared)!</strong></p>
+        <p><strong>RIGHT:</strong> 4 × 4 = 4² = 16</p>
+        <p style="margin-top: 1rem;"><strong>Remember:</strong> The small number (exponent) tells you how many times to multiply. 4² means "multiply 4 by itself 2 times." 4³ means "multiply 4 by itself 3 times."</p>
+      </div>
+
+      <!-- Cubic Numbers Section -->
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">What Are Cubic Numbers?</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 1: From 2D to 3D</p>
+            <p style="margin-bottom: 0.5rem;">While squares are 2D grids, cubes are 3D blocks. A <strong>cubic number</strong> is what you get when you multiply a number by itself three times.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              2 × 2 × 2 = 8 (we write this as 2³)<br>
+              3 × 3 × 3 = 27 (we write this as 3³)<br>
+              5 × 5 × 5 = 125 (we write this as 5³)
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 2: Building a 3D Cube</p>
+            <p style="margin-bottom: 0.5rem;">Imagine stacking unit cubes (1×1×1 blocks) to build a larger cube:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;">A cube with side length 2: You need 2 layers, each with 2 × 2 = 4 cubes. Total: 2 × 2 × 2 = 8 unit cubes</p>
+              <p style="margin-top: 0.5rem;">A cube with side length 3: You need 3 layers, each with 3 × 3 = 9 cubes. Total: 3 × 3 × 3 = 27 unit cubes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 3: The First Few Cubic Numbers</p>
+            <table style="width: 100%; margin: 0.5rem 0; border-collapse: collapse;">
+              <tr style="background: var(--surface);">
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Side Length</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Calculation</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Cubic Number</th>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">1</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">1 × 1 × 1</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">1</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">2</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">2 × 2 × 2</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">8</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3 × 3 × 3</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">27</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">4</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">4 × 4 × 4</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">64</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">5</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">5 × 5 × 5</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border); font-weight: 600;">125</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 4: Prime Factorization (Finding if a Number is a Perfect Cube)</p>
+            <p style="margin-bottom: 0.5rem;">A shortcut: Break the number into prime factors. If you can group them into three identical sets, it's a perfect cube.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              27 = 3 × 3 × 3 = (3) × (3) × (3) → Perfect cube!<br>
+              So ∛27 = 3<br><br>
+              8 = 2 × 2 × 2 = (2) × (2) × (2) → Perfect cube!<br>
+              So ∛8 = 2
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 5: Cube Roots (The Reverse Process)</p>
+            <p style="margin-bottom: 0.5rem;">Just like square roots "undo" squares, cube roots "undo" cubes. We write it as ∛.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0.5rem 0;">∛8 = 2 (because 2 × 2 × 2 = 8)</p>
+              <p style="margin: 0.5rem 0;">∛27 = 3 (because 3 × 3 × 3 = 27)</p>
+              <p style="margin: 0.5rem 0;">∛125 = 5 (because 5 × 5 × 5 = 125)</p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Key fact:</strong> Unlike square roots, each perfect cube has only ONE cube root (no ± confusion).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deep Dive: Taxicab Numbers -->
+      <div class="deep-dive" style="margin-top: 2rem;">
+        <div class="deep-dive-title">🔍 Deep Dive: The Hardy-Ramanujan Number</div>
+        <p style="margin-top: 1rem;">Mathematician Srinivasa Ramanujan was in a hospital when his friend G.H. Hardy visited in taxicab number 1729. Hardy said it was "a rather dull number." Ramanujan immediately replied: "No, Hardy, it is a very interesting number!"</p>
+        <p style="margin-top: 1rem;"><strong>Why?</strong> Because 1729 is the smallest number that can be expressed as the sum of two cubes in TWO different ways:</p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 1rem 0; font-family: monospace; text-align: center;">
+          1729 = 1³ + 12³ = 1 + 1728 = 1729<br>
+          1729 = 9³ + 10³ = 729 + 1000 = 1729
+        </div>
+        <p style="margin-top: 1rem;">Numbers like 1729 are called <strong>taxicab numbers</strong>. Can you find other numbers that are the sum of two cubes in multiple ways?</p>
+      </div>
+
+      <!-- Another Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Negative Bases and Odd/Even Powers</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> (−2)³ = −8, so negative numbers squared are always negative</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">Actually, it depends on the exponent!</strong></p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+          <p style="margin: 0.5rem 0;">(−2)² = (−2) × (−2) = 4 (POSITIVE, because two negatives multiply to positive)</p>
+          <p style="margin: 0.5rem 0;">(−2)³ = (−2) × (−2) × (−2) = −8 (NEGATIVE, because three negatives give negative)</p>
+        </div>
+        <p style="margin-top: 0.5rem;"><strong>Rule:</strong> Negative base with <strong>even</strong> power = positive. Negative base with <strong>odd</strong> power = negative.</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="content-block">
+      <div class="block-label quiz">SOCRATIC SANDBOX</div>
+      <p style="margin-bottom: 2rem; color: var(--muted);">Test your understanding with three levels of questions. Can you predict? Explain why? Apply to new situations?</p>
+
+      <!-- Level 1: Predict -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag predict">Level 1: Predict</div>
+        <h3>Can you recognize and extend patterns?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Square Challenge</strong></p>
+          <p>Which of these is NOT a perfect square?</p>
+          <p style="margin-top: 0.5rem;">A) 49 &nbsp; B) 81 &nbsp; C) 50 &nbsp; D) 100</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: C) 50</strong></p>
+              <p style="margin-top: 0.5rem;">Why? 50 ends in 0, which looks like it could be a square (like 10² = 100). But remember the rule: squares only end in 0, 1, 4, 5, 6, or 9. 50 ends in 0, so you need to check further. There's no whole number that when squared equals 50. (7² = 49, 8² = 64.)</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Cubic Pattern</strong></p>
+          <p>If 2³ = 8, what is 4³?</p>
+          <p style="margin-top: 0.5rem;">A) 12 &nbsp; B) 32 &nbsp; C) 64 &nbsp; D) 128</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: C) 64</strong></p>
+              <p style="margin-top: 0.5rem;">Why? 4³ = 4 × 4 × 4 = 16 × 4 = 64. Notice that when you double the base (from 2 to 4), the cube gets 8 times bigger (from 8 to 64). That's because 2³ is multiplied by 2³ again!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Odd Sum Pattern</strong></p>
+          <p>Using the pattern 1 + 3 = 4 = 2², what is 1 + 3 + 5?</p>
+          <p style="margin-top: 0.5rem;">A) 8 &nbsp; B) 9 &nbsp; C) 10 &nbsp; D) 12</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) 9 = 3²</strong></p>
+              <p style="margin-top: 0.5rem;">Why? The pattern is that the sum of the first n odd numbers equals n². Here we have three odd numbers (1, 3, 5), so the answer is 3² = 9.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 2: Why -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag why">Level 2: Why</div>
+        <h3>Can you explain the mathematical reasoning?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Why Squares End in Only Certain Digits</strong></p>
+          <p>Explain why squares can only end in 0, 1, 4, 5, 6, or 9. (Hint: Think about what the last digit of n determines.)</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> The last digit of n² depends only on the last digit of n. Let's check:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>If n ends in 0: 0² = 0 (ends in 0)</li>
+                <li>If n ends in 1: 1² = 1 (ends in 1)</li>
+                <li>If n ends in 2: 2² = 4 (ends in 4)</li>
+                <li>If n ends in 3: 3² = 9 (ends in 9)</li>
+                <li>If n ends in 4: 4² = 16 (ends in 6)</li>
+                <li>If n ends in 5: 5² = 25 (ends in 5)</li>
+                <li>If n ends in 6: 6² = 36 (ends in 6)</li>
+                <li>If n ends in 7: 7² = 49 (ends in 9)</li>
+                <li>If n ends in 8: 8² = 64 (ends in 4)</li>
+                <li>If n ends in 9: 9² = 81 (ends in 1)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">The only last digits that appear are 0, 1, 4, 5, 6, 9. So any number ending in 2, 3, 7, or 8 cannot be a perfect square!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Why Lockers with Prime Numbers were Touched Twice</strong></p>
+          <p>In the locker puzzle, why do prime numbers get toggled exactly twice? Explain using factors.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> A prime number has exactly two factors: 1 and itself. For example, locker #7 gets touched by Person 1 (opening it) and Person 7 (closing it). That's 2 toggles—an even number, so it ends up closed. This is true for any prime: 2, 3, 5, 7, 11, etc.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Why the Sum of Odd Numbers Gives Squares</strong></p>
+          <p>Why does 1 + 3 + 5 + 7 = 16 = 4²? Can you visualize this with a diagram?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> Imagine building a square layer by layer:</p>
+              <p style="margin-top: 0.5rem; font-family: monospace;">Start: A 1×1 square uses 1 dot<br>
+              Layer 1: • (add 3 dots in an L-shape) = 4 dots = 2×2<br>
+              Layer 2: •• (add 5 dots in an L-shape) = 9 dots = 3×3<br>
+              Layer 3: ••• (add 7 dots in an L-shape) = 16 dots = 4×4</p>
+              <p style="margin-top: 0.5rem;">Each layer adds the next odd number. That's why the sum of consecutive odd numbers starting from 1 always equals a perfect square!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 3: Apply -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag apply">Level 3: Apply</div>
+        <h3>Can you use these concepts to solve new problems?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Real-World Squares</strong></p>
+          <p>You want to plant a square garden with area 144 m². How many meters of fence do you need for one side? What's the total perimeter?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem;">Step 1: Find the side length. If area = 144 m², then side length = √144 = 12 m</p>
+              <p style="margin-top: 0.5rem;">Step 2: Find the perimeter. Perimeter = 4 × side = 4 × 12 = 48 m of fence needed.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Cubes in Storage</strong></p>
+          <p>A storage container is a perfect cube with side length 5 meters. How many cubic meters can it hold? How many cubic meters more than a 4-meter cube?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem;">Step 1: Volume of 5-meter cube = 5³ = 125 m³</p>
+              <p style="margin: 0.5rem 0;">Step 2: Volume of 4-meter cube = 4³ = 64 m³</p>
+              <p style="margin: 0.5rem 0;">Step 3: Difference = 125 − 64 = 61 m³ more</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Finding Taxicab Numbers</strong></p>
+          <p>We know 1729 = 1³ + 12³ = 9³ + 10³. Can you find another number that is the sum of two cubes in two different ways?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong> The next taxicab number is 4104. Let's verify:</p>
+              <p style="margin-top: 0.5rem;">4104 = 2³ + 16³ = 8 + 4096 = 4104 ✓</p>
+              <p style="margin: 0.5rem 0;">4104 = 9³ + 15³ = 729 + 3375 = 4104 ✓</p>
+              <p style="margin-top: 0.5rem;"><strong>Challenge:</strong> Can you find 13832? It's the third taxicab number!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Chapter Navigation -->
+  <div class="chapter-nav">
+    <div class="container">
+      <a href="index.html" class="nav-btn prev">← Back to Math Index</a>
+      <a href="chapter2.html" class="nav-btn next">Chapter 2: Power Play →</a>
+    </div>
+  </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Square Number</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A number that is the product of a number multiplied by itself (e.g., 4 = 2 × 2 = 2²)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Perfect Square</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A whole number that equals n² for some integer n. Examples: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Square Root</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The number that, when multiplied by itself, gives the original number. √16 = 4 because 4 × 4 = 16</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Cubic Number</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A number obtained by multiplying a number by itself three times (e.g., 8 = 2 × 2 × 2 = 2³)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Perfect Cube</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A whole number that equals n³ for some integer n. Examples: 1, 8, 27, 64, 125, 216</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Cube Root</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The number that, when multiplied by itself three times, gives the original number. ∛27 = 3 because 3 × 3 × 3 = 27</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Exponent</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The small number written above and to the right of a base number, telling you how many times to multiply. In 5³, the exponent is 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Last Digit Pattern</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Perfect squares only end in 0, 1, 4, 5, 6, or 9. They never end in 2, 3, 7, or 8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">What is 12²?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 24</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 120</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 144</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 48</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 12 × 12 = 144" data-wrong="The correct answer is C. 12² means 12 × 12 = 144"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Which of these is a perfect cube?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 50</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 81</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 125</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 100</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 125 = 5³ (5 × 5 × 5)" data-wrong="The correct answer is C. 125 = 5 × 5 × 5 = 5³"></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">What is the cube root of 64?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 4</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 8</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 6</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 16</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! ∛64 = 4 because 4 × 4 × 4 = 64" data-wrong="The correct answer is A. ∛64 = 4 because 4³ = 64"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which number can be written as both 1³ + 12³ and 9³ + 10³?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 1000</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 1729</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 2197</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 729</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 1729 is famous as Ramanujan's number (also called Hardy-Ramanujan number)" data-wrong="The correct answer is B. 1729 = 1 + 1728 = 729 + 1000"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">If the area of a square is 225 m², what is the perimeter?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 45 m</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 60 m</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 90 m</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 225 m</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Side = √225 = 15 m. Perimeter = 4 × 15 = 60 m" data-wrong="The correct answer is B. √225 = 15 m, so perimeter = 4 × 15 = 60 m"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Learning Portal • Mathematics • Chapter 1: A Square and A Cube</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted);">Discover mathematics through exploration, patterns, and real-world connections.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

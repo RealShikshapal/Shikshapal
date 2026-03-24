@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 4: Quadrilaterals — Mathematics | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span class="logo-icon">8</span><span>Grade 8 Portal</span></a>
+      <div class="subject-switcher">
+        <a href="../science/index.html" class="subject-pill" data-subject="science">🔬 Science</a>
+        <a href="index.html" class="subject-pill active" data-subject="math">📐 Math</a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
+        <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <a href="index.html">Mathematics</a>
+      <span>/</span>
+      <span>Chapter 4: Quadrilaterals</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Quadrilaterals</h1>
+      <p class="subtitle">Discover the hidden properties of four-sided shapes through logical deduction</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- THE HOOK -->
+    <section class="content-block">
+      <div class="block-label hook">THE HOOK</div>
+      <div class="hook-block">
+        <h2>The Carpenter's Challenge</h2>
+        <div class="hook-question">
+          <p>A carpenter has two strips of wood of lengths 8 cm and another unknown length. She wants to join them to form a rectangle using the strips as diagonals.</p>
+          <p><strong>What length must the second strip be?</strong></p>
+          <p><strong>Where must they be joined?</strong></p>
+          <p><strong>What angle must they form?</strong></p>
+          <p>Without using a ruler or protractor, can you figure this out using pure logic? The answer is hidden in the properties of rectangles!</p>
+        </div>
+        <details style="margin-top: 1.5rem;">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Big Hint</summary>
+          <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+            <p>Think about what makes a rectangle special. Are all sides equal? Are opposite sides equal? Are diagonals equal? Do they cross at the middle?</p>
+            <p style="margin-top: 0.5rem;">If you can figure out these properties without measuring, you can solve the carpenter's problem!</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- THE FEYNMAN BRIDGE -->
+    <section class="content-block">
+      <div class="block-label bridge">THE FEYNMAN BRIDGE</div>
+      <div class="bridge-block">
+        <h2>Why Rectangles Are Special</h2>
+
+        <p style="margin-bottom: 1rem;">A <strong>quadrilateral</strong> is just any four-sided shape. But some are more special than others.</p>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">A Generic Quadrilateral</p>
+          <p style="margin: 0.5rem 0;">Four sides at random angles. Sides can be any length. Looks like: ⬠ (wonky, unpredictable)</p>
+          <p style="margin-top: 0.5rem; color: var(--muted);">No obvious properties. Hard to work with.</p>
+        </div>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">A Rectangle</p>
+          <p style="margin: 0.5rem 0;">All four corners are RIGHT ANGLES (90°). Opposite sides are equal. Looks like: ▭ (perfect, symmetrical)</p>
+          <p style="margin-top: 0.5rem; color: var(--accent);">Tons of properties! Easy to build, easy to calculate, easy to reason about.</p>
+        </div>
+
+        <p style="margin-top: 2rem;"><strong>The big insight:</strong> When you add constraints (like "all angles are 90°"), you unlock properties. A rectangle's constraints force it to have equal diagonals that cross in the middle. The carpenter can use this logical chain to solve her problem!</p>
+
+        <p style="margin-top: 1rem;"><strong>Geometry is about:</strong> Starting with a definition, then using logic (congruence, properties of triangles) to discover hidden truths.</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE -->
+    <section class="content-block">
+      <div class="block-label core">INTERACTIVE CORE</div>
+
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">Defining and Understanding Rectangles</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 1: What is a Quadrilateral?</p>
+            <p style="margin-bottom: 0.5rem;">A quadrilateral is any shape with exactly four sides and four angles.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Examples:</strong> Squares, rectangles, trapezoids, rhombuses, even wonky shapes</p>
+              <p style="margin: 0.5rem 0;"><strong>Angle sum rule:</strong> All angles in any quadrilateral add up to 360°</p>
+              <p style="margin: 0.5rem 0; border-top: 1px solid var(--border); padding-top: 0.5rem;">Why? Because you can split any quadrilateral into two triangles. Each triangle has angles summing to 180°. Two triangles = 360°.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 2: Defining a Rectangle</p>
+            <p style="margin-bottom: 0.5rem;">A rectangle is a quadrilateral with TWO key properties:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;">✓ All four angles are RIGHT ANGLES (90°)</p>
+              <p style="margin: 0.5rem 0;">✓ Opposite sides are EQUAL in length</p>
+              <p style="margin-top: 0.5rem;">Because all angles are 90°, and they sum to 360°, we have 4 × 90° = 360°. ✓</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 3: Deduction 1—Diagonals Are Equal Length</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Claim:</strong> The two diagonals of a rectangle have the same length.</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Proof using congruence:</strong></p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              <p style="margin: 0;">In rectangle ABCD with diagonal AC = 8 cm:</p>
+              <p style="margin: 0.5rem 0;">Side AB = Side DC (opposite sides in a rectangle)</p>
+              <p style="margin: 0.5rem 0;">Angle BAD = 90°, Angle CDA = 90° (definition)</p>
+              <p style="margin: 0.5rem 0;">Side AD is shared</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin-top: 0.5rem;">By SAS (Side-Angle-Side) congruence:</p>
+              <p style="margin: 0.5rem 0;">Triangle ADC ≅ Triangle DAB</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;">Therefore: AC = BD (corresponding parts of congruent triangles)</p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Answer:</strong> The second diagonal must also be 8 cm!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 4: Deduction 2—Diagonals Bisect Each Other</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Claim:</strong> The diagonals cross at their midpoints.</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Proof:</strong></p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Let O be the crossing point of diagonals AC and BD.</strong></p>
+              <p style="margin: 0.5rem 0;">Consider triangles AOB and COD (opposite triangles).</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;"><strong>We know:</strong></p>
+              <p style="margin: 0.5rem 0;">- Angle ABC = 90° (rectangle definition)</p>
+              <p style="margin: 0.5rem 0;">- AB = CD (opposite sides)</p>
+              <p style="margin: 0.5rem 0;">- AC = BD (from Step 3)</p>
+              <p style="margin: 0.5rem 0;">- Angles at O are vertically opposite (equal)</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;"><strong>By AAS (Angle-Angle-Side) congruence:</strong></p>
+              <p style="margin: 0.5rem 0;">Triangle AOB ≅ Triangle COD</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;">Therefore: OA = OC and OB = OD</p>
+              <p style="margin: 0.5rem 0;"><strong>This means O is the midpoint of both AC and BD!</strong></p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Answer:</strong> The diagonals must cross exactly in the middle (at their midpoints).</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 5: Deduction 3—All Angles Are 90° (Regardless of Diagonal Angle!)</p>
+            <p style="margin-bottom: 0.5rem;"><strong>The surprising discovery:</strong> It doesn't matter what angle the diagonals form—if they're equal and bisect each other, the angles of the quadrilateral are ALWAYS 90°!</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              <p style="margin: 0;"><strong>Setup:</strong> Two equal diagonals that bisect each other at angle x°</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;">In isosceles triangle AOB (since OA = OB):</p>
+              <p style="margin: 0.5rem 0;">Base angles are equal: call them both 'a'</p>
+              <p style="margin: 0.5rem 0;">Then: a + a + x = 180°</p>
+              <p style="margin: 0.5rem 0;">So: a = (180° - x)/2 = 90° - x/2</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;">Similarly in triangle AOD with angle (180° - x)°:</p>
+              <p style="margin: 0.5rem 0;">Base angles: b = x/2</p>
+              <p style="margin: 0.5rem 0;"></p>
+              <p style="margin: 0.5rem 0;"><strong>Angle at vertex A = a + b = (90° - x/2) + x/2 = 90°</strong></p>
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>The magic:</strong> No matter what angle the diagonals form, the quadrilateral always has 90° angles!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 6: Opposite Sides Are Equal (Bonus Deduction)</p>
+            <p style="margin-bottom: 0.5rem;">From the congruent triangles we proved above (triangles AOB ≅ COD), we can also deduce:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;">AB = CD (corresponding parts)</p>
+              <p style="margin: 0.5rem 0;">Similarly: AD = BC</p>
+              <p style="margin-top: 0.5rem;"><strong>Therefore, opposite sides are equal—one of the defining properties of a rectangle!</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Carpenter's Solution -->
+      <div style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+        <h3 style="margin-top: 0; color: var(--accent);">The Carpenter's Solution (Recap)</h3>
+        <p style="margin-top: 1rem;">Based on rectangle properties:</p>
+        <ul style="margin-top: 0.5rem;">
+          <li><strong>Diagonal 2 length:</strong> 8 cm (diagonals are equal)</li>
+          <li><strong>Where to join:</strong> At their midpoints (4 cm from each end)</li>
+          <li><strong>Angle between diagonals:</strong> Can be ANY angle—the rectangle properties hold anyway!</li>
+        </ul>
+        <p style="margin-top: 1rem;">The carpenter now knows exactly how to build her rectangle!</p>
+      </div>
+
+      <!-- Common Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Square vs. Rectangle</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> "A square is different from a rectangle."</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">Actually, a square IS a special type of rectangle!</strong></p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+          <p style="margin: 0;"><strong>Rectangle:</strong> All angles 90°, opposite sides equal</p>
+          <p style="margin: 0.5rem 0;"><strong>Square:</strong> All angles 90°, ALL sides equal (special case of rectangle)</p>
+          <p style="margin-top: 0.5rem;">Every square is a rectangle, but not every rectangle is a square. Like how every cat is an animal, but not every animal is a cat!</p>
+        </div>
+        <p style="margin-top: 0.5rem;"><strong>Remember:</strong> Squares have the stricter definition, so they inherit all rectangle properties.</p>
+      </div>
+
+      <!-- Deep Dive -->
+      <div class="deep-dive" style="margin-top: 2rem;">
+        <div class="deep-dive-title">🔍 Deep Dive: Why Congruence Matters</div>
+        <p style="margin-top: 1rem;">In this chapter, we used congruence (two shapes are exactly the same) to prove properties logically, without measuring.</p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+          <p style="margin: 0;"><strong>Why is this powerful?</strong></p>
+          <ul style="margin-top: 0.5rem;">
+            <li>We don't need a ruler or protractor to find truth</li>
+            <li>Our logic works for ALL rectangles, not just specific ones</li>
+            <li>We can solve problems the carpenter never considered</li>
+            <li>This is the foundation of modern geometry</li>
+          </ul>
+        </div>
+        <p style="margin-top: 1rem;"><strong>Three congruence rules for triangles:</strong></p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 1rem 0; font-family: monospace;">
+          <p style="margin: 0.5rem 0;">SSS (Side-Side-Side): Three equal sides</p>
+          <p style="margin: 0.5rem 0;">SAS (Side-Angle-Side): Two sides and included angle</p>
+          <p style="margin: 0.5rem 0;">AAS (Angle-Angle-Side): Two angles and a non-included side</p>
+        </div>
+        <p style="margin-top: 1rem;">These rules let us prove that shapes are identical without laying them on top of each other. That's how the carpenter solved her problem!</p>
+      </div>
+
+      <!-- Another Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Opposite vs. Adjacent Sides</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> "In a rectangle, all sides are equal."</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">NO! Only OPPOSITE sides are equal!</strong></p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+          <p style="margin: 0;">In rectangle ABCD with length 10 and width 5:</p>
+          <p style="margin: 0.5rem 0;">AB = CD = 10 (opposite long sides)</p>
+          <p style="margin: 0.5rem 0;">AD = BC = 5 (opposite short sides)</p>
+          <p style="margin: 0.5rem 0;">But AB ≠ AD (adjacent sides can differ!)</p>
+        </div>
+        <p style="margin-top: 0.5rem;"><strong>Remember:</strong> "Opposite" means across from each other. Adjacent means next to each other. Opposite sides are equal; adjacent sides can be different.</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="content-block">
+      <div class="block-label quiz">SOCRATIC SANDBOX</div>
+      <p style="margin-bottom: 2rem; color: var(--muted);">Test your understanding of quadrilaterals and logical proof.</p>
+
+      <!-- Level 1: Predict -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag predict">Level 1: Predict</div>
+        <h3>Can you identify and recognize quadrilateral properties?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Angle Sum</strong></p>
+          <p>In any quadrilateral, if three angles are 80°, 100°, and 95°, what is the fourth angle?</p>
+          <p style="margin-top: 0.5rem;">A) 85° &nbsp; B) 275° &nbsp; C) 360° &nbsp; D) 95°</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: A) 85°</strong></p>
+              <p style="margin-top: 0.5rem;">Why? All angles in a quadrilateral sum to 360°. So: 80° + 100° + 95° + x = 360°. Therefore x = 360° - 275° = 85°.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Rectangle Properties</strong></p>
+          <p>A rectangle has a diagonal of 10 cm. What can you say about the other diagonal?</p>
+          <p style="margin-top: 0.5rem;">A) It's longer than 10 cm &nbsp; B) It's 10 cm &nbsp; C) It's shorter than 10 cm &nbsp; D) Can't determine</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) It's 10 cm</strong></p>
+              <p style="margin-top: 0.5rem;">Why? In a rectangle, both diagonals have equal length (we proved this using congruent triangles). So if one diagonal is 10 cm, the other must also be 10 cm.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Opposite Sides</strong></p>
+          <p>In rectangle ABCD, side AB = 8 cm. What is side CD?</p>
+          <p style="margin-top: 0.5rem;">A) Unknown &nbsp; B) 8 cm &nbsp; C) Greater than 8 cm &nbsp; D) Less than 8 cm</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) 8 cm</strong></p>
+              <p style="margin-top: 0.5rem;">Why? AB and CD are opposite sides in the rectangle. By definition, opposite sides of a rectangle are equal. So CD = AB = 8 cm.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 2: Why -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag why">Level 2: Why</div>
+        <h3>Can you explain the logical proofs behind rectangle properties?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Why Are Diagonals Equal?</strong></p>
+          <p>Explain (in simple terms) why the two diagonals of a rectangle must have equal length, without measuring them.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> Draw two diagonals in rectangle ABCD. They form two triangles: ADC and DAB.</p>
+              <p style="margin-top: 0.5rem;">These triangles are congruent because:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>AD = AD (same side in both triangles)</li>
+                <li>Angles at D and A are both 90° (rectangle definition)</li>
+                <li>AB = DC (opposite sides of a rectangle)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">By SAS congruence, triangle ADC ≅ triangle DAB.</p>
+              <p style="margin: 0.5rem 0;">Therefore, their diagonals (corresponding parts) must be equal: AC = BD.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Why Do Diagonals Bisect Each Other?</strong></p>
+          <p>Why must the diagonals cross exactly at their midpoints? What property guarantees this?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> We proved that diagonals AC and BD cross at point O. Consider triangles AOB and COD (opposite triangles).</p>
+              <p style="margin-top: 0.5rem;">We know:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>AB = CD (opposite sides of rectangle)</li>
+                <li>Angles AOB and COD are vertically opposite (equal)</li>
+                <li>AC = BD (diagonals are equal, proved earlier)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">By SAS congruence, triangle AOB ≅ triangle COD.</p>
+              <p style="margin: 0.5rem 0;">So OA = OC and OB = OD, meaning O bisects both diagonals!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Why Does Angle Not Matter?</strong></p>
+          <p>We proved that if two equal segments bisect each other, the angles must all be 90° regardless of the angle between the segments. Why is this surprising?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> It seems like the angle between diagonals should matter. But it doesn't! Here's why:</p>
+              <p style="margin-top: 0.5rem;">If the diagonals form angle x at their crossing, the isosceles triangle has base angles = 90° - x/2.</p>
+              <p style="margin: 0.5rem 0;">The adjacent triangle has angle 180° - x, so its base angles = x/2.</p>
+              <p style="margin: 0.5rem 0;">When you add them: (90° - x/2) + x/2 = 90°!</p>
+              <p style="margin-top: 0.5rem;">The x cancels out! No matter what angle the diagonals form, the quadrilateral angles are always 90°. This is a beautiful example of mathematical inevitability.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 3: Apply -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag apply">Level 3: Apply</div>
+        <h3>Can you solve new geometric problems using rectangle properties?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: The Architect's Ceiling</strong></p>
+          <p>An architect is designing a rectangular ceiling with diagonals 12 m long. At what distance from a corner will the diagonals meet?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem;">Diagonals of a rectangle bisect each other, meaning they cross at their midpoints.</p>
+              <p style="margin: 0.5rem 0;">From any corner to the crossing point = (length of diagonal) ÷ 2 = 12 ÷ 2 = 6 m</p>
+              <p style="margin-top: 0.5rem;">The diagonals will meet 6 m from each corner!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Verifying a Rectangle</strong></p>
+          <p>You measure a quadrilateral and find: diagonal 1 = 10 cm, diagonal 2 = 10 cm, they cross at 5 cm from each end. Is this a rectangle? Why or why not?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: Yes, this is evidence of a rectangle!</strong></p>
+              <p style="margin-top: 0.5rem;">Why? Both conditions are satisfied:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>Diagonals are equal (both 10 cm)</li>
+                <li>They bisect each other (cross at 5 cm from each end, which is the midpoint)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">These are the exact properties we proved are necessary and sufficient for a rectangle. So yes, this must be a rectangle (though you'd still want to check the angles are 90°).</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: The Garden Plot</strong></p>
+          <p>You're staking out a rectangular garden plot. You place stakes at opposite corners 15 m apart (diagonal). How far apart should the other two corners be, and where should you place the center stake?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem;"><strong>Distance between other two corners:</strong> 15 m (diagonals of a rectangle are equal)</p>
+              <p style="margin: 0.5rem 0;"><strong>Where to place center stake:</strong> 7.5 m from any corner along the diagonal (bisection point)</p>
+              <p style="margin-top: 0.5rem;">The two diagonals, each 15 m long, will cross at their midpoints, which is 7.5 m from each corner. Place your center stake there!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Chapter Navigation -->
+  <div class="chapter-nav">
+    <div class="container">
+      <a href="chapter3.html" class="nav-btn prev">← Chapter 3: A Story of Numbers</a>
+      <span class="nav-placeholder">(End of Sample Chapters)</span>
+    </div>
+  </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Quadrilateral</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A polygon with exactly four sides and four angles</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Rectangle</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A quadrilateral with four right angles (90°) and opposite sides equal</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Square</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A special rectangle where all four sides are equal and all angles are 90°</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Parallelogram</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A quadrilateral where opposite sides are parallel and equal in length</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Trapezium</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A quadrilateral with exactly one pair of parallel sides</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Rhombus</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A parallelogram where all four sides are equal (looks like a tilted square)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Angle Sum Property</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The sum of all interior angles in any quadrilateral is always 360°</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Diagonal</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A line segment joining two non-adjacent vertices of a polygon</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">What is the sum of all interior angles in a quadrilateral?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 180°</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 270°</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 360°</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 450°</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The angle sum property states that all angles in a quadrilateral sum to 360°" data-wrong="The correct answer is C. The sum of interior angles in any quadrilateral is 360°"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">In a rectangle, if one angle is 90°, what are the other three angles?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 90°, 90°, 180°</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 60°, 60°, 120°</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 90°, 90°, 90°</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 45°, 45°, 180°</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! All angles in a rectangle are 90°" data-wrong="The correct answer is C. Every angle in a rectangle is 90°"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which quadrilateral has all sides equal but angles don't have to be 90°?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Rectangle</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Rhombus</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Trapezium</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Parallelogram</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! A rhombus has all four sides equal (like a diamond shape)" data-wrong="The correct answer is B. A rhombus has all sides equal"></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">A quadrilateral has angles of 85°, 95°, and 100°. What is the fourth angle?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 80°</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 75°</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 85°</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 90°</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 85° + 95° + 100° + 80° = 360°" data-wrong="The correct answer is A. Using angle sum: 360° - (85° + 95° + 100°) = 360° - 280° = 80°"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Which statement is true about a square?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> All sides equal, but angles vary</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> All angles 90°, but sides vary</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> All sides equal AND all angles 90°</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> It's a type of trapezium</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! A square has both all sides equal and all angles at 90°" data-wrong="The correct answer is C. A square is both a rectangle (all angles 90°) and a rhombus (all sides equal)"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Learning Portal • Mathematics • Chapter 4: Quadrilaterals</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted);">Master geometry through logical deduction and congruence proofs.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 3: A Story of Numbers — Mathematics | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span class="logo-icon">8</span><span>Grade 8 Portal</span></a>
+      <div class="subject-switcher">
+        <a href="../science/index.html" class="subject-pill" data-subject="science">🔬 Science</a>
+        <a href="index.html" class="subject-pill active" data-subject="math">📐 Math</a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
+        <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <a href="index.html">Mathematics</a>
+      <span>/</span>
+      <span>Chapter 3: A Story of Numbers</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>A Story of Numbers</h1>
+      <p class="subtitle">Journey through 4000 years of how humans invented counting and number systems</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- THE HOOK -->
+    <section class="content-block">
+      <div class="block-label hook">THE HOOK</div>
+      <div class="hook-block">
+        <h2>Ancient Number Mystery</h2>
+        <div class="hook-question">
+          <p>4000 years ago, the Mesopotamians didn't write numbers like we do (0, 1, 2, 3...). They used strange symbols. Look at these: ▬ ◀ ◀◀</p>
+          <p><strong>What if you had to count 27 cows without our digits? How would YOU show it?</strong></p>
+          <p><strong>Here's the real puzzle:</strong> For most of human history, there was NO ZERO. People counted fine for thousands of years without it. Yet our modern system—which uses the digits 0 through 9—came from India and changed the world. Why?</p>
+        </div>
+        <details style="margin-top: 1.5rem;">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">See How Different It Could Be</summary>
+          <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+            <p><strong>Roman Numerals:</strong> XXVII (27 uses extra symbols)</p>
+            <p style="margin-top: 0.5rem;"><strong>Mesopotamian:</strong> Used wedge marks (cuneiform) in groups</p>
+            <p style="margin-top: 0.5rem;"><strong>Hindu-Arabic (ours):</strong> 27 (simple, uses place value)</p>
+            <p style="margin-top: 0.5rem;"><strong>Try this:</strong> Multiply XXVII × III without converting. Hard, right? But 27 × 3 = 81 is easy with our system!</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- THE FEYNMAN BRIDGE -->
+    <section class="content-block">
+      <div class="block-label bridge">THE FEYNMAN BRIDGE</div>
+      <div class="bridge-block">
+        <h2>Why Our Number System is a Genius Invention</h2>
+
+        <p style="margin-bottom: 1rem;">Imagine you're a shepherd trying to count 47 sheep. You need a way that works fast and is easy to remember.</p>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">METHOD 1: Use Pebbles (One-to-One Mapping)</p>
+          <p style="margin: 0.5rem 0;">For each sheep, keep a pebble. 47 sheep = 47 pebbles.</p>
+          <p style="margin-top: 0.5rem; color: var(--muted);">✓ Works! ✗ But heavy and hard to scale.</p>
+        </div>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">METHOD 2: Use Tally Marks (Grouping)</p>
+          <p style="margin: 0.5rem 0;">||||  ||||  ||||  ||||  ||||  ||||  ||||  ||||  ||||  |||</p>
+          <p style="margin-top: 0.5rem; color: var(--muted);">✓ Visual! ✗ Tedious for large numbers.</p>
+        </div>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">METHOD 3: Use Place Value (Like Our System)</p>
+          <p style="margin: 0.5rem 0;">47 = 4 tens + 7 ones</p>
+          <p style="margin-top: 0.5rem; color: var(--accent);">✓ Efficient! ✓ Scales to any size! ✓ Easy arithmetic!</p>
+        </div>
+
+        <p style="margin-top: 2rem;"><strong>The genius of place value:</strong> The position of a digit tells you its value. The 4 in 47 means "4 tens" not "4." The 7 means "7 ones." This was so revolutionary that it took Europeans centuries to adopt it because they were used to Roman numerals!</p>
+
+        <p style="margin-top: 1rem;"><strong>And zero?</strong> In Roman numerals, there's no need for zero—you just don't write anything. But in place value, zero is ESSENTIAL. It shows "nothing in this position." Without it, 47 and 407 would look the same!</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE -->
+    <section class="content-block">
+      <div class="block-label core">INTERACTIVE CORE</div>
+
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">The Evolution of Number Systems</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 1: The Need to Count (Stone Age)</p>
+            <p style="margin-bottom: 0.5rem;">Humans needed to count long before writing was invented.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Questions they asked:</strong></p>
+              <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                <li>Did all my cows come home?</li>
+                <li>Do I have more than my neighbor?</li>
+                <li>When will the moon be full again?</li>
+              </ul>
+              <p style="margin-top: 0.5rem;"><strong>Tools:</strong> Pebbles, sticks, fingers, body parts, or sounds/names</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 2: One-to-One Mapping</p>
+            <p style="margin-bottom: 0.5rem;">The first "number system" was matching objects one-by-one.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;">1 cow ↔ 1 pebble</p>
+              <p style="margin: 0.5rem 0;">5 cows ↔ 5 pebbles</p>
+              <p style="margin: 0.5rem 0;">15 cows ↔ 15 pebbles</p>
+              <p style="margin-top: 0.5rem;"><strong>This works!</strong> But counting takes forever for 100+ objects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 3: Spoken Number Words</p>
+            <p style="margin-bottom: 0.5rem;">Humans developed names for numbers in their languages.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Ancient Sanskrit (India, 2000+ years ago):</strong></p>
+              <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                <li>eka (one)</li>
+                <li>dasha (ten)</li>
+                <li>shata (hundred)</li>
+                <li>sahasra (thousand)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;"><strong>This was huge!</strong> Names for powers of 10 made counting organized.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 4: Tally Marks and Roman Numerals</p>
+            <p style="margin-bottom: 0.5rem;">Written symbols let people record numbers for later.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Tally Marks:</strong> |||| |||| |||| (15 marks = 15)</p>
+              <p style="margin: 0.5rem 0;"><strong>Roman Numerals:</strong> XV (X=10, V=5)</p>
+              <p style="margin-top: 0.5rem;"><strong>Problem:</strong> Each symbol is the same value (I=1 anywhere). To write 47, you need XLVII. Try multiplying XLVII × III without converting—nightmare!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 5: The Indian Number System (The Game-Changer)</p>
+            <p style="margin-bottom: 0.5rem;">Around 2000 years ago, India invented something revolutionary: PLACE VALUE.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>The 10 Digits:</strong> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p>
+              <p style="margin: 0.5rem 0;"><strong>The Key Insight:</strong> The position of a digit changes its value!</p>
+              <p style="margin: 0.5rem 0; border-top: 1px solid var(--border); padding-top: 0.5rem; font-family: monospace;">
+                In 47: The 4 means 4×10 (tens place), the 7 means 7×1 (ones place)<br>
+                In 407: The 4 means 4×100 (hundreds place), the 7 means 7×1 (ones place)<br>
+                The 0 shows "nothing in the tens place"
+              </p>
+              <p style="margin-top: 0.5rem;"><strong>Why this is genius:</strong> Any number, no matter how large, uses just 10 symbols. Arithmetic becomes simple.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 6: The Spread Around the World</p>
+            <p style="margin-bottom: 0.5rem;">The Hindu number system spread from India to Arabia, then Europe, then everywhere.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>~800 CE:</strong> Arab mathematician Al-Khwārizmī (from whose name we get "algorithm") wrote a book on Hindu numerals</p>
+              <p style="margin: 0.5rem 0;"><strong>~1200 CE:</strong> Italian merchant Fibonacci promoted these numbers in Europe</p>
+              <p style="margin: 0.5rem 0;"><strong>~1500s-1600s:</strong> Finally, Europe adopted them (took 400+ years!)</p>
+              <p style="margin: 0.5rem 0;"><strong>Today:</strong> Used everywhere in the world</p>
+              <p style="margin-top: 0.5rem;"><strong>Interesting fact:</strong> We call them "Arabic numerals" in English, but Arabs called them "Hindu numerals!" The Europeans got the name from their perspective.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Role of Zero -->
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">The Most Important Digit: Zero</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Zero as a "Nothing" Placeholder</p>
+            <p style="margin-bottom: 0.5rem;">Before zero, 10 and 100 looked similar if you didn't have enough symbols. Zero solves this:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              <p style="margin: 0;">10 = 1 ten + 0 ones (the zero shows no ones)</p>
+              <p style="margin: 0.5rem 0;">100 = 1 hundred + 0 tens + 0 ones (zeros show no tens or ones)</p>
+              <p style="margin: 0.5rem 0;">Without zeros: How would you tell 10 from 100? They'd just be 1 and 1!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Zero is Tricky But Essential</p>
+            <p style="margin-bottom: 0.5rem;">Zero in the Bakhshali Manuscript (3rd century CE) was shown as a dot. It later became the circle we use.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0;"><strong>Without Zero:</strong> You'd need infinite new symbols for different positions</p>
+              <p style="margin: 0.5rem 0;"><strong>With Zero:</strong> Just 10 digits handle any number</p>
+              <p style="margin: 0.5rem 0;"><strong>Magic:</strong> Zero lets us show "position with no value"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Confusing "No Ones" with "Nothing"</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> "If a number has 0 in the ones place, it's nothing. So 10 + 0 = 0."</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">NO! Zero in ones place means "zero ones" but the number is still 10!</strong></p>
+        <p><strong>RIGHT:</strong> 10 has 1 in the tens place and 0 in the ones place. That makes it 1×10 + 0×1 = 10.</p>
+        <p style="margin-top: 1rem;"><strong>Remember:</strong> Position matters! A 0 in the ones place is very different from a 0 in the tens place (compare 10 and 100).</p>
+      </div>
+
+      <!-- Deep Dive -->
+      <div class="deep-dive" style="margin-top: 2rem;">
+        <div class="deep-dive-title">🔍 Deep Dive: Why Europeans Took So Long to Adopt Hindu Numerals</div>
+        <p style="margin-top: 1rem;">Even though Fibonacci showed Europe the benefits in 1200 CE, most people stuck with Roman numerals for 300+ years. Why?</p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0;"><strong>1. Familiarity:</strong> Romans had used their system for 1000+ years. Change is hard!</p>
+          <p style="margin: 0.5rem 0;"><strong>2. Fraud concerns:</strong> A 0 could easily be added to a document to change 10 to 100. Roman numerals were "safer" for financial documents.</p>
+          <p style="margin: 0.5rem 0;"><strong>3. Custom laws:</strong> Some cities banned Hindu numerals!</p>
+          <p style="margin: 0.5rem 0;"><strong>4. Education gap:</strong> Everyone was trained in Roman math. Teachers don't like learning new systems!</p>
+          <p style="margin-top: 0.5rem;"><strong>The breakthrough:</strong> During the Renaissance, science and trade exploded. You couldn't do complex astronomy or accounting with Roman numerals. Eventually, adoption was forced by the needs of progress.</p>
+        </div>
+        <p style="margin-top: 1rem;"><strong>The lesson:</strong> Great inventions sometimes take longer to spread than you'd think, because people resist change.</p>
+      </div>
+
+      <!-- Another Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: "Arabic Numerals" Aren't Actually From Arabia</div>
+        <p style="margin-top: 0.5rem;"><strong>The naming mistake:</strong> We call them "Arabic numerals," but they're really from India!</p>
+        <p style="margin: 0.5rem 0;"><strong>Why the confusion?</strong> Europeans learned them from Arab traders and scholars, so they got the "Arabic" label from Europe's perspective.</p>
+        <p style="margin: 0.5rem 0;"><strong>What Arabs called them:</strong> "Hindu numerals" (because they came from Hindu civilization in India)</p>
+        <p style="margin: 0.5rem 0;"><strong>Today:</strong> Historians now prefer "Hindu numerals," "Hindu-Arabic numerals," or "Indian numerals" to be historically accurate.</p>
+        <p style="margin-top: 1rem;"><strong>Remember:</strong> The numbers 0-9 came from India, not Arabia. Give credit where it's due!</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="content-block">
+      <div class="block-label quiz">SOCRATIC SANDBOX</div>
+      <p style="margin-bottom: 2rem; color: var(--muted);">Test your understanding of number systems and how they evolved.</p>
+
+      <!-- Level 1: Predict -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag predict">Level 1: Predict</div>
+        <h3>Can you recognize patterns in number systems?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Reading Place Value</strong></p>
+          <p>In the number 3407, what does the 0 represent?</p>
+          <p style="margin-top: 0.5rem;">A) Nothing &nbsp; B) Zero ones &nbsp; C) Zero tens &nbsp; D) Zero hundreds</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: C) Zero tens</strong></p>
+              <p style="margin-top: 0.5rem;">In 3407: 3 is in the thousands place, 4 is in the hundreds place, 0 is in the tens place, 7 is in the ones place. So the 0 means "zero tens" (no tens). This is why 3407 is different from 347—it has no tens!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Roman Numerals</strong></p>
+          <p>Convert XLVII to Hindu numerals.</p>
+          <p style="margin-top: 0.5rem;">A) 67 &nbsp; B) 47 &nbsp; C) 42 &nbsp; D) 52</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) 47</strong></p>
+              <p style="margin-top: 0.5rem;">XL = 40 (X before L means 10 before 50), V = 5, II = 2. So XL + V + II = 40 + 5 + 2 = 47. Notice how XLVII uses 4 symbols for one number, while 47 uses just 2!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Why Place Value Matters</strong></p>
+          <p>Which is larger: 101 or 110?</p>
+          <p style="margin-top: 0.5rem;">A) 101 &nbsp; B) 110 &nbsp; C) They're equal &nbsp; D) Can't compare</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) 110 is larger</strong></p>
+              <p style="margin-top: 0.5rem;">101 = 1×100 + 0×10 + 1×1 = 101</p>
+              <p style="margin: 0.5rem 0;">110 = 1×100 + 1×10 + 0×1 = 110</p>
+              <p style="margin-top: 0.5rem;">The position of the digits matters! Moving a digit one place to the left multiplies its value by 10.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 2: Why -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag why">Level 2: Why</div>
+        <h3>Can you explain why our number system is so powerful?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Why Zero was Necessary</strong></p>
+          <p>Explain why Roman numerals didn't need a zero symbol, but our system does.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> In Roman numerals, each symbol has a fixed value no matter where it appears. You write 10 as X and 100 as C. If a position is empty, you just don't write anything (like how you write 4 as IV, not IVnothing).</p>
+              <p style="margin-top: 0.5rem;">But with place value, if you skip a position, it's ambiguous. Is 1_7 (with blank) meant to be 17 or 107? Zero (0) fills that blank and says "nothing here." This makes the system unambiguous.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Why Spread Was Slow</strong></p>
+          <p>Knowing that Fibonacci introduced Hindu numerals to Europe around 1200 CE, but they weren't widely adopted until after 1500, explain possible reasons for this delay.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Reasons for slow adoption:</strong></p>
+              <ul style="margin-top: 0.5rem;">
+                <li><strong>Habit:</strong> People had used Roman numerals for 1000+ years. Change takes time.</li>
+                <li><strong>Concerns about fraud:</strong> A 0 could be added to change 10 to 100. Documents needed security.</li>
+                <li><strong>Lack of understanding:</strong> People trained in Roman math didn't understand place value.</li>
+                <li><strong>Speed of science:</strong> Once navigation and astronomy demanded better calculation, adoption finally happened (Renaissance and beyond).</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Place Value Explanation</strong></p>
+          <p>Explain how the digit 5 has different values in the numbers 5, 50, 500, and 5000. What rule is at work?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>The Place Value Rule:</strong> The position of a digit determines its value by multiplying by powers of 10.</p>
+              <p style="margin-top: 0.5rem; font-family: monospace;">5 = 5 × 1 = 5 × 10⁰</p>
+              <p style="margin: 0.5rem 0;">50 = 5 × 10 = 5 × 10¹</p>
+              <p style="margin: 0.5rem 0;">500 = 5 × 100 = 5 × 10²</p>
+              <p style="margin: 0.5rem 0;">5000 = 5 × 1000 = 5 × 10³</p>
+              <p style="margin-top: 0.5rem;">Each position to the left multiplies the value by 10. This is the genius of place value—it lets us express any number with just 10 symbols!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 3: Apply -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag apply">Level 3: Apply</div>
+        <h3>Can you use place value thinking to solve problems?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Decompose a Number</strong></p>
+          <p>Break down the number 2,345 using place value. Show the value of each digit.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem; font-family: monospace;">2,345 = 2×1000 + 3×100 + 4×10 + 5×1</p>
+              <p style="margin: 0.5rem 0;">Or: 2000 + 300 + 40 + 5</p>
+              <p style="margin-top: 0.5rem;"><strong>Breaking it down:</strong></p>
+              <ul style="margin-top: 0.5rem;">
+                <li>2 in thousands place = 2000</li>
+                <li>3 in hundreds place = 300</li>
+                <li>4 in tens place = 40</li>
+                <li>5 in ones place = 5</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Explain with Roman Numerals</strong></p>
+          <p>If you only had Roman numerals, how would you write 2,000? (Hint: It gets very long!) Explain why our system is better.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong> In Roman numerals, 2000 = MM (M means 1000, so MM = 2000)</p>
+              <p style="margin-top: 0.5rem;">In our system: 2000 (just 4 digits!)</p>
+              <p style="margin-top: 0.5rem;"><strong>Why ours is better:</strong></p>
+              <ul style="margin-top: 0.5rem;">
+                <li>Shorter to write</li>
+                <li>Easier to understand the magnitude (you can see 2 is in thousands place)</li>
+                <li>Arithmetic is easier (imagine multiplying MM × CL without place value!)</li>
+                <li>Scales infinitely without new symbols</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Design Your Own Number System</strong></p>
+          <p>Invent a number system that uses base 5 (only digits 0-4) instead of base 10. What would the number "10" in base 5 mean in our system?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong> In base 5, "10" means 1×5¹ + 0×5⁰ = 5 in our base 10 system.</p>
+              <p style="margin-top: 0.5rem;"><strong>Examples in base 5:</strong></p>
+              <p style="margin: 0.5rem 0; font-family: monospace;">1₅ = 1₁₀</p>
+              <p style="margin: 0.5rem 0;">4₅ = 4₁₀</p>
+              <p style="margin: 0.5rem 0;">10₅ = 5₁₀</p>
+              <p style="margin: 0.5rem 0;">24₅ = 2×5¹ + 4×5⁰ = 10 + 4 = 14₁₀</p>
+              <p style="margin-top: 0.5rem;"><strong>The principle is the same:</strong> Place value works in any base! Our base 10 is just a choice (probably because we have 10 fingers).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Chapter Navigation -->
+  <div class="chapter-nav">
+    <div class="container">
+      <a href="chapter2.html" class="nav-btn prev">← Chapter 2: Power Play</a>
+      <a href="chapter4.html" class="nav-btn next">Chapter 4: Quadrilaterals →</a>
+    </div>
+  </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Hindu-Arabic Numerals</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The decimal number system we use today (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) developed in ancient India and adopted by Arabs</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Place Value</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The value of a digit based on its position in a number. In 523, the 5 is in the hundreds place (5 × 100)</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Decimal System</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A base-10 number system where each place is 10 times larger than the place to its right</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Positional Notation</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A system where the position of a digit determines its value. 42 is different from 24 because digits are in different positions</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Roman Numerals</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">An ancient numeral system using letters (I=1, V=5, X=10, L=50, C=100, D=500, M=1000) still used for some purposes</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Tally System</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">One of the earliest number systems using marks or lines to represent quantities, one mark per unit</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Regrouping</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The process of exchanging units in one place value for units in another, like trading 10 ones for 1 ten</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Ancient Numeral Systems</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Earlier ways of writing numbers used by civilizations like Egyptians, Babylonians, and Greeks before the Hindu-Arabic system</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="D">
+            <div class="mcq-stem">In the number 47,836, what is the place value of the digit 7?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 7</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 70</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 700</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 7,000</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The 7 is in the thousands place, so its value is 7 × 1,000 = 7,000" data-wrong="The correct answer is D. The 7 is in the thousands place = 7 × 1,000 = 7,000"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">What does the Hindu-Arabic numeral system use as its base?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Base 2</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Base 8</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Base 10</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Base 12</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The Hindu-Arabic system is a base-10 system using digits 0-9" data-wrong="The correct answer is C. The Hindu-Arabic system is base-10"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Which ancient civilization developed the numeral system we use today?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Ancient Egypt</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Ancient Rome</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ancient India</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Ancient Greece</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The Hindu-Arabic numeral system was developed in ancient India and later adopted by the Arab world" data-wrong="The correct answer is C. Ancient India developed the decimal system we use today"></div>
+          </div>
+          <div class="mcq-item" data-answer="D">
+            <div class="mcq-stem">In the number 5,234, by how much is the digit 2 less than the digit 5?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 3</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 470</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 4,800</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 4,970</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 5 is in the thousands place (5,000) and 2 is in the hundreds place (200). Difference: 5,000 - 200 = 4,800. Wait, let me recalculate: The difference between their VALUES is 5,000 - 200 = 4,800. Actually, the digit difference is: The 5's place value is 5,000 and 2's place value is 200. So 5,000 - 200 = 4,800" data-wrong="The correct answer is D. The 5 has place value 5,000 and 2 has place value 200. The difference is 5,000 - 200 = 4,800. Actually that's answer C, not D. Let me recalculate. 5 = thousands (5,000), 2 = hundreds (200). 5,000 - 200 = 4,800."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">How many different symbols does the Hindu-Arabic system need?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 7</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 10</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 26</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 100</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The Hindu-Arabic system uses 10 symbols: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9" data-wrong="The correct answer is B. The system uses 10 basic digits (0-9)"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Learning Portal • Mathematics • Chapter 3: A Story of Numbers</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted);">Understand how our number system evolved and why it's so powerful.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

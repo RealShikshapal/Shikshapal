@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Tales by Dots and Lines - Grade 8 Math</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../index.html" class="nav-logo">Learning Portal</a>
+        <div class="nav-pills">
+            <a href="../index.html" class="nav-pill">Home</a>
+            <a href="index.html" class="nav-pill math-pill" data-subject="math">Math</a>
+            <a href="../science/index.html" class="nav-pill">Science</a>
+            <a href="../social/index.html" class="nav-pill">Social</a>
+            <a href="../english/index.html" class="nav-pill">English</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Tales by Dots and Lines</h1>
+            <p class="subtitle">Understanding Data: Mean, Median, Histograms, and More</p>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Math</a> → Chapter 12
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-block">
+            <!-- HOOK: The Mystery of Balance -->
+            <section class="hook-block">
+                <h2>Hook: The Balancing Act</h2>
+                <p>Imagine you have a seesaw with dots (data points) placed at different distances from the center. Where would the balance point be? That's exactly what the <strong>mean</strong> does—it's the perfect balance point for your data!</p>
+                <div class="hook-question">
+                    <p><strong>🤔 Try This:</strong> Take two numbers like 3 and 7. Their average is (3 + 7) ÷ 2 = 5. Notice that 5 is exactly halfway between them. Now try with 8 and 9: their average is 8.5. Is the average always in the middle?</p>
+                </div>
+            </section>
+
+            <!-- Feynman Bridge: What is Mean? -->
+            <section class="bridge-block">
+                <div class="block-label">Feynman Bridge</div>
+                <h3>Why We Need the Mean</h3>
+                <p>The mean is called a <strong>measure of central tendency</strong>. It represents the "center" or "balance point" of your data. Think of it like the fulcrum of a seesaw—if you could place your data points on a number line, the mean is where the seesaw would perfectly balance.</p>
+
+                <div class="analogy">
+                    <h4>Real-World Analogy</h4>
+                    <p>If a group of friends shares pizza equally, the average number of slices each person gets is the mean. Even though one person might get 2 slices and another gets 4 slices, on average, everyone gets 3 slices.</p>
+                </div>
+
+                <div class="deep-dive">
+                    <div class="deep-dive-title">Deep Dive: The Central Balance Idea</div>
+                    <p>When you visualize data as dots on a number line, the mean is the point where the total distance of all dots above it equals the total distance of all dots below it. This is true even if the dots aren't evenly spaced!</p>
+                    <p><strong>Example:</strong> For data {10, 10, 11, 17}, the mean is (10+10+11+17) ÷ 4 = 12.</p>
+                    <ul>
+                        <li>Distances below 12: |10−12| + |10−12| + |11−12| = 2 + 2 + 1 = 5</li>
+                        <li>Distances above 12: |17−12| = 5</li>
+                        <li>They balance! ✓</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Logic Ladders: Understanding Bar Graphs -->
+            <section class="logic-ladder">
+                <div class="block-label">Logic Ladder: Reading Bar Graphs</div>
+                <h3>Building Understanding Step by Step</h3>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 1: What is a Bar Graph?</h4>
+                        <p>A bar graph displays data using rectangular bars. The height (or length) of each bar represents the frequency or count of a category.</p>
+                        <p><strong>Why bars?</strong> Bars make it easy to compare quantities at a glance. Your eyes can instantly see which bar is taller!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 2: The Axes Matter</h4>
+                        <p>The horizontal axis (x-axis) shows the categories (e.g., types of fruit, days of the week). The vertical axis (y-axis) shows the scale (the count or frequency).</p>
+                        <p><strong>Pro tip:</strong> Always check the scale! A bar reaching 10 on one graph might be much different from a bar reaching 10 on another graph with a different scale.</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 3: Comparing and Analyzing</h4>
+                        <p>Once you can read individual bars, you can compare them: Which category has the highest frequency? Which has the lowest? What patterns do you see?</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Trap: Mean vs. Median -->
+            <div class="error-trap">
+                <div class="trap-title">⚠️ Common Error Trap: Confusing Mean and Median</div>
+                <p><strong>WRONG:</strong> "The mean and median are the same thing."</p>
+                <p><strong>RIGHT:</strong> The mean is the average (sum ÷ count). The median is the middle value when data is sorted.</p>
+                <p><strong>Example:</strong> For {1, 2, 3, 4, 100}:</p>
+                <ul>
+                    <li>Mean = (1+2+3+4+100) ÷ 5 = 110 ÷ 5 = 22</li>
+                    <li>Median = 3 (the middle value)</li>
+                </ul>
+                <p>Notice how the one extreme value (100) pulls the mean up, but doesn't affect the median! This is why we sometimes use the median for data with outliers.</p>
+            </div>
+
+            <!-- Histograms: Grouping Data -->
+            <section class="bridge-block">
+                <h3>Histograms: When Data Gets Crowded</h3>
+                <p>A histogram is like a bar graph, but instead of individual categories, it groups continuous data into ranges (called "bins" or "class intervals").</p>
+
+                <div class="analogy">
+                    <h4>Why Histograms?</h4>
+                    <p>Imagine recording the heights of 100 students. If you made a bar for each exact height (like 150.2 cm, 150.3 cm, 150.4 cm), you'd have too many bars! Instead, histograms group heights into ranges like 150–155 cm, 155–160 cm, etc.</p>
+                </div>
+
+                <div class="deep-dive">
+                    <div class="deep-dive-title">Building a Histogram</div>
+                    <p><strong>Key difference from bar graphs:</strong> In histograms, bars touch each other (no gaps) because the data is continuous.</p>
+                    <p><strong>Steps to create:</strong></p>
+                    <ol>
+                        <li>Decide on bin size (e.g., intervals of 5 units)</li>
+                        <li>Count how many values fall in each bin</li>
+                        <li>Draw bars with heights equal to the counts</li>
+                        <li>Make sure bars are touching</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Pie Charts: Part-to-Whole -->
+            <section class="bridge-block">
+                <h3>Pie Charts: Seeing the Whole Picture</h3>
+                <p>A pie chart shows how different parts make up a whole. Each "slice" represents a category, and the size of the slice shows what fraction or percentage that category represents.</p>
+
+                <div class="analogy">
+                    <h4>When to Use Pie Charts</h4>
+                    <p>If you have data like "40% of students like pizza, 30% like burgers, 30% like salad," a pie chart instantly shows that pizza takes up the largest share.</p>
+                </div>
+
+                <div class="error-trap">
+                    <div class="trap-title">⚠️ Pie Chart Pitfall</div>
+                    <p><strong>WRONG:</strong> Using a pie chart when you have too many categories.</p>
+                    <p><strong>RIGHT:</strong> Pie charts work best with 2–5 categories. With 10 categories, tiny slices become hard to see and compare. Use a bar graph instead!</p>
+                </div>
+            </section>
+
+            <!-- Logic Ladder: Median -->
+            <section class="logic-ladder">
+                <div class="block-label">Logic Ladder: Finding the Median</div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 1: Sort Your Data</h4>
+                        <p>Arrange all values from smallest to largest. This is essential for finding the median.</p>
+                        <p><strong>Example:</strong> {7, 3, 9, 3, 5} → Sort to {3, 3, 5, 7, 9}</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 2: Count the Values</h4>
+                        <p>How many values do you have? Is it odd or even?</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 3: Find the Middle</h4>
+                        <p><strong>If odd number of values:</strong> The median is the middle value.</p>
+                        <p>For {3, 3, 5, 7, 9}, the median is 5 (it's the 3rd value out of 5).</p>
+                        <p><strong>If even number of values:</strong> The median is the average of the two middle values.</p>
+                        <p>For {3, 3, 5, 7}, the median is (3 + 5) ÷ 2 = 4.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Core: Quiz -->
+            <section class="quiz-block">
+                <div class="block-label">Socratic Sandbox: Test Your Understanding</div>
+                <h3>Quiz Challenge</h3>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag predict">PREDICT</span>
+                    <div class="quiz-question">
+                        <p><strong>1. Data Set Mystery:</strong> You have the data {5, 5, 5, 5, 25}. Without calculating, which is larger—the mean or the median?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>The mean "pulls toward" outliers (extreme values), but the median ignores them.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>The mean is larger! Mean = (5+5+5+5+25) ÷ 5 = 45 ÷ 5 = 9. Median = 5 (the middle value). The outlier 25 pulls the mean up.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag why">WHY</span>
+                    <div class="quiz-question">
+                        <p><strong>2. Why Histograms?</strong> Why would you use a histogram instead of a bar graph for student test scores (0–100)?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Think about how many unique scores there could be versus how many bins you'd need.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Test scores can range from 0–100, giving 101 possible values. Making 101 bars would be overwhelming! A histogram with, say, 10 bins (0–10, 10–20, ..., 90–100) shows patterns more clearly and is easier to read.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>3. Real-World Data:</strong> A teacher records test scores: {72, 75, 78, 80, 85, 90, 95, 100}. Calculate the mean and median. Which better represents the "typical" student's performance?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Count how many scores there are, then use the formulas you learned.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Mean = (72+75+78+80+85+90+95+100) ÷ 8 = 675 ÷ 8 = 84.375. Median = (80+85) ÷ 2 = 82.5. Both are close, so either works here. The mean is slightly higher because the scores are fairly spread out without major outliers.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>4. Graph Choice:</strong> You want to show that "65% of the class prefers online learning, 25% prefer in-person, 10% prefer hybrid." Which graph type is best, and why?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Think about what each graph type does best: comparing categories, showing distributions, or showing parts of a whole.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>A pie chart is best because you're showing how parts (65%, 25%, 10%) make up a whole (100%). It visually emphasizes that online learning takes more than half.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Concepts Summary -->
+            <section class="deep-dive">
+                <div class="deep-dive-title">Key Formulas & Concepts</div>
+                <ul>
+                    <li><strong>Mean:</strong> Sum of all values ÷ Number of values</li>
+                    <li><strong>Median:</strong> The middle value when data is sorted (or average of two middle values if even count)</li>
+                    <li><strong>Mode:</strong> The value that appears most often (if any)</li>
+                    <li><strong>Bar Graph:</strong> Shows frequency by bar height; good for comparing categories</li>
+                    <li><strong>Histogram:</strong> Shows frequency distribution for continuous data; bars touch; uses bins</li>
+                    <li><strong>Pie Chart:</strong> Shows parts of a whole; best for 2–5 categories</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Chapter Navigation -->
+        <div class="chapter-nav">
+            <a href="chapter11.html" class="nav-button prev">← Chapter 11</a>
+            <a href="index.html" class="nav-button home">Math Index</a>
+            <a href="chapter13.html" class="nav-button next">Chapter 13 →</a>
+        </div>
+    </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Data</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A collection of facts, numbers, or measurements gathered for analysis</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Mean</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The average of all values. Sum of all values divided by number of values</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Median</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The middle value when data is arranged in order. With even items, it's the average of the two middle values</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Mode</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The value that appears most frequently in a dataset</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Range</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The difference between the highest and lowest values in a dataset</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Bar Graph</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A graph using rectangular bars to compare quantities across categories</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Pie Chart</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A circular graph divided into slices showing relative sizes or percentages of parts to the whole</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Frequency</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The number of times a value or category appears in a dataset</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Find the mean of: 4, 6, 8, 10, 12</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 6</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 8</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 10</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 12</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Mean = (4 + 6 + 8 + 10 + 12) / 5 = 40 / 5 = 8" data-wrong="The correct answer is B. Sum = 40, divided by 5 values = 8"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Find the median of: 3, 7, 5, 9, 1</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 3</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 5</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 6</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 7</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Arrange: 1, 3, 5, 7, 9. Middle value is 5" data-wrong="The correct answer is B. Arrange in order: 1, 3, 5, 7, 9. Median = 5"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">What is the mode of: 2, 4, 4, 4, 5, 6, 6?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 2</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 4</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 5</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 6</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 4 appears three times, more than any other value" data-wrong="The correct answer is B. 4 appears 3 times (most frequent)"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">What is the range of: 10, 15, 20, 25, 30?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 10</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 15</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 20</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 25</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Range = 30 - 10 = 20" data-wrong="The correct answer is C. Range = Highest - Lowest = 30 - 10 = 20"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">A pie chart shows that 25% of students like math. If there are 200 students, how many like math?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 25</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 50</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 75</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 100</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 25% of 200 = 0.25 × 200 = 50 students" data-wrong="The correct answer is B. 25% × 200 = 50 students"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Grade 8 Learning Portal. Building mathematical understanding step by step.</p>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const html = document.documentElement;
+        const theme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', theme);
+
+        // Optional: Add theme toggle button if you have one
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('[data-toggle-theme]');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const current = html.getAttribute('data-theme');
+                    const next = current === 'light' ? 'dark' : 'light';
+                    html.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                });
+            }
+        });
+
+        // Mark active nav pill
+        document.addEventListener('DOMContentLoaded', () => {
+            const mathPill = document.querySelector('[data-subject="math"]');
+            if (mathPill) {
+                mathPill.classList.add('active');
+            }
+        });
+    </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

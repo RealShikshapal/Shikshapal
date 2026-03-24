@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 2: Power Play — Mathematics | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span class="logo-icon">8</span><span>Grade 8 Portal</span></a>
+      <div class="subject-switcher">
+        <a href="../science/index.html" class="subject-pill" data-subject="science">🔬 Science</a>
+        <a href="index.html" class="subject-pill active" data-subject="math">📐 Math</a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
+        <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>/</span>
+      <a href="index.html">Mathematics</a>
+      <span>/</span>
+      <span>Chapter 2: Power Play</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Power Play</h1>
+      <p class="subtitle">Discover how exponential growth can reach the Moon in just 46 paper folds</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- THE HOOK -->
+    <section class="content-block">
+      <div class="block-label hook">THE HOOK</div>
+      <div class="hook-block">
+        <h2>Folding Paper to the Moon</h2>
+        <div class="hook-question">
+          <p>Take a sheet of paper. It's about 0.001 cm thick. Fold it in half. Fold it again. Keep folding.</p>
+          <p><strong>How many times can you fold it?</strong> Most people say 7 or 8 times at most.</p>
+          <p><strong>Here's the wild part:</strong> If you could fold it 46 times, the paper would be thick enough to reach the Moon (about 700,000 km away)!</p>
+          <p><strong>Why?</strong> Because the thickness doesn't just increase—it DOUBLES each time. This is the power of exponential growth.</p>
+        </div>
+        <details style="margin-top: 1.5rem;">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">See the Math</summary>
+          <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px; font-family: monospace;">
+            <p>After 1 fold: 0.001 × 2 = 0.002 cm</p>
+            <p>After 2 folds: 0.001 × 2 × 2 = 0.004 cm</p>
+            <p>After 10 folds: 0.001 × 2^10 = 1.024 cm (taller than your finger!)</p>
+            <p>After 30 folds: 0.001 × 2^30 ≈ 10.7 km (plane height!)</p>
+            <p>After 46 folds: 0.001 × 2^46 ≈ 700,000 km (past the Moon!)</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- THE FEYNMAN BRIDGE -->
+    <section class="content-block">
+      <div class="block-label bridge">THE FEYNMAN BRIDGE</div>
+      <div class="bridge-block">
+        <h2>Linear vs. Exponential: Why Doubling is So Powerful</h2>
+
+        <p style="margin-bottom: 1rem;">Imagine two ways to grow:</p>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">LINEAR GROWTH (Like Saving Money)</p>
+          <p style="margin: 0.5rem 0;">You add $10 every day. After 10 days: $100. After 100 days: $1000.</p>
+          <p style="margin-top: 0.5rem; color: var(--muted);">It's steady but slow.</p>
+        </div>
+
+        <div class="analogy" style="background: var(--surface); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0; font-weight: 600;">EXPONENTIAL GROWTH (Like Folding Paper)</p>
+          <p style="margin: 0.5rem 0;">You DOUBLE the amount every day. After 1 day: 2. After 2 days: 4. After 5 days: 32!</p>
+          <p style="margin-top: 0.5rem; color: var(--muted);">It looks slow at first, then EXPLODES!</p>
+        </div>
+
+        <p style="margin-top: 2rem;"><strong>Why does doubling grow so fast?</strong> Because you're not just adding—you're multiplying by 2 over and over. Each fold makes the paper twice as thick. And the next fold doubles THAT new thickness. It snowballs.</p>
+
+        <p style="margin-top: 1rem;"><strong>The Big Idea:</strong> In exponential growth, small numbers in the exponent (the tiny 2^n number) create HUGE changes. That's the power of powers!</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE -->
+    <section class="content-block">
+      <div class="block-label core">INTERACTIVE CORE</div>
+
+      <h2 style="margin-top: 2rem; margin-bottom: 1rem;">What is Exponential Notation?</h2>
+      <div class="logic-ladder">
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 1: A Shorthand for Repeated Multiplication</p>
+            <p style="margin-bottom: 0.5rem;">Imagine writing "5 × 5 × 5 × 5" over and over. It's tedious! So mathematicians invented a shorthand.</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              5 × 5 × 5 × 5 = 5⁴ (read as "5 to the power 4")<br>
+              <br>
+              The <strong>base</strong> (5) is the number being multiplied<br>
+              The <strong>exponent</strong> (4) tells how many times to multiply it
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 2: Why This Notation Matters</p>
+            <p style="margin-bottom: 0.5rem;">Instead of writing 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 (ten 2's!), we write:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              2¹⁰ = 1024
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Much cleaner!</strong> And this becomes essential when the exponent is huge (like 2⁴⁶).</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 3: Reading Exponents Correctly</p>
+            <table style="width: 100%; margin: 0.5rem 0; border-collapse: collapse;">
+              <tr style="background: var(--surface);">
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Notation</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">How to Read It</th>
+                <th style="padding: 0.5rem; text-align: left; border: 1px solid var(--border);">Expansion</th>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3²</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">"3 squared" or "3 to the power 2"</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3 × 3 = 9</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3³</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">"3 cubed" or "3 to the power 3"</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3 × 3 × 3 = 27</td>
+              </tr>
+              <tr>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3⁴</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">"3 to the power 4"</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">3 × 3 × 3 × 3 = 81</td>
+              </tr>
+              <tr style="background: var(--surface);">
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">10⁵</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">"10 to the power 5"</td>
+                <td style="padding: 0.5rem; border: 1px solid var(--border);">10 × 10 × 10 × 10 × 10 = 100,000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 4: Using Exponents with Prime Factorization</p>
+            <p style="margin-bottom: 0.5rem;">Instead of writing prime factors as a long list, exponents let us group them:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              32400 = 2 × 2 × 2 × 2 × 5 × 5 × 3 × 3 × 3 × 3<br>
+              <br>
+              With exponents: 32400 = 2⁴ × 5² × 3⁴
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>Much clearer!</strong> You can see at a glance that it has four 2's, two 5's, and four 3's.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 5: The Folded Paper in Exponential Form</p>
+            <p style="margin-bottom: 0.5rem;">The paper-folding problem is the perfect example of exponential growth:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0;">
+              <p style="margin: 0.5rem 0;"><strong>Initial thickness:</strong> 0.001 cm</p>
+              <p style="margin: 0.5rem 0;"><strong>After n folds:</strong> 0.001 × 2ⁿ cm</p>
+              <p style="margin: 0.5rem 0; border-top: 1px solid var(--border); padding-top: 0.5rem;">After 10 folds: 0.001 × 2¹⁰ = 0.001 × 1024 = 1.024 cm</p>
+              <p style="margin: 0.5rem 0;">After 30 folds: 0.001 × 2³⁰ = 0.001 × 1,073,741,824 ≈ 10.7 km</p>
+              <p style="margin: 0.5rem 0;">After 46 folds: 0.001 × 2⁴⁶ ≈ 0.001 × 70 trillion cm ≈ 700,000 km!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <div class="logic-step-content">
+            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.5rem;">Step 6: Patterns with Powers of 10</p>
+            <p style="margin-bottom: 0.5rem;">Powers of 10 are especially useful because they show place value:</p>
+            <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: monospace;">
+              10¹ = 10<br>
+              10² = 100<br>
+              10³ = 1,000<br>
+              10⁴ = 10,000<br>
+              10⁵ = 100,000
+            </div>
+            <p style="margin-top: 0.5rem;"><strong>See the pattern?</strong> The exponent tells you how many zeros! This is why our number system works so well.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Don't Multiply the Base by the Exponent!</div>
+        <p style="margin-top: 0.5rem;"><strong>WRONG:</strong> 5⁴ = 5 × 4 = 20</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color: var(--error);">NO! You're multiplying base by exponent. That's addition thinking!</strong></p>
+        <p><strong>RIGHT:</strong> 5⁴ = 5 × 5 × 5 × 5 = 625</p>
+        <p style="margin-top: 1rem;"><strong>Remember:</strong> The exponent tells you how many times to multiply the base BY ITSELF, not how many times to multiply base by exponent.</p>
+        <p style="margin-top: 0.5rem; padding: 0.5rem; background: var(--surface); border-radius: 6px; font-family: monospace;">2³ = 2 × 2 × 2 = 8 (not 2 × 3 = 6)<br>3⁴ = 3 × 3 × 3 × 3 = 81 (not 3 × 4 = 12)</p>
+      </div>
+
+      <!-- Another Error Trap -->
+      <div class="error-trap" style="margin-top: 2rem;">
+        <div class="trap-title">⚠️ Common Error Trap: Order Matters with Exponents</div>
+        <p style="margin-top: 0.5rem;"><strong>Is 2³ = 3²?</strong></p>
+        <p style="margin: 0.5rem 0;">2³ = 2 × 2 × 2 = 8</p>
+        <p style="margin-bottom: 0.5rem;">3² = 3 × 3 = 9</p>
+        <p><strong style="color: var(--error);">NO! 2³ ≠ 3². They're different!</strong></p>
+        <p style="margin-top: 1rem;"><strong>Rule:</strong> Switching the base and exponent gives a different answer (unless they happen to equal the same value by coincidence, like 2⁴ = 4² = 16).</p>
+      </div>
+
+      <!-- Deep Dive -->
+      <div class="deep-dive" style="margin-top: 2rem;">
+        <div class="deep-dive-title">🔍 Deep Dive: Why Exponential Growth is Terrifying and Amazing</div>
+        <p style="margin-top: 1rem;">Exponential growth appears everywhere in real life:</p>
+        <div style="background: var(--surface); padding: 1rem; border-radius: 6px; margin: 1rem 0;">
+          <p style="margin: 0.5rem 0;"><strong>Bacteria:</strong> If one bacterium doubles every 20 minutes, after 10 hours (600 minutes), you'd have 2³⁰ bacteria—over 1 billion!</p>
+          <p style="margin: 0.5rem 0;"><strong>Viruses:</strong> This is why COVID-19 spread so fast. Each person infected multiple others.</p>
+          <p style="margin: 0.5rem 0;"><strong>Money:</strong> Compound interest grows exponentially. That's why starting to save young pays off huge later.</p>
+          <p style="margin: 0.5rem 0;"><strong>Computer Power:</strong> Moore's Law said computer transistors doubled every 2 years. That's why your phone is a thousand times more powerful than 1990s computers.</p>
+        </div>
+        <p style="margin-top: 1rem;">The lesson: Small changes in the exponent lead to enormous changes in the result. A move from 2³⁰ to 2⁴⁶ is a billion-fold increase!</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="content-block">
+      <div class="block-label quiz">SOCRATIC SANDBOX</div>
+      <p style="margin-bottom: 2rem; color: var(--muted);">Master exponential notation through three levels of understanding.</p>
+
+      <!-- Level 1: Predict -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag predict">Level 1: Predict</div>
+        <h3>Can you recognize and convert exponential patterns?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Convert to Exponential</strong></p>
+          <p>Write 7 × 7 × 7 × 7 in exponential form.</p>
+          <p style="margin-top: 0.5rem;">A) 7⁴ &nbsp; B) 4⁷ &nbsp; C) 7 × 4 &nbsp; D) 7 + 4</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: A) 7⁴</strong></p>
+              <p style="margin-top: 0.5rem;">Why? The base is 7 (it's being multiplied). The exponent is 4 (it's being multiplied 4 times). So 7⁴ is correct. 4⁷ would be completely different (4 × 4 × 4 × 4 × 4 × 4 × 4).</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Calculate the Power</strong></p>
+          <p>What is 3⁵?</p>
+          <p style="margin-top: 0.5rem;">A) 15 &nbsp; B) 125 &nbsp; C) 243 &nbsp; D) 32</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: C) 243</strong></p>
+              <p style="margin-top: 0.5rem;">Why? 3⁵ = 3 × 3 × 3 × 3 × 3 = 9 × 9 × 3 = 81 × 3 = 243. (The common mistake is 3 × 5 = 15, but that's not what exponents mean!)</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Recognize the Pattern</strong></p>
+          <p>If 2⁵ = 32, what is 2⁶?</p>
+          <p style="margin-top: 0.5rem;">A) 48 &nbsp; B) 64 &nbsp; C) 128 &nbsp; D) 12</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: B) 64</strong></p>
+              <p style="margin-top: 0.5rem;">Why? Each power of 2 doubles the previous one. 2⁶ = 2⁵ × 2 = 32 × 2 = 64. This is the key to exponential growth—it keeps doubling!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 2: Why -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag why">Level 2: Why</div>
+        <h3>Can you explain exponential growth and why the paper reaches the Moon?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Why Does Paper Thickness Explode?</strong></p>
+          <p>Explain why doubling every time is so much more powerful than adding the same amount each time.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> When you double, you're multiplying each new thickness by 2. So:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>Fold 1: 0.001 cm becomes 0.002 cm (added 0.001)</li>
+                <li>Fold 2: 0.002 cm becomes 0.004 cm (added 0.002—more than before!)</li>
+                <li>Fold 3: 0.004 cm becomes 0.008 cm (added 0.004—even more!)</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">Each fold, you're adding a LARGER amount than the previous fold. That's why it explodes. In contrast, if you just added 0.001 cm each time, fold 3 would only add 0.001 cm (not changing).</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Why Use Exponents?</strong></p>
+          <p>Why is writing 2⁴⁶ better than writing "2 × 2 × 2 × 2... (46 times)"?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong> Exponents are shorthand and save space. They also:</p>
+              <ul style="margin-top: 0.5rem;">
+                <li>Make huge numbers manageable to read</li>
+                <li>Show the pattern clearly (the exponent 46 tells you the power)</li>
+                <li>Make calculations easier (using properties of exponents)</li>
+                <li>Help us understand that small changes in the exponent cause huge changes in the result</li>
+              </ul>
+              <p style="margin-top: 0.5rem;">Without exponent notation, we wouldn't be able to understand exponential growth the way we do!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Why Do Exponents Matter for Primes?</strong></p>
+          <p>If 32400 = 2⁴ × 5² × 3⁴, explain what each exponent tells us about the number.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Explanation:</strong></p>
+              <p style="margin-top: 0.5rem;">2⁴ tells us there are exactly four 2's as factors.</p>
+              <p style="margin: 0.5rem 0;">5² tells us there are exactly two 5's as factors.</p>
+              <p style="margin: 0.5rem 0;">3⁴ tells us there are exactly four 3's as factors.</p>
+              <p style="margin-top: 0.5rem;">Without exponents, it would be hard to see the pattern: 32400 = 2 × 2 × 2 × 2 × 5 × 5 × 3 × 3 × 3 × 3. Which factors repeat? How many times? The exponents make it crystal clear!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Level 3: Apply -->
+      <div class="quiz-level">
+        <div class="quiz-level-tag apply">Level 3: Apply</div>
+        <h3>Can you use exponential thinking to solve real problems?</h3>
+
+        <div class="quiz-question">
+          <p><strong>Q1: Bacteria Growth</strong></p>
+          <p>A single bacterium doubles every 30 minutes. If you start with 1 bacterium at 12:00 PM, how many will you have by 3:00 PM (3 hours = 6 doubling periods)? Write your answer using exponential notation.</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Solution:</strong></p>
+              <p style="margin-top: 0.5rem;">Number of bacteria = 1 × 2⁶ = 64 bacteria</p>
+              <p style="margin-top: 0.5rem;"><strong>Breakdown:</strong></p>
+              <p style="margin: 0.5rem 0;">12:00 PM: 1 bacterium</p>
+              <p style="margin: 0.5rem 0;">12:30 PM: 2 bacteria (one doubling)</p>
+              <p style="margin: 0.5rem 0;">1:00 PM: 4 bacteria (2²)</p>
+              <p style="margin: 0.5rem 0;">1:30 PM: 8 bacteria (2³)</p>
+              <p style="margin: 0.5rem 0;">2:00 PM: 16 bacteria (2⁴)</p>
+              <p style="margin: 0.5rem 0;">2:30 PM: 32 bacteria (2⁵)</p>
+              <p style="margin: 0.5rem 0;">3:00 PM: 64 bacteria (2⁶)</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q2: Paper Thickness Prediction</strong></p>
+          <p>If folding paper 10 times gives a thickness of 1.024 cm, and folding 20 times gives 10.485 m, what pattern do you notice? Can you predict what folding 30 times would give?</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Pattern:</strong> Every 10 additional folds multiplies the thickness by 2¹⁰ = 1024.</p>
+              <p style="margin-top: 0.5rem;">10 folds: 1.024 cm</p>
+              <p style="margin: 0.5rem 0;">20 folds: 1.024 cm × 1024 = 1.024 × 1024 = 10,485 cm ≈ 10.5 m ✓</p>
+              <p style="margin: 0.5rem 0;">30 folds: 10.5 m × 1024 ≈ 10,736 m ≈ 10.7 km</p>
+              <p style="margin-top: 0.5rem;"><strong>Key insight:</strong> Exponential relationships have patterns. Knowing the exponent pattern lets you predict the future!</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <p><strong>Q3: Prime Factorization Challenge</strong></p>
+          <p>A number has prime factorization 2² × 3² × 5¹. Is it a perfect square? (Hint: For a number to be a perfect square, what must be true about all its exponents?)</p>
+          <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Show Answer</summary>
+            <div style="padding: 1rem; margin-top: 0.5rem; background: var(--surface); border-radius: 8px;">
+              <p><strong>Answer: NO, it is NOT a perfect square.</strong></p>
+              <p style="margin-top: 0.5rem;"><strong>Why:</strong> For a number to be a perfect square, ALL exponents in its prime factorization must be EVEN.</p>
+              <p style="margin: 0.5rem 0;">Here, exponents are 2, 2, and 1.</p>
+              <p style="margin: 0.5rem 0;">2 is even ✓, 2 is even ✓, but 1 is ODD ✗</p>
+              <p style="margin: 0.5rem 0;">Since one exponent is odd, this is not a perfect square.</p>
+              <p style="margin-top: 0.5rem;"><strong>What would make it a perfect square?</strong> Change the exponent of 5 from 1 to 2 (or any even number). Then 2² × 3² × 5² = (2 × 3 × 5)² = 30² = 900!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Chapter Navigation -->
+  <div class="chapter-nav">
+    <div class="container">
+      <a href="chapter1.html" class="nav-btn prev">← Chapter 1: A Square and A Cube</a>
+      <a href="chapter3.html" class="nav-btn next">Chapter 3: A Story of Numbers →</a>
+    </div>
+  </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Exponent</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A small number written above a base number showing how many times to multiply the base by itself</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Base</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The number being multiplied by itself. In 2⁵, the base is 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Power</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Another word for exponent. 'Raise to the power of 3' means multiply by itself 3 times</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Product Rule of Exponents</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">When multiplying powers with the same base: a^m × a^n = a^(m+n). Example: 2³ × 2² = 2⁵</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Quotient Rule of Exponents</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">When dividing powers with the same base: a^m ÷ a^n = a^(m-n). Example: 2⁵ ÷ 2² = 2³</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Power Rule of Exponents</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">When raising a power to another power: (a^m)^n = a^(m×n). Example: (2³)² = 2⁶</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Zero Exponent Rule</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Any non-zero number raised to the power 0 equals 1. Example: 5⁰ = 1</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Negative Exponent</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">a^(-n) = 1/(a^n). Example: 2⁻³ = 1/2³ = 1/8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">Simplify: 3⁴ × 3²</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 3⁶</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 3⁸</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 9⁶</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 3²</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Using the product rule: 3⁴ × 3² = 3^(4+2) = 3⁶" data-wrong="The correct answer is A. Add the exponents: 3⁴ × 3² = 3^(4+2) = 3⁶"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">What is 5⁰?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 0</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 1</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 5</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Undefined</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Any non-zero number to the power 0 equals 1" data-wrong="The correct answer is B. Any non-zero number to the power of 0 equals 1"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Evaluate: (2³)²</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 2⁵</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 2⁶</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 4⁶</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 8</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Using the power rule: (2³)² = 2^(3×2) = 2⁶ = 64" data-wrong="The correct answer is B. Multiply the exponents: (2³)² = 2^(3×2) = 2⁶"></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">Simplify: 10⁵ ÷ 10³</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 10²</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 10⁸</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 10¹⁵</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 2</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Using the quotient rule: 10⁵ ÷ 10³ = 10^(5-3) = 10² = 100" data-wrong="The correct answer is A. Subtract the exponents: 10⁵ ÷ 10³ = 10^(5-3) = 10²"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">What is 2⁻²?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> -4</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 1/4</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 4</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 1/2</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 2⁻² = 1/(2²) = 1/4 = 0.25" data-wrong="The correct answer is B. 2⁻² = 1/(2²) = 1/4"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Learning Portal • Mathematics • Chapter 2: Power Play</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted);">Master the power of exponential growth and exponential notation.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    updateIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: We Distribute, Yet Things Multiply - Grade 8 Mathematics</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <h1 class="logo">Learning Portal</h1>
+            <div class="subject-switcher">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link subject-pill active" data-subject="math">Math</a>
+                <a href="../../science/index.html" class="nav-link">Science</a>
+                <a href="../../social/index.html" class="nav-link">Social</a>
+                <a href="../../english/index.html" class="nav-link">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Math</a> > <span>Chapter 6: We Distribute, Yet Things Multiply</span>
+        </div>
+
+        <div class="page-header">
+            <h1>Chapter 6: We Distribute, Yet Things Multiply</h1>
+            <p class="subtitle">The Distributive Property and the Power of Algebra to Show How Products Change</p>
+        </div>
+
+        <!-- HOOK BLOCK -->
+        <div class="content-block hook-block">
+            <div class="block-label">Hook: The Surprising Pattern</div>
+            <div class="hook-question">
+                <h3>What Happens When Numbers Grow?</h3>
+                <p>Consider the product 23 × 27 = 621.</p>
+                <p>Now increase BOTH numbers by 1: (23+1) × (27+1) = 24 × 28 = 672.</p>
+                <p>By how much did the product increase? 672 − 621 = 51.</p>
+                <p><strong>But here's the puzzle:</strong> Can you predict this increase WITHOUT multiplying? Can you find a PATTERN?</p>
+                <p>Try other pairs. Increase both by 1 and see if there's a formula that always works.</p>
+                <ul>
+                    <li>10 × 20 = 200; (10+1)(20+1) = 11 × 21 = 231. Increase: 31.</li>
+                    <li>5 × 8 = 40; (5+1)(8+1) = 6 × 9 = 54. Increase: 14.</li>
+                </ul>
+                <p>What's the hidden pattern? Can algebra reveal it?</p>
+            </div>
+        </div>
+
+        <!-- BRIDGE BLOCK -->
+        <div class="content-block bridge-block">
+            <div class="block-label">Feynman Bridge: From Pictures to Symbols</div>
+            <div class="analogy">
+                <h3>Visualizing Distribution with Area</h3>
+                <p>Imagine a rectangle made of smaller rectangles:</p>
+                <ul>
+                    <li>A big rectangle of length (a) and width (b) has area <strong>ab</strong>.</li>
+                    <li>Add a strip of width (c) to make (a+c). The new area is <strong>a(b+c) = ab + ac</strong>.</li>
+                </ul>
+                <p>This is the DISTRIBUTIVE PROPERTY: You're "distributing" the multiplication across addition.</p>
+                <p>When you have (a+1)(b+1), you can split it into FOUR regions:</p>
+                <p class="highlight">
+                    (a+1)(b+1) = a×b (main rectangle) + a×1 (right strip) + 1×b (top strip) + 1×1 (corner square)
+                    <br>= <strong>ab + a + b + 1</strong>
+                </p>
+                <p>The increase from ab to ab+a+b+1 is exactly <strong>a+b+1</strong>. That's our pattern!</p>
+            </div>
+        </div>
+
+        <!-- LOGIC LADDER CORE -->
+        <div class="content-block core-block">
+            <div class="block-label">Interactive Core: Building the Logic Ladder</div>
+
+            <div class="logic-ladder">
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 1: The Distributive Property (Base Identity)</h4>
+                        <p>The foundation of all algebra:</p>
+                        <p><code>a(b + c) = ab + ac</code></p>
+                        <p>This says: "multiplying by a, then distributing it into the addition."</p>
+                        <p>Example: 5(3 + 2) = 5×3 + 5×2 = 15 + 10 = 25 ✓</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 2: Two-Term Expansion (Identity 1)</h4>
+                        <p>When multiplying two binomials:</p>
+                        <p><code>(a + m)(b + n) = ab + mb + an + mn</code></p>
+                        <p>Each term in the first bracket multiplies EVERY term in the second bracket.</p>
+                        <p>Example: (3+2)(5+4) = 3×5 + 3×4 + 2×5 + 2×4 = 15 + 12 + 10 + 8 = 45</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="error-trap">
+                        <div class="trap-title">Common Error Trap</div>
+                        <p><strong>Wrong:</strong> (a+b)(c+d) = ac + bd (missing terms!)</p>
+                        <p><strong>Right:</strong> (a+b)(c+d) = ac + ad + bc + bd (ALL four combinations)</p>
+                        <p>Think of a grid with 4 rectangles, not 2 diagonal ones.</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 3: Special Case — Perfect Square (a+b)²</h4>
+                        <p>When both binomials are identical:</p>
+                        <p><code>(a+b)² = a² + 2ab + b²</code></p>
+                        <p>This comes from (a+b)(a+b) = a² + ab + ba + b² = a² + 2ab + b².</p>
+                        <p>The area of a square with side (a+b) splits into: one a×a square, one b×b square, and TWO a×b rectangles!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="deep-dive">
+                        <div class="deep-dive-title">Deep Dive: Why the "2ab" Appears</div>
+                        <p>Many students forget the 2. Here's why it matters: (a+b)² means we count the a×b rectangle TWICE (once as a×b, once as b×a). So it's 2ab, not ab!</p>
+                        <p>Example: (3+2)² = 9 + 12 + 4 = 25. Check: 5² = 25 ✓. The 12 = 2(3)(2) accounts for both side rectangles.</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 4: Perfect Difference of Squares (a−b)²</h4>
+                        <p>For subtraction, the pattern is:</p>
+                        <p><code>(a−b)² = a² − 2ab + b²</code></p>
+                        <p>The SIGN of the middle term flips from + to −, but the coefficient stays 2.</p>
+                        <p>Geometrically: Start with a²; subtract two a×b rectangles; add back b² (because we subtracted it twice).</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 5: Difference of Squares (a+b)(a−b) = a² − b²</h4>
+                        <p>This is magical:</p>
+                        <p><code>(a+b)(a−b) = a² − b²</code></p>
+                        <p>The "middle" terms cancel: (a+b)(a−b) = a² − ab + ab − b² = a² − b².</p>
+                        <p>This makes calculations FAST: 102 × 98 = (100+2)(100−2) = 100² − 2² = 10000 − 4 = 9996!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="error-trap">
+                        <div class="trap-title">Common Error Trap</div>
+                        <p><strong>Wrong:</strong> (a+b)² = a² + b² (forgetting the 2ab term entirely!)</p>
+                        <p><strong>Wrong:</strong> (a−b)² = a² − b² (confusing it with difference of squares)</p>
+                        <p><strong>Right:</strong> (a+b)² = a² + 2ab + b²; (a−b)² = a² − 2ab + b²; (a+b)(a−b) = a² − b²</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 6: Real-World Application — Multiplication Shortcuts</h4>
+                        <p>Using distributivity, we can multiply by 11 or 101 in our heads:</p>
+                        <p><strong>Multiply by 11:</strong> 47 × 11 = 47 × (10+1) = 470 + 47 = 517</p>
+                        <p><strong>Multiply by 101:</strong> 35 × 101 = 35 × (100+1) = 3500 + 35 = 3535</p>
+                        <p>The pattern: digits "shift and repeat" because of how distribution works!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="deep-dive">
+                        <div class="deep-dive-title">Deep Dive: Brahmagupta's Fast Multiplication</div>
+                        <p>In 628 CE, Brahmagupta described khaṇḍa-guṇanam ("multiplication by parts"), using distributivity to compute products quickly. His insight: break numbers smartly to use identities like a² − b².</p>
+                        <p>Example: 68² = (70−2)² = 4900 − 280 + 4 = 4624. Much faster than computing 68 × 68 directly!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 7: Patterns in Multiple Viewpoints</h4>
+                        <p>The same pattern can be expressed in MANY ways. For example, counting dots in a L-shaped figure:</p>
+                        <p>Method A: k² + 2k</p>
+                        <p>Method B: (k+1)² − 1</p>
+                        <p>Method C: k(k+2)</p>
+                        <p>All three are IDENTICAL when expanded, even though they "look" different. Algebra lets us see they're the same!</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 8: Mistakes and Mindfulness</h4>
+                        <p>Common algebraic errors when expanding:</p>
+                        <ul>
+                            <li><strong>Forgetting terms:</strong> (a+b)(c+d) has 4 terms, not 2.</li>
+                            <li><strong>Sign errors:</strong> (−a)(−b) = +ab, not −ab.</li>
+                            <li><strong>Like terms:</strong> Only combine ab + ab = 2ab if they have exactly the same variables and powers.</li>
+                        </ul>
+                        <p>Always double-check by expanding a second way or testing with numbers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIZ BLOCK -->
+        <div class="content-block quiz-block">
+            <div class="block-label">Socratic Sandbox: Test Your Understanding</div>
+
+            <div class="quiz-level">
+                <h3><span class="quiz-level-tag predict">Predict</span> What Comes Next?</h3>
+
+                <div class="quiz-question">
+                    <p><strong>Question 1:</strong> Expand (x+5)². What is the result?</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Use (a+b)² = a² + 2ab + b² with a = x and b = 5.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p><strong>x² + 10x + 25.</strong> We have a² = x², 2ab = 2(x)(5) = 10x, and b² = 25.</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 2:</strong> What is 104 × 96 using the identity (a+b)(a−b) = a² − b²?</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Rewrite as (100+4)(100−4).</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p><strong>9984.</strong> 104 × 96 = (100+4)(100−4) = 100² − 4² = 10000 − 16 = 9984.</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 3:</strong> Expand (2m−3n)². What is the result?</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Use (a−b)² = a² − 2ab + b² with a = 2m and b = 3n.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p><strong>4m² − 12mn + 9n².</strong> We have a² = 4m², 2ab = 2(2m)(3n) = 12mn, and b² = 9n².</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="quiz-level">
+                <h3><span class="quiz-level-tag why">Why?</span> Dig Into the Reasoning</h3>
+
+                <div class="quiz-question">
+                    <p><strong>Question 4:</strong> Why does (a+1)(b+1) = ab + a + b + 1? Explain using a geometric picture.</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Divide a rectangle into 4 smaller parts.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p>Picture a rectangle with length (a+1) and width (b+1). Split it into 4 parts: the main a×b rectangle (area ab), a 1×b top strip (area b), an a×1 right strip (area a), and a 1×1 corner square (area 1). Total: ab + a + b + 1.</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 5:</strong> Why is the coefficient of the middle term in (a+b)² always "2"? Why not "1" or something else?</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Expand (a+b)(a+b) step by step. How many times does the a×b product appear?</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p>When expanding (a+b)(a+b), we get a² + ab + ab + b². The a×b product appears TWICE (once from a×b, once from b×a), so we get 2ab.</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 6:</strong> Explain why (a+b)(a−b) = a² − b² and why the middle terms "disappear."</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Expand fully and look for cancellation.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p>(a+b)(a−b) = a² − ab + ab − b² = a² − b². The −ab and +ab cancel, leaving only the a² and −b² terms.</p>
+                    </details>
+                </div>
+            </div>
+
+            <div class="quiz-level">
+                <h3><span class="quiz-level-tag apply">Apply</span> It to Real Problems</h3>
+
+                <div class="quiz-question">
+                    <p><strong>Question 7:</strong> Compute 47 × 11 using distributive property (without a calculator).</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Write 11 as 10 + 1.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p><strong>517.</strong> 47 × 11 = 47 × (10+1) = 470 + 47 = 517.</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 8:</strong> A square garden has side length (x+3). What is its area? If x = 5, what is the actual area?</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Area = (side)². Use (a+b)² formula. Then substitute x = 5.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p>Area = (x+3)² = x² + 6x + 9. When x = 5: 25 + 30 + 9 = 64 sq. units. (Or check: 8² = 64 ✓)</p>
+                    </details>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>Question 9:</strong> Verify that (m+2)(m+5) = m² + 7m + 10 by testing with m = 3.</p>
+                    <details>
+                        <summary>Hint</summary>
+                        <p>Left side: (3+2)(3+5). Right side: 9 + 21 + 10.</p>
+                    </details>
+                    <details>
+                        <summary>Answer</summary>
+                        <p>Left: 5 × 8 = 40. Right: 9 + 21 + 10 = 40 ✓. They match, so the expansion is correct.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER NAV -->
+        <div class="chapter-nav">
+            <a href="chapter5.html" class="nav-prev">← Chapter 5</a>
+            <span class="nav-current">Chapter 6: We Distribute, Yet Things Multiply</span>
+            <a href="chapter7.html" class="nav-next">Chapter 7 →</a>
+        </div>
+    </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Algebraic Expression</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A mathematical phrase containing variables, numbers, and operations (no equals sign). Example: 3x + 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Distributive Property</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">a(b + c) = ab + ac. Multiply the outside term by each term inside. Example: 2(x + 3) = 2x + 6</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Variable</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A letter or symbol representing an unknown number. Commonly x, y, or other letters</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Coefficient</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The number multiplying a variable. In 5x, the coefficient is 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Constant Term</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A number in an expression that doesn't change (not attached to a variable). In 3x + 7, the constant is 7</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Like Terms</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Terms with the same variable raised to the same power. 3x and 5x are like terms; 3x and 3y are not</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Simplify an Expression</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Combine like terms and apply operations to write an expression in its simplest form</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Expand</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Use the distributive property to remove parentheses and write out all terms</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Expand: 3(x + 4)</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 3x + 4</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 3x + 12</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 3x + 7</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> x + 12</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 3(x + 4) = 3·x + 3·4 = 3x + 12" data-wrong="The correct answer is B. Using distributive property: 3(x + 4) = 3x + 12"></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">Simplify: 5x + 3 + 2x - 1</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 7x + 2</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 7x + 4</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 10x</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 5x + 2x</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Combine like terms: 5x + 2x = 7x, and 3 - 1 = 2" data-wrong="The correct answer is A. Combine: (5x + 2x) + (3 - 1) = 7x + 2"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">What is the coefficient of x in the expression 7x - 5?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> -5</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 7</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 2</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> x</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! The coefficient is the number multiplying the variable: 7" data-wrong="The correct answer is B. The coefficient is 7"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Expand: 2(a - 3)</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 2a - 3</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 2a + 6</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 2a - 6</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> a - 6</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 2(a - 3) = 2a - 6" data-wrong="The correct answer is C. Using distributive property: 2(a - 3) = 2a - 6"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Which pair are like terms?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 3x and 3y</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 5x² and 5x</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 4m and 9m</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 2a and 2b</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Both have the same variable m to the same power" data-wrong="The correct answer is C. Like terms must have the same variable with the same exponent"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2026 Learning Portal. Mathematics Grade 8 | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const html = document.documentElement;
+        const themeToggle = document.querySelector('[data-theme-toggle]');
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            html.setAttribute('data-theme', savedTheme);
+        }
+
+        function toggleTheme() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        initTheme();
+    </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

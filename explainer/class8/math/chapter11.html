@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Exploring Some Geometric Themes | Math Portal</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">Learning Portal</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="index.html">Math</a></li>
+                <li><a href="../../science/index.html">Science</a></li>
+                <li><a href="../../social/index.html">Social</a></li>
+                <li><a href="../../english/index.html">English</a></li>
+            </ul>
+            <div class="nav-pills">
+                <span class="nav-pill active" data-subject="math">Math</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> → <a href="index.html">Math</a> → Chapter 11
+        </div>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Chapter 11: Exploring Some Geometric Themes</h1>
+            <p class="subtitle">Fractals, Nets, Projections & Visualization</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- HOOK BLOCK -->
+            <div class="content-block hook-block">
+                <div class="block-label">Hook: The Never-Ending Pattern</div>
+                <div class="hook-question">
+                    <p>Look at a fern leaf. Zoom in on a smaller piece of that leaf—it looks like the whole leaf! Zoom in further—still the same pattern. It's almost like the same shape repeating at different sizes.</p>
+                    <p style="margin-top: 15px; font-weight: 600;">The Mystery:</p>
+                    <p>How can a mathematical shape create this infinite self-similarity? And once we understand this, can we actually BUILD complex 3D objects using flat paper? How do engineers and architects draw 3D solids on 2D paper so precisely that they can be constructed?</p>
+                </div>
+            </div>
+
+            <!-- FEYNMAN BRIDGE -->
+            <div class="content-block bridge-block">
+                <div class="block-label">The Feynman Bridge: Three Geometric Wonders</div>
+                <p>This chapter explores three interconnected ideas that reveal how mathematics captures complexity:</p>
+                <div class="analogy" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <p><strong>1. Fractals:</strong> Shapes that are self-similar at every scale. Nature is full of them!</p>
+                    <p style="margin-top: 10px;"><strong>2. Nets & Solids:</strong> How to "unfold" a 3D shape into a flat 2D pattern, and fold it back.</p>
+                    <p style="margin-top: 10px;"><strong>3. Projections:</strong> How to represent 3D objects accurately on 2D paper—essential for architecture and engineering.</p>
+                </div>
+                <p><strong>The Big Picture:</strong> These three concepts show that geometry isn't just about drawing shapes—it's about understanding deep patterns that appear everywhere in nature and in the human-made world.</p>
+            </div>
+
+            <!-- DEEP DIVE 1: Fractals -->
+            <div class="content-block deep-dive">
+                <div class="deep-dive-title">Deep Dive 1: Fractals — Self-Similar Shapes</div>
+                <p>A fractal is a shape that looks the same at different scales. When you zoom in, you see the same pattern repeated.</p>
+
+                <h4 style="margin-top: 20px;">Three Famous Fractals:</h4>
+
+                <p style="margin-top: 15px;"><strong>1. The Sierpinski Carpet</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Step 0:</strong> Start with a square</li>
+                    <li><strong>Step 1:</strong> Divide it into 9 equal squares (3×3 grid). Remove the center square.</li>
+                    <li><strong>Step 2:</strong> For each remaining square, repeat the process.</li>
+                    <li><strong>Continue forever:</strong> You get a fractal!</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>The Pattern:</strong></p>
+                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                    <p><strong>Remaining squares after each step:</strong></p>
+                    <p style="margin-top: 5px;">Step 0: 1 square</p>
+                    <p style="margin-top: 3px;">Step 1: 8 squares (removed center from 1)</p>
+                    <p style="margin-top: 3px;">Step 2: 8² = 64 squares (removed center from each of 8)</p>
+                    <p style="margin-top: 3px;">Step n: 8ⁿ squares</p>
+                    <p style="margin-top: 10px;">So Rₙ = 8ⁿ</p>
+                </div>
+
+                <p style="margin-top: 15px;"><strong>2. The Sierpinski Gasket (Triangle)</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Start:</strong> An equilateral triangle</li>
+                    <li><strong>Step 1:</strong> Connect midpoints of all sides. Remove the center triangle.</li>
+                    <li><strong>Continue:</strong> Repeat on each remaining triangle</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>The Pattern:</strong></p>
+                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
+                    <p><strong>Remaining triangles:</strong></p>
+                    <p style="margin-top: 5px;">Step 0: 1 triangle</p>
+                    <p style="margin-top: 3px;">Step 1: 3 triangles</p>
+                    <p style="margin-top: 3px;">Step 2: 9 triangles (3²)</p>
+                    <p style="margin-top: 3px;">Step n: 3ⁿ triangles</p>
+                </div>
+
+                <p style="margin-top: 15px;"><strong>3. The Koch Snowflake</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Start:</strong> An equilateral triangle</li>
+                    <li><strong>Step 1:</strong> On each side, divide into thirds. Replace the middle third with two sides of an equilateral triangle (forming a bump)</li>
+                    <li><strong>Continue:</strong> Repeat on each new side</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Amazing Fact About Koch Snowflake:</strong> The perimeter increases infinitely (becomes infinitely long), but the area stays finite! It's a mathematical impossibility in the physical world, but perfectly valid mathematically.</p>
+
+                <div class="error-trap">
+                    <div class="trap-title">⚠️ Common Error Trap: Thinking Fractals Stop at Some Step</div>
+                    <p>Fractals are defined by INFINITE repetition. The patterns we draw (Steps 1, 2, 3) are just approximations. True fractals never end—the pattern continues forever at every scale.</p>
+                </div>
+            </div>
+
+            <!-- LOGIC LADDER 1 -->
+            <div class="content-block">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 1: Counting Patterns in Fractals</h3>
+                <div class="logic-ladder">
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Given Fractal: Sierpinski Carpet</strong>
+                            <p>Find remaining squares after step 3.</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Understand the Pattern</strong>
+                            <p>Each square gives rise to 8 squares in the next step.</p>
+                            <p style="margin-top: 5px;">Rₙ = 8ⁿ</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Substitute n = 3</strong>
+                            <p>R₃ = 8³ = 512 squares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEEP DIVE 2: Nets & Solids -->
+            <div class="content-block deep-dive">
+                <div class="deep-dive-title">Deep Dive 2: Nets — Unfolding 3D into 2D</div>
+                <p>A net is the 2D "unfolded" version of a 3D solid. When you flatten a cardboard box by unfolding it, you're creating a net.</p>
+
+                <h4 style="margin-top: 20px;">Understanding Faces, Edges, Vertices:</h4>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Faces:</strong> The flat surfaces (for a cube: 6 faces)</li>
+                    <li><strong>Edges:</strong> The lines where faces meet (for a cube: 12 edges)</li>
+                    <li><strong>Vertices:</strong> The corners where edges meet (for a cube: 8 vertices)</li>
+                </ul>
+
+                <h4 style="margin-top: 20px;">Example: The Cube</h4>
+                <p>A cube has 6 square faces. One possible net looks like a cross shape—one square in the center, with squares attached to four of its sides, and one more attached to the side.</p>
+
+                <p style="margin-top: 15px;"><strong>Amazing fact:</strong> A cube has 11 different possible nets! (When you consider rotation and flipping as the same)</p>
+
+                <h4 style="margin-top: 20px;">Other Solids:</h4>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Tetrahedron:</strong> 4 triangular faces, 2 possible nets</li>
+                    <li><strong>Cylinder:</strong> 2 circular faces + 1 rectangle, 1 main net pattern</li>
+                    <li><strong>Cone:</strong> 1 circle + 1 sector of a circle</li>
+                    <li><strong>Pyramid:</strong> 1 square base + 4 triangles (square pyramid)</li>
+                    <li><strong>Dodecahedron:</strong> 12 pentagonal faces, 43,380 different nets!</li>
+                </ul>
+
+                <div class="error-trap">
+                    <div class="trap-title">⚠️ Common Error Trap: Assuming All Unfoldings Are Valid Nets</div>
+                    <p>Not every unfolding creates a valid net. If faces are positioned wrong, the net won't fold back into the solid. Try visualizing before committing to an answer!</p>
+                </div>
+            </div>
+
+            <!-- LOGIC LADDER 2 -->
+            <div class="content-block">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 2: Finding Shortest Paths Using Nets</h3>
+                <div class="logic-ladder">
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Problem: Ant on a Box</strong>
+                            <p>An ant at point A on one face must reach point B on another face, traveling only on the surface. What's the shortest path?</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 1: Unfold the Net</strong>
+                            <p>Draw the net of the cuboid showing where both points lie.</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 2: Find Straight Path on Net</strong>
+                            <p>Draw a straight line from A to B on the net. This is the shortest path (since straight lines are shortest on a plane).</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 3: Measure the Distance</strong>
+                            <p>The length of this line is the shortest distance the ant must travel on the 3D surface.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEEP DIVE 3: Projections -->
+            <div class="content-block deep-dive">
+                <div class="deep-dive-title">Deep Dive 3: Projections — Representing 3D on 2D Paper</div>
+                <p>How do architects draw 3D buildings on 2D paper? They use projections: imaginary lines perpendicular to a plane that "project" the 3D shape onto it.</p>
+
+                <h4 style="margin-top: 20px;">The Three Standard Views:</h4>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li><strong>Front View:</strong> What you see looking at the object from the front</li>
+                    <li><strong>Top View:</strong> What you see looking down from above</li>
+                    <li><strong>Side View:</strong> What you see looking from the side</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>Example: A Cube</strong></p>
+                <p>If you orient a cube normally:</p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li>Front View = Square</li>
+                    <li>Top View = Square</li>
+                    <li>Side View = Square</li>
+                </ul>
+
+                <p style="margin-top: 15px;">But if you tilt the cube, the projections change! A tilted cube can project as:</p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li>Square (standard orientation)</li>
+                    <li>Rectangle (tilted one way)</li>
+                    <li>Hexagon (balanced on one corner!)</li>
+                </ul>
+
+                <h4 style="margin-top: 20px;">Isometric Projection:</h4>
+                <p>An isometric projection is special: you can see three faces of a cube at once, and all edge lengths appear equal. It's perfect for engineering drawings because you can measure along three directions: length, depth, and height.</p>
+
+                <p style="margin-top: 15px;"><strong>Key insight:</strong> If you balance a cube perfectly on one corner and project it down, you get a regular hexagon! All edges appear equal because of the geometry.</p>
+
+                <div class="error-trap">
+                    <div class="trap-title">⚠️ Common Error Trap: Confusing "One Projection" with "The Whole Object"</div>
+                    <p>A single projection can come from many different objects! That square projection could be from a cube, or a square prism, or even a square pyramid (viewed from above). You need at least THREE views to uniquely identify an object.</p>
+                </div>
+            </div>
+
+            <!-- LOGIC LADDER 3 -->
+            <div class="content-block">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 3: Drawing on Isometric Grid</h3>
+                <div class="logic-ladder">
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Given: Three Axes</strong>
+                            <p>Height (|), Depth (↙), Length (↘)</p>
+                            <p style="margin-top: 5px;">These represent the three dimensions visible in isometric view.</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 1: Plan Your Shape</strong>
+                            <p>Decide dimensions along each axis. For a 2×2×2 cube, you need 2 units in each direction.</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 2: Draw Edge by Edge</strong>
+                            <p>Start at a corner. Count units along each axis and draw lines following the grid lines.</p>
+                            <p style="margin-top: 5px;">Parallel edges on the object remain parallel on the grid.</p>
+                        </div>
+                    </div>
+                    <div class="logic-step">
+                        <div class="logic-step-content">
+                            <strong>Step 3: Connect and Visualize</strong>
+                            <p>Add shading or color to make the 3D effect clear.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUIZ SECTION -->
+            <div class="content-block quiz-block">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Socratic Sandbox: Check Your Understanding</h3>
+
+                <div class="quiz-level">
+                    <div class="quiz-level-tag">predict</div>
+                    <div class="quiz-question">
+                        <p><strong>Level 1 (Predict): In the Sierpinski Carpet, how many remaining squares are there after step 2?</strong></p>
+                        <details>
+                            <summary>Click to reveal answer</summary>
+                            <p>Using Rₙ = 8ⁿ:</p>
+                            <p style="margin-top: 5px;">R₂ = 8² = 64 squares</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level" style="margin-top: 15px;">
+                    <div class="quiz-level-tag">why</div>
+                    <div class="quiz-question">
+                        <p><strong>Level 2 (Why): Why does the Koch Snowflake have infinite perimeter but finite area?</strong></p>
+                        <details>
+                            <summary>Click to reveal answer</summary>
+                            <p>Each step adds bumps to the perimeter. At each step, you add more and more bumps, each of which extends the perimeter. This continues infinitely, so the perimeter grows without bound.</p>
+                            <p style="margin-top: 10px;">However, the added bumps get smaller and smaller. The total area added in each step decreases, so the total area converges to a finite value.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level" style="margin-top: 15px;">
+                    <div class="quiz-level-tag">apply</div>
+                    <div class="quiz-question">
+                        <p><strong>Level 3 (Apply): Which of these is a valid net for a cube?</strong></p>
+                        <details>
+                            <summary>Click to reveal answer</summary>
+                            <p>A valid cube net must have 6 connected squares that can fold without overlapping. Classic patterns include:</p>
+                            <p style="margin-top: 10px;">- The cross (one center square with 4 attached, and one more)</p>
+                            <p style="margin-top: 5px;">- The T-shape</p>
+                            <p style="margin-top: 5px;">- The zigzag pattern</p>
+                            <p style="margin-top: 10px;">An invalid net might have an arrangement that would cause overlap when folded.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level" style="margin-top: 15px;">
+                    <div class="quiz-level-tag">apply</div>
+                    <div class="quiz-question">
+                        <p><strong>Level 4 (Apply): If you look at a cube from the front and see a square, from the side see a rectangle, and from the top see a rectangle, what can you conclude about the cube's orientation?</strong></p>
+                        <details>
+                            <summary>Click to reveal answer</summary>
+                            <p>The cube is tilted! It's not in standard orientation (where all three views are squares).</p>
+                            <p style="margin-top: 10px;">The front view being a square suggests the cube is facing you fully. The side and top being rectangles means the cube is compressed or stretched in those viewing directions, indicating a tilt or non-standard angle.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level" style="margin-top: 15px;">
+                    <div class="quiz-level-tag">apply</div>
+                    <div class="quiz-question">
+                        <p><strong>Level 5 (Challenge): A tetrahedron (4 triangular faces) has a net. Can you describe what this net looks like?</strong></p>
+                        <details>
+                            <summary>Click to reveal answer</summary>
+                            <p>A tetrahedron net has 4 equilateral triangles arranged so they can fold into a tetrahedron.</p>
+                            <p style="margin-top: 10px;">One common arrangement: 1 central triangle with 3 triangles attached to each side of the central one. When folded, the three outer triangles meet at a single point above the center triangle.</p>
+                            <p style="margin-top: 10px;">Alternatively: 3 triangles in a row, with 1 triangle attached to the middle of the row.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter Navigation -->
+            <div class="chapter-nav">
+                <a href="chapter10.html" class="btn btn-prev">← Chapter 10</a>
+                <a href="index.html" class="btn btn-home">All Chapters</a>
+                <a href="chapter12.html" class="btn btn-next">Chapter 12 →</a>
+            </div>
+        </div>
+    </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Fractal</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A geometric shape that repeats at every scale. Each part looks similar to the whole. Example: Mandelbrot set</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Self-Similarity</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The property where a shape is similar to itself at different scales or zoom levels</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Net</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A 2D pattern that can be folded to create a 3D solid. Blueprint of a 3D shape</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Polyhedron</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A 3D solid shape with flat faces, straight edges, and vertices</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Isometric View</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A 2D drawing showing a 3D object from an angle to display length, width, and depth</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Cube Net</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">An unfolded cube showing all 6 square faces arranged in a 2D pattern</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Edge</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A line segment where two faces of a polyhedron meet</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Vertex</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A corner where edges meet in a 3D shape</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">A cube has how many faces, edges, and vertices?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 4, 8, 6</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 6, 12, 8</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 8, 12, 6</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 6, 8, 12</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! A cube has 6 faces, 12 edges, and 8 vertices" data-wrong="The correct answer is B. Faces: 6, Edges: 12, Vertices: 8"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">How many different nets does a cube have?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 4</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 6</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 11</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 15</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! There are 11 distinct nets that can be folded into a cube" data-wrong="The correct answer is C. There are exactly 11 unique nets for a cube"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which property defines a fractal?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> It has curved edges</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> It repeats itself at different scales</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> It has equal sides</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> It's always circular</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Fractals show self-similarity at different magnification levels" data-wrong="The correct answer is B. Fractals exhibit self-similarity at every scale"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">How many faces does a square pyramid have?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 4</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 5</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 6</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 8</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! 1 square base + 4 triangular sides = 5 faces" data-wrong="The correct answer is B. A square pyramid has 1 square base + 4 triangular faces = 5 faces"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">In an isometric drawing, which three dimensions are shown?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Height and width only</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Height, width, and depth</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Top view only</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Front view only</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Isometric drawings display height, width, and depth in one view" data-wrong="The correct answer is B. Isometric views show length, width, and height together"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Grade 8 Mathematics Learning Portal | Chapter 11: Exploring Some Geometric Themes</p>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

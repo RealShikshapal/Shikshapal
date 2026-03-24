@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14: Area - Grade 8 Math</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../index.html" class="nav-logo">Learning Portal</a>
+        <div class="nav-pills">
+            <a href="../index.html" class="nav-pill">Home</a>
+            <a href="index.html" class="nav-pill math-pill" data-subject="math">Math</a>
+            <a href="../science/index.html" class="nav-pill">Science</a>
+            <a href="../social/index.html" class="nav-pill">Social</a>
+            <a href="../english/index.html" class="nav-pill">English</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Area</h1>
+            <p class="subtitle">Measuring Surfaces: From Rectangles to Complex Polygons</p>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="index.html">Math</a> → Chapter 14
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-block">
+            <!-- HOOK: The Rangoli Problem -->
+            <section class="hook-block">
+                <h2>Hook: Which Rangoli Needs More Powder?</h2>
+                <p>Imagine two rectangular rangolis (decorative patterns) made with colored powder. One is 7 cm × 4 cm. Another is 8 cm × 3 cm. Which requires more powder?</p>
+                <div class="hook-question">
+                    <p><strong>🤔 How Would You Decide?</strong> The shapes are different sizes in different directions. It's not obvious just by looking. We need a way to measure and compare them fairly—that's what <strong>area</strong> does!</p>
+                </div>
+                <p>Area is how we measure the "amount of surface" a shape covers. It's fundamental to everything from painting a wall to calculating the size of a farm.</p>
+            </section>
+
+            <!-- Feynman Bridge: What is Area? -->
+            <section class="bridge-block">
+                <div class="block-label">Feynman Bridge</div>
+                <h3>Understanding Area from First Principles</h3>
+                <p>Area is the number of unit squares (1 cm × 1 cm, 1 m × 1 m, etc.) that fit inside a shape without overlapping. It measures "how much space" a 2D shape covers.</p>
+
+                <div class="analogy">
+                    <h4>Real-World Analogy: Tiling a Floor</h4>
+                    <p>Imagine you're tiling a floor with 1 m × 1 m tiles. If your room is 5 m long and 3 m wide, you need 5 × 3 = 15 tiles. That's exactly the area: 15 square meters!</p>
+                </div>
+
+                <div class="deep-dive">
+                    <div class="deep-dive-title">Why Count Unit Squares?</div>
+                    <p>Unit squares are the universal "ruler" for area. By counting how many fit, we can compare any shapes fairly. A rectangle 7 × 4 contains 28 unit squares. One that's 8 × 3 contains 24 unit squares. So the 7 × 4 rectangle is larger!</p>
+                    <p><strong>Important:</strong> Perimeter (distance around a shape) and area (space inside) are completely different! Two shapes can have the same perimeter but different areas, or vice versa.</p>
+                </div>
+            </section>
+
+            <!-- Rectangle Area Foundation -->
+            <section class="logic-ladder">
+                <div class="block-label">Logic Ladder: Area of Rectangles and Squares</div>
+                <h3>Building the Foundation</h3>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 1: Rectangle Area Formula</h4>
+                        <p>For a rectangle, counting unit squares is simple: count along the length, count along the width, and multiply.</p>
+                        <p><strong>Area of a rectangle = length × width</strong></p>
+                        <p>For example, a 7 cm × 4 cm rectangle contains 7 × 4 = 28 unit squares, so its area is 28 cm².</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 2: Squares Are Special Rectangles</h4>
+                        <p>A square is a rectangle where length equals width. So for a square with side <code>s</code>:</p>
+                        <p><strong>Area of a square = s × s = s²</strong></p>
+                        <p>A square with side 5 cm has area 5 × 5 = 25 cm².</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 3: The Key Insight for All Shapes</h4>
+                        <p>To find the area of ANY shape, we can:</p>
+                        <ul>
+                            <li>Break it into rectangles and add their areas, OR</li>
+                            <li>Rearrange its pieces into a rectangle of known area, OR</li>
+                            <li>Derive a special formula (like we'll do for triangles and other shapes)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Triangle Area -->
+            <section class="bridge-block">
+                <h3>Triangles: Half of a Rectangle</h3>
+                <p>A key insight: The diagonal of a rectangle divides it into two equal triangles. So each triangle has half the rectangle's area.</p>
+
+                <div class="analogy">
+                    <h4>Visualizing the Connection</h4>
+                    <p>Imagine folding a rectangle in half along its diagonal. The two triangles created are identical. If the rectangle has area 28 cm², each triangle has area 28 ÷ 2 = 14 cm².</p>
+                </div>
+
+                <div class="logic-ladder">
+                    <h4>Logic: From Rectangle to General Triangle</h4>
+                    <p>For a triangle with any shape, we can always find the smallest rectangle that contains it. The triangle's area is always half that rectangle's area.</p>
+                    <ul>
+                        <li>Rectangle area = base × height</li>
+                        <li>Triangle area = ½ × base × height</li>
+                    </ul>
+                    <p><strong>Why "base" and "height"?</strong> The base is any side of the triangle. The height is the perpendicular distance from that base to the opposite vertex (corner).</p>
+                </div>
+
+                <div class="error-trap">
+                    <div class="trap-title">⚠️ Triangle Height Confusion</div>
+                    <p><strong>WRONG:</strong> "Height is the length of the slanted side of the triangle."</p>
+                    <p><strong>RIGHT:</strong> Height must be perpendicular (at a 90° angle) to the base. It's the shortest distance from the base to the opposite corner.</p>
+                    <p><strong>Example:</strong> A triangle with base 8 cm and slanted sides of 5 cm each might have a height of only 3 cm (perpendicular to the base). Area = ½ × 8 × 3 = 12 cm².</p>
+                </div>
+            </section>
+
+            <!-- Parallelogram & Rhombus -->
+            <section class="bridge-block">
+                <h3>Parallelograms: Rectangles in Disguise</h3>
+                <p>A parallelogram is like a "slanted rectangle." But here's the magic: you can cut it apart and rearrange the pieces into a true rectangle with the same area!</p>
+
+                <div class="analogy">
+                    <h4>The Dissection Trick</h4>
+                    <p>Imagine a parallelogram as a rectangle that's been pushed to one side (sheared). Cut off the triangle on one side and slide it to the other side. Boom—it becomes a rectangle!</p>
+                </div>
+
+                <div class="deep-dive">
+                    <div class="deep-dive-title">Parallelogram Area Formula</div>
+                    <p>Because of this dissection trick:</p>
+                    <p><strong>Area of parallelogram = base × height</strong></p>
+                    <p>The height is perpendicular to the base (not the slanted side length!).</p>
+                    <p><strong>Example:</strong> A parallelogram with base 6 cm and height 4 cm has area 6 × 4 = 24 cm², even if its slanted sides are 5 cm long.</p>
+                </div>
+
+                <div class="analogy">
+                    <h4>Rhombus: A Special Parallelogram</h4>
+                    <p>A rhombus is a parallelogram with all sides equal (like a tilted square). Instead of base × height, we use the diagonals:</p>
+                    <p><strong>Area of rhombus = ½ × diagonal₁ × diagonal₂</strong></p>
+                    <p>Why? The diagonals of a rhombus are perpendicular and bisect each other, creating four equal right triangles.</p>
+                </div>
+            </section>
+
+            <!-- Trapezium -->
+            <section class="logic-ladder">
+                <div class="block-label">Logic Ladder: Trapezium (Trapezoid) Area</div>
+                <h3>When Parallel Sides Have Different Lengths</h3>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 1: What is a Trapezium?</h4>
+                        <p>A trapezium is a quadrilateral with exactly one pair of parallel sides. The parallel sides have different lengths.</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 2: Break It Into Simpler Shapes</h4>
+                        <p>One way: Drop perpendiculars from the shorter parallel side to the longer one. This creates a rectangle and two triangles. Find their areas and add them.</p>
+                    </div>
+                </div>
+
+                <div class="logic-step">
+                    <div class="logic-step-content">
+                        <h4>Step 3: Derive the Formula</h4>
+                        <p>Through algebra (combining the rectangle and triangles), we get:</p>
+                        <p><strong>Area of trapezium = ½ × height × (parallel side₁ + parallel side₂)</strong></p>
+                        <p><strong>Example:</strong> A trapezium with parallel sides 5 cm and 9 cm, and height 4 cm, has area:</p>
+                        <p>Area = ½ × 4 × (5 + 9) = ½ × 4 × 14 = 2 × 14 = 28 cm²</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Any Polygon -->
+            <section class="bridge-block">
+                <h3>Any Polygon: Triangulation</h3>
+                <p>Want the area of a pentagon? A hexagon? An irregular quadrilateral? The secret: <strong>divide it into triangles!</strong></p>
+
+                <div class="analogy">
+                    <h4>Triangulation Principle</h4>
+                    <p>Any polygon can be divided into triangles by drawing diagonals from one vertex to all non-adjacent vertices. Find each triangle's area (using base and height), then add them up.</p>
+                </div>
+
+                <div class="deep-dive">
+                    <div class="deep-dive-title">Why Triangulation Works</div>
+                    <p>Triangles are the simplest polygon with area. Any shape is really just "multiple triangles glued together." By mastering triangle area, you can find the area of any shape!</p>
+                </div>
+            </section>
+
+            <!-- Error Trap: Perimeter vs Area -->
+            <div class="error-trap">
+                <div class="trap-title">⚠️ The Perimeter vs Area Mix-Up</div>
+                <p><strong>WRONG:</strong> "If shape A has a larger perimeter than shape B, then shape A is larger (has more area)."</p>
+                <p><strong>RIGHT:</strong> Perimeter and area are completely independent! You can have shapes with:</p>
+                <ul>
+                    <li>Same perimeter, different areas (e.g., a 3×4 rectangle has perimeter 14 and area 12; a 2×5 rectangle has perimeter 14 and area 10)</li>
+                    <li>Same area, different perimeters</li>
+                    <li>Larger perimeter but smaller area</li>
+                </ul>
+                <p><strong>Always use the correct formula for what you're measuring!</strong></p>
+            </div>
+
+            <!-- Units and Conversions -->
+            <section class="bridge-block">
+                <h3>Area Units: Understanding Scale</h3>
+                <p>Area is always measured in square units. Here are common conversions:</p>
+                <ul>
+                    <li><strong>1 inch² (in²) = 6.45 cm²</strong></li>
+                    <li><strong>1 foot² (ft²) = 144 in² = 929 cm²</strong></li>
+                    <li><strong>1 meter² (m²) = 10,000 cm²</strong></li>
+                    <li><strong>1 kilometer² (km²) = 1,000,000 m²</strong></li>
+                    <li><strong>1 acre = 43,560 ft²</strong> (used in agriculture)</li>
+                </ul>
+
+                <div class="analogy">
+                    <h4>Why Square Units?</h4>
+                    <p>When you multiply length (cm) × width (cm), you get square centimeters (cm²). The word "square" is built into the unit! A 1 cm × 1 cm square has area 1 cm².</p>
+                </div>
+            </section>
+
+            <!-- Interactive Core: Quiz -->
+            <section class="quiz-block">
+                <div class="block-label">Socratic Sandbox: Apply Your Area Knowledge</div>
+                <h3>Quiz Challenge</h3>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag predict">PREDICT</span>
+                    <div class="quiz-question">
+                        <p><strong>1. Height Matters:</strong> Two rectangles have the same area of 30 cm². One is 5 cm × 6 cm. What could the dimensions of the other rectangle be?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>You need two numbers that multiply to 30.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Many answers work! Examples: 3 cm × 10 cm (area = 30 cm²), 2 cm × 15 cm, 1 cm × 30 cm. Any pair where length × width = 30 works.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag why">WHY</span>
+                    <div class="quiz-question">
+                        <p><strong>2. Why Perpendicular Height?</strong> Why must the height of a parallelogram be perpendicular to the base, not along the slanted side?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Think about dissecting the parallelogram into a rectangle. What measurement of the rectangle tells you its area?</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>When you dissect a parallelogram into a rectangle, the height of the rectangle is perpendicular to the base. A rectangle's area depends only on its length and width (measured at right angles), not on the slant of the sides. So the parallelogram's area uses the perpendicular height, not the slanted edge length.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>3. Triangle Calculation:</strong> A triangle has a base of 12 cm and a height of 8 cm. What is its area?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Use the formula: Area = ½ × base × height</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Area = ½ × 12 × 8 = ½ × 96 = 48 cm²</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>4. Trapezium Area:</strong> A trapezium has parallel sides of 6 m and 10 m, with a height of 5 m. Find its area.</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Use: Area = ½ × height × (side₁ + side₂)</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Area = ½ × 5 × (6 + 10) = ½ × 5 × 16 = ½ × 80 = 40 m²</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>5. Rhombus Diagonals:</strong> A rhombus has diagonals of 20 cm and 15 cm. What is its area?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Use: Area = ½ × diagonal₁ × diagonal₂</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Area = ½ × 20 × 15 = ½ × 300 = 150 cm²</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>6. Unit Conversion:</strong> A room has an area of 20 m². How many cm² is that?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Recall: 1 m = 100 cm, so 1 m² = 100 × 100 cm²</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>1 m² = 10,000 cm². So 20 m² = 20 × 10,000 = 200,000 cm²</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="quiz-level">
+                    <span class="quiz-level-tag apply">APPLY</span>
+                    <div class="quiz-question">
+                        <p><strong>7. Irregular Polygon:</strong> You want to find the area of a quadrilateral that isn't a standard parallelogram or trapezium. What's your strategy?</p>
+                        <details>
+                            <summary>Hint</summary>
+                            <p>Think about dividing it into simpler shapes.</p>
+                        </details>
+                        <details>
+                            <summary>Answer</summary>
+                            <p>Draw a diagonal to divide the quadrilateral into two triangles. Find the area of each triangle using base and height, then add them. Alternatively, divide it into a rectangle and triangles, or any combination of simple shapes.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Formulas Summary -->
+            <section class="deep-dive">
+                <div class="deep-dive-title">Area Formulas at a Glance</div>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr style="border-bottom: 2px solid var(--color-border);">
+                        <th style="text-align: left; padding: 0.5rem;">Shape</th>
+                        <th style="text-align: left; padding: 0.5rem;">Formula</th>
+                        <th style="text-align: left; padding: 0.5rem;">Key Measurement</th>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Rectangle</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = l × w</code></td>
+                        <td style="padding: 0.5rem;">length and width</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Square</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = s²</code></td>
+                        <td style="padding: 0.5rem;">side length</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Triangle</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = ½ × b × h</code></td>
+                        <td style="padding: 0.5rem;">base and perpendicular height</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Parallelogram</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = b × h</code></td>
+                        <td style="padding: 0.5rem;">base and perpendicular height</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Rhombus</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = ½ × d₁ × d₂</code></td>
+                        <td style="padding: 0.5rem;">both diagonals</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid var(--color-border);">
+                        <td style="padding: 0.5rem;"><strong>Trapezium</strong></td>
+                        <td style="padding: 0.5rem;"><code>A = ½ × h × (a + b)</code></td>
+                        <td style="padding: 0.5rem;">height and both parallel sides</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem;"><strong>Any Polygon</strong></td>
+                        <td style="padding: 0.5rem;">Divide into triangles</td>
+                        <td style="padding: 0.5rem;">Draw diagonals, find each triangle's area</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Real-World Context -->
+            <section class="bridge-block">
+                <h3>Area in the Real World</h3>
+                <p>Area isn't just abstract math—it's everywhere:</p>
+                <ul>
+                    <li><strong>Land Measurement:</strong> A farm's area in acres determines property value and tax</li>
+                    <li><strong>Construction:</strong> Knowing a room's area helps you buy the right amount of paint, tiles, or carpet</li>
+                    <li><strong>Textiles:</strong> Fabric is sold by the meter (1D measure), but covering a table requires calculating area</li>
+                    <li><strong>Agriculture:</strong> Crop yield depends on planting area and efficiency</li>
+                    <li><strong>Urban Planning:</strong> City areas are measured in km² or acres to understand sprawl and density</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Chapter Navigation -->
+        <div class="chapter-nav">
+            <a href="chapter13.html" class="nav-button prev">← Chapter 13</a>
+            <a href="index.html" class="nav-button home">Back to Math Index</a>
+        </div>
+    </div>
+  <!-- ===== FLASHCARDS ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="flashcard-section">
+        <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+        <div class="flashcard-deck">
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Area of Triangle</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Area = (1/2) × base × height. The height is perpendicular to the base</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Area of Parallelogram</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Area = base × height. The height is perpendicular to the base, not the slant side</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Area of Trapezium</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">Area = (1/2) × (sum of parallel sides) × height = (1/2) × (a + b) × h</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Base</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The bottom or reference side of a 2D shape</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Height</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The perpendicular distance from the base to the opposite vertex or side</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Altitude</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A perpendicular line from a vertex to the opposite side in a triangle or polygon</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Square Units</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">The unit of measurement for area. Example: cm², m², sq. km</div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+              <div class="flashcard-front">
+                <div class="fc-label">Term / Concept</div>
+                <div class="fc-question">Composite Shape</div>
+                <div class="fc-tap">tap to flip</div>
+              </div>
+              <div class="flashcard-back">
+                <div class="fc-answer">A shape made by combining or subtracting simpler shapes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-counter">8 cards — click any card to flip</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MCQ QUIZ ===== -->
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="mcq-section">
+        <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+        <div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Find the area of a triangle with base 8 cm and height 6 cm</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 14 cm²</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 24 cm²</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 48 cm²</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 28 cm²</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Area = (1/2) × 8 × 6 = 24 cm²" data-wrong="The correct answer is B. Area = (1/2) × base × height = (1/2) × 8 × 6 = 24 cm²"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Find the area of a parallelogram with base 10 cm and height 5 cm</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 15 cm²</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 25 cm²</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 50 cm²</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 75 cm²</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Area = base × height = 10 × 5 = 50 cm²" data-wrong="The correct answer is C. Area = base × height = 10 × 5 = 50 cm²"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Find the area of a trapezium with parallel sides 6 cm and 8 cm, and height 4 cm</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 14 cm²</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 28 cm²</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 32 cm²</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 56 cm²</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Area = (1/2) × (6 + 8) × 4 = (1/2) × 14 × 4 = 28 cm²" data-wrong="The correct answer is B. Area = (1/2) × (sum of parallel sides) × height = (1/2) × 14 × 4 = 28 cm²"></div>
+          </div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">A triangle has area 36 cm². If its base is 9 cm, what is its height?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 4 cm</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 6 cm</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 8 cm</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 9 cm</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Using Area = (1/2) × b × h: 36 = (1/2) × 9 × h, so h = 8 cm" data-wrong="The correct answer is C. Solve: 36 = (1/2) × 9 × h, so h = 8 cm"></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which statement is true about the height of a triangle?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> It's always on one of the sides</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> It's perpendicular to the base</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> It's the longest side</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> It equals the base</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct! Height is always perpendicular (at 90°) to the base" data-wrong="The correct answer is B. The height is the perpendicular distance to the base"></div>
+          </div>
+          <div class="mcq-score-bar">
+            <span class="score-text">0 / 5</span>
+            <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+            <button class="mcq-reset-btn">Reset Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Grade 8 Learning Portal. Understanding the mathematics of space and surface.</p>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const html = document.documentElement;
+        const theme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', theme);
+
+        // Optional: Add theme toggle button if you have one
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('[data-toggle-theme]');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const current = html.getAttribute('data-theme');
+                    const next = current === 'light' ? 'dark' : 'light';
+                    html.setAttribute('data-theme', next);
+                    localStorage.setItem('theme', next);
+                });
+            }
+        });
+
+        // Mark active nav pill
+        document.addEventListener('DOMContentLoaded', () => {
+            const mathPill = document.querySelector('[data-subject="math"]');
+            if (mathPill) {
+                mathPill.classList.add('active');
+            }
+        });
+    </script>
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>
