@@ -1,1 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade 8 — Interactive Learning Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="logo-icon">8</span>
+        <span>Grade 8 Portal</span>
+      </a>
+
+      <div class="subject-switcher" role="tablist" aria-label="Subjects">
+        <a href="science/index.html" class="subject-pill" data-subject="science" role="tab">
+          <span aria-hidden="true">🔬</span>
+          <span class="pill-label">Science</span>
+        </a>
+        <a href="math/index.html" class="subject-pill" data-subject="math" role="tab">
+          <span aria-hidden="true">📐</span>
+          <span class="pill-label">Math</span>
+        </a>
+        <a href="social/index.html" class="subject-pill" data-subject="social" role="tab">
+          <span aria-hidden="true">🌍</span>
+          <span class="pill-label">Social Science</span>
+        </a>
+        <a href="english/index.html" class="subject-pill" data-subject="english" role="tab">
+          <span aria-hidden="true">📖</span>
+          <span class="pill-label">English</span>
+        </a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero section">
+    <div class="container">
+      <div class="hero-badge animate-in">NCERT · NEP 2020 · NCF-SE 2023</div>
+      <h1 class="animate-in delay-1">Learn by Discovering,<br>Not Memorising.</h1>
+      <p class="hero-sub animate-in delay-2">
+        An interactive "living textbook" for Grade 8 — built on the Feynman Technique,
+        First-Principles Reasoning, and Socratic Inquiry. Every chapter is a mystery to solve,
+        not a lecture to sit through.
+      </p>
+      <p class="hero-sub animate-in delay-3" style="font-size: var(--fs-sm); max-width: 500px; color: var(--text-muted);">
+        Based on NCERT textbooks: Curiosity (Science) · Ganita Prakash (Mathematics) ·
+        Exploring Society (Social Science) · Poorvi (English)
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SUBJECT CARDS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+
+        <!-- SCIENCE -->
+        <a href="science/index.html" class="subject-card animate-in delay-1" data-subject="science">
+          <div class="card-icon">🔬</div>
+          <h3 class="card-title">Science</h3>
+          <div class="card-book">Curiosity — Textbook of Science</div>
+          <p class="card-desc">
+            From invisible microbes to cosmic timekeeping — explore 13 chapters through
+            "Magic vs. Science" observations, safe home experiments, and physical analogies
+            that make the invisible obvious.
+          </p>
+          <div class="card-meta">
+            <span class="badge">13 Chapters</span>
+            <span>The Explorer's Lab</span>
+          </div>
+          <div class="progress-bar"><div class="fill" style="width: 0%; background: var(--science);"></div></div>
+        </a>
+
+        <!-- MATH -->
+        <a href="math/index.html" class="subject-card animate-in delay-2" data-subject="math">
+          <div class="card-icon">📐</div>
+          <h3 class="card-title">Mathematics</h3>
+          <div class="card-book">Ganita Prakash — Part I & Part II</div>
+          <p class="card-desc">
+            14 chapters across two parts — from power play to the Baudhāyana-Pythagoras theorem.
+            Logic Ladders, visual proofs, and Common Error Traps show you the "why" behind every formula.
+          </p>
+          <div class="card-meta">
+            <span class="badge">14 Chapters</span>
+            <span>The Logical Builder</span>
+          </div>
+          <div class="progress-bar"><div class="fill" style="width: 0%; background: var(--math);"></div></div>
+        </a>
+
+        <!-- SOCIAL SCIENCE -->
+        <a href="social/index.html" class="subject-card animate-in delay-3" data-subject="social">
+          <div class="card-icon">🌍</div>
+          <h3 class="card-title">Social Science</h3>
+          <div class="card-book">Exploring Society: India and Beyond — Part 1</div>
+          <p class="card-desc">
+            History as detective stories, geography through spatial scaling, and civics through
+            roleplay. 7 chapters spanning natural resources, India's political map, the Marathas,
+            the colonial era, democracy, and economics.
+          </p>
+          <div class="card-meta">
+            <span class="badge">7 Chapters</span>
+            <span>The Detective</span>
+          </div>
+          <div class="progress-bar"><div class="fill" style="width: 0%; background: var(--social);"></div></div>
+        </a>
+
+        <!-- ENGLISH -->
+        <a href="english/index.html" class="subject-card animate-in delay-4" data-subject="english">
+          <div class="card-icon">📖</div>
+          <h3 class="card-title">English</h3>
+          <div class="card-book">Poorvi — Textbook of English</div>
+          <p class="card-desc">
+            5 thematic units — Wit &amp; Wisdom, Values, Mystery &amp; Magic, Environment, and
+            Science &amp; Curiosity. Character deep-dives, sentence architect blocks, and
+            the art of how one word changes everything.
+          </p>
+          <div class="card-meta">
+            <span class="badge">5 Units · 15 Texts</span>
+            <span>The Architect</span>
+          </div>
+          <div class="progress-bar"><div class="fill" style="width: 0%; background: var(--english);"></div></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MASTER CURRICULUM AUDIT ===== -->
+  <section class="section" id="curriculum-audit">
+    <div class="container" style="max-width: 900px;">
+      <h2 class="animate-in" style="text-align:center; margin-bottom: var(--sp-3);">Master Curriculum Audit</h2>
+      <p style="text-align:center; margin-bottom: var(--sp-8); color: var(--text-muted); font-size: var(--fs-sm);">
+        Complete chapter inventory extracted from the NCERT textbooks.
+        Click a subject to expand.
+      </p>
+
+      <!-- Science Audit -->
+      <details class="animate-in" style="margin-bottom: var(--sp-4);">
+        <summary style="padding: var(--sp-4) var(--sp-5);">
+          <span style="color: var(--science); font-weight: 700;">🔬 Science — Curiosity</span>
+          <span style="margin-left: auto; font-size: var(--fs-xs); color: var(--text-muted);">13 Chapters</span>
+        </summary>
+        <div class="detail-content">
+          <table style="width:100%; font-size: var(--fs-sm); border-collapse: collapse;">
+            <thead>
+              <tr style="text-align:left; color: var(--text-muted); border-bottom: 1px solid var(--border);">
+                <th style="padding: var(--sp-2) var(--sp-3);">#</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Chapter Title</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Domain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">1</td><td style="padding:var(--sp-2) var(--sp-3)">Exploring the Investigative World of Science</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Scientific Method</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">2</td><td style="padding:var(--sp-2) var(--sp-3)">The Invisible Living World: Beyond Our Naked Eye</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Biology</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">3</td><td style="padding:var(--sp-2) var(--sp-3)">Health: The Ultimate Treasure</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Health Science</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">4</td><td style="padding:var(--sp-2) var(--sp-3)">Electricity: Magnetic and Heating Effects</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Physics</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">5</td><td style="padding:var(--sp-2) var(--sp-3)">Exploring Forces</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Physics</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">6</td><td style="padding:var(--sp-2) var(--sp-3)">Pressure, Winds, Storms, and Cyclones</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Physics / Earth Science</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">7</td><td style="padding:var(--sp-2) var(--sp-3)">Particulate Nature of Matter</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Chemistry</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">8</td><td style="padding:var(--sp-2) var(--sp-3)">Nature of Matter: Elements, Compounds, and Mixtures</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Chemistry</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">9</td><td style="padding:var(--sp-2) var(--sp-3)">The Amazing World of Solutes, Solvents, and Solutions</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Chemistry</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">10</td><td style="padding:var(--sp-2) var(--sp-3)">Light: Mirrors and Lenses</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Physics</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">11</td><td style="padding:var(--sp-2) var(--sp-3)">Keeping Time with the Skies</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Earth Science / Astronomy</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">12</td><td style="padding:var(--sp-2) var(--sp-3)">How Nature Works in Harmony</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Biology / Ecology</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">13</td><td style="padding:var(--sp-2) var(--sp-3)">Our Home: Earth, a Unique Life Sustaining Planet</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Earth Science</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- Math Audit -->
+      <details class="animate-in delay-1" style="margin-bottom: var(--sp-4);">
+        <summary style="padding: var(--sp-4) var(--sp-5);">
+          <span style="color: var(--math); font-weight: 700;">📐 Mathematics — Ganita Prakash</span>
+          <span style="margin-left: auto; font-size: var(--fs-xs); color: var(--text-muted);">14 Chapters (2 Parts)</span>
+        </summary>
+        <div class="detail-content">
+          <h4 style="font-size: var(--fs-sm); color: var(--math); margin-bottom: var(--sp-3);">Part I</h4>
+          <table style="width:100%; font-size: var(--fs-sm); border-collapse: collapse; margin-bottom: var(--sp-5);">
+            <thead>
+              <tr style="text-align:left; color: var(--text-muted); border-bottom: 1px solid var(--border);">
+                <th style="padding: var(--sp-2) var(--sp-3);">#</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Chapter Title</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Domain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">1</td><td style="padding:var(--sp-2) var(--sp-3)">A Square and A Cube</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Numbers</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">2</td><td style="padding:var(--sp-2) var(--sp-3)">Power Play</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Exponents</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">3</td><td style="padding:var(--sp-2) var(--sp-3)">A Story of Numbers</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Number Systems</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">4</td><td style="padding:var(--sp-2) var(--sp-3)">Quadrilaterals</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Geometry</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">5</td><td style="padding:var(--sp-2) var(--sp-3)">Number Play</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Number Theory</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">6</td><td style="padding:var(--sp-2) var(--sp-3)">We Distribute, Yet Things Multiply</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Algebra</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">7</td><td style="padding:var(--sp-2) var(--sp-3)">Proportional Reasoning</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Ratios & Proportion</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-size: var(--fs-sm); color: var(--math); margin-bottom: var(--sp-3);">Part II</h4>
+          <table style="width:100%; font-size: var(--fs-sm); border-collapse: collapse;">
+            <thead>
+              <tr style="text-align:left; color: var(--text-muted); border-bottom: 1px solid var(--border);">
+                <th style="padding: var(--sp-2) var(--sp-3);">#</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Chapter Title</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Domain</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">8</td><td style="padding:var(--sp-2) var(--sp-3)">Fractions in Disguise</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Percentages & Fractions</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">9</td><td style="padding:var(--sp-2) var(--sp-3)">The Baudhāyana-Pythagoras Theorem</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Geometry</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">10</td><td style="padding:var(--sp-2) var(--sp-3)">Proportional Reasoning — 2</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Ratios & Proportion</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">11</td><td style="padding:var(--sp-2) var(--sp-3)">Exploring Some Geometric Themes</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Fractals & Solids</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">12</td><td style="padding:var(--sp-2) var(--sp-3)">Tales by Dots and Lines</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Data & Statistics</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">13</td><td style="padding:var(--sp-2) var(--sp-3)">Algebra Play</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Algebra</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">14</td><td style="padding:var(--sp-2) var(--sp-3)">Area</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Mensuration</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- Social Science Audit -->
+      <details class="animate-in delay-2" style="margin-bottom: var(--sp-4);">
+        <summary style="padding: var(--sp-4) var(--sp-5);">
+          <span style="color: var(--social); font-weight: 700;">🌍 Social Science — Exploring Society</span>
+          <span style="margin-left: auto; font-size: var(--fs-xs); color: var(--text-muted);">7 Chapters (Part 1)</span>
+        </summary>
+        <div class="detail-content">
+          <table style="width:100%; font-size: var(--fs-sm); border-collapse: collapse;">
+            <thead>
+              <tr style="text-align:left; color: var(--text-muted); border-bottom: 1px solid var(--border);">
+                <th style="padding: var(--sp-2) var(--sp-3);">#</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Chapter Title</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Theme</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">1</td><td style="padding:var(--sp-2) var(--sp-3)">Natural Resources and Their Use</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Land & People</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">2</td><td style="padding:var(--sp-2) var(--sp-3)">Reshaping India's Political Map</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Tapestry of the Past</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">3</td><td style="padding:var(--sp-2) var(--sp-3)">The Rise of the Marathas</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Tapestry of the Past</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">4</td><td style="padding:var(--sp-2) var(--sp-3)">The Colonial Era in India</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Tapestry of the Past</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">5</td><td style="padding:var(--sp-2) var(--sp-3)">Universal Franchise and India's Electoral System</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Governance & Democracy</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">6</td><td style="padding:var(--sp-2) var(--sp-3)">The Parliamentary System: Legislature and Executive</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Governance & Democracy</td></tr>
+              <tr><td style="padding:var(--sp-2) var(--sp-3); opacity:.4">7</td><td style="padding:var(--sp-2) var(--sp-3)">Factors of Production</td><td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted)">Economic Life</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- English Audit -->
+      <details class="animate-in delay-3" style="margin-bottom: var(--sp-4);">
+        <summary style="padding: var(--sp-4) var(--sp-5);">
+          <span style="color: var(--english); font-weight: 700;">📖 English — Poorvi</span>
+          <span style="margin-left: auto; font-size: var(--fs-xs); color: var(--text-muted);">5 Units · 15 Texts</span>
+        </summary>
+        <div class="detail-content">
+          <table style="width:100%; font-size: var(--fs-sm); border-collapse: collapse;">
+            <thead>
+              <tr style="text-align:left; color: var(--text-muted); border-bottom: 1px solid var(--border);">
+                <th style="padding: var(--sp-2) var(--sp-3);">Unit</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Theme</th>
+                <th style="padding: var(--sp-2) var(--sp-3);">Texts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:var(--sp-2) var(--sp-3); opacity:.4">1</td>
+                <td style="padding:var(--sp-2) var(--sp-3)">Wit and Wisdom</td>
+                <td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted); font-size:var(--fs-xs)">The Wit that Won Hearts · A Concrete Example · Wisdom Paves the Way</td>
+              </tr>
+              <tr>
+                <td style="padding:var(--sp-2) var(--sp-3); opacity:.4">2</td>
+                <td style="padding:var(--sp-2) var(--sp-3)">Values and Dispositions</td>
+                <td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted); font-size:var(--fs-xs)">A Tale of Valour (Major Somnath Sharma) · Somebody's Mother · Verghese Kurien — I Too Had A Dream</td>
+              </tr>
+              <tr>
+                <td style="padding:var(--sp-2) var(--sp-3); opacity:.4">3</td>
+                <td style="padding:var(--sp-2) var(--sp-3)">Mystery and Magic</td>
+                <td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted); font-size:var(--fs-xs)">The Case of the Fifth Word · The Magic Brush of Dreams · Spectacular Wonders</td>
+              </tr>
+              <tr>
+                <td style="padding:var(--sp-2) var(--sp-3); opacity:.4">4</td>
+                <td style="padding:var(--sp-2) var(--sp-3)">Environment</td>
+                <td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted); font-size:var(--fs-xs)">The Cherry Tree · Harvest Hymn · Waiting for the Rain</td>
+              </tr>
+              <tr>
+                <td style="padding:var(--sp-2) var(--sp-3); opacity:.4">5</td>
+                <td style="padding:var(--sp-2) var(--sp-3)">Science and Curiosity</td>
+                <td style="padding:var(--sp-2) var(--sp-3); color:var(--text-muted); font-size:var(--fs-xs)">Feathered Friend · Magnifying Glass · Bibha Chowdhuri: The Beam of Light</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ===== HOW THIS PORTAL WORKS ===== -->
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="text-align:center; margin-bottom: var(--sp-6);">How Every Chapter Works</h2>
+
+      <div class="content-block" style="margin-bottom: var(--sp-4);">
+        <div class="block-label hook">🪝 Step 1 — The Hook</div>
+        <p>Every chapter opens with an everyday mystery or "impossible" question.
+           Something you've seen a hundred times but never truly thought about.
+           This is designed to light up your curiosity before any teaching begins.</p>
+      </div>
+
+      <div class="content-block" style="margin-bottom: var(--sp-4);">
+        <div class="block-label bridge">🌉 Step 2 — The Feynman Bridge</div>
+        <p>A powerful analogy that makes the concept feel "obvious."
+           If electricity is hard to picture, imagine water flowing through pipes.
+           If percentages feel abstract, think of slicing a pizza into 100 pieces.
+           The bridge connects what you <em>know</em> to what you're about to <em>learn</em>.</p>
+      </div>
+
+      <div class="content-block" style="margin-bottom: var(--sp-4);">
+        <div class="block-label core">🧱 Step 3 — Interactive Core</div>
+        <p>Step-by-step Logic Ladders walk you through the reasoning, one small
+           insight at a time. Deep-Dive callout boxes let you explore further without
+           losing the main thread. Activities you can try at home make it real.</p>
+      </div>
+
+      <div class="content-block" style="margin-bottom: var(--sp-4);">
+        <div class="block-label quiz">🧠 Step 4 — Socratic Sandbox</div>
+        <p>Three levels of questions test not just recall, but understanding:</p>
+        <div style="margin-top: var(--sp-3); display:flex; flex-wrap:wrap; gap:var(--sp-2);">
+          <span class="quiz-level-tag predict">Level 1: Predict</span>
+          <span class="quiz-level-tag why">Level 2: Why</span>
+          <span class="quiz-level-tag apply">Level 3: Apply</span>
+        </div>
+        <p style="margin-top: var(--sp-3);">Hints and answers are hidden behind click-to-reveal panels —
+           so you discover the answer, not just read it.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Interactive Learning Portal — Built from NCERT textbooks (2025 Edition)</p>
+      <p style="margin-top: var(--sp-2);">
+        Pedagogical framework: Feynman Technique · First-Principles Reasoning · Socratic Inquiry
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== THEME TOGGLE SCRIPT ===== -->
+  <script>
+    (function() {
+      const html = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const icon = document.getElementById('themeIcon');
+
+      // Check saved preference
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        html.setAttribute('data-theme', saved);
+        icon.textContent = saved === 'light' ? '🌙' : '☀️';
+      }
+
+      btn.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        icon.textContent = next === 'light' ? '🌙' : '☀️';
+      });
+
+      // Intersection Observer for scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.animate-in').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
