@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 9: Geometric Twins — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+    h1, h2, h3, h4, h5 { font-family: 'Bricolage Grotesque', sans-serif; }
+    .hook-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .hook-label { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; }
+    .feynman-bridge { background: #f0f4ff; border-left: 4px solid #667eea; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .bridge-label { font-size: 0.9rem; font-weight: 600; color: #667eea; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .logic-ladder { margin: 2rem 0; }
+    .logic-step { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #667eea; }
+    .logic-step:hover { border-left-color: #764ba2; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1); }
+    .deep-dive { background: #fffaeb; border: 2px solid #ffc107; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; }
+    .dd-label { font-size: 0.85rem; font-weight: 700; color: #f57f17; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .error-trap { background: #ffebee; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .error-trap h4 { color: #d32f2f; margin-top: 0; }
+    .socratic-sandbox { background: #e8f5e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .quiz-level { background: white; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #4caf50; }
+    .level-badge { display: inline-block; background: #4caf50; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-question { font-weight: 600; margin: 0.5rem 0; }
+    details { cursor: pointer; }
+    details summary { font-weight: 500; color: #667eea; }
+    details[open] summary { color: #764ba2; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    header.chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    nav.breadcrumb { font-size: 0.9rem; margin-bottom: 2rem; }
+    nav.breadcrumb a { color: #667eea; text-decoration: none; }
+    nav.chapter-nav { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .nav-link { text-decoration: none; color: #667eea; font-weight: 600; display: flex; flex-direction: column; align-items: flex-start; }
+    .next { align-items: flex-end; }
+    .nav-label { font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.3rem; }
+    .nav-title { font-size: 1rem; }
+    footer { background: #f5f5f5; padding: 2rem; text-align: center; color: #666; margin-top: 3rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 9</span>
+      <h1>Geometric Twins</h1>
+      <p class="chapter-subtitle">Understanding Congruence — When Shapes Are Exact Copies</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 9</span>
+    </nav>
+
+    <!-- HOOK SECTION -->
+    <section class="hook-box">
+      <div class="hook-label">The Real Mystery</div>
+      <h2>Recreating a Symbol on a Signboard</h2>
+      <p>Imagine a beautiful symbol painted on a large signboard. You need to recreate it exactly on another board, but it's too big to trace. What measurements would you take to ensure your copy is an exact replica?</p>
+      <p>If you measure just two arm lengths (say AB = 4 cm and BC = 8 cm), you'll find that many different shapes can have these same measurements! The arms could bend at different angles, creating completely different symbols.</p>
+      <p><strong>The key insight:</strong> You need one more piece of information — the angle between the arms (∠ABC = 80°). With three measurements (two sides and the angle between them), you can create an exact replica.</p>
+    </section>
+
+    <!-- FEYNMAN BRIDGE SECTION -->
+    <section class="feynman-bridge">
+      <div class="bridge-label">Real-World Analogy</div>
+      <h3>Identity Verification: Just Like Your Fingerprints</h3>
+      <p>Think of congruent shapes like identical twins or fingerprints. Two people might have the same height and hand size, but their fingerprints are unique. To prove two people are identical twins, you don't just measure their height — you'd need multiple measurements: height, arm span, facial features, DNA, etc.</p>
+      <p>Similarly, geometric figures need multiple "measurements" to prove they're congruent (exact copies). The SSS, SAS, ASA, AAS, and RHS conditions are like a checklist to verify two shapes are truly geometric twins.</p>
+    </section>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <section class="logic-ladder">
+      <h3>Understanding Congruence: Step by Step</h3>
+
+      <div class="logic-step">
+        <h4>Step 1: What Does "Congruent" Mean?</h4>
+        <p>Congruent figures are exact copies of each other — they have the same shape and size. If you traced one figure on paper and superimposed it on another, they would fit perfectly, one on top of the other. You might need to rotate or flip one figure to make them match, but that's allowed.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 2: Why Just "Same Sides" Isn't Enough</h4>
+        <p>Consider triangles with sides 4 cm, 6 cm, and 8 cm. If you only measure the three sides, you might think all triangles with these lengths are identical. But here's the discovery: if you construct a triangle using circles (drawing circles from each endpoint with radii 4 and 8), the circles intersect at TWO points. This creates two different triangles — both congruent to each other, but you need proof they're congruent to the original.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 3: The SSS Condition (All Three Sides)</h4>
+        <p><strong>If two triangles have the same three side lengths, they are congruent.</strong> Why? Because when you construct triangles with the same side lengths, the angle between any two sides is determined by the geometry of those lengths. There's only one possible angle, so there's only one possible triangle shape.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 4: The SAS Condition (Two Sides + Included Angle)</h4>
+        <p><strong>If two sides and the angle between them are equal, the triangles are congruent.</strong> This makes intuitive sense: the angle "fixes" the position of the sides relative to each other. Change the angle, and you change the triangle's shape. Same angle + same sides = same triangle.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 5: The ASA & AAS Conditions (Two Angles + A Side)</h4>
+        <p><strong>Two angles and their included side guarantee congruence (ASA).</strong> Even better, if you have two angles and ANY side (not necessarily between them), it's still congruent (AAS). Why? Because if you know two angles, you automatically know the third (since all angles sum to 180°). This determines the triangle's shape completely.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 6: The RHS Condition (Right-Angled Triangles)</h4>
+        <p><strong>For right triangles: one right angle + hypotenuse + one other side guarantees congruence.</strong> The right angle is already given, so you really only need the hypotenuse and one leg. This is a special case because the right angle locks the triangle into a very specific form.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 7: Expressing Congruence Correctly</h4>
+        <p>When we write ∆ABC ≅ ∆XYZ, the order matters! This notation means: vertex A corresponds to X, B to Y, and C to Z. Their sides and angles line up in this exact correspondence. Writing ∆ABC ≅ ∆XZY would be wrong if it doesn't preserve these correspondences.</p>
+      </div>
+    </section>
+
+    <!-- DEEP DIVES -->
+    <section>
+      <h3>Deep Dives into Congruence</h3>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Why SSA Doesn't Always Work</div>
+        <p>What if you have two sides and a non-included angle? For example, two triangles with AB = 6 cm, AC = 4 cm, and ∠B = 30°. When you construct this triangle, you draw AB as the base, then from B draw a line at 30°. From C, draw a circle of radius 4 cm. This circle might intersect the 30° line at TWO different points (called R and S), creating two different triangles! Both satisfy the same measurements, but they're not congruent to each other. This is called the SSA ambiguity. (Special case: in right triangles, SSA becomes RHS and works perfectly.)</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Isosceles Triangle Angles</div>
+        <p>Use congruence to prove: angles opposite equal sides are equal. If ∆ABC has AB = AC (isosceles), draw the altitude from A to BC at point D. Now consider ∆ABD and ∆ACD: they share side AD, they have AB = AC, and both have right angles at D (RHS condition). Therefore these triangles are congruent, which means ∠B = ∠C. This elegant proof uses congruence to unlock a fundamental triangle property!</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Equilateral Triangle Angles = 60°</div>
+        <p>An equilateral triangle has all three sides equal. Using the property from Deep Dive 2: if AB = AC, then ∠B = ∠C. If AB = BC, then ∠A = ∠C. Therefore all three angles are equal. Since angles sum to 180°, each angle must be 180° ÷ 3 = 60°. Congruence unlocked this beautiful fact through pure logic!</p>
+      </div>
+    </section>
+
+    <!-- ERROR TRAP -->
+    <section class="error-trap">
+      <h4>Common Error Trap: Confusing Correspondence</h4>
+      <p><strong>The Mistake:</strong> Looking at ∆ABD and ∆CDB in rectangle ABCD, students often write ∆ABD ≅ ∆CDB when they mean A↔C, B↔D, D↔B. But this correspondence doesn't work! It would match AB with CD (correct), but then BD with DB (also correct), but then the angles don't align properly.</p>
+      <p><strong>Why It Happens:</strong> When listing corresponding vertices, students sometimes jump to what "looks" right without checking if equal sides truly correspond. The order of letters in the congruence statement is a promise about which vertices match up.</p>
+      <p><strong>The Fix:</strong> Always verify: for ∆ABD ≅ ∆CDB, does the first vertex (A) match the first vertex (C)? Are sides AB and CD equal? Are angles at these vertices equal? Only then is the correspondence correct. Here, the correct statement is ∆ABD ≅ ∆CDB where A↔C, B↔D, D↔B matches sides and angles properly.</p>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-sandbox">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">Two triangles have sides 3 cm, 4 cm, and 5 cm. Are they definitely congruent?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: Yes, they are definitely congruent.</strong> The SSS (Side-Side-Side) condition guarantees this. If two triangles have all three sides equal, they must be congruent. The three side lengths completely determine the angles (by geometric necessity), so there's only one possible shape.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">Two right triangles both have a right angle and a hypotenuse of 10 cm. Are they congruent?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: Not necessarily.</strong> You have the hypotenuse, but the RHS condition requires one right angle, the hypotenuse, AND one other side (a leg). Just the right angle and hypotenuse aren't enough — the third side could vary. You'd need to also know one leg length (say, 6 cm) to guarantee congruence via RHS.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">Why does the AAS condition (two angles and a non-included side) guarantee congruence when SSA (two sides and a non-included angle) doesn't?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>The Key Difference:</strong> With two angles, you can find the third angle (since all angles sum to 180°). Once you know all three angles, the triangle's shape is determined. You only need one side to scale the triangle, and that one side fixes its size. Combined, the triangle is completely determined.</p>
+          <p>With SSA, two sides determine directions, but a non-included angle doesn't "lock" the triangle's shape because there's ambiguity about where the third vertex lands — it could be in two different positions.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">In the example with the rectangle ABCD, why are ∆ABD and ∆CDB congruent?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Analysis:</strong> Since ABCD is a rectangle:</p>
+          <ul>
+            <li>AB = CD (opposite sides of rectangle)</li>
+            <li>AD = CB (opposite sides of rectangle)</li>
+            <li>BD = DB (same segment, common side)</li>
+          </ul>
+          <p>All three pairs of sides are equal, so SSS condition is satisfied. Therefore ∆ABD ≅ ∆CDB. The diagonal BD acts as a line of symmetry that "reflects" triangle ABD onto triangle CDB.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">A triangle has angles 50°, 60°, and 70°, with the side opposite the 50° angle measuring 5 cm. Can you construct another triangle that's NOT congruent to this one but has the same three angles?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: Yes, easily!</strong> Draw a triangle with angles 50°, 60°, and 70°, but make the side opposite the 50° angle 8 cm instead of 5 cm. This new triangle has the same angles but is scaled larger, so it's NOT congruent. This illustrates why AAA (all three angles equal) is NOT a congruence condition — it only guarantees similarity, not congruence. You need at least one side measurement to fix the scale.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">You want to prove that two congruent triangles share the same perimeter. Which congruence condition would be easiest to use?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: SSS is most direct.</strong> If two triangles have all three sides equal (SSS condition), then they're congruent AND their perimeters are obviously equal (same three sides sum to the same total). While any congruence condition guarantees equal perimeters, SSS makes this most transparent because the congruence directly shows sides are identical.</p>
+        </details>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter8.html" class="nav-link prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">Chapter 8</span>
+      </a>
+      <a href="chapter10.html" class="nav-link next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">Chapter 10</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding the Unknown — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .hook-label { font-weight: 600; color: #856404; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .feynman-bridge { background: #e7f3ff; border-left: 4px solid #0066cc; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .bridge-label { font-weight: 600; color: #004a99; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .logic-ladder { background: #f0f8f0; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; border: 1px solid #90ee90; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: white; border-left: 3px solid #28a745; padding-left: 1.5rem; }
+    .logic-step h4 { color: #1e7e34; margin: 0 0 0.5rem 0; }
+    .deep-dive { background: #f9f2ff; border-left: 4px solid #9c27b0; padding: 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+    .dd-label { font-weight: 600; color: #6a1b9a; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .error-trap { background: #ffe6e6; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .error-trap h4 { color: #b71c1c; margin-top: 0; }
+    .socratic-sandbox { background: #f5f5f5; padding: 2rem; margin: 2rem 0; border-radius: 4px; }
+    .quiz-level { margin: 1.5rem 0; padding: 1.5rem; background: white; border: 1px solid #ddd; border-radius: 4px; }
+    .level-badge { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .level-badge.predict { background: #fff3cd; color: #856404; }
+    .level-badge.why { background: #cfe2ff; color: #084298; }
+    .level-badge.apply { background: #d1e7dd; color: #0f5132; }
+    .quiz-question { margin: 1rem 0; font-weight: 500; }
+    details { margin: 1rem 0; }
+    details > summary { cursor: pointer; padding: 0.5rem; background: #f0f0f0; border-radius: 3px; font-weight: 500; }
+    details > summary:hover { background: #e0e0e0; }
+    details > p { margin-top: 1rem; padding: 1rem; background: #fffbf0; border-left: 3px solid #ff9800; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 15</span>
+      <h1>Finding the Unknown</h1>
+      <p class="chapter-subtitle">Algebra and Simple Equations</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 15</span>
+    </nav>
+
+    <!-- HOOK -->
+    <section class="hook-section">
+      <div class="hook-box">
+        <div class="hook-label">The Mystery</div>
+        <h3>What's in the Sack? The Weighing Scale Mystery</h3>
+        <p>You have a balance scale with a sack (unknown weight) on one side. On the other side, you place known weights to balance it. From the balanced position, you can figure out what the sack weighs — without opening it!</p>
+        <p>This is the essence of algebra: finding an unknown value using the rules of balance and equality. In this chapter, you'll learn to solve such puzzles using equations, where a letter (like x) stands for the unknown weight.</p>
+      </div>
+    </section>
+
+    <!-- FEYNMAN BRIDGE -->
+    <section class="feynman-section">
+      <div class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Equations are Balanced Stories</h3>
+        <p>Think of a weighing scale as a story in balance: "The sack plus 2 kg equals 5 kg." This is an equation: sack + 2 = 5. When you remove 2 kg from both sides (to keep it balanced), the sack must weigh 3 kg.</p>
+        <p>An equation is a balanced statement. Whatever operation you do to one side, you must do to the other to keep it balanced. This principle — "do the same thing to both sides" — unlocks the power to find unknowns. In real life, this shows up everywhere: in cooking (if you double a recipe, you double all ingredients), in finance (equal adjustments on both sides of a budget), and in construction (scaling plans proportionally).</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE: Logic Ladder -->
+    <section class="core-section">
+      <h2>Why Equations Work: The Logic of Balance</h2>
+
+      <div class="logic-ladder">
+        <h3>The Logic Ladder: From Balances to Algebra</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Understand the Balance Metaphor</h4>
+          <p>A weighing scale in balance means: weight on left side = weight on right side. If you add or remove the same weight from both sides, it stays balanced.</p>
+          <p>Example: If sack + 2 kg = 5 kg, and you remove 2 kg from each side, then sack = 3 kg.</p>
+          <p><strong>Why this matters:</strong> This intuitive idea translates directly to equations. An equation is a balanced statement that remains balanced if you perform the same operation on both sides.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Translate Real Scales to Equations</h4>
+          <p>Let the unknown weight be denoted by a variable (like x). The balance scale becomes an equation:</p>
+          <ul>
+            <li>"A sack and 2 kg balance 5 kg" → x + 2 = 5</li>
+            <li>"Three identical sacks balance 12 kg" → 3x = 12</li>
+            <li>"A sack balances two smaller weights and one 3 kg weight" → x = 2a + 3</li>
+          </ul>
+          <p><strong>Why this matters:</strong> We've created a symbolic language (algebra) that represents real-world balance problems.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Solve by Undoing Operations</h4>
+          <p>To solve x + 2 = 5, undo the "+2" by subtracting 2 from both sides:</p>
+          <ul>
+            <li>x + 2 = 5</li>
+            <li>x + 2 - 2 = 5 - 2 (subtract 2 from both sides)</li>
+            <li>x = 3</li>
+          </ul>
+          <p>To solve 3x = 12, undo the "×3" by dividing both sides by 3:</p>
+          <ul>
+            <li>3x = 12</li>
+            <li>3x ÷ 3 = 12 ÷ 3 (divide both sides by 3)</li>
+            <li>x = 4</li>
+          </ul>
+          <p><strong>Why this matters:</strong> "Undoing" is the heart of solving equations. Addition undoes by subtraction, multiplication by division.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Handle Multi-Step Problems</h4>
+          <p>Some scale problems require multiple steps:</p>
+          <ul>
+            <li>"Two sacks and 3 kg balance 11 kg" → 2x + 3 = 11</li>
+            <li>Undo the "+3": 2x + 3 - 3 = 11 - 3 → 2x = 8</li>
+            <li>Undo the "×2": 2x ÷ 2 = 8 ÷ 2 → x = 4</li>
+          </ul>
+          <p><strong>Why this matters:</strong> Real problems are rarely single-step. Students learn to handle layers of operations by undoing them in reverse order (undo addition first, then multiplication).</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Solve Equations with Unknowns on Both Sides</h4>
+          <p>Suppose: "A sack equals 5 kg plus half another sack" → x = 5 + x/2</p>
+          <p>Move the unknown to one side:</p>
+          <ul>
+            <li>x = 5 + x/2</li>
+            <li>x - x/2 = 5 (subtract x/2 from both sides)</li>
+            <li>x/2 = 5 (since x - x/2 = x/2)</li>
+            <li>x = 10 (multiply both sides by 2)</li>
+          </ul>
+          <p><strong>Why this matters:</strong> Unknowns on both sides are common in real applications. The principle remains: do the same to both sides.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: From Patterns to Algebraic Rules</h4>
+          <p>Consider a matchstick pattern: position 1 has 3 sticks, position 2 has 5, position 3 has 7...</p>
+          <p>Pattern: Position n has 2n + 1 sticks. If you want 99 sticks, solve 2n + 1 = 99:</p>
+          <ul>
+            <li>2n + 1 = 99</li>
+            <li>2n = 98 (subtract 1)</li>
+            <li>n = 49 (divide by 2)</li>
+          </ul>
+          <p>So position 49 has 99 sticks.</p>
+          <p><strong>Why this matters:</strong> Algebra connects patterns to unknowns. Given a rule and a result, find the missing input.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Generalize the Solving Process</h4>
+          <p><strong>To solve any equation:</strong></p>
+          <ol>
+            <li>Simplify both sides (combine like terms)</li>
+            <li>Get all unknowns on one side, all constants on the other</li>
+            <li>Undo operations in reverse order (addition/subtraction first, then multiplication/division)</li>
+            <li>Check: substitute your answer back into the original equation</li>
+          </ol>
+          <p><strong>Why this works:</strong> These steps systematically "unwrap" the operations that built up the equation, revealing the unknown.</p>
+        </div>
+      </div>
+
+      <!-- DEEP DIVES -->
+      <h2 style="margin-top: 3rem;">Exploring Deeper</h2>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Why Check Your Answer?</div>
+        <h4>Verification is Part of the Solution</h4>
+        <p>Suppose you solved 2x + 3 = 11 and got x = 4. Check: 2(4) + 3 = 8 + 3 = 11 ✓. Correct!</p>
+        <p>But what if you made an error and got x = 3? Check: 2(3) + 3 = 9 ≠ 11. The check immediately reveals the error.</p>
+        <p><strong>Why this matters:</strong> A check validates your work. It's not busywork — it's a safeguard. In engineering, medicine, or finance, an unchecked calculation can be catastrophic.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Variables as Placeholders for Unknown Quantities</div>
+        <h4>From Words to Symbols to Numbers</h4>
+        <p>Words: "A number increased by 5 equals 12."</p>
+        <p>Symbols: x + 5 = 12</p>
+        <p>Numbers: x = 7</p>
+        <p>The variable x is a placeholder. In one problem it represents weight, in another distance, in another time. The equation-solving method is universal.</p>
+        <p><strong>Why this matters:</strong> Variables make mathematics abstract and powerful. Instead of solving "sack weight + 2 = 5" and "rope length + 2 = 5" separately, we solve x + 2 = 5 once and apply it everywhere.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: The Inverse Operation Principle</div>
+        <h4>Every Operation Has an Undo</h4>
+        <p>Addition is undone by subtraction: (x + a) - a = x</p>
+        <p>Subtraction is undone by addition: (x - a) + a = x</p>
+        <p>Multiplication is undone by division: (x × a) ÷ a = x</p>
+        <p>Division is undone by multiplication: (x ÷ a) × a = x</p>
+        <p>When solving equations, you're essentially finding the sequence of operations that created the equation, then applying their inverses in reverse order.</p>
+        <p><strong>Why this matters:</strong> This principle extends far beyond algebra. In computer science, cryptography, and error correction, inverse operations are fundamental.</p>
+      </div>
+    </section>
+
+    <!-- COMMON ERROR TRAP -->
+    <section class="error-section">
+      <div class="error-trap">
+        <h4>Common Error Trap: Forgetting to Do Both Sides</h4>
+        <p><strong>The Mistake:</strong> Solving x + 5 = 12, a student subtracts 5 only from the right side: x + 5 = 12 - 5, getting x + 5 = 7. Then they can't proceed clearly.</p>
+        <p><strong>The Root Cause:</strong> Forgetting the balance principle. An equation is only true if both sides remain equal. Changing one side breaks the equality.</p>
+        <p><strong>Prevention Tip:</strong> Before you perform any operation, say out loud or write: "I will do this to BOTH sides." Draw an arrow pointing to each side as a visual reminder.</p>
+        <p><strong>Correct Method:</strong> x + 5 = 12. Subtract 5 from BOTH sides: (x + 5) - 5 = 12 - 5. Simplify: x = 7.</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-section">
+      <div class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Thinking</h2>
+
+        <!-- PREDICT Level -->
+        <div class="quiz-level predict">
+          <span class="level-badge predict">Predict</span>
+          <div class="quiz-question">Without solving, predict: is the solution to 2x + 3 = 11 larger or smaller than 4?</div>
+          <details>
+            <summary>Hint: What's 2(4) + 3?</summary>
+            <p>2(4) + 3 = 11. So x = 4 is exactly the solution! Our prediction was asking whether x is larger or smaller than itself, which is a trick question. Let me rephrase: Is the solution to 2x + 3 = 13 larger or smaller than 5?</p>
+          </details>
+          <details>
+            <summary>Try the revised question.</summary>
+            <p>2(5) + 3 = 13. So x = 5 is the solution. For 2x + 3 = 13, we want the solution. If 2x + 3 = 11, then x = 4 (smaller than 5). So solutions decrease as the right side decreases.</p>
+          </details>
+        </div>
+
+        <!-- WHY Level -->
+        <div class="quiz-level why">
+          <span class="level-badge why">Why</span>
+          <div class="quiz-question">Why must you undo operations in reverse order (e.g., undo addition before multiplication)?</div>
+          <details>
+            <summary>Think: How was the equation built?</summary>
+            <p>An equation like 2x + 3 = 11 was built by: first multiply by 2, then add 3. To undo it, reverse the order: undo the add (subtract 3), then undo the multiply (divide by 2).</p>
+          </details>
+          <details>
+            <summary>Go deeper: What if you undo in the wrong order?</summary>
+            <p>If you divide by 2 first: (2x + 3) ÷ 2 = 11 ÷ 2, you get x + 1.5 = 5.5. Then subtract 1.5: x = 4. You still get the right answer! Actually, as long as you're consistent and careful, the order doesn't matter much for addition/subtraction and multiplication/division. But it's clearer to follow the reverse order.</p>
+          </details>
+        </div>
+
+        <!-- APPLY Level -->
+        <div class="quiz-level apply">
+          <span class="level-badge apply">Apply</span>
+          <div class="quiz-question">A matchstick pattern has 2n + 1 sticks at position n. If Jasmine uses exactly 99 sticks, at which position is her arrangement?</div>
+          <details>
+            <summary>Set up the equation.</summary>
+            <p>2n + 1 = 99. Now solve for n.</p>
+          </details>
+          <details>
+            <summary>Solve step-by-step.</summary>
+            <p>2n + 1 = 99. Subtract 1: 2n = 98. Divide by 2: n = 49. Check: 2(49) + 1 = 98 + 1 = 99 ✓. Jasmine's arrangement is at position 49.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter14.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 14</span></a>
+      <a href="index.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Math Home</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

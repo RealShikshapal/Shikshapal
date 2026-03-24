@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Play — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box, .feynman-bridge, .logic-ladder, .deep-dive, .error-trap, .socratic-sandbox {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+      border-left: 4px solid #2563eb;
+    }
+    .hook-label, .bridge-label, .dd-label, .level-badge {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+    .logic-step {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: white;
+      border-left: 3px solid #3b82f6;
+      border-radius: 4px;
+    }
+    .logic-step h4 {
+      color: #1e40af;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .logic-step p {
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .error-trap {
+      background: #fef3c7;
+      border-left-color: #f59e0b;
+    }
+    .error-trap h4 {
+      color: #b45309;
+    }
+    .quiz-level {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    .level-badge {
+      background: #dbeafe;
+      color: #0369a1;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+    details {
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    summary {
+      font-weight: 600;
+      color: #2563eb;
+      padding: 0.5rem;
+      background: #eff6ff;
+      border-radius: 4px;
+    }
+    details[open] summary {
+      background: #dbeafe;
+    }
+    details p {
+      margin-top: 1rem;
+      padding: 0 1rem;
+      color: #333;
+    }
+    .diagram-text {
+      background: #e0f2fe;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      font-family: monospace;
+      line-height: 1.8;
+      color: #0c4a6e;
+    }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 6</span>
+      <h1>Number Play</h1>
+      <p class="chapter-subtitle">Discovering the hidden patterns in even and odd numbers</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 6</span></nav>
+
+    <div class="container">
+      <!-- HOOK SECTION -->
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h2>The Mystery of Height and Counting</h2>
+        <p>A group of children stand in a line, each called out a number based on how many children in front of them are taller. Can you figure out what these numbers mean? For example, if a child says "0," they must be the tallest person among those ahead. If they say "3," three taller people stand in front. But can you figure out all the arrangements that give a sequence like 0, 1, 1, 2, 4, 1, 5? This puzzle reveals how patterns hide in plain sight!</p>
+      </section>
+
+      <!-- FEYNMAN BRIDGE -->
+      <section class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Even and Odd Like Coins in Pairs</h3>
+        <p>Imagine you have coins and you want to split them into pairs. If you have 4 coins, you can make 2 perfect pairs with nothing left over—that's an EVEN number. But if you have 5 coins, you can make 2 pairs and have 1 coin left over—that's an ODD number. The "leftover" concept is what makes a number odd. In math, even numbers are divisible by 2; odd numbers always leave a remainder of 1 when divided by 2. This simple picture—pairing things up—helps you predict what happens when you add, subtract, or multiply even and odd numbers!</p>
+      </section>
+
+      <!-- INTERACTIVE CORE: LOGIC LADDER -->
+      <section class="logic-ladder">
+        <h2>Logic Ladder: Understanding Parity</h2>
+
+        <div class="logic-step">
+          <h4>Step 1: What Makes a Number Even?</h4>
+          <p>An even number can be arranged in pairs with nothing left over. Picture 6 dots: ••  ••  ••  (three pairs). Or 4 dots: ••  •• (two pairs). Even numbers end in 0, 2, 4, 6, or 8. Why? Because the number 10 is even, and any multiple of 10 is even. Add an even digit to a multiple of 10, and you stay even.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: What Makes a Number Odd?</h4>
+          <p>An odd number is one more than pairs. Picture 7 dots: ••  ••  ••  • (three pairs plus one leftover). Or 5 dots: ••  ••  • (two pairs plus one). Odd numbers end in 1, 3, 5, 7, or 9. Why? Because when you add 1 (odd) to an even digit, you get odd. This leftover concept is the key to understanding odd numbers.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Adding Two Even Numbers Always Gives Even</h4>
+          <p>Here's why: Two even numbers each consist of complete pairs. When you combine pairs from one number with pairs from another, you get more pairs. No leftover = the result is even. Example: 4 (two pairs) + 6 (three pairs) = 10 (five pairs). Picture: ••  •• + ••  ••  •• = ••  ••  ••  ••  ••</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Adding Two Odd Numbers Always Gives Even</h4>
+          <p>This is surprising! Two odd numbers each have one leftover. Picture 5 (two pairs + 1) and 7 (three pairs + 1). When you combine them: the two leftovers pair up! So you get five pairs with nothing left. 5 + 7 = 12 (six pairs). The leftovers "rescue" each other.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Adding Even and Odd Always Gives Odd</h4>
+          <p>Even numbers have complete pairs; odd numbers have one leftover. When mixed: you get all the complete pairs PLUS one leftover. Example: 4 (two pairs) + 7 (three pairs + 1 leftover) = 11 (five pairs + 1 leftover). The leftover from the odd number survives, making the sum odd.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: Using Parity to Solve Puzzles</h4>
+          <p>Kishor has 5 odd number cards and needs them to sum to 30 (even). Impossible! Five odd numbers sum to odd (5 is odd). Why? Because: odd + odd = even (two odds combine), then even + odd = odd (add third), then odd + odd = even (add fourth), then even + odd = odd (add fifth). Five odds sum to ODD, never even. The parity rule solves this instantly without checking every card.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Consecutive Numbers Always Have Opposite Parity</h4>
+          <p>Counting numbers alternate: 1(odd), 2(even), 3(odd), 4(even), 5(odd), 6(even)... Any two consecutive numbers are one even and one odd. So their sum is always ODD. This means two people born one year apart cannot have ages that sum to 112 (even). Their age-sum must be odd!</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 8: Finding the 100th Odd Number</h4>
+          <p>Odd numbers are 1, 3, 5, 7, 9, 11... Each odd number is 2 times its position minus 1. Position 1: 2(1) - 1 = 1. Position 2: 2(2) - 1 = 3. Position 100: 2(100) - 1 = 199. The formula is: nth odd number = 2n - 1. This formula works because odd numbers skip every other number in the counting sequence.</p>
+        </div>
+      </section>
+
+      <!-- DEEP DIVE CALLOUTS -->
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Parity in Product and Difference</div>
+        <h3>Multiplication and Subtraction Rules</h3>
+        <p>Even × Anything = Even (one factor is even, so the product has 2 as a factor). Odd × Odd = Odd (no factor of 2). For subtraction: Even - Even = Even, Odd - Odd = Even (the leftovers cancel), Even - Odd = Odd, Odd - Even = Odd. These rules let you check if an answer could be correct without fully calculating it!</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Parity of Grid Squares</div>
+        <h3>Checkerboard Pattern</h3>
+        <p>In an m × n grid, there are m × n small squares. The parity depends on whether both dimensions are odd or even: (Even × Even = Even), (Even × Odd = Even), (Odd × Odd = Odd). Why? Because multiplication of parities follows the same rules as addition: odd appears only when both factors are odd. This predicts the checkerboard coloring pattern!</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Fibonacci Parity Pattern</div>
+        <h3>The Virahanka Sequence Mystery</h3>
+        <p>The Fibonacci-like Virahanka sequence (1, 2, 3, 5, 8, 13, 21, 34...) has a parity pattern: Odd, Even, Odd, Odd, Even, Odd, Odd, Even... The pattern Odd-Even-Odd repeats! Why? Because each term = sum of previous two. Tracking parity: O+E=O, E+O=O, O+O=E, repeating. This lets you find the parity of the 100th term without calculating it!</p>
+      </section>
+
+      <!-- COMMON ERROR TRAP -->
+      <section class="error-trap">
+        <h4>Common Error Trap: Even + Odd = Odd, Not Even!</h4>
+        <p><strong>The Mistake:</strong> "4 + 7 = 11, which is odd. But I thought adding numbers makes them bigger, so shouldn't it be even?"</p>
+        <p><strong>The Truth:</strong> The parity (evenness/oddness) of the SUM depends on the parity of the addends, not on whether we're adding. Even + Odd always = Odd, regardless of the size. Bigness and parity are completely different properties!</p>
+        <p><strong>Another Trap:</strong> Confusing "5 odd numbers sum to odd" with "5 objects." The NUMBER 5 is odd (has one leftover), and when you add 5 odd numbers, their sum is odd. But if you add 5 even numbers, their sum is even! Count how many odd numbers you're adding—if that count is odd, the sum is odd.</p>
+      </section>
+
+      <!-- SOCRATIC SANDBOX -->
+      <section class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Parity Thinking</h2>
+
+        <div class="quiz-level predict">
+          <div class="level-badge">Level 1 — PREDICT</div>
+          <h3>Predict the Parity</h3>
+          <details>
+            <summary>What is the parity of 7 + 9 + 11 + 13? (Without calculating!)</summary>
+            <p><strong>Hint:</strong> Count how many odd numbers you're adding. Is that count odd or even?</p>
+            <p><strong>Answer:</strong> Even. You're adding four odd numbers. Four is even, so the sum is even. (Check: 7+9+11+13 = 40, which is even!)</p>
+          </details>
+
+          <details>
+            <summary>Can you choose 6 odd numbers that sum to 60?</summary>
+            <p><strong>Hint:</strong> Think about the parity of the sum of 6 odd numbers.</p>
+            <p><strong>Answer:</strong> Yes. Six is even, so the sum of six odd numbers is even. 60 is even. Example: 5 + 7 + 9 + 11 + 13 + 15 = 60.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <div class="level-badge">Level 2 — WHY</div>
+          <h3>Explain the Logic</h3>
+          <details>
+            <summary>Why does adding an odd number of odd numbers always give an odd result?</summary>
+            <p><strong>Hint:</strong> Think about what happens when you pair up the leftovers. What happens to the last leftover?</p>
+            <p><strong>Answer:</strong> Each odd number has one leftover. If you have an odd count of leftovers (1, 3, 5, 7...), they can't pair up completely—one leftover remains. So the sum is odd.</p>
+          </details>
+
+          <details>
+            <summary>Why can't two consecutive numbers have an even sum?</summary>
+            <p><strong>Hint:</strong> What parity must consecutive numbers have?</p>
+            <p><strong>Answer:</strong> Consecutive numbers alternate between even and odd. One is even, one is odd. Even + Odd = Odd. So two consecutive numbers always sum to odd. That's why Martin and Maria (born one year apart) can't have ages summing to 112 (even).</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <div class="level-badge">Level 3 — APPLY</div>
+          <h3>Solve Real Problems</h3>
+          <details>
+            <summary>Lakpa has an odd number of ₹1 coins, an odd number of ₹5 coins, and an even number of ₹10 coins. He calculated ₹205. Did he make a mistake?</summary>
+            <p><strong>Hint:</strong> Think about the parity of the total. Odd coins of ₹1 contribute odd parity, odd coins of ₹5 contribute odd parity, even coins of ₹10 contribute even parity.</p>
+            <p><strong>Answer:</strong> Yes, he made a mistake. Odd count × ₹1 = Odd. Odd count × ₹5 (odd) = Odd. Even count × ₹10 = Even. So total = Odd + Odd + Even = Even. But 205 is odd. Contradiction!</p>
+          </details>
+
+          <details>
+            <summary>Find the 50th odd number using the formula 2n - 1.</summary>
+            <p><strong>Hint:</strong> The nth odd number = 2n - 1. What is n here?</p>
+            <p><strong>Answer:</strong> n = 50, so 2(50) - 1 = 100 - 1 = 99. The 50th odd number is 99.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Diagram in Words -->
+      <section>
+        <h2>Diagrams in Words: Parity at a Glance</h2>
+        <div class="diagram-text">
+EVEN NUMBERS CAN BE PAIRED
+4 dots:    ••    ••  (2 pairs, NO leftover)
+8 dots:    ••    ••    ••    ••  (4 pairs, NO leftover)
+Even = divisible by 2 = complete pairing
+
+ODD NUMBERS HAVE ONE LEFTOVER
+5 dots:    ••    ••    •  (2 pairs + 1 leftover)
+9 dots:    ••    ••    ••    ••    •  (4 pairs + 1 leftover)
+Odd = has remainder 1 when divided by 2
+        </div>
+
+        <div class="diagram-text">
+PARITY ADDITION RULES
+Even + Even = Even    (pairs + pairs = pairs, no leftovers)
+Odd + Odd = Even      (leftover + leftover = complete pair)
+Even + Odd = Odd      (pairs + (pairs+1) = pairs+1)
+Odd + Even = Odd      (same as above)
+
+COUNTING PATTERN
+1(O), 2(E), 3(O), 4(E), 5(O), 6(E), 7(O), 8(E)...
+Consecutive numbers ALWAYS alternate: Even-Odd-Even-Odd...
+        </div>
+
+        <div class="diagram-text">
+NTH ODD NUMBER FORMULA
+Odd numbers: 1, 3, 5, 7, 9, 11, 13...
+Position:    1, 2, 3, 4, 5,  6,  7...
+
+Formula: nth odd number = 2n - 1
+1st odd: 2(1) - 1 = 1 ✓
+2nd odd: 2(2) - 1 = 3 ✓
+5th odd: 2(5) - 1 = 9 ✓
+100th odd: 2(100) - 1 = 199 ✓
+        </div>
+      </section>
+
+      <nav class="chapter-nav">
+        <a href="chapter5.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 5: Parallel and Intersecting Lines</span></a>
+        <a href="chapter7.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Chapter 7: A Tale of Three Intersecting Lines</span></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallel and Intersecting Lines — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box, .feynman-bridge, .logic-ladder, .deep-dive, .error-trap, .socratic-sandbox {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+      border-left: 4px solid #2563eb;
+    }
+    .hook-label, .bridge-label, .dd-label, .level-badge {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+    .logic-step {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: white;
+      border-left: 3px solid #3b82f6;
+      border-radius: 4px;
+    }
+    .logic-step h4 {
+      color: #1e40af;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .logic-step p {
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .error-trap {
+      background: #fef3c7;
+      border-left-color: #f59e0b;
+    }
+    .error-trap h4 {
+      color: #b45309;
+    }
+    .quiz-level {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    .level-badge {
+      background: #dbeafe;
+      color: #0369a1;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+    details {
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    summary {
+      font-weight: 600;
+      color: #2563eb;
+      padding: 0.5rem;
+      background: #eff6ff;
+      border-radius: 4px;
+    }
+    details[open] summary {
+      background: #dbeafe;
+    }
+    details p {
+      margin-top: 1rem;
+      padding: 0 1rem;
+      color: #333;
+    }
+    .diagram-text {
+      background: #e0f2fe;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      font-family: monospace;
+      line-height: 1.8;
+      color: #0c4a6e;
+    }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 5</span>
+      <h1>Parallel and Intersecting Lines</h1>
+      <p class="chapter-subtitle">Exploring the relationships between lines on a plane surface</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 5</span></nav>
+
+    <div class="container">
+      <!-- HOOK SECTION -->
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h2>When Do Two Lines Meet?</h2>
+        <p>Take a piece of folded paper. Draw lines on the creases with a pencil and scale. Look at any pair of lines. Do they meet? If they don't meet within the paper, would they meet if extended beyond it? This simple activity reveals one of geometry's most fundamental puzzles: the secret relationships between lines on a flat surface.</p>
+      </section>
+
+      <!-- FEYNMAN BRIDGE -->
+      <section class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Parallel Lines Like Train Tracks</h3>
+        <p>Imagine two train tracks running side by side. They never meet, no matter how far you follow them. They stay exactly the same distance apart. Now imagine a road crossing both tracks at an angle—this road is like a transversal. The angles where the road crosses each track tell us whether the tracks are truly parallel or not. In geometry, we use this same idea to prove lines are parallel or to find hidden angles!</p>
+      </section>
+
+      <!-- INTERACTIVE CORE: LOGIC LADDER -->
+      <section class="logic-ladder">
+        <h2>Logic Ladder: Understanding Intersecting Lines</h2>
+
+        <div class="logic-step">
+          <h4>Step 1: Two Lines Meet at One Point</h4>
+          <p>When two lines cross each other on a flat surface, they meet at exactly one point. This is called intersection. At this point, four angles are formed. Why four? Because a line divides space into four regions around the meeting point.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Adjacent Angles Always Sum to 180°</h4>
+          <p>When two lines intersect, look at any two angles next to each other (like angles a and b). These are called "linear pairs" because they sit on a straight line. Since a straight line measures 180°, any two angles sitting on it must add up to exactly 180°. This is WHY they sum to 180°—not just a rule to memorize!</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Opposite Angles Are Always Equal</h4>
+          <p>Here's the magic: Look at the angle directly across from another (like angles a and c in the diagram). These are called "vertically opposite angles." Why are they equal? Because: If a + b = 180° (linear pair) and c + b = 180° (another linear pair), then a must equal c! This is a proof—pure logic, no measuring needed.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Perpendicular Lines Form Right Angles</h4>
+          <p>What if all four angles are equal? Then each must be 180° ÷ 4 = 45°... wait, no. Each angle is 90°. Two lines that intersect at 90° are called perpendicular. This is why perpendicular lines are so special: they divide space into four equal parts, like a plus sign (+).</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Parallel Lines Never Meet</h4>
+          <p>Some lines never intersect, no matter how far you extend them. These are parallel lines. They lie on the same plane, stay the same distance apart, and never touch. The key: they must be on the same flat surface. A line on the table and a line on the board aren't parallel—they're on different planes.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: Transversals Test for Parallel Lines</h4>
+          <p>A transversal is a line that crosses two other lines. It forms 8 angles total (4 with each line). Here's the rule: If the "corresponding angles" are equal, the two lines are parallel. Corresponding angles are in the same position relative to their intersection point—like both on the upper-right of each crossing point.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Alternate Angles Prove the Parallel Connection</h4>
+          <p>There's another way to spot parallel lines: alternate angles. These are on opposite sides of the transversal and between the two lines. When a transversal crosses two parallel lines, alternate angles are always equal. This is a foolproof test for parallelism!</p>
+        </div>
+      </section>
+
+      <!-- DEEP DIVE CALLOUTS -->
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Why We Need Ideal Lines</div>
+        <h3>Geometry vs. Measurement</h3>
+        <p>When you measure angles with a protractor, they sometimes don't add exactly to 180°. Why? Real pencil lines have thickness, and measurements have errors. But "ideal" lines in geometry have no thickness at all. We use pure reasoning, not measurement, to prove truths about angles. This is why geometry is used in architecture, engineering, and physics—the rules are exact and don't depend on imperfect measurements!</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Drawing Parallel Lines with Tools</div>
+        <h3>Set Square Trick</h3>
+        <p>To draw two parallel lines without guessing: Draw the first line l. Place your set square so one side touches line l at 90°. Now slide the set square along a ruler, keeping the 90° angle. The new lines you draw will both be perpendicular to l, which means they're parallel to each other! Why? Because corresponding angles with l are both 90°, proving parallelism.</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 3: The Triangle Rule for Interior Angles</div>
+        <h3>When Lines Cross Lines</h3>
+        <p>When a transversal crosses two parallel lines, the two interior angles on the same side add up to 180°. For example, if one angle is 120°, the other must be 60°. This connects to triangles: the angles in any triangle add to 180°, and this rule explains why! You can prove triangle angle-sum using parallel lines and transversals.</p>
+      </section>
+
+      <!-- COMMON ERROR TRAP -->
+      <section class="error-trap">
+        <h4>Common Error Trap: Parallel Lines on Different Planes</h4>
+        <p><strong>The Mistake:</strong> "A line drawn on the table and a line drawn on the board are parallel because they never meet."</p>
+        <p><strong>The Truth:</strong> Parallel lines must lie on the SAME flat surface (plane). These lines are on different planes, so they're not parallel—they're just separate. Always check: are both lines in the same plane? If yes, they can be parallel. If no, they cannot be.</p>
+        <p><strong>Another Trap:</strong> Confusing corresponding angles with alternate angles. Corresponding angles are on the same side of the transversal (both upper-right, for example). Alternate angles are on opposite sides. Both are equal when lines are parallel, but they're different pairs!</p>
+      </section>
+
+      <!-- SOCRATIC SANDBOX -->
+      <section class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Thinking</h2>
+
+        <div class="quiz-level predict">
+          <div class="level-badge">Level 1 — PREDICT</div>
+          <h3>Predict What Happens</h3>
+          <details>
+            <summary>If two lines intersect and one angle is 120°, what is the angle next to it?</summary>
+            <p><strong>Hint:</strong> Think about linear pairs. Two angles on a straight line always add to 180°.</p>
+            <p><strong>Answer:</strong> 60°. Because 120° + 60° = 180°. They form a linear pair on a straight line.</p>
+          </details>
+
+          <details>
+            <summary>If a transversal crosses two lines forming equal corresponding angles, are the lines parallel?</summary>
+            <p><strong>Hint:</strong> Go back to the definition of parallel lines and the rule about corresponding angles.</p>
+            <p><strong>Answer:</strong> Yes. Equal corresponding angles prove the lines are parallel. This is the key test for parallelism!</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <div class="level-badge">Level 2 — WHY</div>
+          <h3>Explain the Logic</h3>
+          <details>
+            <summary>Why are vertically opposite angles always equal? Explain without using the angle measurement.</summary>
+            <p><strong>Hint:</strong> Use linear pairs. What do you know about ∠a + ∠b and ∠c + ∠b?</p>
+            <p><strong>Answer:</strong> Because both ∠a and ∠c are paired with ∠b on a straight line. So ∠a + ∠b = 180° and ∠c + ∠b = 180°. This means ∠a = ∠c. Pure logic, no measurements!</p>
+          </details>
+
+          <details>
+            <summary>When you fold a piece of paper to create a line perpendicular to line l, then fold perpendicular to that crease, why is the new line parallel to line l?</summary>
+            <p><strong>Hint:</strong> Think about the angles each fold makes. Both new lines are perpendicular to the same crease.</p>
+            <p><strong>Answer:</strong> Both lines are perpendicular to the middle crease (90° angle). So they're corresponding angles of 90° to the same transversal, making them parallel to each other. That's the definition of parallel!</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <div class="level-badge">Level 3 — APPLY</div>
+          <h3>Solve Real Problems</h3>
+          <details>
+            <summary>In a diagram, lines l and m are parallel. A transversal t intersects them. If the angle at l is 50°, what is the alternate angle at m?</summary>
+            <p><strong>Hint:</strong> Alternate angles are on opposite sides of the transversal and between the lines.</p>
+            <p><strong>Answer:</strong> 50°. Alternate angles formed by a transversal on parallel lines are always equal. So if one is 50°, the other is also 50°.</p>
+          </details>
+
+          <details>
+            <summary>You need to draw a line parallel to a given line passing through a specific point. Describe your method using a ruler and set square.</summary>
+            <p><strong>Hint:</strong> You need to create equal corresponding angles with the original line.</p>
+            <p><strong>Answer:</strong> Place the set square so one side is along the given line. Hold a ruler against the perpendicular edge. Slide the set square along the ruler until it reaches the point. Draw along the set square's edge. Both lines make the same angle with the ruler (90°), so they're parallel!</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Diagram in Words -->
+      <section>
+        <h2>Diagrams in Words</h2>
+        <div class="diagram-text">
+INTERSECTING LINES FORMING ANGLES
+         |  b |
+    _____|____|_____
+       a |    | c
+    _____|____|_____
+         | d  |
+
+When two lines cross, they form 4 angles: a, b, c, d
+- Angles a and c are opposite (vertically opposite angles) → EQUAL
+- Angles b and d are opposite (vertically opposite angles) → EQUAL
+- Angles a and b are adjacent (linear pair) → ADD TO 180°
+- All 4 angles together → ADD TO 360°
+        </div>
+
+        <div class="diagram-text">
+TRANSVERSAL CROSSING TWO PARALLEL LINES
+        l: ___1___2___
+              3   4
+        t crosses here
+        m: ___5___6___
+              7   8
+
+Corresponding Angles (same position): 1&5, 2&6, 3&7, 4&8 → ALL EQUAL
+Alternate Angles (opposite sides, between lines): 3&6, 4&5 → ALL EQUAL
+Interior Angles (same side): 3&5 ADD TO 180°, and 4&6 ADD TO 180°
+        </div>
+      </section>
+
+      <nav class="chapter-nav">
+        <a href="chapter4.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 4</span></a>
+        <a href="chapter6.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Chapter 6: Number Play</span></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 10: Operations with Integers — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+    h1, h2, h3, h4, h5 { font-family: 'Bricolage Grotesque', sans-serif; }
+    .hook-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .hook-label { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; }
+    .feynman-bridge { background: #f0f4ff; border-left: 4px solid #667eea; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .bridge-label { font-size: 0.9rem; font-weight: 600; color: #667eea; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .logic-ladder { margin: 2rem 0; }
+    .logic-step { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #667eea; }
+    .logic-step:hover { border-left-color: #764ba2; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1); }
+    .deep-dive { background: #fffaeb; border: 2px solid #ffc107; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; }
+    .dd-label { font-size: 0.85rem; font-weight: 700; color: #f57f17; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .error-trap { background: #ffebee; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .error-trap h4 { color: #d32f2f; margin-top: 0; }
+    .socratic-sandbox { background: #e8f5e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .quiz-level { background: white; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #4caf50; }
+    .level-badge { display: inline-block; background: #4caf50; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-question { font-weight: 600; margin: 0.5rem 0; }
+    details { cursor: pointer; }
+    details summary { font-weight: 500; color: #667eea; }
+    details[open] summary { color: #764ba2; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    header.chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    nav.breadcrumb { font-size: 0.9rem; margin-bottom: 2rem; }
+    nav.breadcrumb a { color: #667eea; text-decoration: none; }
+    nav.chapter-nav { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .nav-link { text-decoration: none; color: #667eea; font-weight: 600; display: flex; flex-direction: column; align-items: flex-start; }
+    .next { align-items: flex-end; }
+    .nav-label { font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.3rem; }
+    .nav-title { font-size: 1rem; }
+    footer { background: #f5f5f5; padding: 2rem; text-align: center; color: #666; margin-top: 3rem; font-size: 0.9rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    table th, table td { border: 1px solid #ddd; padding: 0.75rem; text-align: center; }
+    table th { background: #f5f5f5; font-weight: 600; }
+    code { background: #f5f5f5; padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'Courier New', monospace; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 10</span>
+      <h1>Operations with Integers</h1>
+      <p class="chapter-subtitle">Multiplication and Division of Positive and Negative Numbers</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 10</span>
+    </nav>
+
+    <!-- HOOK SECTION -->
+    <section class="hook-box">
+      <div class="hook-label">The Everyday Mystery</div>
+      <h2>Two Numbers Hidden in a Puzzle</h2>
+      <p>Rakesh challenges you: "I'm thinking of two numbers. Their sum is 25 and their difference is 11. Can you find them?"</p>
+      <p>You might guess and check: 19 and 6 works! (19 + 6 = 25, and 19 - 6 = 13... no, that's not 11). Then 18 and 7... yes! (18 + 7 = 25, and 18 - 7 = 11).</p>
+      <p>Now Rakesh adds a twist: "What if I say the sum is 25 but the difference is -11?" By simply swapping the numbers (7 and 18 become 7 and 18 with 7 first), you see how negative numbers represent direction — just like negative differences go backward. This is the heart of integer operations.</p>
+    </section>
+
+    <!-- FEYNMAN BRIDGE SECTION -->
+    <section class="feynman-bridge">
+      <div class="bridge-label">Real-World Analogy</div>
+      <h3>Moving a Carrom Coin Left and Right</h3>
+      <p>Imagine a carrom coin on a number line. When you strike it rightward, it moves in the positive direction (+). When you strike it leftward, it moves in the negative direction (-).</p>
+      <p>If the coin is struck twice: first 5 units right, then 3 units left, where does it end? Use positive (+5) and negative (-3): the final position is 5 + (-3) = 2 units right of zero.</p>
+      <p>Multiplication is like multiplying the strikes. Multiplying by a positive number means you're placing tokens into a bag repeatedly. Multiplying by a negative number means you're removing tokens. When you remove negatives (two negatives), you end up adding them back, which is why negative × negative = positive.</p>
+    </section>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <section class="logic-ladder">
+      <h3>Understanding Integer Operations: Step by Step</h3>
+
+      <div class="logic-step">
+        <h4>Step 1: What Are Integers?</h4>
+        <p>Integers include all whole numbers (1, 2, 3, ...) and their negatives (-1, -2, -3, ...) plus zero. We write them on a number line: ...−5, −4, −3, −2, −1, 0, +1, +2, +3, +4, +5... The direction matters: +5 means 5 units right, −5 means 5 units left.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 2: Addition & Subtraction Review</h4>
+        <p>Adding integers is like moving on a number line. 5 + 3 = 8 (start at 5, move 3 right). But 5 + (−3) = 2 (start at 5, move 3 left). Subtracting is the same as adding the opposite: 5 − 3 = 5 + (−3) = 2.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 3: Multiplication: Positive × Positive</h4>
+        <p>Think of 4 × 3 using the token model: place 3 positive tokens into an empty bag 4 times. Result: 12 positive tokens. So 4 × 3 = 12. This is familiar multiplication.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 4: Multiplication: Positive × Negative</h4>
+        <p>Now try 4 × (−2): place 2 negative tokens into the bag 4 times. Result: 8 negative tokens. So 4 × (−2) = −8. The key insight: multiplying by a negative number reverses the sign. Positive times negative = negative.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 5: Multiplication: Negative × Positive</h4>
+        <p>What about (−4) × 2? When the multiplier is negative, we remove tokens instead of placing them. Remove 2 positive tokens from an empty bag 4 times. But we start empty! So we add zero pairs (one positive + one negative) and then remove the positives, leaving negatives. Result: −8. So (−4) × 2 = −8.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 6: Multiplication: Negative × Negative</h4>
+        <p>For (−4) × (−2): remove 2 negative tokens from an empty bag 4 times. Again, we start with zero pairs, but this time remove the negatives, leaving positives. Result: 8. So (−4) × (−2) = 8. This is the big insight: negative times negative = positive!</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 7: The Pattern in Multiplication</h4>
+        <p>Look at the sequence: 4×3=12, 3×3=9, 2×3=6, 1×3=3, 0×3=0, (−1)×3=−3, (−2)×3=−6... Each time we decrease the multiplier by 1, the product decreases by 3 (the multiplicand). This pattern explains why negatives work the way they do.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 8: Division of Integers</h4>
+        <p>Division is the inverse of multiplication. If 25 × (−4) = (−100), then (−100) ÷ 25 = (−4). The rules: positive ÷ positive = positive, negative ÷ negative = positive, positive ÷ negative = negative, negative ÷ positive = negative. Same sign = positive result, different signs = negative result.</p>
+      </div>
+    </section>
+
+    <!-- DEEP DIVES -->
+    <section>
+      <h3>Deep Dives into Integer Operations</h3>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Brahmagupta's Ancient Rules</div>
+        <p>In 628 CE, the mathematician Brahmagupta wrote about integer multiplication using the concepts of "fortune" (positive) and "debt" (negative). His rules:</p>
+        <ul>
+          <li>"The product of two fortunes is a fortune" (positive × positive = positive)</li>
+          <li>"The product of two debts is a fortune" (negative × negative = positive)</li>
+          <li>"The product of a debt and a fortune is a debt" (negative × positive = negative)</li>
+        </ul>
+        <p>These ancient rules were revolutionary — they were the first explicit articulation of integer arithmetic, laying groundwork for algebra itself!</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Commutativity & Associativity of Multiplication</div>
+        <p>Does the order matter? 3 × (−4) = −12 and (−4) × 3 = −12. Yes, order doesn't matter: a × b = b × a. This is commutativity.</p>
+        <p>What about grouping? (5 × −3) × 4 = (−15) × 4 = −60, and 5 × ((−3) × 4) = 5 × (−12) = −60. Grouping doesn't matter either: (a × b) × c = a × (b × c). This is associativity. These properties hold for integers just as they do for positive numbers!</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Distributive Property with Negative Numbers</div>
+        <p>Does the distributive property work? Test: 5 × (4 + (−2)) = 5 × 2 = 10, and 5 × 4 + 5 × (−2) = 20 + (−10) = 10. Yes! And (−2) × (4 + (−3)) = (−2) × 1 = −2, and (−2) × 4 + (−2) × (−3) = −8 + 6 = −2. The distributive property holds for all integers: a × (b + c) = (a × b) + (a × c). This is crucial for algebra.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 4: The Elevator Problem in Context</div>
+        <p>An elevator descends into a mining shaft at 3 metres per minute. After 60 minutes from ground level (0), where is it? Method 1: 0 − 180 = −180 (subtract 180 metres). Method 2: 60 × (−3) = −180 (60 minutes times downward speed). Both give −180 metres (180 metres below ground). Integer multiplication elegantly captures both magnitude and direction!</p>
+      </div>
+    </section>
+
+    <!-- ERROR TRAP -->
+    <section class="error-trap">
+      <h4>Common Error Trap: Confusing Sign Rules in Multiplication</h4>
+      <p><strong>The Mistake:</strong> Students often think (−5) × (−3) = −15 (applying "negative times negative equals negative"). Or they might think negative × negative should still be negative because "two negatives don't cancel in real life."</p>
+      <p><strong>Why It Happens:</strong> The token model isn't intuitive at first. Students understand (−5) × 3 = −15 (place negatives repeatedly), but struggle with (−5) × (−3) because "removing negative tokens" is abstract.</p>
+      <p><strong>The Fix:</strong> Visualize the pattern:
+        <br>5 × 3 = 15
+        <br>(−5) × 3 = −15 (flip the sign)
+        <br>(−5) × (−3) = 15 (flip twice, back to positive!)
+        <br>Or use the token model precisely: removing negatives leaves positives. Practice with concrete sequences: (−1)×(−1)=1, (−1)×(−2)=2, (−2)×(−2)=4. The pattern becomes clear.</p>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-sandbox">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">What is (−6) × 7?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: −42</strong> One number is negative, one is positive. The result is negative. Using tokens: place 7 negatives 6 times = 42 negatives = −42.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">What is (−8) × (−5)?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: 40</strong> Both numbers are negative. The result is positive. Using tokens: remove 5 negatives 8 times from zero pairs leaves 40 positives = 40.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">Why does negative × negative = positive make sense in the elevator problem?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Think of it this way:</strong> If the elevator is going down (negative speed), and we reverse time (negative direction in time), then effectively the elevator is going up! Two negations reverse each other, resulting in a positive outcome. Mathematically, (−3 m/min) × (−60 min) = +180 metres moved upward (or 180 metres gained in the backward time direction).</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">A cement company earns ₹8 profit per white cement bag and ₹5 loss per grey cement bag. Why can we write this as 8 and −5?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Representing direction with integers:</strong> Profit (gain) is positive direction: +8. Loss (reduction) is negative direction: −5. The total profit/loss = 3000(8) + 5000(−5) = 24000 − 25000 = −1000 (a loss of ₹1000). Integers let us combine gains and losses in one calculation.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">A temperature drops 5°C every hour for 4 hours. Write an expression and find the total change.</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Expression:</strong> 4 × (−5) = −20°C</p>
+          <p><strong>Explanation:</strong> The rate is −5°C per hour (dropping). Over 4 hours, the total change is 4 × (−5) = −20°C (a 20°C drop). If it started at 8°C, it ends at 8 + (−20) = −12°C.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">Use the distributive property to simplify (−3) × (5 + (−2)) without multiplying (−3) by (5 + (−2)) directly.</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Solution:</strong> (−3) × (5 + (−2)) = (−3) × 5 + (−3) × (−2) = −15 + 6 = −9</p>
+          <p><strong>Check:</strong> (−3) × (5 + (−2)) = (−3) × 3 = −9 ✓</p>
+          <p>The distributive property splits the multiplication, making it easier to compute: negative times positive = negative (−15), negative times negative = positive (6), then add: −15 + 6 = −9.</p>
+        </details>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter9.html" class="nav-link prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">Chapter 9</span>
+      </a>
+      <a href="chapter11.html" class="nav-link next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">Chapter 11</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

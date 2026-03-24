@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11: Finding Common Ground — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+    h1, h2, h3, h4, h5 { font-family: 'Bricolage Grotesque', sans-serif; }
+    .hook-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .hook-label { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; opacity: 0.9; }
+    .feynman-bridge { background: #f0f4ff; border-left: 4px solid #667eea; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .bridge-label { font-size: 0.9rem; font-weight: 600; color: #667eea; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .logic-ladder { margin: 2rem 0; }
+    .logic-step { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #667eea; }
+    .logic-step:hover { border-left-color: #764ba2; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1); }
+    .deep-dive { background: #fffaeb; border: 2px solid #ffc107; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; }
+    .dd-label { font-size: 0.85rem; font-weight: 700; color: #f57f17; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .error-trap { background: #ffebee; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .error-trap h4 { color: #d32f2f; margin-top: 0; }
+    .socratic-sandbox { background: #e8f5e9; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .quiz-level { background: white; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; border-left: 4px solid #4caf50; }
+    .level-badge { display: inline-block; background: #4caf50; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-question { font-weight: 600; margin: 0.5rem 0; }
+    details { cursor: pointer; }
+    details summary { font-weight: 500; color: #667eea; }
+    details[open] summary { color: #764ba2; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    header.chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    nav.breadcrumb { font-size: 0.9rem; margin-bottom: 2rem; }
+    nav.breadcrumb a { color: #667eea; text-decoration: none; }
+    nav.chapter-nav { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .nav-link { text-decoration: none; color: #667eea; font-weight: 600; display: flex; flex-direction: column; align-items: flex-start; }
+    .next { align-items: flex-end; }
+    .nav-label { font-size: 0.85rem; opacity: 0.7; margin-bottom: 0.3rem; }
+    .nav-title { font-size: 1rem; }
+    footer { background: #f5f5f5; padding: 2rem; text-align: center; color: #666; margin-top: 3rem; font-size: 0.9rem; }
+    ul { margin: 1rem 0; padding-left: 2rem; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 11</span>
+      <h1>Finding Common Ground</h1>
+      <p class="chapter-subtitle">HCF & LCM: Discovering Patterns in Prime Factorisation</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 11</span>
+    </nav>
+
+    <!-- HOOK SECTION -->
+    <section class="hook-box">
+      <div class="hook-label">The Practical Mystery</div>
+      <h2>Tiling a Room Perfectly</h2>
+      <p>Sameeksha is building a new house with a main room 12 feet by 16 feet. She wants to cover it with square tiles, using as few tiles as possible. What size tiles should she buy?</p>
+      <p>The tile side must divide evenly into both 12 and 16. The factors of 12 are {1, 2, 3, 4, 6, 12}. The factors of 16 are {1, 2, 4, 8, 16}. Common factors are {1, 2, 4}. To minimize the number of tiles, use the largest common factor: 4 feet.</p>
+      <p>With 4 ft tiles, she needs (12÷4) × (16÷4) = 3 × 4 = 12 tiles. If she used 1 ft tiles, she'd need 192! This is the power of finding the Highest Common Factor (HCF).</p>
+    </section>
+
+    <!-- FEYNMAN BRIDGE SECTION -->
+    <section class="feynman-bridge">
+      <div class="bridge-label">Real-World Analogy</div>
+      <h3>Making Torans: Finding Common Ground</h3>
+      <p>Anshu and Guna make cloth torans (decorative strips) for festivals. Anshu uses 6 cm strips, Guna uses 8 cm strips. If they want to make torans of the same length, what's the shortest length they can both make?</p>
+      <p>Anshu can make: 6, 12, 18, 24, 30, 36, 42, 48 cm torans (multiples of 6).
+      <br>Guna can make: 8, 16, 24, 32, 40, 48 cm torans (multiples of 8).
+      <br>Common lengths: 24, 48, 72... The shortest is 24 cm — the Least Common Multiple (LCM).</p>
+      <p>HCF finds what's shared (common factors). LCM finds where they meet (common multiples). Prime factorisation is the key that unlocks both.</p>
+    </section>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <section class="logic-ladder">
+      <h3>HCF, LCM & Prime Factorisation: Step by Step</h3>
+
+      <div class="logic-step">
+        <h4>Step 1: What Are Primes and Prime Factorisation?</h4>
+        <p>A prime number has only 1 and itself as factors (2, 3, 5, 7, 11, ...). Any number can be written as a product of primes. For example: 90 = 2 × 3 × 3 × 5. This is the prime factorisation. The remarkable fact: no matter how you break down 90, you'll always get the same prime factors (just possibly in a different order).</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 2: The Division Method for Prime Factorisation</h4>
+        <p>To find prime factors, repeatedly divide by the smallest prime that divides evenly. For 105: divide by 3 → 35. Divide 35 by 5 → 7. 7 is prime, stop. So 105 = 3 × 5 × 7. This beats random guessing because we work systematically from smallest primes upward.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 3: Finding All Factors from Prime Factorisation</h4>
+        <p>If 225 = 5 × 5 × 3 × 3, then any factor must be a "subpart" of this factorisation. Factors of 225 include: 1, 3, 5, 9 (=3×3), 15 (=3×5), 25 (=5×5), 45 (=3×3×5), 75 (=3×5×5), 225. We systematically combine prime factors to find all factors!</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 4: Finding HCF Using Prime Factorisation</h4>
+        <p>To find HCF of 45 and 75: First, prime factorise both. 45 = 3 × 3 × 5 and 75 = 3 × 5 × 5. Common primes: 3 (once in both) and 5 (once in both). HCF = 3 × 5 = 15. The key: take the minimum count of each common prime. If 45 had three 3s but 75 had only one, we'd take one 3.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 5: Finding LCM Using Prime Factorisation</h4>
+        <p>For LCM of 96 and 360: Prime factorise both. 96 = 2⁵ × 3 and 360 = 2³ × 3² × 5. For LCM, include each prime with its maximum count: 2⁵ (five 2s from 96), 3² (two 3s from 360), and 5¹ (one 5 from 360). LCM = 2⁵ × 3² × 5 = 32 × 9 × 5 = 1440. The key: take the maximum count of each prime appearing.</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 6: The HCF × LCM Property</h4>
+        <p>Here's a beautiful relationship: HCF × LCM = Product of two numbers. For example, HCF(45, 105) = 15 and LCM(45, 105) = 315. Then 15 × 315 = 4725 and 45 × 105 = 4725. Why? HCF takes common primes (minimum count), LCM takes all primes (maximum count). Together, they reconstruct the product!</p>
+      </div>
+
+      <div class="logic-step">
+        <h4>Step 7: Efficient Procedure with Division Layout</h4>
+        <p>Instead of separate prime factorisations, divide both numbers simultaneously by common factors. When no common factor remains, the numbers at the bottom are coprime. All divisors on the left give the HCF. All divisors on the left times the numbers at the bottom give the LCM. This combines both processes into one efficient procedure.</p>
+      </div>
+    </section>
+
+    <!-- DEEP DIVES -->
+    <section>
+      <h3>Deep Dives into HCF & LCM</h3>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Consecutive Numbers Always Have HCF = 1</div>
+        <p>Claim: HCF of any two consecutive numbers is 1. Proof: Let the numbers be n and n+1. If they share a common factor d > 1, then d divides n and d divides (n+1). So d divides (n+1) − n = 1. But the only divisor of 1 is 1 itself. Therefore d = 1, contradicting d > 1. So consecutive numbers are always coprime (HCF = 1).</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Two Consecutive Even Numbers</div>
+        <p>What's HCF of 12 and 14? They're consecutive even numbers: 12 = 2 × 6 and 14 = 2 × 7. HCF = 2 × HCF(6, 7) = 2 × 1 = 2. In general, if two even numbers are consecutive (differ by 2), their HCF is 2. Why? Both are divisible by 2, but their "odd parts" (6 and 7, which are consecutive) share no common factor.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: When One Number Divides the Other</div>
+        <p>If 6 divides 18 (since 18 = 6 × 3), then HCF(6, 18) = 6 and LCM(6, 18) = 18. In general, if m divides k·m, then HCF(m, k·m) = m and LCM(m, k·m) = k·m. The smaller number is always the HCF, the larger is always the LCM.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 4: The Jump Jackpot Game Connection</div>
+        <p>The "Jump Jackpot" game asks: what's the longest jump that lands on both numbers? If treasures are at 14 and 30, what jump size lands on both? You need a number that divides both. The longest such jump is HCF(14, 30) = 2. You land on: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30. HCF directly solves this ancient game!</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 5: The Idli-Vada Game and LCM</div>
+        <p>In the Idli-Vada game, players call "idli" on multiples of one number, "vada" on multiples of another. When will they call "idli-vada" together? On common multiples! The first common multiple is the LCM. For 4 and 6: multiples of 4 are {4, 8, 12, 16, ...} and multiples of 6 are {6, 12, 18, ...}. First common: 12. LCM(4, 6) = 12 wins the game!</p>
+      </div>
+    </section>
+
+    <!-- ERROR TRAP -->
+    <section class="error-trap">
+      <h4>Common Error Trap: Confusing HCF and LCM</h4>
+      <p><strong>The Mistake:</strong> Students compute prime factorisation correctly but then apply wrong rules. They might take the minimum of all primes for LCM (which gives HCF) or the maximum for HCF (which gives LCM).</p>
+      <p><strong>Why It Happens:</strong> The words "highest" and "lowest" refer to position in the factor list, not to which rule to use. Students mix up the logic.</p>
+      <p><strong>The Fix:</strong> Remember the purposes. HCF is "what they share" — you need primes common to BOTH numbers, taken the minimum number of times (to ensure divisibility by both). LCM is "where they meet" — you need every prime from either number, taken the maximum number of times (to ensure it's a multiple of both). Test: HCF ≤ both numbers ≤ LCM. If this fails, you got them backward. For 12 and 18: HCF should be ≤ 12, LCM should be ≥ 18. HCF=6 ✓, LCM=36 ✓.</p>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-sandbox">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">What is the HCF of 84 and 108?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: 12</strong></p>
+          <p>Prime factorisation: 84 = 2² × 3 × 7 and 108 = 2² × 3³. Common primes: 2² and 3. HCF = 2² × 3 = 4 × 3 = 12.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">PREDICT</span>
+        <div class="quiz-question">What is the LCM of 30 and 72?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: 360</strong></p>
+          <p>Prime factorisation: 30 = 2 × 3 × 5 and 72 = 2³ × 3². Taking maximum counts: 2³ × 3² × 5 = 8 × 9 × 5 = 360.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">Why does Sameeksha's tiling room problem require the HCF and not the LCM?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Logic:</strong> The tile side must divide evenly into both room dimensions (12 and 16). She wants as few tiles as possible, which means the largest possible tile size. The largest common divisor is HCF. If she used LCM, the tiles would be huge (much larger than the room), which doesn't make sense.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">WHY</span>
+        <div class="quiz-question">Why does the toran-making problem (Anshu & Guna) require the LCM and not the HCF?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Logic:</strong> Anshu makes lengths that are multiples of 6; Guna makes lengths that are multiples of 8. For them to make the same-length toran, they need a common multiple. The shortest such length is the LCM. Using HCF instead would give 2 cm, which is too small and doesn't help solve the problem.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">Use the property HCF × LCM = Product to find LCM(45, 105) if you know HCF(45, 105) = 15.</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Solution:</strong> HCF × LCM = 45 × 105 = 4725. Since HCF = 15, we have 15 × LCM = 4725. So LCM = 4725 ÷ 15 = 315.</p>
+          <p><strong>Verification:</strong> 45 = 3² × 5 and 105 = 3 × 5 × 7. LCM = 3² × 5 × 7 = 9 × 5 × 7 = 315 ✓</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">APPLY</span>
+        <div class="quiz-question">Lekhana bought 84 kg rice from Farm A and 108 kg from Farm B. She wants bags of equal weight from each farm, using as few bags as possible. How heavy should each bag be?</div>
+        <details>
+          <summary>Reveal Answer & Explanation</summary>
+          <p><strong>Answer: 12 kg per bag</strong></p>
+          <p><strong>Reasoning:</strong> The bag weight must divide both 84 and 108 (so she can pack each farm's rice exactly). She wants the fewest bags, meaning the heaviest possible bag. This is HCF(84, 108) = 12 kg.</p>
+          <p><strong>Count:</strong> Farm A: 84 ÷ 12 = 7 bags. Farm B: 108 ÷ 12 = 9 bags. Total: 16 bags (much fewer than if she used smaller bags).</p>
+        </details>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter10.html" class="nav-link prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">Chapter 10</span>
+      </a>
+      <a href="chapter12.html" class="nav-link next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">Chapter 12</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

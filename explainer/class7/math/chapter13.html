@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connecting the Dots — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .hook-label { font-weight: 600; color: #856404; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .feynman-bridge { background: #e7f3ff; border-left: 4px solid #0066cc; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .bridge-label { font-weight: 600; color: #004a99; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .logic-ladder { background: #f0f8f0; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; border: 1px solid #90ee90; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: white; border-left: 3px solid #28a745; padding-left: 1.5rem; }
+    .logic-step h4 { color: #1e7e34; margin: 0 0 0.5rem 0; }
+    .deep-dive { background: #f9f2ff; border-left: 4px solid #9c27b0; padding: 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+    .dd-label { font-weight: 600; color: #6a1b9a; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .error-trap { background: #ffe6e6; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .error-trap h4 { color: #b71c1c; margin-top: 0; }
+    .socratic-sandbox { background: #f5f5f5; padding: 2rem; margin: 2rem 0; border-radius: 4px; }
+    .quiz-level { margin: 1.5rem 0; padding: 1.5rem; background: white; border: 1px solid #ddd; border-radius: 4px; }
+    .level-badge { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .level-badge.predict { background: #fff3cd; color: #856404; }
+    .level-badge.why { background: #cfe2ff; color: #084298; }
+    .level-badge.apply { background: #d1e7dd; color: #0f5132; }
+    .quiz-question { margin: 1rem 0; font-weight: 500; }
+    details { margin: 1rem 0; }
+    details > summary { cursor: pointer; padding: 0.5rem; background: #f0f0f0; border-radius: 3px; font-weight: 500; }
+    details > summary:hover { background: #e0e0e0; }
+    details > p { margin-top: 1rem; padding: 1rem; background: #fffbf0; border-left: 3px solid #ff9800; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 13</span>
+      <h1>Connecting the Dots</h1>
+      <p class="chapter-subtitle">Central Tendency: Mean, Median, and Mode</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 13</span>
+    </nav>
+
+    <!-- HOOK -->
+    <section class="hook-section">
+      <div class="hook-box">
+        <div class="hook-label">The Mystery</div>
+        <h3>Who's the Better Batter?</h3>
+        <p>Two cricketers play four matches with these scores:</p>
+        <ul>
+          <li><strong>Shubman:</strong> 0, 17, 21, 90 runs</li>
+          <li><strong>Yashasvi:</strong> 67, 55, 18, 35 runs</li>
+        </ul>
+        <p>Who played better? Shubman scored the highest (90), but Yashasvi scored more total runs (175 vs 128). How do we compare fairly when numbers are scattered all over the place?</p>
+        <p>Statistics teaches us to find a single "representative" number that tells us about the whole group. This is the power of central tendency.</p>
+      </div>
+    </section>
+
+    <!-- FEYNMAN BRIDGE -->
+    <section class="feynman-section">
+      <div class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Fair Share vs. Peak Performance</h3>
+        <p>Imagine your class collected guavas. Shreyas's group of 5 people collected 30 guavas, while Parag's group of 6 people collected 30 guavas. Both groups have the same total, but if they share equally, Shreyas's group gets 30 ÷ 5 = 6 guavas each, while Parag's group gets 30 ÷ 6 = 5 guavas each.</p>
+        <p>The <strong>average (mean)</strong> is like "fair sharing." It's the number everyone would get if we pooled everything and divided it equally. This single number represents the whole group's behavior, hiding the differences but showing the overall trend.</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE: Logic Ladder -->
+    <section class="core-section">
+      <h2>Why We Need Representative Values</h2>
+
+      <div class="logic-ladder">
+        <h3>The Logic Ladder: From Raw Data to Understanding</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Recognize the Problem with Raw Data</h4>
+          <p>Raw data like "67, 55, 18, 35" doesn't immediately tell us the story. We could say "the highest is 67" or "the lowest is 18," but these are extremes, not typical values.</p>
+          <p><strong>Why this matters:</strong> Humans struggle to understand long lists of numbers. We need a summary.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Introduce the Mean (Average)</h4>
+          <p>The <strong>mean</strong> = Sum of all values ÷ Number of values</p>
+          <p>For Yashasvi: (67 + 55 + 18 + 35) ÷ 4 = 175 ÷ 4 = 43.75 runs per match</p>
+          <p><strong>Why this matters:</strong> The mean "balances" the ups and downs. It tells us if, on average, a player scored around 43.75 runs per match.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Understand Mean as Equal Share</h4>
+          <p>The mean answers: "If this player had scored the same number of runs in each match, how many would it be?"</p>
+          <p>If Yashasvi scores 43.75 in each of 4 matches, his total would be 43.75 × 4 = 175 runs, matching his actual total.</p>
+          <p><strong>Why this matters:</strong> This "fair share" interpretation makes the mean concrete and intuitive.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Compare Using Means</h4>
+          <p>Shubman: (0 + 17 + 21 + 90) ÷ 4 = 128 ÷ 4 = 32 runs per match</p>
+          <p>Yashasvi: 43.75 runs per match</p>
+          <p>On average, Yashasvi performed better because 43.75 > 32.</p>
+          <p><strong>Why this matters:</strong> Now we have a fair comparison. The means account for different numbers of observations and different distributions.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Notice When the Mean Can Mislead</h4>
+          <p>In a second series of 5 matches, suppose a player scores: 0, 0, 0, 0, 100. The mean is 20, but the player wasn't consistent — they failed for 4 matches and had one huge score.</p>
+          <p><strong>Why this matters:</strong> The mean hides variability. A player with scores 19, 20, 21, 20, 20 (mean 20) is very different from 0, 0, 0, 0, 100 (also mean 20) but the mean alone doesn't show this.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: Introduce Spread and Consistency</h4>
+          <p>We describe data using more than one number:</p>
+          <ul>
+            <li><strong>Lowest value, highest value:</strong> Shows the range</li>
+            <li><strong>Difference between highest and lowest:</strong> Shows spread</li>
+            <li><strong>Mean:</strong> Shows the center</li>
+          </ul>
+          <p>For Shubman: Lowest 0, highest 90, difference (range) 90. For Yashasvi: Lowest 18, highest 67, difference 49. Even though Yashasvi has a higher mean, his range is narrower — more consistent!</p>
+          <p><strong>Why this matters:</strong> Multiple numbers together tell the full story better than one alone.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Generalize the Concept of Central Tendency</h4>
+          <p><strong>Central Tendency:</strong> A single value that represents a whole group of data. It's a "typical" or "central" value.</p>
+          <p>The mean is one such measure. Others include median (middle value when sorted) and mode (most frequent value). Each answers a different question:</p>
+          <ul>
+            <li>Mean: "What's the typical/average value?"</li>
+            <li>Median: "What's the middle when sorted?"</li>
+            <li>Mode: "What value appears most often?"</li>
+          </ul>
+          <p><strong>Why this matters:</strong> Different representative values are useful for different questions. A student learns to choose the right tool for their question.</p>
+        </div>
+      </div>
+
+      <!-- DEEP DIVES -->
+      <h2 style="margin-top: 3rem;">Exploring Deeper</h2>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Statistical Thinking in Real Life</div>
+        <h4>From Questions to Data to Statements</h4>
+        <p>A <strong>statistical question</strong> is one where we expect different answers from different people or observations. Examples:</p>
+        <ul>
+          <li>"How tall are Grade 7 students?" (Answers vary: 140 cm, 145 cm, 155 cm, etc.)</li>
+          <li>"How much do onions cost in our town?" (Price varies by shop and time)</li>
+          <li>"How many flowers bloom in a garden each day?" (Varies day to day: 2, 7, 9, 4, 3)</li>
+        </ul>
+        <p>A <strong>statistical statement</strong> summarizes this variation. For flowers: "On average, 5 flowers bloom daily." This statement accounts for the fact that sometimes it's 2, sometimes 9, but typically around 5.</p>
+        <p><strong>The Logic:</strong> Statistics transforms a messy collection of varied numbers into a simple statement that captures the essence of the data.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Comparing Two Locations — Onion Prices</div>
+        <h4>When Do We Say "Yahapur" vs "Wahapur" is Costlier?</h4>
+        <p>Consider monthly onion prices over 12 months in two towns. One student says "the highest price in Wahapur is ₹60, so Wahapur is costlier." Another says "Yahapur's total is ₹458, and Wahapur's is ₹450, so Yahapur is costlier."</p>
+        <p>Which is right? Both! But they're using different measures:</p>
+        <ul>
+          <li><strong>Comparing highest values:</strong> Wahapur wins (₹60 > ₹56)</li>
+          <li><strong>Comparing totals:</strong> Yahapur wins (₹458 > ₹450)</li>
+          <li><strong>Comparing means:</strong> Yahapur ≈ ₹38.17/month, Wahapur ≈ ₹37.50/month (Yahapur slightly higher)</li>
+          <li><strong>Comparing consistency:</strong> Yahapur's prices range from ₹24–₹59 (spread 35), Wahapur's from ₹17–₹60 (spread 43). Yahapur is more stable.</li>
+        </ul>
+        <p><strong>The Lesson:</strong> "Costlier" is ambiguous. Use a dot plot (visualization) and calculate multiple measures (mean, range, maximum) to give a complete picture.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Historical Note — Ancient Indian Terminology</div>
+        <h4>Samamiti: The "Equal Measure"</h4>
+        <p>Ancient Indian mathematicians called the arithmetic mean <strong>samamiti</strong> ("sama" = equal). Brahmagupta (628 CE) called it samarajju (equal measure of a line segment). Later, Bhāskarācārya (1150 CE) and others used sāmya (equality, equability).</p>
+        <p>This terminology reveals deep insight: the arithmetic mean is the value that makes things "equal" — if everyone gets the mean share, all are equal. It's about fairness and balance, not just arithmetic.</p>
+        <p><strong>Why This Matters:</strong> Mathematics isn't just symbols. It's connected to real ideas about equality, balance, and fair representation.</p>
+      </div>
+    </section>
+
+    <!-- COMMON ERROR TRAP -->
+    <section class="error-section">
+      <div class="error-trap">
+        <h4>Common Error Trap: Confusing "Total" with "Average"</h4>
+        <p><strong>The Mistake:</strong> A teacher asks, "In this second series, who's better?" without noting that Shubman played 5 matches but Yashasvi played only 4. A student says, "Shubman's total is 110, Yashasvi's is 96, so Shubman is better!" But they played different numbers of matches!</p>
+        <p><strong>The Root Cause:</strong> Total is influenced by how many times you play/measure. If Shubman played 10 matches and Yashasvi played 1, naturally Shubman's total could be higher even if he plays worse on average.</p>
+        <p><strong>Prevention Tip:</strong> Always use the mean (total ÷ number) when comparing groups of different sizes. The mean "levels the playing field."</p>
+        <p><strong>Correct Comparison:</strong> Shubman's mean: 110 ÷ 5 = 22. Yashasvi's mean: 96 ÷ 4 = 24. Yashasvi averaged 24 runs per match, better than Shubman's 22.</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-section">
+      <div class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Thinking</h2>
+
+        <!-- PREDICT Level -->
+        <div class="quiz-level predict">
+          <span class="level-badge predict">Predict</span>
+          <div class="quiz-question">If a student's test scores are 60, 80, and 80, predict the mean without calculating.</div>
+          <details>
+            <summary>Hint: What's the range of possible means?</summary>
+            <p>The mean must be between the lowest (60) and highest (80). It can't be 50 or 90.</p>
+          </details>
+          <details>
+            <summary>Go deeper: Will the mean be closer to 60 or to 80?</summary>
+            <p>Since two scores (80, 80) cluster at the high end and only one (60) is low, the mean is pulled more toward 80. Expect around 73–75.</p>
+          </details>
+        </div>
+
+        <!-- WHY Level -->
+        <div class="quiz-level why">
+          <span class="level-badge why">Why</span>
+          <div class="quiz-question">Why is the mean sometimes called the "fair share" value?</div>
+          <details>
+            <summary>Think: What would happen if you pooled and redistributed?</summary>
+            <p>If you have 30 guavas and 5 people, everyone gets 6. This 6 is the mean. If instead Person A got 3, Person B got 7, Person C got 6, Person D got 8, Person E got 6, and you redistributed to make it fair, everyone gets 6 — the mean.</p>
+          </details>
+          <details>
+            <summary>Can this concept extend to other situations?</summary>
+            <p>Yes! If a company employs people with vastly different salaries, the mean salary shows what a "fair equal salary for all" would be if they pooled and redistributed.</p>
+          </details>
+        </div>
+
+        <!-- APPLY Level -->
+        <div class="quiz-level apply">
+          <span class="level-badge apply">Apply</span>
+          <div class="quiz-question">Vaishnavi tracked flowers blooming: 2, 7, 9, 4, 3 flowers. Calculate the average and explain what it means in plain language.</div>
+          <details>
+            <summary>Hint: Add them up, then divide.</summary>
+            <p>Total: 2 + 7 + 9 + 4 + 3 = 25. Days: 5. Mean: 25 ÷ 5 = 5 flowers per day.</p>
+          </details>
+          <details>
+            <summary>Now interpret: What does "5 flowers per day" tell you?</summary>
+            <p>On average, 5 flowers bloomed daily. Some days fewer (2, 3, 4), some days more (7, 9), but the typical day had 5. If flowers bloomed at a steady rate, it would be 5 per day.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter12.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 12</span></a>
+      <a href="chapter14.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Chapter 14</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

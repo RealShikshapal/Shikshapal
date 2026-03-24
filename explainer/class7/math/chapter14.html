@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructions and Tilings — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .hook-label { font-weight: 600; color: #856404; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .feynman-bridge { background: #e7f3ff; border-left: 4px solid #0066cc; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .bridge-label { font-weight: 600; color: #004a99; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .logic-ladder { background: #f0f8f0; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; border: 1px solid #90ee90; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: white; border-left: 3px solid #28a745; padding-left: 1.5rem; }
+    .logic-step h4 { color: #1e7e34; margin: 0 0 0.5rem 0; }
+    .deep-dive { background: #f9f2ff; border-left: 4px solid #9c27b0; padding: 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+    .dd-label { font-weight: 600; color: #6a1b9a; margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; }
+    .error-trap { background: #ffe6e6; border-left: 4px solid #d32f2f; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .error-trap h4 { color: #b71c1c; margin-top: 0; }
+    .socratic-sandbox { background: #f5f5f5; padding: 2rem; margin: 2rem 0; border-radius: 4px; }
+    .quiz-level { margin: 1.5rem 0; padding: 1.5rem; background: white; border: 1px solid #ddd; border-radius: 4px; }
+    .level-badge { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .level-badge.predict { background: #fff3cd; color: #856404; }
+    .level-badge.why { background: #cfe2ff; color: #084298; }
+    .level-badge.apply { background: #d1e7dd; color: #0f5132; }
+    .quiz-question { margin: 1rem 0; font-weight: 500; }
+    details { margin: 1rem 0; }
+    details > summary { cursor: pointer; padding: 0.5rem; background: #f0f0f0; border-radius: 3px; font-weight: 500; }
+    details > summary:hover { background: #e0e0e0; }
+    details > p { margin-top: 1rem; padding: 1rem; background: #fffbf0; border-left: 3px solid #ff9800; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 14</span>
+      <h1>Constructions and Tilings</h1>
+      <p class="chapter-subtitle">Geometric Precision with Ruler and Compass</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb">
+      <a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 14</span>
+    </nav>
+
+    <!-- HOOK -->
+    <section class="hook-section">
+      <div class="hook-box">
+        <div class="hook-label">The Mystery</div>
+        <h3>Drawing Symmetrical Eyes — Precisely</h3>
+        <p>You want to draw symmetrical eyes on paper. Free-hand drawing might look okay, but how do you ensure perfect symmetry? How do you place the arcs so they look exactly balanced?</p>
+        <p>In Grade 6, you learned to estimate. Now, in Grade 7, you'll learn to construct these shapes with mathematical precision using only an unmarked ruler and a compass — the simplest tools available since ancient times.</p>
+      </div>
+    </section>
+
+    <!-- FEYNMAN BRIDGE -->
+    <section class="feynman-section">
+      <div class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Constructions as Problem-Solving Blueprints</h3>
+        <p>Imagine architects designing buildings centuries ago, before computers and digital tools. They used physical tools — rope, straightedges, and circles — to design geometric shapes precisely. A trefoil arch (seen in Central Park and Indian forts) isn't random curves; it's based on carefully constructed angles and equal distances.</p>
+        <p>When you learn to "construct" shapes, you're learning the ancient methodology of precision geometry. You're discovering that perfect symmetry, regularity, and beauty arise from simple logical rules about equal distances and equal angles. These constructions are the DNA of architecture, art, and engineering.</p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CORE: Logic Ladder -->
+    <section class="core-section">
+      <h2>Why Constructions Matter: The Logic of Precision</h2>
+
+      <div class="logic-ladder">
+        <h3>The Logic Ladder: From Observation to Proof to Method</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Observe the Eye Construction Problem</h4>
+          <p>You want to draw two symmetrical arcs for eyes. Each eye needs two points (centers A and B) from which to draw arcs. The challenge: how do you place A and B so the eye looks perfectly balanced?</p>
+          <p><strong>Key constraint:</strong> For symmetry around line XY, the upper arc and lower arc must have the same radius. This means: AX = AY (so A is equidistant from X and Y) and BX = BY (so B is equidistant from X and Y).</p>
+          <p><strong>Why this matters:</strong> We've translated a visual problem into a geometric condition (equal distances).</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Discover the Perpendicular Bisector Property</h4>
+          <p><strong>Key discovery:</strong> Any point that is equidistant from X and Y must lie on a special line — the perpendicular bisector of XY.</p>
+          <p>To see why: If A is equidistant from X and Y (AX = AY), and we draw a line from A to the midpoint O of XY, then by congruence (SSS), triangles AOX and AOY are identical. Therefore, angles AOX and AOY are equal. Since they add to 180° (a straight line), each is 90°. So AO is perpendicular to XY.</p>
+          <p><strong>Why this matters:</strong> We've discovered a fundamental property: equidistant points form a line.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Prove the Perpendicular Bisector Construction Method</h4>
+          <p><strong>Method:</strong> From X and Y, draw two arcs above XY using the same radius. They meet at point A. Repeat below to get point B. Line AB is the perpendicular bisector.</p>
+          <p><strong>Why it works:</strong> Arc from X with radius r gives all points distance r from X. Arc from Y with radius r gives all points distance r from Y. Where they meet (point A), we have AX = r = AY. So A lies on the perpendicular bisector. Same for B. Two points determine a line, so AB is the perpendicular bisector.</p>
+          <p><strong>Why this matters:</strong> We've moved from observation to proof to a reliable construction method. Now any point on line AB will be equidistant from X and Y — perfect for placing eye centers.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Extend to 90° Angle Construction</h4>
+          <p>To construct a 90° angle at a point O on a line, first create a segment XY for which O is the midpoint. Then the perpendicular bisector of XY passes through O and is perpendicular to the original line — giving you your 90° angle!</p>
+          <p><strong>Why this matters:</strong> One technique (perpendicular bisector) unlocks multiple applications (symmetry, right angles).</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Develop Angle Bisection</h4>
+          <p><strong>Goal:</strong> Split an angle in half. <strong>Method:</strong> Mark points A and B equidistant from the angle's vertex O (on the angle's rays). Find a point C equidistant from A and B (by arcs). Then OC bisects the angle.</p>
+          <p><strong>Why it works:</strong> Triangles OBC and OAC are congruent (SSS), so angles BOC and AOC are equal. Congruence is our tool for proving equal angles.</p>
+          <p><strong>Why this matters:</strong> Equal angles and equal distances are the foundations of all constructions. Once you master these, you can construct 45°, 30°, 15°, and many other angles.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: Learn to Copy an Angle Exactly</h4>
+          <p><strong>Method:</strong> From angle vertex A, draw an arc intersecting the angle's rays at B and C. From a new point X, draw an arc of the same radius. Measure BC with a compass. Mark a point Y on the new arc such that YZ = BC (where Z is on the arc). Then angle YXZ equals angle BAC.</p>
+          <p><strong>Why it works:</strong> Triangles ABC and XYZ are congruent (SSS), so their angles are equal.</p>
+          <p><strong>Why this matters:</strong> Copying angles lets you reproduce patterns. Identical arm lengths (from compass) + identical angles (from copying) = exact pattern repetition.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Construct Parallel Lines</h4>
+          <p><strong>Method:</strong> To draw a line parallel to m through point B on transversal l: Copy the angle between m and l at point B. This creates equal corresponding angles, which guarantee parallel lines.</p>
+          <p><strong>Why this matters:</strong> Parallel lines are crucial for architecture, design, and tiling. Constructions give us a way to make them precisely.</p>
+        </div>
+      </div>
+
+      <!-- DEEP DIVES -->
+      <h2 style="margin-top: 3rem;">Exploring Deeper</h2>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Ancient Indian Methods (Śulba-Sūtras)</div>
+        <h4>Rope-Based Constructions from Vedic Times</h4>
+        <p>Long before compasses, ancient Indian mathematicians used ropes to construct geometric shapes. The Śulba-Sūtras (geometric texts from the Vedic period) contain methods for constructing perpendiculars and perpendicular bisectors using ropes and pegs.</p>
+        <p><strong>Kātyāyana's method:</strong> To find the perpendicular bisector of XY (marked on the ground with pegs), take a rope, fold it in half to mark its midpoint, fasten the ends to pegs at X and Y, and pull the midpoint above and below. The path traced is the perpendicular bisector.</p>
+        <p><strong>Why this works:</strong> The two halves of the rope are equal lengths. At any point you pull, both halves are fully stretched — so you're always equidistant from X and Y.</p>
+        <p><strong>Why this matters:</strong> Construction methods are universal. Ancient Vedic mathematicians and modern students use the same logic about equal distances, independent of tools.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Hexagons, Equilateral Triangles, and 360°</div>
+        <h4>Why Six Equilateral Triangles Tile Around a Point</h4>
+        <p>Each angle in an equilateral triangle is 60°. Six such angles sum to 6 × 60° = 360°, the complete angle around a point. This means six equilateral triangles fit perfectly around a central point with no gaps or overlaps!</p>
+        <p><strong>Application:</strong> This is why a regular hexagon (composed of 6 equilateral triangles) tiles the plane perfectly. Bee hives use hexagonal cells for efficiency — no wasted space.</p>
+        <p><strong>Construction insight:</strong> To build a regular hexagon, construct a 60° angle (by making an equilateral triangle), then use angle bisection to get 30°, and combine these to make the hexagon's interior angles of 120°.</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Tiling and the Checkerboard Trick</div>
+        <h4>Proving a Region Cannot Be Tiled</h4>
+        <p>Suppose you want to tile a shape with 2×1 tiles. If the shape has an even number of unit squares, can you always tile it? Not always!</p>
+        <p><strong>The trick:</strong> Color the unit squares like a checkerboard (black and white). Each 2×1 tile covers exactly one black and one white square. To tile successfully, you need equal numbers of black and white squares.</p>
+        <p>In a 5×3 grid, if you remove one unit square, you get 14 squares (even, good). But if you remove a white square, you have 7 black and 7 white — balanced! Remove a black square, you have 8 white and 6 black — unbalanced, impossible to tile.</p>
+        <p><strong>Why this matters:</strong> Colors are a clever problem-solving tool. A visual trick makes the problem concrete.</p>
+      </div>
+    </section>
+
+    <!-- COMMON ERROR TRAP -->
+    <section class="error-section">
+      <div class="error-trap">
+        <h4>Common Error Trap: Misplacing the Compass Radius</h4>
+        <p><strong>The Mistake:</strong> When constructing a perpendicular bisector, students sometimes forget to use the same radius for both arcs from X and Y. Or, they use different radii above and below the line XY.</p>
+        <p><strong>The Root Cause:</strong> Not understanding that "equal distance from X and Y" requires using the same radius. If you use different radii, the intersection points won't be equidistant.</p>
+        <p><strong>Prevention Tip:</strong> Before drawing, set your compass to a specific radius and say: "I will use this exact radius from both X and Y." Mark the radius on paper (with a tick mark) if needed. Verify your compass hasn't shifted.</p>
+        <p><strong>Check Yourself:</strong> After constructing, measure AX and AY with your compass. They should be identical. If not, redo the construction.</p>
+      </div>
+    </section>
+
+    <!-- SOCRATIC SANDBOX -->
+    <section class="socratic-section">
+      <div class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Thinking</h2>
+
+        <!-- PREDICT Level -->
+        <div class="quiz-level predict">
+          <span class="level-badge predict">Predict</span>
+          <div class="quiz-question">If you construct the perpendicular bisector of a line segment XY, will all points on this perpendicular bisector be at the same distance from X?</div>
+          <details>
+            <summary>Hint: Think about the definition.</summary>
+            <p>No. Every point on the perpendicular bisector is equidistant from X <em>and Y</em> (meaning distance to X equals distance to Y). But different points on the bisector are at different distances from both X and Y.</p>
+          </details>
+          <details>
+            <summary>Go deeper: If you pick two different points on the perpendicular bisector, how do their distances to X compare?</summary>
+            <p>They'll be at different distances from X. For instance, the midpoint O of XY is on the bisector at distance (half of XY) from X. A point higher on the bisector is farther from X.</p>
+          </details>
+        </div>
+
+        <!-- WHY Level -->
+        <div class="quiz-level why">
+          <span class="level-badge why">Why</span>
+          <div class="quiz-question">Why does the method of copying an angle (using SSS congruence) work? What would happen if you used a different radius for the arc at X?</div>
+          <details>
+            <summary>Think about triangle congruence.</summary>
+            <p>Copying relies on SSS: the two arcs have the same radius, and we transfer the chord length. If you used a different radius at X, the triangles wouldn't be congruent, and the angles wouldn't match.</p>
+          </details>
+          <details>
+            <summary>Can you construct the angle with different radii?</summary>
+            <p>Not with SSS congruence. However, there might be other methods using different congruence conditions (like SAS), but they're more complex.</p>
+          </details>
+        </div>
+
+        <!-- APPLY Level -->
+        <div class="quiz-level apply">
+          <span class="level-badge apply">Apply</span>
+          <div class="quiz-question">You want to construct a 60° angle at point A on a line segment AB. Describe the steps.</div>
+          <details>
+            <summary>Hint: What shape has 60° angles?</summary>
+            <p>An equilateral triangle! Each angle is 60°. So construct an equilateral triangle ABc where c is the third vertex.</p>
+          </details>
+          <details>
+            <summary>Fill in the full procedure.</summary>
+            <p>1. Draw an arc from A (centered at A, any radius, say r). 2. Mark point B on line AB at distance r from A (or use the existing point B if AB = r). 3. With the same radius r, draw an arc from B. 4. These arcs meet at point C. 5. Angle CAB = 60°. Why? Triangle ABC is equilateral (AB = AC = BC = r), so all angles are 60°.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <nav class="chapter-nav">
+      <a href="chapter13.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 13</span></a>
+      <a href="chapter15.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Chapter 15</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

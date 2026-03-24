@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with Fractions — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box, .feynman-bridge, .logic-ladder, .deep-dive, .error-trap, .socratic-sandbox {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+      border-left: 4px solid #2563eb;
+    }
+    .hook-label, .bridge-label, .dd-label, .level-badge {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+    .logic-step {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: white;
+      border-left: 3px solid #3b82f6;
+      border-radius: 4px;
+    }
+    .logic-step h4 {
+      color: #1e40af;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .logic-step p {
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .error-trap {
+      background: #fef3c7;
+      border-left-color: #f59e0b;
+    }
+    .error-trap h4 {
+      color: #b45309;
+    }
+    .quiz-level {
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    .level-badge {
+      background: #dbeafe;
+      color: #0369a1;
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+    details {
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    summary {
+      font-weight: 600;
+      color: #2563eb;
+      padding: 0.5rem;
+      background: #eff6ff;
+      border-radius: 4px;
+    }
+    details[open] summary {
+      background: #dbeafe;
+    }
+    details p {
+      margin-top: 1rem;
+      padding: 0 1rem;
+      color: #333;
+    }
+    .diagram-text {
+      background: #e0f2fe;
+      padding: 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      font-family: monospace;
+      line-height: 1.8;
+      color: #0c4a6e;
+    }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 8</span>
+      <h1>Working with Fractions</h1>
+      <p class="chapter-subtitle">Multiplication and division of fractions revealed through real-world journeys</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 8</span></nav>
+
+    <div class="container">
+      <!-- HOOK SECTION -->
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h2>Walking Fractional Distances</h2>
+        <p>Aaron walks 3 kilometers in 1 hour. How far does he walk in 5 hours? Easy—15 km. But what if he walks only 1/4 kilometer per hour? How far in 3 hours? And what if the tortoise walks 3 km in a fractional hour—say 1/5 hour? These questions require multiplying fractions, and the logic is identical to whole numbers, but it reveals hidden patterns about division and inverse operations.</p>
+      </section>
+
+      <!-- FEYNMAN BRIDGE -->
+      <section class="feynman-bridge">
+        <div class="bridge-label">Real-World Analogy</div>
+        <h3>Fractions as Parts of a Journey</h3>
+        <p>Imagine a 3 km journey divided into 5 equal segments. One segment is 3/5 km. Two segments are 2/5 × 3 = 6/5 km. Multiplying a fraction by a whole number means "taking that many segments." When you multiply by a fraction like 2/5, you're saying "take 2 out of 5 equal pieces." This visual understanding—cutting things up and reassembling them—is the foundation of fraction multiplication. Division works backward: "How many 1/4 kilometers fit in 8 kilometers?" Answer: 32 segments of 1/4 km.</p>
+      </section>
+
+      <!-- INTERACTIVE CORE: LOGIC LADDER -->
+      <section class="logic-ladder">
+        <h2>Logic Ladder: Mastering Fraction Operations</h2>
+
+        <div class="logic-step">
+          <h4>Step 1: Multiplying a Whole Number by a Fraction</h4>
+          <p>A tortoise walks 1/4 km per hour. In 3 hours, distance = 3 × (1/4) km = (1/4 + 1/4 + 1/4) km = 3/4 km. This is repeated addition. The method: multiply the numerator by the whole number. So n × (a/b) = (n × a) / b. Why? Because each fraction shares the same denominator, so you just count the parts: three parts of "quarter-kilometers" = three-quarters.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Multiplying by a Fraction of an Hour</h4>
+          <p>Aaron walks 3 km per hour. In 1/5 hour, how far? Distance = (1/5) × 3 km. Step 1: Find 1/5 of 3 km. Divide 3 into 5 equal parts: one part = 3/5 km. Step 2: Since we need only one part (numerator = 1), the answer is 3/5 km. The method: (a/b) × c = (c ÷ b) × a = (c/b) × a. Divide first, then multiply by the numerator.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Multiplying by a General Fraction</h4>
+          <p>Aaron walks 3 km per hour. In 2/5 hours, distance = (2/5) × 3 km. Break it down: (2/5) × 3 = 2 × (1/5 × 3) = 2 × (3/5) = 6/5 km. The method: (a/b) × (c/d) = (a × c) / (b × d). Multiply numerators together, multiply denominators together. WHY? Because "a/b of c/d" means taking a/b parts of c/d parts—two levels of division and multiplication combined.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Understanding Division of Fractions</h4>
+          <p>A key insight: division is the inverse of multiplication. If 2/3 × 3 = 2, then 2 ÷ (2/3) = 3. So dividing by a fraction is the same as multiplying by its reciprocal. Why? Because the reciprocal "undoes" the original fraction. To find how many 1/4 km segments fit in 8 km: 8 ÷ (1/4) = 8 × 4 = 32. Each km contains 4 quarters, so 8 km contain 32 quarters.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: The Reciprocal Rule</h4>
+          <p>The reciprocal of a/b is b/a (flip numerator and denominator). Multiplying a number by a/b, then by its reciprocal b/a, returns you to the original: (x × a/b) × (b/a) = x × (a/b × b/a) = x × 1 = x. This is why division by a fraction = multiplication by its reciprocal. The reciprocal "reverses" the operation.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 6: Mixed Numbers and Improper Fractions</h4>
+          <p>A mixed number like 1 1/4 = 1 + 1/4 = (4/4) + (1/4) = 5/4 (improper fraction). To multiply with mixed numbers, convert to improper fractions first. Why? Because the fraction rules apply to improper fractions. For example: 1 1/4 × 8 = (5/4) × 8 = 40/4 = 10 hours of internet time costs ₹10.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 7: Adding and Subtracting Fractions</h4>
+          <p>To add fractions, they need a common denominator. 1/3 + 1/4: rewrite as 4/12 + 3/12 = 7/12. Why? Because parts must be the "same size" (same denominator) to combine. Different denominators mean different-sized parts—like adding quarters and dimes; you must convert to the same unit first.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 8: Canceling Before Multiplying</h4>
+          <p>When multiplying fractions, cancel common factors before multiplying: (8/15) × (9/12) = (8/15) × (3/4) [cancel 9 and 12 by 3] = (2/5) × 1 [cancel 8 and 4 by 4] = 2/5. Canceling reduces large numbers early, making calculation easier. This is optional but powerful!</p>
+        </div>
+      </section>
+
+      <!-- DEEP DIVE CALLOUTS -->
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 1: Why Multiply Numerators and Denominators?</div>
+        <h3>The Logic of Fraction Multiplication</h3>
+        <p>Think of (2/3) × (3/5) visually: Take a whole divided into 5 parts, shade 3 (that's 3/5). Now divide each of those 5 parts into 3 sub-parts, and shade 2 out of 3 in each. You've created a 3×5 grid with 2×3 shaded squares. Shaded squares = 6, total squares = 15, so result = 6/15 = 2/5. This grid method proves why (a/b) × (c/d) = (a×c)/(b×d).</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 2: Division as the Inverse of Multiplication</div>
+        <h3>Why Division by Fractions Works</h3>
+        <p>Division answers "How many?" If 1/2 of a pizza costs ₹100, how much does a whole pizza cost? We ask: "How many halves in a whole?" Answer: 2. So whole pizza = 2 × ₹100 = ₹200. Mathematically: 1 ÷ (1/2) = 1 × 2 = 2. Division by 1/2 is multiplication by 2 (the reciprocal). This inverse relationship is the deepest truth about fractions.</p>
+      </section>
+
+      <section class="deep-dive">
+        <div class="dd-label">Deep Dive 3: Telescoping Products</div>
+        <h3>The Power of Cancellation</h3>
+        <p>Consider: (1 - 1/2) × (1 - 1/3) × (1 - 1/4) × (1 - 1/5) = (1/2) × (2/3) × (3/4) × (4/5). When you multiply: the 2 in numerator cancels with 2 in denominator, 3 cancels, 4 cancels. Result: 1/5. This "telescoping" pattern—where intermediate terms cancel—is powerful for simplifying complex products. The general pattern: (1 - 1/n) telescopes to give 1/n.</p>
+      </section>
+
+      <!-- COMMON ERROR TRAP -->
+      <section class="error-trap">
+        <h4>Common Error Trap: "Add Numerators and Denominators When Multiplying"</h4>
+        <p><strong>The Mistake:</strong> "2/3 × 3/4 = (2+3)/(3+4) = 5/7"</p>
+        <p><strong>The Truth:</strong> You multiply numerators and denominators: (2/3) × (3/4) = (2×3)/(3×4) = 6/12 = 1/2. Adding is for a different operation. Mixing them up destroys the answer.</p>
+        <p><strong>Another Trap:</strong> "Dividing by 1/4 is the same as multiplying by 1/4." False! Dividing by 1/4 means multiplying by 4 (the reciprocal). This error flips the answer completely. Remember: division by a fraction = multiplication by its reciprocal.</p>
+      </section>
+
+      <!-- SOCRATIC SANDBOX -->
+      <section class="socratic-sandbox">
+        <h2>Socratic Sandbox: Test Your Fraction Mastery</h2>
+
+        <div class="quiz-level predict">
+          <div class="level-badge">Level 1 — PREDICT</div>
+          <h3>Predict the Result</h3>
+          <details>
+            <summary>What is 3/4 × 8?</summary>
+            <p><strong>Hint:</strong> Multiply the numerator by the whole number.</p>
+            <p><strong>Answer:</strong> (3 × 8) / 4 = 24/4 = 6.</p>
+          </details>
+
+          <details>
+            <summary>What is 1/5 × 3?</summary>
+            <p><strong>Hint:</strong> This is 1/5 OF 3 km—divide 3 into 5 parts and take 1.</p>
+            <p><strong>Answer:</strong> 3 ÷ 5 = 3/5.</p>
+          </details>
+
+          <details>
+            <summary>What is 8 ÷ (1/4)?</summary>
+            <p><strong>Hint:</strong> How many 1/4 parts are in 8? Multiply by the reciprocal.</p>
+            <p><strong>Answer:</strong> 8 × 4 = 32.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <div class="level-badge">Level 2 — WHY</div>
+          <h3>Explain the Logic</h3>
+          <details>
+            <summary>Why does multiplying by a fraction (like 1/2) give a smaller result, while dividing by a fraction (like 1/2) gives a larger result?</summary>
+            <p><strong>Hint:</strong> Think about what fractions mean. 1/2 OF something shrinks it. How many 1/2 parts IN something expands it.</p>
+            <p><strong>Answer:</strong> Multiplication by 1/2 means "take half," which shrinks. Division by 1/2 means "how many halves fit," and halves are small, so many fit—result is larger. Multiplication and division are inverse operations with opposite effects.</p>
+          </details>
+
+          <details>
+            <summary>Why must fractions have the same denominator to add or subtract, but NOT to multiply?</summary>
+            <p><strong>Hint:</strong> When adding, you're combining. When multiplying, you're creating a new measurement.</p>
+            <p><strong>Answer:</strong> Adding 1/3 + 1/4 requires parts to be the "same size" (thirds vs quarters). But multiplying (1/3) × (1/4) creates a NEW size: thirds-of-quarters. The denominators combine through multiplication, not addition.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <div class="level-badge">Level 3 — APPLY</div>
+          <h3>Solve Real Fraction Problems</h3>
+          <details>
+            <summary>A farmer has 2/3 acre to divide equally among 4 grandchildren. How much land does each get?</summary>
+            <p><strong>Hint:</strong> This is (2/3) ÷ 4 = (2/3) × (1/4).</p>
+            <p><strong>Answer:</strong> (2/3) ÷ 4 = (2/3) × (1/4) = 2/12 = 1/6 acre each.</p>
+          </details>
+
+          <details>
+            <summary>Tenzin drinks 1/2 glass of milk daily. How many glasses in 30 days?</summary>
+            <p><strong>Hint:</strong> 30 × (1/2) = 30/2 = ?</p>
+            <p><strong>Answer:</strong> 30 × (1/2) = 30/2 = 15 glasses.</p>
+          </details>
+
+          <details>
+            <summary>A baker uses 1/6 kg flour per loaf. How many loaves from 5 kg flour?</summary>
+            <p><strong>Hint:</strong> Divide 5 by 1/6. Use the reciprocal rule.</p>
+            <p><strong>Answer:</strong> 5 ÷ (1/6) = 5 × 6 = 30 loaves.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Diagram in Words -->
+      <section>
+        <h2>Diagrams in Words: Fraction Operations</h2>
+        <div class="diagram-text">
+FRACTION MULTIPLICATION: AREA MODEL
+Multiply (2/3) × (3/4)
+
+Draw a rectangle. Divide horizontally into 4 parts, shade 3 (this is 3/4).
+Divide vertically into 3 parts, shade 2 (this is 2/3).
+The doubly-shaded region = 2×3 = 6 cells out of 3×4 = 12 cells.
+Result = 6/12 = 1/2
+
+This shows: (2/3) × (3/4) = (2×3)/(3×4) = 6/12 = 1/2
+        </div>
+
+        <div class="diagram-text">
+FRACTION DIVISION: "HOW MANY?" MODEL
+How many 1/4 kg portions in 5 kg?
+
+5 kg represented as: |-------|-------|-------|-------|-------|
+One portion (1/4) = |--|
+Count: |--| fits 4 times in each kg.
+Total: 4 × 5 = 20 portions
+
+Mathematically: 5 ÷ (1/4) = 5 × 4 = 20
+        </div>
+
+        <div class="diagram-text">
+MULTIPLYING FRACTION × WHOLE NUMBER
+(2/5) × 3 = ?
+
+Method 1: (2/5) × 3 = (2×3)/5 = 6/5
+(Multiply numerator by whole number)
+
+Method 2: 3 × (2/5) = 3 ÷ 5 × 2
+(Divide 3 by 5, then multiply by 2)
+3 ÷ 5 = 3/5
+3/5 × 2 = 6/5
+
+Both methods give 6/5 = 1 1/5
+        </div>
+
+        <div class="diagram-text">
+RECIPROCAL PAIRS
+Fraction:        1/2    1/3    1/4    2/3    3/5
+Reciprocal:      2/1    3/1    4/1    3/2    5/3
+
+Key Property: (a/b) × (b/a) = 1
+Example: (2/3) × (3/2) = 6/6 = 1 ✓
+
+Why? Reciprocals "undo" each other!
+        </div>
+      </section>
+
+      <nav class="chapter-nav">
+        <a href="chapter7.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Chapter 7: A Tale of Three Intersecting Lines</span></a>
+        <a href="chapter9.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Chapter 9</span></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>
