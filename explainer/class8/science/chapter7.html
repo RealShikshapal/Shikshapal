@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 7: Particulate Nature of Matter — Science | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0e27; }
+    .nav { background: #1a1f3a; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00d4ff; }
+    .nav a { color: #00d4ff; margin: 0 1rem; text-decoration: none; transition: 0.3s; }
+    .nav a:hover { color: #00ffff; }
+    .subject-switcher { display: flex; gap: 0.5rem; }
+    .subject-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #262d4a; color: #999; cursor: pointer; transition: 0.3s; border: 1px solid #444; }
+    .subject-pill.active { background: #00d4ff; color: #0a0e27; font-weight: 600; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .page-header { margin: 2rem 0; }
+    .breadcrumb { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+    .breadcrumb a { color: #00d4ff; text-decoration: none; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; color: #00d4ff; margin: 0.5rem 0; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; color: #00ffff; margin-top: 2rem; margin-bottom: 1rem; }
+    .content-block { background: #1a1f3a; border-left: 4px solid #00d4ff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+    .block-label { display: inline-block; background: #00d4ff; color: #0a0e27; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hook-block { border-left-color: #ff6b6b; }
+    .hook-question { font-style: italic; color: #ffb84d; margin: 1rem 0; }
+    .bridge-block { border-left-color: #4ecdc4; }
+    .analogy { background: #2a3055; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 3px solid #4ecdc4; }
+    .logic-ladder { background: #1a1f3a; border: 2px solid #00d4ff; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; border-left: 4px solid #00d4ff; }
+    .logic-step-content { display: flex; gap: 1rem; }
+    .step-number { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; color: #00d4ff; font-weight: 700; min-width: 50px; }
+    .step-text { flex: 1; }
+    .deep-dive { background: #2a3055; padding: 1rem; margin: 0.5rem 0; border-radius: 6px; border-left: 3px solid #4ecdc4; }
+    .deep-dive-title { font-weight: 600; color: #4ecdc4; margin-bottom: 0.5rem; }
+    .activity-card { background: #262d4a; border: 2px solid #ffb84d; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .activity-title { color: #ffb84d; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-block { background: #1a1f3a; border: 2px solid #ff6b6b; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .quiz-level { margin: 1.5rem 0; }
+    .quiz-level-tag { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .level-predict { background: #ffb84d; color: #0a0e27; }
+    .level-why { background: #4ecdc4; color: #0a0e27; }
+    .level-apply { background: #ff6b6b; color: #fff; }
+    .quiz-question { margin: 1rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; }
+    details { cursor: pointer; margin: 0.5rem 0; }
+    details summary { color: #00d4ff; font-weight: 600; padding: 0.5rem; }
+    details summary:hover { color: #00ffff; }
+    details[open] summary { color: #4ecdc4; }
+    .chapter-nav { display: flex; justify-content: space-between; margin: 2rem 0; padding-top: 1rem; border-top: 2px solid #444; }
+    .chapter-nav a { color: #00d4ff; text-decoration: none; transition: 0.3s; padding: 0.5rem 1rem; border: 1px solid #00d4ff; border-radius: 6px; }
+    .chapter-nav a:hover { background: #00d4ff; color: #0a0e27; }
+    .footer { text-align: center; margin-top: 3rem; padding: 1rem; border-top: 1px solid #444; color: #666; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../../math/index.html">Math</a>
+      <a href="../../social/index.html">Social</a>
+      <a href="../../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 7
+      </div>
+      <h1>🔬 Particulate Nature of Matter</h1>
+      <p style="color: #888;">Everything is made of tiny, invisible particles. Learn how they move, bond, and transform between solid, liquid, and gas.</p>
+    </div>
+
+    <!-- HOOK BLOCK -->
+    <div class="content-block hook-block">
+      <span class="block-label">THE HOOK</span>
+      <h2>Where Did the Sugar Go?</h2>
+      <p>You stir sugar into water, and it vanishes. You can't see it anymore, but when you taste, it's sweet. The sugar is gone, but it's not gone. Where is it? How can something disappear yet still affect your taste? This mystery points to the deepest secret of matter itself.</p>
+      <div class="hook-question">If you could keep breaking things into smaller and smaller pieces, where would you stop? Is there a smallest piece? And what hidden structure decides whether something is solid, liquid, or gas?</div>
+    </div>
+
+    <!-- FEYNMAN BRIDGE -->
+    <div class="content-block bridge-block">
+      <span class="block-label">FEYNMAN BRIDGE</span>
+      <h2>Matter's Secret: Tiny Particles Held Together by Invisible Hands</h2>
+      <p>Everything—your phone, water, air, this page—is made of impossibly tiny particles. So small you could fit trillions in the period at the end of this sentence. These particles are held together by invisible attractive forces. How tightly they're packed and how strong the forces holding them together decides whether something is solid, liquid, or gas.</p>
+      <div class="analogy">
+        <strong>The Crowd Analogy:</strong> Imagine people in a crowded auditorium (solid). They're packed tightly together, barely able to move, held by social pressure to stay in place. Now imagine the same people in a large hall (liquid). They can move around, but they stay together loosely. Finally, imagine them spread across an open field (gas). They're so free they don't even know each other exists, moving in all directions. Matter is exactly like this—the "people" are particles, and the "social pressure" is invisible attractive forces.
+      </div>
+      <p><strong>Magic vs. Science:</strong> If matter were made of solid blocks all the way down, we'd never explain water disappearing or sugar becoming invisible. But if matter is made of particles with spaces between them, we can explain everything. Science finds the hidden structure that explains all observations.</p>
+    </div>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <div class="logic-ladder">
+      <h2>Understanding Particles: From Chalk Dust to States of Matter</h2>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <strong>Matter Is Made of Tiny Particles Called Constituent Particles</strong>
+            <p>Break a stick of chalk. Break the pieces. Grind it to powder. Even the finest powder under a magnifying glass is still chalk—still tiny specks of the same substance. Eventually, you'd reach a point where you can't break it further. These tiniest units are "constituent particles." Everything is made of them, stacked together in different ways.</p>
+            <div class="activity-card">
+              <div class="activity-title">Try Breaking Things:</div>
+              Take a piece of sugar. Break it. Break the pieces. Grind it. Under a magnifying glass, you still see chalk-like particles. But keep imagining breaking smaller. Eventually, you'd reach molecules (groups of atoms) and then atoms themselves.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>Particles Have Spaces Between Them (Interparticle Spaces)</strong>
+            <p>When sugar dissolves in water, it disappears from sight. But it didn't vanish—the sugar particles separated and squeezed into the spaces BETWEEN water particles. This proves there are gaps between particles. The particles can rearrange, with some squeezing into gaps between others.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Proof of Gaps:</div>
+              Add sugar to water. The water level rises slightly (sugar particles take up space). Stir until sugar dissolves. The water level may drop slightly (sugar particles fit into gaps between water particles, needing less total volume).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <strong>Particles Are Held Together by Attractive Forces (Interparticle Attraction)</strong>
+            <p>Particles "stick" to each other through invisible forces of attraction. These forces are weak at large distances but become strong when particles are close. The strength of these forces decides the state of matter. In solids, forces are strong. In liquids, weaker. In gases, almost nothing.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              A magnet doesn't visibly push or pull at large distances, but at close range, it's powerful. Interparticle forces work the same way. From far away, nothing. But squeeze particles close, and forces grip them together.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <strong>Solids: Particles Packed Tightly, Strong Forces, Can Only Vibrate</strong>
+            <p>In a solid, particles are pressed tightly together. Attractive forces are maximum. The particles can only vibrate slightly around fixed positions—they can't move past each other. This is why solids have a definite shape and volume. A rock stays a rock.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Melting a Solid:</div>
+              Heat a solid. Particles vibrate faster. Eventually, vibrations become so vigorous that particles break free from fixed positions. Attractive forces weaken. The solid becomes a liquid. This temperature is the melting point.
+            </div>
+            <div class="activity-card">
+              <div class="activity-title">Examples of Melting Points:</div>
+              Ice: 0°C, Iron: 1538°C, Lead: 327°C. Higher melting points = stronger interparticle forces = harder to break apart.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">5</div>
+          <div class="step-text">
+            <strong>Liquids: Particles Farther Apart, Weaker Forces, Can Move Around</strong>
+            <p>When a solid melts, particles gain space between them. Attractive forces weaken but still hold them together loosely. Particles can move around freely within the liquid (that's why liquids flow), but they can't escape (that's why liquids have definite volume). Liquids have no fixed shape—they take the shape of their container.</p>
+            <div class="activity-card">
+              <div class="activity-title">Why Water Doesn't Escape:</div>
+              The attractive forces between water particles are still strong enough to keep them together. That's why you can hold water in your hand (for a moment before it spills). If forces were stronger, it would be a solid. If weaker, it would be a gas.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">6</div>
+          <div class="step-text">
+            <strong>Gases: Particles Far Apart, Almost No Forces, Free to Move Everywhere</strong>
+            <p>When a liquid is heated to its boiling point, particles get enough energy to overcome attractive forces almost completely. They fly apart and move in all directions, filling all available space. Attractive forces are negligible. Particles almost don't "know" about each other. Gases have no fixed shape or volume.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Evaporation (Sneaky Boiling):</div>
+              Even below boiling point, some liquid particles get enough energy to escape as gas (especially at the surface). This is evaporation. Heating speeds it up, but even cold water evaporates slowly. That's why puddles disappear on a sunny day!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">7</div>
+          <div class="step-text">
+            <strong>Interparticle Spacing: The Key to Understanding States</strong>
+            <p>Solids have minimum spacing (particles packed tightly). Liquids have slightly larger spacing (particles can move around). Gases have maximum spacing (particles far apart). This spacing directly causes the properties of each state: shape, compressibility, flow.</p>
+            <div class="activity-card">
+              <div class="activity-title">Try Compressing:</div>
+              Use a syringe filled with air (gas). Push the plunger. The air compresses because there's space between particles. Now fill the syringe with water (liquid). Push the plunger. Water barely compresses because particles are already close. A steel block? Impossible to compress by hand because solid particles are locked in place.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">8</div>
+          <div class="step-text">
+            <strong>Particles Move Constantly (Especially in Liquids and Gases)</strong>
+            <p>Particles aren't frozen in place. They're always moving (even in solids, but only vibrating). In liquids, they move more. In gases, they move rapidly in all directions. This movement is why diffusion happens: particles from a perfume bottle spread through an entire room because gas particles are constantly banging into each other.</p>
+            <div class="activity-card">
+              <div class="activity-title">Proof of Particle Motion:</div>
+              Drop a potassium permanganate crystal into water. Pink color spreads throughout (particles moving and mixing). In hot water, it spreads faster (particles move faster when hot). In ice-cold water, it spreads slower. Temperature controls particle movement speed!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">9</div>
+          <div class="step-text">
+            <strong>Thermal Energy: The Secret Driver of Everything</strong>
+            <p>Temperature measures how fast particles are moving. Heat (thermal energy) makes particles move faster. Add heat, particles vibrate more vigorously. Eventually, vibrations break them free from their neighbors, changing the state. This is why boiling requires heat and why things freeze when cooled—thermal energy controls particle motion, which controls the state of matter.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">The Chain of Cause and Effect:</div>
+              Add heat → Particles move faster → Vibrations get stronger → Attractive forces break → Solid becomes liquid. Add more heat → Particles move even faster → Attractive forces break completely → Liquid becomes gas.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">10</div>
+          <div class="step-text">
+            <strong>The Big Picture: Particles Explain Everything in Matter</strong>
+            <p>Why do solids have shape? Particles locked in place. Why do liquids flow? Particles can move freely but stay together. Why do gases fill any container? Particles move everywhere. Why does salt dissolve in water? Salt particles fit into gaps between water particles. Why does water evaporate? Some particles get enough thermal energy to escape. One idea—particles with spaces and forces—explains all of chemistry and most of physics.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              Boil water. Watch steam rise. That's water particles with so much thermal energy they fly away as gas. Condense the steam on a cold surface. Water droplets form. It's still water, but particles are close enough again to be liquid. Same water, different thermal energy, different state.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCRATIC SANDBOX: QUIZ BLOCK -->
+    <div class="quiz-block">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+      <p>Challenge yourself at three levels. Start with <span style="color: #ffb84d;">Predict</span> (can you guess what happens?), move to <span style="color: #4ecdc4;">Why</span> (can you explain it?), and finish with <span style="color: #ff6b6b;">Apply</span> (can you use this idea?).</p>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-predict">LEVEL 1: PREDICT</span>
+        <div class="quiz-question">
+          <strong>Question 1:</strong> You pour hot water into a glass. You cover it with a glass plate. What happens to the inside of the plate?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Hot water particles move fast. Some escape as gas. Where does the gas go when it hits the cool plate?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The inside of the plate becomes cloudy with water droplets. Hot water particles (liquid) have enough thermal energy to become gas. They rise and hit the cool plate. The cold slows them down and cools them, so they condense back to liquid water droplets. You're watching evaporation and condensation happening in seconds!</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 2:</strong> You heat an inflated balloon in hot water. What happens to the balloon?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Heat makes particles move faster. Air is a gas. What happens when gas particles move faster?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The balloon expands. The air particles inside move faster due to heat. Faster-moving particles take up more space and push harder on the balloon walls. The balloon expands to accommodate the faster-moving particles. This is why you inflate balloons with hot air.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 3:</strong> Two balloons connected by a straw: one is inflated, one is empty. After a few hours, what happens?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Air particles are moving constantly, randomly in all directions. What happens over time?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Both balloons end up roughly the same size. Air particles from the inflated balloon move randomly through the straw into the empty balloon. Over time, particles distribute equally—this is diffusion. The pressures equalize, and both balloons are semi-inflated.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-why">LEVEL 2: WHY (EXPLAIN IT)</span>
+        <div class="quiz-question">
+          <strong>Question 4:</strong> Explain why ice is less dense than liquid water (ice floats), even though solid particles are more tightly packed.
+          <details>
+            <summary>Show Hint</summary>
+            <p>In ice, particles are more spread out than in liquid water due to hydrogen bonding's specific geometry. Density is mass per volume.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Most solids are denser than their liquid form because solid particles are packed tightly. But ice is an exception! When water freezes, the crystalline structure that forms has hydrogen bonds arranged so particles are FARTHER APART than in liquid water. More space = lower density = ice floats. This is why ice fishing is possible (thick ice floats and doesn't sink). This unusual property makes ice stable on lakes, protecting aquatic life below.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 5:</strong> Explain why a hot drink cools down when you pour it into a dish (compared to keeping it in a cup).
+          <details>
+            <summary>Show Hint</summary>
+            <p>Surface area and evaporation. Which has larger surface area?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>A dish has a larger surface area than a cup. Evaporation happens at the surface (particles with enough thermal energy escape as gas). Larger surface = more particles escaping = more heat lost = faster cooling. This is why you blow on hot food (you increase evaporation) and why fanning yourself with an open hand cools more than a closed fist (more surface area).</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 6:</strong> Why do liquids like water have a definite volume, but gases like air don't?
+          <details>
+            <summary>Show Hint</summary>
+            <p>In liquids, attractive forces still hold particles together. In gases, they don't.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Liquid particles are attracted to each other. They stay together as a body of liquid, so volume stays fixed (100 mL of water is always 100 mL, regardless of container shape). Gas particles have almost no attractive forces, so they move in all directions and occupy all available space. Pour 1 liter of air into a 10-liter room, and it expands to fill the entire room. The difference is the strength of interparticle attractions.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-apply">LEVEL 3: APPLY (USE THE IDEA)</span>
+        <div class="quiz-question">
+          <strong>Question 7:</strong> Design a method to separate salt from saltwater using knowledge of particles and states of matter.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Water particles evaporate; salt particles don't. What happens if you heat saltwater?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Boil the saltwater. Water particles have lower attractive forces, so they gain thermal energy and escape as steam (evaporation). Salt particles have stronger attractive forces and higher melting/boiling points, so they stay behind. Collect the steam and condense it on a cool surface to get pure water. The salt remains as a solid residue in the pot. This is distillation, used to purify water and separate mixtures.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 8:</strong> A chef wants to preserve food by drying it. Explain how understanding particle motion helps design the drying process.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Water in food allows bacteria to grow. If water particles have more thermal energy and space to move, they escape faster.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Drying removes water. To speed evaporation: (1) Heat (increases thermal energy of water particles), (2) Increase surface area (cut food thin), (3) Increase air circulation (removes vapor that reduces evaporation), (4) Lower humidity (less water competition). A food dehydrator uses all four: warm air (heat) circulates around thin-sliced food (large surface area), removing water vapor. Understanding that particles with thermal energy escape as gas lets the chef design efficient drying.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 9:</strong> Explain why a car's tire pressure increases on a hot day and decreases on a cold day, using particle theory.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Gas particles in the tire move faster when hot, slower when cold. Pressure depends on particle speed and collisions with walls.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Tire pressure = how hard gas particles hit the tire walls. On hot days, particles move faster (more thermal energy), so they hit harder and more frequently = higher pressure. On cold days, particles move slower, hit less hard and less frequently = lower pressure. Same amount of air (same number of particles), different temperature (different particle speeds), different pressure. This is why tire pressure warnings appear in winter—pressure drops as temperature drops, potentially causing underinflation.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 10:</strong> Design an insulating container to keep ice frozen as long as possible using knowledge of heat, particles, and states of matter.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Heat must transfer to ice from outside. Slow down particle transfer at the boundaries. What stops particles from delivering thermal energy?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Use a double-walled container with vacuum (or air, a poor heat conductor) between walls. Add reflective surfaces inside to reflect heat rays. Line the inside with insulating material (foam, wool). The goal: prevent outside particles (moving fast and hot) from transferring thermal energy to ice particles. A vacuum is perfect because there are no particles to carry heat across the gap. Air is decent because air particles move slowly and carry little heat. Metal would be terrible because metal particles vibrate fast and conduct heat well. An ideal cooler (like a Styrofoam chest with vacuum insulation) keeps ice frozen longest by minimizing particle contact between outside and inside.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FLASHCARDS ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="flashcard-section">
+          <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+          <div class="flashcard-deck">
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is the particulate nature of matter?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">All matter is made of tiny, invisible particles (atoms/molecules) with spaces between them, held together by attractive forces.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What are the three states of matter?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Solid (fixed shape/volume, tightly packed), Liquid (fixed volume, takes container shape), Gas (no fixed shape/volume, particles far apart).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is melting?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The phase change from solid to liquid when heat allows particles to escape fixed positions and move more freely.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is evaporation?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The change from liquid to gas when surface particles gain enough energy to escape into the gaseous state.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is diffusion?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Spontaneous movement of particles from high concentration to low concentration due to random thermal motion.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">How does temperature relate to particle speed?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Higher temperature = faster particle motion and more kinetic energy. Lower temperature = slower motion and less energy.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is sublimation?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Direct change from solid to gas without passing through liquid state (e.g., dry ice becoming CO₂ gas).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">Why does sugar dissolve faster in hot water?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Hot water molecules move faster, colliding more vigorously with sugar crystals and breaking them apart through faster diffusion.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-counter">8 cards — click any card to flip</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MCQ QUIZ ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="mcq-section">
+          <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+          <div class="mcq-quiz">
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">Which statement best explains why gases fill their container while solids keep fixed shape?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Gas molecules are heavier and spread out</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Gas particles move freely with weak forces; solids have tightly bound particles</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Solids have no particles</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Gases are always hotter</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Particle spacing and motion explain state differences." data-wrong="The correct answer is B. Particle freedom and attractive forces determine state of matter."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="C">
+              <div class="mcq-stem">You observe water in a dish gradually disappearing over days. This is:</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Melting</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Freezing</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Evaporation at room temperature</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> The water was never there</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Evaporation occurs below boiling point as particles escape the surface." data-wrong="The correct answer is C. Water evaporates gradually at room temperature."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">Why does diffusion happen faster at higher temperatures?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Higher temperature gives particles more kinetic energy</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Hot particles are heavier</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Attractive forces are stronger when hot</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Temperature doesn't affect diffusion</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Temperature directly affects particle kinetic energy and motion speed." data-wrong="The correct answer is A. Higher temperature increases kinetic energy and diffusion rate."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="C">
+              <div class="mcq-stem">A chocolate bar melts. After melting, it has the same mass but larger volume. This shows:</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Matter is created during melting</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Melting changes particle number</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Liquid chocolate has lower density than solid chocolate</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Particles disappear when heated</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Same mass, larger volume = lower density due to increased particle spacing." data-wrong="The correct answer is C. Melting increases volume while mass stays constant."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">Why does dry ice (solid CO₂) disappear without becoming liquid?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Dry ice is not real matter</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Sublimation allows direct solid-to-gas transition under certain conditions</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> It's designed to skip the liquid phase</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> It escapes as invisible liquid</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Sublimation is a natural phase transition possible at low pressures." data-wrong="The correct answer is B. Sublimation allows solids to become gas directly."></div>
+            </div>
+
+            <div class="mcq-score-bar">
+              <span class="score-text">0 / 5</span>
+              <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+              <button class="mcq-reset-btn">Reset Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER NAVIGATION -->
+    <div class="chapter-nav">
+      <a href="chapter6.html">← Chapter 6</a>
+      <a href="index.html">Back to Science Home →</a>
+    </div>
+
+    <div class="footer">
+      <p>Grade 8 Science Learning Portal | Chapter 7: Particulate Nature of Matter</p>
+      <p>Master particles, and you've unlocked the secret code of chemistry. Everything—from ice to steam to air—is just particles dancing to the rhythm of thermal energy.</p>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+    console.log('Theme loaded:', currentTheme);
+  </script>
+
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

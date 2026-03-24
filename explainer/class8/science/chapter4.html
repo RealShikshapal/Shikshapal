@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 4: Electricity: Magnetic and Heating Effects — Science | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0e27; }
+    .nav { background: #1a1f3a; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00d4ff; }
+    .nav a { color: #00d4ff; margin: 0 1rem; text-decoration: none; transition: 0.3s; }
+    .nav a:hover { color: #00ffff; }
+    .subject-switcher { display: flex; gap: 0.5rem; }
+    .subject-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #262d4a; color: #999; cursor: pointer; transition: 0.3s; border: 1px solid #444; }
+    .subject-pill.active { background: #00d4ff; color: #0a0e27; font-weight: 600; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .page-header { margin: 2rem 0; }
+    .breadcrumb { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+    .breadcrumb a { color: #00d4ff; text-decoration: none; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; color: #00d4ff; margin: 0.5rem 0; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; color: #00ffff; margin-top: 2rem; margin-bottom: 1rem; }
+    .content-block { background: #1a1f3a; border-left: 4px solid #00d4ff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+    .block-label { display: inline-block; background: #00d4ff; color: #0a0e27; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hook-block { border-left-color: #ff6b6b; }
+    .hook-question { font-style: italic; color: #ffb84d; margin: 1rem 0; }
+    .bridge-block { border-left-color: #4ecdc4; }
+    .analogy { background: #2a3055; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 3px solid #4ecdc4; }
+    .logic-ladder { background: #1a1f3a; border: 2px solid #00d4ff; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; border-left: 4px solid #00d4ff; }
+    .logic-step-content { display: flex; gap: 1rem; }
+    .step-number { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; color: #00d4ff; font-weight: 700; min-width: 50px; }
+    .step-text { flex: 1; }
+    .deep-dive { background: #2a3055; padding: 1rem; margin: 0.5rem 0; border-radius: 6px; border-left: 3px solid #4ecdc4; }
+    .deep-dive-title { font-weight: 600; color: #4ecdc4; margin-bottom: 0.5rem; }
+    .activity-card { background: #262d4a; border: 2px solid #ffb84d; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .activity-title { color: #ffb84d; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-block { background: #1a1f3a; border: 2px solid #ff6b6b; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .quiz-level { margin: 1.5rem 0; }
+    .quiz-level-tag { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .level-predict { background: #ffb84d; color: #0a0e27; }
+    .level-why { background: #4ecdc4; color: #0a0e27; }
+    .level-apply { background: #ff6b6b; color: #fff; }
+    .quiz-question { margin: 1rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; }
+    details { cursor: pointer; margin: 0.5rem 0; }
+    details summary { color: #00d4ff; font-weight: 600; padding: 0.5rem; }
+    details summary:hover { color: #00ffff; }
+    details[open] summary { color: #4ecdc4; }
+    .chapter-nav { display: flex; justify-content: space-between; margin: 2rem 0; padding-top: 1rem; border-top: 2px solid #444; }
+    .chapter-nav a { color: #00d4ff; text-decoration: none; transition: 0.3s; padding: 0.5rem 1rem; border: 1px solid #00d4ff; border-radius: 6px; }
+    .chapter-nav a:hover { background: #00d4ff; color: #0a0e27; }
+    .footer { text-align: center; margin-top: 3rem; padding: 1rem; border-top: 1px solid #444; color: #666; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../../math/index.html">Math</a>
+      <a href="../../social/index.html">Social</a>
+      <a href="../../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 4
+      </div>
+      <h1>⚡ Electricity: Magnetic and Heating Effects</h1>
+      <p style="color: #888;">Discover how electricity creates invisible forces and heat that power our world.</p>
+    </div>
+
+    <!-- HOOK BLOCK -->
+    <div class="content-block hook-block">
+      <span class="block-label">THE HOOK</span>
+      <h2>The Mystery of the Floating Iron</h2>
+      <p>Imagine an iron nail with no magnet nearby—just a wire wrapped around it and a battery connected. When you flip a switch, suddenly the nail picks up paperclips like magic. But the moment the switch flips off, the clips fall. No magnet was ever there!</p>
+      <div class="hook-question">How can electricity turn a plain iron nail into a powerful magnet? And why does it only work when the electricity flows?</div>
+    </div>
+
+    <!-- FEYNMAN BRIDGE -->
+    <div class="content-block bridge-block">
+      <span class="block-label">FEYNMAN BRIDGE</span>
+      <h2>Electricity and Magnetism: Best Friends</h2>
+      <p>Think of electricity like a river flowing through a wire. Just as a river of moving water creates waves and changes the land around it, a river of electricity creates invisible magnetic waves around the wire.</p>
+      <div class="analogy">
+        <strong>The Spinning Compass Analogy:</strong> A compass needle is like a tiny dancer that loves to face the North. But when electricity flows through a nearby wire, it's like playing loud music—the dancer gets confused and spins! The electricity creates an invisible magnetic "song" that pushes the compass around. When you stop the electricity, the song stops, and the compass dancer goes back to facing North.
+      </div>
+      <p><strong>Magic vs. Science:</strong> In stories, magic doesn't follow rules. But the connection between electricity and magnetism follows perfect rules—every time you turn on electricity, a magnetic field appears. Every time you turn it off, the field vanishes. This isn't magic—it's science, and it's even cooler because it always works the same way!</p>
+    </div>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <div class="logic-ladder">
+      <h2>Understanding Electricity & Magnetism: The Complete Journey</h2>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <strong>Electricity Flows Like Invisible Rivers</strong>
+            <p>When you connect a battery to a circuit, electricity (called "current") flows from the positive terminal, through the wire and devices, and back to the negative terminal. This continuous flow is what makes a light glow or powers a motor.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Safe Home Mini-Activity:</div>
+              Trace the path of electricity from a wall socket through your phone charger back to the wall. You can see the wire going in and coming out. That's the circuit!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>Moving Electricity Creates Magnetism (Oersted's Discovery)</strong>
+            <p>In 1820, scientist Hans Christian Oersted noticed something amazing: when electricity flowed through a wire, it pushed a compass needle away from North. This proved that electricity creates a magnetic field. The faster the electricity flows, the stronger the field.</p>
+            <div class="activity-card">
+              <div class="activity-title">What You'd See:</div>
+              Set up a compass beneath a wire. When current flows through the wire, the compass needle jumps! When you turn off the current, it returns to normal.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <strong>Coils Make Strong Electromagnets</strong>
+            <p>When you wrap a wire into a coil (like a spring), the magnetic field gets much stronger because all the loops add their magnetic power together. Wrap it around an iron nail, and the iron amplifies the field even more—making a super-strong temporary magnet called an electromagnet.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Strength Formula:</div>
+              More loops = stronger magnet. More current (bigger battery) = stronger magnet. Iron core = strongest magnet. This is why electromagnets can be adjusted to lift different weights!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <strong>Electromagnets Have Poles (Just Like Real Magnets)</strong>
+            <p>An electromagnet has a North pole and a South pole, just like a bar magnet. You can reverse which end is North by reversing the battery terminals. This is super useful in cranes, doorbells, and electric bells that buzz and buzz.</p>
+            <div class="activity-card">
+              <div class="activity-title">Real-World Example:</div>
+              Lifting electromagnets in scrap yards can hold tons of metal with the switch ON, but release it instantly when the switch flips OFF. Perfect for sorting metal recycling!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">5</div>
+          <div class="step-text">
+            <strong>Electricity Causes Heating (Resistance Creates Heat)</strong>
+            <p>When electricity flows through a wire, the wire's atoms push back against it (called "resistance"). This pushing creates friction, and friction makes heat—just like rubbing your hands together fast.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Why Nichrome Wire Gets Hot:</div>
+              Nichrome wire has high resistance. As electricity pushes through, it creates lots of heat. That's why it's used in toasters, ovens, and heaters. Copper wire has low resistance, so it stays cool enough to use in circuits.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">6</div>
+          <div class="step-text">
+            <strong>Electric Heaters Are Controlled Fire</strong>
+            <p>Every heating appliance in your home (toasters, kettles, heaters, irons) uses the same trick: force electricity through a special wire that resists it. The resistance turns electrical energy into heat energy.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              The heating coil in an electric kettle or room heater glows red or orange because it's thousands of degrees! More current = more heat. Thicker wires = less heat (less resistance).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">7</div>
+          <div class="step-text">
+            <strong>The Voltaic Cell: Making Electricity From Chemicals</strong>
+            <p>A battery is actually a chemical factory. Two different metals dipped in a chemical liquid (the electrolyte) react together and push electrons along a wire. This push of electrons IS electricity.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">The Original Discovery:</div>
+              In the 1700s, scientist Luigi Galvani saw a dead frog's leg kick when touched by two different metals. Alessandro Volta tested this with saltwater-soaked paper instead. He found that ANY two different metals in a liquid make electricity. He invented the first battery!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">8</div>
+          <div class="step-text">
+            <strong>Three Types of Cells and Batteries</strong>
+            <p><strong>Voltaic Cells:</strong> Two metals in lemon juice or salt solution (like a homemade battery). <strong>Dry Cells:</strong> A zinc container with a carbon rod and paste inside (regular batteries). <strong>Rechargeable Batteries:</strong> Can be used many times by reversing the chemical reaction with electricity.</p>
+            <div class="activity-card">
+              <div class="activity-title">Fun Fact:</div>
+              A lemon battery can light up an LED! Just push a copper wire and an iron nail into a lemon, connect them in series (one after another), and connect an LED. The lemon juice's chemicals create enough push to make the LED glow dimly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">9</div>
+          <div class="step-text">
+            <strong>When Batteries Die (And When They Don't)</strong>
+            <p>A battery is "dead" when the chemicals inside have been used up and can no longer push electrons. Dry cells can't be recharged because their chemicals don't reverse. But rechargeable batteries (like in phones and cameras) have reversible chemicals, so electricity can regenerate them.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Battery Care:</div>
+              Modern batteries use lithium-ion technology, which is powerful but needs care. They wear out after hundreds of charge cycles. Scientists are working on solid-state batteries that will be safer, faster-charging, and longer-lasting!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">10</div>
+          <div class="step-text">
+            <strong>The Big Picture: Electricity Powers Modern Life</strong>
+            <p>The magnetic effect of electricity powers motors in fans and pumps. The heating effect toasts bread and boils water. Cells and batteries power phones and watches. All of this comes from one simple discovery: moving electricity creates magnetism and heat.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              Look around your room. Name appliances that use the magnetic effect (motors) and the heating effect (heaters). Most devices use both! A microwave's motor turns the plate, and the heating creates the electromagnetic waves.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCRATIC SANDBOX: QUIZ BLOCK -->
+    <div class="quiz-block">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+      <p>Challenge yourself at three levels. Start with <span style="color: #ffb84d;">Predict</span> (can you guess what happens?), move to <span style="color: #4ecdc4;">Why</span> (can you explain it?), and finish with <span style="color: #ff6b6b;">Apply</span> (can you use this idea?).</p>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-predict">LEVEL 1: PREDICT</span>
+        <div class="quiz-question">
+          <strong>Question 1:</strong> A compass is placed below a wire carrying electricity. What happens to the needle?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Think about Oersted's discovery. Does the magnetic field push the needle or pull it?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The compass needle deflects (moves) away from its North-facing position. The electric current creates a magnetic field that interferes with Earth's magnetic field, confusing the compass. When the current stops, the needle returns to normal.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 2:</strong> You increase the number of loops in an electromagnet's coil but don't change anything else. What happens to its strength?
+          <details>
+            <summary>Show Hint</summary>
+            <p>More loops mean more "layers" of magnetic field stacked together.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The electromagnet becomes stronger. Each coil loop adds its magnetic effect to the others. 50 loops are stronger than 25 loops with the same current.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 3:</strong> A nichrome wire in a heater feels hot. What causes this heat?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Electricity faces resistance from the wire's atoms. What happens when two things push against each other?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The wire resists the flow of electricity, which creates friction between the electrons and atoms. Friction produces heat. Higher resistance = more heat. That's why nichrome is better than copper for heaters.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-why">LEVEL 2: WHY (EXPLAIN IT)</span>
+        <div class="quiz-question">
+          <strong>Question 4:</strong> Why does inserting an iron nail into an electromagnet coil make it much stronger?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Iron is magnetic. Think about what happens when you already have a magnetic field and add iron into it.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Iron itself becomes magnetized by the electric field. Once magnetized, the iron's own magnetic field adds to the coil's field, making the total field many times stronger. It's like adding another speaker playing the same song—the sound gets much louder.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 5:</strong> Explain why an electromagnet can be turned on and off instantly, but a regular magnet cannot.
+          <details>
+            <summary>Show Hint</summary>
+            <p>What creates the magnetic field in each case? What can you control?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>An electromagnet's field comes from electricity flowing through the coil. When you flip the switch OFF, the electricity stops immediately, and the field vanishes. A regular magnet's field comes from atoms that are already aligned—it stays that way permanently. You can't just "turn off" atomic magnetism.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 6:</strong> Why are broader backpack straps less painful than narrow straps, even if both bags weigh the same?
+          <details>
+            <summary>Show Hint</summary>
+            <p>This is about pressure. How does the same weight spread over a larger area versus a smaller area?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Pressure = Force ÷ Area. Same weight (same force), but broader straps spread it over a larger area. This reduces pressure on your shoulders. Narrow straps concentrate the weight on a tiny area, creating high pressure that hurts. Electromagnets work the same way—concentrated magnetic field is strongest.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-apply">LEVEL 3: APPLY (USE THE IDEA)</span>
+        <div class="quiz-question">
+          <strong>Question 7:</strong> A junkyard needs to sort a pile of mixed metals quickly. How would an electromagnet help them, and what features should it have?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Electromagnets can pick up magnetic metals (like iron) and drop them instantly. How could adjusting the electromagnet improve sorting?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The electromagnet would pick up iron and steel (which are attracted to magnets) and drop non-magnetic metals like aluminum and copper when the switch turns OFF. A more powerful electromagnet (strong coil + iron core + high current) would lift heavier pieces faster, speeding up the work. This is exactly how real junkyard cranes work!</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 8:</strong> You're designing a water heater for a home. It needs to heat 100 liters of water quickly but safely. What decisions would you make about the heating element, and why?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Think about resistance, heat, and safety. More heat = faster boiling, but what dangers exist?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>You'd use a nichrome coil because it has the right amount of resistance to create useful heat without melting. You'd make it thick enough to handle the current without overheating and burning out. You'd use a material that conducts electricity to the heating element safely, with plugs rated for the expected current. Too much current in thin wires = danger of fire.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 9:</strong> Suppose you have five lemons and want to light up a small LED. What would you do, and why would putting them in series (one after another) be better than putting them in parallel (side by side)?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Each lemon is like a tiny battery. In series, they add their "push" together. In parallel, they don't.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Connect the copper wire from Lemon 1 to the iron nail in Lemon 2, copper-to-nail in Lemon 3, and so on, ending with connecting an LED between the first copper wire and the last iron nail. This "stacking" (series connection) adds the electrical push from all five lemons together—giving enough voltage to light the LED. In parallel, each lemon's push stays small, so the LED won't light or will be very dim.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 10:</strong> Rechargeable batteries cost more than dry cells but are cheaper overall. Explain why and discuss the environmental benefit.
+          <details>
+            <summary>Show Hint</summary>
+            <p>How many times can each type be used? What happens to old batteries in landfills?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Rechargeable batteries can be used hundreds of times, while dry cells work only once. One rechargeable battery replaces ~500 dry cells over time—saving money. Environmentally, old batteries contain toxic metals like lead, cadmium, and lithium. Fewer batteries mean less toxic waste in landfills. Recycling old batteries recovers valuable metals and reduces mining harm. This is why e-waste recycling centers are important for the planet.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FLASHCARDS ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="flashcard-section">
+          <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+          <div class="flashcard-deck">
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is electromagnetism?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The relationship between electricity and magnetism where moving electrical current creates a magnetic field around the wire.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is an electromagnet?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A temporary magnet made by wrapping wire coil around an iron core and passing electric current through it. It can be turned on and off.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What causes heat when electricity flows through a wire?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Resistance—the wire's atoms push back against moving electrons, creating friction that generates heat.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is Oersted's discovery?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">In 1820, Hans Christian Oersted discovered that electric current flowing through a wire creates a magnetic field that can deflect a compass needle.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is a battery or voltaic cell?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A device that converts chemical energy into electrical energy using two different metals in an electrolyte (liquid or paste).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is the function of a fuse or circuit breaker?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Safety devices that cut off electrical current if too much flows through, preventing fires and protecting devices from damage.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">Why is nichrome wire used in heaters instead of copper wire?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Nichrome wire has high resistance, which produces useful heat when electricity flows through it. Copper has low resistance and stays cool.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What determines the strength of an electromagnet?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Number of coil loops (more = stronger), amount of current (higher = stronger), and presence of iron core (amplifies the field).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-counter">8 cards — click any card to flip</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MCQ QUIZ ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="mcq-section">
+          <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+          <div class="mcq-quiz">
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">When electric current flows through a wire wrapped around an iron nail, what happens?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> The nail becomes a temporary magnet that can pick up metal objects</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> The nail melts immediately</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> The iron becomes permanently magnetized</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Nothing happens; electricity and magnetism are unrelated</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! This is electromagnetism—the nail becomes a temporary magnet while current flows." data-wrong="The correct answer is A. Electricity creates a magnetic field that magnetizes the iron core."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="C">
+              <div class="mcq-stem">A student designs an electromagnet using a battery, wire coil, and iron nail. To make it stronger without changing the battery, what should she do?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Use a longer nail</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use thinner wire</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Add more loops of wire around the nail</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use a smaller battery</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! More coil loops = stronger magnetic field. This is how electromagnets are designed." data-wrong="The correct answer is C. Adding more coil loops increases the magnetic field strength."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">Why does a nichrome wire in a heater glow hot while a copper wire carrying the same current stays relatively cool?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Nichrome is made of a different element that naturally gets hot</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Nichrome has much higher electrical resistance, so friction produces more heat</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Copper is cooled by air, but nichrome isn't</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Nichrome wires are thinner and concentrate the current</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Resistance creates heat. High-resistance materials are ideal for heaters." data-wrong="The correct answer is B. Resistance to current flow creates the friction that generates heat."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="D">
+              <div class="mcq-stem">How is a circuit breaker different from a fuse in protecting electrical circuits?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Circuit breakers are stronger and can handle more current</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Fuses work faster than circuit breakers</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Circuit breakers only work with AC current</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Fuses burn out once and must be replaced; circuit breakers can be reset</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Circuit breakers are reusable; fuses are one-time use. Both protect against overcurrent." data-wrong="The correct answer is D. Circuit breakers are reusable switches; fuses melt and must be replaced."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">In a lemon battery, how many lemons would you need to connect in series to generate enough voltage to light a small LED?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Several lemons (typically 3-5) because each adds its voltage together</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Just one lemon is enough to power any LED</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Many lemons side-by-side (parallel) work better than in series</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Lemons cannot possibly power any electrical device</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Series connection adds voltages, while parallel doesn't. Multiple lemons in series create enough voltage for an LED." data-wrong="The correct answer is A. Connecting cells in series (one after another) adds their voltages together."></div>
+            </div>
+
+            <div class="mcq-score-bar">
+              <span class="score-text">0 / 5</span>
+              <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+              <button class="mcq-reset-btn">Reset Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER NAVIGATION -->
+    <div class="chapter-nav">
+      <a href="chapter3.html">← Chapter 3</a>
+      <a href="chapter5.html">Chapter 5 →</a>
+    </div>
+
+    <div class="footer">
+      <p>Grade 8 Science Learning Portal | Chapter 4: Electricity: Magnetic and Heating Effects</p>
+      <p>Master these concepts, and you'll understand how motors, doorbells, and heaters transform electricity into action and warmth.</p>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+    console.log('Theme loaded:', currentTheme);
+  </script>
+
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

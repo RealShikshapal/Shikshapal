@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 5: Exploring Forces — Science | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0e27; }
+    .nav { background: #1a1f3a; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00d4ff; }
+    .nav a { color: #00d4ff; margin: 0 1rem; text-decoration: none; transition: 0.3s; }
+    .nav a:hover { color: #00ffff; }
+    .subject-switcher { display: flex; gap: 0.5rem; }
+    .subject-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #262d4a; color: #999; cursor: pointer; transition: 0.3s; border: 1px solid #444; }
+    .subject-pill.active { background: #00d4ff; color: #0a0e27; font-weight: 600; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .page-header { margin: 2rem 0; }
+    .breadcrumb { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+    .breadcrumb a { color: #00d4ff; text-decoration: none; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; color: #00d4ff; margin: 0.5rem 0; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; color: #00ffff; margin-top: 2rem; margin-bottom: 1rem; }
+    .content-block { background: #1a1f3a; border-left: 4px solid #00d4ff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+    .block-label { display: inline-block; background: #00d4ff; color: #0a0e27; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hook-block { border-left-color: #ff6b6b; }
+    .hook-question { font-style: italic; color: #ffb84d; margin: 1rem 0; }
+    .bridge-block { border-left-color: #4ecdc4; }
+    .analogy { background: #2a3055; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 3px solid #4ecdc4; }
+    .logic-ladder { background: #1a1f3a; border: 2px solid #00d4ff; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; border-left: 4px solid #00d4ff; }
+    .logic-step-content { display: flex; gap: 1rem; }
+    .step-number { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; color: #00d4ff; font-weight: 700; min-width: 50px; }
+    .step-text { flex: 1; }
+    .deep-dive { background: #2a3055; padding: 1rem; margin: 0.5rem 0; border-radius: 6px; border-left: 3px solid #4ecdc4; }
+    .deep-dive-title { font-weight: 600; color: #4ecdc4; margin-bottom: 0.5rem; }
+    .activity-card { background: #262d4a; border: 2px solid #ffb84d; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .activity-title { color: #ffb84d; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-block { background: #1a1f3a; border: 2px solid #ff6b6b; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .quiz-level { margin: 1.5rem 0; }
+    .quiz-level-tag { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .level-predict { background: #ffb84d; color: #0a0e27; }
+    .level-why { background: #4ecdc4; color: #0a0e27; }
+    .level-apply { background: #ff6b6b; color: #fff; }
+    .quiz-question { margin: 1rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; }
+    details { cursor: pointer; margin: 0.5rem 0; }
+    details summary { color: #00d4ff; font-weight: 600; padding: 0.5rem; }
+    details summary:hover { color: #00ffff; }
+    details[open] summary { color: #4ecdc4; }
+    .chapter-nav { display: flex; justify-content: space-between; margin: 2rem 0; padding-top: 1rem; border-top: 2px solid #444; }
+    .chapter-nav a { color: #00d4ff; text-decoration: none; transition: 0.3s; padding: 0.5rem 1rem; border: 1px solid #00d4ff; border-radius: 6px; }
+    .chapter-nav a:hover { background: #00d4ff; color: #0a0e27; }
+    .footer { text-align: center; margin-top: 3rem; padding: 1rem; border-top: 1px solid #444; color: #666; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../../math/index.html">Math</a>
+      <a href="../../social/index.html">Social</a>
+      <a href="../../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 5
+      </div>
+      <h1>🚴 Exploring Forces</h1>
+      <p style="color: #888;">Master pushes and pulls—the invisible powers that make everything move, change shape, and interact.</p>
+    </div>
+
+    <!-- HOOK BLOCK -->
+    <div class="content-block hook-block">
+      <span class="block-label">THE HOOK</span>
+      <h2>Why Did Sonali Pedal Harder Going Uphill?</h2>
+      <p>Two friends riding bicycles: one pushes the pedals harder on flat ground, the other struggles going uphill. The same bicycle, same rider, but different efforts needed. What invisible power made pedaling harder on the hill?</p>
+      <div class="hook-question">What is this "invisible power" that changes how hard we need to push? And why does it always need us to push or pull?</div>
+    </div>
+
+    <!-- FEYNMAN BRIDGE -->
+    <div class="content-block bridge-block">
+      <span class="block-label">FEYNMAN BRIDGE</span>
+      <h2>Forces: The Universe's Language of Change</h2>
+      <p>A force is simply a push or a pull. That's it. But forces are the reason anything ever changes. Without a force, everything stays exactly as it is forever.</p>
+      <div class="analogy">
+        <strong>The Sleepy World Analogy:</strong> Imagine a world where nothing moves. Every ball is still, every bicycle is parked, every person is frozen. But one push on a ball starts it rolling. One pull on a rope lifts a bucket. Forces wake up the world. Without them, nothing changes. With them, everything becomes possible.
+      </div>
+      <p><strong>Magic vs. Science:</strong> Magic changes things mysteriously without explanation. But forces follow rules: push an object, and it accelerates in that direction. Push harder, it accelerates more. The rules are always the same. This consistency means we can predict what will happen before it happens—that's science.</p>
+    </div>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <div class="logic-ladder">
+      <h2>Understanding Forces: From Bicycles to Floating Ships</h2>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <strong>What Is a Force? Push or Pull</strong>
+            <p>A force is any push or pull that acts on an object. When you kick a soccer ball, you push it. When you pull a rope, you pull. When Earth pulls a falling apple down, that's also a force. Forces only happen between two or more things interacting with each other.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">The Key Insight:</div>
+              Forces always require interaction. A ball sitting alone on a table experiences no force (except Earth's pull downward and the table's push upward, which balance). A force only exists when two objects affect each other.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>What Happens When You Apply a Force?</strong>
+            <p>A force can make an object move from rest, change the speed of a moving object, change the direction of motion, or change the shape of an object. These are the four big effects of forces. Sometimes one push does multiple things!</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              Squeeze a rubber ball (change shape), throw it at a wall (change direction when it bounces), catch it and slow it down (change speed). All from forces!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <strong>Contact Forces: Push and Feel Back</strong>
+            <p>Contact forces require the two objects to be touching. Muscular force (your arm pushing) and friction (surfaces rubbing) are contact forces. You can see them happening because the objects touch visibly.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Muscular Force at Work:</div>
+              Every time you walk, run, jump, or lift something, your muscles contract and create force. This same muscular force moves your heart, pushes food through your stomach, and helps you think (brain muscles flex!). Animals use muscular force to hunt, escape, and survive.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <strong>Friction: The Hidden Force That Stops Things</strong>
+            <p>When you stop pedaling your bicycle, it doesn't keep going forever. Friction slows it down. Friction is the force between two surfaces that oppose motion. It acts opposite to the direction of movement.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Why Friction Happens:</div>
+              Even smooth surfaces have tiny bumps and irregularities. When two surfaces slide against each other, their bumps catch on each other, creating resistance. Rough surfaces have bigger bumps, so more friction. Smooth surfaces have smaller bumps, so less friction.
+            </div>
+            <div class="activity-card">
+              <div class="activity-title">Try This:</div>
+              Push a box on different surfaces (glass, wood, cloth, sand). On sand, it stops quickly (high friction). On glass, it slides far (low friction). Same push, different friction = different results.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">5</div>
+          <div class="step-text">
+            <strong>Non-Contact Forces: Magic That Isn't Magic</strong>
+            <p>Some forces work without touching! A magnet pulls iron from a distance. Earth pulls everything downward. A charged balloon pushes away another charged balloon. These non-contact forces seem magical but follow strict rules.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">The Three Non-Contact Forces:</div>
+              1) Magnetic force (magnets and electromagnets), 2) Electrostatic force (charged objects), 3) Gravitational force (Earth pulling everything).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">6</div>
+          <div class="step-text">
+            <strong>Gravitational Force: Earth's Constant Embrace</strong>
+            <p>Earth pulls every object toward itself with a force called gravity. A ball thrown upward slows down because gravity pulls it back. It falls because gravity keeps pulling. Gravity is always pulling downward on every object.</p>
+            <div class="activity-card">
+              <div class="activity-title">Gravity's Truth:</div>
+              Everything falls at the same rate if there's no air resistance. A feather and a bowling ball reach the ground at the same time in a vacuum! But air resistance makes feathers fall slower, so on Earth, bowling balls fall faster. This confused people until Galileo (500 years ago) explained it.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">7</div>
+          <div class="step-text">
+            <strong>Weight: How Strong Is Gravity Pulling You?</strong>
+            <p>Weight is the force of gravity pulling on an object. Measured in newtons (N). A heavier object has more weight because gravity pulls harder on it. Weight varies slightly by location on Earth, but mass stays the same everywhere.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Weight vs. Mass (Critical Difference!):</div>
+              Mass = amount of matter (stays the same everywhere). Weight = gravitational force (changes based on gravity strength). A 1 kg object weighs 10 N on Earth but only 1.6 N on the Moon. Same mass, different weight!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">8</div>
+          <div class="step-text">
+            <strong>Magnetic Force: Opposite Poles Attract, Like Poles Repel</strong>
+            <p>A magnet pulls on magnetic materials (iron, steel) and other magnets. The stronger the magnet, the farther it pulls. Like magnetic poles push away, opposite poles pull together. No touching required—the force acts through empty space!</p>
+            <div class="activity-card">
+              <div class="activity-title">Levitation Trick:</div>
+              Two ring magnets on a stick: put like poles facing each other. The top magnet floats, pushed up by the bottom magnet's repulsive force. This "levitation" is really just balanced repulsive forces!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">9</div>
+          <div class="step-text">
+            <strong>Electrostatic Force: Charged Objects Push and Pull</strong>
+            <p>Rub a plastic comb through your hair, and it attracts hair strands. Rub two balloons with wool, and they repel each other. This is electrostatic force from static electricity charges. Like charges repel, opposite charges attract.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              Rub a balloon on wool. Bring it near small paper scraps. The scraps stick! This proves electrostatic force works without touching. The charged balloon pulls the neutral paper toward it.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">10</div>
+          <div class="step-text">
+            <strong>Buoyancy: The Upward Push of Liquids</strong>
+            <p>When you push a bottle into water, the water pushes back upward. This upward force is buoyancy (also called upthrust). Liquids push upward on everything inside them. Ships float because buoyancy equals their weight. Heavy rocks sink because their weight is more than buoyancy.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Archimedes' Principle:</div>
+              The upward force equals the weight of liquid displaced. A 1-ton ship displaces 1 ton of water, so buoyancy = 1 ton upward, weight = 1 ton downward. They balance, and the ship floats. This is why steel ships (very heavy) can float—they displace enough water!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">11</div>
+          <div class="step-text">
+            <strong>The Force Unit: Newton (N)</strong>
+            <p>Scientists measure forces in newtons. A spring balance shows force in newtons. The more weight an object has, the more newtons its weight is. This standard unit lets us compare forces across the world, in labs, and in calculations.</p>
+            <div class="activity-card">
+              <div class="activity-title">Feel a Newton:</div>
+              Hang a 100-gram object (like a small apple) from a spring balance. It shows about 1 newton. That's the force Earth pulls on a 100-gram object. Heavier = more newtons.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCRATIC SANDBOX: QUIZ BLOCK -->
+    <div class="quiz-block">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+      <p>Challenge yourself at three levels. Start with <span style="color: #ffb84d;">Predict</span> (can you guess what happens?), move to <span style="color: #4ecdc4;">Why</span> (can you explain it?), and finish with <span style="color: #ff6b6b;">Apply</span> (can you use this idea?).</p>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-predict">LEVEL 1: PREDICT</span>
+        <div class="quiz-question">
+          <strong>Question 1:</strong> A ball is thrown upward. What happens to its speed as it goes up?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Gravity is always pulling downward. What does a constant downward force do to upward motion?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The ball's speed decreases. Gravity pulls it backward (downward) against its forward (upward) motion. This slows it down until it stops momentarily at the top, then gravity accelerates it downward.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 2:</strong> A box is pushed on a glass surface vs. a sandy surface with the same force. Which stops first?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Think about friction. Which surface is rougher?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The box on sand stops first. Sand is much rougher than glass, so friction is higher on sand. Same push, more friction = slower sliding and earlier stopping.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 3:</strong> A magnet is brought near iron. Does the iron move toward the magnet or the magnet move toward the iron?
+          <details>
+            <summary>Show Hint</summary>
+            <p>The force acts on both. Which one is free to move?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Both move toward each other if both are free. But usually, you hold the magnet still, so only the iron moves toward it. The force acts equally on both, but the movable object is the one you see moving.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-why">LEVEL 2: WHY (EXPLAIN IT)</span>
+        <div class="quiz-question">
+          <strong>Question 4:</strong> Why is weight on the Moon one-sixth of weight on Earth?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Weight is the gravitational force. The Moon is smaller than Earth, and gravity depends on how massive the object is.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The Moon is much smaller and less massive than Earth. Its gravity is weaker. An object that weighs 60 N on Earth (with strong gravity) weighs only 10 N on the Moon (with weaker gravity). But the object's mass (amount of matter) stays the same—60 kg on Earth and 60 kg on the Moon. The gravity strength changed, not the object.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 5:</strong> Explain why ships made of steel (very heavy) can float, while a small stone sinks.
+          <details>
+            <summary>Show Hint</summary>
+            <p>It's about buoyancy and weight balance. A ship's shape is key.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>A ship is designed like a hollow bowl. It's heavy, but it displaces (pushes aside) a huge volume of water. According to Archimedes' Principle, buoyancy equals the weight of displaced water. A ship displaces enough water to create buoyancy equal to its weight, so they balance and it floats. A stone is dense and doesn't displace enough water for buoyancy to equal its weight, so it sinks.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 6:</strong> Why do two charged balloons repel each other, but a charged balloon attracts paper scraps?
+          <details>
+            <summary>Show Hint</summary>
+            <p>The balloons have the same type of charge. Paper scraps are uncharged initially.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>When you rub two balloons identically, both get the same charge (negative). Like charges repel each other, so the balloons push apart. Paper scraps are initially uncharged, but the charged balloon attracts them. The charged balloon polarizes the paper (shifts charges inside it), creating attraction. This is why charged combs attract hair!</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-apply">LEVEL 3: APPLY (USE THE IDEA)</span>
+        <div class="quiz-question">
+          <strong>Question 7:</strong> A backpack with broad straps feels less painful than one with narrow straps, even when both weigh the same. Design a solution for carrying heavy loads that reduces pain.
+          <details>
+            <summary>Show Hint</summary>
+            <p>This is about spreading force over area. What could you add or design?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Use very broad, padded straps (spreads force over large area, reducing pressure). Add a waist belt that transfers some weight to your hips. Use a frame that distributes weight to your entire back and core. The principle: same force (weight) applied to larger area = lower pressure = less pain. This is why proper backpacks have ergonomic design.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 8:</strong> A cyclist riding uphill finds pedaling harder than on flat ground. Explain the forces involved and suggest how to make it easier.
+          <details>
+            <summary>Show Hint</summary>
+            <p>What forces act on the cyclist? What pulls them backward or downward?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Gravity pulls the cyclist and bike downward, which has a component pulling them backward along the slope. Friction also opposes motion. On flat ground, only forward friction opposes motion. On a slope, both gravity's downward pull AND friction oppose forward motion, so more force is needed. Solution: switch to a lower gear (mechanical advantage) to push harder but pedal slower, or find a less steep path that reduces the component of gravity opposing motion.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 9:</strong> A bridge is built over a wide river. It must support the weight of cars and trucks. What forces must engineers consider?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Think about all forces: gravity (weight of vehicles, bridge itself), friction (at support points), water pressure, wind force.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Engineers must account for gravitational forces (bridge + vehicle weights pushing down), water pressure from the river pushing horizontally on supports, buoyant forces on bridge supports in water, wind force pushing sideways on the structure, and friction at anchor points. They design with a safety factor (the bridge can hold much more than expected maximum load) because underestimating forces causes collapse. This is why bridges have cable supports and wide bases—they distribute forces efficiently.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 10:</strong> Design an experiment to show that friction depends on surface roughness but not on the weight of an object directly.
+          <details>
+            <summary>Show Hint</summary>
+            <p>You'd push the same object on different surfaces and on different surfaces with more weight added.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Push a wooden block the same distance on glass, wood, cloth, and sand with the same force. Measure how far it travels. It travels farthest on glass (smooth, low friction) and shortest on sand (rough, high friction). This shows friction depends on surface roughness. Then repeat on sand, adding weight on top of the block each time. The block travels shorter distances with more weight (more pressure on sand). This shows friction also depends on weight, but the main factor is roughness—that's why sandpaper works so well for sanding.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAPTER NAVIGATION -->
+    <!-- ===== FLASHCARDS ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="flashcard-section">
+          <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+          <div class="flashcard-deck">
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is a force?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A push or pull on an object that can change its motion, direction, or shape. The SI unit is the Newton (N).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is Newton's First Law of Motion?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">An object at rest stays at rest and an object in motion stays in motion unless acted upon by a net force.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is friction and what are its effects?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A force that opposes motion between surfaces in contact. It slows objects down and converts kinetic energy to heat.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is gravity?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A force of attraction between all objects in the universe. On Earth, it pulls objects downward with an acceleration of 10 m/s².</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is pressure and how is it calculated?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The force exerted per unit area. Pressure = Force ÷ Area. Narrower surfaces create higher pressure with same force.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is terminal velocity?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The maximum speed reached by a falling object when air resistance equals the gravitational force, causing zero acceleration.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What are balanced and unbalanced forces?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Balanced forces are equal and opposite, resulting in no change in motion. Unbalanced forces produce acceleration and change motion.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is the difference between weight and mass?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Mass is the amount of matter in an object (constant). Weight is the gravitational force on that mass (varies with gravity strength).</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-counter">8 cards — click any card to flip</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MCQ QUIZ ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="mcq-section">
+          <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+          <div class="mcq-quiz">
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">A bicycle moving at constant speed on a flat road experiences balanced forces. Which statement is true?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> No forces act on the bicycle</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Pedaling force equals friction and air resistance</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> The bicycle is accelerating due to balanced forces</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Friction is the only force acting</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Balanced forces mean zero net force, causing constant velocity (not acceleration)." data-wrong="The correct answer is B. When pedaling force equals resistance, forces are balanced and speed remains constant."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="C">
+              <div class="mcq-stem">Two students push a heavy box. Student A pushes with 100 N east; Student B pushes with 60 N east. What is the net force?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 40 N west</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 160 N east</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 160 N east</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Zero—balanced forces</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Forces in the same direction add together: 100 N + 60 N = 160 N east." data-wrong="The correct answer is C. When forces are in the same direction, they add together."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">Why does a sharp nail penetrate a wall more easily than a dull nail with the same force applied?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> The sharp point concentrates force on a smaller area, creating higher pressure</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Sharp nails are made of stronger metal</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> The dull nail spreads the force over a larger mass</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Pressure and force are the same thing</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Pressure = Force ÷ Area. Sharp point = smaller area = higher pressure." data-wrong="The correct answer is A. A sharp point creates high pressure over a small area."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="D">
+              <div class="mcq-stem">A skydiver falls through the air. Initially she accelerates downward, but after some time her speed becomes constant. Why?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Gravity stops pulling on her</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> She has reached Earth's surface</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> There is no force acting on her anymore</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Air resistance increases and equals the gravitational force, making forces balanced</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! This is terminal velocity—when air resistance equals weight, net force is zero and speed becomes constant." data-wrong="The correct answer is D. Terminal velocity occurs when air resistance balances gravity."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">On the Moon, you weigh less than on Earth, even though your mass stays the same. Why?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> The Moon has stronger gravity</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> The Moon's gravity is weaker, so the gravitational force (weight) is less</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> You actually lose mass on the Moon</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Weight and mass are the same thing</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Mass is constant, but weight (force due to gravity) changes with gravity strength." data-wrong="The correct answer is B. Weight depends on gravitational acceleration, which is weaker on the Moon."></div>
+            </div>
+
+            <div class="mcq-score-bar">
+              <span class="score-text">0 / 5</span>
+              <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+              <button class="mcq-reset-btn">Reset Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter-nav">
+      <a href="chapter4.html">← Chapter 4</a>
+      <a href="chapter6.html">Chapter 6 →</a>
+    </div>
+
+    <div class="footer">
+      <p>Grade 8 Science Learning Portal | Chapter 5: Exploring Forces</p>
+      <p>Forces are the grammar of motion—learn this language, and you can predict how anything will move, bend, or fall.</p>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+    console.log('Theme loaded:', currentTheme);
+  </script>
+
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>

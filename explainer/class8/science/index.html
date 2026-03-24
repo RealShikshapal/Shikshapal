@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science (Curiosity) — Grade 8 Interactive Learning Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
 
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">8</span>
+        <span>Grade 8 Portal</span>
+      </a>
+
+      <div class="subject-switcher" role="tablist" aria-label="Subjects">
+        <a href="index.html" class="subject-pill active" data-subject="science" role="tab">
+          <span aria-hidden="true">🔬</span>
+          <span class="pill-label">Science</span>
+        </a>
+        <a href="../math/index.html" class="subject-pill" data-subject="math" role="tab">
+          <span aria-hidden="true">📐</span>
+          <span class="pill-label">Math</span>
+        </a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social" role="tab">
+          <span aria-hidden="true">🌍</span>
+          <span class="pill-label">Social Science</span>
+        </a>
+        <a href="../english/index.html" class="subject-pill" data-subject="english" role="tab">
+          <span aria-hidden="true">📖</span>
+          <span class="pill-label">English</span>
+        </a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep">→</span>
+        <span>Science</span>
+      </div>
+      <h1>Science</h1>
+      <div class="subtitle">Curiosity — Textbook of Science</div>
+    </div>
+  </section>
+
+  <!-- ===== CHAPTER LIST ===== -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <ul class="chapter-list">
+        <li>
+          <a href="chapter1.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">1</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Exploring the Investigative World of Science</div>
+              <div class="chapter-teaser">Discover how scientists observe, question, and test the natural world around us.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter2.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">2</span>
+            <div class="chapter-info">
+              <div class="chapter-title">The Invisible Living World: Beyond Our Naked Eye</div>
+              <div class="chapter-teaser">Journey into the microscopic realm of cells, bacteria, and the tiny organisms that make life possible.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter3.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">3</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Health: The Ultimate Treasure</div>
+              <div class="chapter-teaser">Understand nutrition, disease prevention, and the amazing systems that keep your body running.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter4.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">4</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Electricity: Magnetic and Heating Effects</div>
+              <div class="chapter-teaser">Explore the invisible force that powers our world—from electromagnets to the heat in your home.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter5.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">5</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Exploring Forces</div>
+              <div class="chapter-teaser">See how pushes, pulls, and motion shape everything from cars to planets in space.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter6.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">6</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Pressure, Winds, Storms, and Cyclones</div>
+              <div class="chapter-teaser">Understand how air pressure creates weather patterns, winds, and the power of nature's most violent storms.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter7.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">7</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Particulate Nature of Matter</div>
+              <div class="chapter-teaser">Discover that everything is made of tiny, invisible particles that are always moving and changing.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter8.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">8</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Nature of Matter: Elements, Compounds, and Mixtures</div>
+              <div class="chapter-teaser">Learn what pure substances are and how they combine to create the materials around us.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter9.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">9</span>
+            <div class="chapter-info">
+              <div class="chapter-title">The Amazing World of Solutes, Solvents, and Solutions</div>
+              <div class="chapter-teaser">See how substances dissolve in liquids to create the solutions we use every day.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter10.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">10</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Light: Mirrors and Lenses</div>
+              <div class="chapter-teaser">Explore how light travels, reflects, and bends to create the images we see every day.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter11.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">11</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Keeping Time with the Skies</div>
+              <div class="chapter-teaser">Learn how the stars, sun, and moon have guided timekeeping since ancient civilizations.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter12.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">12</span>
+            <div class="chapter-info">
+              <div class="chapter-title">How Nature Works in Harmony</div>
+              <div class="chapter-teaser">Understand ecosystems and how every organism depends on others to survive and thrive.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="chapter13.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--science);">13</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Our Home: Earth, a Unique Life Sustaining Planet</div>
+              <div class="chapter-teaser">Discover what makes Earth special and how we can protect it for future generations.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Interactive Learning Portal — Built from NCERT textbooks (2025 Edition)</p>
+      <p style="margin-top: var(--sp-2);">
+        Pedagogical framework: Feynman Technique · First-Principles Reasoning · Socratic Inquiry
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== THEME TOGGLE SCRIPT ===== -->
+  <script>
+    (function() {
+      const html = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const icon = document.getElementById('themeIcon');
+
+      // Check saved preference
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        html.setAttribute('data-theme', saved);
+        icon.textContent = saved === 'light' ? '🌙' : '☀️';
+      }
+
+      btn.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        icon.textContent = next === 'light' ? '🌙' : '☀️';
+      });
+
+      // Intersection Observer for scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.animate-in').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

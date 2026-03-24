@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ch 6: Pressure, Winds, Storms, and Cyclones — Science | Grade 8 Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0e27; }
+    .nav { background: #1a1f3a; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00d4ff; }
+    .nav a { color: #00d4ff; margin: 0 1rem; text-decoration: none; transition: 0.3s; }
+    .nav a:hover { color: #00ffff; }
+    .subject-switcher { display: flex; gap: 0.5rem; }
+    .subject-pill { padding: 0.5rem 1rem; border-radius: 20px; background: #262d4a; color: #999; cursor: pointer; transition: 0.3s; border: 1px solid #444; }
+    .subject-pill.active { background: #00d4ff; color: #0a0e27; font-weight: 600; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .page-header { margin: 2rem 0; }
+    .breadcrumb { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+    .breadcrumb a { color: #00d4ff; text-decoration: none; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; color: #00d4ff; margin: 0.5rem 0; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; color: #00ffff; margin-top: 2rem; margin-bottom: 1rem; }
+    .content-block { background: #1a1f3a; border-left: 4px solid #00d4ff; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+    .block-label { display: inline-block; background: #00d4ff; color: #0a0e27; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hook-block { border-left-color: #ff6b6b; }
+    .hook-question { font-style: italic; color: #ffb84d; margin: 1rem 0; }
+    .bridge-block { border-left-color: #4ecdc4; }
+    .analogy { background: #2a3055; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 3px solid #4ecdc4; }
+    .logic-ladder { background: #1a1f3a; border: 2px solid #00d4ff; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .logic-step { margin: 1.5rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; border-left: 4px solid #00d4ff; }
+    .logic-step-content { display: flex; gap: 1rem; }
+    .step-number { font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; color: #00d4ff; font-weight: 700; min-width: 50px; }
+    .step-text { flex: 1; }
+    .deep-dive { background: #2a3055; padding: 1rem; margin: 0.5rem 0; border-radius: 6px; border-left: 3px solid #4ecdc4; }
+    .deep-dive-title { font-weight: 600; color: #4ecdc4; margin-bottom: 0.5rem; }
+    .activity-card { background: #262d4a; border: 2px solid #ffb84d; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .activity-title { color: #ffb84d; font-weight: 700; margin-bottom: 0.5rem; }
+    .quiz-block { background: #1a1f3a; border: 2px solid #ff6b6b; border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
+    .quiz-level { margin: 1.5rem 0; }
+    .quiz-level-tag { display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .level-predict { background: #ffb84d; color: #0a0e27; }
+    .level-why { background: #4ecdc4; color: #0a0e27; }
+    .level-apply { background: #ff6b6b; color: #fff; }
+    .quiz-question { margin: 1rem 0; padding: 1rem; background: #262d4a; border-radius: 6px; }
+    details { cursor: pointer; margin: 0.5rem 0; }
+    details summary { color: #00d4ff; font-weight: 600; padding: 0.5rem; }
+    details summary:hover { color: #00ffff; }
+    details[open] summary { color: #4ecdc4; }
+    .chapter-nav { display: flex; justify-content: space-between; margin: 2rem 0; padding-top: 1rem; border-top: 2px solid #444; }
+    .chapter-nav a { color: #00d4ff; text-decoration: none; transition: 0.3s; padding: 0.5rem 1rem; border: 1px solid #00d4ff; border-radius: 6px; }
+    .chapter-nav a:hover { background: #00d4ff; color: #0a0e27; }
+    .footer { text-align: center; margin-top: 3rem; padding: 1rem; border-top: 1px solid #444; color: #666; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../../math/index.html">Math</a>
+      <a href="../../social/index.html">Social</a>
+      <a href="../../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 6
+      </div>
+      <h1>🌪️ Pressure, Winds, Storms, and Cyclones</h1>
+      <p style="color: #888;">Understand how invisible air pressure shapes weather, lifts roofs, and creates the most powerful storms on Earth.</p>
+    </div>
+
+    <!-- HOOK BLOCK -->
+    <div class="content-block hook-block">
+      <span class="block-label">THE HOOK</span>
+      <h2>Why Aren't We Crushed by the Sky?</h2>
+      <p>The air above you weighs 225 kilograms pressing down on every square foot of your body. That's like a baby elephant standing on your shoulders. Yet you feel nothing. On a windy day, air pushes so hard it blows roofs off houses. So why don't you feel crushed, and why do storms have such destructive power?</p>
+      <div class="hook-question">What is this invisible air "pressure," and how can something you can't see create such powerful forces?</div>
+    </div>
+
+    <!-- FEYNMAN BRIDGE -->
+    <div class="content-block bridge-block">
+      <span class="block-label">FEYNMAN BRIDGE</span>
+      <h2>Pressure: Invisible Force per Tiny Area</h2>
+      <p>Imagine an ocean of air surrounding the entire planet, 100 kilometers deep. All that air has weight. That weight pushes DOWN from above, creating pressure. The narrower the surface it pushes on, the more intense the pressure feels.</p>
+      <div class="analogy">
+        <strong>The Backpack Strap Analogy:</strong> A 5-kilogram backpack feels painful on narrow straps because the weight concentrates on a tiny area of your shoulders (high pressure). The same backpack feels comfortable on broad straps because the weight spreads over a large area (low pressure). Same weight, different pressure! Air works the same way: the same atmospheric force creates high pressure on a sharp nail point and low pressure on a flat roof.
+      </div>
+      <p><strong>Magic vs. Science:</strong> It might seem magical that invisible air creates real damage, but air is just matter. Matter has weight. Weight creates pressure. This pressure follows mathematical rules that let engineers design buildings that withstand wind, and meteorologists predict storms. Science beats magic again.</p>
+    </div>
+
+    <!-- INTERACTIVE CORE: LOGIC LADDER -->
+    <div class="logic-ladder">
+      <h2>Understanding Pressure, Air, and Storms: The Complete Chain</h2>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">1</div>
+          <div class="step-text">
+            <strong>What Is Pressure? Force Spread Across Area</strong>
+            <p>Pressure = Force ÷ Area. The same force on a smaller area creates higher pressure. A knife cuts well because the sharp blade concentrates force on a tiny edge area. A blunt knife needs more force for the same pressure.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">The Unit: Pascal (Pa)</div>
+              Pressure is measured in pascals. 1 pascal = 1 newton of force on 1 square meter of area. A nail pressing on wood with 100 newtons of force on a 1 square centimeter tip creates 1,000,000 pascals of pressure! That's why it drives in.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">2</div>
+          <div class="step-text">
+            <strong>Liquids Exert Pressure at the Bottom and Sides</strong>
+            <p>Fill a container with water. The weight of water above presses downward (pressure increases with depth). The water also pushes outward on all sides. Poke a hole anywhere on the side, and water sprays out—proof that liquids push in all directions.</p>
+            <div class="activity-card">
+              <div class="activity-title">Why Water Tanks Are High:</div>
+              Overhead water tanks are placed high so the tall column of water creates high pressure. More height = more pressure at the tap below = faster water flow. Engineers use pressure = weight of water above.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">3</div>
+          <div class="step-text">
+            <strong>Air Also Exerts Pressure (Atmospheric Pressure)</strong>
+            <p>The air around you is matter with weight. It presses down from above with force equal to a 225-kilogram mass on every square foot! We don't feel crushed because the pressure inside our bodies equals the pressure outside—they balance perfectly.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">How We Know Air Pressure Is Real:</div>
+              A rubber sucker presses against a wall. Air inside is pushed out, creating lower pressure. Higher pressure outside the sucker pushes it firmly against the wall. When you try to pull it off, you must overcome this pressure difference. This proves air exerts real pressure.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">4</div>
+          <div class="step-text">
+            <strong>Air Moves From High Pressure to Low Pressure</strong>
+            <p>When you open an inflated balloon, air rushes out. When you use a bicycle pump, you create high pressure that pushes air into the tire. Air always flows from high-pressure regions to low-pressure regions. This simple rule creates wind!</p>
+            <div class="activity-card">
+              <div class="activity-title">Pressure Difference Creates Movement:</div>
+              In a straw connecting two balloons, air flows from the inflated one (high pressure) to the uninflated one (low pressure) until pressures equalize. Wind works identically—it's nature's way of equalizing pressure differences!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">5</div>
+          <div class="step-text">
+            <strong>How Wind Forms: Unequal Heating Creates Pressure Differences</strong>
+            <p>The sun heats land faster than water. Hot air above the land becomes lighter and rises, creating LOW pressure below. Cool air from the sea rushes in to fill this void, creating a WIND. This sea breeze is just air equalizing pressure differences caused by unequal heating.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Sea vs. Land Breeze:</div>
+              Day: Land heats faster, air rises, low pressure forms. Sea air rushes in = sea breeze. Night: Water is warmer, air rises over sea, low pressure forms. Land air rushes toward sea = land breeze. Same principle, reversed!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">6</div>
+          <div class="step-text">
+            <strong>High-Speed Winds Lower Air Pressure (Bernoulli's Principle)</strong>
+            <p>When air moves fast, it creates lower pressure around it. Blow air between two balloons—they collapse inward because the moving air between them has lower pressure than the air outside the balloons. This is why high-speed winds blow off roofs!</p>
+            <div class="activity-card">
+              <div class="activity-title">Roofs and Pressure:</div>
+              During a storm, fast wind over a roof creates low pressure above. Higher pressure below the roof pushes it upward with immense force. If the roof is weak or the pressure difference is huge, the roof flies off!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">7</div>
+          <div class="step-text">
+            <strong>Thunderstorms: When Pressure Differences Become Violent</strong>
+            <p>Hot, moist air rises rapidly. Cold air falls rapidly. These strong up-and-down winds cause water droplets and ice particles to rub together, building static electrical charges. When charge builds enough, it releases as lightning.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Lightning Formation:</div>
+              Positive charges accumulate at the cloud top. Negative charges accumulate at the cloud bottom and ground. When insulation breaks down, electricity flows through air as a brilliant flash. The shock heats air to 30,000 Kelvin, making it expand explosively—that's thunder!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">8</div>
+          <div class="step-text">
+            <strong>Cyclones: Organized Storms with Rotating Winds</strong>
+            <p>Over warm oceans, water evaporates and warms the air above it. This moist air rises, creating very low pressure beneath. Air rushes in to fill this void. Earth's rotation makes the air spiral. The faster the spiral, the stronger the cyclone. A cyclone is nature's pressure-equalizing machine that has spun into a perfect storm.</p>
+            <div class="activity-card">
+              <div class="activity-title">The Cyclone Structure:</div>
+              The "eye" is the center where pressure is lowest and wind is calm. Surrounding it, winds rotate at terrifying speeds (up to 300 km/h). This rotation is caused by Earth's spin and air rushing toward the low-pressure center.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">9</div>
+          <div class="step-text">
+            <strong>Cyclone Damage: The Result of Extreme Pressure and Speed</strong>
+            <p>Cyclone winds are so fast they create extreme pressure differences that tear buildings apart. Storm surge pushes ocean water inland, flooding coastal areas. Heavy rain causes rivers to overflow. Debris flies like missiles. Scientists monitor cyclones with satellites to predict their paths and warn people to evacuate.</p>
+            <div class="deep-dive">
+              <div class="deep-dive-title">Defense Against Cyclones:</div>
+              Early warning (satellites track pressure and wind patterns), evacuation to shelters, building codes that resist high winds, mangrove forests that break wind speed, and seawalls that reduce storm surge. Science saves lives by understanding pressure physics.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logic-step">
+        <div class="logic-step-content">
+          <div class="step-number">10</div>
+          <div class="step-text">
+            <strong>Safe Actions During Storms: Pressure Physics Applied</strong>
+            <p>During a windstorm, open windows to equalize pressure inside and outside your house (stops roofs from being pushed off). During lightning, avoid tall objects (lightning seeks the highest point) and stay away from metal (conducts electricity). A car is safe because it conducts lightning around you, and a building with a lightning conductor directs it safely to ground.</p>
+            <div class="activity-card">
+              <div class="activity-title">Safe Home Mini-Activity:</div>
+              Next time you hear a storm, notice how pressure changes. Your ears might "pop" as atmospheric pressure changes—that's your inner ear sensing pressure differences. Science is happening around you constantly!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCRATIC SANDBOX: QUIZ BLOCK -->
+    <div class="quiz-block">
+      <h2>Socratic Sandbox: Test Your Understanding</h2>
+      <p>Challenge yourself at three levels. Start with <span style="color: #ffb84d;">Predict</span> (can you guess what happens?), move to <span style="color: #4ecdc4;">Why</span> (can you explain it?), and finish with <span style="color: #ff6b6b;">Apply</span> (can you use this idea?).</p>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-predict">LEVEL 1: PREDICT</span>
+        <div class="quiz-question">
+          <strong>Question 1:</strong> You place a paper sheet on a table, hold its edge, and blow air between the sheet and table. Does the sheet push up or stay flat?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Fast-moving air creates low pressure. What happens to pressure below the sheet?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The sheet pushes UP. Your breath creates fast-moving air above the sheet, lowering pressure there. Higher pressure below the sheet (from normal air) pushes it upward. This is Bernoulli's principle in action.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 2:</strong> Water is poured into two containers: one narrow and tall, one wide and shallow, to the same height. Which experiences greater pressure at the bottom?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Pressure from a liquid depends on the height of the column, not on the width of the container.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Both experience the same pressure at the bottom. Pressure from a liquid depends only on the height of the liquid column above, not on how wide the container is. This is why overhead tanks work regardless of their shape—only the height matters.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 3:</strong> During a thunderstorm, the weather inside a building is calm, but outside the wind is violent. What happens if you open all the windows?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Pressure inside (calm) vs. outside (low due to fast wind). What happens when you open pathways?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Air rushes into the building violently. The outside pressure is lower (due to fast wind), so higher inside pressure pushes air outward. Wait—it's actually more complex. Low pressure outside can suck air out, but the wind also creates turbulence. In real storms, opening windows (partially) helps equalize pressure and protects the roof.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-why">LEVEL 2: WHY (EXPLAIN IT)</span>
+        <div class="quiz-question">
+          <strong>Question 4:</strong> Explain why lightning conductors on buildings have a pointed end that sticks up higher than the roof.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Lightning tends to strike the highest point. Where does the electrical charge need to go?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>The pointed end is the highest point, so lightning preferentially strikes there instead of the building. The conductor provides an easy path for the electrical discharge to travel safely down into the ground, where it disperses harmlessly. Without the conductor, lightning strikes the building itself, causing fires and damage.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 5:</strong> Why is the base of a dam much broader than its top, even though a dam at any height holds back water?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Water pressure increases with depth. Where is the pressure strongest? Where does the dam need the most structural support?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Water pressure is greatest at the bottom of the dam. A tall water column above creates huge pressure at the base. The dam must be broad and strong at the base to withstand this immense horizontal force. At the top, pressure is lower, so the dam can be narrower. Engineers design dams to match the pressure distribution—thick where pressure is greatest.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 6:</strong> Explain why sea breezes blow during the day but land breezes blow at night.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Heating and cooling cause pressure differences. What cools faster at night—land or water?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Day: Sun heats land faster than water. Hot air above land rises (creating low pressure). Cool air from the sea rushes in = sea breeze. Night: Land cools faster than water (water has high heat capacity and retains warmth). Water is now warmer, so air above it rises (creating low pressure). Land air rushes toward the sea = land breeze. Temperature differences create pressure differences, which create wind.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="quiz-level">
+        <span class="quiz-level-tag level-apply">LEVEL 3: APPLY (USE THE IDEA)</span>
+        <div class="quiz-question">
+          <strong>Question 7:</strong> Design a city's water supply system that maximizes water pressure at taps without using electric pumps.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Pressure depends on height of water. Where would you locate the tank?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Place storage tanks on the tallest point in the city (a hill, or a tall water tower). Water flows downhill to all areas below through gravity alone. Pressure at any tap = pressure from the water column above it. Higher tanks = higher pressure. This is why ancient cities built aqueducts and water towers—they understood that height creates pressure.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 8:</strong> A beach town is prone to cyclones. Design a system to warn residents and minimize damage.
+          <details>
+            <summary>Show Hint</summary>
+            <p>Think about monitoring, warning time, and structural design. How does science help?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>1) Satellite monitoring tracks pressure and wind patterns (meteorologists predict cyclone path days in advance). 2) Public warning system (sirens, phone alerts) gives people 12-24 hours to evacuate. 3) Cyclone shelters built to withstand extreme winds (reinforced, small windows to prevent pressure buildup). 4) Building codes require homes and businesses to resist high-speed winds. 5) Mangrove forests and seawalls reduce wind speed and storm surge. 6) Emergency supplies (food, water, medicine) cached in shelters. Science turns a natural disaster into a manageable crisis.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 9:</strong> Explain why a sheet of paper held horizontally sags when you blow air above it, but jumps up when you pull air (by creating a low-pressure zone).
+          <details>
+            <summary>Show Hint</summary>
+            <p>Both involve pressure differences. In one case, you create low pressure above. In the other, you reduce pressure below.</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>When you blow strongly above, you create low pressure there. Higher pressure below pushes the paper down. When you pull (creating suction), you create low pressure below the paper. Higher pressure above pushes it up. Both are pressure differences—just applied from different directions. The paper always moves toward the region of lower pressure because higher pressure pushes toward lower pressure.</p>
+          </details>
+        </div>
+
+        <div class="quiz-question">
+          <strong>Question 10:</strong> Why do meteorologists say that cyclones weaken when they move from the ocean to land, and how could you use this to predict their strength?
+          <details>
+            <summary>Show Hint</summary>
+            <p>Cyclones form over warm water. What energy source disappears when they move inland?</p>
+          </details>
+          <details>
+            <summary>Show Answer</summary>
+            <p>Cyclones are powered by warm ocean water evaporation. The evaporating water releases heat (latent heat), which warms the air and makes it rise faster, creating the low-pressure center. Over land, there's no ocean water to evaporate, so this heat source is cut off. The storm weakens. Meteorologists track ocean water temperature (warmer = stronger potential cyclone) and the path's distance to water (nearer water = maintained strength, over land = rapid weakening). They combine satellite data on temperature, pressure, and position to predict cyclone intensity hours or days ahead.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAPTER NAVIGATION -->
+    <!-- ===== FLASHCARDS ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="flashcard-section">
+          <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
+          <div class="flashcard-deck">
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is atmospheric pressure?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The force exerted by the weight of air above a surface. At sea level, it's about 101,325 Pa (1 atm).</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">How is wind formed?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Air moves from areas of high pressure to low pressure. When the sun heats air unevenly, it creates pressure differences that cause wind.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is a cyclone?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A powerful rotating storm system with very low pressure at the center, characterized by strong winds and heavy rain.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What causes low air pressure at the center of a cyclone?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Warm, rising air creates a zone of very low pressure. Surrounding air rushes in to fill this low-pressure area, creating strong winds.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is the Coriolis effect?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">The apparent deflection of moving objects due to Earth's rotation. It causes cyclones and air masses to curve as they move.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">How do isobars on a weather map help predict weather?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Isobars connect points of equal pressure. Tightly spaced isobars indicate strong pressure gradients and therefore stronger winds.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">What is the difference between a cyclone and an anticyclone?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">Cyclones have low pressure, rising air, and clouds/rain. Anticyclones have high pressure, sinking air, and clear weather.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="fc-label">Term / Concept</div>
+                  <div class="fc-question">How does a barometer measure atmospheric pressure?</div>
+                  <div class="fc-tap">tap to flip</div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="fc-answer">A barometer uses the height of a liquid column (mercury or water) balanced by atmospheric pressure to measure air pressure in the surroundings.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flashcard-counter">8 cards — click any card to flip</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MCQ QUIZ ===== -->
+    <section class="section">
+      <div class="container" style="max-width:900px;">
+        <div class="mcq-section">
+          <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
+          <div class="mcq-quiz">
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">Why aren't you crushed by atmospheric pressure even though about 225 kg of air presses on every square meter of your body?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Pressure inside your body equals outside pressure, so forces balance</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> The air is too light to exert pressure</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Your bones are strong enough to resist the pressure</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Atmospheric pressure only affects inanimate objects</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Balanced pressure—internal and external pressures are equal, so net force is zero." data-wrong="The correct answer is A. Internal and external pressure balance, preventing you from feeling compressed."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="C">
+              <div class="mcq-stem">A weather map shows tightly spaced isobars in one region and widely spaced isobars in another. Where would the stronger winds occur?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Where isobars are widely spaced (low pressure gradient)</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> In regions with high pressure values</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Where isobars are tightly spaced (steep pressure gradient)</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Isobar spacing doesn't affect wind speed</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Steep pressure gradients (tight spacing) cause air to move faster, creating stronger winds." data-wrong="The correct answer is C. Tightly spaced isobars indicate steep pressure gradients that drive strong winds."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="B">
+              <div class="mcq-stem">What is the primary reason cyclones and hurricanes rotate?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> The storm is pushed by trade winds</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> The Coriolis effect deflects moving air, creating rotation</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Water evaporation creates spinning motion</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Rotation is random and unpredictable</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! The Coriolis effect deflects air movement due to Earth's rotation, causing cyclones to spin." data-wrong="The correct answer is B. The Coriolis effect is responsible for cyclone rotation patterns."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="D">
+              <div class="mcq-stem">At the center of a cyclone (the eye), conditions are remarkably different from the surrounding storm. Which statement is true about the eye?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> It has the strongest winds and heaviest rain</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> It is hotter than the surrounding storm</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> It rotates faster than the rest of the cyclone</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> It has relatively calm winds and clear skies due to sinking air</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! The eye has sinking air that compresses and warms, creating calm conditions in the storm center." data-wrong="The correct answer is D. The eye is the calmest part of a cyclone due to subsiding air."></div>
+            </div>
+
+            <div class="mcq-item" data-answer="A">
+              <div class="mcq-stem">How do sea breezes form due to pressure differences created by uneven heating?</div>
+              <ul class="mcq-options">
+                <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Land heats faster, air rises, creating low pressure; cooler ocean air flows in to replace it</li>
+                <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Ocean is always warmer, so it constantly pushes breezes toward land</li>
+                <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Sea breezes are caused by Earth's rotation alone</li>
+                <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Water evaporation creates pressure that pushes wind</li>
+              </ul>
+              <div class="mcq-feedback" data-correct="Correct! Differential heating creates pressure gradients that drive sea breezes." data-wrong="The correct answer is A. Uneven heating causes pressure differences that drive wind patterns."></div>
+            </div>
+
+            <div class="mcq-score-bar">
+              <span class="score-text">0 / 5</span>
+              <div class="score-fill"><div class="bar" style="width:0%"></div></div>
+              <button class="mcq-reset-btn">Reset Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter-nav">
+      <a href="chapter5.html">← Chapter 5</a>
+      <a href="chapter7.html">Chapter 7 →</a>
+    </div>
+
+    <div class="footer">
+      <p>Grade 8 Science Learning Portal | Chapter 6: Pressure, Winds, Storms, and Cyclones</p>
+      <p>Understand pressure, and you hold the key to meteorology, engineering, and survival when nature's power is unleashed.</p>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+    console.log('Theme loaded:', currentTheme);
+  </script>
+
+  <script src="../css/quiz-engine.js"></script>
+</body>
+</html>
