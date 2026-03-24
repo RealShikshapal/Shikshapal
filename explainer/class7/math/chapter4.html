@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expressions Using Letter-Numbers — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+    .subject-switcher { background: white; border-bottom: 2px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
+    .switcher-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 2rem; padding: 1rem; }
+    .switcher-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #222; display: flex; align-items: center; gap: 0.5rem; }
+    .logo-icon { font-size: 1.5rem; }
+    .switcher-link { text-decoration: none; color: #666; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.2s; }
+    .switcher-link:hover { background: #f0f0f0; color: #222; }
+    .switcher-link.active { background: #e3f2fd; color: #1976d2; }
+    .chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-hero.math { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); }
+    .chapter-hero h1 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.8rem; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 800; }
+    .chapter-label { font-size: 0.9rem; font-weight: 600; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .breadcrumb { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+    .breadcrumb a { color: #1976d2; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .hook-box { background: #fff3e0; border-left: 5px solid #ff9800; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .hook-label { font-weight: 700; color: #e65100; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .hook-box h3 { color: #e65100; margin-top: 0.5rem; }
+    .feynman-bridge { background: #f3e5f5; border-left: 5px solid #9c27b0; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .bridge-label { font-weight: 700; color: #6a1b9a; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .feynman-bridge h3 { color: #6a1b9a; margin-top: 0.5rem; }
+    .logic-ladder { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .logic-ladder h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .logic-step { margin-bottom: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; border-left: 4px solid #1565c0; }
+    .logic-step h4 { color: #1565c0; margin-bottom: 0.5rem; font-weight: 600; }
+    .logic-step p { margin-bottom: 0.5rem; color: #555; }
+    .deep-dive { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem; margin: 1rem 0 1rem 2rem; border-radius: 6px; }
+    .dd-label { font-weight: 700; color: #1b5e20; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .deep-dive p { color: #333; margin: 0.5rem 0; }
+    .error-trap { background: #ffebee; border-left: 5px solid #c62828; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .error-trap h4 { color: #b71c1c; margin-bottom: 0.5rem; font-weight: 700; }
+    .error-trap p { color: #555; margin: 0.5rem 0; }
+    .socratic-sandbox { background: white; border: 2px solid #1976d2; padding: 2rem; margin: 2rem 0; border-radius: 8px; }
+    .socratic-sandbox h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .quiz-level { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+    .quiz-level:last-child { border-bottom: none; padding-bottom: 0; }
+    .level-badge { display: inline-block; background: #1976d2; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; }
+    .predict { background: #e3f2fd; }
+    .why { background: #f3e5f5; }
+    .apply { background: #e8f5e9; }
+    .quiz-question { font-weight: 600; color: #333; margin: 0.5rem 0; }
+    details { margin: 1rem 0; }
+    summary { cursor: pointer; font-weight: 500; color: #1976d2; padding: 0.5rem; user-select: none; }
+    summary:hover { background: #f5f5f5; border-radius: 4px; }
+    details[open] summary { color: #1565c0; }
+    .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .chapter-nav a { text-decoration: none; padding: 1rem 1.5rem; border-radius: 6px; font-weight: 500; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.3rem; }
+    .chapter-nav a.prev { color: #1976d2; text-align: left; }
+    .chapter-nav a.prev:hover { background: #e3f2fd; }
+    .chapter-nav a.next { color: #1976d2; text-align: right; margin-left: auto; }
+    .chapter-nav a.next:hover { background: #e3f2fd; }
+    .nav-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #999; }
+    .nav-title { font-size: 1rem; font-weight: 600; }
+    .site-footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    .site-footer p { font-size: 0.9rem; }
+    .site-footer em { font-style: italic; color: #bbb; }
+    section { margin: 2rem 0; }
+    h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.8rem; color: #1565c0; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.3rem; color: #1565c0; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+    p { margin-bottom: 1rem; }
+    strong { font-weight: 600; color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+    th { background: #e3f2fd; font-weight: 600; color: #1565c0; }
+    ul, ol { margin: 1rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    code { background: #f5f5f5; padding: 0.2rem 0.5rem; border-radius: 3px; font-family: monospace; color: #c62828; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 4</span>
+      <h1>Expressions Using Letter-Numbers</h1>
+      <p class="chapter-subtitle">Learn how to use letters in math to describe patterns and relationships that work for any number.</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 4</span></nav>
+
+    <div class="hook-box">
+      <span class="hook-label">🎯 The Hook</span>
+      <h3>Age Problems That Repeat</h3>
+      <p>Shabnam is 3 years older than Aftab. When Aftab is 10, Shabnam is 13. When Aftab is 18, Shabnam is 21. When Aftab is 25, Shabnam is 28.</p>
+      <p>We keep adding 3 to Aftab's age to get Shabnam's age. But writing this out every time is tedious! What if we use a <strong>letter</strong> to represent Aftab's age, and write the rule once? Then we can use it forever!</p>
+      <p>That's what letter-numbers (or variables) do: they let us express general rules that work for any number.</p>
+    </div>
+
+    <div class="feynman-bridge">
+      <span class="bridge-label">💡 Feynman Bridge</span>
+      <h3>Letters as Placeholders</h3>
+      <p>Imagine a recipe: "Add 2 cups of flour." The recipe works whether you're making bread for 1 person or 10 people—you still add 2 cups. Now imagine saying: "Add 2 cups of flour for every <strong>n</strong> people." Here, <strong>n</strong> is a placeholder: it can be any number. The rule is general and flexible, like the recipe that works for any number of people!</p>
+    </div>
+
+    <section>
+      <h2>From Numbers to Letter-Numbers</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Using Letters to Describe Patterns</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Spotting the Relationship</h4>
+          <p>Shabnam's age = Aftab's age + 3. This relationship <em>always</em> holds, no matter what Aftab's age is.</p>
+          <p>We could write out examples forever:</p>
+          <ul>
+            <li>If Aftab is 5, Shabnam is 8</li>
+            <li>If Aftab is 15, Shabnam is 18</li>
+            <li>If Aftab is 25, Shabnam is 28</li>
+          </ul>
+          <p>But there's a pattern! Shabnam's age is always 3 more than Aftab's.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Introducing Letter-Numbers</h4>
+          <p>Instead of writing out every example, we use a letter to represent the <em>variable</em> (the changing quantity):</p>
+          <p>Let <code>a</code> = Aftab's age (in years)</p>
+          <p>Let <code>s</code> = Shabnam's age (in years)</p>
+          <p>Then: <code>s = a + 3</code></p>
+          <p>This single equation captures the relationship <em>for all possible ages</em>!</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why letters?</span>
+            <p>Letters are convenient and conventional in math. 'a' for Aftab, 's' for Shabnam. We could use any letter—it's just notation. The power is in the <em>idea</em> of using a symbol to represent a variable quantity.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Using Letter-Numbers to Find Specific Values</h4>
+          <p>If Aftab is 23 years old, what is Shabnam's age?</p>
+          <p>Replace <code>a</code> with 23 in the expression <code>s = a + 3</code>:</p>
+          <p><code>s = 23 + 3 = 26</code></p>
+          <p>Shabnam is 26 years old.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Substitution:</span>
+            <p>We "substitute" the specific value (23) for the letter (a). This converts the general relationship into a specific answer.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Algebraic Expressions Are General Formulas</h4>
+          <p>An <strong>algebraic expression</strong> is a math phrase that contains one or more letter-numbers.</p>
+          <p>Examples:</p>
+          <ul>
+            <li><code>a + 3</code> (Shabnam's age given Aftab's)</li>
+            <li><code>2n</code> (twice a number n)</li>
+            <li><code>c × 35 + j × 60</code> (total cost of c coconuts and j kg of jaggery)</li>
+          </ul>
+          <p>Each is a <em>template</em> or <em>formula</em> that generates answers for different inputs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Real-World Patterns: Matchsticks and More</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: From Concrete to General</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: A Concrete Pattern</h4>
+          <p>Parthiv arranges matchsticks into Ls. Each L uses 2 matchsticks.</p>
+          <ul>
+            <li>1 L needs 2 matchsticks</li>
+            <li>2 Ls need 4 matchsticks</li>
+            <li>3 Ls need 6 matchsticks</li>
+            <li>5 Ls need 10 matchsticks</li>
+            <li>45 Ls need 90 matchsticks</li>
+          </ul>
+          <p>Pattern: Number of matchsticks = 2 × Number of Ls</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Generalizing with a Letter</h4>
+          <p>Let <code>n</code> = number of Ls</p>
+          <p>Then: <code>Number of matchsticks = 2 × n</code> or simply <code>2n</code></p>
+          <p>This single expression works for <em>any</em> number of Ls!</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why this matters:</span>
+            <p>Instead of saying "2 × 45" when asked about 45 Ls, we have a general formula. We can apply it immediately to any problem without explaining the pattern each time.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Expressions with Multiple Operations</h4>
+          <p><strong>Example:</strong> Ketaki buys coconuts (₹35 each) and jaggery (₹60 per kg).</p>
+          <p>Let <code>c</code> = number of coconuts, <code>j</code> = kilograms of jaggery</p>
+          <p>Cost expression: <code>35c + 60j</code></p>
+          <p>If she buys 7 coconuts and 4 kg jaggery:</p>
+          <p><code>35(7) + 60(4) = 245 + 240 = ₹485</code></p>
+          <div class="deep-dive">
+            <span class="dd-label">Terms in algebraic expressions:</span>
+            <p>In <code>35c + 60j</code>, we have two terms: <code>35c</code> and <code>60j</code>. Each term is a product (or could be a single letter). We add them together. This is the same term structure we learned in Chapter 2!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Writing Expressions from Words</h4>
+          <p><strong>Problem:</strong> "5 more than a number"</p>
+          <p><strong>Solution:</strong> Let <code>x</code> = the number. Expression: <code>x + 5</code></p>
+          <p><strong>Problem:</strong> "3 times a number, minus 2"</p>
+          <p><strong>Solution:</strong> Let <code>y</code> = the number. Expression: <code>3y – 2</code></p>
+          <p><strong>Problem:</strong> "Half of a number"</p>
+          <p><strong>Solution:</strong> Let <code>z</code> = the number. Expression: <code>z/2</code> or <code>z ÷ 2</code></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formulas: General Truths About Shapes</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: From Shape to Formula</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: The Perimeter of a Square</h4>
+          <p>A square has 4 equal sides. If each side has length <code>s</code>, then the perimeter is <code>4s</code>.</p>
+          <p><strong>Example:</strong> If <code>s = 7</code> cm, perimeter = <code>4(7) = 28</code> cm.</p>
+          <p>The formula <code>P = 4s</code> works for ANY square, no matter its size!</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Extending to Other Shapes</h4>
+          <p><strong>Triangle with all sides equal:</strong> Let <code>t</code> = side length. Perimeter = <code>3t</code></p>
+          <p><strong>Regular pentagon (all sides equal):</strong> Let <code>p</code> = side length. Perimeter = <code>5p</code></p>
+          <p><strong>Regular hexagon (all sides equal):</strong> Let <code>h</code> = side length. Perimeter = <code>6h</code></p>
+          <div class="deep-dive">
+            <span class="dd-label">The pattern:</span>
+            <p>Perimeter = (number of sides) × (side length). This works for any regular polygon! Formulas capture universal truths about shapes.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Writing Formulas from Real Situations</h4>
+          <p><strong>Example:</strong> Munirathna has a 20 m pipe. He wants to add another pipe of length <code>k</code> meters. What's the combined length?</p>
+          <p><strong>Formula:</strong> <code>Combined length = 20 + k</code></p>
+          <p>If he adds a 5 m pipe: <code>20 + 5 = 25</code> m</p>
+          <p>If he adds a 12 m pipe: <code>20 + 12 = 32</code> m</p>
+          <p>One formula captures all scenarios!</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Understanding Order of Operations with Letter-Numbers</h2>
+      <p>When we write algebraic expressions, the same order of operations applies!</p>
+
+      <h3>Example: Grain Grinding</h3>
+      <p>A grain mill takes 10 seconds to start. Then it grinds 1 kg in 8 seconds. How long to grind <code>y</code> kg?</p>
+
+      <p><strong>Correct expression:</strong> <code>10 + 8y</code></p>
+      <p><strong>Not:</strong> <code>(10 + 8) × y = 18y</code> (this would mean we wait 10 + 8 = 18 seconds, then multiply by y, which is wrong!)</p>
+
+      <p><strong>Why?</strong> By order of operations, <code>8y</code> is a single term (multiplication happens first). So <code>10 + 8y</code> means: wait 10 seconds (startup), then grind for <code>8y</code> seconds (8 seconds per kg, times y kg).</p>
+
+      <div class="error-trap">
+        <h4>Common Mistake: Forgetting Order of Operations with Letters</h4>
+        <p>Students sometimes think: "I have a + and a × in the expression, so I must decide which to do first." Not true! The order of operations is fixed: multiplication/division before addition/subtraction. Letters don't change this rule.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Evaluating Expressions: Substitution and Calculation</h2>
+      <p>Once we have a general formula, we can substitute specific values and compute answers.</p>
+
+      <h3>Example 1: Cost of Items</h3>
+      <p>Expression for total cost: <code>c × 35 + j × 60</code> (c coconuts at ₹35, j kg jaggery at ₹60)</p>
+      <p><strong>Find cost of 8 coconuts and 9 kg jaggery:</strong></p>
+      <p>Substitute <code>c = 8</code> and <code>j = 9</code>:</p>
+      <p><code>8 × 35 + 9 × 60 = 280 + 540 = ₹820</code></p>
+
+      <h3>Example 2: Distance Over Time</h3>
+      <p>Expression for distance traveled: <code>d = s × t</code> (speed s, time t)</p>
+      <p><strong>Find distance at 60 km/h for 3 hours:</strong></p>
+      <p>Substitute <code>s = 60</code> and <code>t = 3</code>:</p>
+      <p><code>d = 60 × 3 = 180</code> km</p>
+
+      <div class="deep-dive">
+        <span class="dd-label">Steps for evaluation:</span>
+        <ol style="margin-left: 1.5rem;">
+          <li>Write the expression</li>
+          <li>Replace each letter with its given value</li>
+          <li>Calculate following order of operations</li>
+          <li>State your answer with units (rupees, km, etc.)</li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="socratic-sandbox">
+      <h3>Socratic Sandbox: Test Your Understanding</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">1. If the expression for Shabnam's age is <code>s = a + 3</code>, and Aftab is 30, what is Shabnam's age?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Replace the letter 'a' with 30 in the expression.</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p><code>s = 30 + 3 = 33</code>. Shabnam is 33 years old.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">2. Write the expression for "twice a number, plus 5"</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Choose a letter for the unknown number. "Twice" means multiply by 2.</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Let <code>n</code> = the number. Expression: <code>2n + 5</code></p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">3. Why is the expression for total cost of c coconuts and j kg jaggery written as <code>35c + 60j</code> instead of <code>35 + 60 + c + j</code>?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>What does each number (35 and 60) represent? How many coconuts and jaggery are there?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>35c means "35 rupees per coconut times c coconuts" = total cost of coconuts. 60j means "60 rupees per kg times j kg" = total cost of jaggery. If we wrote 35 + 60 + c + j, we'd be adding prices to quantities, which doesn't make sense! The expression must show the total cost calculation correctly.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">4. Why is <code>10 + 8y</code> different from <code>(10 + 8) × y</code> when solving the grain mill problem?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>In the first expression, which operation happens first (by order of operations)? In the second, the brackets change what happens first. Does it make sense physically?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>In <code>10 + 8y</code>, multiplication happens first: we calculate 8y (grinding time), then add 10 (startup time). In <code>(10 + 8) × y</code>, brackets force us to add 10 + 8 first, then multiply by y—which doesn't fit the real scenario. We wait 10 seconds once (not per kg), then grind 8y seconds total. So <code>10 + 8y</code> is correct!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">5. Write a formula for the perimeter of a regular hexagon with side length <code>h</code>. Then find the perimeter if <code>h = 5</code> cm.</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>A hexagon has 6 sides. If each is length h, what's the total perimeter?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Formula: <code>P = 6h</code>. If <code>h = 5</code> cm, then <code>P = 6 × 5 = 30</code> cm.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">6. Krithika has some notes: x notes of ₹100, y notes of ₹20, and z notes of ₹5. Write an expression for her total money. If x = 3, y = 5, z = 6, how much does she have?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Each note type contributes: (number of notes) × (value of note). Add all contributions.</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Expression: <code>100x + 20y + 5z</code>. With x = 3, y = 5, z = 6: <code>100(3) + 20(5) + 5(6) = 300 + 100 + 30 = ₹430</code></p>
+        </details>
+      </div>
+    </div>
+
+    <nav class="chapter-nav">
+      <a href="chapter3.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">A Peek Beyond the Point</span></a>
+      <a href="index.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Math Home</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>

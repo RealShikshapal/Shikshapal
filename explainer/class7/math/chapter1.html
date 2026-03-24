@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Large Numbers Around Us — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+    .subject-switcher { background: white; border-bottom: 2px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
+    .switcher-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 2rem; padding: 1rem; }
+    .switcher-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #222; display: flex; align-items: center; gap: 0.5rem; }
+    .logo-icon { font-size: 1.5rem; }
+    .switcher-link { text-decoration: none; color: #666; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.2s; }
+    .switcher-link:hover { background: #f0f0f0; color: #222; }
+    .switcher-link.active { background: #e3f2fd; color: #1976d2; }
+    .chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-hero.math { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); }
+    .chapter-hero h1 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.8rem; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 800; }
+    .chapter-label { font-size: 0.9rem; font-weight: 600; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .breadcrumb { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+    .breadcrumb a { color: #1976d2; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .hook-box { background: #fff3e0; border-left: 5px solid #ff9800; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .hook-label { font-weight: 700; color: #e65100; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .hook-box h3 { color: #e65100; margin-top: 0.5rem; }
+    .feynman-bridge { background: #f3e5f5; border-left: 5px solid #9c27b0; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .bridge-label { font-weight: 700; color: #6a1b9a; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .feynman-bridge h3 { color: #6a1b9a; margin-top: 0.5rem; }
+    .logic-ladder { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .logic-ladder h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .logic-step { margin-bottom: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; border-left: 4px solid #1565c0; }
+    .logic-step h4 { color: #1565c0; margin-bottom: 0.5rem; font-weight: 600; }
+    .logic-step p { margin-bottom: 0.5rem; color: #555; }
+    .deep-dive { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem; margin: 1rem 0 1rem 2rem; border-radius: 6px; }
+    .dd-label { font-weight: 700; color: #1b5e20; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .deep-dive p { color: #333; margin: 0.5rem 0; }
+    .error-trap { background: #ffebee; border-left: 5px solid #c62828; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .error-trap h4 { color: #b71c1c; margin-bottom: 0.5rem; font-weight: 700; }
+    .error-trap p { color: #555; margin: 0.5rem 0; }
+    .socratic-sandbox { background: white; border: 2px solid #1976d2; padding: 2rem; margin: 2rem 0; border-radius: 8px; }
+    .socratic-sandbox h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .quiz-level { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+    .quiz-level:last-child { border-bottom: none; padding-bottom: 0; }
+    .level-badge { display: inline-block; background: #1976d2; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; }
+    .predict { background: #e3f2fd; }
+    .why { background: #f3e5f5; }
+    .apply { background: #e8f5e9; }
+    .quiz-question { font-weight: 600; color: #333; margin: 0.5rem 0; }
+    details { margin: 1rem 0; }
+    summary { cursor: pointer; font-weight: 500; color: #1976d2; padding: 0.5rem; user-select: none; }
+    summary:hover { background: #f5f5f5; border-radius: 4px; }
+    details[open] summary { color: #1565c0; }
+    .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .chapter-nav a { text-decoration: none; padding: 1rem 1.5rem; border-radius: 6px; font-weight: 500; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.3rem; }
+    .chapter-nav a.prev { color: #1976d2; text-align: left; }
+    .chapter-nav a.prev:hover { background: #e3f2fd; }
+    .chapter-nav a.next { color: #1976d2; text-align: right; margin-left: auto; }
+    .chapter-nav a.next:hover { background: #e3f2fd; }
+    .nav-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #999; }
+    .nav-title { font-size: 1rem; font-weight: 600; }
+    .site-footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    .site-footer p { font-size: 0.9rem; }
+    .site-footer em { font-style: italic; color: #bbb; }
+    section { margin: 2rem 0; }
+    h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.8rem; color: #1565c0; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.3rem; color: #1565c0; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+    p { margin-bottom: 1rem; }
+    strong { font-weight: 600; color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+    th { background: #e3f2fd; font-weight: 600; color: #1565c0; }
+    ul, ol { margin: 1rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 1</span>
+      <h1>Large Numbers Around Us</h1>
+      <p class="chapter-subtitle">Discover why numbers beyond 10,000 matter in the real world and how to read, write, and compare them with confidence.</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 1</span></nav>
+
+    <div class="hook-box">
+      <span class="hook-label">🎯 The Hook</span>
+      <h3>A Lakh Varieties of Rice!</h3>
+      <p>Eshwarappa is a farmer in Chintamani, Karnataka. He overheard a conversation at the market about how India once had <strong>one lakh different varieties of rice</strong>. His son Estu was amazed: "If I tasted one variety per day, would I even taste them all in 100 years?"</p>
+      <p>Think about this: How many varieties could Estu taste in 100 years? Is one lakh truly a large number—or is it smaller than we think?</p>
+    </div>
+
+    <div class="feynman-bridge">
+      <span class="bridge-label">💡 Feynman Bridge</span>
+      <h3>Think Like Stacking Blocks</h3>
+      <p>Imagine you're stacking building blocks. Each block is a unit of 1. When you stack 10 blocks, you have a 10s tower. When you have 10 of those towers, you've got 100 blocks total. Keep doing this: 10 hundreds make 1,000, then 10 thousands make 10,000, and finally 10 ten-thousands make 1 lakh (100,000). Large numbers are just smaller numbers stacked and grouped in the right way!</p>
+    </div>
+
+    <section>
+      <h2>Understanding Place Value Beyond the Thousands</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Building to One Lakh</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Recall What We Know</h4>
+          <p>We know that 1,000 is called "one thousand" and it's 1 followed by 3 zeros. We count: 10 units make 1 ten, 10 tens make 1 hundred, 10 hundreds make 1 thousand.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: What's Next After 9,999?</h4>
+          <p>If we add one more to 9,999, we get 10,000 (ten thousand). This is a new place value! We can now think of 10,000 as "one ten-thousand" or 10 groups of 1,000.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why does the pattern work?</span>
+            <p>In our Indian place value system, every position is 10 times the position to its right. So 10 thousands = 10 × 1,000 = 10,000. This pattern continues forever!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: What's 100,000?</h4>
+          <p>If we keep multiplying by 10: 10 ten-thousands = 10 × 10,000 = 100,000. We call this number <strong>one lakh</strong> (in Indian naming) or "one hundred thousand" (in American naming).</p>
+          <div class="deep-dive">
+            <span class="dd-label">Key insight: The pattern of 10</span>
+            <p>Notice: 1 lakh = 100,000 = 1 followed by 5 zeros. This makes sense because: 100,000 = 100 × 1,000 = 100 thousands = 10 × 10,000 = 10 ten-thousands.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Naming and Writing Large Numbers</h4>
+          <p>The number 12,78,830 in the Indian system is written with commas as "12 lakh 78 thousand 830" (read as: twelve lakh seventy-eight thousand eight hundred thirty). The comma placement follows a 2-2-3 pattern from the right instead of the American 3-3-3 pattern.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why Indian commas are placed differently</span>
+            <p>Indian system: 12,78,830 (2 digits for lakhs, 2 for thousands, 3 for units). American: 1,278,830 (3 digits per group). Both are correct—they're just different conventions for writing the same number!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: Even Bigger—The Crore</h4>
+          <p>When we get to 10 lakhs, that equals 1 crore (10,00,000 or 10 million in American naming). A crore is 1 followed by 7 zeros. Notice: 100 lakhs = 1 crore, just as 100 thousands = 1 million!</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Is One Lakh Really Large?</h2>
+      <p>Roxie and Estu debate whether 1 lakh is "big" or "small." Here's what they discovered:</p>
+
+      <h3>Why Roxie Thinks It's Large:</h3>
+      <ul>
+        <li><strong>Rice varieties:</strong> One lakh varieties of rice is enormous—farmers preserved completely different types!</li>
+        <li><strong>Years of living:</strong> Living 1 lakh days means living for 274 years. No human lives that long!</li>
+        <li><strong>Distance:</strong> If 1 lakh people stood shoulder-to-shoulder, they'd stretch 38 kilometers—longer than a city!</li>
+      </ul>
+
+      <h3>Why Estu Thinks It's Smaller Than Expected:</h3>
+      <ul>
+        <li><strong>Stadium capacity:</strong> A cricket stadium in Ahmedabad seats over 1 lakh people in one small area.</li>
+        <li><strong>Human hairs:</strong> You have 80,000 to 1,20,000 hairs on your head! That's close to 1 lakh hairs in a tiny space!</li>
+        <li><strong>Fish eggs:</strong> Some female fish can lay almost 1 lakh eggs at once. Many lay tens of lakhs!</li>
+      </ul>
+
+      <p><strong>The takeaway:</strong> Whether a number feels "big" depends on context. Use comparisons to make large numbers meaningful!</p>
+    </section>
+
+    <section>
+      <h2>Getting a Feel for Large Numbers Through Comparison</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Comparing Unfamiliar Sizes</h3>
+
+        <div class="logic-step">
+          <h4>The Problem</h4>
+          <p>The Statue of Unity is 180 meters tall. Kunchikal waterfall drops from 450 meters. These measurements don't mean much unless we compare them to something we know!</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>The Reference</h4>
+          <p>Somu is 1 meter tall. Each floor of a building is about 4 times his height, so 4 meters per floor. A 10-story building would be about 40 meters tall.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>The Comparison</h4>
+          <p>Now we can say: The Statue of Unity (180 m) is about 4.5 times taller than a 10-story building (40 m). The waterfall (450 m) is about 11 times taller! Suddenly, these big numbers make sense because we've anchored them to familiar sizes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Rounding and Approximation: When Exact Numbers Aren't Needed</h2>
+      <p>The population of Chintamani in 2011 was exactly 76,068. But we often say "about 75,000." Why use approximations?</p>
+
+      <h3>Nearest Neighbors: Finding Round Numbers</h3>
+      <p>For a number like 6,72,85,183, we can find its "nearest neighbors":</p>
+      <table>
+        <tr>
+          <th>Type of Rounding</th>
+          <th>Result</th>
+          <th>Why?</th>
+        </tr>
+        <tr>
+          <td>Nearest thousand</td>
+          <td>6,72,85,000</td>
+          <td>183 is closer to 0 (1,000) than to 1,000</td>
+        </tr>
+        <tr>
+          <td>Nearest lakh</td>
+          <td>6,73,00,000</td>
+          <td>85,183 is closer to 100,000 (1 lakh) than to 0</td>
+        </tr>
+        <tr>
+          <td>Nearest crore</td>
+          <td>7,00,00,000</td>
+          <td>72,85,183 is closer to 100,00,000 (1 crore) than to 0</td>
+        </tr>
+      </table>
+
+      <div class="error-trap">
+        <h4>Common Mistake: Confusing "Round Up" vs "Round Down"</h4>
+        <p>Students often think "rounding" always means going up. Not true! Round down when you need a conservative estimate (like: "How many sweets should I order for 732 people? I'll order 700 to save money"). Round up when you need extra (like: "I'll order 750 sweets to make sure everyone gets one").</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Multiplication Shortcuts Using Place Value</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Why Shortcuts Work</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Recognize the Pattern</h4>
+          <p>Roxie noticed: 116 × 5 is the same as 116 ÷ 2 × 10. Why? Because 5 = 10/2. So 116 × 5 = 116 × (10/2) = (116 × 10)/2 = 1160/2 = 580.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Use Factorization</h4>
+          <p>To multiply 2 × 1768 × 50, rearrange: (2 × 50) × 1768 = 100 × 1768 = 176,800. We grouped factors that give us powers of 10!</p>
+          <div class="deep-dive">
+            <span class="dd-label">The why: Multiplying by 10, 100, 1000...</span>
+            <p>Multiplying by 10 is just adding a zero. Multiplying by 100 is adding two zeros. This is fast because we only shift digits in place value, we don't truly "calculate."</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Apply to Complex Multiplications</h4>
+          <p>For 125 × 40 × 8 × 25: Notice that 125 × 8 = 1,000 and 40 × 25 = 1,000. So the product is 1,000 × 1,000 = 1,000,000. We used factorization to avoid long calculations!</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Patterns in Multiplication Products</h2>
+      <p>Let's explore how the number of digits in a product relates to the factors:</p>
+
+      <h3>The Pattern Observation</h3>
+      <table>
+        <tr>
+          <th>Factors</th>
+          <th>Example</th>
+          <th>Number of Digits in Product</th>
+        </tr>
+        <tr>
+          <td>1-digit × 1-digit</td>
+          <td>7 × 8 = 56</td>
+          <td>1 or 2 digits</td>
+        </tr>
+        <tr>
+          <td>2-digit × 2-digit</td>
+          <td>10 × 10 = 100, 99 × 99 = 9,801</td>
+          <td>3 or 4 digits</td>
+        </tr>
+        <tr>
+          <td>3-digit × 3-digit</td>
+          <td>100 × 100 = 10,000, 999 × 999 = 998,001</td>
+          <td>5 or 6 digits</td>
+        </tr>
+      </table>
+
+      <p><strong>The rule:</strong> The product of an m-digit number and an n-digit number has either (m+n-1) or (m+n) digits. To check: multiply the smallest and largest possible combinations of those sizes, then count digits!</p>
+
+      <div class="error-trap">
+        <h4>Common Mistake: Assuming All Products Have Maximum Digits</h4>
+        <p>Not every product of 2-digit numbers is 4 digits. For example, 10 × 10 = 100 (only 3 digits). The product can be either (m+n-1) or (m+n) digits, depending on whether there's carrying that creates a new leading digit.</p>
+      </div>
+    </section>
+
+    <div class="socratic-sandbox">
+      <h3>Socratic Sandbox: Test Your Understanding</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">1. Is 3,50,000 more or less than 1 lakh? How do you know without calculating?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Think: 1 lakh = 100,000. Compare the number of lakhs.</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>3,50,000 is 3.5 lakhs, so it's MORE than 1 lakh (which is just 1 lakh). You can tell because 3,50,000 has an extra lakh digit in the place value!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">2. How many zeros does 1 crore have? (Don't count—use the pattern!)</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Remember: 1 lakh = 5 zeros. How much bigger is 1 crore than 1 lakh?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>1 crore = 100 lakhs = 100 × 1,00,000. So it's 1,00,00,000 (7 zeros). The pattern: multiply by 100 (add 2 zeros) to the lakh, giving 5+2=7 zeros.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">3. Why is it easier to round numbers like 4,63,128 + 4,19,682 by using their nearest lakhs rather than calculating exactly?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>What happens when you round each number to the nearest lakh first?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>4,63,128 ≈ 4,60,000 (4.6 lakhs) and 4,19,682 ≈ 4,20,000 (4.2 lakhs). Adding these is much simpler: 4.6 + 4.2 = 8.8 lakhs = 8,80,000. The exact answer is 8,82,810, which is close! Rounding makes mental math possible.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">4. Why can we say that 2 × 1768 × 50 = (2 × 50) × 1768?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>What property of multiplication allows us to rearrange factors?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>The commutative and associative properties of multiplication! We can group factors in any order and get the same result. Here, we grouped 2 and 50 first because their product (100) is easy to multiply with any number.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">5. The population of Bengaluru in 2001 was 43,01,326 and in 2011 was 84,25,970. Approximately how much did it grow?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Round each to the nearest lakh, then subtract. What's the difference?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>2001: 43,01,326 ≈ 43,00,000 (43 lakhs). 2011: 84,25,970 ≈ 84,00,000 (84 lakhs). Growth ≈ 84 - 43 = 41 lakhs ≈ 41,00,000. The exact growth is 41,24,644, so our approximation is quite close!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">6. A scientist says microorganisms are "about 100 million to 1 billion bacteria per gram of soil." Using what you know about the Indian naming system, how many zeros does this range span?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>100 million = 10 crores. 1 billion = ?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>100 million = 10 crores = 1,00,000,000 (8 zeros). 1 billion = 100 crores = 1,00,00,00,000 (9 zeros). So the range spans 8 to 9 zeros, from 1 followed by 8 zeros to 1 followed by 9 zeros!</p>
+        </details>
+      </div>
+    </div>
+
+    <nav class="chapter-nav">
+      <a href="index.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Math Home</span></a>
+      <a href="chapter2.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Arithmetic Expressions</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Peek Beyond the Point — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+    .subject-switcher { background: white; border-bottom: 2px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
+    .switcher-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 2rem; padding: 1rem; }
+    .switcher-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #222; display: flex; align-items: center; gap: 0.5rem; }
+    .logo-icon { font-size: 1.5rem; }
+    .switcher-link { text-decoration: none; color: #666; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.2s; }
+    .switcher-link:hover { background: #f0f0f0; color: #222; }
+    .switcher-link.active { background: #e3f2fd; color: #1976d2; }
+    .chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-hero.math { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); }
+    .chapter-hero h1 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.8rem; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 800; }
+    .chapter-label { font-size: 0.9rem; font-weight: 600; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .breadcrumb { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+    .breadcrumb a { color: #1976d2; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .hook-box { background: #fff3e0; border-left: 5px solid #ff9800; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .hook-label { font-weight: 700; color: #e65100; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .hook-box h3 { color: #e65100; margin-top: 0.5rem; }
+    .feynman-bridge { background: #f3e5f5; border-left: 5px solid #9c27b0; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .bridge-label { font-weight: 700; color: #6a1b9a; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .feynman-bridge h3 { color: #6a1b9a; margin-top: 0.5rem; }
+    .logic-ladder { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .logic-ladder h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .logic-step { margin-bottom: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; border-left: 4px solid #1565c0; }
+    .logic-step h4 { color: #1565c0; margin-bottom: 0.5rem; font-weight: 600; }
+    .logic-step p { margin-bottom: 0.5rem; color: #555; }
+    .deep-dive { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem; margin: 1rem 0 1rem 2rem; border-radius: 6px; }
+    .dd-label { font-weight: 700; color: #1b5e20; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .deep-dive p { color: #333; margin: 0.5rem 0; }
+    .error-trap { background: #ffebee; border-left: 5px solid #c62828; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .error-trap h4 { color: #b71c1c; margin-bottom: 0.5rem; font-weight: 700; }
+    .error-trap p { color: #555; margin: 0.5rem 0; }
+    .socratic-sandbox { background: white; border: 2px solid #1976d2; padding: 2rem; margin: 2rem 0; border-radius: 8px; }
+    .socratic-sandbox h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .quiz-level { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+    .quiz-level:last-child { border-bottom: none; padding-bottom: 0; }
+    .level-badge { display: inline-block; background: #1976d2; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; }
+    .predict { background: #e3f2fd; }
+    .why { background: #f3e5f5; }
+    .apply { background: #e8f5e9; }
+    .quiz-question { font-weight: 600; color: #333; margin: 0.5rem 0; }
+    details { margin: 1rem 0; }
+    summary { cursor: pointer; font-weight: 500; color: #1976d2; padding: 0.5rem; user-select: none; }
+    summary:hover { background: #f5f5f5; border-radius: 4px; }
+    details[open] summary { color: #1565c0; }
+    .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .chapter-nav a { text-decoration: none; padding: 1rem 1.5rem; border-radius: 6px; font-weight: 500; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.3rem; }
+    .chapter-nav a.prev { color: #1976d2; text-align: left; }
+    .chapter-nav a.prev:hover { background: #e3f2fd; }
+    .chapter-nav a.next { color: #1976d2; text-align: right; margin-left: auto; }
+    .chapter-nav a.next:hover { background: #e3f2fd; }
+    .nav-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #999; }
+    .nav-title { font-size: 1rem; font-weight: 600; }
+    .site-footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    .site-footer p { font-size: 0.9rem; }
+    .site-footer em { font-style: italic; color: #bbb; }
+    section { margin: 2rem 0; }
+    h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.8rem; color: #1565c0; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.3rem; color: #1565c0; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+    p { margin-bottom: 1rem; }
+    strong { font-weight: 600; color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+    th { background: #e3f2fd; font-weight: 600; color: #1565c0; }
+    ul, ol { margin: 1rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    code { background: #f5f5f5; padding: 0.2rem 0.5rem; border-radius: 3px; font-family: monospace; color: #c62828; }
+    .fraction { display: inline-block; text-align: center; margin: 0 0.2rem; }
+    .fraction-num { display: block; border-bottom: 1px solid #333; padding-bottom: 2px; margin-bottom: 2px; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 3</span>
+      <h1>A Peek Beyond the Point</h1>
+      <p class="chapter-subtitle">Discover decimal numbers and learn how to measure lengths with precision beyond whole numbers.</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 3</span></nav>
+
+    <div class="hook-box">
+      <span class="hook-label">🎯 The Hook</span>
+      <h3>Two Screws, Almost the Same</h3>
+      <p>Sonu's mother was fixing a toy with a screw. The screw didn't fit. She got another screw from the box, and it worked perfectly. To Sonu, both screws looked identical! But when he measured them closely, they were slightly different lengths.</p>
+      <p>How could such a tiny difference matter? How can we even measure something so small? This is why we need <strong>numbers beyond the decimal point</strong>!</p>
+    </div>
+
+    <div class="feynman-bridge">
+      <span class="bridge-label">💡 Feynman Bridge</span>
+      <h3>Zooming In on the Number Line</h3>
+      <p>Imagine a meter stick marked with whole numbers: 1, 2, 3, 4, 5. You can see that 2.5 is halfway between 2 and 3. But what about 2.15? Imagine zooming in on the space between 2.1 and 2.2. There it is—2.15 is one-fifth of the way in that zoomed space. Decimals are how we "zoom in" to measure smaller and smaller parts!</p>
+    </div>
+
+    <section>
+      <h2>The Need for Smaller Units</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Why We Need Tenths and Hundredths</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: The Problem with Whole Numbers</h4>
+          <p>The first screw is longer than 2 cm but shorter than 3 cm. We can't say it's exactly 2 cm or exactly 3 cm. We need something in between!</p>
+          <p>Whole numbers alone aren't precise enough for real-world measurement.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Splitting a Unit into Tenths</h4>
+          <p>If we split the space between 2 and 3 into 10 equal parts, each part is 1/10 cm (one-tenth of a centimeter). Now we can say the first screw is <strong>2 and 7 tenths</strong> cm, written as <strong>2.7 cm</strong>.</p>
+          <p>The second screw might be 3 and 2 tenths cm, written as <strong>3.2 cm</strong>.</p>
+          <div class="deep-dive">
+            <span class="dd-label">The decimal notation:</span>
+            <p>The period (decimal point) separates whole units from fractional parts. 2.7 means 2 whole units + 7 tenths. We read it as "two point seven" or "two and seven-tenths."</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: When Tenths Aren't Precise Enough</h4>
+          <p>Sometimes even 0.1 cm is too large a unit. A sheet of paper folded in half has a length between 4.4 and 4.5 units. We need an even smaller unit!</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Introducing Hundredths</h4>
+          <p>If we split each tenth into 10 more parts, we get hundredths. Each hundredth is 1/100 of a unit.</p>
+          <p>Now we can say the folded paper is <strong>4 and 4 tenths and 5 hundredths</strong>, written as <strong>4.45</strong>.</p>
+          <div class="deep-dive">
+            <span class="dd-label">The pattern continues:</span>
+            <p>One unit = 10 tenths. One tenth = 10 hundredths. One hundredth = 10 thousandths. And so on! Just like place value for whole numbers, decimals follow the same base-10 pattern.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 5: The Decimal Place Value System</h4>
+          <p>The Indian place value system extends naturally to decimals:</p>
+          <table>
+            <tr>
+              <th>Hundreds</th>
+              <th>Tens</th>
+              <th>Units</th>
+              <th>Tenths</th>
+              <th>Hundredths</th>
+              <th>Thousandths</th>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>10</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>0.01</td>
+              <td>0.001</td>
+            </tr>
+          </table>
+          <p>Each place value is 10 times the one to its right. The decimal point marks where units (1) meet tenths (0.1).</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reading and Writing Decimal Numbers</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Notation and Language</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Different Ways to Write the Same Length</h4>
+          <p>A wire has length 1.14 units. This can be written three ways:</p>
+          <ul>
+            <li><strong>1 and 14 hundredths:</strong> 1 unit + 14/100</li>
+            <li><strong>1 and 1 tenth and 4 hundredths:</strong> 1 unit + 1/10 + 4/100</li>
+            <li><strong>114 hundredths:</strong> 114/100</li>
+          </ul>
+          <p>All mean the same length!</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why multiple notations?</span>
+            <p>Different notations emphasize different ways of thinking: as a mixed number, as place values, or as a pure fraction. Choice depends on context and what calculation you're doing.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Reading Decimal Numbers Correctly</h4>
+          <p><strong>0.274</strong> is read as "zero point two seven four."</p>
+          <p>Do NOT read it as "zero point two hundred seventy-four" because that's not how place value works! Instead:</p>
+          <ul>
+            <li>2 is in the tenths place: 2/10</li>
+            <li>7 is in the hundredths place: 7/100</li>
+            <li>4 is in the thousandths place: 4/1000</li>
+          </ul>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Comparing Decimal Numbers</h4>
+          <p>To compare 0.3, 0.03, and 0.33:</p>
+          <ul>
+            <li>0.3 = 30 hundredths = 3/10</li>
+            <li>0.03 = 3 hundredths = 3/100</li>
+            <li>0.33 = 33 hundredths = 33/100</li>
+          </ul>
+          <p>So: <strong>0.03 < 0.3 < 0.33</strong></p>
+          <div class="deep-dive">
+            <span class="dd-label">Pro tip:</span>
+            <p>Convert to the same denominator (hundredths, say) to compare easily. Or compare place by place: look at tenths first, then hundredths, etc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Addition and Subtraction with Decimals</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Combining Lengths</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Adding Decimal Numbers (Same Structure as Whole Numbers)</h4>
+          <p>Sonu's lower arm is 2.7 units long. His upper arm is 3.6 units. Total arm length?</p>
+          <p><strong>Method 1: Split into units and fractional parts</strong></p>
+          <ul>
+            <li>Units: 2 + 3 = 5</li>
+            <li>Tenths: 7 + 6 = 13 tenths = 1 unit + 3 tenths</li>
+            <li>Total: 5 + 1 + 0.3 = 6.3 units</li>
+          </ul>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Handling "Overflow" in Tenths</h4>
+          <p>When tenths add up to 10 or more, we convert: 10 tenths = 1 unit.</p>
+          <p>In the example above, 7 + 6 = 13 tenths = 10 tenths + 3 tenths = 1 unit + 3 tenths.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why this works:</span>
+            <p>It's exactly like adding whole numbers with carrying! When ones add up to 10 or more, we carry to the tens place. Same idea here: when tenths add up to 10 or more, we carry to the units place.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Subtracting Decimal Numbers</h4>
+          <p>Shylaja's hand is 12.4 units, and her palm is 6.7 units. Finger length?</p>
+          <p><strong>The Challenge:</strong> We can't subtract 7 tenths from 4 tenths directly!</p>
+          <p><strong>Solution:</strong> Borrow 1 unit (= 10 tenths) from the units:</p>
+          <ul>
+            <li>Change 12.4 to 11.14 (11 units + 14 tenths)</li>
+            <li>Now subtract: 11 – 6 = 5 units, and 14 – 7 = 7 tenths</li>
+            <li>Result: 5.7 units</li>
+          </ul>
+          <div class="deep-dive">
+            <span class="dd-label">Parallel to whole numbers:</span>
+            <p>This is identical to subtraction with whole numbers when ones aren't enough: we borrow from the tens. Same structure, same idea!</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Working with Hundredths</h4>
+          <p>Addition/subtraction with hundredths follows the same logic:</p>
+          <p><strong>Example:</strong> 15.34 + 2.68 = ?</p>
+          <ul>
+            <li>Units: 15 + 2 = 17</li>
+            <li>Tenths: 3 + 6 = 9</li>
+            <li>Hundredths: 4 + 8 = 12 hundredths = 1 tenth + 2 hundredths</li>
+            <li>Carry the 1 tenth: 17 + 9 + 1 = 17 + 10 = 18 units</li>
+            <li>Result: 18.02</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>The Why Behind Decimals: The Base-10 System</h2>
+      <p>Why split units into 10 parts, not 4, 5, or any other number?</p>
+
+      <div class="feynman-bridge">
+        <span class="bridge-label">💡 The Deep Why</span>
+        <p>Our number system is built on groups of 10. Ten units make 1 ten. Ten tens make 1 hundred. This pattern continues left indefinitely. Decimals extend this pattern to the <em>right</em> of the units place: 1 unit splits into 10 tenths, each tenth splits into 10 hundredths, and so on.</p>
+        <p>This consistency is beautiful! It means the same rules of place value and arithmetic work for whole numbers and decimals alike.</p>
+      </div>
+
+      <h3>The Natural Extension of Place Value</h3>
+      <table>
+        <tr>
+          <th>Thousands</th>
+          <th>Hundreds</th>
+          <th>Tens</th>
+          <th>Units</th>
+          <th>Tenths</th>
+          <th>Hundredths</th>
+          <th>Thousandths</th>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>100</td>
+          <td>10</td>
+          <td>1</td>
+          <td>0.1</td>
+          <td>0.01</td>
+          <td>0.001</td>
+        </tr>
+        <tr>
+          <td>÷10</td>
+          <td>÷10</td>
+          <td>÷10</td>
+          <td>÷10</td>
+          <td>÷10</td>
+          <td>÷10</td>
+          <td></td>
+        </tr>
+      </table>
+
+      <p>Moving right, each place is 1/10 of the previous. Just like moving left multiplies by 10, moving right divides by 10!</p>
+
+      <div class="error-trap">
+        <h4>Common Mistake: Thinking Decimals Are Different</h4>
+        <p>Students sometimes think: "Decimals are a weird separate thing." They're not! Decimals are just the natural extension of place value. The rules for arithmetic are identical—carry, borrow, align by place value. The only difference is that we can now measure between whole numbers with precision.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Decimal Notation and Its Meaning</h2>
+      <p>The decimal point is a marker. It says: "To my left are whole units. To my right are fractions of a unit."</p>
+
+      <h3>Comparing Decimal Notation to Fractions</h3>
+      <table>
+        <tr>
+          <th>Fraction Notation</th>
+          <th>Decimal Notation</th>
+          <th>Read As</th>
+        </tr>
+        <tr>
+          <td>7/10</td>
+          <td>0.7</td>
+          <td>seven tenths</td>
+        </tr>
+        <tr>
+          <td>1 + 4/10</td>
+          <td>1.4</td>
+          <td>one and four tenths</td>
+        </tr>
+        <tr>
+          <td>23/100</td>
+          <td>0.23</td>
+          <td>twenty-three hundredths</td>
+        </tr>
+        <tr>
+          <td>2 + 3/10 + 7/100</td>
+          <td>2.37</td>
+          <td>two and thirty-seven hundredths</td>
+        </tr>
+      </table>
+
+      <p>Decimal notation is just a <em>shorthand</em> for fractions based on powers of 10. The decimal point positions tell you the place value of each digit!</p>
+    </section>
+
+    <div class="socratic-sandbox">
+      <h3>Socratic Sandbox: Test Your Understanding</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">1. The length of an object is between 3 and 4 cm. It measures 3.7 cm. How many tenths is this?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>3.7 means 3 units and 7 tenths. So how many tenths in total?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>3.7 = 3 units + 7 tenths = 30 tenths + 7 tenths = 37 tenths. We can also write it as 37/10 cm.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">2. Compare: Which is bigger, 0.5 or 0.05?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Convert both to the same unit (hundredths): 0.5 = ? hundredths, 0.05 = ? hundredths</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>0.5 = 5 tenths = 50 hundredths. 0.05 = 5 hundredths. So 0.5 > 0.05 (fifty hundredths is bigger than five hundredths).</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">3. Why is the place value system for decimals an extension of the place value system for whole numbers?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>What's the pattern when moving right in place value? (For whole numbers, moving right divides by what?)</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Both follow the base-10 pattern. Moving left, you multiply by 10. Moving right, you divide by 10. This pattern continues across the decimal point: 10 units = 1 ten (left), and 1 unit = 10 tenths (right). It's consistent!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">4. When adding 3.7 + 4.8, we get 3 + 4 = 7 units, and 7 + 8 = 15 tenths. Why do we convert 15 tenths to 1 unit and 5 tenths?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>How many tenths make one unit?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>10 tenths = 1 unit. So 15 tenths = 10 tenths + 5 tenths = 1 unit + 5 tenths. We "carry" the 1 unit to the units place, leaving 0.5 in the tenths position. This is identical to carrying in whole number addition!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">5. Find the total length of a honeybee if head = 2.3 units, thorax = 5.4 units, abdomen = 7.5 units.</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Add the whole units first, then the tenths. Watch for carrying!</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Units: 2 + 5 + 7 = 14. Tenths: 3 + 4 + 5 = 12 tenths = 1 unit + 2 tenths. Total: 14 + 1 + 0.2 = 15.2 units.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">6. A Celestial Pearl Danio fish is 2.4 cm long. A Philippine Goby is 0.9 cm long. What's the difference in their lengths?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Can you subtract 9 tenths from 4 tenths? What do you need to do?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>2.4 – 0.9: We can't subtract 9 tenths from 4 tenths, so borrow 1 unit from 2. Convert 2.4 to 1.14 (1 unit + 14 tenths). Now: 1 – 0 = 1 unit, 14 – 9 = 5 tenths. Result: 1.5 cm difference.</p>
+        </details>
+      </div>
+    </div>
+
+    <nav class="chapter-nav">
+      <a href="chapter2.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Arithmetic Expressions</span></a>
+      <a href="chapter4.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Expressions Using Letter-Numbers</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>

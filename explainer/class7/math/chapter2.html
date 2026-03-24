@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arithmetic Expressions — Class 7 Math</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+    .subject-switcher { background: white; border-bottom: 2px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
+    .switcher-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 2rem; padding: 1rem; }
+    .switcher-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #222; display: flex; align-items: center; gap: 0.5rem; }
+    .logo-icon { font-size: 1.5rem; }
+    .switcher-link { text-decoration: none; color: #666; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: all 0.2s; }
+    .switcher-link:hover { background: #f0f0f0; color: #222; }
+    .switcher-link.active { background: #e3f2fd; color: #1976d2; }
+    .chapter-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .chapter-hero.math { background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%); }
+    .chapter-hero h1 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.8rem; margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 800; }
+    .chapter-label { font-size: 0.9rem; font-weight: 600; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+    .chapter-subtitle { font-size: 1.1rem; opacity: 0.95; margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    main.lesson { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+    .breadcrumb { font-size: 0.9rem; color: #666; margin-bottom: 2rem; }
+    .breadcrumb a { color: #1976d2; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .hook-box { background: #fff3e0; border-left: 5px solid #ff9800; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .hook-label { font-weight: 700; color: #e65100; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .hook-box h3 { color: #e65100; margin-top: 0.5rem; }
+    .feynman-bridge { background: #f3e5f5; border-left: 5px solid #9c27b0; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .bridge-label { font-weight: 700; color: #6a1b9a; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .feynman-bridge h3 { color: #6a1b9a; margin-top: 0.5rem; }
+    .logic-ladder { background: white; border: 2px solid #e0e0e0; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+    .logic-ladder h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .logic-step { margin-bottom: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; border-left: 4px solid #1565c0; }
+    .logic-step h4 { color: #1565c0; margin-bottom: 0.5rem; font-weight: 600; }
+    .logic-step p { margin-bottom: 0.5rem; color: #555; }
+    .deep-dive { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 1rem; margin: 1rem 0 1rem 2rem; border-radius: 6px; }
+    .dd-label { font-weight: 700; color: #1b5e20; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+    .deep-dive p { color: #333; margin: 0.5rem 0; }
+    .error-trap { background: #ffebee; border-left: 5px solid #c62828; padding: 1.5rem; margin: 2rem 0; border-radius: 6px; }
+    .error-trap h4 { color: #b71c1c; margin-bottom: 0.5rem; font-weight: 700; }
+    .error-trap p { color: #555; margin: 0.5rem 0; }
+    .socratic-sandbox { background: white; border: 2px solid #1976d2; padding: 2rem; margin: 2rem 0; border-radius: 8px; }
+    .socratic-sandbox h3 { color: #1565c0; margin-bottom: 1.5rem; font-size: 1.3rem; }
+    .quiz-level { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+    .quiz-level:last-child { border-bottom: none; padding-bottom: 0; }
+    .level-badge { display: inline-block; background: #1976d2; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: uppercase; }
+    .predict { background: #e3f2fd; }
+    .why { background: #f3e5f5; }
+    .apply { background: #e8f5e9; }
+    .quiz-question { font-weight: 600; color: #333; margin: 0.5rem 0; }
+    details { margin: 1rem 0; }
+    summary { cursor: pointer; font-weight: 500; color: #1976d2; padding: 0.5rem; user-select: none; }
+    summary:hover { background: #f5f5f5; border-radius: 4px; }
+    details[open] summary { color: #1565c0; }
+    .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0; }
+    .chapter-nav a { text-decoration: none; padding: 1rem 1.5rem; border-radius: 6px; font-weight: 500; transition: all 0.2s; display: flex; flex-direction: column; gap: 0.3rem; }
+    .chapter-nav a.prev { color: #1976d2; text-align: left; }
+    .chapter-nav a.prev:hover { background: #e3f2fd; }
+    .chapter-nav a.next { color: #1976d2; text-align: right; margin-left: auto; }
+    .chapter-nav a.next:hover { background: #e3f2fd; }
+    .nav-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #999; }
+    .nav-title { font-size: 1rem; font-weight: 600; }
+    .site-footer { background: #222; color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem; }
+    .site-footer p { font-size: 0.9rem; }
+    .site-footer em { font-style: italic; color: #bbb; }
+    section { margin: 2rem 0; }
+    h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.8rem; color: #1565c0; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.3rem; color: #1565c0; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+    p { margin-bottom: 1rem; }
+    strong { font-weight: 600; color: #222; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.8rem; text-align: left; }
+    th { background: #e3f2fd; font-weight: 600; color: #1565c0; }
+    ul, ol { margin: 1rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    code { background: #f5f5f5; padding: 0.2rem 0.5rem; border-radius: 3px; font-family: monospace; color: #c62828; }
+  </style>
+</head>
+<body data-subject="math">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="index.html" class="switcher-link active" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="../english/index.html" class="switcher-link" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero math">
+    <div class="container">
+      <span class="chapter-label">Chapter 2</span>
+      <h1>Arithmetic Expressions</h1>
+      <p class="chapter-subtitle">Learn why the order of operations matters and how to write expressions that say exactly what you mean—like punctuation in English!</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">Math</a> → <span>Chapter 2</span></nav>
+
+    <div class="hook-box">
+      <span class="hook-label">🎯 The Hook</span>
+      <h3>One Expression, Two Answers!</h3>
+      <p>Mallesh brought 30 marbles. Arun brought 5 bags with 4 marbles each. How many marbles total? Mallesh wrote: <code>30 + 5 × 4</code></p>
+      <p>But Purna got 140 (adding 30 + 5 = 35, then 35 × 4). Mallesh got 50 (multiplying 5 × 4 = 20, then 20 + 30). Who's right?</p>
+      <p>The answer depends on how we read the expression. Just like punctuation in English changes meaning, <strong>the order of operations</strong> changes the answer in math!</p>
+    </div>
+
+    <div class="feynman-bridge">
+      <span class="bridge-label">💡 Feynman Bridge</span>
+      <h3>Punctuation in Math</h3>
+      <p>In English, "Shalini sat next to a friend with toys" could mean two things—depending on punctuation. In math, <code>30 + 5 × 4</code> could mean two things—depending on brackets and order of operations.</p>
+      <p>Just as we use commas, periods, and colons to clarify sentences, we use brackets and the concept of <strong>terms</strong> to clarify which operations happen first in math!</p>
+    </div>
+
+    <section>
+      <h2>Simple Expressions and Comparing Them</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: From Numbers to Expressions</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: What Is an Expression?</h4>
+          <p>An arithmetic expression is a math phrase using numbers and operations. Examples: <code>13 + 2</code>, <code>20 – 4</code>, <code>12 × 5</code>, <code>18 ÷ 3</code>. Each has a value—a number it "equals."</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Expressions Can Have the Same Value</h4>
+          <p>Different expressions can equal the same number. For example, all these equal 12:</p>
+          <p><code>10 + 2</code>, <code>15 – 3</code>, <code>3 × 4</code>, <code>24 ÷ 2</code></p>
+          <p>We write this with the equals sign: <code>10 + 2 = 12</code></p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Comparing Expressions Without Calculating</h4>
+          <p>Do we need to calculate both sides to know which is bigger? Not always!</p>
+          <p><strong>Example:</strong> Which is bigger: <code>1023 + 125</code> or <code>1022 + 128</code>?</p>
+          <div class="deep-dive">
+            <span class="dd-label">Think in terms of a story:</span>
+            <p>Raja starts with 1023 and gets 125 more. Joy starts with 1022 (one less than Raja) but gets 128 more (three more than Raja). Joy's gain is bigger, so even though he started with less, he ends with more! Therefore: <code>1023 + 125 < 1022 + 128</code></p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: Compare Subtraction Expressions</h4>
+          <p><strong>Example:</strong> Which is bigger: <code>113 – 25</code> or <code>112 – 24</code>?</p>
+          <p>Raja had 113 and lost 25. Joy had 112 and lost 24. Raja started with 1 more but lost 1 more, so they end with the same! Therefore: <code>113 – 25 = 112 – 24</code></p>
+          <div class="deep-dive">
+            <span class="dd-label">The pattern:</span>
+            <p>When you compare expressions by imagining real situations (marbles, money, people), you don't need a calculator. You use logic!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Brackets: The Punctuation of Math</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: Why Brackets Matter</h3>
+
+        <div class="logic-step">
+          <h4>The Problem: Ambiguity Without Brackets</h4>
+          <p>The expression <code>30 + 5 × 4</code> is ambiguous. Do we add first or multiply first?</p>
+          <ul>
+            <li>If we add first: (30 + 5) × 4 = 35 × 4 = 140</li>
+            <li>If we multiply first: 30 + (5 × 4) = 30 + 20 = 50</li>
+          </ul>
+          <p>Same expression, different answers! We need a way to clarify.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>The Solution: Use Brackets</h4>
+          <p>Brackets tell us which operation to do first. In the marble problem:</p>
+          <p><code>30 + (5 × 4) = 30 + 20 = 50</code></p>
+          <p>The brackets say: <strong>Multiply 5 and 4 first, then add the result to 30.</strong> This is correct because Arun brought 5 bags of 4 marbles each = 20 marbles, plus Mallesh's 30 = 50 total.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Real-World Example: Money Change</h4>
+          <p>Irfan buys biscuits for ₹15 and toor dal for ₹56. He pays ₹100. Change = <code>100 – (15 + 56)</code></p>
+          <p>If we wrote it as <code>100 – 15 + 56</code>, we might incorrectly subtract 15 from 100 first, then add 56, getting ₹141—more than he paid! This is absurd.</p>
+          <p>Brackets clarify: <code>100 – (15 + 56) = 100 – 71 = 29</code>. Irfan gets ₹29 back.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why this matters:</span>
+            <p>Brackets act like punctuation. They group quantities that belong together logically: (total cost) in this case, not individual items.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Terms: Understanding Order Without Always Using Brackets</h2>
+      <div class="logic-ladder">
+        <h3>Logic Ladder: What Are Terms?</h3>
+
+        <div class="logic-step">
+          <h4>Step 1: Terms Are Parts Separated by Plus Signs</h4>
+          <p>In the expression <code>12 + 7</code>, we have two terms: 12 and 7.</p>
+          <p>In the expression <code>6 × 5 + 3</code>, we have two terms: <code>6 × 5</code> (which is a single "unit" or term) and <code>3</code>.</p>
+          <p><strong>Key idea:</strong> Multiplication and division happen <em>within</em> a term. We only split terms at + or – signs.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 2: Subtraction Is Really Adding the Opposite</h4>
+          <p>In <code>83 – 14</code>, we have two terms: 83 and –14 (negative 14).</p>
+          <p>Why? Because subtracting is the same as adding a negative number: <code>83 – 14 = 83 + (–14)</code></p>
+          <p>Both give 69. By thinking of subtraction as "adding the opposite," we keep one consistent operation: addition.</p>
+          <div class="deep-dive">
+            <span class="dd-label">The token model memory:</span>
+            <p>From Class 6, you learned about positive and negative tokens. Subtracting 14 is like adding 14 negative tokens. This viewpoint makes the math more consistent.</p>
+          </div>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 3: Breaking Down Complex Expressions</h4>
+          <p>Expression: <code>30 + 5 × 4</code></p>
+          <p>What are the terms? First, identify the + or – signs (the term separators):</p>
+          <ul>
+            <li>Term 1: <code>30</code></li>
+            <li>Term 2: <code>5 × 4</code> (the × stays within the term)</li>
+          </ul>
+          <p>We evaluate each term separately: 30 and 20, then add: 30 + 20 = 50.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Step 4: The Order Matters in Terms—Then Add Them</h4>
+          <p>Expression: <code>5 × (3 + 2) + 78 + 3</code></p>
+          <p>What are the terms?</p>
+          <ul>
+            <li>Term 1: <code>5 × (3 + 2) = 5 × 5 = 25</code> (brackets happen first within the term)</li>
+            <li>Term 2: <code>78</code></li>
+            <li>Term 3: <code>3</code></li>
+          </ul>
+          <p>Then add all terms: 25 + 78 + 3 = 106.</p>
+          <div class="deep-dive">
+            <span class="dd-label">Why this order works:</span>
+            <p>Multiplication and division are "stronger" operations that happen within terms. Addition and subtraction are "weaker" and happen between terms. This hierarchy prevents confusion!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Properties of Addition: Swapping and Grouping</h2>
+      <p>Once we've identified terms and converted everything to addition (by thinking of subtraction as adding negatives), something magical happens: <strong>the order doesn't matter!</strong></p>
+
+      <h3>Commutative Property (Swapping)</h3>
+      <p>If you have terms, you can add them in any order:</p>
+      <p><code>6 + (–4) = (–4) + 6 = 2</code></p>
+      <p>Both equal 2! You can swap the terms.</p>
+
+      <h3>Associative Property (Grouping)</h3>
+      <p>If you have three terms, you can group them differently:</p>
+      <p><code>(–7) + 10 + (–11) = (–7 + 10) + (–11) = 3 + (–11) = –8</code></p>
+      <p>OR</p>
+      <p><code>(–7) + 10 + (–11) = (–7) + (10 + (–11)) = (–7) + (–1) = –8</code></p>
+      <p>Same answer! Grouping doesn't matter.</p>
+
+      <div class="error-trap">
+        <h4>Common Mistake: Thinking Order Always Matters</h4>
+        <p>Students sometimes think: "If I do the operations in a different order, I'll get a different answer." Not true for addition! Once you identify terms and work within them, adding those terms in any order gives the same result. It's only when you <em>change which operations happen in which terms</em> (without brackets) that you get a different answer.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Comparing Expressions Using Terms</h2>
+      <p>Now we can compare complex expressions by analyzing their terms:</p>
+
+      <h3>Example: Without Calculating</h3>
+      <p>Which is greater: <code>245 + 289</code> or <code>246 + 285</code>?</p>
+      <p><strong>Analysis:</strong></p>
+      <ul>
+        <li>First expression: 245 + 289. Total = 534.</li>
+        <li>Second expression: 246 + 285. The first term grew by 1, but the second term shrank by 4. Net change: +1 – 4 = –3. So this sum is 3 less than 534.</li>
+        <li><strong>Answer:</strong> <code>245 + 289 > 246 + 285</code></li>
+      </ul>
+
+      <p>You can reason through this without a calculator by tracking which terms got bigger and which got smaller!</p>
+    </section>
+
+    <div class="socratic-sandbox">
+      <h3>Socratic Sandbox: Test Your Understanding</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">1. What is the value of <code>8 + 3 × 2</code> without calculating?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Identify the terms first. How many terms are there? What are they?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>There are two terms: <code>8</code> and <code>3 × 2</code>. The second term is <code>3 × 2 = 6</code>. So the answer is <code>8 + 6 = 14</code>. Never do <code>(8 + 3) × 2 = 22</code> unless brackets tell you to!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1: Predict</span>
+        <p class="quiz-question">2. Why is <code>100 – 15 + 56</code> different from <code>100 – (15 + 56)</code>?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>In the first expression, how many terms are there? In the second, how many?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>First: <code>100 + (–15) + 56</code> has three terms (100, –15, 56). Result: 100 – 15 + 56 = 141. Second: <code>100 – (71)</code> has two terms (100 and –71). Result: 100 – 71 = 29. Brackets change which terms we have!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">3. Why does <code>5 × 4 + 3</code> not equal <code>5 × (4 + 3)</code>?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>What does the bracket change about which operations happen first?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>First expression: Two terms—<code>5 × 4 = 20</code> and <code>3</code>. Sum = 23. Second expression: Brackets say add first—<code>4 + 3 = 7</code>, then <code>5 × 7 = 35</code>. Brackets change which numbers go together in multiplication!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2: Why</span>
+        <p class="quiz-question">4. If Manasa added a long list and got 11,749, but forgot one number (9055), does she need to start over?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Can she use the properties of addition (commutative or associative) to help?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>No! By the commutative property of addition, she can just add the forgotten number to her result: 11,749 + 9,055 = 20,804. She doesn't need to recalculate everything—addition order doesn't change the sum!</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">5. Which is greater without calculating: <code>364 + 587</code> or <code>363 + 589</code>?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Compare term by term. One term decreased by 1. How much did the other term increase?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>First: 364 + 587. Second: 363 + 589. The first term decreased by 1, but the second increased by 2. Net gain: +2 – 1 = +1. So the second is greater by 1! <code>364 + 587 < 363 + 589</code></p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3: Apply</span>
+        <p class="quiz-question">6. Write an expression for: "Buy 3 items at ₹50 each, and 2 items at ₹20 each, then get a ₹15 discount." What's the total cost?</p>
+        <details>
+          <summary>💭 Hint</summary>
+          <p>Identify the cost parts, then subtract the discount. What are the terms?</p>
+        </details>
+        <details>
+          <summary>✓ Answer</summary>
+          <p>Expression: <code>(3 × 50) + (2 × 20) – 15</code> or <code>3 × 50 + 2 × 20 – 15</code>. Three terms: <code>3 × 50 = 150</code>, <code>2 × 20 = 40</code>, and <code>–15</code>. Total: 150 + 40 – 15 = 175 rupees.</p>
+        </details>
+      </div>
+    </div>
+
+    <nav class="chapter-nav">
+      <a href="chapter1.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Large Numbers Around Us</span></a>
+      <a href="chapter3.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">A Peek Beyond the Point</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer"><p>Class 7 Learning Portal — Built from NCERT <em>Ganita Prakash</em> Textbook (2025 Edition)</p></footer>
+</body>
+</html>
