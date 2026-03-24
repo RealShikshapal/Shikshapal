@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English (Poorvi) — Grade 8 Interactive Learning Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
 
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">
+        <span class="logo-icon">8</span>
+        <span>Grade 8 Portal</span>
+      </a>
+
+      <div class="subject-switcher" role="tablist" aria-label="Subjects">
+        <a href="../science/index.html" class="subject-pill" data-subject="science" role="tab">
+          <span aria-hidden="true">🔬</span>
+          <span class="pill-label">Science</span>
+        </a>
+        <a href="../math/index.html" class="subject-pill" data-subject="math" role="tab">
+          <span aria-hidden="true">📐</span>
+          <span class="pill-label">Math</span>
+        </a>
+        <a href="../social/index.html" class="subject-pill" data-subject="social" role="tab">
+          <span aria-hidden="true">🌍</span>
+          <span class="pill-label">Social Science</span>
+        </a>
+        <a href="index.html" class="subject-pill active" data-subject="english" role="tab">
+          <span aria-hidden="true">📖</span>
+          <span class="pill-label">English</span>
+        </a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep">→</span>
+        <span>English</span>
+      </div>
+      <h1>English</h1>
+      <div class="subtitle">Poorvi — Textbook of English</div>
+    </div>
+  </section>
+
+  <!-- ===== UNIT LIST ===== -->
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <ul class="chapter-list">
+        <li>
+          <a href="unit1.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--english);">1</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Wit and Wisdom</div>
+              <div class="chapter-teaser">Experience clever characters and timeless wisdom through humor and thoughtful storytelling.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="unit2.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--english);">2</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Values and Dispositions</div>
+              <div class="chapter-teaser">Meet inspiring figures who show courage, compassion, and the power of human kindness.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="unit3.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--english);">3</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Mystery and Magic</div>
+              <div class="chapter-teaser">Solve puzzles and step into worlds of wonder where imagination transforms reality.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="unit4.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--english);">4</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Environment</div>
+              <div class="chapter-teaser">Discover nature's beauty and our responsibility to protect the world around us.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="unit5.html" class="chapter-item">
+            <span class="chapter-num" style="color: var(--english);">5</span>
+            <div class="chapter-info">
+              <div class="chapter-title">Science and Curiosity</div>
+              <div class="chapter-teaser">Explore stories of discovery where curious minds uncover hidden truths about our world.</div>
+            </div>
+            <span class="chapter-arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grade 8 Interactive Learning Portal — Built from NCERT textbooks (2025 Edition)</p>
+      <p style="margin-top: var(--sp-2);">
+        Pedagogical framework: Feynman Technique · First-Principles Reasoning · Socratic Inquiry
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== THEME TOGGLE SCRIPT ===== -->
+  <script>
+    (function() {
+      const html = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const icon = document.getElementById('themeIcon');
+
+      // Check saved preference
+      const saved = localStorage.getItem('theme');
+      if (saved) {
+        html.setAttribute('data-theme', saved);
+        icon.textContent = saved === 'light' ? '🌙' : '☀️';
+      }
+
+      btn.addEventListener('click', () => {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        icon.textContent = next === 'light' ? '🌙' : '☀️';
+      });
+
+      // Intersection Observer for scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.animate-in').forEach(el => {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
