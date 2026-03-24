@@ -59,34 +59,26 @@
   </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <div class="container">
-            <a href="../index.html" class="nav-brand">
-                <span class="logo-icon">8</span>
-                <span>Grade 8 Portal</span>
-            </a>
-            <div class="subject-switcher">
-                <a href="../science/index.html" class="subject-pill active" data-subject="science">🔬 Science</a>
-                <a href="../math/index.html" class="subject-pill" data-subject="math">📐 Math</a>
-                <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
-                <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
-            </div>
-            <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
-        </div>
-    </nav>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../math/index.html">Math</a>
+      <a href="../social/index.html">Social</a>
+      <a href="../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Page Header with Breadcrumb -->
-        <div class="page-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> >
-                <a href="index.html">Science</a> >
-                <span>Chapter 2: The Invisible Living World</span>
-            </div>
-            <h1>The Invisible Living World: Beyond Our Naked Eye</h1>
-            <p class="subtitle">What would you see if the invisible world became visible? Let's explore life at the microscopic level!</p>
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 2
+      </div>
+      <h1>🔬 The Invisible Living World: Beyond Our Naked Eye</h1>
+      <p style="color: #888;">What would you see if the invisible world became visible? Let's explore life at the microscopic level!</p>
         </div>
 
         <!-- THE HOOK -->
@@ -655,47 +647,17 @@
           </div>
         </section>
 
-        <!-- Chapter Navigation -->
-        <section class="chapter-nav">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid var(--border);">
-                <a href="chapter1.html" style="padding: 10px 20px; background: var(--bg-secondary); border-radius: 6px; text-decoration: none; color: var(--text);">← Previous Chapter</a>
-                <span style="font-weight: 600; color: var(--text-secondary);">Chapter 2 of 3</span>
-                <a href="chapter3.html" style="padding: 10px 20px; background: var(--primary); border-radius: 6px; text-decoration: none; color: white;">Next Chapter →</a>
-            </div>
-        </section>
-    </main>
+    <div class="chapter-nav">
+      <a href="chapter1.html">← Previous Chapter</a>
+      <a href="chapter3.html">Next Chapter →</a>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Grade 8 Science Learning Portal. Built with curiosity and wonder.</p>
-            <p>Remember: Inside every cell, millions of reactions are happening right now. You're a walking, talking universe of cells!</p>
-        </div>
-    </footer>
+  <div class="footer">
+    <p>&copy; 2025 Grade 8 Science Learning Portal. Built with curiosity and wonder.</p>
+    <p>Remember: Inside every cell, millions of reactions are happening right now. You're a walking, talking universe of cells!</p>
+  </div>
 
-    <!-- Theme Toggle Script -->
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            updateThemeIcon(theme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'light' ? '☀️' : '🌙';
-        }
-    </script>
-
-    <script src="../css/quiz-engine.js"></script>
+  <script src="../css/quiz-engine.js"></script>
 </body>
 </html>

@@ -59,34 +59,26 @@
   </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <div class="container">
-            <a href="../index.html" class="nav-brand">
-                <span class="logo-icon">8</span>
-                <span>Grade 8 Portal</span>
-            </a>
-            <div class="subject-switcher">
-                <a href="../science/index.html" class="subject-pill active" data-subject="science">🔬 Science</a>
-                <a href="../math/index.html" class="subject-pill" data-subject="math">📐 Math</a>
-                <a href="../social/index.html" class="subject-pill" data-subject="social">🌍 Social Science</a>
-                <a href="../english/index.html" class="subject-pill" data-subject="english">📖 English</a>
-            </div>
-            <button class="theme-toggle" id="themeToggle"><span id="themeIcon">☀️</span></button>
-        </div>
-    </nav>
+  <nav class="nav">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Science</a>
+      <a href="../math/index.html">Math</a>
+      <a href="../social/index.html">Social</a>
+      <a href="../english/index.html">English</a>
+    </div>
+    <div class="subject-switcher">
+      <span class="subject-pill active">Science</span>
+    </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Page Header with Breadcrumb -->
-        <div class="page-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> >
-                <a href="index.html">Science</a> >
-                <span>Chapter 3: Health: The Ultimate Treasure</span>
-            </div>
-            <h1>Health: The Ultimate Treasure</h1>
-            <p class="subtitle">What does it really mean to be healthy? And how do we protect this precious treasure?</p>
+  <div class="container">
+    <div class="page-header">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; <a href="index.html">Science</a> &gt; Chapter 3
+      </div>
+      <h1>💚 Health: The Ultimate Treasure</h1>
+      <p style="color: #888;">What does it really mean to be healthy? And how do we protect this precious treasure?</p>
         </div>
 
         <!-- THE HOOK -->
@@ -758,39 +750,17 @@
           </div>
         </section>
 
-    </main>
+    <div class="chapter-nav">
+      <a href="chapter2.html">← Previous Chapter</a>
+      <a href="chapter4.html">Next Chapter →</a>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Grade 8 Science Learning Portal. Built with curiosity and wonder.</p>
-            <p>Remember: Health is your most precious treasure. Protect it through knowledge, good habits, and helping others stay healthy too. 💚</p>
-        </div>
-    </footer>
+  <div class="footer">
+    <p>&copy; 2025 Grade 8 Science Learning Portal. Built with curiosity and wonder.</p>
+    <p>Remember: Health is your most precious treasure. Protect it through knowledge, good habits, and helping others stay healthy too!</p>
+  </div>
 
-    <!-- Theme Toggle Script -->
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to light
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            updateThemeIcon(theme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeIcon.textContent = theme === 'light' ? '☀️' : '🌙';
-        }
-    </script>
-
-    <script src="../css/quiz-engine.js"></script>
+  <script src="../css/quiz-engine.js"></script>
 </body>
 </html>
