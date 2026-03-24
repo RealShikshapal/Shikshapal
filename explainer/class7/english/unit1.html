@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1: Learning Together — Class 7 English</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    :root {
+      --primary-color: #831843;
+      --secondary-color: #d4569e;
+      --accent-color: #f0a8d0;
+      --dark-text: #2c2c2c;
+      --light-bg: #f9f5f7;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: var(--dark-text);
+      background: white;
+    }
+
+    .chapter-hero {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 3.2rem;
+      margin: 20px 0;
+      font-weight: 800;
+    }
+
+    .chapter-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0.95;
+    }
+
+    .chapter-subtitle {
+      font-size: 1.2rem;
+      opacity: 0.95;
+      margin-top: 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .lesson {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hook Box */
+    .hook-box {
+      background: var(--light-bg);
+      border-left: 4px solid var(--primary-color);
+      padding: 25px;
+      margin: 40px 0;
+      border-radius: 5px;
+    }
+
+    .hook-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .hook-box h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: var(--primary-color);
+    }
+
+    /* Feynman Bridge */
+    .feynman-bridge {
+      background: linear-gradient(to right, rgba(131, 24, 67, 0.05), rgba(212, 86, 158, 0.05));
+      padding: 30px;
+      margin: 40px 0;
+      border-radius: 5px;
+      border: 2px dashed var(--secondary-color);
+    }
+
+    .bridge-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .feynman-bridge p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--dark-text);
+    }
+
+    /* Logic Ladder */
+    .logic-ladder {
+      margin: 50px 0;
+      padding: 30px;
+      background: #fafafa;
+      border-radius: 8px;
+    }
+
+    .logic-ladder h3 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+    }
+
+    .logic-step {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-left: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .logic-step h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .logic-step p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Character Box */
+    .character-box {
+      margin: 25px 0;
+      padding: 25px;
+      background: linear-gradient(to right, rgba(212, 86, 158, 0.08), white);
+      border: 2px solid var(--accent-color);
+      border-radius: 6px;
+    }
+
+    .character-box h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .character-box p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Sentence Architect */
+    .sentence-architect {
+      margin: 25px 0;
+      padding: 25px;
+      background: linear-gradient(to right, rgba(131, 24, 67, 0.05), white);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 6px;
+    }
+
+    .sentence-architect h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .sentence-architect p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Deep Dive */
+    .deep-dive {
+      margin: 25px 0;
+      padding: 20px;
+      background: white;
+      border-right: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .dd-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .deep-dive p {
+      margin: 0;
+      line-height: 1.8;
+      color: var(--dark-text);
+    }
+
+    /* Socratic Sandbox */
+    .socratic-sandbox {
+      margin: 50px 0;
+      padding: 30px;
+      background: linear-gradient(135deg, rgba(131, 24, 67, 0.08), rgba(212, 86, 158, 0.08));
+      border-radius: 8px;
+      border: 2px solid var(--secondary-color);
+    }
+
+    .socratic-sandbox h3 {
+      font-size: 1.6rem;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+    }
+
+    .quiz-level {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .level-badge {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .quiz-question {
+      margin: 12px 0;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    details {
+      margin-top: 12px;
+    }
+
+    details summary {
+      cursor: pointer;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 8px 0;
+      user-select: none;
+    }
+
+    details summary:hover {
+      text-decoration: underline;
+    }
+
+    details p {
+      margin: 10px 0 0 20px;
+      padding: 10px;
+      background: var(--light-bg);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 3px;
+    }
+
+    /* Navigation */
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 2px solid #eee;
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .chapter-nav a.prev {
+      background: var(--primary-color);
+      align-items: flex-start;
+    }
+
+    .chapter-nav a.next {
+      background: var(--secondary-color);
+      align-items: flex-end;
+    }
+
+    .chapter-nav a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .nav-label {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+
+    .nav-title {
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--light-bg);
+      padding: 30px 20px;
+      text-align: center;
+      color: #666;
+      margin-top: 60px;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Subject Switcher */
+    .subject-switcher {
+      background: white;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .switcher-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .switcher-brand {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: auto;
+    }
+
+    .logo-icon {
+      font-size: 1.3rem;
+    }
+
+    .switcher-link {
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .switcher-link:hover,
+    .switcher-link.active {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body data-subject="english">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="../math/index.html" class="switcher-link" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="index.html" class="switcher-link active" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero english">
+    <div class="container">
+      <span class="chapter-label">Unit 1</span>
+      <h1>Learning Together</h1>
+      <p class="chapter-subtitle">Stories, poems, and essays about education, perseverance, and sensory experiences</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">English</a> → <span>Unit 1</span></nav>
+
+    <!-- Hook -->
+    <section class="hook-box">
+      <div class="hook-label">Everyday Mystery</div>
+      <h3>What would you do if no one would let you go to school?</h3>
+      <p>Imagine wanting something so badly—like attending school, learning to read, discovering why birds sing—but being told you're too young or too busy. How would you find the courage to try?</p>
+    </section>
+
+    <!-- Feynman Bridge -->
+    <section class="feynman-bridge">
+      <div class="bridge-label">Feynman Bridge</div>
+      <p><strong>Think of education like a river.</strong> A river flows around obstacles, keeps moving forward no matter how tired it seems, and reaches everyone along its path. When we face barriers to learning, we need to be like that river—finding ways around them, never giving up, and helping others along the way. This unit teaches us about courage, perseverance, and discovering the world through our senses.</p>
+    </section>
+
+    <!-- Literary Piece 1: The Day the River Spoke -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">1. The Day the River Spoke — Story</h3>
+      <div class="logic-step">
+        <h4>The Story</h4>
+        <p>Jahnavi, a young girl living in a coastal village in India, dreams of attending school but her parents say she's too young. When her brothers go to school, she stays home to care for her younger sibling. One day, while sitting by the river crying about her impossible dream, the river itself speaks to her. With the voice of a sleepy, murmuring stream, the river learns about Jahnavi's longing to understand the world—why spiders are yellow in yellow flowers, why the moon comes from behind hills, why fish turn into frogs. The river encourages Jahnavi to be brave, reminding her that "little girls can do as much as little boys." It suggests she slip into the school unnoticed one morning and listen to the lesson. Though terrified, Jahnavi gathers courage, does exactly that, and when the teacher discovers her, he offers to speak with her father. Her mother's heart melts when she hears the teacher's words, remembering her own childhood longing for school. Jahnavi finally gets to attend, and dreams of becoming a teacher herself to help other girls in her village.</p>
+      </div>
+      <div class="character-box">
+        <h4>Character Deep-Dive: Jahnavi</h4>
+        <p><strong>Jahnavi's Growth Arc:</strong> At the story's start, Jahnavi is a curious but resigned girl—she accepts that she cannot go to school because she's told she's too small and must care for her brothers. She's learned to be quiet about her dreams. Her defining trait is an insatiable curiosity: she wants to know everything about the natural world around her. By the river, she reveals her true self—full of questions and longing. The river's encouragement awakens her courage. Her key transformation happens when she risks humiliation by walking into the school uninvited. This single act of bravery shows that Jahnavi has learned the river's lesson: that she is capable, that her gender doesn't limit her abilities, and that taking action is more powerful than waiting. Her final decision to become a teacher reveals a mature Jahnavi—one who not only wants education for herself but wants to extend that opportunity to all girls like her.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Literary Lens: Personification and Symbolism</div>
+        <p>The river is not just scenery—it's a character with wisdom. By giving the river human qualities (speaking, understanding, laughing), the author teaches us that wisdom can come from unexpected places, and that nature itself can mentor us. The river symbolizes persistence and the natural flow of progress: it must reach the sea, just as Jahnavi must reach her goal. The river's refusal to carry Jahnavi to school teaches another lesson—sometimes we must make our own journey, take our own risks, and use our own strength to overcome barriers.</p>
+      </div>
+    </section>
+
+    <!-- Literary Piece 2: Try Again -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">2. Try Again — Poem</h3>
+      <div class="logic-step">
+        <h4>The Poem</h4>
+        <p>This narrative poem tells the story of King Bruce of Scotland, who sits in despair after repeatedly failing to accomplish a great deed for his people. As he contemplates giving up entirely, a spider catches his attention. The spider attempts to climb a thread to reach its web high above. Nine times the spider falls. Nine times it climbs again. The king watches in amazement as, on the tenth attempt, the spider finally reaches its home. Inspired by the spider's unwavering determination, King Bruce realizes he too can succeed by refusing to surrender. He tries his effort once more and succeeds where he had failed before. The poem's central message: perseverance turns failures into stepping stones to success.</p>
+      </div>
+      <div class="sentence-architect">
+        <h4>Sentence Architect: Power of Repetition</h4>
+        <p><strong>Original line:</strong> "Up, up it ran, not a second to stay, / To utter the least complaint; / Till it fell still lower, and there it lay, / A little dizzy and faint."</p>
+        <p><strong>How repetition works:</strong> The phrase "Up, up" mimics the spider's climbing motion. Notice how "tried and tried," "steadily, steadily," and "up and down, now fast, now slow" repeat throughout the poem. This repetition isn't just ornament—it creates the feeling of endless effort, of trying again and again. If the poet had written "The spider climbed repeatedly," we'd understand it, but we wouldn't *feel* the exhaustion and determination the way repetition makes us feel it.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Metaphor at Work</div>
+        <p>The spider's climb is a metaphor for King Bruce's struggles. Both face a long, difficult journey. Both fall and must rise again. Both must find inner strength to continue when success seems impossible. By comparing Bruce's emotional struggle to the spider's physical climb, the poet suggests that the nature of struggle is universal—whether we're climbing a thread or pursuing a great deed, the lesson is identical: never surrender.</p>
+      </div>
+    </section>
+
+    <!-- Literary Piece 3: Three Days to See -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">3. Three Days to See — Narrative/Essay</h3>
+      <div class="logic-step">
+        <h4>The Narrative</h4>
+        <p>Helen Keller, blind since infancy, shares what she would do if given sight for just three days. She reveals that despite her blindness, she finds beauty through touch—the delicate symmetry of leaves, the texture of tree bark, the quiver of a bird's wing. Yet she yearns to see. She imagines dividing three days into three parts: Day 1, she would spend with people whose kindness has made her life worth living, finally seeing their faces through the "window of the soul," their eyes. Day 2, she would arise at dawn to witness the miraculous transformation of night into day, visit museums to see human progress through history's artifacts and dinosaur remains. Day 3, she would stand in a busy city corner, observing people—their smiles making her happy, their determination making her proud, their suffering making her compassionate. She concludes that in three days, she could not see all she wishes, and that at midnight, permanent darkness would return. Helen Keller then offers advice to all who can see: use your eyes as if tomorrow you would be stricken blind. Apply this principle to all five senses—hear as if you'll go deaf, touch as if your tactile sense will fail, smell and taste with full presence. Above all, she insists, appreciation of sight is the greatest of all sensory gifts.</p>
+      </div>
+      <div class="character-box">
+        <h4>Character Deep-Dive: Helen Keller—The Grateful Observer</h4>
+        <p>Helen Keller is not complaining about her blindness; instead, she's celebrating what she can experience. Her character is defined by gratitude and creative adaptation. She has learned to "see" through fingertips, detecting laughter and sorrow from the feel of faces. Rather than defining herself by what she lacks, she emphasizes the abundance she experiences through four senses. Yet her honesty about longing shows her humanity—she imagines sight not greedily but thoughtfully, with a clear prioritization: first people, then nature's majesty, then human society. Her advice at the end reveals her deepest wisdom: she doesn't demand pity; she demands that sighted people appreciate what they have. Her character teaches us that limitation can become a teacher, and gratitude can transform deprivation into opportunity.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Mood Shift: One Word, Infinite Meaning</div>
+        <p><strong>Original:</strong> "I place my hand gently on a small tree and feel the happy quiver of a bird in full song."</p>
+        <p><strong>If changed to "sad quiver":</strong> The entire tone shifts. "Happy quiver" fills us with joy and wonder; "sad quiver" would suggest a bird in pain or distress, making the passage melancholy instead of beautiful.</p>
+        <p><strong>Another example:</strong> "I should behold with awe the magnificent panorama" (current) vs. "I should behold with indifference the mundane panorama" (changed). A single word swap transforms the narrator's emotional state entirely. This shows how vocabulary choices—words like "magnificent," "awe," "thrilling," "glorious"—are not just descriptive; they are emotional directors, telling readers precisely how to *feel* about what they're reading.</p>
+      </div>
+    </section>
+
+    <!-- Sentence Architect Workshop -->
+    <section class="sentence-architect">
+      <h4>Sentence Architect Workshop: Grammar & Vocabulary in Unit 1</h4>
+      <p><strong>From "The Day the River Spoke":</strong></p>
+      <p>"You shouldn't cry, you know. And you really shouldn't be scared, when you have been coming here to see me every day, well, almost every day."</p>
+      <p><strong>Breakdown:</strong> The River uses two "shouldn't" clauses to give gentle advice. The repetition mirrors Jahnavi's repeated visits—the River knows her pattern. Notice how adding "almost" softens "every day," showing the River's affectionate observation rather than stern judgment.</p>
+      <p><strong>From "Try Again":</strong></p>
+      <p>"Steadily, steadily, inch by inch, / Higher and higher he got"</p>
+      <p><strong>Breakdown:</strong> These paired adverbs and phrases stack like the spider's own effort. Each repetition measures progress visually and rhythmically, making the reader *feel* the incremental climb.</p>
+      <p><strong>Vocabulary lesson:</strong> Words describing sound appear throughout Unit 1—"murmuring," "shrieked," "rustle." These aren't random choices. They anchor us in the sensory world that characters experience, making stories vivid and immediate rather than abstract.</p>
+    </section>
+
+    <!-- Socratic Sandbox -->
+    <section class="socratic-sandbox">
+      <h3>Socratic Sandbox — Test Your Thinking</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1 — Predict</span>
+        <p class="quiz-question">Before the river spoke to Jahnavi, what do you predict Jahnavi thought would happen if she tried to attend school?</p>
+        <details>
+          <summary>Reveal Hint</summary>
+          <p>Think about what Jahnavi says when the river suggests she sneak into school. What fears did she express?</p>
+        </details>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>Jahnavi predicted that the teacher and other students would "scare her" and "chase her out." She believed she would be rejected, humiliated, and expelled. This fear kept her from trying until the river encouraged her to recognize her own courage.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2 — Why</span>
+        <p class="quiz-question">Why does the poet spend so much time describing the spider's failed attempts in "Try Again" rather than just mentioning that the spider tried multiple times?</p>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>By describing each fall—"down it came with a slippery sprawl," "Again it fell and swung below,"—the poet makes us *experience* the repeated failure alongside the spider. This creates emotional connection and makes King Bruce's inspiration feel earned rather than sudden. We, too, feel the weight of persistence by the poem's end.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3 — Apply</span>
+        <p class="quiz-question">Helen Keller advises people to use their senses "as if tomorrow you would be stricken blind/deaf/without touch." How would you apply this advice to one of your daily routines—such as eating lunch, walking to school, or spending time with friends?</p>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>Possible answer: When eating lunch, instead of eating while distracted, I could taste each bite carefully, noticing flavors I usually miss. When walking to school, I could listen to birdsong, notice the texture of the ground beneath my feet, and observe the colors of trees and buildings as if seeing them for the first time. With friends, I could truly listen to their voices and words rather than planning my response. The principle applies broadly: presence and gratitude transform routine into experience.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="chapter-nav">
+      <a href="index.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">English Home</span></a>
+      <a href="unit2.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Unit 2: Wit and Humour</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Poorvi</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

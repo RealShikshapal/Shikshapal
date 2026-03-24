@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 2: Wit and Humour — Class 7 English</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    :root {
+      --primary-color: #831843;
+      --secondary-color: #d4569e;
+      --accent-color: #f0a8d0;
+      --dark-text: #2c2c2c;
+      --light-bg: #f9f5f7;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: var(--dark-text);
+      background: white;
+    }
+
+    .chapter-hero {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 3.2rem;
+      margin: 20px 0;
+      font-weight: 800;
+    }
+
+    .chapter-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0.95;
+    }
+
+    .chapter-subtitle {
+      font-size: 1.2rem;
+      opacity: 0.95;
+      margin-top: 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .lesson {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .breadcrumb a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hook Box */
+    .hook-box {
+      background: var(--light-bg);
+      border-left: 4px solid var(--primary-color);
+      padding: 25px;
+      margin: 40px 0;
+      border-radius: 5px;
+    }
+
+    .hook-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .hook-box h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: var(--primary-color);
+    }
+
+    /* Feynman Bridge */
+    .feynman-bridge {
+      background: linear-gradient(to right, rgba(131, 24, 67, 0.05), rgba(212, 86, 158, 0.05));
+      padding: 30px;
+      margin: 40px 0;
+      border-radius: 5px;
+      border: 2px dashed var(--secondary-color);
+    }
+
+    .bridge-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .feynman-bridge p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--dark-text);
+    }
+
+    /* Logic Ladder */
+    .logic-ladder {
+      margin: 50px 0;
+      padding: 30px;
+      background: #fafafa;
+      border-radius: 8px;
+    }
+
+    .logic-ladder h3 {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+    }
+
+    .logic-step {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-left: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .logic-step h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .logic-step p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Character Box */
+    .character-box {
+      margin: 25px 0;
+      padding: 25px;
+      background: linear-gradient(to right, rgba(212, 86, 158, 0.08), white);
+      border: 2px solid var(--accent-color);
+      border-radius: 6px;
+    }
+
+    .character-box h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .character-box p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Sentence Architect */
+    .sentence-architect {
+      margin: 25px 0;
+      padding: 25px;
+      background: linear-gradient(to right, rgba(131, 24, 67, 0.05), white);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 6px;
+    }
+
+    .sentence-architect h4 {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .sentence-architect p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    /* Deep Dive */
+    .deep-dive {
+      margin: 25px 0;
+      padding: 20px;
+      background: white;
+      border-right: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .dd-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .deep-dive p {
+      margin: 0;
+      line-height: 1.8;
+      color: var(--dark-text);
+    }
+
+    /* Socratic Sandbox */
+    .socratic-sandbox {
+      margin: 50px 0;
+      padding: 30px;
+      background: linear-gradient(135deg, rgba(131, 24, 67, 0.08), rgba(212, 86, 158, 0.08));
+      border-radius: 8px;
+      border: 2px solid var(--secondary-color);
+    }
+
+    .socratic-sandbox h3 {
+      font-size: 1.6rem;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+    }
+
+    .quiz-level {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .level-badge {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .quiz-question {
+      margin: 12px 0;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    details {
+      margin-top: 12px;
+    }
+
+    details summary {
+      cursor: pointer;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 8px 0;
+      user-select: none;
+    }
+
+    details summary:hover {
+      text-decoration: underline;
+    }
+
+    details p {
+      margin: 10px 0 0 20px;
+      padding: 10px;
+      background: var(--light-bg);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 3px;
+    }
+
+    /* Navigation */
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 2px solid #eee;
+    }
+
+    .chapter-nav a {
+      text-decoration: none;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .chapter-nav a.prev {
+      background: var(--primary-color);
+      align-items: flex-start;
+    }
+
+    .chapter-nav a.next {
+      background: var(--secondary-color);
+      align-items: flex-end;
+    }
+
+    .chapter-nav a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .nav-label {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+
+    .nav-title {
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--light-bg);
+      padding: 30px 20px;
+      text-align: center;
+      color: #666;
+      margin-top: 60px;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Subject Switcher */
+    .subject-switcher {
+      background: white;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .switcher-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .switcher-brand {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: auto;
+    }
+
+    .logo-icon {
+      font-size: 1.3rem;
+    }
+
+    .switcher-link {
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .switcher-link:hover,
+    .switcher-link.active {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body data-subject="english">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="../math/index.html" class="switcher-link" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="index.html" class="switcher-link active" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero english">
+    <div class="container">
+      <span class="chapter-label">Unit 2</span>
+      <h1>Wit and Humour</h1>
+      <p class="chapter-subtitle">Stories, poems, and plays featuring clever communication, unexpected behaviours, and the art of saying the right thing</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">English</a> → <span>Unit 2</span></nav>
+
+    <!-- Hook -->
+    <section class="hook-box">
+      <div class="hook-label">Everyday Mystery</div>
+      <h3>What happens when you say the wrong thing at the wrong time?</h3>
+      <p>Imagine being with guests and accidentally insulting them without meaning to—calling their dog dirty, criticizing their clothes, or saying their brother isn't intelligent enough. How quickly can a conversation go from pleasant to uncomfortable when words collide with reality?</p>
+    </section>
+
+    <!-- Feynman Bridge -->
+    <section class="feynman-bridge">
+      <div class="bridge-label">Feynman Bridge</div>
+      <p><strong>Think of wit and humour like a carefully balanced conversation.</strong> Words have power. They can create laughter, build friendships, or cause offense—sometimes all three at once. This unit explores three different ways language works: through the practical discovery of animal language (communication that breaks boundaries), through the absurdity of a funny man (humour that defies logic), and through the social minefield of polite conversation (humour that reveals human nature). Each piece teaches us that what we say, and how we say it, matters deeply.</p>
+    </section>
+
+    <!-- Literary Piece 1: Animals, Birds, and Dr. Dolittle -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">1. Animals, Birds, and Dr. Dolittle — Story</h3>
+      <div class="logic-step">
+        <h4>The Story</h4>
+        <p>Doctor Dolittle, a respected people's doctor, is visited by a man with a stomach-ache who suggests an unusual career change: become an animal doctor instead. The man's parrot, Polynesia, overhears and enthusiastically endorses the idea. When Dolittle dismisses the notion, Polynesia reveals a startling secret—animals can talk. She speaks to him in both human language ("Polly wants a cracker") and bird language ("Ka-ka oi-ee, fee-fee? Is the porridge hot yet?"). Amazed, Dolittle asks her to teach him the Birds' A.B.C., and soon learns that animals communicate through multiple channels: mouths, ears, feet, tails, and noses. His first animal patient is a plough horse going blind who needs green spectacles. As word spreads, animals flock to his door—farm animals, wild creatures, harvest mice—all bringing their ailments. Dolittle installs special doors for each animal type and becomes famous worldwide, finally discovering his true calling by breaking the barrier between human and animal communication.</p>
+      </div>
+      <div class="character-box">
+        <h4>Character Deep-Dive: Polynesia the Parrot</h4>
+        <p><strong>Polynesia's Role as Catalyst:</strong> Polynesia is the story's beating heart. She's not merely a pet who speaks; she's a mentor with agenda. Her first act—eavesdropping on the Cat's-food-Man's suggestion—shows her observant nature. Her quick judgment that "that man's got sense" reveals her wisdom. When Dolittle resists, she doesn't accept his refusal; instead, she escalates by revealing the animal language secret. She's strategic: she demonstrates her knowledge first (speaking bird language), then builds Dolittle's excitement by having him document the "Birds' A.B.C." Her later teaching shows patience and humor—when Dolittle questions why she never spoke bird language before, she pragmatically replies, "What would have been the good?" Polynesia embodies the principle that sometimes we must take initiative to unlock hidden potential in others.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Communication as Barrier-Breaking</div>
+        <p>The story's deepest lesson is that communication transcends species. When the plough horse says, "It takes a much cleverer man to be a really good animal doctor than it does to be a good people's doctor," he's echoing a truth: animals suffer silently because humans cannot hear them. Dolittle's gift isn't magical—it's simply the ability to *listen*, to see that a twitch of a nose is a question, that a tail movement conveys meaning. The special doors for different animals teach us that accommodation—creating pathways for others—is part of genuine communication.</p>
+      </div>
+    </section>
+
+    <!-- Literary Piece 2: A Funny Man -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">2. A Funny Man — Poem</h3>
+      <div class="logic-step">
+        <h4>The Poem</h4>
+        <p>A poem written from the perspective of someone encountering the most absurd character imaginable: a man who wears a shoe on his head and hats on his feet. When this funny man greets the narrator with a smile and politeness, she notices his peculiar behavior. He "presents" a currant bun as if it were a rose—using eloquent language to describe something mundane. When the narrator questions his logic, the funny man begins singing on the ground. Asked why he wears two hats on his feet, he responds by turning around and hopping home on his head. The poem's genius lies in its embrace of illogic and impossible things presented as normal. The humor is in the juxtaposition of polite, formal speech with utterly ridiculous actions; it's in the inverted logic where a bread roll becomes a flower, and hopping on one's head is a reasonable mode of transport.</p>
+      </div>
+      <div class="sentence-architect">
+        <h4>Sentence Architect: Inversion and Rhythm</h4>
+        <p><strong>Original line:</strong> "But never had I seen before / Such a funny sounding sight."</p>
+        <p><strong>Normal order would be:</strong> "I had never seen such a funny sounding sight before."</p>
+        <p><strong>Why invert?:</strong> The poet places "never had I seen before" at the poem's start to emphasize shock and emphasis. This inversion also creates rhythm—"Never had I seen" has a lilting, almost sing-song quality that matches the poem's whimsical tone. By moving the verb before the subject ("had I" instead of "I had"), the poet mimics the topsy-turvy logic of the funny man himself.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Absurdist Humour and Mood Shift</div>
+        <p><strong>Consider the phrase "funny sounding sight":</strong> Normally we see sights and hear sounds—they're separate senses. By combining them, the poet creates synesthesia (crossing senses), making the funny man's world impossibly mixed up. If the poet had written "unusual sight" instead of "funny sounding sight," we'd feel confused rather than amused. "Funny" invites laughter; "unusual" invites confusion. The repetition of the word "funny" (funny kind of man, funny sounding sight, funny feeling sound, funny looking smell) becomes almost hypnotic—we're pulled deeper into a world where logic doesn't apply, and that's precisely where humor lives.</p>
+      </div>
+    </section>
+
+    <!-- Literary Piece 3: Say the Right Thing -->
+    <section class="logic-ladder">
+      <h3 style="margin-bottom:1rem; color:#831843;">3. Say the Right Thing — Play</h3>
+      <div class="logic-step">
+        <h4>The Play</h4>
+        <p>A comedic play in which Mrs. Shaw carefully prepares her daughter Mary for a visit from wealthy guests, Mrs. Harding and Mrs. Lee. Mrs. Shaw advises Mary to be kind, laugh, say pleasant things, and when guests leave, insist they stay longer. Mary confidently believes she can handle this easily. When the guests arrive, Mary immediately commits a series of social blunders: she compliments Mrs. Harding's children, but Mrs. Harding has no children—they belonged to someone else. Mary criticizes Mr. Best for living in trains and never reading books (he's a banker), only to learn that Mrs. Lee's brother is a banker who does exactly this. Mary mocks Mrs. Best's fashion sense (blue dress with red coat), only to discover Mrs. Harding wears the same combination. Mary insults Mrs. Cotter for staying in bed in the morning and always calling the doctor—only to learn Mrs. Harding does both. Mary complains that talkative women are boring—Mrs. Lee's mother is talkative. Mary finally insults the dirty dog outside the window, learning too late that it's Mrs. Harding's dog, Towzer. The play culminates in Mary's ultimate failure: when guests prepare to leave, instead of pleading them to stay, she blurts out, "Oh, must you stay? Can't you go?"—the exact opposite of what her mother taught her.</p>
+      </div>
+      <div class="character-box">
+        <h4>Character Deep-Dive: Mary's Innocent Cruelty</h4>
+        <p><strong>Mary's Fatal Flaw:</strong> Mary is not malicious; she's thoughtless. She speaks every opinion that enters her mind without filtering. Her character arc is one of spectacular failure masquerading as confidence. At the play's start, she assures her mother, "I can talk very well when I like. Anyone can talk." Her confidence is her undoing. Each of her "innocent" observations is a direct insult: she doesn't realize that speaking truth can be cruelty without context. What Mrs. Shaw tried to teach—that kindness, not honesty, is the goal—Mary never learns. Even when embarrassed (saying "I'm sorry" multiple times), she doesn't adjust her behavior; she continues on her destructive path. By the final scene, her confusion is complete: instead of begging guests to stay, she invites them to leave. Mary's character teaches us that good intentions are not enough; we must develop empathy—the ability to imagine how our words affect others.</p>
+      </div>
+      <div class="deep-dive">
+        <div class="dd-label">Dramatic Irony and Humour Through Repetition</div>
+        <p><strong>The structure is brilliant:</strong> Mary makes six catastrophic mistakes, each following an identical pattern: she says something critical or insulting, pauses, and then discovers that the person she insulted has exactly that quality. The repetition becomes comedic because we anticipate it—by the third blunder, we're laughing not at Mary's ignorance but at the inevitability of her failure. When she says, "I've often done harder things than this" right before entering the social minefield, the audience knows disaster awaits. The play demonstrates that humour can arise from watching someone fail spectacularly—not out of malice, but because the gap between confidence and reality is so vast it becomes laughable.</p>
+      </div>
+    </section>
+
+    <!-- Sentence Architect Workshop -->
+    <section class="sentence-architect">
+      <h4>Sentence Architect Workshop: Dialogue and Subtext in Unit 2</h4>
+      <p><strong>From "Animals, Birds, and Dr. Dolittle":</strong></p>
+      <p>"What would have been the good?" said Polynesia, dusting some cracker crumbs off her left wing.</p>
+      <p><strong>Breakdown:</strong> Polynesia's question isn't seeking an answer; it's rhetorical and slightly dismissive. The action of dusting her wing shows unconcern. This single sentence reveals character through both dialogue and body language, a technique the author uses throughout the story.</p>
+      <p><strong>From "Say the Right Thing":</strong></p>
+      <p>Mrs. Shaw: "If you stay with me, you may not say the right thing." / Mary: "I know the right things to say: 'Good afternoon,' 'How are you?' and things like that."</p>
+      <p><strong>Breakdown:</strong> Mary mistakes politeness phrases for wisdom. Her mother isn't worried about Mary's vocabulary; she's worried about Mary's ability to read social context. The dialogue reveals the generational gap—Mary believes speaking is about words, while Mrs. Shaw knows it's about awareness.</p>
+      <p><strong>Compound words matter:</strong> Note in the Dolittle story the use of compound words—"flowerpots," "catamaran," "bird language," "animal doctor." Each compounds a simple concept into a new thing, mirroring the story's theme of combining human and animal worlds.</p>
+    </section>
+
+    <!-- Socratic Sandbox -->
+    <section class="socratic-sandbox">
+      <h3>Socratic Sandbox — Test Your Thinking</h3>
+
+      <div class="quiz-level predict">
+        <span class="level-badge">Level 1 — Predict</span>
+        <p class="quiz-question">Based on Mrs. Shaw's advice to Mary about how to behave with guests, what do you predict will happen when Mrs. Harding and Mrs. Lee visit?</p>
+        <details>
+          <summary>Reveal Hint</summary>
+          <p>Think about the contrast between Mary's confidence ("Anyone can talk") and the advice Mrs. Shaw gives. What does this suggest about what might go wrong?</p>
+        </details>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>Mary will likely fail to follow her mother's advice because she believes she already knows how to speak pleasantly. She's overconfident and will probably say something that offends the guests. Her inability to filter her opinions and her lack of empathy for others' feelings will lead to social disaster.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level why">
+        <span class="level-badge">Level 2 — Why</span>
+        <p class="quiz-question">Why does Doctor Dolittle's discovery that animals can talk fundamentally change his life and career, and why does this theme of communication matter in a unit about wit and humour?</p>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>Animals can communicate their needs once humans learn to listen. Dolittle's discovery that "animals talk with their ears, with their feet, with their tails—with everything" expands what "communication" means. This relates to humour and wit because both require communication skills—understanding what others feel, intend, and need. The wit in the story is Polynesia's clever suggestion; the humor is in how absurd the idea initially seems. Both Dolittle's new ability and Mary's failure teach us that true wit is not just clever words—it's understanding others.</p>
+        </details>
+      </div>
+
+      <div class="quiz-level apply">
+        <span class="level-badge">Level 3 — Apply</span>
+        <p class="quiz-question">How would you advise Mary after her disastrous visit to truly "say the right thing" in future social situations? What does she need to learn that her mother couldn't teach her in five minutes?</p>
+        <details>
+          <summary>Reveal Answer</summary>
+          <p>Mary needs to develop *empathy*—the ability to imagine how others feel and how her words affect them. Before speaking, she should ask: "Could this offend someone? Do I know if this is true for my listeners?" She needs to understand that hospitality isn't about honest opinions; it's about kindness. More deeply, she needs to listen more than she speaks, learning about her guests before making judgments. Mrs. Shaw's advice was good, but Mary needed wisdom, not rules. With wisdom, she would have caught herself after the first blunder and adjusted her behavior.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="chapter-nav">
+      <a href="unit1.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Unit 1: Learning Together</span></a>
+      <a href="unit3.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Unit 3</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Poorvi</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>

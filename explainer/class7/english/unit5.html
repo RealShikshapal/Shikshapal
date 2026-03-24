@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bravehearts — Class 7 English</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .hook-box {
+      background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%);
+      border-left: 5px solid #d97706;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .hook-label {
+      display: inline-block;
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .feynman-bridge {
+      background: #ede9fe;
+      border-left: 5px solid #7c3aed;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+    .bridge-label {
+      display: inline-block;
+      background: #7c3aed;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .character-box {
+      background: #dbeafe;
+      border: 2px solid #0284c7;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .character-box h4 {
+      color: #0284c7;
+      margin-top: 0;
+    }
+    .character-box p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    .sentence-architect {
+      background: #f0fdf4;
+      border: 2px solid #16a34a;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .sentence-architect h4 {
+      color: #16a34a;
+      margin-top: 0;
+    }
+    .sentence-architect .original {
+      background: #fff3cd;
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 3px solid #ffc107;
+      font-style: italic;
+    }
+    .sentence-architect .analysis {
+      margin: 10px 0;
+      padding-left: 15px;
+    }
+    .deep-dive {
+      background: #fef2f2;
+      border-left: 5px solid #dc2626;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+    .dd-label {
+      display: inline-block;
+      background: #dc2626;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .socratic-sandbox {
+      background: #f3f0ff;
+      border: 2px solid #6d28d9;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+    .socratic-sandbox h4 {
+      color: #6d28d9;
+      margin-top: 0;
+    }
+    .quiz-level {
+      margin: 20px 0;
+    }
+    .level-badge {
+      display: inline-block;
+      background: #6d28d9;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-right: 10px;
+    }
+    .quiz-question {
+      margin: 10px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 4px;
+    }
+    .quiz-level details {
+      margin: 15px 0;
+    }
+    .quiz-level summary {
+      cursor: pointer;
+      padding: 10px;
+      background: #ede9fe;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .quiz-level summary:hover {
+      background: #ddd6fe;
+    }
+    .quiz-level details p {
+      padding: 10px;
+      background: white;
+      margin: 0;
+      border-radius: 4px;
+    }
+    .literary-section {
+      margin: 40px 0;
+      padding: 30px;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    .literary-section h3 {
+      color: #1e40af;
+      border-bottom: 3px solid #1e40af;
+      padding-bottom: 10px;
+    }
+    .summary-box {
+      background: white;
+      border: 1px solid #e5e7eb;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+    .poetry-excerpt {
+      background: #fef2f2;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 4px solid #dc2626;
+      font-style: italic;
+      line-height: 1.8;
+    }
+    .quote-line {
+      margin: 8px 0;
+      padding-left: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .chapter-nav {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+      gap: 20px;
+    }
+    .chapter-nav a {
+      flex: 1;
+      padding: 15px;
+      border: 2px solid #e5e7eb;
+      border-radius: 6px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+    }
+    .chapter-nav a:hover {
+      border-color: #1e40af;
+      background: #eff6ff;
+    }
+    .nav-label {
+      display: block;
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .nav-title {
+      display: block;
+      font-weight: 600;
+      color: #1e40af;
+    }
+  </style>
+</head>
+<body data-subject="english">
+  <nav class="subject-switcher">
+    <div class="switcher-inner">
+      <a href="../index.html" class="switcher-brand"><span class="logo-icon">📚</span> Class 7</a>
+      <a href="../science/index.html" class="switcher-link" data-subject="science">🔬 Science</a>
+      <a href="../math/index.html" class="switcher-link" data-subject="math">📐 Math</a>
+      <a href="../social/index.html" class="switcher-link" data-subject="social">🌍 Social Studies</a>
+      <a href="index.html" class="switcher-link active" data-subject="english">📖 English</a>
+    </div>
+  </nav>
+
+  <header class="chapter-hero english">
+    <div class="container">
+      <span class="chapter-label">Unit 5</span>
+      <h1>Bravehearts</h1>
+      <p class="chapter-subtitle">Celebrating courage, sacrifice, and patriotism</p>
+    </div>
+  </header>
+
+  <main class="lesson">
+    <nav class="breadcrumb"><a href="../index.html">Home</a> → <a href="index.html">English</a> → <span>Unit 5</span></nav>
+
+    <div class="container">
+      <!-- HOOK -->
+      <section>
+        <div class="hook-box">
+          <span class="hook-label">🎭 Hook: Everyday Mystery</span>
+          <p>Have you ever wondered who watches over our borders while we sleep peacefully in our homes? Who stands guard during scorching heat, freezing snow, and lonely nights? These brave men and women sacrifice their youth, their comfort, and sometimes their very lives to keep us safe. What makes someone willing to give everything for their country?</p>
+        </div>
+      </section>
+
+      <!-- FEYNMAN BRIDGE -->
+      <section>
+        <div class="feynman-bridge">
+          <span class="bridge-label">🌉 Feynman Bridge: Understanding Bravery</span>
+          <p>Think of courage like a bridge: most people only cross it when absolutely necessary. But soldiers? They build the bridge, stand on it, and defend it every single day—not because it's easy, but because others depend on them. Patriotism is when you love something so deeply that protecting it becomes more important than protecting yourself.</p>
+        </div>
+      </section>
+
+      <!-- LITERARY PIECE 1: A Homage to Our Brave Soldiers -->
+      <section class="literary-section">
+        <h3>1. A Homage to Our Brave Soldiers (Narrative)</h3>
+
+        <div class="summary-box">
+          <h4>Summary</h4>
+          <p>Two friends, Soumya and Ananda, exchange letters about their feelings regarding Indian soldiers and the National War Memorial in New Delhi. Soumya describes her educational visit to the memorial, which honors fallen soldiers from wars since Independence (1947). She learns about the four concentric circles of the memorial—Amar Chakra (Circle of Immortality), Veerta Chakra (Circle of Bravery), Tyag Chakra (Circle of Sacrifice), and Raksha Chakra (Circle of Protection)—each representing different aspects of military service. The memorial displays the names of over 26,000 fallen soldiers etched on 29,000 tablets.</p>
+        </div>
+
+        <div class="character-box">
+          <h4>⚔️ Character Deep-Dive: Lance Naik Albert Ekka</h4>
+          <p><strong>Selflessness:</strong> Despite being seriously wounded multiple times, Ekka continued fighting alongside his comrades. He charged enemy bunkers "with complete disregard to his personal safety," showing that his concern for saving his fellow soldiers' lives was stronger than his fear of death.</p>
+          <p><strong>Exceptional Courage:</strong> The citation reads: "With outstanding courage and grim determination, Lance Naik Albert Ekka scaled a side wall and entering the bunker, bayoneted the enemy who was still firing and thus silenced the Machine Gun." He received the Param Vir Chakra—India's highest wartime gallantry award.</p>
+          <p><strong>Supreme Sacrifice:</strong> After capturing the objective, "he received serious injuries and succumbed to them after the capture of the objective." His life ended, but his sacrifice ensured victory and saved countless comrades' lives.</p>
+        </div>
+
+        <div class="sentence-architect">
+          <h4>🔧 Sentence Architect: Mood Through Word Choice</h4>
+          <p><strong>How one word changes everything:</strong></p>
+          <div class="original">
+            "War always takes its toll" vs. "War always destroys"
+          </div>
+          <div class="analysis">
+            <strong>takes its toll</strong> = suggests a measured, inevitable cost (formal, respectful)<br>
+            <strong>destroys</strong> = suggests complete annihilation (harsh, violent)<br>
+            The original phrase creates a solemn, reflective mood rather than an angry one.
+          </div>
+          <div class="original">
+            "Brave soldiers have had to sacrifice" vs. "Brave soldiers sacrificed"
+          </div>
+          <div class="analysis">
+            <strong>had to sacrifice</strong> = implies duty and compulsion (sympathetic tone)<br>
+            <strong>sacrificed</strong> = presents it as completed action (neutral)<br>
+            The added phrase "had to" deepens our understanding of their obligation and selflessness.
+          </div>
+        </div>
+
+        <div class="deep-dive">
+          <span class="dd-label">📚 Literary Analysis Deep-Dive</span>
+          <p><strong>The Power of the Memorial's Symbolism:</strong> The letter structure allows us to see the National War Memorial through Soumya's eyes as she discovers it. The memorial itself becomes a character—"the Amar Jawan Jyoti flame symbolises the immortality of the spirit of fallen soldiers with the assurance that the nation will never forget their sacrifice." The eternal flame is a metaphor for undying memory and gratitude.</p>
+          <p><strong>Emotional Arc:</strong> Notice how Soumya's feelings evolve: "I was awestruck and humbled by his bravery" → "I felt as if I had developed a bond with the place" → "the various discourses during the day brought tears to my eyes." This journey from awe to emotional connection shows how confronting sacrifice transforms us.</p>
+        </div>
+      </section>
+
+      <!-- LITERARY PIECE 2: My Dear Soldiers (Poem) -->
+      <section class="literary-section">
+        <h3>2. My Dear Soldiers (Poem by A.P.J. Abdul Kalam)</h3>
+
+        <div class="summary-box">
+          <h4>Summary</h4>
+          <p>A.P.J. Abdul Kalam's poem "My Dear Soldiers" is a tribute to soldiers who defend India's borders. The poem celebrates their vigilance through all seasons and terrains—from snowy mountains to scorching deserts, from valleys to marshes. The soldiers "tread the lonely expanses as yogis," metaphorically comparing their disciplined, meditative dedication to spiritual practice. The poem acknowledges that soldiers have given "the prime of their youth to the nation" and ends with prayers for their blessings and well-being.</p>
+        </div>
+
+        <div class="poetry-excerpt">
+          <div class="quote-line">Oh! Defenders of borders</div>
+          <div class="quote-line">You are great sons of my land</div>
+          <div class="quote-line">When we are all asleep</div>
+          <div class="quote-line">You still hold on to your deed</div>
+          <div class="quote-line">Windy season or snowy days</div>
+          <div class="quote-line">Or scorching sun's sweltering rays</div>
+          <div class="quote-line">You are there guarding all the time awake</div>
+          <div class="quote-line">Prime of your youth given to the nation!!</div>
+          <div class="quote-line">We pray for you brave men!!</div>
+          <div class="quote-line">May the Lord bless you all!!</div>
+        </div>
+
+        <div class="sentence-architect">
+          <h4>🔧 Sentence Architect: Poetic Devices Creating Mood</h4>
+          <p><strong>Imagery + Sacrifice Mood Shift:</strong></p>
+          <div class="original">
+            "Windy season or snowy days / Or scorching sun's sweltering rays"
+          </div>
+          <div class="analysis">
+            These lines use concrete, vivid imagery (visual and tactile) to show the harsh conditions soldiers endure. The repetition of "or" creates a sense of relentless, endless hardship—suggesting soldiers face ALL extremes. This builds respect and admiration in the reader.
+          </div>
+          <div class="original">
+            "Prime of your youth given to the nation"
+          </div>
+          <div class="analysis">
+            The word "given" (not "taken" or "used") implies voluntary sacrifice. "Prime" (the best years) makes the sacrifice even more poignant—they're giving their healthiest, most energetic years. The mood shifts from admiration to gratitude tinged with sadness.
+          </div>
+        </div>
+
+        <div class="character-box">
+          <h4>💭 Character Deep-Dive: A.P.J. Abdul Kalam as Poet</h4>
+          <p><strong>Respectful Humility:</strong> Note the poet addresses soldiers as "great sons of my land" and says "We pray for you"—including himself in the collective gratitude. He doesn't position himself above soldiers but alongside the entire nation in reverence.</p>
+          <p><strong>Spiritual Understanding:</strong> By comparing soldiers to "yogis treading lonely expanses," Kalam recognizes that soldiering is a spiritual discipline—a commitment to duty and self-mastery, not just military training.</p>
+          <p><strong>Advocacy for Recognition:</strong> The poem serves as a public acknowledgment that soldiers deserve prayers, blessings, and eternal memory—elevating their status in national consciousness.</p>
+        </div>
+
+        <div class="deep-dive">
+          <span class="dd-label">📚 Literary Analysis Deep-Dive</span>
+          <p><strong>Simile of the Yogi:</strong> "Treading the lonely expanses as yogis" is the poem's central simile. Yogis practice meditation, discipline, and renunciation of comfort. By comparing soldiers to yogis, Kalam elevates their work to a spiritual practice. They're not just "on duty"—they're engaged in sacred service.</p>
+          <p><strong>Repetition as Rhythm:</strong> The repeated phrases "You are there / guarding all the time awake" and the anaphoric structure ("Climbing the heights or striding the valleys / Defending the deserts or guarding the marshes") create a hypnotic rhythm that mirrors the endless vigilance of soldiers. The form embodies the content.</p>
+        </div>
+      </section>
+
+      <!-- LITERARY PIECE 3: Rani Abbakka (Graphic Story) -->
+      <section class="literary-section">
+        <h3>3. Rani Abbakka (Graphic Story)</h3>
+
+        <div class="summary-box">
+          <h4>Summary</h4>
+          <p>Rani Abbakka, a 16th-century queen of Ullal (in present-day Karnataka), defied Portuguese colonial power when they demanded tribute. Despite her husband's hesitation and rajas' reluctance to support her, she refused to surrender her sovereignty: "We are a sovereign country. We don't pay tribute to Portugal. And we don't take orders from the Portuguese!" Rather than submit, she ordered merchant ships to be built and, in alliance with the Zamorin of Kozhikode, established a profitable trading relationship with Arabia—transforming economic power into independence from colonial control.</p>
+        </div>
+
+        <div class="character-box">
+          <h4>👑 Character Deep-Dive: Rani Abbakka</h4>
+          <p><strong>Dauntless Determination:</strong> Rani Abbakka "displayed the most conspicuous valour, determination" even when facing the mighty Portuguese empire. She was not intimidated by their power and refused to let fear dictate her nation's future. Her resolve was unshakeable despite initial opposition from her own husband and allies.</p>
+          <p><strong>Strategic Brilliance:</strong> Rather than meet the Portuguese in direct military confrontation alone, she formed alliances ("in alliance with the Zamorin of Kozhikode") and sought economic power through trade. She recognized that sovereignty isn't just about military strength—it's about economic independence and strategic partnerships.</p>
+          <p><strong>Bold Leadership in Crisis:</strong> When others hesitated, she acted. The graphic panels show her addressing rajas for support, leading troops, and ultimately defeating the Portuguese. She transformed potential defeat into victory through decisive action and vision.</p>
+        </div>
+
+        <div class="deep-dive">
+          <span class="dd-label">📚 Literary Analysis Deep-Dive</span>
+          <p><strong>Defiance Through Dialogue:</strong> The most powerful moment is the exchange with the Portuguese envoy: "We are a sovereign country. We don't pay tribute to Portugal. And we don't take orders from the Portuguese!" This dialogue accomplishes two things: it declares independence and refuses to accept colonial supremacy. The repetition of "We" emphasizes collective will, not individual whim.</p>
+          <p><strong>The Graphic Format's Power:</strong> As a graphic story, Rani Abbakka's narrative uses visual imagery to convey her courage. We see her commanding ships, meeting with allies, and standing defiant. The visual medium makes her agency and strength immediately apparent—she's not a passive victim of history but an active shaper of it.</p>
+          <p><strong>Economic Resistance:</strong> The story's resolution—establishing profitable trade with Arabia instead of paying Portuguese tribute—shows that resistance isn't always violent. Rani Abbakka's genius was recognizing that economic independence was a form of sovereignty just as powerful as military victory.</p>
+        </div>
+      </section>
+
+      <!-- SENTENCE ARCHITECT GRAMMAR EXERCISE -->
+      <section>
+        <div class="sentence-architect">
+          <h4>🔧 Sentence Architect: Clauses & Conjunctions</h4>
+          <p><strong>Main Clause vs. Subordinate Clause:</strong></p>
+          <p>When the part of a sentence conveys complete meaning independently, it's a <strong>main clause</strong>. When it depends on the main clause for complete meaning, it's a <strong>subordinate clause</strong>.</p>
+          <p><strong>Examples from the text:</strong></p>
+          <ul>
+            <li>"I aspire to be courageous like him" (main) + "when I join the army" (subordinate)</li>
+            <li>"They exchange letters and share their feelings" (main) + "because of the sacrifices made by the bravehearts" (subordinate)</li>
+            <li>"He continued to fight" (main) + "though seriously wounded" (subordinate)</li>
+          </ul>
+          <p><strong>Connecting Words Matter:</strong> Subordinating conjunctions like "when," "because," "though," "where," and "unless" change the relationship between clauses and create different meanings.</p>
+          <p><strong>Practice:</strong> "The soldiers performed bravely __________ they received no recognition." (Fill with: because, though, when, unless) Which word best shows the contrast?</p>
+        </div>
+      </section>
+
+      <!-- SOCRATIC SANDBOX -->
+      <section>
+        <div class="socratic-sandbox">
+          <h4>🎓 Socratic Sandbox: Think Deeper</h4>
+
+          <div class="quiz-level predict">
+            <span class="level-badge">Level 1: PREDICT</span>
+            <p class="quiz-question">Based on what you've read, what would have happened to Rani Abbakka if she had accepted the Portuguese tribute and paid it regularly?</p>
+            <details>
+              <summary>Click to think about this...</summary>
+              <p>If she had paid tribute, Ullal would have remained under Portuguese control, losing sovereignty gradually. The tribute would have economically weakened her kingdom, creating dependence on a foreign power. By refusing, she preserved her people's independence and dignity, even though it created immediate conflict.</p>
+            </details>
+          </div>
+
+          <div class="quiz-level why">
+            <span class="level-badge">Level 2: WHY</span>
+            <p class="quiz-question">Why did A.P.J. Abdul Kalam compare soldiers to yogis in his poem "My Dear Soldiers"?</p>
+            <details>
+              <summary>Think about the spiritual dimension...</summary>
+              <p>Yogis practice discipline, meditation, and renunciation of physical comfort for a higher purpose. By comparing soldiers to yogis, Kalam elevates military service to a spiritual calling. Soldiers, like yogis, sacrifice comfort (sleeping in harsh terrain), master their minds (staying alert despite loneliness), and serve a purpose larger than themselves. The comparison dignifies their work as sacred duty, not merely a job.</p>
+            </details>
+          </div>
+
+          <div class="quiz-level apply">
+            <span class="level-badge">Level 3: APPLY</span>
+            <p class="quiz-question">How could Soumya's letter about the National War Memorial inspire ordinary citizens to show gratitude to soldiers? What specific actions might people take after reading her description of the memorial?</p>
+            <details>
+              <summary>Connect the text to real action...</summary>
+              <p>Soumya's vivid description of the memorial—the eternal flame, the 26,000 names, the four chakras representing immortality and sacrifice—creates emotional connection. Readers might: (1) Visit the memorial themselves to pay respects, (2) Learn soldiers' stories and share them with others, (3) Support welfare programs for soldiers' families, (4) Wear the tricolor with pride, (5) Write letters of gratitude to serving soldiers. The memorial transforms abstract gratitude into concrete spaces where people can honor sacrifice.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- VOCABULARY & GRAMMAR INSIGHTS -->
+      <section style="margin: 40px 0;">
+        <h3 style="color: #1e40af; border-bottom: 3px solid #1e40af; padding-bottom: 10px;">Key Terms & Concepts</h3>
+
+        <div class="character-box" style="background: #e8f5e9;">
+          <h4>Words Associated with Bravery (Unit Vocabulary)</h4>
+          <ul>
+            <li><strong>Valiant:</strong> Showing courage; fearless in battle</li>
+            <li><strong>Courage:</strong> The ability to face danger or pain without fear</li>
+            <li><strong>Heroic:</strong> Grand; showing great bravery</li>
+            <li><strong>Valour:</strong> Exceptional courage, especially in battle</li>
+            <li><strong>Gallant:</strong> Brave and noble; showing courage and honor</li>
+            <li><strong>Fearless:</strong> Without fear; not afraid of danger</li>
+            <li><strong>Daring:</strong> Bold; willing to take risks</li>
+            <li><strong>Bold:</strong> Confident and courageous</li>
+            <li><strong>Undaunted:</strong> Not intimidated; continuing despite danger</li>
+          </ul>
+        </div>
+
+        <div class="sentence-architect" style="background: #f3e5f5; border-color: #7c3aed;">
+          <h4>Spelling Rule: 'i' Before 'e' Except After 'c'</h4>
+          <p>From Unit 5 vocabulary:</p>
+          <ul>
+            <li><strong>seize</strong> (not "seaze"): has 'ei' after 's', not 'c'</li>
+            <li><strong>sovereign</strong>: has 'ei' after 'v'</li>
+            <li><strong>receive, deceive, perceive:</strong> have 'ei' AFTER 'c' (exception)</li>
+            <li><strong>believe, achieve, field:</strong> have 'ie' when NOT after 'c'</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- REFLECTION & CLOSURE -->
+      <section style="margin: 40px 0; padding: 30px; background: #fff3e0; border-radius: 8px;">
+        <h3 style="color: #e65100;">Reflection: What Bravery Means</h3>
+        <p>Unit 5 presents three different faces of bravery:</p>
+        <ol>
+          <li><strong>Lance Naik Albert Ekka:</strong> Bravery in the moment—charging enemy positions despite wounds, prioritizing comrades' safety over personal survival.</li>
+          <li><strong>A.P.J. Abdul Kalam's Soldiers:</strong> Bravery in endurance—standing guard through all seasons, giving youth to protect a nation, the spiritual discipline of duty.</li>
+          <li><strong>Rani Abbakka:</strong> Bravery in resistance—refusing to accept colonial domination, building alliances, and creating economic independence as an alternative to military defeat.</li>
+        </ol>
+        <p style="margin-top: 20px; font-style: italic;">All share one common trait: they placed something greater than themselves (nation, people, sovereignty) above personal safety and comfort. That's the essence of patriotism.</p>
+      </section>
+
+      <!-- CHAPTER NAVIGATION -->
+      <nav class="chapter-nav">
+        <a href="unit4.html" class="prev">
+          <span class="nav-label">← Previous</span>
+          <span class="nav-title">Unit 4: Travel and Adventure</span>
+        </a>
+        <a href="index.html" class="next">
+          <span class="nav-label">Back to →</span>
+          <span class="nav-title">English Home</span>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Class 7 Learning Portal — Built from NCERT <em>Poorvi</em> Textbook (2025 Edition)</p>
+  </footer>
+</body>
+</html>
