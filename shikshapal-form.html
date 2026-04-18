@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ShikshaPal — Get in Touch</title>
+<meta name="description" content="Talk to the ShikshaPal team — book a free demo or start your free trial." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="./assets/logo.png" />
+<style>
+  :root{
+    --primary:#1132a0; --primary-2:#1035c2;
+    --green:#00af58; --orange:#fb7c00; --teal:#00848b; --purple:#7f22fe; --red:#d41e1e;
+    --bg:#f6f9ff; --ink:#03010d; --muted:#526487; --line:#e6eaf3;
+    --radius-xl:32px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter','Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{width:min(1240px,92%);margin:0 auto}
+
+  /* ======= Top bar ======= */
+  .topbar{background:var(--primary);color:#fff;font-size:13px;letter-spacing:.4px;text-align:center;padding:8px 12px;font-weight:500}
+
+  /* ======= Nav ======= */
+  .nav{position:sticky;top:0;z-index:40;backdrop-filter:saturate(180%) blur(12px);background:rgba(255,255,255,.84);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.4px;font-family:'Inter','Plus Jakarta Sans',sans-serif}
+  .logo .mark{width:40px;height:40px;border-radius:10px;background:#fff;box-shadow:0 4px 14px rgba(17,50,160,.18),inset 0 0 0 1px rgba(17,50,160,.06);display:inline-grid;place-items:center;overflow:hidden}
+  .logo .mark img{width:28px;height:28px;object-fit:contain}
+  .logo .dark-word{color:#0a1b5a}
+  .logo .light-word{color:#5fb4f2}
+  .menu{display:flex;gap:34px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500;color:#222}
+  .menu>li{position:relative}
+  .menu a{display:inline-flex;align-items:center;gap:4px;padding:6px 0;cursor:pointer}
+  .menu a:hover{color:var(--primary)}
+  .menu .caret{font-size:10px;opacity:.55}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  @media (max-width: 960px){.menu{display:none}}
+
+  /* ======= Buttons ======= */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .12s ease,box-shadow .18s ease,background .15s;white-space:nowrap}
+  .btn-primary{background:linear-gradient(180deg,var(--primary) 0%,var(--primary-2) 100%);color:#fff;box-shadow:0 8px 20px -6px rgba(17,50,160,.45)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 28px -8px rgba(17,50,160,.55)}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:#c7cfe3}
+  .btn-white{background:#fff;color:var(--primary)}
+  .btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+
+  /* ======= Hero ======= */
+  .form-hero{padding:64px 0 32px;text-align:center;position:relative}
+  .form-hero::before{content:"";position:absolute;inset:0 0 auto 0;height:360px;background:radial-gradient(70% 80% at 50% 0%,rgba(17,50,160,.10),transparent 70%);z-index:0;pointer-events:none}
+  .form-hero .container{position:relative;z-index:1}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e8edff;color:var(--primary);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;letter-spacing:.2px}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 4px rgba(17,50,160,.18);animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(17,50,160,.18)}50%{box-shadow:0 0 0 8px rgba(17,50,160,.05)}}
+  .form-hero h1{font-family:'Inter','Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-1.5px;font-size:clamp(34px,4.6vw,56px);line-height:1.06;margin:16px auto 12px;max-width:760px}
+  .form-hero h1 .accent{background:linear-gradient(90deg,#1132a0,#5fb4f2);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .form-hero p.lede{font-size:17px;color:var(--muted);max-width:640px;margin:0 auto;line-height:1.6}
+
+  /* ======= Form layout ======= */
+  .form-wrap{padding:28px 0 90px}
+  .form-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+  @media (max-width: 900px){.form-grid{grid-template-columns:1fr;gap:28px}}
+
+  /* ----- Left benefits panel ----- */
+  .benefits{background:linear-gradient(160deg,#eaf0ff 0%,#dfe8ff 60%,#d6e2ff 100%);border:1px solid var(--line);border-radius:var(--radius-xl);padding:36px;position:relative;overflow:hidden}
+  .benefits::after{content:"";position:absolute;right:-60px;bottom:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(17,50,160,.18),transparent 60%);pointer-events:none}
+  .benefits h2{font-size:24px;font-weight:800;margin:0 0 6px;letter-spacing:-.4px}
+  .benefits .sub{color:var(--muted);font-size:14.5px;line-height:1.55;margin:0 0 22px}
+  .bpoints{display:grid;gap:14px;margin:0;padding:0;list-style:none;position:relative;z-index:1}
+  .bpoint{display:flex;gap:12px;align-items:flex-start;padding:14px;background:rgba(255,255,255,.68);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.9);border-radius:14px}
+  .bpoint .ic{flex:0 0 auto;width:36px;height:36px;border-radius:10px;background:#fff;display:grid;place-items:center;color:var(--primary);box-shadow:0 4px 10px -3px rgba(17,50,160,.2)}
+  .bpoint .ic svg{width:18px;height:18px}
+  .bpoint .t{font-weight:700;font-size:14.5px;color:var(--ink);margin:0 0 2px}
+  .bpoint .s{font-size:13px;color:var(--muted);margin:0;line-height:1.45}
+  .trust-row{margin-top:26px;padding-top:22px;border-top:1px dashed rgba(17,50,160,.22);position:relative;z-index:1}
+  .trust-row .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px;font-weight:600}
+  .trust-stats{display:flex;gap:22px;flex-wrap:wrap}
+  .trust-stats .stat{min-width:90px}
+  .trust-stats .v{font-family:'Inter','Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.6px;color:var(--ink)}
+  .trust-stats .l{font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* ----- Right form card ----- */
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-xl);padding:36px;box-shadow:0 30px 70px -30px rgba(8,18,60,.18)}
+  .form-card h3{margin:0 0 4px;font-size:20px;font-weight:800;letter-spacing:-.3px}
+  .form-card .sub{color:var(--muted);font-size:14px;margin:0 0 22px}
+  .field{display:flex;flex-direction:column;margin-bottom:16px}
+  .field label{font-size:13px;font-weight:600;color:#2a3656;margin-bottom:6px;letter-spacing:.1px}
+  .field label .req{color:var(--red);margin-left:2px}
+  .field input, .field select, .field textarea{
+    appearance:none;-webkit-appearance:none;
+    font:inherit;font-size:15px;color:var(--ink);
+    background:#f7f9fe;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px 14px;
+    outline:none;
+    transition:border-color .15s ease, background .15s ease, box-shadow .15s ease;
+  }
+  .field input::placeholder{color:#9aa7c4}
+  .field input:focus, .field select:focus, .field textarea:focus{
+    border-color:var(--primary);
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(17,50,160,.12);
+  }
+  .field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5l5 5 5-5' stroke='%23526487' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;color:#6b7896}
+  .field select.has-value{color:var(--ink)}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width: 540px){.field-row{grid-template-columns:1fr}}
+
+  .consent{display:flex;gap:10px;align-items:flex-start;margin:6px 0 18px;font-size:13px;color:var(--muted);line-height:1.5}
+  .consent input{margin-top:3px;accent-color:var(--primary)}
+  .consent a{color:var(--primary);text-decoration:underline;text-underline-offset:2px}
+  .submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .submit-row .btn{padding:13px 26px;font-size:15.5px}
+  .submit-row .tiny{color:var(--muted);font-size:12.5px}
+
+  /* Success / thank you ----- */
+  .thanks{display:none;text-align:center;padding:10px 6px 6px}
+  .thanks.on{display:block}
+  .thanks .check{width:64px;height:64px;border-radius:50%;background:#e6f7ee;color:var(--green);display:grid;place-items:center;margin:0 auto 14px}
+  .thanks .check svg{width:34px;height:34px}
+  .thanks h4{font-size:22px;font-weight:800;margin:0 0 6px;letter-spacing:-.3px}
+  .thanks p{color:var(--muted);margin:0 auto 16px;max-width:420px;font-size:14.5px;line-height:1.55}
+
+  /* ======= Footer ======= */
+  .footer{background:#070d25;color:#d9dfee;padding:64px 0 36px;margin-top:60px}
+  .footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  @media (max-width: 900px){.footer .grid{grid-template-columns:1fr 1fr;gap:26px}}
+  .footer h5{color:#fff;font-size:15px;margin:0 0 14px;font-weight:700;letter-spacing:.1px}
+  .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:14px}
+  .footer ul a{color:#aab2c8}
+  .footer ul a:hover{color:#fff}
+  .footer .logo-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:22px;font-weight:800;color:#fff}
+  .footer .logo-row .m{width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center;overflow:hidden}
+  .footer .logo-row .m img{width:28px;height:28px;object-fit:contain}
+  .footer .logo-row .lw{color:#5fb4f2}
+  .footer p.tag{color:#a9b1c7;font-size:14px;max-width:340px;margin:0 0 16px;line-height:1.55}
+  .footer .footer-cta{display:inline-flex;align-items:center;gap:8px;background:#111a3d;border:1px solid #202a55;padding:10px 14px;border-radius:999px;margin-right:8px;margin-bottom:8px;font-size:13.5px;color:#e0e5f4}
+  .footer-bottom{margin-top:40px;padding-top:20px;border-top:1px solid #1a2450;display:flex;justify-content:space-between;gap:14px;font-size:13px;color:#8893b0;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<!-- ========== TOP BAR ========== -->
+<div class="topbar">AI-Powered Learning for India</div>
+
+<!-- ========== NAV ========== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="./shikshapal.html" class="logo" aria-label="ShikshaPal home">
+      <span class="mark" aria-hidden="true"><img src="./assets/logo.png" alt=""></span>
+      <span><span class="dark-word">Shiksha</span><span class="light-word">Pal</span></span>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="./shikshapal.html#products">Products <span class="caret">▾</span></a></li>
+        <li><a href="./shikshapal.html#solutions">Solutions <span class="caret">▾</span></a></li>
+        <li><a href="./shikshapal.html#resources">Resources <span class="caret">▾</span></a></li>
+        <li><a href="./shikshapal.html#about">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#form" class="btn btn-primary">Start Free Trial →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="form-hero">
+  <div class="container">
+    <span class="eyebrow"><span class="dot"></span> We'd love to hear from you</span>
+    <h1>Get in touch <span class="accent">with us today!</span></h1>
+    <p class="lede">Empowering every student to move from concept clarity to true mastery through intelligent, adaptive AI learning.</p>
+  </div>
+</section>
+
+<!-- ========== FORM ========== -->
+<section class="form-wrap" id="form">
+  <div class="container">
+    <div class="form-grid">
+
+      <!-- Left panel -->
+      <aside class="benefits">
+        <h2>Talk to a ShikshaPal specialist</h2>
+        <p class="sub">Tell us a bit about your school — we'll tailor a walk-through of AI Tutor Copilot, EvalAI, and the Principal Dashboard for your setting.</p>
+
+        <ul class="bpoints">
+          <li class="bpoint">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
+            <div>
+              <p class="t">Personalized demo in 24 hours</p>
+              <p class="s">A live product tour scoped to your board, grades, and languages.</p>
+            </div>
+          </li>
+          <li class="bpoint">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg></span>
+            <div>
+              <p class="t">Free 30-day pilot, zero risk</p>
+              <p class="s">Test with one grade or section before a school-wide rollout.</p>
+            </div>
+          </li>
+          <li class="bpoint">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            <div>
+              <p class="t">Dedicated onboarding manager</p>
+              <p class="s">Hands-on help with teacher training and curriculum mapping.</p>
+            </div>
+          </li>
+          <li class="bpoint">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v4M16 4v4"/></svg></span>
+            <div>
+              <p class="t">Board &amp; curriculum aligned</p>
+              <p class="s">CBSE, ICSE, and major state boards — across 22+ Indian languages.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="trust-row">
+          <div class="label">Trusted by schools across India</div>
+          <div class="trust-stats">
+            <div class="stat"><div class="v">1,113+</div><div class="l">Schools</div></div>
+            <div class="stat"><div class="v">9,513+</div><div class="l">Teachers</div></div>
+            <div class="stat"><div class="v">1M+</div><div class="l">Students</div></div>
+            <div class="stat"><div class="v">204+</div><div class="l">Cities</div></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right form card -->
+      <div class="form-card">
+        <div id="form-body">
+          <h3>Request your free demo</h3>
+          <p class="sub">Fill this out and a ShikshaPal expert will reach out within one business day.</p>
+
+          <form id="leadForm" novalidate onsubmit="return handleSubmit(event)">
+            <div class="field-row">
+              <div class="field">
+                <label for="fullName">Full Name<span class="req">*</span></label>
+                <input id="fullName" name="fullName" type="text" placeholder="Jane Smith" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="workEmail">Work Email<span class="req">*</span></label>
+                <input id="workEmail" name="workEmail" type="email" placeholder="harry@gmail.com" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Phone Number<span class="req">*</span></label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 657 879 6542" autocomplete="tel" required />
+              </div>
+              <div class="field">
+                <label for="schoolName">School Name<span class="req">*</span></label>
+                <input id="schoolName" name="schoolName" type="text" placeholder="Shikshapal" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="schoolLocation">School Location<span class="req">*</span></label>
+              <input id="schoolLocation" name="schoolLocation" type="text" placeholder="City, State" required />
+            </div>
+
+            <div class="field">
+              <label for="role">Role At School<span class="req">*</span></label>
+              <select id="role" name="role" required onchange="this.classList.toggle('has-value', !!this.value)">
+                <option value="" disabled selected>Role</option>
+                <option>Director</option>
+                <option>Principal</option>
+                <option>School Owner</option>
+                <option>Trustee</option>
+                <option>Vice Principal</option>
+                <option>Teacher</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="students">No. of Students in your School<span class="req">*</span></label>
+                <select id="students" name="students" required onchange="this.classList.toggle('has-value', !!this.value)">
+                  <option value="" disabled selected>No of Students</option>
+                  <option>Less than 200</option>
+                  <option>200 to 800</option>
+                  <option>More than 800</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fees">Annual Fees Charged Per Student<span class="req">*</span></label>
+                <select id="fees" name="fees" required onchange="this.classList.toggle('has-value', !!this.value)">
+                  <option value="" disabled selected>Annual Fees</option>
+                  <option>INR 8,000 or Less</option>
+                  <option>INR 8,000 - 10,000</option>
+                  <option>INR 10,000 - 15,000</option>
+                  <option>INR 15,000 - 20,000</option>
+                  <option>INR 20,000 - 25,000</option>
+                  <option>INR 25,000 - 30,000</option>
+                  <option>INR 30,000 - 50,000</option>
+                  <option>INR 50,000 or More</option>
+                </select>
+              </div>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" id="consent" required />
+              <span>I agree to be contacted about ShikshaPal products and services. Read our <a href="#">Privacy Policy</a>.</span>
+            </label>
+
+            <div class="submit-row">
+              <button type="submit" class="btn btn-primary">Submit →</button>
+              <span class="tiny">We respond within 1 business day.</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Success state -->
+        <div id="thanks" class="thanks">
+          <div class="check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
+          </div>
+          <h4>Thanks — we've got your details!</h4>
+          <p>A ShikshaPal specialist will reach out within one business day to schedule your personalized demo. In the meantime, feel free to browse the site.</p>
+          <a href="./shikshapal.html" class="btn btn-ghost">← Back to home</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="grid">
+      <div>
+        <div class="logo-row">
+          <span class="m"><img src="./assets/logo.png" alt=""></span>
+          <span>Shiksha<span class="lw">Pal</span></span>
+        </div>
+        <p class="tag">AI-powered learning copilot that personalizes education for every student across India's K–12.</p>
+        <p style="color:#dee3ee;font-size:13.5px;margin:0 0 14px">
+          <a href="mailto:contact@shikshapal.com" style="color:#dee3ee">contact@shikshapal.com</a><br/>
+          <a href="tel:+919056229395" style="color:#dee3ee">+91-9056229395</a>
+        </p>
+        <a href="#" class="footer-cta">💬 Chat with us on WhatsApp</a>
+        <a href="#form" class="footer-cta">🎬 Get a Free Demo</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="./shikshapal.html#about">About Us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="./shikshapal.html#solutions">Solutions</a></li>
+          <li><a href="#">Academic Support</a></li>
+          <li><a href="#">Technology Support</a></li>
+          <li><a href="#">Teacher Solution</a></li>
+          <li><a href="#">Assessment Solution</a></li>
+          <li><a href="#">Real-Time Progress Monitoring</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Security / GDPR</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 ShikshaPal. All rights reserved.</span>
+      <span>Made with ♥ for India's students.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e){
+    e.preventDefault();
+    const form = document.getElementById('leadForm');
+
+    // Basic HTML5 validation
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return false;
+    }
+
+    // Collect values (for real integration, POST to your backend here)
+    const data = Object.fromEntries(new FormData(form).entries());
+    console.log('ShikshaPal lead:', data);
+
+    // Show success state
+    document.getElementById('form-body').style.display = 'none';
+    document.getElementById('thanks').classList.add('on');
+    window.scrollTo({ top: document.getElementById('form').offsetTop - 40, behavior: 'smooth' });
+    return false;
+  }
+</script>
+
+</body>
+</html>
