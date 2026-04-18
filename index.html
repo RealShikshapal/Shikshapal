@@ -150,11 +150,62 @@
     list-style: none; margin: 0; padding: 0;
     font-size: 15px; font-weight: 500; color: #222;
   }
-  .menu a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 0; }
+  .menu > li { position: relative; }
+  .menu a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 0; cursor: pointer; }
   .menu a:hover { color: var(--primary); }
-  .menu .caret { font-size: 10px; opacity: .55; }
+  .menu .caret { font-size: 10px; opacity: .55; transition: transform .18s ease; }
+  .menu > li:hover .caret { transform: rotate(180deg); opacity: .9; color: var(--primary); }
   .nav-cta { display: flex; align-items: center; gap: 12px; }
   @media (max-width: 960px) { .menu { display: none; } }
+
+  /* ----- Nav dropdowns ----- */
+  .has-dd > .dd-trigger { padding-bottom: 18px; margin-bottom: -18px; }
+  .dd {
+    position: absolute; top: calc(100% + 6px); left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    min-width: 360px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px -16px rgba(8, 18, 60, .22), 0 8px 22px -10px rgba(8,18,60,.14);
+    padding: 14px;
+    opacity: 0; visibility: hidden;
+    transition: opacity .18s ease, transform .22s ease, visibility .18s;
+    z-index: 50;
+  }
+  .dd::before {
+    content: ''; position: absolute; top: -7px; left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 14px; height: 14px;
+    background: #fff;
+    border-left: 1px solid var(--line); border-top: 1px solid var(--line);
+    border-radius: 3px 0 0 0;
+  }
+  .has-dd:hover .dd, .has-dd:focus-within .dd {
+    opacity: 1; visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  .dd-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 12px; border-radius: 12px;
+    color: var(--ink); text-decoration: none;
+    transition: background .15s ease;
+  }
+  .dd-item:hover { background: #f3f6ff; color: var(--ink); }
+  .dd-ic {
+    flex: 0 0 auto;
+    width: 40px; height: 40px; border-radius: 10px;
+    display: grid; place-items: center;
+  }
+  .dd-ic svg { width: 22px; height: 22px; }
+  .dd-ic.blue   { background: #e8edff; color: var(--primary); }
+  .dd-ic.orange { background: #ffe8d4; color: var(--orange); }
+  .dd-ic.red    { background: #ffe2e2; color: var(--red); }
+  .dd-ic.teal   { background: #d6f3f1; color: var(--teal); }
+  .dd-ic.green  { background: #d6f5e6; color: var(--green); }
+  .dd-ic.purple { background: #efe3ff; color: var(--purple); }
+  .dd-text .t { font-weight: 700; font-size: 15px; line-height: 1.25; color: var(--ink); }
+  .dd-text .s { font-size: 13px; color: var(--muted); margin-top: 2px; }
 
   /* =========================================================
      Hero
@@ -743,9 +794,105 @@
     </a>
     <nav>
       <ul class="menu">
-        <li><a href="#">Products <span class="caret">▾</span></a></li>
-        <li><a href="#">Solutions <span class="caret">▾</span></a></li>
-        <li><a href="#">Resources <span class="caret">▾</span></a></li>
+        <li class="has-dd">
+          <a href="#" class="dd-trigger">Products <span class="caret">▾</span></a>
+          <div class="dd" role="menu">
+            <a class="dd-item" href="#">
+              <span class="dd-ic blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A3.5 3.5 0 0 0 6 6.5v.5a3 3 0 0 0-2 5.3V15a3 3 0 0 0 3 3v1a2 2 0 0 0 2 2h.5V3zM14.5 3A3.5 3.5 0 0 1 18 6.5v.5a3 3 0 0 1 2 5.3V15a3 3 0 0 1-3 3v1a2 2 0 0 1-2 2h-.5V3z"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">ShikshaPal Learn+</div><div class="s">AI-Powered Student Learning Engine</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5L2 10z"/><path d="M6 12v4c0 1.5 3 3 6 3s6-1.5 6-3v-4"/><path d="M22 10v5"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Teacher Co-Pilot</div><div class="s">AI Assistant for Classroom Teaching</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic red">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">ShikshaPal EvalAI</div><div class="s">Intelligent Assessment Engine</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Progress 360</div><div class="s">Learning Intelligence &amp; Analytics</div></div>
+            </a>
+          </div>
+        </li>
+        <li class="has-dd">
+          <a href="#" class="dd-trigger">Solutions <span class="caret">▾</span></a>
+          <div class="dd" role="menu">
+            <a class="dd-item" href="#">
+              <span class="dd-ic blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5V21h16"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Academic Support</div><div class="s">Personalized learning for every student</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Technology Support</div><div class="s">Smart classrooms &amp; digital infrastructure</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Teacher Solution</div><div class="s">AI assistant for lesson planning &amp; grading</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic red">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Assessment Solution</div><div class="s">Automated grading &amp; detailed insights</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Real-Time Progress Monitoring</div><div class="s">Live dashboards for students &amp; parents</div></div>
+            </a>
+          </div>
+        </li>
+        <li class="has-dd">
+          <a href="#" class="dd-trigger">Resources <span class="caret">▾</span></a>
+          <div class="dd" role="menu">
+            <a class="dd-item" href="#">
+              <span class="dd-ic blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Blog</div><div class="s">News, product updates &amp; thought pieces</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Case Studies</div><div class="s">Real impact stories from partner schools</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 1.7-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Help Center</div><div class="s">FAQs, guides &amp; quick answers</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4V4z"/><path d="M4 16a4 4 0 0 1 4-4h12"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Documentation</div><div class="s">Implementation &amp; integration guides</div></div>
+            </a>
+            <a class="dd-item" href="#">
+              <span class="dd-ic red">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Webinars</div><div class="s">Live sessions &amp; on-demand recordings</div></div>
+            </a>
+          </div>
+        </li>
         <li><a href="#about">About Us</a></li>
       </ul>
     </nav>
