@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Help &amp; Support — ShikshaPal</title>
-<meta name="description" content="ShikshaPal Help Center: installation guide, system requirements, troubleshooting, and frequently asked questions for parents and students.">
+<meta name="description" content="ShikshaPal Help Center: installation guide, phone requirements, troubleshooting, and frequently asked questions for parents and students.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -155,7 +155,6 @@
     border-radius: 3px;
   }
 
-  /* Hero quick-access cards */
   .quick-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -232,7 +231,32 @@
     display: block;
   }
 
-  /* RAM / Model table */
+  .platforms {
+    display: flex;
+    gap: 0.6rem;
+    margin: -0.5rem 0 2rem;
+    flex-wrap: wrap;
+  }
+  .platforms .pill {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .platforms .pill::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--highlight);
+  }
+
   .model-table {
     border: 1px solid var(--rule);
     border-radius: 4px;
@@ -242,7 +266,7 @@
   }
   .model-row {
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr 1.6fr;
+    grid-template-columns: 1.3fr 1.6fr 1fr 1.2fr;
     gap: 1rem;
     padding: 0.85rem 1rem;
     border-bottom: 1px solid var(--rule);
@@ -260,10 +284,9 @@
   .model-row .mname { font-weight: 600; }
   .model-row .quant { font-family: 'SF Mono', monospace; font-size: 0.88rem; }
   @media (max-width: 600px) {
-    .model-row { grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; padding: 0.8rem 0.9rem; }
+    .model-row { grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; padding: 0.85rem 0.9rem; }
     .model-row.head { display: none; }
     .model-row .mname { grid-column: 1 / -1; font-size: 1rem; padding-bottom: 0.2rem; }
-    .model-row dd { margin: 0; }
     .model-row > div::before {
       content: attr(data-label) ' ';
       font-size: 0.7rem;
@@ -276,7 +299,6 @@
     .model-row .mname::before { display: none; }
   }
 
-  /* FAQ details */
   details.faq {
     border-bottom: 1px solid var(--rule);
     padding: 1.1rem 0;
@@ -305,9 +327,7 @@
     transition: transform 0.2s;
     flex-shrink: 0;
   }
-  details.faq[open] summary::after {
-    content: '−';
-  }
+  details.faq[open] summary::after { content: '−'; }
   details.faq summary:hover { color: var(--accent); }
   details.faq .answer {
     margin-top: 0.8rem;
@@ -316,7 +336,6 @@
   }
   details.faq .answer p:last-child { margin-bottom: 0; }
 
-  /* Step-by-step list */
   ol.steps {
     counter-reset: step;
     list-style: none;
@@ -349,7 +368,6 @@
   }
   ol.steps > li strong { display: block; margin-bottom: 0.2rem; font-size: 1.02rem; }
 
-  /* Contact card */
   .contact-card {
     background: var(--accent);
     color: var(--paper);
@@ -412,87 +430,106 @@
 
   <div class="doc-eyebrow">Help &amp; Support</div>
   <h1>Getting started with ShikshaPal</h1>
-  <p class="lede">A free, offline AI tutor for Class 6–12 students, aligned to the NCERT curriculum. Here's how to set it up, use it well, and fix problems if they come up.</p>
+  <p class="lede">A free, offline AI tutor for Class 6–12 students, aligned to the NCERT curriculum. Here's how to set it up on your phone, use it well, and fix problems if they come up.</p>
+
+  <div class="platforms">
+    <span class="pill">Android phones</span>
+    <span class="pill">iPhone</span>
+    <span class="pill">Works offline</span>
+    <span class="pill">Free</span>
+  </div>
 
   <div class="quick-grid">
     <a href="#install" class="quick-card">
       <div class="qc-num">01</div>
       <div class="qc-title">Install &amp; sign in</div>
-      <div class="qc-desc">Download the app and create your student account.</div>
+      <div class="qc-desc">Download from the Play Store or App Store and create an account.</div>
     </a>
     <a href="#requirements" class="quick-card">
       <div class="qc-num">02</div>
-      <div class="qc-title">System requirements</div>
-      <div class="qc-desc">Which laptop or PC will run ShikshaPal smoothly.</div>
+      <div class="qc-title">Phone requirements</div>
+      <div class="qc-desc">Which phones run ShikshaPal smoothly. NPU helps but isn't required.</div>
     </a>
     <a href="#models" class="quick-card">
       <div class="qc-num">03</div>
-      <div class="qc-title">Choosing a model</div>
-      <div class="qc-desc">Math, science, or humanities — pick the right tutor.</div>
+      <div class="qc-title">Choosing a tutor</div>
+      <div class="qc-desc">Math, science, or humanities — pick the right model.</div>
     </a>
     <a href="#troubleshoot" class="quick-card">
       <div class="qc-num">04</div>
       <div class="qc-title">Troubleshooting</div>
-      <div class="qc-desc">Slow replies, failed downloads, login issues.</div>
+      <div class="qc-desc">Slow replies, failed downloads, login issues, battery drain.</div>
     </a>
   </div>
 
   <h2 id="install">Install &amp; sign in</h2>
-  <p>ShikshaPal runs on Windows, macOS, and Linux laptops or desktop computers. The app does not run on phones or tablets — it needs a real computer because the AI runs locally on your machine.</p>
+  <p>ShikshaPal runs on Android phones and iPhones. The app does the AI work right on the phone, which is why it needs a recent device with enough RAM. Tablets and laptops are not supported at the moment.</p>
 
   <ol class="steps">
     <li>
-      <strong>Download the installer</strong>
-      Visit shikshapal.com and download the version for your operating system. The installer file is around 80–120 MB depending on the platform.
+      <strong>Install the app</strong>
+      On Android, search for "ShikshaPal" on the <strong>Google Play Store</strong>. On iPhone, search for "ShikshaPal" on the <strong>App Store</strong>. Tap Install. The app itself is small (about 100–150 MB).
     </li>
     <li>
-      <strong>Run the installer</strong>
-      Open the downloaded file and follow the on-screen instructions. On Windows you may see a "Windows protected your PC" warning — click "More info" and then "Run anyway". On macOS, you may need to right-click the app and choose "Open" the first time.
-    </li>
-    <li>
-      <strong>Create your account</strong>
-      Open ShikshaPal. Sign up with the student's email address and a password. If the student is under 18, the app will also ask for a parent or guardian email and send a consent message there. The account is activated only after the parent confirms.
+      <strong>Open the app and create your account</strong>
+      Sign up with the student's email and a password. If the student is under 18, the app will also ask for a parent or guardian email and send a consent message there. The account is activated only after the parent confirms.
     </li>
     <li>
       <strong>Pick your class and language</strong>
       Choose the student's class (6 to 12) and preferred language of instruction. ShikshaPal will use this to recommend the right AI model and to set the right level of explanation.
     </li>
     <li>
-      <strong>Download the AI model</strong>
-      The app will recommend an AI model based on your computer's RAM and your class. This is a one-time download of 1–4 GB and may take a while on slower connections. Once downloaded, the model lives on your computer and works offline forever.
+      <strong>Download an AI model</strong>
+      The app will recommend a model based on your phone's RAM and chip. This is a one-time download of 1–4 GB. Use Wi-Fi if you can — mobile data will work but may be slow and use a lot of your data plan. Once downloaded, the model lives on your phone and works offline forever.
+    </li>
+    <li>
+      <strong>Allow notifications (optional)</strong>
+      The app may ask for permission to send notifications. This is only used to remind you when a model download has finished, or when there's an important account message. It is not used for marketing.
     </li>
     <li>
       <strong>Start asking questions</strong>
-      Open a chapter, type a question, and the tutor will explain. Try things like "Explain Newton's third law with a real example" or "Help me factorise x² + 5x + 6 step by step".
+      Open a chapter, type a question, and the tutor will explain. Try things like "Explain Newton's third law with a real example" or "Help me factorise x² + 5x + 6 step by step". The first reply takes a few seconds because the model is loading; after that it's faster.
     </li>
   </ol>
 
-  <h2 id="requirements">System requirements</h2>
-  <p>ShikshaPal runs entirely on your computer, so the device matters. Here are the minimum and recommended specifications:</p>
+  <h2 id="requirements">Phone requirements</h2>
+  <p>ShikshaPal does all its AI work on your phone, so the device matters. You don't need a premium phone, but you do need a reasonably recent one with at least 4 GB of RAM.</p>
 
   <h3>Minimum (works, but slower)</h3>
   <ul>
-    <li>Windows 10, macOS 11, or a recent Linux distribution;</li>
-    <li>4 GB RAM (with at least 2 GB free when running);</li>
-    <li>5 GB free disk space;</li>
-    <li>A 64-bit processor (any laptop made after 2017 should work);</li>
-    <li>An internet connection — only required for the first-time model download.</li>
+    <li><strong>Android:</strong> Android 10 or newer, 4 GB RAM, 64-bit processor;</li>
+    <li><strong>iPhone:</strong> iOS 16 or newer, iPhone XS / SE (2nd gen) or newer;</li>
+    <li>5 GB free storage for the app plus one model;</li>
+    <li>Internet connection — only needed for the first-time model download and for signing in.</li>
   </ul>
 
   <h3>Recommended</h3>
   <ul>
-    <li>8 GB RAM or more, for smoother responses with larger models;</li>
-    <li>10 GB free disk space if you want to keep multiple subject models installed;</li>
-    <li>SSD storage — model loading is much faster on SSDs than on old spinning hard drives.</li>
+    <li>6 GB RAM or more, for smoother responses with larger models;</li>
+    <li>10 GB free storage if you want to keep multiple subject models installed;</li>
+    <li>A phone with an <strong>NPU (Neural Processing Unit)</strong> — replies become noticeably faster and the battery lasts longer. Most phones from 2022 onwards have one, including:
+      <ul>
+        <li>iPhones with Apple A12 Bionic chip or newer (XS, 11, 12, 13, 14, 15, 16 series, SE 2nd/3rd gen);</li>
+        <li>Android phones with Snapdragon 7 Gen 1 / 8 Gen 1 or newer, MediaTek Dimensity 8000-series or newer, Google Tensor (Pixel 6 onwards), or Samsung Exynos 2200 or newer.</li>
+      </ul>
+    </li>
   </ul>
 
   <div class="note">
     <span class="label">Tip for parents</span>
-    <p>If your laptop is older or has only 4 GB of RAM, ShikshaPal will still work — it will just recommend the smaller, faster math-focused model. There is no need to upgrade your computer to use ShikshaPal.</p>
+    <p>If your phone has an NPU, ShikshaPal will detect and use it automatically — there is no setting to switch on. NPU acceleration mainly helps with speed and battery life. A phone without an NPU will still work, just slower. Either way, the app does <em>not</em> need internet after the first download.</p>
   </div>
 
-  <h2 id="models">Choosing the right model</h2>
-  <p>ShikshaPal does not use one giant model for everything. Instead, it ships three specialist tutors — each picked for what it does well. The app recommends the right one based on your class and your computer's RAM, but you can switch any time.</p>
+  <h3>What ShikshaPal does <em>not</em> need</h3>
+  <ul>
+    <li>A flagship phone — mid-range Android phones with 4–6 GB RAM are well supported;</li>
+    <li>A SIM card or mobile data plan (Wi-Fi-only is fine);</li>
+    <li>A Google or Apple account beyond what your phone already requires;</li>
+    <li>Access to your photos, contacts, microphone, camera, or location.</li>
+  </ul>
+
+  <h2 id="models">Choosing the right tutor</h2>
+  <p>ShikshaPal does not use one giant model for everything. Instead, it ships three specialist tutors — each picked for what it does well. The app recommends the right one based on your class and your phone's RAM, but you can switch any time.</p>
 
   <div class="model-table">
     <div class="model-row head">
@@ -521,14 +558,14 @@
     </div>
   </div>
 
-  <h3>Switching between models</h3>
-  <p>If you ask the Math Tutor a chemistry question, it will politely tell you to switch to the Science Tutor. Click the model name at the top of the chat window to switch any time. You only download each model once — after that, switching is instant.</p>
+  <h3>Switching between tutors</h3>
+  <p>If you ask the Math Tutor a chemistry question, it will politely tell you to switch to the Science Tutor. Tap the tutor name at the top of the chat screen to switch any time. You only download each model once — after that, switching is fast.</p>
 
   <h2 id="how-to-ask">Asking better questions</h2>
   <p>The AI tutor works best when you treat it like a patient teacher rather than a search engine. Some tips:</p>
   <ul>
     <li><strong>Mention your class</strong> — "I'm in Class 9, can you explain..." gets answers at the right level.</li>
-    <li><strong>Show your work</strong> — paste your attempted solution and ask "where did I go wrong?" instead of just asking for the answer.</li>
+    <li><strong>Show your work</strong> — type your attempted solution and ask "where did I go wrong?" instead of just asking for the answer.</li>
     <li><strong>Ask for examples</strong> — "give me three examples from daily life" makes abstract topics concrete.</li>
     <li><strong>Ask for a different explanation</strong> — if the first answer doesn't click, just say "explain it more simply" or "give me an analogy".</li>
     <li><strong>Keep your textbook handy</strong> — the tutor is a helper, not a replacement. Always cross-check against your NCERT textbook.</li>
@@ -544,12 +581,12 @@
   <details class="faq">
     <summary>The model download keeps failing or is very slow</summary>
     <div class="answer">
-      <p>Models are 1–4 GB, so the first download can take a while on slow connections. A few things to try:</p>
+      <p>Models are 1–4 GB, so the first download takes time on slow networks. A few things to try:</p>
       <ul>
-        <li>Pause and resume — the app saves progress and continues from where it stopped.</li>
-        <li>Connect to a more stable network (home Wi-Fi tends to be more reliable than mobile hotspots).</li>
-        <li>Try a different time of day if your network is congested in the evenings.</li>
-        <li>If a download keeps failing midway, delete the partial file from the app's models folder and start again. The app will tell you the folder location under Settings → Storage.</li>
+        <li>Switch to Wi-Fi if you are on mobile data;</li>
+        <li>Keep the ShikshaPal screen open during the download — Android and iOS may pause large downloads if the app goes into the background for too long;</li>
+        <li>Make sure your phone is charging or has plenty of battery — some power-saving modes throttle background downloads;</li>
+        <li>If a download keeps failing midway, go to Settings → Storage in the app, delete the partial file, and start again. The app saves progress chunk-by-chunk so it usually picks up from where it stopped.</li>
       </ul>
     </div>
   </details>
@@ -557,26 +594,53 @@
   <details class="faq">
     <summary>The tutor is replying very slowly</summary>
     <div class="answer">
-      <p>Slow replies usually mean the model is too big for your computer. Open Settings → Model and switch to a smaller tutor — the Math Tutor is the lightest and runs well even on 4 GB laptops. Closing other heavy applications (browser tabs, video calls) before using ShikshaPal also helps.</p>
+      <p>Slow replies usually mean the tutor is too big for your phone, or another app is hogging memory. Try:</p>
+      <ul>
+        <li>Open Settings → Tutor and switch to a smaller one — the Math Tutor runs well even on 4 GB phones;</li>
+        <li>Close other apps in the background, especially browsers, games, and video apps;</li>
+        <li>Restart the phone if it has been running for many days without a reboot;</li>
+        <li>If your phone has an NPU but the app is not using it, tap Settings → Performance and confirm "NPU acceleration" is on.</li>
+      </ul>
     </div>
   </details>
 
   <details class="faq">
-    <summary>I get an "out of memory" error</summary>
+    <summary>The phone heats up or battery drains quickly while using the tutor</summary>
     <div class="answer">
-      <p>This means the model needs more RAM than your computer has free. Try:</p>
+      <p>Running an AI model on a phone is real work for the chip — it's normal for the phone to get warm, especially during long sessions. To reduce this:</p>
       <ul>
-        <li>Closing other applications, especially browsers with many tabs;</li>
-        <li>Switching to a smaller model in Settings → Model;</li>
-        <li>Restarting your computer to clear memory before opening ShikshaPal.</li>
+        <li>Use a smaller tutor (the Math Tutor uses the least power);</li>
+        <li>Take short breaks between questions;</li>
+        <li>Avoid using the app while the phone is also charging in a hot environment;</li>
+        <li>If your phone has an NPU, make sure NPU acceleration is on — it is far more efficient than running on the CPU.</li>
       </ul>
+      <p>If the phone gets uncomfortably hot or the battery drops alarmingly fast, close the app and let the device cool down.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>I get an "out of memory" or "model failed to load" error</summary>
+    <div class="answer">
+      <p>This means the tutor needs more RAM than your phone has free at that moment. Try:</p>
+      <ul>
+        <li>Closing other apps, especially browsers with many tabs and chat apps;</li>
+        <li>Switching to a smaller tutor in Settings → Tutor;</li>
+        <li>Restarting the phone to clear memory before opening ShikshaPal.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>The app keeps closing or the tutor restarts mid-answer</summary>
+    <div class="answer">
+      <p>Android and iOS sometimes close apps that use a lot of memory, especially when you switch to another app. Keep ShikshaPal in the foreground while you wait for an answer, and try a smaller tutor if the problem repeats. On Android, you can also turn off battery optimisation for ShikshaPal in your phone's Settings → Apps → ShikshaPal → Battery, so the system stops killing it in the background.</p>
     </div>
   </details>
 
   <details class="faq">
     <summary>I forgot my password</summary>
     <div class="answer">
-      <p>On the sign-in screen, click "Forgot password?". We'll send a reset link to the registered email address. If the student is a minor, the link is sent to the parent's email so an adult is involved in the reset.</p>
+      <p>On the sign-in screen, tap "Forgot password?". We'll send a reset link to the registered email. If the student is a minor, the link is sent to the parent's email so an adult is involved in the reset.</p>
     </div>
   </details>
 
@@ -588,16 +652,9 @@
   </details>
 
   <details class="faq">
-    <summary>My antivirus is blocking ShikshaPal</summary>
-    <div class="answer">
-      <p>Some antivirus tools are cautious about new applications, especially small-publisher apps. ShikshaPal is signed and safe — you can add it to your antivirus's allow list, or check our website for the published checksum to verify the installer file. If you are unsure, write to us.</p>
-    </div>
-  </details>
-
-  <details class="faq">
     <summary>The tutor gave me a wrong answer</summary>
     <div class="answer">
-      <p>It happens — AI is not perfect. Cross-check against your NCERT textbook or ask a teacher. You can also click the "Report" button below any reply to send the question and answer to us (no other personal data is included). Reports help us improve future versions.</p>
+      <p>It happens — AI is not perfect. Cross-check against your NCERT textbook or ask a teacher. You can also tap the "Report" button below any reply to send the question and answer to us (no other personal data is included). Reports help us improve future versions.</p>
     </div>
   </details>
 
@@ -605,6 +662,13 @@
     <summary>Can I use ShikshaPal without signing in?</summary>
     <div class="answer">
       <p>Not currently. We require sign-in so that we can provide parental consent for minor users, as required by Indian law. We are exploring a guest mode for older students in future versions.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>How do I free up space if my phone is full?</summary>
+    <div class="answer">
+      <p>Each tutor model is 1–4 GB. If you have downloaded multiple tutors and need space, go to Settings → Storage and tap "Remove" next to a tutor you don't use often. You can re-download it later. Your account, class, and language preferences will not be affected.</p>
     </div>
   </details>
 
@@ -619,10 +683,11 @@
   <p>If you are a parent or guardian, here are the most common questions:</p>
   <ul>
     <li><strong>What does ShikshaPal cost?</strong> Nothing. The app is free, with optional voluntary donations to support development.</li>
-    <li><strong>Is my child's data safe?</strong> ShikshaPal collects only an email address, password (hashed), class, and language preference. The actual conversations stay on your device and are never uploaded. See the <a href="privacy.html">Privacy Policy</a> for full details.</li>
+    <li><strong>Is my child's data safe?</strong> ShikshaPal collects only an email address, password (hashed), class, and language preference. The actual conversations stay on the phone and are never uploaded. See the <a href="privacy.html">Privacy Policy</a> for full details.</li>
     <li><strong>Are there ads?</strong> No. We will never show ads, and we will never sell or share your child's data.</li>
+    <li><strong>Will it use a lot of mobile data?</strong> Only the very first model download (1–4 GB). After that, the app works fully offline. We strongly recommend doing the first download on Wi-Fi.</li>
     <li><strong>Will it replace school?</strong> No, and that is by design. ShikshaPal points students back to their NCERT textbook, encourages them to consult teachers, and is meant only as a homework helper and explainer.</li>
-    <li><strong>Can the AI go off-topic?</strong> The tutors are configured to stick to academic topics. If a student tries to chat about non-school things, the tutor will gently redirect them. No system is perfect, though, so we still recommend keeping the laptop in a shared family space.</li>
+    <li><strong>Can the AI go off-topic?</strong> The tutors are configured to stick to academic topics. If a student tries to chat about non-school things, the tutor will gently redirect them. No system is perfect, though, so we still recommend keeping screen time visible to parents.</li>
   </ul>
 
   <h2 id="when-to-ask-teacher">When to ask a teacher instead</h2>
