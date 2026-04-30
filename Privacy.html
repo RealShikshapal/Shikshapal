@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ShikshaPal</title>
+<meta name="description" content="ShikshaPal's Privacy Policy explaining how we handle student and parent data, in compliance with the Digital Personal Data Protection Act, 2023 (India).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a2332;
+    --ink-soft: #3a4556;
+    --paper: #faf6f0;
+    --paper-warm: #f3ecdf;
+    --rule: #d9cfbe;
+    --accent: #1e3a5f;
+    --accent-soft: #2c4a73;
+    --highlight: #c9a96e;
+    --danger-bg: #fef3e7;
+    --danger-border: #d48b3c;
+    --note-bg: #eaf0f6;
+    --note-border: #1e3a5f;
+    --max-w: 720px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Subtle paper texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(26,35,50,0.025) 1px, transparent 0);
+    background-size: 24px 24px;
+    z-index: 0;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  /* Masthead */
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1.25rem;
+    margin-bottom: 3rem;
+  }
+  .masthead .brand {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .masthead .brand-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .masthead .brand-name .dot {
+    color: var(--highlight);
+  }
+  .masthead nav {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+  }
+  .masthead nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+    margin-left: 1.25rem;
+  }
+  .masthead nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .masthead nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+  /* Document head */
+  .doc-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--ink);
+  }
+  .doc-meta {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .doc-meta strong { color: var(--ink); }
+
+  /* Section */
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 1rem;
+    padding-top: 1rem;
+    color: var(--accent);
+    position: relative;
+  }
+  h2::before {
+    content: '§';
+    position: absolute;
+    left: -1.5rem;
+    top: 1rem;
+    color: var(--highlight);
+    font-size: 1.4rem;
+    opacity: 0.6;
+  }
+  h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin: 2rem 0 0.5rem;
+    color: var(--ink);
+  }
+
+  p { margin: 0 0 1.1rem; }
+
+  ul, ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.4rem;
+  }
+  li { margin-bottom: 0.4rem; }
+
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+
+  strong { color: var(--ink); font-weight: 600; }
+
+  code, .mono {
+    font-family: 'SF Mono', ui-monospace, 'Menlo', monospace;
+    font-size: 0.92em;
+    background: var(--paper-warm);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+
+  /* Callout boxes */
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--note-border);
+    padding: 1.1rem 1.3rem;
+    margin: 1.5rem 0;
+    font-size: 0.97rem;
+    border-radius: 0 4px 4px 0;
+  }
+  .note .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  .important {
+    background: var(--danger-bg);
+    border-left: 4px solid var(--danger-border);
+    padding: 1.1rem 1.3rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .important .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8b4513;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--paper-warm);
+    border: 1px solid var(--rule);
+    padding: 1.5rem 1.75rem;
+    margin: 2.5rem 0 3rem;
+    border-radius: 2px;
+  }
+  .toc-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+  .toc ol {
+    margin: 0;
+    padding-left: 1.4rem;
+    columns: 2;
+    column-gap: 2rem;
+    font-size: 0.93rem;
+  }
+  .toc li { margin-bottom: 0.35rem; break-inside: avoid; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .toc ol { columns: 1; }
+    h2::before { display: none; }
+    .wrap { padding: 2.5rem 1.25rem 4rem; }
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer a { color: var(--ink-soft); }
+
+  /* Definition list for data table */
+  dl.data-table {
+    margin: 1rem 0 1.5rem;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  dl.data-table > div {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  dl.data-table dt {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 0.95rem;
+  }
+  dl.data-table dd {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 600px) {
+    dl.data-table > div { grid-template-columns: 1fr; gap: 0.3rem; }
+    dl.data-table dt { font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">
+      <div class="brand-name">ShikshaPal<span class="dot">.</span></div>
+      <nav>
+        <a href="privacy.html" class="active">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="help.html">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc-eyebrow">Privacy Policy</div>
+  <h1>How we handle your family's data</h1>
+  <div class="doc-meta">
+    <strong>Effective:</strong> [DD Month YYYY] &nbsp;·&nbsp; <strong>Last updated:</strong> [DD Month YYYY] &nbsp;·&nbsp; <strong>Version:</strong> 1.0
+  </div>
+
+  <p>
+    ShikshaPal is built for school students in India. Because most of our users are minors, we have written this Privacy Policy in plain language for parents, guardians, and older students to read together. This Policy is written to comply with the <strong>Digital Personal Data Protection Act, 2023</strong> ("DPDP Act") and other applicable Indian laws.
+  </p>
+
+  <div class="note">
+    <span class="label">In one paragraph</span>
+    <p>ShikshaPal runs <strong>entirely on your device</strong> after you install it. The AI tutor never sends questions, conversations, or learning data to our servers. We require an email address and password only to give each student a personal account on their device. We never sell data, never show ads, and never use student conversations to train AI models.</p>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#scope">What this Policy covers</a></li>
+      <li><a href="#minors">Children &amp; parental consent</a></li>
+      <li><a href="#data">Data we collect</a></li>
+      <li><a href="#purposes">Why we collect it</a></li>
+      <li><a href="#legal-basis">Our legal basis</a></li>
+      <li><a href="#sharing">Who we share data with</a></li>
+      <li><a href="#retention">How long we keep data</a></li>
+      <li><a href="#security">How we protect data</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#rights">Your rights under DPDP Act</a></li>
+      <li><a href="#cookies">Cookies &amp; analytics</a></li>
+      <li><a href="#donations">Donations</a></li>
+      <li><a href="#changes">Changes to this Policy</a></li>
+      <li><a href="#contact">Contact &amp; grievances</a></li>
+    </ol>
+  </div>
+
+  <h2 id="who">1. Who we are</h2>
+  <p>
+    ShikshaPal is operated by <strong>[Legal Entity Name]</strong> ("ShikshaPal", "we", "us", or "our"), a [proprietorship / private limited company / LLP — to be confirmed] organised under the laws of India and based in Bengaluru, Karnataka. For all matters relating to your personal data, we act as a <strong>Data Fiduciary</strong> as defined under the DPDP Act.
+  </p>
+  <p>
+    You can write to us at <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>.
+  </p>
+
+  <h2 id="scope">2. What this Policy covers</h2>
+  <p>This Policy applies to:</p>
+  <ul>
+    <li>The ShikshaPal desktop application installed on your computer or laptop;</li>
+    <li>Our website at shikshapal.com and any related domains;</li>
+    <li>Any communication you have with us by email.</li>
+  </ul>
+  <p>
+    It does <strong>not</strong> apply to third-party services we link to or rely on, such as Hugging Face (where our AI models are hosted) or any donation processor we may use in future. Each of those services has its own privacy policy.
+  </p>
+
+  <h2 id="minors">3. Children and parental consent</h2>
+  <p>
+    Most students who use ShikshaPal are under the age of 18. Under the DPDP Act, anyone under 18 is treated as a <strong>Child</strong>, and we must obtain <strong>verifiable consent from a parent or lawful guardian</strong> before processing a child's personal data.
+  </p>
+  <div class="important">
+    <span class="label">For parents</span>
+    <p>When a student under 18 creates an account, we ask them to provide a parent or guardian email address. We send a consent request to that address, and the account is activated only after the parent confirms. By giving consent, you agree to this Policy on behalf of your child.</p>
+    <p>You can withdraw consent and ask us to delete the child's account at any time by writing to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>.</p>
+  </div>
+  <p>
+    We do <strong>not</strong> knowingly process the data of any child without parental consent. We do not track children's behaviour for advertising or profiling, and we do not use children's data for any purpose that is likely to cause them harm.
+  </p>
+
+  <h2 id="data">4. Data we collect</h2>
+  <p>We have deliberately designed ShikshaPal to collect as little as possible. This is what we collect, and nothing more:</p>
+
+  <dl class="data-table">
+    <div>
+      <dt>Email address</dt>
+      <dd>The email used to register, and (if the user is a minor) the parent's email used for consent.</dd>
+    </div>
+    <div>
+      <dt>Password</dt>
+      <dd>Stored only as a one-way cryptographic hash. We never see, store, or log your actual password.</dd>
+    </div>
+    <div>
+      <dt>Student profile</dt>
+      <dd>Class (e.g., Class 8), preferred language of instruction, and an optional display name. No real name is required.</dd>
+    </div>
+    <div>
+      <dt>Account events</dt>
+      <dd>Account creation date, last login date, and password reset requests. Used for security only.</dd>
+    </div>
+    <div>
+      <dt>Email correspondence</dt>
+      <dd>If you write to us, we keep the email so we can respond and follow up.</dd>
+    </div>
+  </dl>
+
+  <h3>What we do <em>not</em> collect</h3>
+  <ul>
+    <li>The questions students ask the tutor;</li>
+    <li>The tutor's answers;</li>
+    <li>Chat history of any kind;</li>
+    <li>Time spent in the app, sessions, or screen-by-screen activity;</li>
+    <li>Microphone, camera, or location data;</li>
+    <li>Contacts, photos, or any other files on the device;</li>
+    <li>Aadhaar, PAN, phone numbers, or any other identity documents.</li>
+  </ul>
+  <p>
+    All tutoring conversations stay on the student's device. They are never transmitted to our servers and are never sent anywhere else.
+  </p>
+
+  <h2 id="purposes">5. Why we collect this data</h2>
+  <p>We use the limited data above only for these purposes:</p>
+  <ul>
+    <li><strong>To create and authenticate your account</strong> so each student can sign in to their personal copy of ShikshaPal;</li>
+    <li><strong>To verify parental consent</strong> when the user is a minor;</li>
+    <li><strong>To let you reset your password</strong> if you forget it;</li>
+    <li><strong>To respond to your emails</strong> and support requests;</li>
+    <li><strong>To detect abuse</strong> such as repeated failed logins or attempts to misuse the service;</li>
+    <li><strong>To comply with law</strong> where we are legally required to.</li>
+  </ul>
+  <p>We do <strong>not</strong> use your data for advertising, profiling, scoring, or model training.</p>
+
+  <h2 id="legal-basis">6. Our legal basis under the DPDP Act</h2>
+  <p>We process personal data on the basis of:</p>
+  <ul>
+    <li><strong>Your consent</strong>, which you give when you (or your parent, if you are a minor) create an account and accept this Policy;</li>
+    <li><strong>Legitimate use</strong> for security, fraud prevention, and to comply with applicable Indian law.</li>
+  </ul>
+
+  <h2 id="sharing">7. Who we share data with</h2>
+  <p>We do not sell, rent, or trade personal data. We share data only with the following categories of recipients, and only to the extent necessary:</p>
+  <ul>
+    <li><strong>Email delivery providers</strong> — to send account verification, parental consent, and password reset emails;</li>
+    <li><strong>Cloud infrastructure providers</strong> — to host our authentication server (data stays in India where possible);</li>
+    <li><strong>Donation processors</strong> — only if and when you choose to donate. We will name the processor at the time of donation;</li>
+    <li><strong>Law enforcement and regulators</strong> — only when we receive a valid, written legal order from an Indian authority and have no lawful way to refuse.</li>
+  </ul>
+  <div class="note">
+    <span class="label">About Hugging Face</span>
+    <p>The AI models that power ShikshaPal are hosted on Hugging Face, a public platform for open-source models. When the app downloads a model file to your device, the request goes directly from your device to Hugging Face. We do not see this request, and we do not pass any account information to Hugging Face. Their privacy practices are governed by their own policy.</p>
+  </div>
+
+  <h2 id="retention">8. How long we keep data</h2>
+  <ul>
+    <li><strong>Active accounts:</strong> as long as the account exists.</li>
+    <li><strong>Inactive accounts:</strong> if an account is unused for 24 months, we will email a warning and then delete it.</li>
+    <li><strong>Deletion requests:</strong> we delete the account within 30 days of receiving a valid request, except where law requires us to retain certain records.</li>
+    <li><strong>Email correspondence:</strong> kept for up to 36 months unless you ask us to delete it sooner.</li>
+  </ul>
+
+  <h2 id="security">9. How we protect data</h2>
+  <p>We follow standard security practices, including:</p>
+  <ul>
+    <li>Encryption of data in transit (HTTPS/TLS) for all communication with our server;</li>
+    <li>One-way hashing of passwords using a strong, salted algorithm;</li>
+    <li>Access controls so that only authorised personnel can reach the database;</li>
+    <li>Regular backups and basic intrusion monitoring.</li>
+  </ul>
+  <p>
+    No system on the internet is perfectly secure. If we ever discover a personal data breach that is likely to result in significant harm, we will notify the Data Protection Board of India and affected users as required under the DPDP Act.
+  </p>
+
+  <h2 id="transfers">10. International transfers</h2>
+  <p>
+    We aim to keep all personal data within India. If we ever transfer data outside India (for example, to use a particular email provider), we will only do so to jurisdictions that the Government of India has not restricted, and we will protect the data with appropriate contractual safeguards.
+  </p>
+
+  <h2 id="rights">11. Your rights under the DPDP Act</h2>
+  <p>As a Data Principal (or, in the case of a minor, the parent acting on their behalf), you have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> a copy of the personal data we hold about you;</li>
+    <li><strong>Correct</strong> data that is inaccurate or out of date;</li>
+    <li><strong>Erase</strong> data you no longer want us to hold;</li>
+    <li><strong>Withdraw consent</strong> at any time, which will result in account deletion;</li>
+    <li><strong>Nominate</strong> another individual to exercise your rights in case of your death or incapacity;</li>
+    <li><strong>Lodge a grievance</strong> with us, and if unresolved, escalate to the Data Protection Board of India.</li>
+  </ul>
+  <p>
+    To exercise any of these rights, write to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a> from the email address registered to the account. We will respond within 30 days.
+  </p>
+
+  <h2 id="cookies">12. Cookies and analytics</h2>
+  <p>
+    The ShikshaPal desktop application does not use cookies. Our website uses only essential cookies needed to keep you signed in to your account dashboard. We do not use Google Analytics, Facebook Pixel, or any third-party advertising or behavioural tracking on the app or the site.
+  </p>
+
+  <h2 id="donations">13. Donations</h2>
+  <p>
+    ShikshaPal is free to use. If you choose to make a voluntary donation to support the project, the payment is processed by an external donation processor (to be confirmed at launch). That processor will collect the information needed to process your payment, and their handling of that information is governed by their own privacy policy. We do not store full card or bank details on our servers.
+  </p>
+
+  <h2 id="changes">14. Changes to this Policy</h2>
+  <p>
+    We may update this Policy from time to time. If we make a material change, we will email registered users at least 14 days before the change takes effect. The "Last updated" date at the top of this page always shows the most recent version.
+  </p>
+
+  <h2 id="contact">15. Contact and grievances</h2>
+  <p>
+    For any privacy question, request, or complaint, please write to:
+  </p>
+  <p>
+    <strong>Grievance Officer / Data Protection Officer</strong><br>
+    [Legal Entity Name]<br>
+    Bengaluru, Karnataka, India<br>
+    Email: <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>
+  </p>
+  <p>
+    If you are not satisfied with our response, you may approach the <strong>Data Protection Board of India</strong> in accordance with the DPDP Act.
+  </p>
+
+  <footer>
+    <div>© [Year] ShikshaPal. Made for Indian students.</div>
+    <div><a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="help.html">Help</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
