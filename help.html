@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help &amp; Support — ShikshaPal</title>
+<meta name="description" content="ShikshaPal Help Center: installation guide, system requirements, troubleshooting, and frequently asked questions for parents and students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a2332;
+    --ink-soft: #3a4556;
+    --paper: #faf6f0;
+    --paper-warm: #f3ecdf;
+    --rule: #d9cfbe;
+    --accent: #1e3a5f;
+    --accent-soft: #2c4a73;
+    --highlight: #c9a96e;
+    --danger-bg: #fef3e7;
+    --danger-border: #d48b3c;
+    --note-bg: #eaf0f6;
+    --note-border: #1e3a5f;
+    --max-w: 760px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle at 1px 1px, rgba(26,35,50,0.025) 1px, transparent 0);
+    background-size: 24px 24px;
+    z-index: 0;
+  }
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1.25rem;
+    margin-bottom: 3rem;
+  }
+  .masthead .brand {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .masthead .brand-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .masthead .brand-name .dot { color: var(--highlight); }
+  .masthead nav {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+  }
+  .masthead nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+    margin-left: 1.25rem;
+  }
+  .masthead nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .masthead nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .doc-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+    color: var(--ink);
+  }
+  .lede {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: -0.01em;
+    margin: 3.5rem 0 1.25rem;
+    color: var(--accent);
+    position: relative;
+  }
+  h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+    width: 40px;
+    height: 3px;
+    background: var(--highlight);
+  }
+  h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 2rem 0 0.6rem;
+    color: var(--ink);
+  }
+  p { margin: 0 0 1.1rem; }
+  ul, ol { margin: 0 0 1.25rem; padding-left: 1.4rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  strong { color: var(--ink); font-weight: 600; }
+  code {
+    font-family: 'SF Mono', ui-monospace, Menlo, monospace;
+    font-size: 0.92em;
+    background: var(--paper-warm);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+
+  /* Hero quick-access cards */
+  .quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.9rem;
+    margin: 0 0 3rem;
+  }
+  .quick-card {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 1.1rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+    display: block;
+  }
+  .quick-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(26,35,50,0.08);
+    color: var(--ink);
+  }
+  .quick-card .qc-num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.5rem;
+    color: var(--highlight);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .quick-card .qc-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 0.98rem;
+  }
+  .quick-card .qc-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+
+  .note {
+    background: var(--note-bg);
+    border-left: 4px solid var(--note-border);
+    padding: 1.1rem 1.3rem;
+    margin: 1.5rem 0;
+    font-size: 0.97rem;
+    border-radius: 0 4px 4px 0;
+  }
+  .note .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  .note p:last-child { margin-bottom: 0; }
+  .important {
+    background: var(--danger-bg);
+    border-left: 4px solid var(--danger-border);
+    padding: 1.1rem 1.3rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .important .label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8b4513;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+
+  /* RAM / Model table */
+  .model-table {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+  .model-row {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.6fr;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .model-row:last-child { border-bottom: none; }
+  .model-row.head {
+    background: var(--paper-warm);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+  }
+  .model-row .mname { font-weight: 600; }
+  .model-row .quant { font-family: 'SF Mono', monospace; font-size: 0.88rem; }
+  @media (max-width: 600px) {
+    .model-row { grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; padding: 0.8rem 0.9rem; }
+    .model-row.head { display: none; }
+    .model-row .mname { grid-column: 1 / -1; font-size: 1rem; padding-bottom: 0.2rem; }
+    .model-row dd { margin: 0; }
+    .model-row > div::before {
+      content: attr(data-label) ' ';
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--ink-soft);
+      display: block;
+      margin-bottom: 0.1rem;
+    }
+    .model-row .mname::before { display: none; }
+  }
+
+  /* FAQ details */
+  details.faq {
+    border-bottom: 1px solid var(--rule);
+    padding: 1.1rem 0;
+  }
+  details.faq:first-of-type { border-top: 1px solid var(--rule); }
+  details.faq summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.1rem 0;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: '+';
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.4rem;
+    color: var(--highlight);
+    line-height: 1;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  details.faq[open] summary::after {
+    content: '−';
+  }
+  details.faq summary:hover { color: var(--accent); }
+  details.faq .answer {
+    margin-top: 0.8rem;
+    color: var(--ink-soft);
+    font-size: 0.97rem;
+  }
+  details.faq .answer p:last-child { margin-bottom: 0; }
+
+  /* Step-by-step list */
+  ol.steps {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  ol.steps > li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3.2rem;
+    margin-bottom: 1.4rem;
+    min-height: 2.5rem;
+  }
+  ol.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--accent);
+    color: var(--paper);
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  ol.steps > li strong { display: block; margin-bottom: 0.2rem; font-size: 1.02rem; }
+
+  /* Contact card */
+  .contact-card {
+    background: var(--accent);
+    color: var(--paper);
+    padding: 2rem 2rem;
+    border-radius: 4px;
+    margin: 3rem 0 0;
+    text-align: center;
+  }
+  .contact-card h3 {
+    color: var(--paper);
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem;
+  }
+  .contact-card p { color: rgba(250,246,240,0.85); margin-bottom: 1rem; }
+  .contact-card a {
+    color: var(--paper);
+    background: rgba(255,255,255,0.1);
+    padding: 0.6rem 1.4rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid rgba(250,246,240,0.4);
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  .contact-card a:hover { background: rgba(255,255,255,0.2); color: var(--paper); }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--ink);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer a { color: var(--ink-soft); }
+
+  @media (max-width: 600px) {
+    h2::before { display: none; }
+    .wrap { padding: 2.5rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">
+      <div class="brand-name">ShikshaPal<span class="dot">.</span></div>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="help.html" class="active">Help</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc-eyebrow">Help &amp; Support</div>
+  <h1>Getting started with ShikshaPal</h1>
+  <p class="lede">A free, offline AI tutor for Class 6–12 students, aligned to the NCERT curriculum. Here's how to set it up, use it well, and fix problems if they come up.</p>
+
+  <div class="quick-grid">
+    <a href="#install" class="quick-card">
+      <div class="qc-num">01</div>
+      <div class="qc-title">Install &amp; sign in</div>
+      <div class="qc-desc">Download the app and create your student account.</div>
+    </a>
+    <a href="#requirements" class="quick-card">
+      <div class="qc-num">02</div>
+      <div class="qc-title">System requirements</div>
+      <div class="qc-desc">Which laptop or PC will run ShikshaPal smoothly.</div>
+    </a>
+    <a href="#models" class="quick-card">
+      <div class="qc-num">03</div>
+      <div class="qc-title">Choosing a model</div>
+      <div class="qc-desc">Math, science, or humanities — pick the right tutor.</div>
+    </a>
+    <a href="#troubleshoot" class="quick-card">
+      <div class="qc-num">04</div>
+      <div class="qc-title">Troubleshooting</div>
+      <div class="qc-desc">Slow replies, failed downloads, login issues.</div>
+    </a>
+  </div>
+
+  <h2 id="install">Install &amp; sign in</h2>
+  <p>ShikshaPal runs on Windows, macOS, and Linux laptops or desktop computers. The app does not run on phones or tablets — it needs a real computer because the AI runs locally on your machine.</p>
+
+  <ol class="steps">
+    <li>
+      <strong>Download the installer</strong>
+      Visit shikshapal.com and download the version for your operating system. The installer file is around 80–120 MB depending on the platform.
+    </li>
+    <li>
+      <strong>Run the installer</strong>
+      Open the downloaded file and follow the on-screen instructions. On Windows you may see a "Windows protected your PC" warning — click "More info" and then "Run anyway". On macOS, you may need to right-click the app and choose "Open" the first time.
+    </li>
+    <li>
+      <strong>Create your account</strong>
+      Open ShikshaPal. Sign up with the student's email address and a password. If the student is under 18, the app will also ask for a parent or guardian email and send a consent message there. The account is activated only after the parent confirms.
+    </li>
+    <li>
+      <strong>Pick your class and language</strong>
+      Choose the student's class (6 to 12) and preferred language of instruction. ShikshaPal will use this to recommend the right AI model and to set the right level of explanation.
+    </li>
+    <li>
+      <strong>Download the AI model</strong>
+      The app will recommend an AI model based on your computer's RAM and your class. This is a one-time download of 1–4 GB and may take a while on slower connections. Once downloaded, the model lives on your computer and works offline forever.
+    </li>
+    <li>
+      <strong>Start asking questions</strong>
+      Open a chapter, type a question, and the tutor will explain. Try things like "Explain Newton's third law with a real example" or "Help me factorise x² + 5x + 6 step by step".
+    </li>
+  </ol>
+
+  <h2 id="requirements">System requirements</h2>
+  <p>ShikshaPal runs entirely on your computer, so the device matters. Here are the minimum and recommended specifications:</p>
+
+  <h3>Minimum (works, but slower)</h3>
+  <ul>
+    <li>Windows 10, macOS 11, or a recent Linux distribution;</li>
+    <li>4 GB RAM (with at least 2 GB free when running);</li>
+    <li>5 GB free disk space;</li>
+    <li>A 64-bit processor (any laptop made after 2017 should work);</li>
+    <li>An internet connection — only required for the first-time model download.</li>
+  </ul>
+
+  <h3>Recommended</h3>
+  <ul>
+    <li>8 GB RAM or more, for smoother responses with larger models;</li>
+    <li>10 GB free disk space if you want to keep multiple subject models installed;</li>
+    <li>SSD storage — model loading is much faster on SSDs than on old spinning hard drives.</li>
+  </ul>
+
+  <div class="note">
+    <span class="label">Tip for parents</span>
+    <p>If your laptop is older or has only 4 GB of RAM, ShikshaPal will still work — it will just recommend the smaller, faster math-focused model. There is no need to upgrade your computer to use ShikshaPal.</p>
+  </div>
+
+  <h2 id="models">Choosing the right model</h2>
+  <p>ShikshaPal does not use one giant model for everything. Instead, it ships three specialist tutors — each picked for what it does well. The app recommends the right one based on your class and your computer's RAM, but you can switch any time.</p>
+
+  <div class="model-table">
+    <div class="model-row head">
+      <div>Tutor</div>
+      <div>Best for</div>
+      <div>Size</div>
+      <div>Suggested RAM</div>
+    </div>
+    <div class="model-row">
+      <div class="mname" data-label="Tutor">Math Tutor</div>
+      <div data-label="Best for">Mathematics, step-by-step problem solving</div>
+      <div class="quant" data-label="Size">~1.0 GB</div>
+      <div data-label="Suggested RAM">4 GB or more</div>
+    </div>
+    <div class="model-row">
+      <div class="mname" data-label="Tutor">Science Tutor</div>
+      <div data-label="Best for">Physics, Chemistry, Biology — quick lookups, definitions</div>
+      <div class="quant" data-label="Size">~2.6 GB</div>
+      <div data-label="Suggested RAM">6 GB or more</div>
+    </div>
+    <div class="model-row">
+      <div class="mname" data-label="Tutor">Senior Tutor</div>
+      <div data-label="Best for">Class 9–12 deep reasoning, humanities, longer answers</div>
+      <div class="quant" data-label="Size">~3.1 GB</div>
+      <div data-label="Suggested RAM">8 GB or more</div>
+    </div>
+  </div>
+
+  <h3>Switching between models</h3>
+  <p>If you ask the Math Tutor a chemistry question, it will politely tell you to switch to the Science Tutor. Click the model name at the top of the chat window to switch any time. You only download each model once — after that, switching is instant.</p>
+
+  <h2 id="how-to-ask">Asking better questions</h2>
+  <p>The AI tutor works best when you treat it like a patient teacher rather than a search engine. Some tips:</p>
+  <ul>
+    <li><strong>Mention your class</strong> — "I'm in Class 9, can you explain..." gets answers at the right level.</li>
+    <li><strong>Show your work</strong> — paste your attempted solution and ask "where did I go wrong?" instead of just asking for the answer.</li>
+    <li><strong>Ask for examples</strong> — "give me three examples from daily life" makes abstract topics concrete.</li>
+    <li><strong>Ask for a different explanation</strong> — if the first answer doesn't click, just say "explain it more simply" or "give me an analogy".</li>
+    <li><strong>Keep your textbook handy</strong> — the tutor is a helper, not a replacement. Always cross-check against your NCERT textbook.</li>
+  </ul>
+
+  <div class="important">
+    <span class="label">A note on honesty</span>
+    <p>The AI can be wrong, and sometimes very confidently wrong. Always check important answers against your textbook or your teacher — especially before tests. ShikshaPal is meant to help you understand topics, not to write your homework or exams for you.</p>
+  </div>
+
+  <h2 id="troubleshoot">Troubleshooting</h2>
+
+  <details class="faq">
+    <summary>The model download keeps failing or is very slow</summary>
+    <div class="answer">
+      <p>Models are 1–4 GB, so the first download can take a while on slow connections. A few things to try:</p>
+      <ul>
+        <li>Pause and resume — the app saves progress and continues from where it stopped.</li>
+        <li>Connect to a more stable network (home Wi-Fi tends to be more reliable than mobile hotspots).</li>
+        <li>Try a different time of day if your network is congested in the evenings.</li>
+        <li>If a download keeps failing midway, delete the partial file from the app's models folder and start again. The app will tell you the folder location under Settings → Storage.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>The tutor is replying very slowly</summary>
+    <div class="answer">
+      <p>Slow replies usually mean the model is too big for your computer. Open Settings → Model and switch to a smaller tutor — the Math Tutor is the lightest and runs well even on 4 GB laptops. Closing other heavy applications (browser tabs, video calls) before using ShikshaPal also helps.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>I get an "out of memory" error</summary>
+    <div class="answer">
+      <p>This means the model needs more RAM than your computer has free. Try:</p>
+      <ul>
+        <li>Closing other applications, especially browsers with many tabs;</li>
+        <li>Switching to a smaller model in Settings → Model;</li>
+        <li>Restarting your computer to clear memory before opening ShikshaPal.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>I forgot my password</summary>
+    <div class="answer">
+      <p>On the sign-in screen, click "Forgot password?". We'll send a reset link to the registered email address. If the student is a minor, the link is sent to the parent's email so an adult is involved in the reset.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>The parent consent email never arrived</summary>
+    <div class="answer">
+      <p>Please check the spam or "Promotions" folder in the parent's inbox. The email comes from <code>contact@shikshapal.com</code>. If it is still missing after 30 minutes, write to us from the parent's email and we'll resend the consent link manually.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>My antivirus is blocking ShikshaPal</summary>
+    <div class="answer">
+      <p>Some antivirus tools are cautious about new applications, especially small-publisher apps. ShikshaPal is signed and safe — you can add it to your antivirus's allow list, or check our website for the published checksum to verify the installer file. If you are unsure, write to us.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>The tutor gave me a wrong answer</summary>
+    <div class="answer">
+      <p>It happens — AI is not perfect. Cross-check against your NCERT textbook or ask a teacher. You can also click the "Report" button below any reply to send the question and answer to us (no other personal data is included). Reports help us improve future versions.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Can I use ShikshaPal without signing in?</summary>
+    <div class="answer">
+      <p>Not currently. We require sign-in so that we can provide parental consent for minor users, as required by Indian law. We are exploring a guest mode for older students in future versions.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>How do I delete my account?</summary>
+    <div class="answer">
+      <p>Open the app and go to Settings → Account → Delete Account, or write to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a> from the registered email address. We delete accounts within 30 days of receiving a valid request.</p>
+    </div>
+  </details>
+
+  <h2 id="for-parents">For parents</h2>
+  <p>If you are a parent or guardian, here are the most common questions:</p>
+  <ul>
+    <li><strong>What does ShikshaPal cost?</strong> Nothing. The app is free, with optional voluntary donations to support development.</li>
+    <li><strong>Is my child's data safe?</strong> ShikshaPal collects only an email address, password (hashed), class, and language preference. The actual conversations stay on your device and are never uploaded. See the <a href="privacy.html">Privacy Policy</a> for full details.</li>
+    <li><strong>Are there ads?</strong> No. We will never show ads, and we will never sell or share your child's data.</li>
+    <li><strong>Will it replace school?</strong> No, and that is by design. ShikshaPal points students back to their NCERT textbook, encourages them to consult teachers, and is meant only as a homework helper and explainer.</li>
+    <li><strong>Can the AI go off-topic?</strong> The tutors are configured to stick to academic topics. If a student tries to chat about non-school things, the tutor will gently redirect them. No system is perfect, though, so we still recommend keeping the laptop in a shared family space.</li>
+  </ul>
+
+  <h2 id="when-to-ask-teacher">When to ask a teacher instead</h2>
+  <p>ShikshaPal is good for many things — explaining a concept differently, walking through a worked example, breaking down a definition. But it is <strong>not</strong> the right tool when:</p>
+  <ul>
+    <li>You need help understanding your school's specific syllabus, exam pattern, or marking scheme;</li>
+    <li>You have a personal learning difficulty that needs an in-person diagnosis;</li>
+    <li>You need someone to motivate you, listen to you, or notice when you are struggling — that is what teachers and family are for;</li>
+    <li>You want feedback on a project, essay, or assignment that your school will grade;</li>
+    <li>You need medical, mental-health, legal, or financial advice — the AI is not qualified for these and should not be asked.</li>
+  </ul>
+
+  <div class="contact-card">
+    <h3>Still need help?</h3>
+    <p>Write to us. We read every email and try to respond within two working days.</p>
+    <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>
+  </div>
+
+  <footer>
+    <div>© [Year] ShikshaPal. Made for Indian students.</div>
+    <div><a href="privacy.html">Privacy</a> &nbsp;·&nbsp; <a href="terms.html">Terms</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
