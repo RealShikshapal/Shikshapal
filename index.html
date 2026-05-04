@@ -153,8 +153,9 @@
   .menu > li { position: relative; }
   .menu a { display: inline-flex; align-items: center; gap: 4px; padding: 6px 0; cursor: pointer; }
   .menu a:hover { color: var(--primary); }
-  .menu .caret { font-size: 10px; opacity: .55; transition: transform .18s ease; }
-  .menu > li:hover .caret { transform: rotate(180deg); opacity: .9; color: var(--primary); }
+  .menu .caret { display: inline-flex; align-items: center; margin-left: 4px; opacity: .85; transition: transform .18s ease, opacity .18s ease, color .18s ease; }
+  .menu .caret svg { width: 16px; height: 16px; }
+  .menu > li:hover .caret { transform: rotate(180deg); opacity: 1; color: var(--primary); }
   .nav-cta { display: flex; align-items: center; gap: 12px; }
 
   /* ----- Hamburger + mobile drawer ----- */
@@ -810,6 +811,7 @@
     font-weight: 700; letter-spacing: -.8px; line-height: 1.1;
     margin: 18px auto 16px; max-width: 900px; position: relative;
   }
+  .final-cta h2 .accent { color: #ffd60a; }
   .final-cta p {
     color: rgba(255,255,255,.78); font-size: 17px;
     max-width: 720px; margin: 0 auto 28px; position: relative;
@@ -964,7 +966,7 @@
     <nav>
       <ul class="menu">
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Products <span class="caret">▾</span></a>
+          <a href="#" class="dd-trigger">Products <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
             <a class="dd-item" href="#app">
               <span class="dd-ic blue">
@@ -987,7 +989,7 @@
           </div>
         </li>
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Solutions <span class="caret">▾</span></a>
+          <a href="#" class="dd-trigger">Solutions <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
             <a class="dd-item" href="#">
               <span class="dd-ic blue">
@@ -1022,7 +1024,7 @@
           </div>
         </li>
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Resources <span class="caret">▾</span></a>
+          <a href="#" class="dd-trigger">Resources <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
             <a class="dd-item" href="./explainer/index.html">
               <span class="dd-ic purple">
@@ -1633,7 +1635,7 @@
 <div class="container" id="cta">
   <section class="final-cta">
     <span class="eyebrow on-dark"><span class="dot"></span> Next Generation AI-Copilot</span>
-    <h2>Ready to Transform Your School with Next Generation Intelligent AI-Copilot?</h2>
+    <h2>Ready to Transform Your School with <span class="accent">Next Generation Intelligent AI-Copilot</span>?</h2>
     <p>Join thousands of leading schools already delivering better learning outcomes with personalized, adaptive AI-powered education at scale.</p>
 
     <div class="feature-strip">
