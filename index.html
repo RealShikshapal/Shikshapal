@@ -873,6 +873,80 @@
 
   /* Small icon svg helper */
   .sicon { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* =========================================================
+     ShikshaPal App (consumer mobile apps)
+     ========================================================= */
+  .app-tutors {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 960px) { .app-tutors { grid-template-columns: 1fr; } }
+  .app-tutor {
+    background: #fff; border: 1px solid var(--line); border-radius: 22px;
+    padding: 28px; box-shadow: var(--shadow-sm);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .app-tutor:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .app-tutor .ic {
+    width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+    color: #fff; margin-bottom: 18px;
+  }
+  .app-tutor.t1 .ic { background: var(--primary); }
+  .app-tutor.t2 .ic { background: var(--green); }
+  .app-tutor.t3 .ic { background: var(--purple); }
+  .app-tutor .role { display: inline-block; font-size: 11.5px; color: var(--muted); font-weight: 600; letter-spacing: .6px; text-transform: uppercase; margin-bottom: 8px; }
+  .app-tutor h4 { margin: 0 0 8px; font-size: 20px; font-weight: 700; }
+  .app-tutor p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
+
+  .app-meta {
+    background: linear-gradient(135deg, var(--primary-100), rgba(127,34,254,.07));
+    border: 1px solid var(--primary-150);
+    border-radius: 22px; padding: 20px 24px; display: flex; gap: 14px; align-items: center;
+    font-size: 14.5px; color: var(--ink); margin-bottom: 56px; line-height: 1.55;
+  }
+  .app-meta .ic {
+    width: 38px; height: 38px; border-radius: 10px; background: var(--primary); color: #fff;
+    display: grid; place-items: center; flex-shrink: 0;
+  }
+  @media (max-width: 620px) { .app-meta { flex-direction: column; align-items: flex-start; } }
+
+  .app-twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 56px; }
+  @media (max-width: 880px) { .app-twocol { grid-template-columns: 1fr; } }
+  .app-block {
+    background: var(--bg); border: 1px solid var(--line);
+    border-radius: 22px; padding: 32px;
+  }
+  .app-block h3 { margin: 0 0 8px; font-size: 22px; font-weight: 700; letter-spacing: -.2px; }
+  .app-block p.lead { margin: 0 0 18px; color: var(--muted); font-size: 14.5px; }
+  .app-block ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .app-block li { display: flex; gap: 12px; align-items: flex-start; font-size: 14.5px; line-height: 1.55; }
+  .app-block li .tick {
+    flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--green-bg); color: var(--green);
+    display: grid; place-items: center; font-size: 13px; margin-top: 1px; font-weight: 700;
+  }
+
+  .app-cta {
+    text-align: center; padding: 48px 28px;
+    background: linear-gradient(135deg, #03010d 0%, #0a1b5a 100%);
+    color: #fff; border-radius: 32px;
+  }
+  .app-cta h3 { margin: 0 0 10px; font-size: 28px; font-weight: 700; letter-spacing: -.3px; }
+  .app-cta p { margin: 0 0 24px; color: rgba(255,255,255,.78); font-size: 15.5px; }
+  .app-store-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .store-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    padding: 12px 22px;
+    background: #fff; color: var(--ink);
+    border-radius: 14px; font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .store-btn:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(0,0,0,.25); }
+  .store-btn svg { width: 26px; height: 26px; flex-shrink: 0; fill: currentColor; }
+  .store-btn .lbl { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
+  .store-btn .lbl .top { font-size: 11px; font-weight: 500; color: var(--muted); letter-spacing: .3px; }
+  .store-btn .lbl .bot { font-size: 16px; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -892,29 +966,23 @@
         <li class="has-dd">
           <a href="#" class="dd-trigger">Products <span class="caret">▾</span></a>
           <div class="dd" role="menu">
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#app">
               <span class="dd-ic blue">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A3.5 3.5 0 0 0 6 6.5v.5a3 3 0 0 0-2 5.3V15a3 3 0 0 0 3 3v1a2 2 0 0 0 2 2h.5V3zM14.5 3A3.5 3.5 0 0 1 18 6.5v.5a3 3 0 0 1 2 5.3V15a3 3 0 0 1-3 3v1a2 2 0 0 1-2 2h-.5V3z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v18M3 9h18"/><path d="M16 16l4 4M16 20l4-4"/></svg>
               </span>
-              <div class="dd-text"><div class="t">ShikshaPal Learn+</div><div class="s">AI-Powered Student Learning Engine</div></div>
+              <div class="dd-text"><div class="t">MathMentor Pro</div><div class="s">Step-by-step maths problem solving</div></div>
             </a>
-            <a class="dd-item" href="#">
-              <span class="dd-ic orange">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5L2 10z"/><path d="M6 12v4c0 1.5 3 3 6 3s6-1.5 6-3v-4"/><path d="M22 10v5"/></svg>
+            <a class="dd-item" href="#app">
+              <span class="dd-ic green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
               </span>
-              <div class="dd-text"><div class="t">Teacher Co-Pilot</div><div class="s">AI Assistant for Classroom Teaching</div></div>
+              <div class="dd-text"><div class="t">QuickScholar</div><div class="s">Fast, lightweight tutor for everyday doubts</div></div>
             </a>
-            <a class="dd-item" href="#">
-              <span class="dd-ic red">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+            <a class="dd-item" href="#app">
+              <span class="dd-ic purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h8a3 3 0 013 3v13a2 2 0 00-2-2H2z"/><path d="M22 4h-8a3 3 0 00-3 3v13a2 2 0 012-2h9z"/></svg>
               </span>
-              <div class="dd-text"><div class="t">ShikshaPal EvalAI</div><div class="s">Intelligent Assessment Engine</div></div>
-            </a>
-            <a class="dd-item" href="#">
-              <span class="dd-ic teal">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
-              </span>
-              <div class="dd-text"><div class="t">Progress 360</div><div class="s">Learning Intelligence &amp; Analytics</div></div>
+              <div class="dd-text"><div class="t">DeepScholar</div><div class="s">Long-form explanations for tougher topics</div></div>
             </a>
           </div>
         </li>
@@ -956,6 +1024,12 @@
         <li class="has-dd">
           <a href="#" class="dd-trigger">Resources <span class="caret">▾</span></a>
           <div class="dd" role="menu">
+            <a class="dd-item" href="./explainer/index.html">
+              <span class="dd-ic purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z"/></svg>
+              </span>
+              <div class="dd-text"><div class="t">Explainer</div><div class="s">Living textbooks for Class 6, 7 &amp; 8</div></div>
+            </a>
             <a class="dd-item" href="#">
               <span class="dd-ic blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/></svg>
@@ -1017,10 +1091,9 @@
       <details>
         <summary>Products</summary>
         <ul>
-          <li><a href="#">ShikshaPal Learn+</a></li>
-          <li><a href="#">Teacher Co-Pilot</a></li>
-          <li><a href="#">ShikshaPal EvalAI</a></li>
-          <li><a href="#">Progress 360</a></li>
+          <li><a href="#app">MathMentor Pro</a></li>
+          <li><a href="#app">QuickScholar</a></li>
+          <li><a href="#app">DeepScholar</a></li>
         </ul>
       </details>
     </li>
@@ -1040,6 +1113,7 @@
       <details>
         <summary>Resources</summary>
         <ul>
+          <li><a href="./explainer/index.html">Explainer</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Case Studies</a></li>
           <li><a href="#">Help Center</a></li>
@@ -1429,6 +1503,88 @@
   </div>
 </section>
 
+<!-- ========== SHIKSHAPAL APP ========== -->
+<section class="section" id="app">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Mobile App · iOS &amp; Android</span>
+      <h2>The ShikshaPal App<br/>A quiet AI tutor for your family.</h2>
+      <p>Three specialised on-device tutors, picked automatically for your phone or laptop. Aligned to the NCERT curriculum and built for how Indian families actually learn.</p>
+    </div>
+
+    <!-- Three tutors -->
+    <div class="app-tutors">
+      <div class="app-tutor t1">
+        <div class="ic"><svg class="sicon" viewBox="0 0 24 24"><path d="M9 3v18M3 9h18"/><path d="M16 16l4 4M16 20l4-4"/></svg></div>
+        <span class="role">Step-by-step</span>
+        <h4>MathMentor Pro</h4>
+        <p>Optimised for working through problems one careful step at a time — for students learning to reason, not just memorise.</p>
+      </div>
+      <div class="app-tutor t2">
+        <div class="ic"><svg class="sicon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <span class="role">Fast &amp; lightweight</span>
+        <h4>QuickScholar</h4>
+        <p>Snappy answers for everyday doubts. Light enough to run smoothly even on modest devices.</p>
+      </div>
+      <div class="app-tutor t3">
+        <div class="ic"><svg class="sicon" viewBox="0 0 24 24"><path d="M2 4h8a3 3 0 013 3v13a2 2 0 00-2-2H2z"/><path d="M22 4h-8a3 3 0 00-3 3v13a2 2 0 012-2h9z"/></svg></div>
+        <span class="role">Detailed explanations</span>
+        <h4>DeepScholar</h4>
+        <p>Long-form, thoughtful explanations for tougher topics. Reach for it when a subject deserves more time.</p>
+      </div>
+    </div>
+
+    <!-- Device-fit callout -->
+    <div class="app-meta">
+      <div class="ic"><svg class="sicon" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg></div>
+      <div><strong>Right-sized for your device.</strong> The app reads your RAM and recommends the model that will run smoothly — so it works on modest laptops and phones, not just high-end machines.</div>
+    </div>
+
+    <!-- Families + audience -->
+    <div class="app-twocol">
+      <div class="app-block">
+        <h3>Designed for Indian families</h3>
+        <p class="lead">Built around how Indian parents think about education, privacy, and value for money.</p>
+        <ul>
+          <li><span class="tick">✓</span><span>No engagement loops trying to keep your child on the screen.</span></li>
+          <li><span class="tick">✓</span><span>No notifications begging for attention.</span></li>
+          <li><span class="tick">✓</span><span>No upsells.</span></li>
+          <li><span class="tick">✓</span><span>A quiet, capable tutor — helps when needed, and gets out of the way when not.</span></li>
+        </ul>
+      </div>
+      <div class="app-block">
+        <h3>Who is it for</h3>
+        <p class="lead">Made for the families and students who'll get the most out of it.</p>
+        <ul>
+          <li><span class="tick">✓</span><span>Students from Class 6 to 12 following the NCERT curriculum.</span></li>
+          <li><span class="tick">✓</span><span>Parents who want safe AI help for their children.</span></li>
+          <li><span class="tick">✓</span><span>Families in tier-2 and tier-3 cities with limited internet.</span></li>
+          <li><span class="tick">✓</span><span>Anyone who values privacy and doesn't want their child's questions stored on a company's server.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Get started CTA -->
+    <div class="app-cta">
+      <h3>Get started</h3>
+      <p>Download the app, pick the model that fits your device, and start asking questions.</p>
+      <div class="app-store-row">
+        <!-- TODO: replace href="#" with the live App Store URL once available -->
+        <a href="#" class="store-btn" aria-label="Download on the App Store">
+          <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span class="lbl"><span class="top">Download on the</span><span class="bot">App Store</span></span>
+        </a>
+        <!-- TODO: replace href="#" with the live Google Play URL once available -->
+        <a href="#" class="store-btn" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.4.34-.6.84-.6 1.43V20.18c0 .58.2 1.07.6 1.4l9.66-9.59zm10.45 8.6L17.4 7.66 5.92 1.05c-.39-.22-.77-.31-1.13-.27l9.26 10.22zm5.6 1.7c1.04-.59 1.04-2.05 0-2.66l-2.6-1.5L13.4 12l3.65 3.46zm-5.6.94l-9.26 10.27c.36.04.74-.04 1.13-.27L17.4 16.34z"/></svg>
+          <span class="lbl"><span class="top">Get it on</span><span class="bot">Google Play</span></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ========== WHY SHIKSHAPAL ========== -->
 <section class="section alt" id="why">
   <div class="container">
@@ -1508,7 +1664,7 @@
           <a href="mailto:contact@shikshapal.com" style="color:#dee3ee">contact@shikshapal.com</a><br/>
           <a href="tel:+919056229395" style="color:#dee3ee">+91-9056229395</a>
         </p>
-        <a href="#" class="footer-cta">💬 Chat with us on WhatsApp</a>
+        <a href="https://wa.me/919353160648" target="_blank" rel="noopener" class="footer-cta">💬 Chat with us on WhatsApp</a>
         <a href="./shikshapal-form.html" class="footer-cta">🎬 Get a Free Demo</a>
       </div>
       <div>
