@@ -145,7 +145,11 @@
   .consent a{color:var(--primary);text-decoration:underline;text-underline-offset:2px}
   .submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
   .submit-row .btn{padding:13px 26px;font-size:15.5px}
+  .submit-row .btn[disabled]{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
   .submit-row .tiny{color:var(--muted);font-size:12.5px}
+  .form-error{display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(212,30,30,.08);color:var(--red);font-size:13.5px;line-height:1.45}
+  .form-error.on{display:block}
+  .hp-field{position:absolute;left:-10000px;width:1px;height:1px;opacity:0;pointer-events:none}
 
   /* Success / thank you ----- */
   .thanks{display:none;text-align:center;padding:10px 6px 6px}
@@ -325,6 +329,12 @@
           <p class="sub">Fill this out and a ShikshaPal expert will reach out within one business day.</p>
 
           <form id="leadForm" novalidate onsubmit="return handleSubmit(event)">
+            <!-- FormSubmit control fields (https://formsubmit.co) -->
+            <input type="hidden" name="_subject" value="New ShikshaPal demo request" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true" />
+
             <div class="field-row">
               <div class="field">
                 <label for="fullName">Full Name<span class="req">*</span></label>
@@ -394,13 +404,14 @@
 
             <label class="consent">
               <input type="checkbox" id="consent" required />
-              <span>I agree to be contacted about ShikshaPal products and services. Read our <a href="#">Privacy Policy</a>.</span>
+              <span>I agree to be contacted about ShikshaPal products and services. Read our <a href="./privacy.html">Privacy Policy</a>.</span>
             </label>
 
             <div class="submit-row">
-              <button type="submit" class="btn btn-primary">Submit →</button>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Submit →</button>
               <span class="tiny">We respond within 1 business day.</span>
             </div>
+            <div class="form-error" id="formError" role="alert"></div>
           </form>
         </div>
 
@@ -420,7 +431,7 @@
 </section>
 
 <!-- ========== FOOTER ========== -->
-<footer class="footer" id="contact">
+<footer class="footer" id="about">
   <div class="container">
     <div class="grid">
       <div>
@@ -433,7 +444,7 @@
           <a href="mailto:contact@shikshapal.com" style="color:#dee3ee">contact@shikshapal.com</a><br/>
           <a href="tel:+919056229395" style="color:#dee3ee">+91-9056229395</a>
         </p>
-        <a href="#" class="footer-cta">💬 Chat with us on WhatsApp</a>
+        <a href="https://wa.me/919353160648" target="_blank" rel="noopener" class="footer-cta">💬 Chat with us on WhatsApp</a>
         <a href="#form" class="footer-cta">🎬 Get a Free Demo</a>
       </div>
       <div>
@@ -458,9 +469,9 @@
       <div>
         <h5>Legal</h5>
         <ul>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Security / GDPR</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="./terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="./privacy.html">Security / GDPR</a></li>
+          <li><a href="./privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
@@ -485,24 +496,47 @@
   document.querySelectorAll('#mobileNav a').forEach(a => a.addEventListener('click', closeMobileNav));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileNav(); });
 
-  function handleSubmit(e){
+  const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/contact@shikshapal.com';
+
+  async function handleSubmit(e){
     e.preventDefault();
     const form = document.getElementById('leadForm');
+    const btn = document.getElementById('submitBtn');
+    const errBox = document.getElementById('formError');
 
-    // Basic HTML5 validation
     if(!form.checkValidity()){
       form.reportValidity();
       return false;
     }
 
-    // Collect values (for real integration, POST to your backend here)
-    const data = Object.fromEntries(new FormData(form).entries());
-    console.log('ShikshaPal lead:', data);
+    errBox.classList.remove('on');
+    errBox.textContent = '';
+    const originalLabel = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
 
-    // Show success state
-    document.getElementById('form-body').style.display = 'none';
-    document.getElementById('thanks').classList.add('on');
-    window.scrollTo({ top: document.getElementById('form').offsetTop - 40, behavior: 'smooth' });
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch(FORMSUBMIT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const json = await res.json().catch(() => ({}));
+      if(!res.ok || json.success === 'false' || json.success === false){
+        throw new Error(json.message || 'Submission failed. Please try again or email contact@shikshapal.com directly.');
+      }
+
+      document.getElementById('form-body').style.display = 'none';
+      document.getElementById('thanks').classList.add('on');
+      window.scrollTo({ top: document.getElementById('form').offsetTop - 40, behavior: 'smooth' });
+    } catch(err){
+      btn.disabled = false;
+      btn.textContent = originalLabel;
+      errBox.textContent = err.message || 'Something went wrong. Please try again.';
+      errBox.classList.add('on');
+    }
     return false;
   }
 </script>
