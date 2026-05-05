@@ -4,7 +4,128 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ShikshaPal — AI-Powered Learning for India</title>
-<meta name="description" content="ShikshaPal is an AI-powered learning copilot that personalizes education for every student — helping them achieve true concept mastery." />
+<meta name="description" content="ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools, focused on CBSE and NCERT-aligned concept mastery." />
+
+<!-- SEO: canonical, social, and structured data -->
+<link rel="canonical" href="https://www.shikshapal.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:site_name" content="ShikshaPal" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ShikshaPal — AI-Powered Learning for India" />
+<meta property="og:description" content="ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools, focused on CBSE and NCERT-aligned concept mastery." />
+<meta property="og:url" content="https://www.shikshapal.com/" />
+<meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ShikshaPal — AI-Powered Learning for India" />
+<meta name="twitter:description" content="ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools, focused on CBSE and NCERT-aligned concept mastery." />
+<meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shikshapal.com/#organization",
+      "name": "ShikshaPal",
+      "url": "https://www.shikshapal.com/",
+      "logo": "https://www.shikshapal.com/assets/logo.png",
+      "email": "contact@shikshapal.com",
+      "telephone": "+91-9056229395",
+      "areaServed": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "description": "ShikshaPal builds AI-powered learning tools for Indian K-12 students, parents, teachers, and schools."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shikshapal.com/#website",
+      "url": "https://www.shikshapal.com/",
+      "name": "ShikshaPal",
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      },
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.shikshapal.com/#app",
+      "name": "ShikshaPal",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android, iOS, Web",
+      "url": "https://www.shikshapal.com/",
+      "description": "An AI-powered learning copilot for CBSE and NCERT-aligned K-12 learning in India.",
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      },
+      "audience": [
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "parents"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "schools"
+        }
+      ],
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "NCERT"
+        },
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "CBSE"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ShikshaPal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools. It helps students understand concepts with personalized, CBSE and NCERT-aligned explanations, practice, assessments, and progress insights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ShikshaPal aligned with CBSE and NCERT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ShikshaPal is built around CBSE and NCERT learning needs, with concept explanations, practice, assessments, and explainer content designed for Indian K-12 curriculum contexts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can use ShikshaPal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ShikshaPal is designed for students, parents, teachers, and schools. Students use it for doubt solving and concept mastery; teachers and schools use it for lesson planning, assessments, and learning analytics."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -783,6 +904,19 @@
   .why-card h4 { margin: 0 0 10px; font-size: 20px; font-weight: 700; }
   .why-card p { margin: 0; color: var(--muted); font-size: 15px; }
 
+
+  /* =========================================================
+     Answer Engine FAQ
+     ========================================================= */
+  .faq-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 960px) { .faq-grid { grid-template-columns: 1fr; } }
+  .faq-item {
+    background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 26px;
+    box-shadow: var(--shadow-sm);
+  }
+  .faq-item h3 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -.2px; }
+  .faq-item p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+
   /* =========================================================
      Final CTA
      ========================================================= */
@@ -959,14 +1093,14 @@
 <!-- ========== NAV ========== -->
 <header class="nav">
   <div class="container nav-inner">
-    <a href="#" class="logo" aria-label="ShikshaPal home">
+    <a href="./index.html" class="logo" aria-label="ShikshaPal home">
       <span class="mark" aria-hidden="true"><img src="./assets/logo.png" alt=""></span>
       <span><span class="dark-word">Shiksha</span><span class="light-word">Pal</span></span>
     </a>
     <nav>
       <ul class="menu">
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Products <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
+          <a href="#app" class="dd-trigger">Products <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
             <a class="dd-item" href="#app">
               <span class="dd-ic blue">
@@ -989,33 +1123,33 @@
           </div>
         </li>
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Solutions <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
+          <a href="#products" class="dd-trigger">Solutions <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#products">
               <span class="dd-ic blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5V21h16"/></svg>
               </span>
               <div class="dd-text"><div class="t">Academic Support</div><div class="s">Personalized learning for every student</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#products">
               <span class="dd-ic purple">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
               </span>
               <div class="dd-text"><div class="t">Technology Support</div><div class="s">Smart classrooms &amp; digital infrastructure</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#teachers">
               <span class="dd-ic orange">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
               </span>
               <div class="dd-text"><div class="t">Teacher Solution</div><div class="s">AI assistant for lesson planning &amp; grading</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#assessments">
               <span class="dd-ic red">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
               </span>
               <div class="dd-text"><div class="t">Assessment Solution</div><div class="s">Automated grading &amp; detailed insights</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <a class="dd-item" href="#analytics">
               <span class="dd-ic teal">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
               </span>
@@ -1024,7 +1158,7 @@
           </div>
         </li>
         <li class="has-dd">
-          <a href="#" class="dd-trigger">Resources <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
+          <a href="./explainer/index.html" class="dd-trigger">Resources <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a>
           <div class="dd" role="menu">
             <a class="dd-item" href="./explainer/index.html">
               <span class="dd-ic purple">
@@ -1032,36 +1166,36 @@
               </span>
               <div class="dd-text"><div class="t">Explainer</div><div class="s">Living textbooks for Class 6, 7 &amp; 8</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <span class="dd-item" aria-disabled="true">
               <span class="dd-ic blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/></svg>
               </span>
               <div class="dd-text"><div class="t">Blog</div><div class="s">News, product updates &amp; thought pieces</div></div>
-            </a>
-            <a class="dd-item" href="#">
+            </span>
+            <span class="dd-item" aria-disabled="true">
               <span class="dd-ic green">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
               </span>
               <div class="dd-text"><div class="t">Case Studies</div><div class="s">Real impact stories from partner schools</div></div>
-            </a>
-            <a class="dd-item" href="#">
+            </span>
+            <a class="dd-item" href="./help.html">
               <span class="dd-ic orange">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 1.7-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg>
               </span>
               <div class="dd-text"><div class="t">Help Center</div><div class="s">FAQs, guides &amp; quick answers</div></div>
             </a>
-            <a class="dd-item" href="#">
+            <span class="dd-item" aria-disabled="true">
               <span class="dd-ic purple">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4V4z"/><path d="M4 16a4 4 0 0 1 4-4h12"/></svg>
               </span>
               <div class="dd-text"><div class="t">Documentation</div><div class="s">Implementation &amp; integration guides</div></div>
-            </a>
-            <a class="dd-item" href="#">
+            </span>
+            <span class="dd-item" aria-disabled="true">
               <span class="dd-ic red">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
               </span>
               <div class="dd-text"><div class="t">Webinars</div><div class="s">Live sessions &amp; on-demand recordings</div></div>
-            </a>
+            </span>
           </div>
         </li>
         <li><a href="./index.html#about">About Us</a></li>
@@ -1103,11 +1237,11 @@
       <details>
         <summary>Solutions</summary>
         <ul>
-          <li><a href="#">Academic Support</a></li>
-          <li><a href="#">Technology Support</a></li>
-          <li><a href="#">Teacher Solution</a></li>
-          <li><a href="#">Assessment Solution</a></li>
-          <li><a href="#">Real-Time Progress Monitoring</a></li>
+          <li><a href="#products">Academic Support</a></li>
+          <li><a href="#products">Technology Support</a></li>
+          <li><a href="#teachers">Teacher Solution</a></li>
+          <li><a href="#assessments">Assessment Solution</a></li>
+          <li><a href="#analytics">Real-Time Progress Monitoring</a></li>
         </ul>
       </details>
     </li>
@@ -1116,11 +1250,11 @@
         <summary>Resources</summary>
         <ul>
           <li><a href="./explainer/index.html">Explainer</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Webinars</a></li>
+          <li><span>Blog</span></li>
+          <li><span>Case Studies</span></li>
+          <li><a href="./help.html">Help Center</a></li>
+          <li><span>Documentation</span></li>
+          <li><span>Webinars</span></li>
         </ul>
       </details>
     </li>
@@ -1571,16 +1705,16 @@
       <h3>Get started</h3>
       <p>Download the app, pick the model that fits your device, and start asking questions.</p>
       <div class="app-store-row">
-        <!-- TODO: replace href="#" with the live App Store URL once available -->
-        <a href="#" class="store-btn" aria-label="Download on the App Store">
+        <!-- TODO: replace with the live App Store URL once available -->
+        <span class="store-btn" role="link" aria-disabled="true" aria-label="Download on the App Store">
           <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
           <span class="lbl"><span class="top">Download on the</span><span class="bot">App Store</span></span>
-        </a>
-        <!-- TODO: replace href="#" with the live Google Play URL once available -->
-        <a href="#" class="store-btn" aria-label="Get it on Google Play">
+        </span>
+        <!-- TODO: replace with the live Google Play URL once available -->
+        <span class="store-btn" role="link" aria-disabled="true" aria-label="Get it on Google Play">
           <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.4.34-.6.84-.6 1.43V20.18c0 .58.2 1.07.6 1.4l9.66-9.59zm10.45 8.6L17.4 7.66 5.92 1.05c-.39-.22-.77-.31-1.13-.27l9.26 10.22zm5.6 1.7c1.04-.59 1.04-2.05 0-2.66l-2.6-1.5L13.4 12l3.65 3.46zm-5.6.94l-9.26 10.27c.36.04.74-.04 1.13-.27L17.4 16.34z"/></svg>
           <span class="lbl"><span class="top">Get it on</span><span class="bot">Google Play</span></span>
-        </a>
+        </span>
       </div>
     </div>
 
@@ -1631,6 +1765,31 @@
   </div>
 </section>
 
+<!-- ========== ANSWER ENGINE FAQ ========== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Quick Answers</span>
+      <h2>ShikshaPal for CBSE and NCERT Learning</h2>
+      <p>Short answers for students, parents, teachers, and schools evaluating AI-powered learning support in India.</p>
+    </div>
+    <div class="faq-grid">
+      <article class="faq-item">
+        <h3>What is ShikshaPal?</h3>
+        <p>ShikshaPal is an AI-powered learning copilot for Indian K-12 education. It helps students understand concepts, practice questions, clear doubts, and track progress with support for parents, teachers, and schools.</p>
+      </article>
+      <article class="faq-item">
+        <h3>Is ShikshaPal aligned with CBSE and NCERT?</h3>
+        <p>Yes. ShikshaPal focuses on CBSE and NCERT-aligned learning, including concept explanations, adaptive practice, assessment support, and explainer lessons for middle-school students.</p>
+      </article>
+      <article class="faq-item">
+        <h3>Who is ShikshaPal for?</h3>
+        <p>ShikshaPal is built for students who need concept clarity, parents who want safe AI help, teachers who need planning and grading support, and schools that want learning analytics.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ========== FINAL CTA ========== -->
 <div class="container" id="cta">
   <section class="final-cta">
@@ -1673,27 +1832,27 @@
         <h5>Company</h5>
         <ul>
           <li><a href="./index.html#about">About Us</a></li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><span>Career</span></li>
+          <li><span>Blog</span></li>
         </ul>
       </div>
       <div>
         <h5>Features</h5>
         <ul>
-          <li><a href="#">Solutions</a></li>
-          <li><a href="#">Academic Support</a></li>
-          <li><a href="#">Technology Support</a></li>
-          <li><a href="#">Teacher Solution</a></li>
-          <li><a href="#">Assessment Solution</a></li>
-          <li><a href="#">Real-Time Progress Monitoring</a></li>
+          <li><a href="#products">Solutions</a></li>
+          <li><a href="#products">Academic Support</a></li>
+          <li><a href="#products">Technology Support</a></li>
+          <li><a href="#teachers">Teacher Solution</a></li>
+          <li><a href="#assessments">Assessment Solution</a></li>
+          <li><a href="#analytics">Real-Time Progress Monitoring</a></li>
         </ul>
       </div>
       <div>
         <h5>Legal</h5>
         <ul>
-          <li><a href="#">Terms &amp; Conditions</a></li>
-          <li><a href="#">Security / GDPR</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="./terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="./privacy.html">Security / GDPR</a></li>
+          <li><a href="./privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
