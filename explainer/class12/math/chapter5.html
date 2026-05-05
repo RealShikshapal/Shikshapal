@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuity and Differentiability — Class 12 Math · ShikshaPal</title>
+  <meta name="description" content="Continuity and differentiability are the gatekeepers of calculus.">
+  <!-- SEO: canonical, social, and structured data -->
+  <link rel="canonical" href="https://www.shikshapal.com/explainer/class12/math/chapter5.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:site_name" content="ShikshaPal" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Continuity and Differentiability — Class 12 Math · ShikshaPal" />
+  <meta property="og:description" content="Continuity and differentiability are the gatekeepers of calculus." />
+  <meta property="og:url" content="https://www.shikshapal.com/explainer/class12/math/chapter5.html" />
+  <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Continuity and Differentiability — Class 12 Math · ShikshaPal" />
+  <meta name="twitter:description" content="Continuity and differentiability are the gatekeepers of calculus." />
+  <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.shikshapal.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Explainer",
+          "item": "https://www.shikshapal.com/explainer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Class 12",
+          "item": "https://www.shikshapal.com/explainer/class12/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Math",
+          "item": "https://www.shikshapal.com/explainer/class12/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Continuity and Differentiability",
+          "item": "https://www.shikshapal.com/explainer/class12/math/chapter5.html"
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter5.html#learning-resource",
+      "name": "Continuity and Differentiability — Class 12 Math · ShikshaPal",
+      "description": "Continuity and differentiability are the gatekeepers of calculus.",
+      "url": "https://www.shikshapal.com/explainer/class12/math/chapter5.html",
+      "inLanguage": "en-IN",
+      "learningResourceType": "Explainer lesson",
+      "educationalLevel": "Class 12",
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "NCERT"
+        },
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "CBSE"
+        }
+      ],
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
+</head>
+<body class="explainer-v2 subj-math">
+  <div class="exp-topbar"><div class="inner"><a href="../../index.html" aria-label="Back to ShikshaPal Explainer"><span aria-hidden="true">←</span><span>Back to ShikshaPal Explainer</span></a><span class="crumbs">Class 12 / Math</span></div></div>
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+  <header class="exp-brandbar"><div class="inner"><a href="../../../index.html" class="exp-brand"><span class="mark"><img src="../../../assets/logo.png" alt=""></span><span>Shiksha<span class="light-word">Pal</span></span></a><div class="exp-context"><a href="../index.html">Class 12</a><span class="dot">·</span><a href="index.html" class="pill">Math</a></div><button class="exp-hamburger" aria-label="Open chapter list" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
+  <div class="exp-overlay" aria-hidden="true"></div>
+  <div class="exp-shell"><aside class="exp-sidebar" aria-label="Chapter list"><div class="sb-close"><span class="sb-title">Class 12 · Math</span><button class="x" aria-label="Close" type="button">×</button></div><p class="sb-title">13 Lessons · CBSE/NCERT</p><ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">Relations and Functions</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Inverse Trigonometric Functions</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">Matrices</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Determinants</span></a></li>
+        <li><a href="chapter5.html" class="active"><span class="num">05</span><span class="title">Continuity and Differentiability</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">Application of Derivatives</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Integrals</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Application of Integrals</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">Differential Equations</span></a></li>
+        <li><a href="chapter10.html"><span class="num">10</span><span class="title">Vector Algebra</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Three-Dimensional Geometry</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Linear Programming</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Probability</span></a></li>
+      </ol></aside>
+    <main class="exp-main">
+      <header class="exp-hero"><span class="eyebrow">Class 12 · Math</span><h1>Continuity and Differentiability</h1><p class="lede">Continuity and differentiability are the gatekeepers of calculus.</p></header>
+      <section class="hook-box"><div class="hook-label">Feynman Lens</div><p>Start with the simplest version: this lesson is about <strong>Continuity and Differentiability</strong>. If you can explain the core idea to a friend using everyday language, examples, and one clear reason why it matters, you have moved from memorising to understanding.</p></section>
+        <p>Continuity and differentiability are the gatekeepers of calculus. A function is <strong>continuous</strong> if its graph has no breaks, jumps, or holes; a function is <strong>differentiable</strong> if we can draw a tangent line at every point—meaning the derivative exists everywhere. This chapter formalizes these intuitive ideas, introduces new classes of powerful functions (exponentials and logarithms), and explores the intricate relationship between continuity and differentiability. Understanding these concepts is essential for the applications of calculus in chapter-06-application-of-derivatives, chapter-07-integrals, and beyond.</p>
+        <h2 id="understanding-continuity">Understanding Continuity</h2>
+        <p><strong>Intuitive Definition</strong>: A function f is continuous at point x = a if the graph has no break, jump, or hole at a—you could draw it without lifting your pencil.</p>
+        <p><strong>Formal Definition</strong>: f is continuous at x = a if:</p>
+        <ol>
+          <li>f(a) is defined</li>
+          <li>lim(x→a) f(x) exists</li>
+          <li>lim(x→a) f(x) = f(a)</li>
+        </ol>
+        <p>In other words, the limit as you approach a equals the function value at a.</p>
+        <p><strong>Left and right continuity</strong>: If lim(x→a⁻) f(x) = f(a), f is left-continuous. If lim(x→a⁺) f(x) = f(a), f is right-continuous. A function is continuous at a if it's both left and right continuous.</p>
+        <h2 id="types-of-discontinuities">Types of Discontinuities</h2>
+        <ul>
+          <li><strong>Removable discontinuity</strong>: A hole in the graph; the limit exists but f(a) is undefined or doesn't equal the limit. Example: f(x) = (x² - 1)/(x - 1) at x = 1 (can be "fixed" by redefining f(1) = 2)</li>
+          <li><strong>Jump discontinuity</strong>: The left and right limits exist but differ. Example: the floor function at integers</li>
+          <li><strong>Infinite discontinuity</strong>: The function approaches ±∞ as x approaches a. Example: f(x) = 1/x at x = 0</li>
+        </ul>
+        <h2 id="building-from-class-11">Building from Class 11</h2>
+        <p>In Class 11, you computed derivatives of polynomial and trigonometric functions using the limit definition. This chapter reveals that differentiability requires continuity first: <strong>if a function is differentiable at a point, it must be continuous there</strong>. The converse is false—continuous functions need not be differentiable (sharp corners, cusps).</p>
+        <h2 id="introducing-new-functions-exponential-and-logarithmic">Introducing New Functions: Exponential and Logarithmic</h2>
+        <h3 id="exponential-functions">Exponential Functions</h3>
+        <p>f(x) = aˣ (where a &gt; 0, a ≠ 1) grows exponentially. The natural exponential f(x) = eˣ is special: its derivative equals itself!</p>
+        <ul>
+          <li><strong>Derivative</strong>: d/dx[eˣ] = eˣ</li>
+          <li><strong>Continuity</strong>: eˣ is continuous everywhere</li>
+          <li><strong>Properties</strong>: e⁰ = 1, eˣ → ∞ as x → ∞, eˣ → 0 as x → -∞</li>
+          <li><strong>Inverse</strong>: The natural logarithm ln(x) is the inverse of eˣ</li>
+        </ul>
+        <h3 id="logarithmic-functions">Logarithmic Functions</h3>
+        <p>f(x) = log_a(x) (where a &gt; 0, a ≠ 1) is the inverse of aˣ. The natural logarithm f(x) = ln(x) is particularly important:</p>
+        <ul>
+          <li><strong>Derivative</strong>: d/dx[ln(x)] = 1/x</li>
+          <li><strong>Continuity</strong>: ln(x) is continuous for x &gt; 0</li>
+          <li><strong>Domain</strong>: Only defined for x &gt; 0</li>
+          <li><strong>Properties</strong>: ln(1) = 0, ln(xy) = ln(x) + ln(y), ln(eˣ) = x</li>
+        </ul>
+        <h3 id="relationship-between-e-and-ln">Relationship Between e and ln</h3>
+        <p>The exponential and logarithmic functions are inverses:</p>
+        <ul>
+          <li>e^(ln(x)) = x for all x &gt; 0</li>
+          <li>ln(eˣ) = x for all x ∈ ℝ</li>
+        </ul>
+        <h2 id="understanding-differentiability">Understanding Differentiability</h2>
+        <p><strong>Definition</strong>: f is differentiable at x = a if the derivative f'(a) = lim(h→0) [f(a+h) - f(a)]/h exists (as a finite number).</p>
+        <p><strong>Geometric meaning</strong>: The function has a well-defined tangent line with slope f'(a) at point (a, f(a)). There are no sharp corners or cusps.</p>
+        <p><strong>Theorem</strong>: If f is differentiable at a, then f is continuous at a. (Differentiability implies continuity, but not vice versa.)</p>
+        <h3 id="example-of-continuity-without-differentiability">Example of Continuity Without Differentiability</h3>
+        <p>f(x) = |x| is continuous at x = 0 but not differentiable there:</p>
+        <ul>
+          <li>Left derivative: lim(h→0⁻) |h|/h = -1</li>
+          <li>Right derivative: lim(h→0⁺) |h|/h = 1</li>
+          <li>They don't match, so f'(0) doesn't exist</li>
+        </ul>
+        <h2 id="derivatives-of-new-functions">Derivatives of New Functions</h2>
+        <p>Using the chain rule and the derivatives of exponential/logarithmic functions:</p>
+        <ul>
+          <li>d/dx[aˣ] = aˣ · ln(a)</li>
+          <li>d/dx[log_a(x)] = 1/(x · ln(a))</li>
+          <li>d/dx[ln(f(x))] = f'(x)/f(x) (logarithmic differentiation)</li>
+        </ul>
+        <p><strong>Logarithmic differentiation</strong> is powerful for products and quotients: If y = (x+1)²(x-2)³, take ln(y) = 2ln(x+1) + 3ln(x-2), then differentiate to find y'.</p>
+        <h2 id="connections-to-other-topics">Connections to Other Topics</h2>
+        <ul>
+          <li>chapter-01-relations-and-functions: Functions must be continuous to have well-behaved inverses</li>
+          <li>chapter-02-inverse-trigonometric-functions: Continuity and differentiability of inverse trig functions</li>
+          <li>chapter-06-application-of-derivatives: Uses differentiability to find maxima, minima, and rates of change</li>
+          <li>chapter-07-integrals: Continuous functions on closed intervals are integrable</li>
+        </ul>
+        <h2 id="socratic-questions">Socratic Questions</h2>
+        <ol>
+          <li>Consider the function f(x) = |x - 1|. Is it continuous at x = 1? Is it differentiable at x = 1? Why or why not? What does the graph look like at that point?</li>
+        </ol>
+        <ol>
+          <li>Explain why every differentiable function must be continuous, but not every continuous function is differentiable. Can you sketch a function that is continuous but has a point where it's not differentiable?</li>
+        </ol>
+        <ol>
+          <li>The derivative of eˣ is eˣ itself. Why is this property unique and so important? How does this compare to the derivatives of other exponential functions like 2ˣ?</li>
+        </ol>
+        <ol>
+          <li>In logarithmic differentiation, we take ln(y) instead of differentiating y directly. Why is this technique useful for products and quotients? What advantage does it provide?</li>
+        </ol>
+        <ol>
+          <li>If a function f is continuous on a closed interval [a, b] and differentiable on the open interval (a, b), what does the Mean Value Theorem guarantee about the derivative somewhere in (a, b)? Why is this powerful?</li>
+        </ol>
+        <hr />
+      <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Continuity and Differentiability?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Continuity and Differentiability is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Intuitive Definition?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A function f is continuous at point x = a if the graph has no break, jump, or hole at a—you could draw it without lifting your pencil.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Formal Definition?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">f is continuous at x = a if:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Left and right continuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">If lim(x→a⁻) f(x) = f(a), f is left-continuous. If lim(x→a⁺) f(x) = f(a), f is right-continuous. A function is continuous at a if it&#x27;s both left and right continuous.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Removable discontinuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A hole in the graph; the limit exists but f(a) is undefined or doesn&#x27;t equal the limit. Example: f(x) = (x² - 1)/(x - 1) at x = 1 (can be &quot;fixed&quot; by redefining f(1) = 2)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Jump discontinuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The left and right limits exist but differ. Example: the floor function at integers</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Infinite discontinuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The function approaches ±∞ as x approaches a. Example: f(x) = 1/x at x = 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Continuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">eˣ is continuous everywhere</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Properties?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">e⁰ = 1, eˣ → ∞ as x → ∞, eˣ → 0 as x → -∞</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Inverse?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The natural logarithm ln(x) is the inverse of eˣ</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Domain?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Only defined for x &gt; 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Definition?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">f is differentiable at x = a if the derivative f&#x27;(a) = lim(h→0) [f(a+h) - f(a)]/h exists (as a finite number).</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Geometric meaning?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The function has a well-defined tangent line with slope f&#x27;(a) at point (a, f(a)). There are no sharp corners or cusps.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Theorem?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">If f is differentiable at a, then f is continuous at a. (Differentiability implies continuity, but not vice versa.)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Logarithmic differentiation?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">is powerful for products and quotients:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Understanding Continuity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Intuitive Definition: A function f is continuous at point x = a if the graph has no break, jump, or hole at a—you could draw it without lifting your pencil. Formal Definition: f is continuous at x = a if: 1.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Types of Discontinuities?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- Removable discontinuity: A hole in the graph; the limit exists but f(a) is undefined or doesn&#x27;t equal the limit.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Building from Class 11?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">In Class 11, you computed derivatives of polynomial and trigonometric functions using the limit definition.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Exponential Functions?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">f(x) = aˣ (where a &gt; 0, a ≠ 1) grows exponentially. The natural exponential f(x) = eˣ is special: its derivative equals itself!</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Logarithmic Functions?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">f(x) = log_a(x) (where a &gt; 0, a ≠ 1) is the inverse of aˣ.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Relationship Between e and ln?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The exponential and logarithmic functions are inverses: - e^(ln(x)) = x for all x &gt; 0 - ln(eˣ) = x for all x ∈ ℝ</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Understanding Differentiability?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Definition: f is differentiable at x = a if the derivative f&#x27;(a) = lim(h→0) [f(a+h) - f(a)]/h exists (as a finite number).</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Example of Continuity Without Differentiability?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">f(x) = |x| is continuous at x = 0 but not differentiable there: - Left derivative: lim(h→0⁻) |h|/h = -1 - Right derivative: lim(h→0⁺) |h|/h = 1 - They don&#x27;t match, so f&#x27;(0) doesn&#x27;t exist</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Derivatives of New Functions?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Using the chain rule and the derivatives of exponential/logarithmic functions: - d/dx[aˣ] = aˣ · ln(a) - d/dx[log_a(x)] = 1/(x · ln(a)) - d/dx[ln(f(x))] = f&#x27;(x)/f(x) (logarithmic differentiation) Logarithmic…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Connections to Other Topics?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- chapter-01-relations-and-functions: Functions must be continuous to have well-behaved inverses - chapter-02-inverse-trigonometric-functions: Continuity and differentiability of inverse trig functions -…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Derivative?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">d/dx[eˣ] = eˣ</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is e^(ln(x)) = x for all x &gt;?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">e^(ln(x)) = x for all x &gt; 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ln(eˣ) = x for all x ∈?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">ln(eˣ) = x for all x ∈ ℝ</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Left derivative?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">lim(h→0⁻) |h|/h = -1</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Right derivative?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">lim(h→0⁺) |h|/h = 1</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is They don&#x27;t match, so f&#x27;(0) doesn&#x27;t exist?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">They don&#x27;t match, so f&#x27;(0) doesn&#x27;t exist</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is d/dx[aˣ] = aˣ · ln(a)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">d/dx[aˣ] = aˣ · ln(a)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is d/dx[log_a(x)] = 1/(x · ln(a))?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">d/dx[log_a(x)] = 1/(x · ln(a))</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is d/dx[ln(f(x))] = f&#x27;(x)/f(x) (logarithmic differentiation)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">d/dx[ln(f(x))] = f&#x27;(x)/f(x) (logarithmic differentiation)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-01-relations-and-functions?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Functions must be continuous to have well-behaved inverses</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-02-inverse-trigonometric-functions?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Continuity and differentiability of inverse trig functions</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-06-application-of-derivatives?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Uses differentiability to find maxima, minima, and rates of change</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-07-integrals?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Continuous functions on closed intervals are integrable</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Understanding Continuity matters?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Understanding Continuity matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Types of Discontinuities matters?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Types of Discontinuities matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
+            </div>
+          </div>
+        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+      <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Consider the function f(x) = |x - 1|. Is it continuous at x = 1? Is it differentiable at x = 1? Why or why not? What does the graph look like at that point?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Explain why every differentiable function must be continuous, but not every continuous function is differentiable. Can you sketch a function that is continuous but has a point where it&#x27;s not differentiable?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">The derivative of eˣ is eˣ itself. Why is this property unique and so important? How does this compare to the derivatives of other exponential functions like 2ˣ?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">In logarithmic differentiation, we take ln(y) instead of differentiating y directly. Why is this technique useful for products and quotients? What advantage does it provide?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">If a function f is continuous on a closed interval [a, b] and differentiable on the open interval (a, b), what does the Mean Value Theorem guarantee about the derivative somewhere in (a, b)? Why is this powerful?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Continuity and Differentiability?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Intuitive Definition?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Formal Definition?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Left and right continuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Removable discontinuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Jump discontinuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Infinite discontinuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Continuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Properties?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Inverse?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Domain?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Definition?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Geometric meaning?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Theorem?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Logarithmic differentiation?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Understanding Continuity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Types of Discontinuities?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Building from Class 11?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Exponential Functions?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Logarithmic Functions?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Relationship Between e and ln?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Understanding Differentiability?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Example of Continuity Without Differentiability?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Derivatives of New Functions?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Connections to Other Topics?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Derivative?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand e^(ln(x)) = x for all x &gt;?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ln(eˣ) = x for all x ∈?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Left derivative?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Right derivative?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand They don&#x27;t match, so f&#x27;(0) doesn&#x27;t exist?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand d/dx[aˣ] = aˣ · ln(a)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand d/dx[log_a(x)] = 1/(x · ln(a))?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand d/dx[ln(f(x))] = f&#x27;(x)/f(x) (logarithmic differentiation)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand chapter-01-relations-and-functions?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
+        </div></section>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter4.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Determinants</span></a><a href="chapter6.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Application of Derivatives</span></a></nav>
+    </main>
+  </div>
+  <footer class="exp-footer">Class 12 · Math · ShikshaPal Explainer</footer>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
+</body>
+</html>

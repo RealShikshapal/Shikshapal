@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrals — Class 12 Math · ShikshaPal</title>
+  <meta name="description" content="If derivatives answer &quot;How fast is something changing?&quot;, integrals answer &quot;What is the total amount accumulated?&quot; An integral is the reverse of a…">
+  <!-- SEO: canonical, social, and structured data -->
+  <link rel="canonical" href="https://www.shikshapal.com/explainer/class12/math/chapter7.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:site_name" content="ShikshaPal" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Integrals — Class 12 Math · ShikshaPal" />
+  <meta property="og:description" content="If derivatives answer &quot;How fast is something changing?&quot;, integrals answer &quot;What is the total amount accumulated?&quot; An integral is the reverse of a…" />
+  <meta property="og:url" content="https://www.shikshapal.com/explainer/class12/math/chapter7.html" />
+  <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Integrals — Class 12 Math · ShikshaPal" />
+  <meta name="twitter:description" content="If derivatives answer &quot;How fast is something changing?&quot;, integrals answer &quot;What is the total amount accumulated?&quot; An integral is the reverse of a…" />
+  <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.shikshapal.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Explainer",
+          "item": "https://www.shikshapal.com/explainer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Class 12",
+          "item": "https://www.shikshapal.com/explainer/class12/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Math",
+          "item": "https://www.shikshapal.com/explainer/class12/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Integrals",
+          "item": "https://www.shikshapal.com/explainer/class12/math/chapter7.html"
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter7.html#learning-resource",
+      "name": "Integrals — Class 12 Math · ShikshaPal",
+      "description": "If derivatives answer \"How fast is something changing?\", integrals answer \"What is the total amount accumulated?\" An integral is the reverse of a…",
+      "url": "https://www.shikshapal.com/explainer/class12/math/chapter7.html",
+      "inLanguage": "en-IN",
+      "learningResourceType": "Explainer lesson",
+      "educationalLevel": "Class 12",
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "NCERT"
+        },
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "CBSE"
+        }
+      ],
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
+</head>
+<body class="explainer-v2 subj-math">
+  <div class="exp-topbar"><div class="inner"><a href="../../index.html" aria-label="Back to ShikshaPal Explainer"><span aria-hidden="true">←</span><span>Back to ShikshaPal Explainer</span></a><span class="crumbs">Class 12 / Math</span></div></div>
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+  <header class="exp-brandbar"><div class="inner"><a href="../../../index.html" class="exp-brand"><span class="mark"><img src="../../../assets/logo.png" alt=""></span><span>Shiksha<span class="light-word">Pal</span></span></a><div class="exp-context"><a href="../index.html">Class 12</a><span class="dot">·</span><a href="index.html" class="pill">Math</a></div><button class="exp-hamburger" aria-label="Open chapter list" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
+  <div class="exp-overlay" aria-hidden="true"></div>
+  <div class="exp-shell"><aside class="exp-sidebar" aria-label="Chapter list"><div class="sb-close"><span class="sb-title">Class 12 · Math</span><button class="x" aria-label="Close" type="button">×</button></div><p class="sb-title">13 Lessons · CBSE/NCERT</p><ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">Relations and Functions</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Inverse Trigonometric Functions</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">Matrices</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Determinants</span></a></li>
+        <li><a href="chapter5.html"><span class="num">05</span><span class="title">Continuity and Differentiability</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">Application of Derivatives</span></a></li>
+        <li><a href="chapter7.html" class="active"><span class="num">07</span><span class="title">Integrals</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Application of Integrals</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">Differential Equations</span></a></li>
+        <li><a href="chapter10.html"><span class="num">10</span><span class="title">Vector Algebra</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Three-Dimensional Geometry</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Linear Programming</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Probability</span></a></li>
+      </ol></aside>
+    <main class="exp-main">
+      <header class="exp-hero"><span class="eyebrow">Class 12 · Math</span><h1>Integrals</h1><p class="lede">If derivatives answer &quot;How fast is something changing?&quot;, integrals answer &quot;What is the total amount accumulated?&quot; An integral is the reverse of a…</p></header>
+      <section class="hook-box"><div class="hook-label">Feynman Lens</div><p>Start with the simplest version: this lesson is about <strong>Integrals</strong>. If you can explain the core idea to a friend using everyday language, examples, and one clear reason why it matters, you have moved from memorising to understanding.</p></section>
+        <p>If derivatives answer "How fast is something changing?", integrals answer "What is the total amount accumulated?" An integral is the reverse of a derivative—the inverse operation. While a derivative takes a function apart to find its rate of change, an integral puts pieces together to find the accumulated total. Think of it this way: if the derivative tells you the instantaneous velocity, the integral tells you the total distance traveled. This chapter introduces <strong>antiderivatives</strong> (the reverse of derivatives), develops the techniques of <strong>indefinite integration</strong> (finding families of antiderivatives), and establishes the <strong>Fundamental Theorem of Calculus</strong>, which connects integration to chapter-06-application-of-derivatives.</p>
+        <h2 id="understanding-antiderivatives-and-indefinite-integrals">Understanding Antiderivatives and Indefinite Integrals</h2>
+        <p>An <strong>antiderivative</strong> of f(x) is a function F(x) such that F'(x) = f(x). For example:</p>
+        <ul>
+          <li>Antiderivative of 2x is x² (since d/dx[x²] = 2x)</li>
+          <li>Antiderivative of cos(x) is sin(x) (since d/dx[sin(x)] = cos(x))</li>
+        </ul>
+        <p>But here's the key insight: if F(x) is an antiderivative of f(x), so is F(x) + C for any constant C:</p>
+        <ul>
+          <li>d/dx[x² + 5] = 2x</li>
+          <li>d/dx[x² - 100] = 2x</li>
+          <li>Both are antiderivatives of 2x</li>
+        </ul>
+        <p>The <strong>indefinite integral</strong> of f(x), denoted ∫f(x)dx, represents the family of all antiderivatives:</p>
+        <pre><code>∫f(x)dx = F(x) + C</code></pre>
+        <p>where F'(x) = f(x) and C is the <strong>constant of integration</strong>.</p>
+        <p><strong>Why the constant?</strong> Differentiating any constant gives zero, so we lose information about constant terms when taking derivatives. Integration recovers them as an arbitrary constant.</p>
+        <h2 id="building-from-class-11-and-chapter-5">Building from Class 11 and Chapter 5</h2>
+        <p>In Class 11, you computed derivatives using the power rule, product rule, chain rule, and more. Now we reverse those processes. From chapter-05-continuity-and-differentiability, you know that continuous functions have derivatives. Now we learn that differentiable functions have antiderivatives (though finding them analytically isn't always possible).</p>
+        <h2 id="basic-integration-formulas">Basic Integration Formulas</h2>
+        <p>These reverse the differentiation rules you learned:</p>
+        <p><strong>Power Rule</strong>: ∫xⁿ dx = (xⁿ⁺¹)/(n+1) + C (for n ≠ -1)</p>
+        <p><strong>Special case</strong>: ∫(1/x) dx = ln|x| + C</p>
+        <p><strong>Exponential</strong>:</p>
+        <ul>
+          <li>∫eˣ dx = eˣ + C</li>
+          <li>∫aˣ dx = aˣ/ln(a) + C</li>
+        </ul>
+        <p><strong>Trigonometric</strong>:</p>
+        <ul>
+          <li>∫sin(x) dx = -cos(x) + C</li>
+          <li>∫cos(x) dx = sin(x) + C</li>
+          <li>∫sec²(x) dx = tan(x) + C</li>
+        </ul>
+        <p><strong>Inverse Trig</strong> (from chapter-02-inverse-trigonometric-functions):</p>
+        <ul>
+          <li>∫1/√(1 - x²) dx = arcsin(x) + C</li>
+          <li>∫1/(1 + x²) dx = arctan(x) + C</li>
+        </ul>
+        <h2 id="integration-techniques">Integration Techniques</h2>
+        <h3 id="substitution-u-substitution">Substitution (u-substitution)</h3>
+        <p>For integrals of the form ∫f(g(x))·g'(x) dx, substitute u = g(x), du = g'(x) dx:</p>
+        <pre><code>∫f(u) du = F(u) + C = F(g(x)) + C</code></pre>
+        <p>This reverses the chain rule.</p>
+        <p><strong>Example</strong>: ∫x·e^(x²) dx</p>
+        <ul>
+          <li>Let u = x², du = 2x dx, so x dx = du/2</li>
+          <li>∫x·e^(x²) dx = ∫e^u · (du/2) = (1/2)e^u + C = (1/2)e^(x²) + C</li>
+        </ul>
+        <h3 id="integration-by-parts">Integration by Parts</h3>
+        <p>For products, use ∫u dv = uv - ∫v du. Choose u and dv strategically using the <strong>LIATE rule</strong> (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential functions take priority as u).</p>
+        <p><strong>Example</strong>: ∫x·sin(x) dx</p>
+        <ul>
+          <li>u = x, dv = sin(x) dx</li>
+          <li>du = dx, v = -cos(x)</li>
+          <li>∫x·sin(x) dx = -x·cos(x) - ∫(-cos(x)) dx = -x·cos(x) + sin(x) + C</li>
+        </ul>
+        <h3 id="partial-fractions-for-rational-functions">Partial Fractions (for rational functions)</h3>
+        <p>Express a rational function as a sum of simpler fractions to integrate term-by-term.</p>
+        <h2 id="the-fundamental-theorem-of-calculus">The Fundamental Theorem of Calculus</h2>
+        <p>This theorem is the bridge between indefinite and definite integrals:</p>
+        <p><strong>Theorem</strong>: If f is continuous on [a, b] and F is an antiderivative of f, then:</p>
+        <pre><code>∫ₐᵇ f(x) dx = F(b) - F(a)</code></pre>
+        <p><strong>Meaning</strong>: The definite integral (area under the curve from a to b) equals the change in any antiderivative from a to b.</p>
+        <p><strong>Notation</strong>: We write F(b) - F(a) as F(x)|ₐᵇ</p>
+        <p><strong>Example</strong>: ∫₀¹ x² dx = (x³/3)|₀¹ = 1/3 - 0 = 1/3</p>
+        <h2 id="definite-integrals-and-area">Definite Integrals and Area</h2>
+        <p>The <strong>definite integral</strong> ∫ₐᵇ f(x) dx represents the signed area between the curve f(x) and the x-axis from x = a to x = b:</p>
+        <ul>
+          <li>If f(x) &gt; 0: area is positive</li>
+          <li>If f(x) &lt; 0: area is negative</li>
+          <li>Net area accounts for both</li>
+        </ul>
+        <p>To find total area regardless of sign: ∫ₐᵇ |f(x)| dx</p>
+        <h2 id="connections-to-other-topics">Connections to Other Topics</h2>
+        <ul>
+          <li>chapter-06-application-of-derivatives: Inverse operation; recovery from rates of change</li>
+          <li>chapter-08-application-of-integrals: Using integrals to calculate areas and volumes</li>
+          <li>chapter-09-differential-equations: Integration solves differential equations</li>
+          <li>chapter-05-continuity-and-differentiability: Continuity ensures integrability</li>
+        </ul>
+        <h2 id="socratic-questions">Socratic Questions</h2>
+        <ol>
+          <li>Why must we include a constant of integration C when finding the indefinite integral ∫f(x) dx, but not when computing the definite integral ∫ₐᵇ f(x) dx? What happens to the constant when you subtract F(a) from F(b)?</li>
+        </ol>
+        <ol>
+          <li>The chain rule for derivatives says d/dx[f(g(x))] = f'(g(x))·g'(x). How does u-substitution reverse this rule? Why do we need the factor g'(x) present in the integrand for substitution to work cleanly?</li>
+        </ol>
+        <ol>
+          <li>Explain the geometric meaning of the Fundamental Theorem of Calculus using a concrete example. How does computing F(b) - F(a) relate to finding the area under a curve?</li>
+        </ol>
+        <ol>
+          <li>For the integral ∫x·eˣ dx, would you choose u = x and dv = eˣ dx, or u = eˣ and dv = x dx? Why does the LIATE rule guide this choice, and how would the other choice lead to difficulties?</li>
+        </ol>
+        <ol>
+          <li>If you want to find the total area enclosed between two curves f(x) and g(x) from x = a to x = b, how does the integral ∫ₐᵇ |f(x) - g(x)| dx capture this? What would happen if you forgot the absolute value?</li>
+        </ol>
+        <hr />
+      <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Integrals?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Integrals is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Why the constant??</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Differentiating any constant gives zero, so we lose information about constant terms when taking derivatives. Integration recovers them as an arbitrary constant.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Power Rule?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫xⁿ dx = (xⁿ⁺¹)/(n+1) + C (for n ≠ -1)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Special case?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫(1/x) dx = ln|x| + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Trigonometric?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- ∫sin(x) dx = -cos(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Inverse Trig?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">(from chapter-02-inverse-trigonometric-functions):</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Theorem?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">If f is continuous on [a, b] and F is an antiderivative of f, then:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Meaning?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The definite integral (area under the curve from a to b) equals the change in any antiderivative from a to b.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Notation?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">We write F(b) - F(a) as F(x)|ₐᵇ</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Example?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫₀¹ x² dx = (x³/3)|₀¹ = 1/3 - 0 = 1/3</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Understanding Antiderivatives and Indefinite Integrals?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">An antiderivative of f(x) is a function F(x) such that F&#x27;(x) = f(x).</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Building from Class 11 and Chapter 5?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">In Class 11, you computed derivatives using the power rule, product rule, chain rule, and more. Now we reverse those processes.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Basic Integration Formulas?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">These reverse the differentiation rules you learned: Power Rule: ∫xⁿ dx = (xⁿ⁺¹)/(n+1) + C (for n ≠ -1) Special case: ∫(1/x) dx = ln|x| + C Exponential: - ∫eˣ dx = eˣ + C - ∫aˣ dx = aˣ/ln(a) + C Trigonometric: -…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Substitution (u-substitution)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For integrals of the form ∫f(g(x))·g&#x27;(x) dx, substitute u = g(x), du = g&#x27;(x) dx: ∫f(u) du = F(u) + C = F(g(x)) + C This reverses the chain rule.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Integration by Parts?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For products, use ∫u dv = uv - ∫v du. Choose u and dv strategically using the LIATE rule (Logarithmic, Inverse trig, Algebraic, Trigonometric, Exponential functions take priority as u).</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Partial Fractions (for rational functions)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Express a rational function as a sum of simpler fractions to integrate term-by-term.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of The Fundamental Theorem of Calculus?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This theorem is the bridge between indefinite and definite integrals: Theorem: If f is continuous on [a, b] and F is an antiderivative of f, then: ∫ₐᵇ f(x) dx = F(b) - F(a) Meaning: The definite integral (area under…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Definite Integrals and Area?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The definite integral ∫ₐᵇ f(x) dx represents the signed area between the curve f(x) and the x-axis from x = a to x = b: - If f(x) &gt; 0: area is positive - If f(x) &lt; 0: area is negative - Net area accounts for both To…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Connections to Other Topics?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- chapter-06-application-of-derivatives: Inverse operation; recovery from rates of change - chapter-08-application-of-integrals: Using integrals to calculate areas and volumes - chapter-09-differential-equations:…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Antiderivative of 2x is x² (since d/dx[x²]?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Antiderivative of 2x is x² (since d/dx[x²] = 2x)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Antiderivative of cos(x) is sin(x) (since d/dx[sin(x)]?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Antiderivative of cos(x) is sin(x) (since d/dx[sin(x)] = cos(x))</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is d/dx[x² - 100] = 2x?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">d/dx[x² - 100] = 2x</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Both are antiderivatives of 2x?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Both are antiderivatives of 2x</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫aˣ dx = aˣ/ln(a) + C?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫aˣ dx = aˣ/ln(a) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫sin(x) dx = -cos(x) + C?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫sin(x) dx = -cos(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫cos(x) dx = sin(x) + C?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫cos(x) dx = sin(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫sec²(x) dx = tan(x) + C?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫sec²(x) dx = tan(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫1/√(1 - x²) dx = arcsin(x) +?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫1/√(1 - x²) dx = arcsin(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫1/(1 + x²) dx = arctan(x) +?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫1/(1 + x²) dx = arctan(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Let u = x², du = 2x?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Let u = x², du = 2x dx, so x dx = du/2</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫x·e^(x²) dx = ∫e^u · (du/2) =?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫x·e^(x²) dx = ∫e^u · (du/2) = (1/2)e^u + C = (1/2)e^(x²) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is u = x, dv = sin(x) dx?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">u = x, dv = sin(x) dx</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is du = dx, v = -cos(x)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">du = dx, v = -cos(x)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ∫x·sin(x) dx = -x·cos(x) - ∫(-cos(x)) dx?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">∫x·sin(x) dx = -x·cos(x) - ∫(-cos(x)) dx = -x·cos(x) + sin(x) + C</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is If f(x) &gt; 0?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">area is positive</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Net area accounts for both?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Net area accounts for both</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-06-application-of-derivatives?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Inverse operation; recovery from rates of change</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-08-application-of-integrals?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Using integrals to calculate areas and volumes</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-09-differential-equations?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Integration solves differential equations</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-05-continuity-and-differentiability?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Continuity ensures integrability</div></div>
+            </div>
+          </div>
+        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+      <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Why must we include a constant of integration C when finding the indefinite integral ∫f(x) dx, but not when computing the definite integral ∫ₐᵇ f(x) dx? What happens to the constant when you subtract F(a) from F(b)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">The chain rule for derivatives says d/dx[f(g(x))] = f&#x27;(g(x))·g&#x27;(x). How does u-substitution reverse this rule? Why do we need the factor g&#x27;(x) present in the integrand for substitution to work cleanly?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Explain the geometric meaning of the Fundamental Theorem of Calculus using a concrete example. How does computing F(b) - F(a) relate to finding the area under a curve?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">For the integral ∫x·eˣ dx, would you choose u = x and dv = eˣ dx, or u = eˣ and dv = x dx? Why does the LIATE rule guide this choice, and how would the other choice lead to difficulties?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">If you want to find the total area enclosed between two curves f(x) and g(x) from x = a to x = b, how does the integral ∫ₐᵇ |f(x) - g(x)| dx capture this? What would happen if you forgot the absolute value?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Integrals?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Why the constant??</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Power Rule?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Special case?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Trigonometric?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Inverse Trig?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Theorem?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Meaning?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Notation?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Example?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Understanding Antiderivatives and Indefinite Integrals?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Building from Class 11 and Chapter 5?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Basic Integration Formulas?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Substitution (u-substitution)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Integration by Parts?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Partial Fractions (for rational functions)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand The Fundamental Theorem of Calculus?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Definite Integrals and Area?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Connections to Other Topics?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Antiderivative of 2x is x² (since d/dx[x²]?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Antiderivative of cos(x) is sin(x) (since d/dx[sin(x)]?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand d/dx[x² - 100] = 2x?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Both are antiderivatives of 2x?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫aˣ dx = aˣ/ln(a) + C?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫sin(x) dx = -cos(x) + C?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫cos(x) dx = sin(x) + C?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫sec²(x) dx = tan(x) + C?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫1/√(1 - x²) dx = arcsin(x) +?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫1/(1 + x²) dx = arctan(x) +?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Let u = x², du = 2x?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫x·e^(x²) dx = ∫e^u · (du/2) =?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand u = x, dv = sin(x) dx?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand du = dx, v = -cos(x)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand ∫x·sin(x) dx = -x·cos(x) - ∫(-cos(x)) dx?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand If f(x) &gt; 0?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
+        </div></section>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter6.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Application of Derivatives</span></a><a href="chapter8.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Application of Integrals</span></a></nav>
+    </main>
+  </div>
+  <footer class="exp-footer">Class 12 · Math · ShikshaPal Explainer</footer>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
+</body>
+</html>

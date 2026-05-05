@@ -56,6 +56,8 @@ body.explainer-v2.subj-science { --subj: var(--teal);    --subj-bg: var(--teal-b
 body.explainer-v2.subj-math    { --subj: var(--purple);  --subj-bg: var(--purple-bg); }
 body.explainer-v2.subj-social  { --subj: var(--orange);  --subj-bg: var(--orange-bg); }
 body.explainer-v2.subj-english { --subj: var(--primary); --subj-bg: var(--primary-100); }
+body.explainer-v2.subj-physics { --subj: var(--teal);    --subj-bg: var(--teal-bg); }
+body.explainer-v2.subj-chemistry { --subj: var(--orange); --subj-bg: var(--orange-bg); }
 
 body.explainer-v2 *,
 body.explainer-v2 *::before,

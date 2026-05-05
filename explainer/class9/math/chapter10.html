@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heron&#x27;s Formula — Class 9 Math · ShikshaPal</title>
+  <meta name="description" content="Heron&#x27;s formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…">
+  <!-- SEO: canonical, social, and structured data -->
+  <link rel="canonical" href="https://www.shikshapal.com/explainer/class9/math/chapter10.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:site_name" content="ShikshaPal" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Heron&#x27;s Formula — Class 9 Math · ShikshaPal" />
+  <meta property="og:description" content="Heron&#x27;s formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…" />
+  <meta property="og:url" content="https://www.shikshapal.com/explainer/class9/math/chapter10.html" />
+  <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Heron&#x27;s Formula — Class 9 Math · ShikshaPal" />
+  <meta name="twitter:description" content="Heron&#x27;s formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…" />
+  <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.shikshapal.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Explainer",
+          "item": "https://www.shikshapal.com/explainer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Class 9",
+          "item": "https://www.shikshapal.com/explainer/class9/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Math",
+          "item": "https://www.shikshapal.com/explainer/class9/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Heron's Formula",
+          "item": "https://www.shikshapal.com/explainer/class9/math/chapter10.html"
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter10.html#learning-resource",
+      "name": "Heron's Formula — Class 9 Math · ShikshaPal",
+      "description": "Heron's formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…",
+      "url": "https://www.shikshapal.com/explainer/class9/math/chapter10.html",
+      "inLanguage": "en-IN",
+      "learningResourceType": "Explainer lesson",
+      "educationalLevel": "Class 9",
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "NCERT"
+        },
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "CBSE"
+        }
+      ],
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
+</head>
+<body class="explainer-v2 subj-math">
+  <div class="exp-topbar"><div class="inner"><a href="../../index.html" aria-label="Back to ShikshaPal Explainer"><span aria-hidden="true">←</span><span>Back to ShikshaPal Explainer</span></a><span class="crumbs">Class 9 / Math</span></div></div>
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+  <header class="exp-brandbar"><div class="inner"><a href="../../../index.html" class="exp-brand"><span class="mark"><img src="../../../assets/logo.png" alt=""></span><span>Shiksha<span class="light-word">Pal</span></span></a><div class="exp-context"><a href="../index.html">Class 9</a><span class="dot">·</span><a href="index.html" class="pill">Math</a></div><button class="exp-hamburger" aria-label="Open chapter list" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
+  <div class="exp-overlay" aria-hidden="true"></div>
+  <div class="exp-shell"><aside class="exp-sidebar" aria-label="Chapter list"><div class="sb-close"><span class="sb-title">Class 9 · Math</span><button class="x" aria-label="Close" type="button">×</button></div><p class="sb-title">12 Lessons · CBSE/NCERT</p><ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">Number Systems</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Polynomials</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">Coordinate Geometry</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Linear Equations in Two Variables</span></a></li>
+        <li><a href="chapter5.html"><span class="num">05</span><span class="title">Introduction to Euclid&#x27;s Geometry</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">Lines and Angles</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Triangles</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Quadrilaterals</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">Circles</span></a></li>
+        <li><a href="chapter10.html" class="active"><span class="num">10</span><span class="title">Heron&#x27;s Formula</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Surface Areas and Volumes</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Statistics</span></a></li>
+      </ol></aside>
+    <main class="exp-main">
+      <header class="exp-hero"><span class="eyebrow">Class 9 · Math</span><h1>Heron&#x27;s Formula</h1><p class="lede">Heron&#x27;s formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…</p></header>
+      <section class="hook-box"><div class="hook-label">Feynman Lens</div><p>Start with the simplest version: this lesson is about <strong>Heron&#x27;s Formula</strong>. If you can explain the core idea to a friend using everyday language, examples, and one clear reason why it matters, you have moved from memorising to understanding.</p></section>
+        <p>Heron's formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find the height. Named after Hero of Alexandria (a mathematician and engineer), this formula works for any triangle and is especially useful when the height is difficult to measure. This chapter presents Heron's formula, explains why it works, and shows how to apply it to real-world surveying and land measurement problems. Understanding this formula reveals deep connections between different mathematical approaches to the same problem.</p>
+        <h2 id="the-challenge-finding-area-without-height">The Challenge: Finding Area Without Height</h2>
+        <p>The standard triangle area formula is:</p>
+        <p><strong>Area = (1/2) × base × height</strong></p>
+        <p>This formula is simple but has a limitation: you need to know the height. In many practical situations—especially land surveying—you can easily measure the three side lengths of a triangular plot of land but measuring the perpendicular height is difficult or impossible.</p>
+        <p><strong>Real-world example</strong>: A triangular field has sides 40 m, 32 m, and 24 m. How can we find the area without measuring the height?</p>
+        <p>This is where Heron's formula provides an elegant solution.</p>
+        <h2 id="heron-s-formula-the-statement">Heron&#x27;s Formula: The Statement</h2>
+        <p><strong>Heron's Formula</strong>: For a triangle with sides a, b, and c:</p>
+        <p><strong>Area = √[s(s - a)(s - b)(s - c)]</strong></p>
+        <p>where <strong>s = (a + b + c)/2</strong> is the semi-perimeter (half the perimeter).</p>
+        <p><strong>Why "semi-perimeter"?</strong> The semi-perimeter is the perimeter divided by 2. It simplifies the formula's structure.</p>
+        <p><strong>Steps to find area</strong>:</p>
+        <ol>
+          <li>Find the semi-perimeter: s = (a + b + c)/2</li>
+          <li>Calculate the three factors: (s - a), (s - b), (s - c)</li>
+          <li>Multiply: s × (s - a) × (s - b) × (s - c)</li>
+          <li>Take the square root</li>
+        </ol>
+        <h2 id="worked-example-the-triangular-field">Worked Example: The Triangular Field</h2>
+        <p><strong>Problem</strong>: A triangular field has sides a = 40 m, b = 32 m, and c = 24 m. Find the area.</p>
+        <p><strong>Solution</strong>:</p>
+        <p>- s - a = 48 - 40 = 8 - s - b = 48 - 32 = 16 - s - c = 48 - 24 = 24</p>
+        <ol>
+          <li>Semi-perimeter: s = (40 + 32 + 24)/2 = 96/2 = 48 m</li>
+          <li>Factors:</li>
+          <li>Product: 48 × 8 × 16 × 24 = 147,456</li>
+          <li>Area = √147,456 ≈ 384 m²</li>
+        </ol>
+        <p><strong>Check</strong>: This triangular field covers about 384 square meters—quite large!</p>
+        <h2 id="why-heron-s-formula-works">Why Heron&#x27;s Formula Works</h2>
+        <p>The proof of Heron's formula uses coordinate geometry and algebra. Here's the intuition:</p>
+        <p>If you place the triangle in a coordinate system and use the distance formula, the area formula (1/2) × base × height can be rewritten using only the side lengths. After algebraic manipulation involving the semi-perimeter, you arrive at Heron's formula.</p>
+        <p><strong>Key insight</strong>: Different approaches to measuring area (height-based and side-based) lead to equivalent formulas—a beautiful demonstration of mathematical consistency.</p>
+        <h2 id="special-cases">Special Cases</h2>
+        <p><strong>Right triangle</strong>: For a right triangle with legs a and b and hypotenuse c = √(a² + b²):</p>
+        <ul>
+          <li>Heron's formula gives the same result as (1/2)ab</li>
+          <li>You can verify: Area = √[s(s - a)(s - b)(s - c)] = (1/2)ab</li>
+        </ul>
+        <p><strong>Equilateral triangle</strong>: For an equilateral triangle with side a:</p>
+        <ul>
+          <li>s = 3a/2</li>
+          <li>Area = √[(3a/2) × (a/2) × (a/2) × (a/2)] = (a²√3)/4</li>
+        </ul>
+        <p><strong>Isosceles triangle</strong>: For an isosceles triangle, Heron's formula simplifies nicely.</p>
+        <h2 id="advantages-of-heron-s-formula">Advantages of Heron&#x27;s Formula</h2>
+        <p><strong>Practical advantage</strong>: Requires only side lengths—no perpendicular measurements needed</p>
+        <p><strong>Computational advantage</strong>: Modern calculators make the arithmetic straightforward</p>
+        <p><strong>Theoretical advantage</strong>: Shows deep connections in mathematics—the same area can be found multiple ways</p>
+        <p><strong>Surveying advantage</strong>: Surveyors measure distances easily but measuring perpendicular heights is impractical in fields</p>
+        <h2 id="real-world-applications">Real-World Applications</h2>
+        <p><strong>Land surveying</strong>: When measuring a triangular property boundary, Heron's formula calculates area from just the three side measurements.</p>
+        <p><strong>Construction</strong>: Determining materials needed for triangular roof sections or concrete slabs.</p>
+        <p><strong>Environmental science</strong>: Measuring areas of triangular ecosystems or regions for conservation planning.</p>
+        <p><strong>Marine navigation</strong>: Calculating areas of triangular sea regions using coastal distance measurements.</p>
+        <h2 id="historical-context">Historical Context</h2>
+        <p>Heron of Alexandria (approximately 10 CE – 75 CE) was an ingenious mathematician and engineer who described this formula in his work on mensuration. While he may not have been the first to discover it, his systematic presentation made it widely known. The formula demonstrates how powerful algebraic insight can solve practical geometric problems.</p>
+        <h2 id="connecting-to-related-topics">Connecting to Related Topics</h2>
+        <p>Understanding Heron's formula prepares you for:</p>
+        <ul>
+          <li>chapter-11-surface-areas-and-volumes: Extended to pyramids and polyhedra</li>
+          <li>chapter-03-coordinate-geometry: The proof uses coordinate approaches</li>
+          <li>chapter-07-triangles: Understanding triangle properties aids application</li>
+        </ul>
+        <h2 id="key-formulas-and-theorems">Key Formulas and Theorems</h2>
+        <ul>
+          <li><strong>Heron's formula</strong>: Area = √[s(s - a)(s - b)(s - c)]</li>
+          <li><strong>Semi-perimeter</strong>: s = (a + b + c)/2</li>
+          <li><strong>Standard triangle area</strong>: Area = (1/2) × base × height</li>
+          <li><strong>Equilateral triangle area</strong>: Area = (a²√3)/4</li>
+          <li><strong>Right triangle area</strong>: Area = (1/2)ab (legs a and b)</li>
+        </ul>
+        <h2 id="socratic-questions">Socratic Questions</h2>
+        <ol>
+          <li>Heron's formula uses the semi-perimeter s = (a + b + c)/2. Why is the semi-perimeter the natural choice for this formula rather than the full perimeter?</li>
+        </ol>
+        <ol>
+          <li>The standard area formula requires height, but Heron's formula doesn't. Yet they give the same answer. What does this tell you about different mathematical representations of the same geometric property?</li>
+        </ol>
+        <ol>
+          <li>In Heron's formula, why must you take the square root at the end? What does the expression under the square root represent geometrically?</li>
+        </ol>
+        <ol>
+          <li>If you know only the three sides of a triangle and want to find its height, you could use Heron's formula to find area, then solve for height. Why might this be more practical than direct calculation?</li>
+        </ol>
+        <ol>
+          <li>Heron's formula involves four factors: s, (s - a), (s - b), (s - c). Why is the product of these specific four factors connected to the triangle's area?</li>
+        </ol>
+        <hr />
+      <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Area = (1/2) × base × height?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula is simple but has a limitation: you need to know the height. In many practical situations—especially land surveying—you can easily measure the three side lengths of a triangular plot of land but measuring th</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Real-world example?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A triangular field has sides 40 m, 32 m, and 24 m. How can we find the area without measuring the height?</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Heron&#x27;s Formula?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For a triangle with sides a, b, and c:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Area = √[s(s - a)(s - b)(s - c)]?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">where s = (a + b + c)/2 is the semi-perimeter (half the perimeter).</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Why &quot;semi-perimeter&quot;??</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">The semi-perimeter is the perimeter divided by 2. It simplifies the formula&#x27;s structure.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Steps to find area?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">1. Find the semi-perimeter: s = (a + b + c)/2</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Problem?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A triangular field has sides a = 40 m, b = 32 m, and c = 24 m. Find the area.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Solution?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">1. Semi-perimeter: s = (40 + 32 + 24)/2 = 96/2 = 48 m</div></div>
+            </div>
+          </div>
+        </div><div class="flashcard-counter">8 cards — click any card to flip</div></section>
+      <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Heron&#x27;s formula uses the semi-perimeter s = (a + b + c)/2. Why is the semi-perimeter the natural choice for this formula rather than the full perimeter?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact sentence and move on.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Reason from evidence and explain the idea in your own words.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore examples because only definitions matter.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the topic as isolated from the rest of the chapter.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. ShikshaPal-style learning asks you to reason from evidence, connect examples, and explain the idea in your own words." data-wrong="The best answer is B. The goal is not memorisation; it is reasoning clearly from examples and evidence."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">The standard area formula requires height, but Heron&#x27;s formula doesn&#x27;t. Yet they give the same answer. What does this tell you about different mathematical representations of the same geometric property?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact sentence and move on.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Reason from evidence and explain the idea in your own words.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore examples because only definitions matter.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the topic as isolated from the rest of the chapter.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. ShikshaPal-style learning asks you to reason from evidence, connect examples, and explain the idea in your own words." data-wrong="The best answer is B. The goal is not memorisation; it is reasoning clearly from examples and evidence."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">In Heron&#x27;s formula, why must you take the square root at the end? What does the expression under the square root represent geometrically?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact sentence and move on.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Reason from evidence and explain the idea in your own words.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore examples because only definitions matter.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the topic as isolated from the rest of the chapter.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. ShikshaPal-style learning asks you to reason from evidence, connect examples, and explain the idea in your own words." data-wrong="The best answer is B. The goal is not memorisation; it is reasoning clearly from examples and evidence."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">If you know only the three sides of a triangle and want to find its height, you could use Heron&#x27;s formula to find area, then solve for height. Why might this be more practical than direct calculation?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact sentence and move on.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Reason from evidence and explain the idea in your own words.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore examples because only definitions matter.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the topic as isolated from the rest of the chapter.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. ShikshaPal-style learning asks you to reason from evidence, connect examples, and explain the idea in your own words." data-wrong="The best answer is B. The goal is not memorisation; it is reasoning clearly from examples and evidence."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Heron&#x27;s formula involves four factors: s, (s - a), (s - b), (s - c). Why is the product of these specific four factors connected to the triangle&#x27;s area?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact sentence and move on.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Reason from evidence and explain the idea in your own words.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore examples because only definitions matter.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the topic as isolated from the rest of the chapter.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. ShikshaPal-style learning asks you to reason from evidence, connect examples, and explain the idea in your own words." data-wrong="The best answer is B. The goal is not memorisation; it is reasoning clearly from examples and evidence."></div>
+          </div>
+          <div class="mcq-score-bar"><span class="score-text">0 / 5</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
+        </div></section>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter9.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Circles</span></a><a href="chapter11.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Surface Areas and Volumes</span></a></nav>
+    </main>
+  </div>
+  <footer class="exp-footer">Class 9 · Math · ShikshaPal Explainer</footer>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
+</body>
+</html>

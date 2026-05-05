@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three-Dimensional Geometry — Class 12 Math · ShikshaPal</title>
+  <meta name="description" content="While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful.">
+  <!-- SEO: canonical, social, and structured data -->
+  <link rel="canonical" href="https://www.shikshapal.com/explainer/class12/math/chapter11.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:site_name" content="ShikshaPal" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Three-Dimensional Geometry — Class 12 Math · ShikshaPal" />
+  <meta property="og:description" content="While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful." />
+  <meta property="og:url" content="https://www.shikshapal.com/explainer/class12/math/chapter11.html" />
+  <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Three-Dimensional Geometry — Class 12 Math · ShikshaPal" />
+  <meta name="twitter:description" content="While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful." />
+  <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.shikshapal.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Explainer",
+          "item": "https://www.shikshapal.com/explainer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Class 12",
+          "item": "https://www.shikshapal.com/explainer/class12/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Math",
+          "item": "https://www.shikshapal.com/explainer/class12/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Three-Dimensional Geometry",
+          "item": "https://www.shikshapal.com/explainer/class12/math/chapter11.html"
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter11.html#learning-resource",
+      "name": "Three-Dimensional Geometry — Class 12 Math · ShikshaPal",
+      "description": "While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful.",
+      "url": "https://www.shikshapal.com/explainer/class12/math/chapter11.html",
+      "inLanguage": "en-IN",
+      "learningResourceType": "Explainer lesson",
+      "educationalLevel": "Class 12",
+      "educationalAlignment": [
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "NCERT"
+        },
+        {
+          "@type": "AlignmentObject",
+          "alignmentType": "educationalFramework",
+          "targetName": "CBSE"
+        }
+      ],
+      "publisher": {
+        "@id": "https://www.shikshapal.com/#organization"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
+</head>
+<body class="explainer-v2 subj-math">
+  <div class="exp-topbar"><div class="inner"><a href="../../index.html" aria-label="Back to ShikshaPal Explainer"><span aria-hidden="true">←</span><span>Back to ShikshaPal Explainer</span></a><span class="crumbs">Class 12 / Math</span></div></div>
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+  <header class="exp-brandbar"><div class="inner"><a href="../../../index.html" class="exp-brand"><span class="mark"><img src="../../../assets/logo.png" alt=""></span><span>Shiksha<span class="light-word">Pal</span></span></a><div class="exp-context"><a href="../index.html">Class 12</a><span class="dot">·</span><a href="index.html" class="pill">Math</a></div><button class="exp-hamburger" aria-label="Open chapter list" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div></header>
+  <div class="exp-overlay" aria-hidden="true"></div>
+  <div class="exp-shell"><aside class="exp-sidebar" aria-label="Chapter list"><div class="sb-close"><span class="sb-title">Class 12 · Math</span><button class="x" aria-label="Close" type="button">×</button></div><p class="sb-title">13 Lessons · CBSE/NCERT</p><ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">Relations and Functions</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Inverse Trigonometric Functions</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">Matrices</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Determinants</span></a></li>
+        <li><a href="chapter5.html"><span class="num">05</span><span class="title">Continuity and Differentiability</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">Application of Derivatives</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Integrals</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Application of Integrals</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">Differential Equations</span></a></li>
+        <li><a href="chapter10.html"><span class="num">10</span><span class="title">Vector Algebra</span></a></li>
+        <li><a href="chapter11.html" class="active"><span class="num">11</span><span class="title">Three-Dimensional Geometry</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Linear Programming</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Probability</span></a></li>
+      </ol></aside>
+    <main class="exp-main">
+      <header class="exp-hero"><span class="eyebrow">Class 12 · Math</span><h1>Three-Dimensional Geometry</h1><p class="lede">While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful.</p></header>
+      <section class="hook-box"><div class="hook-label">Feynman Lens</div><p>Start with the simplest version: this lesson is about <strong>Three-Dimensional Geometry</strong>. If you can explain the core idea to a friend using everyday language, examples, and one clear reason why it matters, you have moved from memorising to understanding.</p></section>
+        <p>While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful. Rather than memorizing formulas, we use vectors to describe lines and planes as dynamic objects. A line becomes a starting point plus a direction; a plane becomes a point with a normal vector. This vector approach unifies concepts, simplifies calculations, and extends naturally to higher dimensions. Understanding 3D geometry is essential for physics (motion, fields), engineering (design, optimization), and advanced mathematics.</p>
+        <h2 id="direction-cosines-and-direction-ratios">Direction Cosines and Direction Ratios</h2>
+        <p>For a line in 3D, <strong>direction ratios</strong> (a, b, c) indicate the direction. They're proportional to components of a direction vector.</p>
+        <p><strong>Direction cosines</strong> are the cosines of angles the line makes with coordinate axes:</p>
+        <pre><code>cos(α) = a/√(a² + b² + c²)
+cos(β) = b/√(a² + b² + c²)
+cos(γ) = c/√(a² + b² + c²)</code></pre>
+        <p><strong>Important property</strong>: cos²(α) + cos²(β) + cos²(γ) = 1 (sum of squares of direction cosines equals 1)</p>
+        <p><strong>Building from Class 11</strong>: Class 11 introduced these concepts; now we use them to describe lines and planes vectorially.</p>
+        <h2 id="equations-of-a-line-in-3d">Equations of a Line in 3D</h2>
+        <p>A line passing through point P(x₀, y₀, z₀) with direction ratios (a, b, c) can be expressed:</p>
+        <p><strong>Vector form</strong>: <strong>r</strong> = <strong>r₀</strong> + t<strong>d</strong>, where <strong>r₀</strong> = (x₀, y₀, z₀), <strong>d</strong> = (a, b, c), and t is a parameter</p>
+        <p><strong>Parametric form</strong>:</p>
+        <pre><code>x = x₀ + at
+y = y₀ + bt
+z = z₀ + ct</code></pre>
+        <p><strong>Symmetric form</strong>: (x - x₀)/a = (y - y₀)/b = (z - z₀)/c (if a, b, c ≠ 0)</p>
+        <p><strong>Example</strong>: Line through (1, 2, 3) with direction (2, -1, 4):</p>
+        <ul>
+          <li>Vector: <strong>r</strong> = (1, 2, 3) + t(2, -1, 4)</li>
+          <li>Parametric: x = 1 + 2t, y = 2 - t, z = 3 + 4t</li>
+          <li>Symmetric: (x - 1)/2 = (y - 2)/(-1) = (z - 3)/4</li>
+        </ul>
+        <h2 id="equations-of-a-plane-in-3d">Equations of a Plane in 3D</h2>
+        <p>A plane is determined by a point P(x₀, y₀, z₀) and a normal vector <strong>n</strong> = (A, B, C) perpendicular to the plane.</p>
+        <p><strong>Vector form</strong>: <strong>n</strong> · (<strong>r</strong> - <strong>r₀</strong>) = 0</p>
+        <p><strong>Cartesian form</strong>: A(x - x₀) + B(y - y₀) + C(z - z₀) = 0</p>
+        <p><strong>General form</strong>: Ax + By + Cz + D = 0 (expanding and simplifying)</p>
+        <p><strong>Normal vector</strong>: From the equation Ax + By + Cz + D = 0, the normal is <strong>n</strong> = (A, B, C)</p>
+        <p><strong>Example</strong>: Plane through (1, 2, 3) with normal (2, -1, 4):</p>
+        <ul>
+          <li>2(x - 1) - 1(y - 2) + 4(z - 3) = 0</li>
+          <li>2x - y + 4z - 12 = 0</li>
+        </ul>
+        <h2 id="angle-between-two-lines">Angle Between Two Lines</h2>
+        <p>For lines with direction vectors <strong>d₁</strong> = (a₁, b₁, c₁) and <strong>d₂</strong> = (a₂, b₂, c₂):</p>
+        <pre><code>cos(θ) = |**d₁** · **d₂**| / (||**d₁**|| ||**d₂**||)</code></pre>
+        <p>(Use absolute value to get acute angle)</p>
+        <p><strong>Perpendicularity</strong>: Lines are perpendicular if <strong>d₁</strong> · <strong>d₂</strong> = 0</p>
+        <p><strong>Parallelism</strong>: Lines are parallel if <strong>d₁</strong> and <strong>d₂</strong> are proportional (same direction)</p>
+        <h2 id="angle-between-two-planes">Angle Between Two Planes</h2>
+        <p>For planes with normal vectors <strong>n₁</strong> = (A₁, B₁, C₁) and <strong>n₂</strong> = (A₂, B₂, C₂):</p>
+        <pre><code>cos(θ) = |**n₁** · **n₂**| / (||**n₁**|| ||**n₂**||)</code></pre>
+        <p><strong>Perpendicularity</strong>: Planes are perpendicular if <strong>n₁</strong> · <strong>n₂</strong> = 0</p>
+        <p><strong>Parallelism</strong>: Planes are parallel if <strong>n₁</strong> and <strong>n₂</strong> are proportional</p>
+        <h2 id="distance-calculations">Distance Calculations</h2>
+        <p><strong>Distance from point P to line</strong> (through Q with direction <strong>d</strong>):</p>
+        <pre><code>Distance = ||(**QP**) × **d**|| / ||**d**||</code></pre>
+        <p>(Use cross product to find perpendicular distance)</p>
+        <p><strong>Distance from point P to plane</strong> Ax + By + Cz + D = 0:</p>
+        <pre><code>Distance = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)</code></pre>
+        <p>(Numerator is plane equation evaluated at P; denominator normalizes the normal vector)</p>
+        <p><strong>Distance between two parallel planes</strong> A₁x + B₁y + C₁z + D₁ = 0 and A₂x + B₂y + C₂z + D₂ = 0 (with proportional normals):</p>
+        <p>Pick any point on the first plane, use point-to-plane distance formula.</p>
+        <h2 id="line-plane-intersection">Line-Plane Intersection</h2>
+        <p>A line <strong>r</strong> = <strong>r₀</strong> + t<strong>d</strong> intersects plane Ax + By + Cz + D = 0 when:</p>
+        <pre><code>A(x₀ + ta) + B(y₀ + tb) + C(z₀ + tc) + D = 0</code></pre>
+        <p>Solve for t; if solution exists, find intersection point by substituting t back.</p>
+        <p><strong>Special cases</strong>:</p>
+        <ul>
+          <li>No solution if <strong>d</strong> ⊥ <strong>n</strong> (line parallel to plane)</li>
+          <li>Infinitely many solutions if line lies in plane</li>
+        </ul>
+        <h2 id="connections-to-other-topics">Connections to Other Topics</h2>
+        <ul>
+          <li>chapter-10-vector-algebra: Vectors describe directions and normals; dot and cross products for angles and distances</li>
+          <li>chapter-06-application-of-derivatives: Tangent lines and planes use similar vector concepts</li>
+          <li>chapter-08-application-of-integrals: Line and surface integrals over curves and planes in 3D</li>
+          <li>chapter-04-determinants: Determinants in scalar triple product for volume</li>
+        </ul>
+        <h2 id="socratic-questions">Socratic Questions</h2>
+        <ol>
+          <li>Explain why a line in 3D requires both a point and a direction vector, while a line in 2D can be specified by a single equation like y = mx + b. What extra information does the direction vector provide in 3D?</li>
+        </ol>
+        <ol>
+          <li>For a plane with equation Ax + By + Cz + D = 0, the normal vector is <strong>n</strong> = (A, B, C). Why must the normal be perpendicular to the plane? How does this relate to the dot product of the normal with any vector lying in the plane?</li>
+        </ol>
+        <ol>
+          <li>Two planes are parallel if their normals are proportional. Two planes are perpendicular if their normals are perpendicular (dot product = 0). Explain why these conditions make geometric sense.</li>
+        </ol>
+        <ol>
+          <li>To find the distance from a point P to a plane, we use the formula |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²). Why is the denominator √(A² + B² + C²) present? What does it represent, and why is the division necessary?</li>
+        </ol>
+        <ol>
+          <li>A line is given parametrically as <strong>r</strong> = (1, 2, 3) + t(2, -1, 4). How would you find where this line intersects the plane 2x + y - z + 5 = 0? What would it mean geometrically if you found no solution?</li>
+        </ol>
+        <hr />
+      <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Three-Dimensional Geometry?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Three-Dimensional Geometry is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Direction cosines?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">are the cosines of angles the line makes with coordinate axes:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Important property?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">cos²(α) + cos²(β) + cos²(γ) = 1 (sum of squares of direction cosines equals 1)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Building from Class 11?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Class 11 introduced these concepts; now we use them to describe lines and planes vectorially.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Vector form?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">r = r₀ + td, where r₀ = (x₀, y₀, z₀), d = (a, b, c), and t is a parameter</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Symmetric form?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">(x - x₀)/a = (y - y₀)/b = (z - z₀)/c (if a, b, c ≠ 0)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Example?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Line through (1, 2, 3) with direction (2, -1, 4):</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Cartesian form?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A(x - x₀) + B(y - y₀) + C(z - z₀) = 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is General form?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Ax + By + Cz + D = 0 (expanding and simplifying)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Normal vector?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">From the equation Ax + By + Cz + D = 0, the normal is n = (A, B, C)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Perpendicularity?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Lines are perpendicular if d₁ · d₂ = 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Parallelism?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Lines are parallel if d₁ and d₂ are proportional (same direction)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Distance from point P to line?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">(through Q with direction d):</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Distance from point P to plane?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Ax + By + Cz + D = 0:</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Distance between two parallel planes?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A₁x + B₁y + C₁z + D₁ = 0 and A₂x + B₂y + C₂z + D₂ = 0 (with proportional normals):</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Special cases?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- No solution if d ⊥ n (line parallel to plane)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Direction Cosines and Direction Ratios?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For a line in 3D, direction ratios (a, b, c) indicate the direction. They&#x27;re proportional to components of a direction vector.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Equations of a Line in 3D?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A line passing through point P(x₀, y₀, z₀) with direction ratios (a, b, c) can be expressed: Vector form: r = r₀ + td, where r₀ = (x₀, y₀, z₀), d = (a, b, c), and t is a parameter Parametric form: x = x₀ + at y = y₀ +…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Equations of a Plane in 3D?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A plane is determined by a point P(x₀, y₀, z₀) and a normal vector n = (A, B, C) perpendicular to the plane.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Angle Between Two Lines?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For lines with direction vectors d₁ = (a₁, b₁, c₁) and d₂ = (a₂, b₂, c₂): cos(θ) = |d₁ · d₂| / (||d₁|| ||d₂||) (Use absolute value to get acute angle) Perpendicularity: Lines are perpendicular if d₁ · d₂ = 0…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Angle Between Two Planes?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">For planes with normal vectors n₁ = (A₁, B₁, C₁) and n₂ = (A₂, B₂, C₂): cos(θ) = |n₁ · n₂| / (||n₁|| ||n₂||) Perpendicularity: Planes are perpendicular if n₁ · n₂ = 0 Parallelism: Planes are parallel if n₁ and n₂ are…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Distance Calculations?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Distance from point P to line (through Q with direction d): Distance = ||(QP) × d|| / ||d|| (Use cross product to find perpendicular distance) Distance from point P to plane Ax + By + Cz + D = 0: Distance = |Ax₀ + By₀…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Line-Plane Intersection?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">A line r = r₀ + td intersects plane Ax + By + Cz + D = 0 when: A(x₀ + ta) + B(y₀ + tb) + C(z₀ + tc) + D = 0 Solve for t; if solution exists, find intersection point by substituting t back.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Connections to Other Topics?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">- chapter-10-vector-algebra: Vectors describe directions and normals; dot and cross products for angles and distances - chapter-06-application-of-derivatives: Tangent lines and planes use similar vector concepts -…</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Vector?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">r = (1, 2, 3) + t(2, -1, 4)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Parametric?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">x = 1 + 2t, y = 2 - t, z = 3 + 4t</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Symmetric?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">(x - 1)/2 = (y - 2)/(-1) = (z - 3)/4</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is 2(x - 1) - 1(y - 2)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">2(x - 1) - 1(y - 2) + 4(z - 3) = 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is 2x - y + 4z - 12?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">2x - y + 4z - 12 = 0</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is No solution if d ⊥ n (line?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">No solution if d ⊥ n (line parallel to plane)</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Infinitely many solutions if line lies in?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Infinitely many solutions if line lies in plane</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-10-vector-algebra?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Vectors describe directions and normals; dot and cross products for angles and distances</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-06-application-of-derivatives?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Tangent lines and planes use similar vector concepts</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-08-application-of-integrals?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Line and surface integrals over curves and planes in 3D</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-04-determinants?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">Determinants in scalar triple product for volume</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: cos(α) = a/√(a² + b² + c²) cos(β) = b/√(a² + b²?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: x = x₀ + at y = y₀ + bt z = z₀ + ct?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: cos(θ) = |d₁ · d₂| / (||d₁|| ||d₂||)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: cos(θ) = |n₁ · n₂| / (||n₁|| ||n₂||)?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
+            </div>
+          </div>
+          <div class="flashcard">
+            <div class="flashcard-inner">
+              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: Distance = ||(QP) × d|| / ||d||?</div><div class="fc-tap">tap to flip</div></div>
+              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
+            </div>
+          </div>
+        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+      <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Explain why a line in 3D requires both a point and a direction vector, while a line in 2D can be specified by a single equation like y = mx + b. What extra information does the direction vector provide in 3D?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">For a plane with equation Ax + By + Cz + D = 0, the normal vector is n = (A, B, C). Why must the normal be perpendicular to the plane? How does this relate to the dot product of the normal with any vector lying in the plane?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Two planes are parallel if their normals are proportional. Two planes are perpendicular if their normals are perpendicular (dot product = 0). Explain why these conditions make geometric sense.</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">To find the distance from a point P to a plane, we use the formula |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²). Why is the denominator √(A² + B² + C²) present? What does it represent, and why is the division necessary?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">A line is given parametrically as r = (1, 2, 3) + t(2, -1, 4). How would you find where this line intersects the plane 2x + y - z + 5 = 0? What would it mean geometrically if you found no solution?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Three-Dimensional Geometry?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Direction cosines?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Important property?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Building from Class 11?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Vector form?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Symmetric form?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Example?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Cartesian form?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand General form?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Normal vector?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Perpendicularity?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Parallelism?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Distance from point P to line?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Distance from point P to plane?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Distance between two parallel planes?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Special cases?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Direction Cosines and Direction Ratios?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Equations of a Line in 3D?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Equations of a Plane in 3D?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Angle Between Two Lines?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Angle Between Two Planes?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Distance Calculations?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Line-Plane Intersection?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Connections to Other Topics?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Vector?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Parametric?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Symmetric?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand 2(x - 1) - 1(y - 2)?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand 2x - y + 4z - 12?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand No solution if d ⊥ n (line?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand Infinitely many solutions if line lies in?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand chapter-10-vector-algebra?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand chapter-06-application-of-derivatives?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand chapter-08-application-of-integrals?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-item" data-answer="B">
+            <div class="mcq-stem">Which approach best shows that you understand chapter-04-determinants?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
+          </div>
+          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
+        </div></section>
+      <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter10.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Vector Algebra</span></a><a href="chapter12.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Linear Programming</span></a></nav>
+    </main>
+  </div>
+  <footer class="exp-footer">Class 12 · Math · ShikshaPal Explainer</footer>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
+</body>
+</html>
