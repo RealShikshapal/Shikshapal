@@ -1,320 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 10: Proportional Reasoning 2 | Math Portal</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proportional Reasoning — 2 — Class 8 Math · ShikshaPal</title>
+  <meta name="description" content="Speed, Time, Distance & Inverse Proportions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-brand">Learning Portal</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Dashboard</a></li>
-                <li><a href="index.html">Math</a></li>
-                <li><a href="../science/index.html">Science</a></li>
-                <li><a href="../social/index.html">Social</a></li>
-                <li><a href="../english/index.html">English</a></li>
-            </ul>
-            <div class="nav-pills">
-                <span class="nav-pill active" data-subject="math">Math</span>
-            </div>
-            <button class="theme-toggle" id="themeToggle">🌙</button>
-        </div>
-    </nav>
+<body class="explainer-v2 subj-math">
 
-    <div class="container">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb">
-            <a href="../index.html">Home</a> → <a href="index.html">Math</a> → Chapter 10
-        </div>
-
-        <!-- Page Header -->
-        <div class="page-header">
-            <h1>Chapter 10: Proportional Reasoning — 2</h1>
-            <p class="subtitle">Speed, Time, Distance & Inverse Proportions</p>
-        </div>
-
-        <!-- Content -->
-        <div class="content">
-            <!-- HOOK BLOCK -->
-            <div class="content-block hook-block">
-                <div class="block-label">Hook: The Motorcycle Puzzle</div>
-                <div class="hook-question">
-                    <p>Your father takes 3 hours to drive from Lucknow to Kanpur at 30 km/h. Now he wants to use a faster route on his motorcycle at 60 km/h. Will it take 2 hours? Or 1.5 hours? Or something else?</p>
-                    <p style="margin-top: 15px; font-weight: 600;">The Hidden Pattern:</p>
-                    <p>When you go faster, you reach sooner. But HOW much sooner? Is the relationship the same as direct proportion, where "faster = shorter time" just like "more apples = more cost"? Or is something different happening here?</p>
-                </div>
-            </div>
-
-            <!-- FEYNMAN BRIDGE -->
-            <div class="content-block bridge-block">
-                <div class="block-label">The Feynman Bridge: Two Kinds of Proportion</div>
-                <p>You've learned about direct proportion: when one quantity doubles, the other doubles too. But now you'll discover something remarkable: sometimes when one quantity doubles, the OTHER quantity is HALVED. This is called <strong>inverse proportion</strong>.</p>
-                <div class="analogy" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 20px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>The Key Insight:</strong></p>
-                    <p>In some relationships, one quantity changing causes the other to change in the OPPOSITE direction, but by the same factor. When speed doubles, time halves. When workers double, days halve. When tap count doubles, filling time halves.</p>
-                    <p style="margin-top: 10px;"><strong>The Mathematical Truth:</strong> In inverse proportion, the PRODUCT of the two quantities is always constant.</p>
-                    <p style="margin-top: 5px; font-family: 'JetBrains Mono';">speed × time = distance (constant!)</p>
-                </div>
-                <p><strong>Why does this matter?</strong> Understanding inverse proportion unlocks solutions to countless real-world problems: how long will food last if more people arrive? How long will the job take with fewer workers?</p>
-            </div>
-
-            <!-- LOGIC LADDER 1 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 1: Speed-Time-Distance Triangle</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>The Universal Relationship</strong>
-                            <p>Distance = Speed × Time</p>
-                            <p style="margin-top: 8px;">Therefore: Speed × Time = Distance (constant for a fixed route)</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Example: Fixed Distance of 90 km</strong>
-                            <p><strong>At 5 km/h (walking):</strong> Time = 90 ÷ 5 = 18 hours</p>
-                            <p style="margin-top: 5px;"><strong>At 30 km/h (motorcycle):</strong> Time = 90 ÷ 30 = 3 hours</p>
-                            <p style="margin-top: 5px;"><strong>At 60 km/h (car):</strong> Time = 90 ÷ 60 = 1.5 hours</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Observe the Pattern</strong>
-                            <p>Speed 5 → 30 (multiply by 6) and Time 18 → 3 (divide by 6)</p>
-                            <p style="margin-top: 5px;">Speed 30 → 60 (multiply by 2) and Time 3 → 1.5 (divide by 2)</p>
-                            <p style="margin-top: 5px;"><strong>When speed increases by factor n, time decreases by factor 1/n.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEEP DIVE 1 -->
-            <div class="content-block deep-dive">
-                <div class="deep-dive-title">Deep Dive 1: Understanding Inverse Proportion Mathematically</div>
-                <p>Let's formalize the pattern you just observed.</p>
-
-                <h4 style="margin-top: 20px;">The Definition:</h4>
-                <p>Two quantities x and y are inversely proportional if:</p>
-                <div style="background: #e8f4f8; padding: 15px; border-radius: 8px; margin: 15px 0; font-family: 'JetBrains Mono';">
-                    <p>x × y = k (where k is a constant)</p>
-                    <p style="margin-top: 10px;">OR equivalently: y = k/x</p>
-                </div>
-
-                <h4 style="margin-top: 20px;">Why Does This Matter?</h4>
-                <p>In direct proportion, you can find missing values using multiplication. In inverse proportion, you use the PRODUCT instead.</p>
-
-                <h4 style="margin-top: 20px;">Example: Workers and Work Duration</h4>
-                <p>A group of 20 workers can complete a project in 4 days. If you reduce to 10 workers, how many days will it take?</p>
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>Key insight:</strong> The amount of work is constant. If workers and days are inversely proportional:</p>
-                    <p style="margin-top: 10px;">Workers × Days = Constant Work</p>
-                    <p style="margin-top: 10px;">20 × 4 = 10 × d</p>
-                    <p style="margin-top: 10px;">80 = 10 × d</p>
-                    <p style="margin-top: 10px;">d = 8 days</p>
-                    <p style="margin-top: 10px;"><strong>With half the workers, it takes twice as long!</strong></p>
-                </div>
-
-                <div class="error-trap">
-                    <div class="trap-title">⚠️ Common Error Trap: Confusing Inverse with Reverse</div>
-                    <p>"Inverse proportion" does NOT mean "the opposite of proportion." It means the PRODUCT is constant, not the ratio. Don't treat it like reverse multiplication!</p>
-                    <p style="margin-top: 10px;"><strong>Wrong Thinking:</strong> If speed doubles, time halves, so I'll divide: 3 ÷ 2 = 1.5 hours. (This happens to work here, but only because of the math!)</p>
-                    <p><strong>Right Thinking:</strong> Speed × Time = constant distance, so I use the product rule.</p>
-                </div>
-            </div>
-
-            <!-- LOGIC LADDER 2 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 2: Testing for Inverse Proportion</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Given Data Table</strong>
-                            <p>x: 4, 8, 10, 16</p>
-                            <p style="margin-top: 5px;">y: 20, 10, 8, 5</p>
-                            <p style="margin-top: 8px;">Are x and y inversely proportional?</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 1: Calculate Products</strong>
-                            <p>4 × 20 = 80</p>
-                            <p style="margin-top: 5px;">8 × 10 = 80</p>
-                            <p style="margin-top: 5px;">10 × 8 = 80</p>
-                            <p style="margin-top: 5px;">16 × 5 = 80</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 2: Check if Constant</strong>
-                            <p>All products equal 80. The constant k = 80.</p>
-                            <p style="margin-top: 8px;"><strong>YES, x and y are inversely proportional!</strong></p>
-                            <p style="margin-top: 5px;">The relationship is: y = 80/x</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEEP DIVE 2 -->
-            <div class="content-block deep-dive">
-                <div class="deep-dive-title">Deep Dive 2: Multiple Quantity Ratios and Pie Charts</div>
-                <p>Sometimes we need to divide a whole into many parts based on a given ratio. For example, to make concrete, we need cement, sand, and gravel in the ratio 1 : 1.5 : 3.</p>
-
-                <h4 style="margin-top: 20px;">Understanding Multi-Term Ratios:</h4>
-                <p>A ratio like 1 : 1.5 : 3 means:</p>
-                <ul style="margin-left: 20px; line-height: 1.8;">
-                    <li>For every 1 part cement,</li>
-                    <li>We need 1.5 parts sand,</li>
-                    <li>And 3 parts gravel.</li>
-                </ul>
-
-                <p style="margin-top: 20px;"><strong>How to divide a quantity in a given ratio:</strong></p>
-                <p>If we need 110 units of concrete in the ratio 1 : 1.5 : 3:</p>
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>Step 1:</strong> Add all ratio parts: 1 + 1.5 + 3 = 5.5</p>
-                    <p style="margin-top: 10px;"><strong>Step 2:</strong> Cement = 110 × (1/5.5) = 110 × (1/5.5) = 20 units</p>
-                    <p style="margin-top: 5px;">Sand = 110 × (1.5/5.5) = 30 units</p>
-                    <p style="margin-top: 5px;">Gravel = 110 × (3/5.5) = 60 units</p>
-                    <p style="margin-top: 10px;"><strong>Check:</strong> 20 + 30 + 60 = 110 ✓</p>
-                </div>
-
-                <h4 style="margin-top: 20px;">Pie Charts: Visualizing Proportions</h4>
-                <p>A pie chart shows how different parts make up a whole. Each "slice" represents a percentage of the total.</p>
-                <p style="margin-top: 15px;"><strong>Key principle:</strong> A circle has 360°. If students are in the ratio 12 : 10 : 8 (for grades A, B, C), then:</p>
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p>Grade A angle = (12/(12+10+8)) × 360° = (12/30) × 360° = 144°</p>
-                    <p style="margin-top: 5px;">Grade B angle = (10/30) × 360° = 120°</p>
-                    <p style="margin-top: 5px;">Grade C angle = (8/30) × 360° = 96°</p>
-                </div>
-
-                <div class="error-trap">
-                    <div class="trap-title">⚠️ Common Error Trap: Forgetting to Simplify Before Calculating</div>
-                    <p>If the ratio is 12 : 10 : 8, simplify to 6 : 5 : 4 first (divide by 2). Your calculations will be easier!</p>
-                </div>
-            </div>
-
-            <!-- LOGIC LADDER 3 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 3: Creating a Pie Chart from Data</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Given</strong>
-                            <p>Survey of favorite subjects: Math (12), Science (10), English (8), Total = 30</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 1: Write Ratio</strong>
-                            <p>12 : 10 : 8</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 2: Convert to Angles</strong>
-                            <p>Math: (12/30) × 360° = 144°</p>
-                            <p style="margin-top: 5px;">Science: (10/30) × 360° = 120°</p>
-                            <p style="margin-top: 5px;">English: (8/30) × 360° = 96°</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 3: Draw with Protractor</strong>
-                            <p>Use a protractor to mark angles of 144°, 120°, and 96° from the center.</p>
-                            <p style="margin-top: 5px;"><strong>Verify:</strong> 144° + 120° + 96° = 360° ✓</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUIZ SECTION -->
-            <div class="content-block quiz-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Socratic Sandbox: Check Your Understanding</h3>
-
-                <div class="quiz-level">
-                    <div class="quiz-level-tag">predict</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 1 (Predict): A car travels 240 km in 4 hours. At the same speed, how long to travel 360 km?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Speed = 240 ÷ 4 = 60 km/h</p>
-                            <p style="margin-top: 10px;">Time for 360 km = 360 ÷ 60 = 6 hours</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">why</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 2 (Why): If you double the number of workers, why does the time to complete a job halve (assuming equal work capacity)?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Total work = Workers × Time per worker × (rate per worker)</p>
-                            <p style="margin-top: 10px;">If the total work and rate stay constant, then Workers × Time = constant.</p>
-                            <p style="margin-top: 10px;">When workers double (multiply by 2), time must divide by 2 to keep the product constant.</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 3 (Apply): A pump fills a tank in 6 hours. How long will it take 3 identical pumps working together?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Pumps × Time = Work (constant)</p>
-                            <p style="margin-top: 10px;">1 × 6 = 3 × t</p>
-                            <p style="margin-top: 5px;">t = 6/3 = 2 hours</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 4 (Apply): A school needs to feed 80 students for 15 days. If 20 more students join, for how many days will the food last?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Total food = Students × Days (constant)</p>
-                            <p style="margin-top: 10px;">80 × 15 = 100 × d</p>
-                            <p style="margin-top: 5px;">1200 = 100 × d</p>
-                            <p style="margin-top: 5px;">d = 12 days</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 5 (Challenge): In the ratio 2 : 3 : 5 for red : blue : white paint, if you need 50 ml of mixed purple paint, how much of each color do you need?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Total parts = 2 + 3 + 5 = 10</p>
-                            <p style="margin-top: 10px;">Red = 50 × (2/10) = 10 ml</p>
-                            <p style="margin-top: 5px;">Blue = 50 × (3/10) = 15 ml</p>
-                            <p style="margin-top: 5px;">White = 50 × (5/10) = 25 ml</p>
-                            <p style="margin-top: 5px;">Check: 10 + 15 + 25 = 50 ✓</p>
-                        </details>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Chapter Navigation -->
-            <div class="chapter-nav">
-                <a href="chapter9.html" class="btn btn-prev">← Chapter 9</a>
-                <a href="index.html" class="btn btn-home">All Chapters</a>
-                <a href="chapter11.html" class="btn btn-next">Chapter 11 →</a>
-            </div>
-        </div>
+  <div class="exp-topbar">
+    <div class="inner">
+      <a href="../../index.html" aria-label="Back to ShikshaPal Explainer">
+        <span aria-hidden="true">←</span>
+        <span>Back to ShikshaPal Explainer</span>
+      </a>
+      <span class="crumbs">Class 8 / Math</span>
     </div>
-  <!-- ===== FLASHCARDS ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="flashcard-section">
+  </div>
+
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+
+  <header class="exp-brandbar">
+    <div class="inner">
+      <a href="../../../index.html" class="exp-brand">
+        <span class="mark"><img src="../../../assets/logo.png" alt=""></span>
+        <span>Shiksha<span class="light-word">Pal</span></span>
+      </a>
+      <div class="exp-context">
+        <a href="../index.html">Class 8</a>
+        <span class="dot">·</span>
+        <a href="index.html" class="pill">Math</a>
+      </div>
+      <button class="exp-hamburger" aria-label="Open chapter list" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="exp-overlay" aria-hidden="true"></div>
+
+  <div class="exp-shell">
+
+    <aside class="exp-sidebar" aria-label="Chapter list">
+      <div class="sb-close">
+        <span class="sb-title">Class 8 · Math</span>
+        <button class="x" aria-label="Close" type="button">×</button>
+      </div>
+      <p class="sb-title">14 Chapters · NCERT</p>
+      <ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">A Square and A Cube</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Power Play</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">A Story of Numbers</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Quadrilaterals</span></a></li>
+        <li><a href="chapter5.html"><span class="num">05</span><span class="title">Number Play</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">We Distribute, Yet Things Multiply</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Proportional Reasoning</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Fractions in Disguise</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">The Baudhāyana-Pythagoras Theorem</span></a></li>
+        <li><a href="chapter10.html" class="active"><span class="num">10</span><span class="title">Proportional Reasoning — 2</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Exploring Some Geometric Themes</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Tales by Dots and Lines</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Algebra Play</span></a></li>
+        <li><a href="chapter14.html"><span class="num">14</span><span class="title">Area</span></a></li>
+      </ol>
+    </aside>
+
+    <main class="exp-main">
+
+      <header class="exp-hero">
+        <span class="eyebrow">Chapter 10 · Ratio &amp; Proportion</span>
+        <h1>Proportional Reasoning — 2</h1>
+        <p class="lede">Speed, Time, Distance &amp; Inverse Proportions.</p>
+      </header>
+
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h3>The Motorcycle Puzzle</h3>
+        <p>Your father takes 3 hours to drive from Lucknow to Kanpur at 30 km/h. Now he wants to use a faster route on his motorcycle at 60 km/h. Will it take 2 hours? Or 1.5 hours? Or something else?</p>
+        <p><strong>The Hidden Pattern:</strong></p>
+        <p>When you go faster, you reach sooner. But HOW much sooner? Is the relationship the same as direct proportion, where "faster = shorter time" just like "more apples = more cost"? Or is something different happening here?</p>
+      </section>
+
+      <section class="feynman-bridge">
+        <div class="bridge-label">Feynman Bridge — Think of it this way…</div>
+        <p>You've learned about direct proportion: when one quantity doubles, the other doubles too. But now you'll discover something remarkable: sometimes when one quantity doubles, the OTHER quantity is HALVED. This is called <strong>inverse proportion</strong>.</p>
+        <p><strong>The Key Insight:</strong></p>
+        <p>In some relationships, one quantity changing causes the other to change in the OPPOSITE direction, but by the same factor. When speed doubles, time halves. When workers double, days halve. When tap count doubles, filling time halves.</p>
+        <p><strong>The Mathematical Truth:</strong> In inverse proportion, the PRODUCT of the two quantities is always constant.</p>
+        <p>speed × time = distance (constant!)</p>
+        <p><strong>Why does this matter?</strong> Understanding inverse proportion unlocks solutions to countless real-world problems: how long will food last if more people arrive? How long will the job take with fewer workers?</p>
+      </section>
+
+      <h2>Logic Ladder 1: Speed-Time-Distance Triangle</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>The Universal Relationship</h4>
+          <p>Distance = Speed × Time</p>
+          <p>Therefore: Speed × Time = Distance (constant for a fixed route)</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Example: Fixed Distance of 90 km</h4>
+          <p><strong>At 5 km/h (walking):</strong> Time = 90 ÷ 5 = 18 hours</p>
+          <p><strong>At 30 km/h (motorcycle):</strong> Time = 90 ÷ 30 = 3 hours</p>
+          <p><strong>At 60 km/h (car):</strong> Time = 90 ÷ 60 = 1.5 hours</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Observe the Pattern</h4>
+          <p>Speed 5 → 30 (multiply by 6) and Time 18 → 3 (divide by 6)</p>
+          <p>Speed 30 → 60 (multiply by 2) and Time 3 → 1.5 (divide by 2)</p>
+          <p><strong>When speed increases by factor n, time decreases by factor 1/n.</strong></p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Understanding Inverse Proportion Mathematically</div>
+        <p>Let's formalize the pattern you just observed.</p>
+        <p><strong>The Definition:</strong></p>
+        <p>Two quantities x and y are inversely proportional if:</p>
+        <p>x × y = k (where k is a constant)</p>
+        <p>OR equivalently: y = k/x</p>
+        <p><strong>Why Does This Matter?</strong></p>
+        <p>In direct proportion, you can find missing values using multiplication. In inverse proportion, you use the PRODUCT instead.</p>
+        <p><strong>Example: Workers and Work Duration</strong></p>
+        <p>A group of 20 workers can complete a project in 4 days. If you reduce to 10 workers, how many days will it take?</p>
+        <p><strong>Key insight:</strong> The amount of work is constant. If workers and days are inversely proportional:</p>
+        <p>Workers × Days = Constant Work</p>
+        <p>20 × 4 = 10 × d</p>
+        <p>80 = 10 × d</p>
+        <p>d = 8 days</p>
+        <p><strong>With half the workers, it takes twice as long!</strong></p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap: Confusing Inverse with Reverse</div>
+        <p>"Inverse proportion" does NOT mean "the opposite of proportion." It means the PRODUCT is constant, not the ratio. Don't treat it like reverse multiplication!</p>
+        <p><strong>Wrong Thinking:</strong> If speed doubles, time halves, so I'll divide: 3 ÷ 2 = 1.5 hours. (This happens to work here, but only because of the math!)</p>
+        <p><strong>Right Thinking:</strong> Speed × Time = constant distance, so I use the product rule.</p>
+      </div>
+
+      <h2>Logic Ladder 2: Testing for Inverse Proportion</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Given Data Table</h4>
+          <p>x: 4, 8, 10, 16</p>
+          <p>y: 20, 10, 8, 5</p>
+          <p>Are x and y inversely proportional?</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Calculate Products</h4>
+          <p>4 × 20 = 80</p>
+          <p>8 × 10 = 80</p>
+          <p>10 × 8 = 80</p>
+          <p>16 × 5 = 80</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Check if Constant</h4>
+          <p>All products equal 80. The constant k = 80.</p>
+          <p><strong>YES, x and y are inversely proportional!</strong></p>
+          <p>The relationship is: y = 80/x</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Multiple Quantity Ratios and Pie Charts</div>
+        <p>Sometimes we need to divide a whole into many parts based on a given ratio. For example, to make concrete, we need cement, sand, and gravel in the ratio 1 : 1.5 : 3.</p>
+        <p><strong>Understanding Multi-Term Ratios:</strong></p>
+        <p>A ratio like 1 : 1.5 : 3 means:</p>
+        <ul>
+          <li>For every 1 part cement,</li>
+          <li>We need 1.5 parts sand,</li>
+          <li>And 3 parts gravel.</li>
+        </ul>
+        <p><strong>How to divide a quantity in a given ratio:</strong></p>
+        <p>If we need 110 units of concrete in the ratio 1 : 1.5 : 3:</p>
+        <p><strong>Step 1:</strong> Add all ratio parts: 1 + 1.5 + 3 = 5.5</p>
+        <p><strong>Step 2:</strong> Cement = 110 × (1/5.5) = 110 × (1/5.5) = 20 units</p>
+        <p>Sand = 110 × (1.5/5.5) = 30 units</p>
+        <p>Gravel = 110 × (3/5.5) = 60 units</p>
+        <p><strong>Check:</strong> 20 + 30 + 60 = 110 ✓</p>
+        <p><strong>Pie Charts: Visualizing Proportions</strong></p>
+        <p>A pie chart shows how different parts make up a whole. Each "slice" represents a percentage of the total.</p>
+        <p><strong>Key principle:</strong> A circle has 360°. If students are in the ratio 12 : 10 : 8 (for grades A, B, C), then:</p>
+        <p>Grade A angle = (12/(12+10+8)) × 360° = (12/30) × 360° = 144°</p>
+        <p>Grade B angle = (10/30) × 360° = 120°</p>
+        <p>Grade C angle = (8/30) × 360° = 96°</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap: Forgetting to Simplify Before Calculating</div>
+        <p>If the ratio is 12 : 10 : 8, simplify to 6 : 5 : 4 first (divide by 2). Your calculations will be easier!</p>
+      </div>
+
+      <h2>Logic Ladder 3: Creating a Pie Chart from Data</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Given</h4>
+          <p>Survey of favorite subjects: Math (12), Science (10), English (8), Total = 30</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Write Ratio</h4>
+          <p>12 : 10 : 8</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Convert to Angles</h4>
+          <p>Math: (12/30) × 360° = 144°</p>
+          <p>Science: (10/30) × 360° = 120°</p>
+          <p>English: (8/30) × 360° = 96°</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Draw with Protractor</h4>
+          <p>Use a protractor to mark angles of 144°, 120°, and 96° from the center.</p>
+          <p><strong>Verify:</strong> 144° + 120° + 96° = 360° ✓</p>
+        </div>
+      </section>
+
+      <section class="socratic-sandbox">
+        <h3>Socratic Sandbox — Test Your Thinking</h3>
+
+        <div class="quiz-level predict">
+          <span class="level-badge">Level 1 · Predict</span>
+          <p class="quiz-question"><strong>A car travels 240 km in 4 hours. At the same speed, how long to travel 360 km?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Speed = 240 ÷ 4 = 60 km/h</p>
+            <p>Time for 360 km = 360 ÷ 60 = 6 hours</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <span class="level-badge">Level 2 · Why</span>
+          <p class="quiz-question"><strong>If you double the number of workers, why does the time to complete a job halve (assuming equal work capacity)?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Total work = Workers × Time per worker × (rate per worker)</p>
+            <p>If the total work and rate stay constant, then Workers × Time = constant.</p>
+            <p>When workers double (multiply by 2), time must divide by 2 to keep the product constant.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>A pump fills a tank in 6 hours. How long will it take 3 identical pumps working together?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Pumps × Time = Work (constant)</p>
+            <p>1 × 6 = 3 × t</p>
+            <p>t = 6/3 = 2 hours</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>A school needs to feed 80 students for 15 days. If 20 more students join, for how many days will the food last?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Total food = Students × Days (constant)</p>
+            <p>80 × 15 = 100 × d</p>
+            <p>1200 = 100 × d</p>
+            <p>d = 12 days</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>In the ratio 2 : 3 : 5 for red : blue : white paint, if you need 50 ml of mixed purple paint, how much of each color do you need?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Total parts = 2 + 3 + 5 = 10</p>
+            <p>Red = 50 × (2/10) = 10 ml</p>
+            <p>Blue = 50 × (3/10) = 15 ml</p>
+            <p>White = 50 × (5/10) = 25 ml</p>
+            <p>Check: 10 + 15 + 25 = 50 ✓</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="flashcard-section">
         <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
         <div class="flashcard-deck">
           <div class="flashcard">
@@ -415,14 +388,9 @@
           </div>
         </div>
         <div class="flashcard-counter">8 cards — click any card to flip</div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== MCQ QUIZ ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="mcq-section">
+      <section class="mcq-section">
         <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
         <div class="mcq-quiz">
           <div class="mcq-item" data-answer="B">
@@ -481,34 +449,27 @@
             <button class="mcq-reset-btn">Reset Quiz</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
+      <nav class="chapter-nav" aria-label="Chapter navigation">
+        <a href="chapter9.html" class="prev">
+          <span class="nav-label">← Previous</span>
+          <span class="nav-title">The Baudhāyana-Pythagoras Theorem</span>
+        </a>
+        <a href="chapter11.html" class="next">
+          <span class="nav-label">Next →</span>
+          <span class="nav-title">Exploring Some Geometric Themes</span>
+        </a>
+      </nav>
 
+    </main>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Grade 8 Mathematics Learning Portal | Chapter 10: Proportional Reasoning — 2</p>
-    </footer>
+  <footer class="exp-footer">
+    Class 8 · Math · Built from NCERT (2025 Edition)
+  </footer>
 
-    <script>
-        // Theme toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', savedTheme);
-        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        });
-    </script>
-  <script src="../css/quiz-engine.js"></script>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
 </body>
 </html>

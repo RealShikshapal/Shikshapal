@@ -1,298 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5: Number Play - Grade 8 Mathematics</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Play — Class 8 Math · ShikshaPal</title>
+  <meta name="description" content="Understanding Divisibility, Parity, and the Hidden Patterns in Numbers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
 </head>
-<body>
-    <nav class="nav">
-        <div class="nav-container">
-            <h1 class="logo">Learning Portal</h1>
-            <div class="subject-switcher">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="index.html" class="nav-link subject-pill active" data-subject="math">Math</a>
-                <a href="../science/index.html" class="nav-link">Science</a>
-                <a href="../social/index.html" class="nav-link">Social</a>
-                <a href="../english/index.html" class="nav-link">English</a>
-            </div>
-        </div>
-    </nav>
+<body class="explainer-v2 subj-math">
 
-    <div class="container">
-        <div class="breadcrumb">
-            <a href="index.html">Math</a> > <span>Chapter 5: Number Play</span>
-        </div>
-
-        <div class="page-header">
-            <h1>Chapter 5: Number Play</h1>
-            <p class="subtitle">Understanding Divisibility, Parity, and the Hidden Patterns in Numbers</p>
-        </div>
-
-        <!-- HOOK BLOCK -->
-        <div class="content-block hook-block">
-            <div class="block-label">Hook: A Puzzle That Breaks All Rules</div>
-            <div class="hook-question">
-                <h3>The Mystery of the Four Numbers</h3>
-                <p>Take ANY four consecutive numbers—say 3, 4, 5, 6. Now place + and − signs between them in ANY way you want. For example:</p>
-                <ul>
-                    <li>3 + 4 + 5 + 6 = 18</li>
-                    <li>3 + 4 − 5 − 6 = −4</li>
-                    <li>3 − 4 − 5 + 6 = 0</li>
-                </ul>
-                <p><strong>Here's the puzzle:</strong> No matter which four numbers you pick, and no matter how you arrange the + and − signs, there's a RULE that ALWAYS holds. What could it be?</p>
-                <p>Try it yourself with 5, 6, 7, 8. Then try with 10, 11, 12, 13. What do you notice?</p>
-            </div>
-        </div>
-
-        <!-- BRIDGE BLOCK -->
-        <div class="content-block bridge-block">
-            <div class="block-label">Feynman Bridge: Explaining the "Why"</div>
-            <div class="analogy">
-                <h3>From Concrete to Pattern</h3>
-                <p>When you add or subtract numbers, you're essentially combining them together. Think of it like mixing colored beads:</p>
-                <ul>
-                    <li><strong>Red beads = positive numbers</strong></li>
-                    <li><strong>Blue beads = negative numbers</strong></li>
-                </ul>
-                <p>When a red bead meets a blue bead, they cancel out (that's what + and − do). What determines if you end up with an even or odd number of remaining beads?</p>
-                <p>It's not about the individual colors—it's about the TOTAL pattern. With four consecutive numbers, something mathematical always happens:</p>
-                <p class="highlight"><strong>Parity is preserved!</strong> The result of a ± b ± c ± d always has the SAME parity (even or odd) no matter how you arrange the signs, because when you flip a sign, the result changes by an even number.</p>
-            </div>
-        </div>
-
-        <!-- LOGIC LADDER CORE -->
-        <div class="content-block core-block">
-            <div class="block-label">Interactive Core: Building the Logic Ladder</div>
-
-            <div class="logic-ladder">
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 1: What is Parity?</h4>
-                        <p>Every integer is either <strong>even</strong> (divisible by 2) or <strong>odd</strong> (leaves remainder 1 when divided by 2).</p>
-                        <p>Examples: Even: 2, 4, −2, −8; Odd: 1, 3, −3, −5</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 2: Parity Rules for Addition & Subtraction</h4>
-                        <p>Learn these three rules:</p>
-                        <ul>
-                            <li>even ± even = even</li>
-                            <li>odd ± odd = even</li>
-                            <li>even ± odd = odd</li>
-                        </ul>
-                        <p><strong>Key insight:</strong> The parity of a ± b is the SAME as the parity of a ∓ b (flipping the sign doesn't change parity!)</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="error-trap">
-                        <div class="trap-title">Common Error Trap</div>
-                        <p><strong>Wrong:</strong> "If I add an even and odd number, I get even because one of them is even."</p>
-                        <p><strong>Right:</strong> even + odd = odd (and even − odd = odd too!). The parity depends on BOTH numbers interacting.</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 3: The Four-Number Mystery Explained</h4>
-                        <p>Let's call our four consecutive numbers a, b, c, d. Consider the expression a ± b ± c ± d.</p>
-                        <p>When we FLIP the sign in front of one number (say + to −), the entire result changes by 2 times that number. Since 2 × (anything) is EVEN, flipping signs changes the result by an even amount.</p>
-                        <p>Therefore, all eight possible sign combinations have the SAME parity as each other!</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="deep-dive">
-                        <div class="deep-dive-title">Deep Dive: The Algebraic Proof</div>
-                        <p>If we start with a + b − c − d and change +b to −b:</p>
-                        <p><code>New result − Old result = (a − b − c − d) − (a + b − c − d) = −2b</code></p>
-                        <p>Since −2b is even, both expressions have the same parity. This logic applies to ANY sign flip!</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 4: Divisibility Goes Deeper</h4>
-                        <p><strong>Multiples of 4:</strong> Some even numbers are multiples of 4 (4, 8, 12...), others aren't (2, 6, 10...).</p>
-                        <p>When you add two even numbers that AREN'T multiples of 4, you often GET a multiple of 4. Why? Because they each have remainder 2 when divided by 4, and 2 + 2 = 4!</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="error-trap">
-                        <div class="trap-title">Common Error Trap</div>
-                        <p><strong>Wrong:</strong> "If a number is divisible by 8, it MUST be divisible by 4."</p>
-                        <p><strong>Right:</strong> Any multiple of 8 IS divisible by 4 (8 = 2 × 4). But we're checking the divisibility chain: factors divide evenly.</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 5: The Divisibility Shortcut for 9</h4>
-                        <p>Here's a magic trick: A number is divisible by 9 if and only if the SUM OF ITS DIGITS is divisible by 9.</p>
-                        <p>Why? Because 10 ≡ 1 (mod 9), 100 ≡ 1 (mod 9), and so on. So 427 = 4(100) + 2(10) + 7 ≡ 4 + 2 + 7 (mod 9).</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="deep-dive">
-                        <div class="deep-dive-title">Deep Dive: Divisibility by 11</div>
-                        <p>The rule for 11 is trickier: alternating place values are +1 or −1 (mod 11). So for 462: 4(−1) + 6(1) + 2(−1) = −4 + 6 − 2 = 0 ≡ 0 (mod 11). Thus 462 is divisible by 11!</p>
-                    </div>
-                </div>
-
-                <div class="logic-step">
-                    <div class="logic-step-content">
-                        <h4>Step 6: Remainders Tell Stories</h4>
-                        <p>Numbers that leave the SAME remainder when divided by something share algebraic patterns.</p>
-                        <p>Example: Numbers leaving remainder 3 when divided by 5 are: 3, 8, 13, 18, 23... All have the form 5k + 3.</p>
-                        <p>This is NOT the same as saying they're 3 more than a multiple of 5; it IS the same thing! Algebra captures the pattern precisely.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- QUIZ BLOCK -->
-        <div class="content-block quiz-block">
-            <div class="block-label">Socratic Sandbox: Test Your Understanding</div>
-
-            <div class="quiz-level">
-                <h3><span class="quiz-level-tag predict">Predict</span> What Comes Next?</h3>
-
-                <div class="quiz-question">
-                    <p><strong>Question 1:</strong> Without calculating, is 789 divisible by 9?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Add up the digits: 7 + 8 + 9 = 24. Is 24 divisible by 9? Then 789 is not divisible by 9.</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p><strong>No.</strong> The sum of digits is 7 + 8 + 9 = 24. Since 24 is not divisible by 9, neither is 789. (In fact, 24 leaves remainder 6 when divided by 9, so 789 also leaves remainder 6.)</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 2:</strong> If you add two numbers that each leave remainder 3 when divided by 7, what remainder will their sum leave?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Think of the remainders: 3 + 3 = 6. But is 6 the final remainder when divided by 7?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p><strong>Remainder 6.</strong> If a ≡ 3 (mod 7) and b ≡ 3 (mod 7), then a + b ≡ 3 + 3 ≡ 6 (mod 7).</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 3:</strong> Is the product of two even numbers always divisible by 4?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Try examples: 2 × 4 = 8 (divisible by 4). But what about 2 × 6 = 12 (divisible by 4). What about 2 × 2 = 4? Yes. So...</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p><strong>Not always!</strong> Counterexample: 2 × 6 = 12, and 12 ÷ 4 = 3 ✓. But 2 × 2 = 4, and 4 ÷ 4 = 1 ✓. Actually, the product of two even numbers IS always divisible by 4 because both numbers have factor 2, so together they have factor 4. But 2 × 3 = 6 isn't even, so we're looking at even numbers. Let me reconsider: 2 × 2 = 4 ✓; 2 × 6 = 12 ✓; 6 × 6 = 36 ✓. Yes, always!</p>
-                    </details>
-                </div>
-            </div>
-
-            <div class="quiz-level">
-                <h3><span class="quiz-level-tag why">Why?</span> Dig Into the Reasoning</h3>
-
-                <div class="quiz-question">
-                    <p><strong>Question 4:</strong> Why does the divisibility rule for 9 (sum of digits) work?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>What is the remainder of 10, 100, 1000, etc. when divided by 9?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p>Because 10 ≡ 1 (mod 9), 100 ≡ 1 (mod 9), 1000 ≡ 1 (mod 9), and so on. So a number like dcba = d×1000 + c×100 + b×10 + a ≡ d + c + b + a (mod 9). Therefore, the remainder is the same!</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 5:</strong> If a number is divisible by 12, why must it be divisible by both 3 and 4?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>What is the prime factorization of 12?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p>12 = 3 × 4, and 3 and 4 are coprime (no common factors). If 12 divides a number, then the number has factors 3 and 4. Therefore it's divisible by both.</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 6:</strong> Explain why the sum of two multiples of 8 is always a multiple of 8.</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Write two multiples of 8 as 8a and 8b. What is their sum?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p>If m = 8a and n = 8b, then m + n = 8a + 8b = 8(a + b). Since a + b is an integer, m + n is a multiple of 8.</p>
-                    </details>
-                </div>
-            </div>
-
-            <div class="quiz-level">
-                <h3><span class="quiz-level-tag apply">Apply</span> It to Real Problems</h3>
-
-                <div class="quiz-question">
-                    <p><strong>Question 7:</strong> A number leaves remainder 2 when divided by 5 and remainder 3 when divided by 7. What is the smallest such number?</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Numbers of form 5k + 2 are: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52... Which of these leaves remainder 3 when divided by 7?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p><strong>17.</strong> The number must be 5k + 2. Check: 2 (leaves 2 mod 7), 7 (leaves 0 mod 7), 12 (leaves 5 mod 7), 17 (leaves 3 mod 7) ✓. So 17 is the answer.</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 8:</strong> Your friend claims that 3p7q8 is divisible by 44 if p = 3 and q = 2. Check if this is true.</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>44 = 4 × 11. Check divisibility by both 4 and 11 separately. For 4, look at the last two digits. For 11, use the alternating sum.</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p>The number is 337928. Last two digits: 28. Is 28 divisible by 4? 28 ÷ 4 = 7 ✓. For 11: 8 − 2 + 9 − 7 + 3 − 3 = 8. Is 8 divisible by 11? No. So 337928 is NOT divisible by 44.</p>
-                    </details>
-                </div>
-
-                <div class="quiz-question">
-                    <p><strong>Question 9:</strong> Find three consecutive even numbers such that their sum is divisible by 6.</p>
-                    <details>
-                        <summary>Hint</summary>
-                        <p>Let the numbers be 2n, 2n+2, 2n+4. Their sum is 6n + 6 = 6(n+1). Is this always divisible by 6?</p>
-                    </details>
-                    <details>
-                        <summary>Answer</summary>
-                        <p><strong>Any three consecutive even numbers work!</strong> If they are 2n, 2n+2, 2n+4, the sum is 6n + 6 = 6(n+1), which is always divisible by 6. Examples: 2, 4, 6 (sum 12); 10, 12, 14 (sum 36).</p>
-                    </details>
-                </div>
-            </div>
-        </div>
-
-        <!-- CHAPTER NAV -->
-        <div class="chapter-nav">
-            <a href="chapter4.html" class="nav-prev">← Chapter 4</a>
-            <span class="nav-current">Chapter 5: Number Play</span>
-            <a href="chapter6.html" class="nav-next">Chapter 6 →</a>
-        </div>
+  <div class="exp-topbar">
+    <div class="inner">
+      <a href="../../index.html" aria-label="Back to ShikshaPal Explainer">
+        <span aria-hidden="true">←</span>
+        <span>Back to ShikshaPal Explainer</span>
+      </a>
+      <span class="crumbs">Class 8 / Math</span>
     </div>
-  <!-- ===== FLASHCARDS ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="flashcard-section">
+  </div>
+
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+
+  <header class="exp-brandbar">
+    <div class="inner">
+      <a href="../../../index.html" class="exp-brand">
+        <span class="mark"><img src="../../../assets/logo.png" alt=""></span>
+        <span>Shiksha<span class="light-word">Pal</span></span>
+      </a>
+      <div class="exp-context">
+        <a href="../index.html">Class 8</a>
+        <span class="dot">·</span>
+        <a href="index.html" class="pill">Math</a>
+      </div>
+      <button class="exp-hamburger" aria-label="Open chapter list" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="exp-overlay" aria-hidden="true"></div>
+
+  <div class="exp-shell">
+
+    <aside class="exp-sidebar" aria-label="Chapter list">
+      <div class="sb-close">
+        <span class="sb-title">Class 8 · Math</span>
+        <button class="x" aria-label="Close" type="button">×</button>
+      </div>
+      <p class="sb-title">14 Chapters · NCERT</p>
+      <ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">A Square and A Cube</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Power Play</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">A Story of Numbers</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Quadrilaterals</span></a></li>
+        <li><a href="chapter5.html" class="active"><span class="num">05</span><span class="title">Number Play</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">We Distribute, Yet Things Multiply</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Proportional Reasoning</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Fractions in Disguise</span></a></li>
+        <li><a href="chapter9.html"><span class="num">09</span><span class="title">The Baudhāyana-Pythagoras Theorem</span></a></li>
+        <li><a href="chapter10.html"><span class="num">10</span><span class="title">Proportional Reasoning — 2</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Exploring Some Geometric Themes</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Tales by Dots and Lines</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Algebra Play</span></a></li>
+        <li><a href="chapter14.html"><span class="num">14</span><span class="title">Area</span></a></li>
+      </ol>
+    </aside>
+
+    <main class="exp-main">
+
+      <header class="exp-hero">
+        <span class="eyebrow">Chapter 5 · Number Theory</span>
+        <h1>Number Play</h1>
+        <p class="lede">Understanding Divisibility, Parity, and the Hidden Patterns in Numbers.</p>
+      </header>
+
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h3>The Mystery of the Four Numbers</h3>
+        <p>Take ANY four consecutive numbers—say 3, 4, 5, 6. Now place + and − signs between them in ANY way you want. For example:</p>
+        <ul>
+          <li>3 + 4 + 5 + 6 = 18</li>
+          <li>3 + 4 − 5 − 6 = −4</li>
+          <li>3 − 4 − 5 + 6 = 0</li>
+        </ul>
+        <p><strong>Here's the puzzle:</strong> No matter which four numbers you pick, and no matter how you arrange the + and − signs, there's a RULE that ALWAYS holds. What could it be?</p>
+        <p>Try it yourself with 5, 6, 7, 8. Then try with 10, 11, 12, 13. What do you notice?</p>
+      </section>
+
+      <section class="feynman-bridge">
+        <div class="bridge-label">Feynman Bridge — Think of it this way…</div>
+        <p>When you add or subtract numbers, you're essentially combining them together. Think of it like mixing colored beads:</p>
+        <ul>
+          <li><strong>Red beads = positive numbers</strong></li>
+          <li><strong>Blue beads = negative numbers</strong></li>
+        </ul>
+        <p>When a red bead meets a blue bead, they cancel out (that's what + and − do). What determines if you end up with an even or odd number of remaining beads?</p>
+        <p>It's not about the individual colors—it's about the TOTAL pattern. With four consecutive numbers, something mathematical always happens:</p>
+        <p><strong>Parity is preserved!</strong> The result of a ± b ± c ± d always has the SAME parity (even or odd) no matter how you arrange the signs, because when you flip a sign, the result changes by an even number.</p>
+      </section>
+
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>What is Parity?</h4>
+          <p>Every integer is either <strong>even</strong> (divisible by 2) or <strong>odd</strong> (leaves remainder 1 when divided by 2).</p>
+          <p>Examples: Even: 2, 4, −2, −8; Odd: 1, 3, −3, −5</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Parity Rules for Addition &amp; Subtraction</h4>
+          <p>Learn these three rules:</p>
+          <ul>
+            <li>even ± even = even</li>
+            <li>odd ± odd = even</li>
+            <li>even ± odd = odd</li>
+          </ul>
+          <p><strong>Key insight:</strong> The parity of a ± b is the SAME as the parity of a ∓ b (flipping the sign doesn't change parity!)</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap</div>
+        <p><strong>Wrong:</strong> "If I add an even and odd number, I get even because one of them is even."</p>
+        <p><strong>Right:</strong> even + odd = odd (and even − odd = odd too!). The parity depends on BOTH numbers interacting.</p>
+      </div>
+
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>The Four-Number Mystery Explained</h4>
+          <p>Let's call our four consecutive numbers a, b, c, d. Consider the expression a ± b ± c ± d.</p>
+          <p>When we FLIP the sign in front of one number (say + to −), the entire result changes by 2 times that number. Since 2 × (anything) is EVEN, flipping signs changes the result by an even amount.</p>
+          <p>Therefore, all eight possible sign combinations have the SAME parity as each other!</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · The Algebraic Proof</div>
+        <p>If we start with a + b − c − d and change +b to −b:</p>
+        <p><code>New result − Old result = (a − b − c − d) − (a + b − c − d) = −2b</code></p>
+        <p>Since −2b is even, both expressions have the same parity. This logic applies to ANY sign flip!</p>
+      </div>
+
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Divisibility Goes Deeper</h4>
+          <p><strong>Multiples of 4:</strong> Some even numbers are multiples of 4 (4, 8, 12...), others aren't (2, 6, 10...).</p>
+          <p>When you add two even numbers that AREN'T multiples of 4, you often GET a multiple of 4. Why? Because they each have remainder 2 when divided by 4, and 2 + 2 = 4!</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap</div>
+        <p><strong>Wrong:</strong> "If a number is divisible by 8, it MUST be divisible by 4."</p>
+        <p><strong>Right:</strong> Any multiple of 8 IS divisible by 4 (8 = 2 × 4). But we're checking the divisibility chain: factors divide evenly.</p>
+      </div>
+
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>The Divisibility Shortcut for 9</h4>
+          <p>Here's a magic trick: A number is divisible by 9 if and only if the SUM OF ITS DIGITS is divisible by 9.</p>
+          <p>Why? Because 10 ≡ 1 (mod 9), 100 ≡ 1 (mod 9), and so on. So 427 = 4(100) + 2(10) + 7 ≡ 4 + 2 + 7 (mod 9).</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Divisibility by 11</div>
+        <p>The rule for 11 is trickier: alternating place values are +1 or −1 (mod 11). So for 462: 4(−1) + 6(1) + 2(−1) = −4 + 6 − 2 = 0 ≡ 0 (mod 11). Thus 462 is divisible by 11!</p>
+      </div>
+
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Remainders Tell Stories</h4>
+          <p>Numbers that leave the SAME remainder when divided by something share algebraic patterns.</p>
+          <p>Example: Numbers leaving remainder 3 when divided by 5 are: 3, 8, 13, 18, 23... All have the form 5k + 3.</p>
+          <p>This is NOT the same as saying they're 3 more than a multiple of 5; it IS the same thing! Algebra captures the pattern precisely.</p>
+        </div>
+      </section>
+
+      <section class="socratic-sandbox">
+        <h3>Socratic Sandbox — Test Your Thinking</h3>
+
+        <div class="quiz-level predict">
+          <span class="level-badge">Level 1 · Predict</span>
+          <p class="quiz-question"><strong>Question 1:</strong> Without calculating, is 789 divisible by 9?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Add up the digits: 7 + 8 + 9 = 24. Is 24 divisible by 9? Then 789 is not divisible by 9.</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>No.</strong> The sum of digits is 7 + 8 + 9 = 24. Since 24 is not divisible by 9, neither is 789. (In fact, 24 leaves remainder 6 when divided by 9, so 789 also leaves remainder 6.)</p>
+          </details>
+        </div>
+
+        <div class="quiz-level predict">
+          <span class="level-badge">Level 1 · Predict</span>
+          <p class="quiz-question"><strong>Question 2:</strong> If you add two numbers that each leave remainder 3 when divided by 7, what remainder will their sum leave?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Think of the remainders: 3 + 3 = 6. But is 6 the final remainder when divided by 7?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>Remainder 6.</strong> If a ≡ 3 (mod 7) and b ≡ 3 (mod 7), then a + b ≡ 3 + 3 ≡ 6 (mod 7).</p>
+          </details>
+        </div>
+
+        <div class="quiz-level predict">
+          <span class="level-badge">Level 1 · Predict</span>
+          <p class="quiz-question"><strong>Question 3:</strong> Is the product of two even numbers always divisible by 4?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Try examples: 2 × 4 = 8 (divisible by 4). But what about 2 × 6 = 12 (divisible by 4). What about 2 × 2 = 4? Yes. So...</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>Not always!</strong> Counterexample: 2 × 6 = 12, and 12 ÷ 4 = 3 ✓. But 2 × 2 = 4, and 4 ÷ 4 = 1 ✓. Actually, the product of two even numbers IS always divisible by 4 because both numbers have factor 2, so together they have factor 4. But 2 × 3 = 6 isn't even, so we're looking at even numbers. Let me reconsider: 2 × 2 = 4 ✓; 2 × 6 = 12 ✓; 6 × 6 = 36 ✓. Yes, always!</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <span class="level-badge">Level 2 · Why</span>
+          <p class="quiz-question"><strong>Question 4:</strong> Why does the divisibility rule for 9 (sum of digits) work?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>What is the remainder of 10, 100, 1000, etc. when divided by 9?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Because 10 ≡ 1 (mod 9), 100 ≡ 1 (mod 9), 1000 ≡ 1 (mod 9), and so on. So a number like dcba = d×1000 + c×100 + b×10 + a ≡ d + c + b + a (mod 9). Therefore, the remainder is the same!</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <span class="level-badge">Level 2 · Why</span>
+          <p class="quiz-question"><strong>Question 5:</strong> If a number is divisible by 12, why must it be divisible by both 3 and 4?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>What is the prime factorization of 12?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>12 = 3 × 4, and 3 and 4 are coprime (no common factors). If 12 divides a number, then the number has factors 3 and 4. Therefore it's divisible by both.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <span class="level-badge">Level 2 · Why</span>
+          <p class="quiz-question"><strong>Question 6:</strong> Explain why the sum of two multiples of 8 is always a multiple of 8.</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Write two multiples of 8 as 8a and 8b. What is their sum?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>If m = 8a and n = 8b, then m + n = 8a + 8b = 8(a + b). Since a + b is an integer, m + n is a multiple of 8.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>Question 7:</strong> A number leaves remainder 2 when divided by 5 and remainder 3 when divided by 7. What is the smallest such number?</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Numbers of form 5k + 2 are: 2, 7, 12, 17, 22, 27, 32, 37, 42, 47, 52... Which of these leaves remainder 3 when divided by 7?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>17.</strong> The number must be 5k + 2. Check: 2 (leaves 2 mod 7), 7 (leaves 0 mod 7), 12 (leaves 5 mod 7), 17 (leaves 3 mod 7) ✓. So 17 is the answer.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>Question 8:</strong> Your friend claims that 3p7q8 is divisible by 44 if p = 3 and q = 2. Check if this is true.</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>44 = 4 × 11. Check divisibility by both 4 and 11 separately. For 4, look at the last two digits. For 11, use the alternating sum.</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>The number is 337928. Last two digits: 28. Is 28 divisible by 4? 28 ÷ 4 = 7 ✓. For 11: 8 − 2 + 9 − 7 + 3 − 3 = 8. Is 8 divisible by 11? No. So 337928 is NOT divisible by 44.</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>Question 9:</strong> Find three consecutive even numbers such that their sum is divisible by 6.</p>
+          <details>
+            <summary>Reveal Hint</summary>
+            <p>Let the numbers be 2n, 2n+2, 2n+4. Their sum is 6n + 6 = 6(n+1). Is this always divisible by 6?</p>
+          </details>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>Any three consecutive even numbers work!</strong> If they are 2n, 2n+2, 2n+4, the sum is 6n + 6 = 6(n+1), which is always divisible by 6. Examples: 2, 4, 6 (sum 12); 10, 12, 14 (sum 36).</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="flashcard-section">
         <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
         <div class="flashcard-deck">
           <div class="flashcard">
@@ -393,14 +402,9 @@
           </div>
         </div>
         <div class="flashcard-counter">8 cards — click any card to flip</div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== MCQ QUIZ ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="mcq-section">
+      <section class="mcq-section">
         <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
         <div class="mcq-quiz">
           <div class="mcq-item" data-answer="B">
@@ -459,35 +463,27 @@
             <button class="mcq-reset-btn">Reset Quiz</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
+      <nav class="chapter-nav" aria-label="Chapter navigation">
+        <a href="chapter4.html" class="prev">
+          <span class="nav-label">← Previous</span>
+          <span class="nav-title">Quadrilaterals</span>
+        </a>
+        <a href="chapter6.html" class="next">
+          <span class="nav-label">Next →</span>
+          <span class="nav-title">We Distribute, Yet Things Multiply</span>
+        </a>
+      </nav>
 
+    </main>
+  </div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Learning Portal. Mathematics Grade 8 | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
-    </footer>
+  <footer class="exp-footer">
+    Class 8 · Math · Built from NCERT (2025 Edition)
+  </footer>
 
-    <script>
-        // Theme toggle
-        const html = document.documentElement;
-        const themeToggle = document.querySelector('[data-theme-toggle]');
-
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            html.setAttribute('data-theme', savedTheme);
-        }
-
-        function toggleTheme() {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-
-        initTheme();
-    </script>
-  <script src="../css/quiz-engine.js"></script>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
 </body>
 </html>

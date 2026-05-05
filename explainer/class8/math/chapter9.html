@@ -1,348 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 9: The Baudhāyana-Pythagoras Theorem | Math Portal</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Baudhāyana-Pythagoras Theorem — Class 8 Math · ShikshaPal</title>
+  <meta name="description" content="From 800 BCE to Modern Mathematics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../../assets/logo.png">
+  <link rel="stylesheet" href="../../css/explainer.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-brand">Learning Portal</div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Dashboard</a></li>
-                <li><a href="index.html">Math</a></li>
-                <li><a href="../science/index.html">Science</a></li>
-                <li><a href="../social/index.html">Social</a></li>
-                <li><a href="../english/index.html">English</a></li>
-            </ul>
-            <div class="nav-pills">
-                <span class="nav-pill active" data-subject="math">Math</span>
-            </div>
-            <button class="theme-toggle" id="themeToggle">🌙</button>
-        </div>
-    </nav>
+<body class="explainer-v2 subj-math">
 
-    <div class="container">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb">
-            <a href="../index.html">Home</a> → <a href="index.html">Math</a> → Chapter 9
-        </div>
-
-        <!-- Page Header -->
-        <div class="page-header">
-            <h1>Chapter 9: The Baudhāyana-Pythagoras Theorem</h1>
-            <p class="subtitle">From 800 BCE to Modern Mathematics</p>
-        </div>
-
-        <!-- Content -->
-        <div class="content">
-            <!-- HOOK BLOCK -->
-            <div class="content-block hook-block">
-                <div class="block-label">Hook: A Puzzle About Squares and Triangles</div>
-                <div class="hook-question">
-                    <p>Imagine you have a square piece of paper. You want to create a square with EXACTLY double the area. Simply doubling each side? That would create a square with 4 times the area!</p>
-                    <p style="margin-top: 15px; font-weight: 600;">The Ancient Mystery:</p>
-                    <p>Over 2,800 years ago, a mathematician named Baudhāyana discovered something magical: if you construct a square on the diagonal of your original square, it has exactly double the area. How is this possible? What's the secret relationship between the diagonal and the sides?</p>
-                </div>
-            </div>
-
-            <!-- FEYNMAN BRIDGE -->
-            <div class="content-block bridge-block">
-                <div class="block-label">The Feynman Bridge: From Doubling to a Universal Truth</div>
-                <p>Baudhāyana's discovery about doubling squares wasn't just a neat trick. When he investigated WHY it worked, he uncovered something far more powerful: a fundamental relationship that exists in ALL right-angled triangles.</p>
-                <div class="analogy" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 20px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>The Beautiful Insight:</strong></p>
-                    <p>In any right-angled triangle, if you draw squares on each of the three sides, the two smaller squares (on the shorter sides) will have exactly the same total area as the large square (on the longest side, called the hypotenuse).</p>
-                    <p style="margin-top: 10px; font-family: 'JetBrains Mono';">a² + b² = c²</p>
-                    <p style="margin-top: 10px;">where a and b are the lengths of the two shorter sides, and c is the length of the hypotenuse.</p>
-                </div>
-                <p><strong>Why did Baudhāyana discover this?</strong> He was solving a practical construction problem. The Śulba-Sūtra (his ancient text) describes altar construction, and builders needed to create perfect right angles. This theorem gave them the mathematical certainty they needed.</p>
-            </div>
-
-            <!-- LOGIC LADDER 1 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 1: Doubling a Square on Its Diagonal</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Start: A Unit Square</strong>
-                            <p>You have a square with side length 1. Its area is 1 × 1 = 1 square unit.</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 1: Draw the Diagonal</strong>
-                            <p>Draw a line from one corner to the opposite corner. This diagonal cuts the square into two equal triangles.</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 2: Use the Diagonal as a Side</strong>
-                            <p>Now construct a NEW square where the diagonal is one of the sides.</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 3: Count the Triangles</strong>
-                            <p>The original square contains 2 triangles. The new square contains exactly 4 of the same triangles (they're congruent).</p>
-                            <p style="margin-top: 8px;">Since 4 triangles = 2 × (2 triangles), the new square has DOUBLE the area!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEEP DIVE: Right Triangles -->
-            <div class="content-block deep-dive">
-                <div class="deep-dive-title">Deep Dive 1: Finding the Hypotenuse</div>
-                <p>Now let's use Baudhāyana's theorem to solve real problems. Remember, in a right-angled triangle, the hypotenuse is the longest side, always opposite the right angle.</p>
-
-                <h4 style="margin-top: 20px;">Classic Problem: The 3-4-5 Triangle</h4>
-                <p>This is perhaps the most famous Baudhāyana triple. Imagine a right triangle with shorter sides of 3 cm and 4 cm.</p>
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>Using the theorem:</strong> a² + b² = c²</p>
-                    <p style="margin-top: 10px;">3² + 4² = c²</p>
-                    <p style="margin-top: 5px;">9 + 16 = c²</p>
-                    <p style="margin-top: 5px;">25 = c²</p>
-                    <p style="margin-top: 5px;">c = 5 cm</p>
-                </div>
-
-                <p style="margin-top: 20px;"><strong>Why is this special?</strong> All three numbers are whole numbers! Most right triangles have irrational hypotenuses (like √2). But this one works out perfectly.</p>
-
-                <h4 style="margin-top: 20px;">Example: Isosceles Right Triangle</h4>
-                <p>What if both shorter sides are equal? Say, both are 1 unit long.</p>
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p>a = 1, b = 1, c = ?</p>
-                    <p style="margin-top: 10px;">1² + 1² = c²</p>
-                    <p style="margin-top: 5px;">1 + 1 = c²</p>
-                    <p style="margin-top: 5px;">2 = c²</p>
-                    <p style="margin-top: 5px;">c = √2 ≈ 1.414</p>
-                </div>
-
-                <div class="error-trap">
-                    <div class="trap-title">⚠️ Common Error Trap: Which Side is Which?</div>
-                    <p>The hypotenuse (c) is ALWAYS the longest side in a right triangle. Always use c for the longest side, even if the problem doesn't tell you which is which.</p>
-                    <p style="margin-top: 10px;"><strong>Wrong:</strong> If sides are 5 cm, 4 cm, and 3 cm: 5² + 4² = 3²  (This makes no sense!)</p>
-                    <p><strong>Right:</strong> 3² + 4² = 5² (25 = 25 ✓)</p>
-                </div>
-            </div>
-
-            <!-- LOGIC LADDER 2 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 2: Finding a Missing Side</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Problem Given</strong>
-                            <p>Right triangle with sides 5 and 12. Find the hypotenuse.</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 1: Identify What You Have</strong>
-                            <p>a = 5, b = 12, c = ?</p>
-                            <p style="margin-top: 5px;">These are the two shorter sides, so c is the hypotenuse.</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 2: Apply the Theorem</strong>
-                            <p>5² + 12² = c²</p>
-                            <p style="margin-top: 5px;">25 + 144 = c²</p>
-                            <p style="margin-top: 5px;">169 = c²</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 3: Solve for c</strong>
-                            <p>c = √169 = 13</p>
-                            <p style="margin-top: 5px;"><strong>The hypotenuse is 13 units.</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEEP DIVE: Baudhāyana Triples -->
-            <div class="content-block deep-dive">
-                <div class="deep-dive-title">Deep Dive 2: Baudhāyana Triples — Infinite Possibilities</div>
-                <p>A "Baudhāyana triple" (or Pythagorean triple) is a set of three whole numbers that satisfy a² + b² = c².</p>
-
-                <h4 style="margin-top: 20px;">Known Triples from Ancient Times:</h4>
-                <ul style="margin-left: 20px; line-height: 1.8; font-family: 'JetBrains Mono';">
-                    <li>(3, 4, 5)</li>
-                    <li>(5, 12, 13)</li>
-                    <li>(8, 15, 17)</li>
-                    <li>(7, 24, 25)</li>
-                    <li>(20, 21, 29)</li>
-                </ul>
-
-                <p style="margin-top: 20px;"><strong>But here's the profound question Baudhāyana asked:</strong> Are there infinitely many triples, or will we eventually run out?</p>
-
-                <p style="margin-top: 15px;"><strong>The Scaling Secret:</strong></p>
-                <p>If (3, 4, 5) is a triple, then so is (6, 8, 10), (9, 12, 15), (300, 400, 500), and infinitely many others! We can multiply every number by any factor k, and it still works.</p>
-
-                <div style="background: #f9f3ff; padding: 15px; border-radius: 8px; margin: 15px 0;">
-                    <p><strong>Proof:</strong> If a² + b² = c², then:</p>
-                    <p style="margin-top: 10px;">(ka)² + (kb)² = k²a² + k²b² = k²(a² + b²) = k²c² = (kc)²</p>
-                    <p style="margin-top: 10px;">So (ka, kb, kc) is also a triple!</p>
-                </div>
-
-                <p style="margin-top: 20px;"><strong>Primitive vs. Non-Primitive Triples:</strong></p>
-                <ul style="margin-left: 20px; line-height: 1.8;">
-                    <li><strong>Primitive Triple:</strong> Three numbers with no common factor. Examples: (3,4,5), (5,12,13)</li>
-                    <li><strong>Non-Primitive Triple:</strong> Has a common factor. Example: (6,8,10) = 2×(3,4,5)</li>
-                </ul>
-
-                <div class="error-trap">
-                    <div class="trap-title">⚠️ Common Error Trap: Assuming All Triples Are Primitive</div>
-                    <p>(9, 12, 15) might look like a new triple, but it's just 3 × (3, 4, 5). To find genuinely new patterns, mathematicians focus on primitive triples.</p>
-                </div>
-            </div>
-
-            <!-- LOGIC LADDER 3 -->
-            <div class="content-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Logic Ladder 3: Creating Scaled Triples</h3>
-                <div class="logic-ladder">
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Start: Known Triple</strong>
-                            <p>(3, 4, 5) — verified because 9 + 16 = 25</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 1: Choose a Scale Factor</strong>
-                            <p>Let k = 4</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 2: Multiply Each Number</strong>
-                            <p>(3×4, 4×4, 5×4) = (12, 16, 20)</p>
-                        </div>
-                    </div>
-                    <div class="logic-step">
-                        <div class="logic-step-content">
-                            <strong>Step 3: Verify</strong>
-                            <p>12² + 16² = 144 + 256 = 400 = 20² ✓</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEEP DIVE: Historical Context -->
-            <div class="content-block deep-dive">
-                <div class="deep-dive-title">Deep Dive 3: From Baudhāyana to Pythagoras to Fermat</div>
-                <p>Baudhāyana lived around 800 BCE in ancient India. About 300 years later, the Greek philosopher Pythagoras (around 500 BCE) studied the same theorem. It's called the "Baudhāyana-Pythagoras Theorem" to honor both mathematicians.</p>
-
-                <h4 style="margin-top: 20px;">Fermat's Last Theorem — A 350-Year Mystery</h4>
-                <p>In the 1600s, a French mathematician named Pierre de Fermat asked a brilliant question:</p>
-                <p style="margin-top: 10px; font-style: italic;">"We know x² + y² = z² has infinitely many solutions. But does x³ + y³ = z³ have ANY solutions with whole numbers?"</p>
-
-                <p style="margin-top: 15px;"><strong>Fermat's conjecture:</strong> No, it doesn't. For any power greater than 2, there are no whole number solutions.</p>
-
-                <p style="margin-top: 15px;"><strong>The problem:</strong> Fermat claimed he had a proof but never wrote it down! Mathematicians spent 350+ years trying to prove it until Andrew Wiles finally succeeded in 1994.</p>
-
-                <p style="margin-top: 15px;"><strong>Why is this important?</strong> Fermat's Last Theorem showed that even though the Baudhāyana-Pythagoras theorem leads to infinitely many solutions, slightly different equations can have none. This opened entirely new areas of mathematics!</p>
-            </div>
-
-            <!-- QUIZ SECTION -->
-            <div class="content-block quiz-block">
-                <h3 style="color: #667eea; margin-bottom: 15px;">Socratic Sandbox: Check Your Understanding</h3>
-
-                <div class="quiz-level">
-                    <div class="quiz-level-tag">predict</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 1 (Predict): In a right triangle with sides 6, 8, and c, which value of c makes it a right triangle?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Using a² + b² = c²:</p>
-                            <p style="margin-top: 5px;">6² + 8² = c²</p>
-                            <p style="margin-top: 5px;">36 + 64 = c²</p>
-                            <p style="margin-top: 5px;">100 = c², so c = 10</p>
-                            <p style="margin-top: 5px;"><strong>c = 10</strong> (This is just 2 × the 3-4-5 triple)</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">why</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 2 (Why): Why did Baudhāyana's theorem remain true when you scale the numbers by any factor k?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Because the theorem is about the relationship between SQUARED values. When you scale all sides by k:</p>
-                            <p style="margin-top: 10px;">(ka)² + (kb)² = k²(a²) + k²(b²) = k²(a² + b²) = k²(c²) = (kc)²</p>
-                            <p style="margin-top: 10px;">The squaring operation preserves the relationship, so the scaled triple still works!</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 3 (Apply): A ladder leans against a wall. The ladder is 13 meters long. Its base is 5 meters from the wall. How high up the wall does it reach?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>This forms a right triangle: base = 5m, height = ?, hypotenuse (ladder) = 13m</p>
-                            <p style="margin-top: 10px;">5² + h² = 13²</p>
-                            <p style="margin-top: 5px;">25 + h² = 169</p>
-                            <p style="margin-top: 5px;">h² = 144</p>
-                            <p style="margin-top: 5px;">h = 12 meters</p>
-                            <p style="margin-top: 5px;"><strong>The ladder reaches 12 meters up the wall.</strong> (This is the 5-12-13 triple!)</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 4 (Apply): A water lily in a pond has its stem 1 meter above the water. The wind blows it, and the tip touches the water 3 meters away. How deep is the pond?</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p>Let d = depth of pond. The stem length = d + 1 (underwater + above water)</p>
-                            <p style="margin-top: 10px;">This forms a right triangle: horizontal distance = 3, vertical distance = d, hypotenuse = d+1</p>
-                            <p style="margin-top: 10px;">3² + d² = (d+1)²</p>
-                            <p style="margin-top: 5px;">9 + d² = d² + 2d + 1</p>
-                            <p style="margin-top: 5px;">9 = 2d + 1</p>
-                            <p style="margin-top: 5px;">8 = 2d</p>
-                            <p style="margin-top: 5px;">d = 4 meters</p>
-                            <p style="margin-top: 5px;"><strong>The pond is 4 meters deep.</strong></p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="quiz-level" style="margin-top: 15px;">
-                    <div class="quiz-level-tag">apply</div>
-                    <div class="quiz-question">
-                        <p><strong>Level 5 (Challenge): Verify that (7, 24, 25) is a Baudhāyana triple, then find two scaled versions of it.</strong></p>
-                        <details>
-                            <summary>Click to reveal answer</summary>
-                            <p><strong>Verification:</strong> 7² + 24² = 49 + 576 = 625 = 25² ✓</p>
-                            <p style="margin-top: 10px;"><strong>Scaled version with k=2:</strong> (14, 48, 50)</p>
-                            <p style="margin-top: 5px;">Check: 14² + 48² = 196 + 2304 = 2500 = 50² ✓</p>
-                            <p style="margin-top: 10px;"><strong>Scaled version with k=3:</strong> (21, 72, 75)</p>
-                            <p style="margin-top: 5px;">Check: 21² + 72² = 441 + 5184 = 5625 = 75² ✓</p>
-                        </details>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Chapter Navigation -->
-            <div class="chapter-nav">
-                <a href="chapter8.html" class="btn btn-prev">← Chapter 8</a>
-                <a href="index.html" class="btn btn-home">All Chapters</a>
-                <a href="chapter10.html" class="btn btn-next">Chapter 10 →</a>
-            </div>
-        </div>
+  <div class="exp-topbar">
+    <div class="inner">
+      <a href="../../index.html" aria-label="Back to ShikshaPal Explainer">
+        <span aria-hidden="true">←</span>
+        <span>Back to ShikshaPal Explainer</span>
+      </a>
+      <span class="crumbs">Class 8 / Math</span>
     </div>
-  <!-- ===== FLASHCARDS ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="flashcard-section">
+  </div>
+
+  <div class="exp-progress" aria-hidden="true"><i></i></div>
+
+  <header class="exp-brandbar">
+    <div class="inner">
+      <a href="../../../index.html" class="exp-brand">
+        <span class="mark"><img src="../../../assets/logo.png" alt=""></span>
+        <span>Shiksha<span class="light-word">Pal</span></span>
+      </a>
+      <div class="exp-context">
+        <a href="../index.html">Class 8</a>
+        <span class="dot">·</span>
+        <a href="index.html" class="pill">Math</a>
+      </div>
+      <button class="exp-hamburger" aria-label="Open chapter list" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="exp-overlay" aria-hidden="true"></div>
+
+  <div class="exp-shell">
+
+    <aside class="exp-sidebar" aria-label="Chapter list">
+      <div class="sb-close">
+        <span class="sb-title">Class 8 · Math</span>
+        <button class="x" aria-label="Close" type="button">×</button>
+      </div>
+      <p class="sb-title">14 Chapters · NCERT</p>
+      <ol>
+        <li><a href="chapter1.html"><span class="num">01</span><span class="title">A Square and A Cube</span></a></li>
+        <li><a href="chapter2.html"><span class="num">02</span><span class="title">Power Play</span></a></li>
+        <li><a href="chapter3.html"><span class="num">03</span><span class="title">A Story of Numbers</span></a></li>
+        <li><a href="chapter4.html"><span class="num">04</span><span class="title">Quadrilaterals</span></a></li>
+        <li><a href="chapter5.html"><span class="num">05</span><span class="title">Number Play</span></a></li>
+        <li><a href="chapter6.html"><span class="num">06</span><span class="title">We Distribute, Yet Things Multiply</span></a></li>
+        <li><a href="chapter7.html"><span class="num">07</span><span class="title">Proportional Reasoning</span></a></li>
+        <li><a href="chapter8.html"><span class="num">08</span><span class="title">Fractions in Disguise</span></a></li>
+        <li><a href="chapter9.html" class="active"><span class="num">09</span><span class="title">The Baudhāyana-Pythagoras Theorem</span></a></li>
+        <li><a href="chapter10.html"><span class="num">10</span><span class="title">Proportional Reasoning — 2</span></a></li>
+        <li><a href="chapter11.html"><span class="num">11</span><span class="title">Exploring Some Geometric Themes</span></a></li>
+        <li><a href="chapter12.html"><span class="num">12</span><span class="title">Tales by Dots and Lines</span></a></li>
+        <li><a href="chapter13.html"><span class="num">13</span><span class="title">Algebra Play</span></a></li>
+        <li><a href="chapter14.html"><span class="num">14</span><span class="title">Area</span></a></li>
+      </ol>
+    </aside>
+
+    <main class="exp-main">
+
+      <header class="exp-hero">
+        <span class="eyebrow">Chapter 9 · Geometry</span>
+        <h1>The Baudhāyana-Pythagoras Theorem</h1>
+        <p class="lede">From 800 BCE to Modern Mathematics.</p>
+      </header>
+
+      <section class="hook-box">
+        <div class="hook-label">Everyday Mystery</div>
+        <h3>A Puzzle About Squares and Triangles</h3>
+        <p>Imagine you have a square piece of paper. You want to create a square with EXACTLY double the area. Simply doubling each side? That would create a square with 4 times the area!</p>
+        <p><strong>The Ancient Mystery:</strong></p>
+        <p>Over 2,800 years ago, a mathematician named Baudhāyana discovered something magical: if you construct a square on the diagonal of your original square, it has exactly double the area. How is this possible? What's the secret relationship between the diagonal and the sides?</p>
+      </section>
+
+      <section class="feynman-bridge">
+        <div class="bridge-label">Feynman Bridge — Think of it this way…</div>
+        <p>Baudhāyana's discovery about doubling squares wasn't just a neat trick. When he investigated WHY it worked, he uncovered something far more powerful: a fundamental relationship that exists in ALL right-angled triangles.</p>
+        <p><strong>The Beautiful Insight:</strong></p>
+        <p>In any right-angled triangle, if you draw squares on each of the three sides, the two smaller squares (on the shorter sides) will have exactly the same total area as the large square (on the longest side, called the hypotenuse).</p>
+        <p>a² + b² = c²</p>
+        <p>where a and b are the lengths of the two shorter sides, and c is the length of the hypotenuse.</p>
+        <p><strong>Why did Baudhāyana discover this?</strong> He was solving a practical construction problem. The Śulba-Sūtra (his ancient text) describes altar construction, and builders needed to create perfect right angles. This theorem gave them the mathematical certainty they needed.</p>
+      </section>
+
+      <h2>Logic Ladder 1: Doubling a Square on Its Diagonal</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Start: A Unit Square</h4>
+          <p>You have a square with side length 1. Its area is 1 × 1 = 1 square unit.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Draw the Diagonal</h4>
+          <p>Draw a line from one corner to the opposite corner. This diagonal cuts the square into two equal triangles.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Use the Diagonal as a Side</h4>
+          <p>Now construct a NEW square where the diagonal is one of the sides.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Count the Triangles</h4>
+          <p>The original square contains 2 triangles. The new square contains exactly 4 of the same triangles (they're congruent).</p>
+          <p>Since 4 triangles = 2 × (2 triangles), the new square has DOUBLE the area!</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Finding the Hypotenuse</div>
+        <p>Now let's use Baudhāyana's theorem to solve real problems. Remember, in a right-angled triangle, the hypotenuse is the longest side, always opposite the right angle.</p>
+        <p><strong>Classic Problem: The 3-4-5 Triangle</strong></p>
+        <p>This is perhaps the most famous Baudhāyana triple. Imagine a right triangle with shorter sides of 3 cm and 4 cm.</p>
+        <p><strong>Using the theorem:</strong> a² + b² = c²</p>
+        <p>3² + 4² = c²</p>
+        <p>9 + 16 = c²</p>
+        <p>25 = c²</p>
+        <p>c = 5 cm</p>
+        <p><strong>Why is this special?</strong> All three numbers are whole numbers! Most right triangles have irrational hypotenuses (like √2). But this one works out perfectly.</p>
+        <p><strong>Example: Isosceles Right Triangle</strong></p>
+        <p>What if both shorter sides are equal? Say, both are 1 unit long.</p>
+        <p>a = 1, b = 1, c = ?</p>
+        <p>1² + 1² = c²</p>
+        <p>1 + 1 = c²</p>
+        <p>2 = c²</p>
+        <p>c = √2 ≈ 1.414</p>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap: Which Side is Which?</div>
+        <p>The hypotenuse (c) is ALWAYS the longest side in a right triangle. Always use c for the longest side, even if the problem doesn't tell you which is which.</p>
+        <p><strong>Wrong:</strong> If sides are 5 cm, 4 cm, and 3 cm: 5² + 4² = 3²  (This makes no sense!)</p>
+        <p><strong>Right:</strong> 3² + 4² = 5² (25 = 25 ✓)</p>
+      </div>
+
+      <h2>Logic Ladder 2: Finding a Missing Side</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Problem Given</h4>
+          <p>Right triangle with sides 5 and 12. Find the hypotenuse.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Identify What You Have</h4>
+          <p>a = 5, b = 12, c = ?</p>
+          <p>These are the two shorter sides, so c is the hypotenuse.</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Apply the Theorem</h4>
+          <p>5² + 12² = c²</p>
+          <p>25 + 144 = c²</p>
+          <p>169 = c²</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Solve for c</h4>
+          <p>c = √169 = 13</p>
+          <p><strong>The hypotenuse is 13 units.</strong></p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Baudhāyana Triples — Infinite Possibilities</div>
+        <p>A "Baudhāyana triple" (or Pythagorean triple) is a set of three whole numbers that satisfy a² + b² = c².</p>
+        <p><strong>Known Triples from Ancient Times:</strong></p>
+        <ul>
+          <li>(3, 4, 5)</li>
+          <li>(5, 12, 13)</li>
+          <li>(8, 15, 17)</li>
+          <li>(7, 24, 25)</li>
+          <li>(20, 21, 29)</li>
+        </ul>
+        <p><strong>But here's the profound question Baudhāyana asked:</strong> Are there infinitely many triples, or will we eventually run out?</p>
+        <p><strong>The Scaling Secret:</strong></p>
+        <p>If (3, 4, 5) is a triple, then so is (6, 8, 10), (9, 12, 15), (300, 400, 500), and infinitely many others! We can multiply every number by any factor k, and it still works.</p>
+        <p><strong>Proof:</strong> If a² + b² = c², then:</p>
+        <p>(ka)² + (kb)² = k²a² + k²b² = k²(a² + b²) = k²c² = (kc)²</p>
+        <p>So (ka, kb, kc) is also a triple!</p>
+        <p><strong>Primitive vs. Non-Primitive Triples:</strong></p>
+        <ul>
+          <li><strong>Primitive Triple:</strong> Three numbers with no common factor. Examples: (3,4,5), (5,12,13)</li>
+          <li><strong>Non-Primitive Triple:</strong> Has a common factor. Example: (6,8,10) = 2×(3,4,5)</li>
+        </ul>
+      </div>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · Common Error Trap: Assuming All Triples Are Primitive</div>
+        <p>(9, 12, 15) might look like a new triple, but it's just 3 × (3, 4, 5). To find genuinely new patterns, mathematicians focus on primitive triples.</p>
+      </div>
+
+      <h2>Logic Ladder 3: Creating Scaled Triples</h2>
+      <section class="logic-ladder">
+        <div class="logic-step">
+          <h4>Start: Known Triple</h4>
+          <p>(3, 4, 5) — verified because 9 + 16 = 25</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Choose a Scale Factor</h4>
+          <p>Let k = 4</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Multiply Each Number</h4>
+          <p>(3×4, 4×4, 5×4) = (12, 16, 20)</p>
+        </div>
+
+        <div class="logic-step">
+          <h4>Verify</h4>
+          <p>12² + 16² = 144 + 256 = 400 = 20² ✓</p>
+        </div>
+      </section>
+
+      <div class="deep-dive">
+        <div class="dd-label">Deep Dive · From Baudhāyana to Pythagoras to Fermat</div>
+        <p>Baudhāyana lived around 800 BCE in ancient India. About 300 years later, the Greek philosopher Pythagoras (around 500 BCE) studied the same theorem. It's called the "Baudhāyana-Pythagoras Theorem" to honor both mathematicians.</p>
+        <p><strong>Fermat's Last Theorem — A 350-Year Mystery</strong></p>
+        <p>In the 1600s, a French mathematician named Pierre de Fermat asked a brilliant question:</p>
+        <p>"We know x² + y² = z² has infinitely many solutions. But does x³ + y³ = z³ have ANY solutions with whole numbers?"</p>
+        <p><strong>Fermat's conjecture:</strong> No, it doesn't. For any power greater than 2, there are no whole number solutions.</p>
+        <p><strong>The problem:</strong> Fermat claimed he had a proof but never wrote it down! Mathematicians spent 350+ years trying to prove it until Andrew Wiles finally succeeded in 1994.</p>
+        <p><strong>Why is this important?</strong> Fermat's Last Theorem showed that even though the Baudhāyana-Pythagoras theorem leads to infinitely many solutions, slightly different equations can have none. This opened entirely new areas of mathematics!</p>
+      </div>
+
+      <section class="socratic-sandbox">
+        <h3>Socratic Sandbox — Test Your Thinking</h3>
+
+        <div class="quiz-level predict">
+          <span class="level-badge">Level 1 · Predict</span>
+          <p class="quiz-question"><strong>In a right triangle with sides 6, 8, and c, which value of c makes it a right triangle?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Using a² + b² = c²:</p>
+            <p>6² + 8² = c²</p>
+            <p>36 + 64 = c²</p>
+            <p>100 = c², so c = 10</p>
+            <p><strong>c = 10</strong> (This is just 2 × the 3-4-5 triple)</p>
+          </details>
+        </div>
+
+        <div class="quiz-level why">
+          <span class="level-badge">Level 2 · Why</span>
+          <p class="quiz-question"><strong>Why did Baudhāyana's theorem remain true when you scale the numbers by any factor k?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Because the theorem is about the relationship between SQUARED values. When you scale all sides by k:</p>
+            <p>(ka)² + (kb)² = k²(a²) + k²(b²) = k²(a² + b²) = k²(c²) = (kc)²</p>
+            <p>The squaring operation preserves the relationship, so the scaled triple still works!</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>A ladder leans against a wall. The ladder is 13 meters long. Its base is 5 meters from the wall. How high up the wall does it reach?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>This forms a right triangle: base = 5m, height = ?, hypotenuse (ladder) = 13m</p>
+            <p>5² + h² = 13²</p>
+            <p>25 + h² = 169</p>
+            <p>h² = 144</p>
+            <p>h = 12 meters</p>
+            <p><strong>The ladder reaches 12 meters up the wall.</strong> (This is the 5-12-13 triple!)</p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>A water lily in a pond has its stem 1 meter above the water. The wind blows it, and the tip touches the water 3 meters away. How deep is the pond?</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p>Let d = depth of pond. The stem length = d + 1 (underwater + above water)</p>
+            <p>This forms a right triangle: horizontal distance = 3, vertical distance = d, hypotenuse = d+1</p>
+            <p>3² + d² = (d+1)²</p>
+            <p>9 + d² = d² + 2d + 1</p>
+            <p>9 = 2d + 1</p>
+            <p>8 = 2d</p>
+            <p>d = 4 meters</p>
+            <p><strong>The pond is 4 meters deep.</strong></p>
+          </details>
+        </div>
+
+        <div class="quiz-level apply">
+          <span class="level-badge">Level 3 · Apply</span>
+          <p class="quiz-question"><strong>Verify that (7, 24, 25) is a Baudhāyana triple, then find two scaled versions of it.</strong></p>
+          <details>
+            <summary>Reveal Answer</summary>
+            <p><strong>Verification:</strong> 7² + 24² = 49 + 576 = 625 = 25² ✓</p>
+            <p><strong>Scaled version with k=2:</strong> (14, 48, 50)</p>
+            <p>Check: 14² + 48² = 196 + 2304 = 2500 = 50² ✓</p>
+            <p><strong>Scaled version with k=3:</strong> (21, 72, 75)</p>
+            <p>Check: 21² + 72² = 441 + 5184 = 5625 = 75² ✓</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="flashcard-section">
         <div class="section-label flashcards">🃏 Flashcards — Quick Recall</div>
         <div class="flashcard-deck">
           <div class="flashcard">
@@ -443,14 +409,9 @@
           </div>
         </div>
         <div class="flashcard-counter">8 cards — click any card to flip</div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ===== MCQ QUIZ ===== -->
-  <section class="section">
-    <div class="container" style="max-width:900px;">
-      <div class="mcq-section">
+      <section class="mcq-section">
         <div class="section-label mcq">📝 Quick Quiz — Test Yourself</div>
         <div class="mcq-quiz">
           <div class="mcq-item" data-answer="A">
@@ -509,34 +470,27 @@
             <button class="mcq-reset-btn">Reset Quiz</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
+      <nav class="chapter-nav" aria-label="Chapter navigation">
+        <a href="chapter8.html" class="prev">
+          <span class="nav-label">← Previous</span>
+          <span class="nav-title">Fractions in Disguise</span>
+        </a>
+        <a href="chapter10.html" class="next">
+          <span class="nav-label">Next →</span>
+          <span class="nav-title">Proportional Reasoning — 2</span>
+        </a>
+      </nav>
 
+    </main>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Grade 8 Mathematics Learning Portal | Chapter 9: The Baudhāyana-Pythagoras Theorem</p>
-    </footer>
+  <footer class="exp-footer">
+    Class 8 · Math · Built from NCERT (2025 Edition)
+  </footer>
 
-    <script>
-        // Theme toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', savedTheme);
-        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        });
-    </script>
-  <script src="../css/quiz-engine.js"></script>
+  <script src="../../js/chapter-shell.js"></script>
+  <script src="../../js/quiz-engine.js"></script>
 </body>
 </html>
