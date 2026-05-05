@@ -28,6 +28,10 @@
   --social-dim:     #ff9f4330;
   --english:        #ff6b8a;
   --english-dim:    #ff6b8a30;
+  --physics:        #00d4aa;
+  --physics-dim:    #00d4aa30;
+  --chemistry:      #ff9f43;
+  --chemistry-dim:  #ff9f4330;
 
   /* Interaction colours */
   --accent:         #a78bfa;
@@ -371,6 +375,8 @@ p  { margin-bottom: var(--sp-4); color: var(--text-secondary); }
 .subject-card[data-subject="math"]::before    { background: var(--math); }
 .subject-card[data-subject="social"]::before  { background: var(--social); }
 .subject-card[data-subject="english"]::before { background: var(--english); }
+.subject-card[data-subject="physics"]::before { background: var(--physics); }
+.subject-card[data-subject="chemistry"]::before { background: var(--chemistry); }
 
 .card-icon {
   width: 48px;

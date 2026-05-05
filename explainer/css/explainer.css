@@ -771,10 +771,14 @@ body.explainer-v2 .mcq-score-bar .mcq-reset-btn {
 body.explainer-v2 .mcq-score-bar .mcq-reset-btn:hover { border-color: var(--subj); color: var(--subj); }
 
 /* ========== Tables (preserved layout from source) ========== */
+body.explainer-v2 .table-wrap {
+  overflow-x: auto;
+  margin: 18px 0 22px;
+}
 body.explainer-v2 .exp-main table {
   width: 100%;
   border-collapse: collapse;
-  margin: 18px 0 22px;
+  margin: 0;
   font-size: 14.5px;
   background: var(--surface);
   border: 1px solid var(--line);
