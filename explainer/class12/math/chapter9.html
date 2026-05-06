@@ -221,649 +221,98 @@ d/dx[μ(x)y] = μ(x)Q(x)</code></pre>
         </ol>
         <hr />
       <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Differential Equations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Differential Equations is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Examples?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">- dy/dx = 2x is first-order (involves dy/dx only)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is General vs. particular solutions?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">- General solution: involves arbitrary constants (from chapter-07-integrals)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Solution method?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Separate variables and integrate:</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Solution?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">y = Ae^(kx) or y = y₀e^(kt) (with initial condition y(0) = y₀)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Example?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A radioactive substance decays with dy/dt = -0.1y, where y is mass and t is time in years. If y(0) = 100 grams:</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Understanding Differential Equations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A differential equation involves a function and its derivatives. The order of a differential equation is the highest derivative present.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Building from Earlier Chapters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">chapter-05-continuity-and-differentiability introduced derivatives. chapter-07-integrals showed that integration recovers functions from derivatives.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Separable Differential Equations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A differential equation dy/dx = f(x, y) is separable if it can be written: dy/dx = g(x) · h(y) Solution method: Separate variables and integrate: (1/h(y)) dy = g(x) dx ∫(1/h(y)) dy = ∫g(x) dx F(y) = G(x) + C Example:…</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Exponential Growth and Decay?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Many phenomena follow dy/dx = ky, where k is a constant: - k &gt; 0: exponential growth (bacteria, investments) - k &lt; 0: exponential decay (radioactive decay, cooling) Solution: y = Ae^(kx) or y = y₀e^(kt) (with initial…</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Newton&#x27;s Law of Cooling?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">An object cools toward ambient temperature according to: dT/dt = k(T - Tₐ) where T is object temperature, Tₐ is ambient temperature, and k &lt; 0.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Linear Differential Equations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A first-order linear differential equation has the form: dy/dx + P(x)y = Q(x) Solution method: Use an integrating factor μ(x) = e^(∫P(x)dx).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Second-Order Linear Equations (brief introduction)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">For equations like d²y/dx² + a(dy/dx) + by = f(x), solutions combine: 1. Complementary solution (homogeneous part): yc satisfying d²y/dx² + a(dy/dx) + by = 0 2.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Connections to Other Topics?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">- chapter-06-application-of-derivatives: Differential equations model real-world rate problems - chapter-07-integrals: Integration solves differential equations - chapter-13-probability: Differential equations model…</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is dy/dx = 2x is first-order (involves dy/dx?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">dy/dx = 2x is first-order (involves dy/dx only)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is d²y/dx² + 3dy/dx + 2y = 0?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">d²y/dx² + 3dy/dx + 2y = 0 is second-order (involves d²y/dx²)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is General solution?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">involves arbitrary constants (from chapter-07-integrals)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Particular solution?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">specific solution satisfying initial conditions (e.g., y(0) = 5)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is If y(0) = 3, then 3 =?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">If y(0) = 3, then 3 = 0 + C, so C = 3</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Separate?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(1/y) dy = dx</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Integrate?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">∫(1/y) dy = ∫dx</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Result?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">ln|y| = x + C, so y = Ae^x (where A = ±e^C)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is k &gt; 0?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">exponential growth (bacteria, investments)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is After 10 years?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">y = 100e^(-1) ≈ 36.8 grams</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is P(x) = -2, so μ(x) = e^(-2x)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">P(x) = -2, so μ(x) = e^(-2x)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Multiply?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">e^(-2x)dy/dx - 2e^(-2x)y = e^x</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Recognize?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">d/dx[e^(-2x)y] = e^x</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-06-application-of-derivatives?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Differential equations model real-world rate problems</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-07-integrals?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Integration solves differential equations</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is chapter-13-probability?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Differential equations model stochastic processes</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Physics applications?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">motion, electricity, heat transfer</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: dy/dx = g(x) · h(y)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: (1/h(y)) dy = g(x) dx ∫(1/h(y)) dy = ∫g(x) dx F(?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: dT/dt = k(T - Tₐ)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: dy/dx + P(x)y = Q(x)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What does this formula or relation mean: μ(x)dy/dx + μ(x)P(x)y = μ(x)Q(x) d/dx[μ(x)y] = μ?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">This formula or symbolic relation appears in the chapter. Explain what each part represents before using it.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Understanding Differential Equations matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Understanding Differential Equations matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Building from Earlier Chapters matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Building from Earlier Chapters matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Separable Differential Equations matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Separable Differential Equations matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Applications of Separable Equations matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Applications of Separable Equations matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Differential Equation</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">An equation involving an unknown function and its derivatives, e.g., dy/dx = f(x, y).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Order of a DE</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">The order is the highest derivative present (e.g., d²y/dx² → order 2).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Degree of a DE</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">The power of the highest-order derivative when the equation is polynomial in derivatives (and free of radicals/fractions of derivatives).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">General vs Particular Solution</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">General solution contains arbitrary constants; a particular solution is determined by an initial condition.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Variables Separable</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">If dy/dx = f(x)·g(y), then ∫dy/g(y) = ∫f(x) dx + C.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Homogeneous DE</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">dy/dx = F(y/x). Substitute y = vx so dy/dx = v + x·dv/dx and the equation becomes separable in v and x.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Linear DE (first order)</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">dy/dx + P(x)y = Q(x). Integrating factor μ = e^(∫P dx); then d/dx(μy) = μQ.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Integrating Factor</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">μ(x) = e^(∫P(x) dx) for dy/dx + P(x)y = Q(x). Multiplying turns the left side into d/dx[μ(x) y].</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Exponential Growth/Decay</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">dy/dt = ky has solution y = y₀ e^(kt). k &gt; 0 grows; k &lt; 0 decays.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Newton's Law of Cooling</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">dT/dt = k(T − Tₐ) ⇒ T = Tₐ + (T₀ − Tₐ)e^(kt), with k &lt; 0 for cooling.</div></div>
+          </div></div>
+        </div></section>
       <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Explain why the general solution to a differential equation contains arbitrary constants. How do initial conditions pin down these constants to give a unique particular solution?</div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">The order of the differential equation d²y/dx² + 3(dy/dx)⁵ + y = 0 is</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 5</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 1</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 2</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 3</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="The highest derivative present is d²y/dx², so the order is 2." data-wrong="The correct answer is C. Order is the highest derivative; here it is the second derivative."></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">Solve dy/dx = y with y(0) = 1.</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> y = e^x</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> y = x</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> y = e^(−x)</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> y = ln x</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Separating: dy/y = dx ⇒ ln|y| = x + C; y(0) = 1 ⇒ C = 0, so y = e^x." data-wrong="The correct answer is A. y(0) = 1 forces y = e^x."></div>
+          </div>
+          <div class="mcq-item" data-answer="D">
+            <div class="mcq-stem">For dy/dx + (1/x) y = x, the integrating factor is</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> e^x</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 1/x</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> ln x</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> x</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="P(x) = 1/x; μ = e^(∫(1/x) dx) = e^(ln x) = x." data-wrong="The correct answer is D. Integrating factor μ = e^(∫1/x dx) = x."></div>
           </div>
           <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">For the differential equation dy/dx = y, separate variables to get (1/y) dy = dx. Why is this valid as long as y ≠ 0? What happens if y = 0; is it a solution to the original equation?</div>
+            <div class="mcq-stem">The general solution of dy/dx = x/y is</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> y = x + C</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> y² − x² = C</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> y² + x² = C</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> y = x²/2 + C</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="y dy = x dx ⇒ y²/2 − x²/2 = C/2 ⇒ y² − x² = C." data-wrong="The correct answer is B. Separating gives y² − x² = constant."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Two populations follow dy/dt = ky and dz/dt = 3ky with the same k. If both start with the same initial value, how will the second population differ from the first? What does the factor of 3 on the right side change?</div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">A radioactive sample obeys dN/dt = −0.1 N with N(0) = 100. The mass after 10 years is</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 100 e^(−1)</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 100 e^(−10)</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 100/10</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 100 (1 − 0.1·10)</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="N(t) = 100 e^(−0.1 t); at t = 10, N = 100 e^(−1)." data-wrong="The correct answer is A. N(10) = 100·e^(−0.1·10) = 100 e^(−1)."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">In separable equations like dy/dx = f(x)·g(y), why is separation of variables valid? That is, why can we rearrange to get (1/g(y)) dy = f(x) dx without loss of information?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">For Newton&#x27;s Law of Cooling, dT/dt = k(T - Tₐ), explain why the temperature difference (T - Tₐ) decays exponentially, not the absolute temperature T. How does this make intuitive sense?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s formula or relation and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the formula or relation and explains the reasoning clearly." data-wrong="The best answer is B. For Math, the goal is to reason from the concept and evidence, not just recall words."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Differential Equations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Examples?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand General vs. particular solutions?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Solution method?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Solution?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Example?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Understanding Differential Equations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Building from Earlier Chapters?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Separable Differential Equations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Exponential Growth and Decay?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Newton&#x27;s Law of Cooling?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Linear Differential Equations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Second-Order Linear Equations (brief introduction)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Connections to Other Topics?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand dy/dx = 2x is first-order (involves dy/dx?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand d²y/dx² + 3dy/dx + 2y = 0?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand General solution?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Particular solution?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand If y(0) = 3, then 3 =?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Separate?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Integrate?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Result?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand k &gt; 0?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand After 10 years?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand P(x) = -2, so μ(x) = e^(-2x)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Multiply?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Recognize?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand chapter-06-application-of-derivatives?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand chapter-07-integrals?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand chapter-13-probability?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Physics applications?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Formula: dy/dx = g(x) · h(y)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Formula: (1/h(y)) dy = g(x) dx ∫(1/h(y)) dy = ∫g(x) dx F(?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Formula: dT/dt = k(T - Tₐ)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Formula: dy/dx + P(x)y = Q(x)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Math, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
         </div></section>
       <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter8.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Application of Integrals</span></a><a href="chapter10.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Vector Algebra</span></a></nav>
     </main>
