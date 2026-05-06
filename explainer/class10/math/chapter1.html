@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Real numbers form the foundation of all mathematics we use in everyday life." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Real Numbers",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter1.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter1.html#learning-resource",
+        "name": "Real Numbers — Class 10 Math · ShikshaPal",
+        "description": "Real numbers form the foundation of all mathematics we use in everyday life.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter1.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Real Numbers",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter1.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter1.html#learning-resource",
-      "name": "Real Numbers — Class 10 Math · ShikshaPal",
-      "description": "Real numbers form the foundation of all mathematics we use in everyday life.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter1.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter1.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Real Numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Real Numbers is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The Algorithm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For any two positive integers a and b, we can always write:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Imagine distributing 17 apples equally into 5 baskets. Each basket gets 3 apples (quotient), with 2 apples left over (remainder). This is exactly how division works: 17 = 5(3) + 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Practical use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This algorithm is the basis of the long division you learned in elementary school. It's also used to find the Greatest Common Divisor (GCD)—the largest number that divides two numbers evenly—using a method called the Euclidean algorithm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- 12 = 2 × 2 × 3 (always, no other combination of primes multiplies to 12)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This theorem guarantees that prime factorization is the same for everyone, everywhere. It's why we can find the GCD and Least Common Multiple (LCM) by comparing prime factors. Without this uniqueness, much of number theory would collapse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Euclid's Division Lemma?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For positive integers a and b, a = bq + r where 0 ≤ r < b"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Fundamental Theorem of Arithmetic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every integer n > 1 has a unique prime factorization"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is GCD (a, b)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Can be found using Euclid's algorithm by repeated division"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is HCF × LCM = Product of two numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A × B = HCF(A,B) × LCM(A,B)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Think of real numbers as a complete number line. Unlike the gaps in rational numbers (like fractions), real numbers fill every single point on this line."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Euclid's division algorithm answers a simple but powerful question: When you divide one positive integer by another, what remainder do you get?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every integer greater than 1 can be expressed uniquely as a product of prime numbers (in a particular order)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding real numbers and divisibility prepares you for: - chapter-02-polynomials: Polynomials extend these ideas to expressions with variables - chapter-04-quadratic-equations: Solving equations often requires…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Euclid's Division Lemma: For positive integers a and b, a = bq + r where 0 ≤ r 1 has a unique prime factorization - GCD (a, b): Can be found using Euclid's algorithm by repeated division - HCF × LCM = Product of two…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 12 = 2 × 2 × 3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "12 = 2 × 2 × 3 (always, no other combination of primes multiplies to 12)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 30 = 2 × 3 × 5?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "30 = 2 × 3 × 5 (unique factorization)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 97 = 97 (prime numbers are their?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "97 = 97 (prime numbers are their own factorization)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-02-polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polynomials extend these ideas to expressions with variables"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solving equations often requires understanding factorization"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-05-arithmetic-progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sequences build on properties of integers"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: a = bq + r?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Understanding Real Numbers: The Complete Number System matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding Real Numbers: The Complete Number System matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Euclid's Division Algorithm: Breaking Numbers Into Parts matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Euclid's Division Algorithm: Breaking Numbers Into Parts matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Connecting to Related Topics matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connecting to Related Topics matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Key Formulas and Theorems matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key Formulas and Theorems matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Understanding Real Numbers: The Complete Number System should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Euclid's Division Algorithm: Breaking Numbers Into Parts should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Connecting to Related Topics should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Key Formulas and Theorems should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a common trap in Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common trap in Understanding Real Numbers: The Complete Number System is memorising the statement without checking when and why it applies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a common trap in Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common trap in Euclid's Division Algorithm: Breaking Numbers Into Parts is memorising the statement without checking when and why it applies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a common trap in The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common trap in The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA is memorising the statement without checking when and why it applies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a common trap in Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common trap in Connecting to Related Topics is memorising the statement without checking when and why it applies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a common trap in Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A common trap in Key Formulas and Theorems is memorising the statement without checking when and why it applies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should you think about How to explain Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To explain Understanding Real Numbers: The Complete Number System, begin with the simplest case, name the quantities involved, and then add complexity step by step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should you think about How to explain Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To explain Euclid's Division Algorithm: Breaking Numbers Into Parts, begin with the simplest case, name the quantities involved, and then add complexity step by step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should you think about How to explain The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To explain The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA, begin with the simplest case, name the quantities involved, and then add complexity step by step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you keep applying Euclid's division algorithm repeatedly to find the GCD of two numbers, what property ensures the algorithm eventually stops?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do you think the Fundamental Theorem of Arithmetic is called \"fundamental\"? What would mathematics be like if the same number could have two different prime factorizations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a number is divisible by both 12 and 18, what is the smallest number that must divide it? How does the concept of LCM help solve this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Consider the number 60. How many different ways can you express it as a product of prime numbers? Does this contradict the Fundamental Theorem of Arithmetic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Euclid's division algorithm more efficient than checking all smaller numbers to find the GCD of two large numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real Numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Algorithm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Practical use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Euclid's Division Lemma?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Fundamental Theorem of Arithmetic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand GCD (a, b)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand HCF × LCM = Product of two numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 12 = 2 × 2 × 3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 30 = 2 × 3 × 5?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 97 = 97 (prime numbers are their?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-02-polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-05-arithmetic-progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Formula: a = bq + r?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Understanding Real Numbers: The Complete Number System matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Euclid's Division Algorithm: Breaking Numbers Into Parts matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Connecting to Related Topics matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Key Formulas and Theorems matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Common trap in Understanding Real Numbers: The Complete Number System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Common trap in Euclid's Division Algorithm: Breaking Numbers Into Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Common trap in The Fundamental Theorem of Arithmetic: Every Number Has a Unique DNA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

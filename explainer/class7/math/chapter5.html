@@ -21,70 +21,131 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class7/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Parallel and Intersecting Lines",
+            "item": "https://www.shikshapal.com/explainer/class7/math/chapter5.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter5.html#learning-resource",
+        "name": "Parallel and Intersecting Lines — Class 7 Math · ShikshaPal",
+        "description": "Exploring the relationships between lines on a plane surface",
+        "url": "https://www.shikshapal.com/explainer/class7/math/chapter5.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class7/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Parallel and Intersecting Lines",
-          "item": "https://www.shikshapal.com/explainer/class7/math/chapter5.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/math/chapter5.html#learning-resource",
-      "name": "Parallel and Intersecting Lines — Class 7 Math · ShikshaPal",
-      "description": "Exploring the relationships between lines on a plane surface",
-      "url": "https://www.shikshapal.com/explainer/class7/math/chapter5.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter5.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If two lines intersect and one angle is 120°, what is the angle next to it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "60°. Because 120° + 60° = 180°. They form a linear pair on a straight line."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a transversal crosses two lines forming equal corresponding angles, are the lines parallel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Equal corresponding angles prove the lines are parallel. This is the key test for parallelism!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are vertically opposite angles always equal? Explain without using the angle measurement.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because both ∠a and ∠c are paired with ∠b on a straight line. So ∠a + ∠b = 180° and ∠c + ∠b = 180°. This means ∠a = ∠c. Pure logic, no measurements!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When you fold a piece of paper to create a line perpendicular to line l, then fold perpendicular to that crease, why is the new line parallel to line l?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both lines are perpendicular to the middle crease (90° angle). So they're corresponding angles of 90° to the same transversal, making them parallel to each other. That's the definition of parallel!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a diagram, lines l and m are parallel. A transversal t intersects them. If the angle at l is 50°, what is the alternate angle at m?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50°. Alternate angles formed by a transversal on parallel lines are always equal. So if one is 50°, the other is also 50°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You need to draw a line parallel to a given line passing through a specific point. Describe your method using a ruler and set square.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Place the set square so one side is along the given line. Hold a ruler against the perpendicular edge. Slide the set square along the ruler until it reaches the point. Draw along the set square's edge. Both lines make the same angle with the ruler (90°), so they're parallel!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

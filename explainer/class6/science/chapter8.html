@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class6/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "A Journey through States of Water",
+            "item": "https://www.shikshapal.com/explainer/class6/science/chapter8.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/science/chapter8.html#learning-resource",
+        "name": "A Journey through States of Water — Class 6 Science · ShikshaPal",
+        "description": "Water is the only substance on Earth that naturally exists in all three states: solid ice, liquid water, and invisible water vapour. Follow water's amazing journey—from puddles to clouds to rain—and discover how it transforms and travels our planet.",
+        "url": "https://www.shikshapal.com/explainer/class6/science/chapter8.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class6/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "A Journey through States of Water",
-          "item": "https://www.shikshapal.com/explainer/class6/science/chapter8.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/science/chapter8.html#learning-resource",
-      "name": "A Journey through States of Water — Class 6 Science · ShikshaPal",
-      "description": "Water is the only substance on Earth that naturally exists in all three states: solid ice, liquid water, and invisible water vapour. Follow water's amazing journey—from puddles to clouds to rain—and discover how it transforms and travels our planet.",
-      "url": "https://www.shikshapal.com/explainer/class6/science/chapter8.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/science/chapter8.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Question 1: You leave a glass of water on a table in a warm room. After a week, the glass is empty, but there's no hole in it. What happened to the water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The water evaporated. It transformed into water vapour (an invisible gas) and floated away into the air. Evaporation happens slowly at room temperature, especially in warm, dry rooms with air movement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 4: Why does wet hair dry faster on a windy day than on a still day, even if the temperature is the same?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wind moves air around quickly, carrying water vapour away from the hair. Without wind, water vapour tends to accumulate near the wet hair, slowing evaporation. Wind constantly replaces moist air with dry air, allowing more water to evaporate faster."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 7: A student observes that ice melts faster in direct sunlight than in the shade. Another student adds salt to ice in shade and it melts. Explain both observations using what you know about melting.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sunlight provides heat energy, which makes ice melt faster. Salt lowers the melting point of ice (this is why salt is spread on icy roads). With salt, ice can melt at temperatures below 0°C, so even shade ice can melt if it's cold enough to have other heat sources. The key in both cases is having enough energy (heat) for the ice structure to break apart."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

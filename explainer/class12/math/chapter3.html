@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Matrices are the ultimate organizational tool in mathematics—think of them as tables of numbers arranged in rows and columns that can be manipulated…" />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Matrices",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter3.html#learning-resource",
+        "name": "Matrices — Class 12 Math · ShikshaPal",
+        "description": "Matrices are the ultimate organizational tool in mathematics—think of them as tables of numbers arranged in rows and columns that can be manipulated…",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Matrices",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter3.html#learning-resource",
-      "name": "Matrices — Class 12 Math · ShikshaPal",
-      "description": "Matrices are the ultimate organizational tool in mathematics—think of them as tables of numbers arranged in rows and columns that can be manipulated…",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Order of a Matrix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An m × n matrix has m rows and n columns. The element at row i, column j is aᵢⱼ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Identity Matrix Iₙ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Square matrix with 1s on the main diagonal and 0s elsewhere. AI = IA = A — the matrix analogue of multiplying by 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Transpose Aᵀ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Swap rows and columns: (Aᵀ)ᵢⱼ = aⱼᵢ. Also (Aᵀ)ᵀ = A and (AB)ᵀ = BᵀAᵀ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Symmetric Matrix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Square matrix where A = Aᵀ. A skew-symmetric matrix has Aᵀ = −A (so all diagonal elements are 0)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Matrix Addition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Defined only for matrices of the same order. (A + B)ᵢⱼ = aᵢⱼ + bᵢⱼ — element-wise."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Matrix Multiplication Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For A (m × n) and B (n × p), the product AB has order m × p. Inner dimensions must match."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Non-Commutativity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In general AB ≠ BA. Even when both products are defined, they can differ in value or in order."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inverse Matrix A⁻¹?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a square matrix A, A⁻¹ satisfies AA⁻¹ = A⁻¹A = I. Exists only when A is non-singular (det A ≠ 0)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solving Ax = b?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If A is invertible, x = A⁻¹b. The matrix form generalises from 2 unknowns to thousands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Diagonal Matrix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A square matrix whose non-diagonal entries are all zero. Multiplication and powers are easy: just operate on the diagonal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If A is a 2 × 3 matrix and B is a 3 × 4 matrix, the order of AB is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2 × 4. Correct. Inner dimensions match (3 = 3). The product takes the outer dimensions, 2 × 4."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For A = [[1, 2], [3, 4]], what is Aᵀ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[[1, 3], [2, 4]]. Correct. Transpose swaps rows and columns: row 1 (1, 2) becomes column 1; row 2 (3, 4) becomes column 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which of the following is a symmetric matrix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[[1, 2, 3], [2, 5, 6], [3, 6, 9]]. Correct. A symmetric matrix satisfies A = Aᵀ; entry (i, j) equals entry (j, i)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If A is a 3 × 3 matrix with A² = A, A is called:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Idempotent. Correct. A matrix satisfying A² = A is called idempotent — it \"stays the same\" under multiplication by itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If A is invertible and AX = B, what is X?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "X = A⁻¹B. Correct. Multiply both sides on the LEFT by A⁻¹: A⁻¹AX = A⁻¹B → X = A⁻¹B."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Circles are among the most important shapes in mathematics—they appear in nature, technology, and art." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Circles",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter9.html#learning-resource",
+        "name": "Circles — Class 9 Math · ShikshaPal",
+        "description": "Circles are among the most important shapes in mathematics—they appear in nature, technology, and art.",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Circles",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter9.html#learning-resource",
-      "name": "Circles — Class 9 Math · ShikshaPal",
-      "description": "Circles are among the most important shapes in mathematics—they appear in nature, technology, and art.",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circles is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Essential parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Center: The fixed point O from which all points on the circle are equidistant"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Radius (r)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The distance from the center to any point on the circle. All radii of a circle are equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Diameter (d)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A chord passing through the center. It's the longest chord in a circle. Diameter d = 2r."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Chord?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment connecting any two points on the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Arc?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A portion of the circle between two points"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The region bounded by two radii and the arc between them (like a pizza slice)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Segment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The region bounded by a chord and the arc it cuts off"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Circumference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The perimeter (total length) of the circle: C = 2πr = πd"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wheels are circles, as are clock faces, CDs, and planetary orbits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Central angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An angle formed at the center of the circle by two radii. The measure of a central angle equals the measure of its intercepted arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An angle formed by two chords that share an endpoint on the circle. An important theorem connects inscribed angles to central angles:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed Angle Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An inscribed angle is half the measure of the central angle that subtends the same arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a central angle is 80°, any inscribed angle subtending the same arc is 40°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Corollary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All inscribed angles subtending the same arc are equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Another corollary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An inscribed angle subtending a semicircle (180°) is always 90°. Any right angle inscribed in a circle must have its hypotenuse as a diameter!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Equal chords in the same circle subtend equal angles at the center."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Proof intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If two chords are equal in length, the triangles formed by the center and the endpoints of each chord are congruent (SSS), so the central angles must be equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Related theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Equal chords are equidistant from the center"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Practical application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In architecture, if you want to divide a circle into equal parts, you need chords of equal length subtending equal central angles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Properties of tangents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- A tangent line is perpendicular to the radius at the point of tangency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why perpendicularity matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This property is used in physics (for reflecting light off curved mirrors) and engineering (for designing gear systems)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angles in the same segment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two inscribed angles in the same segment of a circle (subtending the same arc on the same side) are equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle in a semicircle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any angle inscribed in a semicircle is a right angle (90°)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle at center vs. circumference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The angle at the center is twice the angle at any point on the circumference when both subtend the same arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angles subtended by equal arcs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Equal arcs subtend equal angles at the center and equal angles at the circumference."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed polygon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A polygon is inscribed in a circle if all its vertices lie on the circle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Circumscribed circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The circle passing through all vertices of a polygon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Circumscribed polygon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A polygon is circumscribed around a circle if all its sides are tangent to the circle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The circle touching all sides of a polygon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Special case - cyclic quadrilateral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A quadrilateral inscribed in a circle has a special property: opposite angles are supplementary (sum to 180°). This is used in navigation and surveying."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Concentric circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circles sharing the same center but with different radii."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Annulus (annular region)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The region between two concentric circles, shaped like a ring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Wheels and rotation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circles form the basis of all rotational machinery—motors, generators, turbines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Astronomy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Planetary orbits approximate circles (though they're actually ellipses), and circular motion describes how objects orbit under gravity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Engineering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gears use circular shapes to transmit power; bearings use circular motion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Navigation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Compass circles, latitudes and longitudes on Earth (approximated as a sphere)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Optics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lenses and mirrors are often circular to focus light efficiently."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Central angle and arc?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Central angle measure = arc measure"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Equal chords?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subtend equal angles at the center"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The inscribed angle is half the central angle subtending the same arc. Why is this relationship true? Can you think of how the position of the inscribed angle's vertex affects this relationship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Any angle inscribed in a semicircle is a right angle. Why must this be true? How does this connect to Thales' theorem in ancient geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A tangent line is always perpendicular to the radius at the point of tangency. Why can't a tangent approach the circle at an angle? What would that mean geometrically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "From a point outside a circle, two tangent segments can be drawn, and they're always equal. Why must these tangent segments be equal? Can you use congruent triangles to prove this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a cyclic quadrilateral (inscribed in a circle), opposite angles are supplementary. Why is this property true? How does it connect to inscribed angle theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Essential parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Radius (r)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Diameter (d)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Chord?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Arc?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Segment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circumference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Central angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed Angle Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Corollary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Another corollary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Proof intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Related theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Practical application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Properties of tangents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why perpendicularity matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angles in the same segment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle in a semicircle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle at center vs. circumference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angles subtended by equal arcs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed polygon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circumscribed circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circumscribed polygon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Special case - cyclic quadrilateral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Concentric circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Annulus (annular region)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Wheels and rotation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Astronomy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

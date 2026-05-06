@@ -21,70 +21,259 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Power Play",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter2.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter2.html#learning-resource",
+        "name": "Power Play — Class 8 Math · ShikshaPal",
+        "description": "Discover how exponential growth can reach the Moon in just 46 paper folds.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter2.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Power Play",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter2.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter2.html#learning-resource",
-      "name": "Power Play — Class 8 Math · ShikshaPal",
-      "description": "Discover how exponential growth can reach the Moon in just 46 paper folds.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter2.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter2.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Exponent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A small number written above a base number showing how many times to multiply the base by itself"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Base?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number being multiplied by itself. In 2⁵, the base is 2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Another word for exponent. 'Raise to the power of 3' means multiply by itself 3 times"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Product Rule of Exponents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When multiplying powers with the same base: a^m × a^n = a^(m+n). Example: 2³ × 2² = 2⁵"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quotient Rule of Exponents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When dividing powers with the same base: a^m ÷ a^n = a^(m-n). Example: 2⁵ ÷ 2² = 2³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power Rule of Exponents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When raising a power to another power: (a^m)^n = a^(m×n). Example: (2³)² = 2⁶"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Zero Exponent Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any non-zero number raised to the power 0 equals 1. Example: 5⁰ = 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Negative Exponent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a^(-n) = 1/(a^n). Example: 2⁻³ = 1/2³ = 1/8"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Simplify: 3⁴ × 3²",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3⁶. Correct! Using the product rule: 3⁴ × 3² = 3^(4+2) = 3⁶"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 5⁰?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Correct! Any non-zero number to the power 0 equals 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Evaluate: (2³)²",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2⁶. Correct! Using the power rule: (2³)² = 2^(3×2) = 2⁶ = 64"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Simplify: 10⁵ ÷ 10³",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10². Correct! Using the quotient rule: 10⁵ ÷ 10³ = 10^(5-3) = 10² = 100"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 2⁻²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1/4. Correct! 2⁻² = 1/(2²) = 1/4 = 0.25"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Convert to Exponential: Write 7 × 7 × 7 × 7 in exponential form. A) 7⁴ B) 4⁷ C) 7 × 4 D) 7 + 4",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: A) 7⁴. Why? The base is 7 (it's being multiplied). The exponent is 4 (it's being multiplied 4 times). So 7⁴ is correct. 4⁷ would be completely different (4 × 4 × 4 × 4 × 4 × 4 × 4)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Calculate the Power: What is 3⁵? A) 15 B) 125 C) 243 D) 32",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: C) 243. Why? 3⁵ = 3 × 3 × 3 × 3 × 3 = 9 × 9 × 3 = 81 × 3 = 243. (The common mistake is 3 × 5 = 15, but that's not what exponents mean!)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Recognize the Pattern: If 2⁵ = 32, what is 2⁶? A) 48 B) 64 C) 128 D) 12",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) 64. Why? Each power of 2 doubles the previous one. 2⁶ = 2⁵ × 2 = 32 × 2 = 64. This is the key to exponential growth—it keeps doubling!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Does Paper Thickness Explode? Explain why doubling every time is so much more powerful than adding the same amount each time.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: When you double, you're multiplying each new thickness by 2. So: Fold 1: 0.001 cm becomes 0.002 cm (added 0.001) Fold 2: 0.002 cm becomes 0.004 cm (added 0.002—more than before!) Fold 3: 0.004 cm becomes 0.008 cm (added 0.004—even more!) Each fold, you're adding a LARGER amount than the previous fold. That's why it explodes. In contrast, if you just added 0.001 cm each time, fold 3 would only add 0.001 cm (not changing)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Use Exponents? Why is writing 2⁴⁶ better than writing \"2 × 2 × 2 × 2... (46 times)\"?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: Exponents are shorthand and save space. They also: Make huge numbers manageable to read Show the pattern clearly (the exponent 46 tells you the power) Make calculations easier (using properties of exponents) Help us understand that small changes in the exponent cause huge changes in the result Without exponent notation, we wouldn't be able to understand exponential growth the way we do!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Do Exponents Matter for Primes? If 32400 = 2⁴ × 5² × 3⁴, explain what each exponent tells us about the number.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: 2⁴ tells us there are exactly four 2's as factors. 5² tells us there are exactly two 5's as factors. 3⁴ tells us there are exactly four 3's as factors. Without exponents, it would be hard to see the pattern: 32400 = 2 × 2 × 2 × 2 × 5 × 5 × 3 × 3 × 3 × 3. Which factors repeat? How many times? The exponents make it crystal clear!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bacteria Growth: A single bacterium doubles every 30 minutes. If you start with 1 bacterium at 12:00 PM, how many will you have by 3:00 PM (3 hours = 6 doubling periods)? Write your answer using exponential notation.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: Number of bacteria = 1 × 2⁶ = 64 bacteria Breakdown: 12:00 PM: 1 bacterium 12:30 PM: 2 bacteria (one doubling) 1:00 PM: 4 bacteria (2²) 1:30 PM: 8 bacteria (2³) 2:00 PM: 16 bacteria (2⁴) 2:30 PM: 32 bacteria (2⁵) 3:00 PM: 64 bacteria (2⁶)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Paper Thickness Prediction: If folding paper 10 times gives a thickness of 1.024 cm, and folding 20 times gives 10.485 m, what pattern do you notice? Can you predict what folding 30 times would give?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pattern: Every 10 additional folds multiplies the thickness by 2¹⁰ = 1024. 10 folds: 1.024 cm 20 folds: 1.024 cm × 1024 = 1.024 × 1024 = 10,485 cm ≈ 10.5 m ✓ 30 folds: 10.5 m × 1024 ≈ 10,736 m ≈ 10.7 km Key insight: Exponential relationships have patterns. Knowing the exponent pattern lets you predict the future!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Prime Factorization Challenge: A number has prime factorization 2² × 3² × 5¹. Is it a perfect square? (Hint: For a number to be a perfect square, what must be true about all its exponents?)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: NO, it is NOT a perfect square. Why: For a number to be a perfect square, ALL exponents in its prime factorization must be EVEN. Here, exponents are 2, 2, and 1. 2 is even ✓, 2 is even ✓, but 1 is ODD ✗ Since one exponent is odd, this is not a perfect square. What would make it a perfect square? Change the exponent of 5 from 1 to 2 (or any even number). Then 2² × 3² × 5² = (2 × 3 × 5)² = 30² = 900!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

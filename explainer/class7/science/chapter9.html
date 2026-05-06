@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class7/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Life Processes in Animals",
+            "item": "https://www.shikshapal.com/explainer/class7/science/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter9.html#learning-resource",
+        "name": "Life Processes in Animals — Class 7 Science · ShikshaPal",
+        "description": "How animals break down food for energy and breathe to stay alive.",
+        "url": "https://www.shikshapal.com/explainer/class7/science/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class7/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Life Processes in Animals",
-          "item": "https://www.shikshapal.com/explainer/class7/science/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/science/chapter9.html#learning-resource",
-      "name": "Life Processes in Animals — Class 7 Science · ShikshaPal",
-      "description": "How animals break down food for energy and breathe to stay alive.",
-      "url": "https://www.shikshapal.com/explainer/class7/science/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If you swallow food without chewing it properly, what will happen to digestion in your mouth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Less digestion will occur in your mouth. Saliva breaks down starch into sugars during chewing, so if food is swallowed quickly without thorough chewing, less starch is converted to sugar. The food reaches your stomach less processed, putting more work on stomach and intestinal digestion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do ruminants like cows spend so much time chewing, and how is this different from human digestion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cows eat grass, which is tough and fibrous. They partially chew it and swallow, then bring it back up (rumination) to chew more thoroughly. This allows them to extract nutrients from difficult plant material. Humans chew once and swallow; our saliva and digestive system are adapted for a different diet. This shows how evolution has shaped digestive systems to match what each animal eats. A human could not survive on grass alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Explain the difference between breathing and respiration using specific examples from your own body.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Breathing is the physical movement of air in and out of your lungs. When you inhale, your ribs expand and diaphragm moves down (physical action). When you exhale, the opposite happens (another physical action). Respiration is the chemical process inside your cells where glucose and oxygen combine to release energy. For example, when you eat bread, enzymes break down starch to glucose. That glucose enters your bloodstream, goes to your muscle cells, and oxygen breaks it down to release energy for running or jumping. You can hold your breath briefly (stop breathing) but respiration continues invisibly in your cells, which is why you get light-headed—carbon dioxide builds up and your body forces you to breathe again."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

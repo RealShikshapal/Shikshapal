@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="A compass needle moves when a current flows nearby. A light bulb flickers when a transformer is switched on." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class12/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Electromagnetic Induction",
+            "item": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html#learning-resource",
+        "name": "Electromagnetic Induction — Class 12 Physics · ShikshaPal",
+        "description": "A compass needle moves when a current flows nearby. A light bulb flickers when a transformer is switched on.",
+        "url": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Physics",
-          "item": "https://www.shikshapal.com/explainer/class12/physics/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Electromagnetic Induction",
-          "item": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html#learning-resource",
-      "name": "Electromagnetic Induction — Class 12 Physics · ShikshaPal",
-      "description": "A compass needle moves when a current flows nearby. A light bulb flickers when a transformer is switched on.",
-      "url": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Magnetic flux (Φ)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Φ = ∫ B·dA = BA cos θ for uniform B; SI unit weber (Wb) = T·m²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Faraday's Law of Induction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ε = −dΦ/dt; an EMF is induced by any change in magnetic flux through a circuit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Lenz's Law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Induced current direction opposes the change in flux that produced it; consequence of energy conservation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Motional EMF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ε = BLv for a rod of length L moving with speed v perpendicular to a field B."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Self-inductance (L)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Φ = LI; back-EMF ε = −L(dI/dt). SI unit henry (H) = V·s/A."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mutual inductance (M)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EMF in coil 2 from changing current in coil 1: ε₂ = −M(dI₁/dt); M is symmetric (M₁₂ = M₂₁)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Energy stored in an inductor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "U = ½ L I² — energy is held in the magnetic field around the coil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inductance of a long solenoid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L = μ₀ n² A ℓ, where n is turns/length, A is cross-section, ℓ is length."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Eddy currents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circulating currents induced in bulk conductors by changing flux; cause dissipation, used for braking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ideal transformer relation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "V_s/V_p = N_s/N_p and V_p I_p = V_s I_s; uses mutual induction in a laminated iron core."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A coil of 100 turns has its flux change from 0.02 Wb to 0.05 Wb in 0.1 s. The induced EMF is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "30 V. Correct. ε = N|ΔΦ/Δt| = 100 × (0.03/0.1) = 30 V."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A rod of length 0.5 m moves at 4 m/s perpendicular to a 0.2 T field. The motional EMF is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.4 V. Correct. ε = BLv = 0.2 × 0.5 × 4 = 0.4 V."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A bar magnet is pushed north-pole-first toward a coil. The induced current in the coil, viewed from the magnet:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Flows counterclockwise so the coil's near face becomes a north pole repelling the magnet. Correct. By Lenz's law, induced current opposes the increasing flux, making the near face a north pole."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A 2 H inductor carries 3 A. Energy stored is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "9 J. Correct. U = ½ L I² = 0.5 × 2 × 9 = 9 J."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An ideal step-up transformer has N_p = 100, N_s = 1000. If primary voltage is 220 V, secondary voltage is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2200 V. Correct. V_s = V_p × (N_s/N_p) = 220 × 10 = 2200 V."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Three-Dimensional Geometry",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter11.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter11.html#learning-resource",
+        "name": "Three-Dimensional Geometry — Class 12 Math · ShikshaPal",
+        "description": "While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter11.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Three-Dimensional Geometry",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter11.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter11.html#learning-resource",
-      "name": "Three-Dimensional Geometry — Class 12 Math · ShikshaPal",
-      "description": "While Class 11 introduced 3D geometry in Cartesian coordinates, this chapter leverages chapter-10-vector-algebra to make 3D geometry elegant and powerful.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter11.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter11.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Direction Cosines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cosines of angles a line makes with x, y, z axes; satisfy cos²α + cos²β + cos²γ = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Direction Ratios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any triple proportional to direction cosines, e.g., (a, b, c). Direction cosines = (a, b, c)/√(a² + b² + c²)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Vector Equation of a Line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "r = a + λ b: point a on the line, direction vector b, parameter λ ∈ ℝ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Symmetric Form of a Line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(x − x₀)/a = (y − y₀)/b = (z − z₀)/c, with direction ratios a, b, c."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Equation of a Plane (point–normal)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "n · (r − r₀) = 0, or A(x − x₀) + B(y − y₀) + C(z − z₀) = 0 with normal n = (A, B, C)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle Between Two Lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cos θ = |b₁ · b₂| / (|b₁||b₂|). Perpendicular ⇔ b₁ · b₂ = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle Between Two Planes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cos θ = |n₁ · n₂| / (|n₁||n₂|). Parallel ⇔ n₁ ∥ n₂; perpendicular ⇔ n₁ · n₂ = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance from Point to Plane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²) for plane Ax + By + Cz + D = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Skew Lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lines that neither intersect nor are parallel. Shortest distance d = |(a₂ − a₁) · (b₁ × b₂)| / |b₁ × b₂|."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Plane Through Three Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Normal n = (B − A) × (C − A); equation: n · (r − A) = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the direction ratios of a line are (1, 2, 2), the direction cosines are",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(1/3, 2/3, 2/3). Divide each ratio by √(1² + 2² + 2²) = 3 to get direction cosines (1/3, 2/3, 2/3)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The distance from point (1, 1, 1) to the plane 2x − y + 2z − 6 = 0 is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. d = |2(1) − 1(1) + 2(1) − 6| / √(4+1+4) = |−3|/3 = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two lines with direction vectors (1, 2, 3) and (2, −1, 0) are",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Perpendicular. Dot product = 1·2 + 2·(−1) + 3·0 = 0, so the lines are perpendicular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The plane through (0, 0, 0) with normal (1, 2, 3) has equation",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x + 2y + 3z = 0. Plane through origin with normal (1,2,3): 1·x + 2·y + 3·z = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For the line (x − 1)/2 = (y + 1)/(−3) = (z − 4)/1, the direction ratios are",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(2, −3, 1). Read the denominators: direction ratios are (2, −3, 1)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

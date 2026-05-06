@@ -21,70 +21,131 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class7/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Finding Common Ground",
+            "item": "https://www.shikshapal.com/explainer/class7/math/chapter11.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter11.html#learning-resource",
+        "name": "Finding Common Ground — Class 7 Math · ShikshaPal",
+        "description": "HCF & LCM: Discovering Patterns in Prime Factorisation",
+        "url": "https://www.shikshapal.com/explainer/class7/math/chapter11.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class7/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Finding Common Ground",
-          "item": "https://www.shikshapal.com/explainer/class7/math/chapter11.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/math/chapter11.html#learning-resource",
-      "name": "Finding Common Ground — Class 7 Math · ShikshaPal",
-      "description": "HCF & LCM: Discovering Patterns in Prime Factorisation",
-      "url": "https://www.shikshapal.com/explainer/class7/math/chapter11.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter11.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the HCF of 84 and 108?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 12 Prime factorisation: 84 = 2² × 3 × 7 and 108 = 2² × 3³. Common primes: 2² and 3. HCF = 2² × 3 = 4 × 3 = 12."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the LCM of 30 and 72?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 360 Prime factorisation: 30 = 2 × 3 × 5 and 72 = 2³ × 3². Taking maximum counts: 2³ × 3² × 5 = 8 × 9 × 5 = 360."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Sameeksha's tiling room problem require the HCF and not the LCM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Logic: The tile side must divide evenly into both room dimensions (12 and 16). She wants as few tiles as possible, which means the largest possible tile size. The largest common divisor is HCF. If she used LCM, the tiles would be huge (much larger than the room), which doesn't make sense."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the toran-making problem (Anshu & Guna) require the LCM and not the HCF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Logic: Anshu makes lengths that are multiples of 6; Guna makes lengths that are multiples of 8. For them to make the same-length toran, they need a common multiple. The shortest such length is the LCM. Using HCF instead would give 2 cm, which is too small and doesn't help solve the problem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Use the property HCF × LCM = Product to find LCM(45, 105) if you know HCF(45, 105) = 15.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: HCF × LCM = 45 × 105 = 4725. Since HCF = 15, we have 15 × LCM = 4725. So LCM = 4725 ÷ 15 = 315. Verification: 45 = 3² × 5 and 105 = 3 × 5 × 7. LCM = 3² × 5 × 7 = 9 × 5 × 7 = 315 ✓"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Lekhana bought 84 kg rice from Farm A and 108 kg from Farm B. She wants bags of equal weight from each farm, using as few bags as possible. How heavy should each bag be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 12 kg per bag Reasoning: The bag weight must divide both 84 and 108 (so she can pack each farm's rice exactly). She wants the fewest bags, meaning the heaviest possible bag. This is HCF(84, 108) = 12 kg. Count: Farm A: 84 ÷ 12 = 7 bags. Farm B: 108 ÷ 12 = 9 bags. Total: 16 bags (much fewer than if she used smaller bags)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

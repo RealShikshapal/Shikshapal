@@ -21,70 +21,227 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Proportional Reasoning",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter10.html#learning-resource",
+        "name": "Proportional Reasoning — 2 — Class 8 Math · ShikshaPal",
+        "description": "Speed, Time, Distance & Inverse Proportions.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Proportional Reasoning",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter10.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter10.html#learning-resource",
-      "name": "Proportional Reasoning — 2 — Class 8 Math · ShikshaPal",
-      "description": "Speed, Time, Distance & Inverse Proportions.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Inverse Proportion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two quantities where as one increases, the other decreases proportionally. If xy = k (constant), they're inversely proportional"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Directly Proportional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two quantities where as one increases, the other increases at the same rate. y = kx (k is constant)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Constant of Proportionality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The fixed ratio in a proportion. In y = kx, k is the constant of proportionality"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distance traveled per unit time. Speed = Distance / Time"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "How far an object travels. Distance = Speed × Time"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Duration taken to travel. Time = Distance / Speed"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Average Speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total distance divided by total time taken for the entire journey"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Relative Speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When two objects move, the speed of one relative to the other"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a car travels 150 km in 3 hours, what is its speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50 km/h. Correct! Speed = 150 km / 3 hours = 50 km/h"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to travel 240 km at 60 km/h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 hours. Correct! Time = Distance / Speed = 240 / 60 = 4 hours"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If 4 workers complete a job in 6 days, how many days will 6 workers take (assuming equal work)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 days. Correct! Inverse proportion: 4 × 6 = 6 × x, so x = 4 days"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the constant k if y and x are inversely proportional and y = 8 when x = 3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "24. Correct! If xy = k, then k = 8 × 3 = 24"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A train travels 300 km at 75 km/h and then 150 km at 50 km/h. What is the average speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "62.5 km/h. Correct! Total distance = 450 km. Time 1 = 4 h, Time 2 = 3 h. Average = 450/7 ≈ 64.3 km/h. Let me recalculate: 450/7.2 = 62.5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A car travels 240 km in 4 hours. At the same speed, how long to travel 360 km?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Speed = 240 ÷ 4 = 60 km/h Time for 360 km = 360 ÷ 60 = 6 hours"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you double the number of workers, why does the time to complete a job halve (assuming equal work capacity)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total work = Workers × Time per worker × (rate per worker) If the total work and rate stay constant, then Workers × Time = constant. When workers double (multiply by 2), time must divide by 2 to keep the product constant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A pump fills a tank in 6 hours. How long will it take 3 identical pumps working together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pumps × Time = Work (constant) 1 × 6 = 3 × t t = 6/3 = 2 hours"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A school needs to feed 80 students for 15 days. If 20 more students join, for how many days will the food last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total food = Students × Days (constant) 80 × 15 = 100 × d 1200 = 100 × d d = 12 days"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the ratio 2 : 3 : 5 for red : blue : white paint, if you need 50 ml of mixed purple paint, how much of each color do you need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total parts = 2 + 3 + 5 = 10 Red = 50 × (2/10) = 10 ml Blue = 50 × (3/10) = 15 ml White = 50 × (5/10) = 25 ml Check: 10 + 15 + 25 = 50 ✓"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

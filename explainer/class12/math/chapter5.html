@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Continuity and differentiability are the gatekeepers of calculus." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Continuity and Differentiability",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter5.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter5.html#learning-resource",
+        "name": "Continuity and Differentiability — Class 12 Math · ShikshaPal",
+        "description": "Continuity and differentiability are the gatekeepers of calculus.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter5.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Continuity and Differentiability",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter5.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter5.html#learning-resource",
-      "name": "Continuity and Differentiability — Class 12 Math · ShikshaPal",
-      "description": "Continuity and differentiability are the gatekeepers of calculus.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter5.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter5.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Continuity at a point?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f is continuous at x = a iff lim(x→a) f(x) = f(a). Requires f(a) defined, limit exists, and they are equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Differentiability ⇒ Continuity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If f is differentiable at a, it is continuous at a. The converse is false: |x| is continuous but not differentiable at 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Chain Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d/dx[f(g(x))] = f′(g(x)) · g′(x). Differentiate the outer function at the inner, then multiply by the inner's derivative."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Derivative of eˣ and ln x?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d/dx[eˣ] = eˣ; d/dx[ln x] = 1/x for x > 0. eˣ is the unique function equal to its own derivative."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Derivative of aˣ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d/dx[aˣ] = aˣ · ln a (for a > 0, a ≠ 1). Note: ln a, not 1/ln a."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Logarithmic Differentiation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For y = f(x)^g(x) or complicated products, take ln on both sides, then differentiate implicitly. Useful when the base and exponent both depend on x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Implicit Differentiation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For F(x, y) = 0, differentiate term-by-term treating y = y(x) and using chain rule on y, then solve for dy/dx."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rolle's Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If f is continuous on [a, b], differentiable on (a, b), and f(a) = f(b), then ∃ c ∈ (a, b) with f′(c) = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mean Value Theorem (MVT)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If f is continuous on [a, b] and differentiable on (a, b), then ∃ c ∈ (a, b) with f′(c) = (f(b) − f(a))/(b − a)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Second Derivative?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f″(x) = d/dx[f′(x)]. Measures rate of change of the slope; relates to concavity (positive ⇒ concave up)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find d/dx[sin(x²)].",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2x cos(x²). Correct. By chain rule: outer derivative cos(x²), times inner derivative 2x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "f(x) = |x| at x = 0 is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Continuous but not differentiable. Correct. lim(x→0) |x| = 0 = |0|, so continuous. But left derivative −1 ≠ right derivative +1, so not differentiable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If y = ln(x² + 1), then dy/dx equals:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2x/(x² + 1). Correct. d/dx[ln u] = u′/u with u = x² + 1; u′ = 2x, giving 2x/(x² + 1)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For f(x) = x³ − 3x on [−2, 2], by Rolle's theorem there exists c ∈ (−2, 2) with f′(c) = 0. Find c.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "±1. Correct. f(−2) = f(2) = 2 (wait, f(2) = 8 − 6 = 2 and f(−2) = −2; not equal). Actually f′(x) = 3x² − 3 = 0 ⇒ x = ±1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If y = e^(2x), then d²y/dx² equals:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4e^(2x). Correct. y′ = 2e^(2x); y″ = 4e^(2x). Each differentiation pulls down a factor of 2."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

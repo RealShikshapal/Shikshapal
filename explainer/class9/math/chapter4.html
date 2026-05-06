@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Linear equations in two variables are equations that describe straight lines." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Linear Equations in Two Variables",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter4.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter4.html#learning-resource",
+        "name": "Linear Equations in Two Variables — Class 9 Math · ShikshaPal",
+        "description": "Linear equations in two variables are equations that describe straight lines.",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter4.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Linear Equations in Two Variables",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter4.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter4.html#learning-resource",
-      "name": "Linear Equations in Two Variables — Class 9 Math · ShikshaPal",
-      "description": "Linear equations in two variables are equations that describe straight lines.",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter4.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter4.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Linear Equations in Two Variables?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linear Equations in Two Variables is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key characteristics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Variables appear only to the first power (no x², xy, √y, etc.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2x + 3y = 6, x - y = 5, 3x + 2y - 7 = 0"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Non-examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(not linear): x² + y = 5, xy + 3 = 0, √x + y = 2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A linear equation describes a relationship. If x is hours worked and y is money earned, then y = 10x + 5 means you earn 10 dollars per hour plus a 5 dollar bonus. Any (x, y) pair satisfying this equation is a valid work/wage combination."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Is (2, 1) a solution to x + 2y = 4?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Finding solutions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To find solutions systematically:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is x-intercept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Set y = 0 and solve for x"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is y-intercept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Set x = 0 and solve for y"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slope (m) = (y₂ - y₁)/(x₂ - x₁) = rise/run?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Interpretations of slope:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Positive slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Line rises left to right"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Negative slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Line falls left to right"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Three possible outcomes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Unique solution: Lines intersect at exactly one point"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Methods to solve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Substitution Method: Solve one equation for one variable and substitute into the other"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Elimination Method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Multiply equations to make coefficients equal, then add/subtract to eliminate a variable"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Graphical Method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plot both lines and find their intersection point"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Economics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Supply and demand curves are often linear. Their intersection determines market price and quantity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Motion problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two vehicles moving at constant speeds can be modeled with linear equations. Their intersection represents when/where they meet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Finance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Comparing phone plans, subscription services, or investment returns often involves linear equations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slope formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "m = (y₂ - y₁)/(x₂ - x₁)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Point-slope form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": ": y - y₁ = m(x - x₁)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An ordered pair (x, y) satisfying the equation"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slope interpretations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Positive slope (↗), negative slope (↘), zero slope (—), undefined slope (|)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Linear Equations: The Definition and Standard Form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A linear equation in two variables has the form: ax + by + c = 0 or ax + by = c where a, b, and c are constants, and both a and b are not zero. The equation is called \"linear\" because its graph is a straight line."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Solutions and Solution Sets?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A solution to a linear equation in two variables is an ordered pair (x, y) that makes the equation true when substituted. Example: Is (2, 1) a solution to x + 2y = 4? - Substitute: 2 + 2(1) = 4 - Yes!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Graphing Linear Equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The graph of a linear equation in two variables is a straight line. Every point on the line is a solution. Method 1: Finding two points 1. Find two solutions by choosing x-values and calculating y 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Slope: The Steepness of a Line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The slope measures how steep a line is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Systems of Linear Equations: Finding Intersections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you have two linear equations in two variables, the solution to the system is an ordered pair that satisfies both equations simultaneously. Graphically, it's the point where the two lines intersect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Economics: Supply and demand curves are often linear. Their intersection determines market price and quantity. Motion problems: Two vehicles moving at constant speeds can be modeled with linear equations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding linear equations prepares you for: - chapter-03-coordinate-geometry: Coordinates help us plot lines - chapter-06-lines-and-angles: Line properties extend to geometric angles - chapter-07-triangles:…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Standard form: ax + by + c = 0 - Slope formula: m = (y₂ - y₁)/(x₂ - x₁) - Slope-intercept form: y = mx + b - Point-slope form: y - y₁ = m(x - x₁) - Solution: An ordered pair (x, y) satisfying the equation - Slope…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Variables appear only to the first power?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Variables appear only to the first power (no x², xy, √y, etc.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The solution is not a single number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The solution is not a single number but a pair of numbers (x, y)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Infinitely many ordered pairs (x, y) satisfy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Infinitely many ordered pairs (x, y) satisfy the equation"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Substitute?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2 + 2(1) = 4"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Yes! So (2, y) = (2, 1)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! So (2, y) = (2, 1) is a solution"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is No, it's not a solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, it's not a solution"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If x = 0?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0 + 2y = 4 → y = 2, solution (0, 2)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If x = 2?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2 + 2y = 4 → y = 1, solution (2, 1)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If x = 4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 + 2y = 4 → y = 0, solution (4, 0)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does a linear equation in two variables have infinitely many solutions, while a linear equation in one variable has exactly one? What's the fundamental difference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you draw a line on the coordinate plane, every point on that line is a solution to some linear equation. Can you write an equation for a line passing through two specific points you choose?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The slope tells you the \"rise over run.\" Why is it important to maintain the order (rise/run) rather than (run/rise)? What would happen if you flipped the formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two lines have slopes m₁ = 2 and m₂ = 1/2. Are they parallel, perpendicular, or neither? How can the slope determine the relationship between two lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you have a system of two linear equations with no solution, what does this tell you about the lines? Why is finding the intersection point equivalent to solving the system algebraically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Linear Equations in Two Variables?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key characteristics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Non-examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Finding solutions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand x-intercept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand y-intercept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope (m) = (y₂ - y₁)/(x₂ - x₁) = rise/run?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Positive slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Negative slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Three possible outcomes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Methods to solve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Elimination Method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Graphical Method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Economics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Motion problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Finance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Point-slope form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope interpretations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Linear Equations: The Definition and Standard Form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Solutions and Solution Sets?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Graphing Linear Equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope: The Steepness of a Line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Systems of Linear Equations: Finding Intersections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Variables appear only to the first power?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The solution is not a single number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Infinitely many ordered pairs (x, y) satisfy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Substitute?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

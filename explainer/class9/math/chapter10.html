@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Heron&#x27;s formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…" />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Heron's Formula",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter10.html#learning-resource",
+        "name": "Heron's Formula — Class 9 Math · ShikshaPal",
+        "description": "Heron's formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Heron's Formula",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter10.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter10.html#learning-resource",
-      "name": "Heron's Formula — Class 9 Math · ShikshaPal",
-      "description": "Heron's formula is an elegant and powerful way to calculate the area of any triangle using only the lengths of its three sides—without needing to find…",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Heron's Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heron's Formula is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area = (1/2) × base × height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula is simple but has a limitation: you need to know the height. In many practical situations—especially land surveying—you can easily measure the three side lengths of a triangular plot of land but measuring the perpendicular height is difficult or i"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A triangular field has sides 40 m, 32 m, and 24 m. How can we find the area without measuring the height?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area = √[s(s - a)(s - b)(s - c)]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "where s = (a + b + c)/2 is the semi-perimeter (half the perimeter)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why \"semi-perimeter\"??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The semi-perimeter is the perimeter divided by 2. It simplifies the formula's structure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Steps to find area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Find the semi-perimeter: s = (a + b + c)/2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A triangular field has sides a = 40 m, b = 32 m, and c = 24 m. Find the area."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Semi-perimeter: s = (40 + 32 + 24)/2 = 96/2 = 48 m"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Check?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This triangular field covers about 384 square meters—quite large!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Different approaches to measuring area (height-based and side-based) lead to equivalent formulas—a beautiful demonstration of mathematical consistency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Right triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a right triangle with legs a and b and hypotenuse c = √(a² + b²):"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Equilateral triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For an equilateral triangle with side a:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isosceles triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For an isosceles triangle, Heron's formula simplifies nicely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Practical advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Requires only side lengths—no perpendicular measurements needed"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Computational advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Modern calculators make the arithmetic straightforward"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Theoretical advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shows deep connections in mathematics—the same area can be found multiple ways"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surveying advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surveyors measure distances easily but measuring perpendicular heights is impractical in fields"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Land surveying?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When measuring a triangular property boundary, Heron's formula calculates area from just the three side measurements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Determining materials needed for triangular roof sections or concrete slabs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Environmental science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Measuring areas of triangular ecosystems or regions for conservation planning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Marine navigation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculating areas of triangular sea regions using coastal distance measurements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Standard triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (1/2) × base × height"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Right triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (1/2)ab (legs a and b)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Challenge: Finding Area Without Height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The standard triangle area formula is: Area = (1/2) × base × height This formula is simple but has a limitation: you need to know the height."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Heron's Formula: The Statement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heron's Formula: For a triangle with sides a, b, and c: Area = √[s(s - a)(s - b)(s - c)] where s = (a + b + c)/2 is the semi-perimeter (half the perimeter). Why \"semi-perimeter\"?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Worked Example: The Triangular Field?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Problem: A triangular field has sides a = 40 m, b = 32 m, and c = 24 m. Find the area. Solution: 1. Semi-perimeter: s = (40 + 32 + 24)/2 = 96/2 = 48 m 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Why Heron's Formula Works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The proof of Heron's formula uses coordinate geometry and algebra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Special Cases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Right triangle: For a right triangle with legs a and b and hypotenuse c = √(a² + b²): - Heron's formula gives the same result as (1/2)ab - You can verify: Area = √[s(s - a)(s - b)(s - c)] = (1/2)ab Equilateral…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Advantages of Heron's Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Practical advantage: Requires only side lengths—no perpendicular measurements needed Computational advantage: Modern calculators make the arithmetic straightforward Theoretical advantage: Shows deep connections in…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Land surveying: When measuring a triangular property boundary, Heron's formula calculates area from just the three side measurements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Historical Context?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heron of Alexandria (approximately 10 CE – 75 CE) was an ingenious mathematician and engineer who described this formula in his work on mensuration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding Heron's formula prepares you for: - chapter-11-surface-areas-and-volumes: Extended to pyramids and polyhedra - chapter-03-coordinate-geometry: The proof uses coordinate approaches - chapter-07-triangles:…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Heron's formula: Area = √[s(s - a)(s - b)(s - c)] - Semi-perimeter: s = (a + b + c)/2 - Standard triangle area: Area = (1/2) × base × height - Equilateral triangle area: Area = (a²√3)/4 - Right triangle area: Area =…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Heron's formula gives the same result as?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heron's formula gives the same result as (1/2)ab"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is You can verify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = √[s(s - a)(s - b)(s - c)] = (1/2)ab"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area = √[(3a/2) × (a/2) × (a/2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = √[(3a/2) × (a/2) × (a/2) × (a/2)] = (a²√3)/4"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-11-surface-areas-and-volumes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extended to pyramids and polyhedra"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-03-coordinate-geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The proof uses coordinate approaches"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-07-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding triangle properties aids application"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Semi-perimeter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "s = (a + b + c)/2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Heron's formula uses the semi-perimeter s = (a + b + c)/2. Why is the semi-perimeter the natural choice for this formula rather than the full perimeter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The standard area formula requires height, but Heron's formula doesn't. Yet they give the same answer. What does this tell you about different mathematical representations of the same geometric property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In Heron's formula, why must you take the square root at the end? What does the expression under the square root represent geometrically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you know only the three sides of a triangle and want to find its height, you could use Heron's formula to find area, then solve for height. Why might this be more practical than direct calculation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Heron's formula involves four factors: s, (s - a), (s - b), (s - c). Why is the product of these specific four factors connected to the triangle's area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Heron's Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Area = (1/2) × base × height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Area = √[s(s - a)(s - b)(s - c)]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why \"semi-perimeter\"??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Steps to find area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Check?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Right triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Equilateral triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Isosceles triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Practical advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Computational advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Theoretical advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surveying advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Land surveying?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Environmental science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Marine navigation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Standard triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Right triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Challenge: Finding Area Without Height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Heron's Formula: The Statement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Worked Example: The Triangular Field?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Heron's Formula Works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Special Cases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Advantages of Heron's Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Historical Context?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Heron's formula gives the same result as?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand You can verify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

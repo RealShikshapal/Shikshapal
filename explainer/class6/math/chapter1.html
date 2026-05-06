@@ -21,70 +21,131 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Patterns in Mathematics",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter1.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter1.html#learning-resource",
+        "name": "Patterns in Mathematics — Class 6 Math · ShikshaPal",
+        "description": "Discover how mathematics is the search for patterns, and the explanation of why those patterns exist.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter1.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Patterns in Mathematics",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter1.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter1.html#learning-resource",
-      "name": "Patterns in Mathematics — Class 6 Math · ShikshaPal",
-      "description": "Discover how mathematics is the search for patterns, and the explanation of why those patterns exist.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter1.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter1.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "For the sequence 2, 4, 6, 8, ___, what comes next? And what's the rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 10. Rule: Add 2 each time (these are even numbers). Once you recognize the pattern, predicting the next number becomes easy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The sequence is 1, 4, 9, 16, ___. What's next? Can you explain why these are called \"square numbers\"?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 25. Why: These are 1², 2², 3², 4², 5²… Each number represents the total dots you'd have if you arranged them in a perfect square grid. The \"square\" in \"square number\" literally refers to the shape formed!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does adding odd numbers (1, 1+3, 1+3+5, …) always give you square numbers? Can you visualize this with a picture or description?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: When you picture a square grid, each odd number of dots forms a \"layer\" around the previous square. Each new layer wraps perfectly around the outside. For example: Start with 1 dot (1×1 square); add 3 more dots around it (forming a 2×2 square) = 4 dots total; add 5 more dots (forming a 3×3 square) = 9 dots total. The visualization makes the pattern obvious!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a regular pentagon (5-sided polygon), why do the number of sides and the number of vertices (corners) always match?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: In any closed polygon, each side connects two vertices. Since every side connects exactly 2 vertices and every vertex is shared by exactly 2 sides, the number must be equal! This is why we have: Triangle: 3 sides, 3 vertices; Pentagon: 5 sides, 5 vertices; Octagon: 8 sides, 8 vertices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The number 36 is special—it's both a square number (6²) and a triangular number (1+2+3+4+5+6). Can you find another number that appears in both sequences? What does this tell you about patterns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 1 and 1,225 also work (and there are more!). What this means: Different patterns can overlap! The same number can represent different concepts depending on the context. This shows that mathematics is interconnected; finding these connections reveals deeper truths; a single number can wear many \"hats.\" This is the real art of mathematics—discovering unexpected relationships!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you multiply triangular numbers by 6 and add 1, you get hexagonal numbers (1, 7, 19, 37…). Why might someone do this transformation? What does the hexagon number pattern represent visually?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculation: (1 × 6) + 1 = 7; (3 × 6) + 1 = 19; (6 × 6) + 1 = 37. Why this works: This isn't arbitrary—it reveals that hexagonal patterns grow from triangular patterns in a systematic way. Hexagons can be built from 6 triangular layers arranged around a center, which is why the formula involves multiplying by 6! The lesson: Formulas aren't random. They encode geometric truths. Understanding the \"why\" helps you discover new relationships."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

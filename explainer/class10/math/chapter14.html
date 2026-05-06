@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Probability is the mathematics of uncertainty." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Probability",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter14.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter14.html#learning-resource",
+        "name": "Probability — Class 10 Math · ShikshaPal",
+        "description": "Probability is the mathematics of uncertainty.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter14.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Probability",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter14.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter14.html#learning-resource",
-      "name": "Probability — Class 10 Math · ShikshaPal",
-      "description": "Probability is the mathematics of uncertainty.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter14.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter14.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sample space (S)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The set of all possible outcomes of an experiment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Coin flip: S = {Head, Tail} (2 outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each outcome in a sample space must be equally likely (for the definition of probability to apply directly). A fair coin has equally likely outcomes (each 50%). A biased coin doesn't."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Certain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(the entire sample space): probability = 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Impossible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(the empty set): probability = 0"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Partial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(some outcomes): probability between 0 and 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You either get E or you don't. The probabilities must sum to 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- P(rolling a 3) = 1/6"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is \"Or\" (union)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event A or Event B (or both) occur"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is \"And\" (intersection)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event A and Event B both occur"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example with a die?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- P(rolling 1 or 2) = P(1) + P(2) = 1/6 + 1/6 = 1/3 (mutually exclusive)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability of accidents determines premium costs"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Weather?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability of rain affects planning"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Medical diagnosis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability that a positive test means you have the disease (more complex than the basic formula)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Lottery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Astronomically small probabilities explain why lotteries aren't profitable for players"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quality control?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability of defects determines batch acceptance"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Theoretical probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(E) = (favorable outcomes) / (total outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Complement rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(not E) = 1 − P(E)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mutually exclusive events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(A or B) = P(A) + P(B)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Independent events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(A and B) = P(A) × P(B)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sample space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The set of all possible outcomes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Favorable outcome?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An outcome in event E"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Sample Space: All Possible Outcomes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Before calculating probability, you must identify all possible outcomes. Sample space (S): The set of all possible outcomes of an experiment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Events: Subsets of the Sample Space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An event (E) is a subset of the sample space—a collection of outcomes you're interested in."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Theoretical Probability Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For equally likely outcomes: P(Event E) = (Number of favorable outcomes) / (Total number of outcomes) = |E| / |S| Where |E| means the count of outcomes in event E, and |S| means the count of all outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Complementary Events: The \"Not\" Relationship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The complement of event E is \"not E\"—all outcomes where E doesn't occur. P(E) + P(not E) = 1 Or equivalently: P(not E) = 1 − P(E) Intuition: You either get E or you don't. The probabilities must sum to 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Multiple Events: Combined Probabilities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When dealing with multiple events, you need careful language: \"Or\" (union): Event A or Event B (or both) occur - Depends on whether events overlap (are mutually exclusive) - For mutually exclusive: P(A or B) = P(A) +…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Applications: From Theory to Decision-Making?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Insurance: Probability of accidents determines premium costs Weather: Probability of rain affects planning Medical diagnosis: Probability that a positive test means you have the disease (more complex than the basic…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Probability builds on and relates to: - chapter-13-statistics: Statistics observes actual outcomes; probability predicts theoretical ones - chapter-01-real-numbers: Counting outcomes uses divisibility and number…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Theoretical probability: P(E) = (favorable outcomes) / (total outcomes) - Complement rule: P(not E) = 1 − P(E) - Mutually exclusive events: P(A or B) = P(A) + P(B) - Independent events: P(A and B) = P(A) × P(B) -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coin flip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S = {Head, Tail} (2 outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Single die roll?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S = {1, 2, 3, 4, 5, 6} (6 outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Two coin flips?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S = {HH, HT, TH, TT} (4 outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Selecting a card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S = {all 52 cards} (52 outcomes)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Die roll?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "\"Getting an even number\" = {2, 4, 6} (3 outcomes out of 6)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Two die rolls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "\"Sum equals 7\" = {(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)} (6 outcomes out of 36)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Certain (the entire sample space)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "probability = 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Impossible (the empty set)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "probability = 0"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Partial (some outcomes)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "probability between 0 and 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you flip two fair coins, why are there 4 equally likely outcomes (HH, HT, TH, TT) rather than 3 outcomes (2 heads, 1 head, 0 heads)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When rolling two dice, there are 36 equally likely outcomes. But when counting the sum (2 through 12), the outcomes are NOT equally likely. Why is the sum not uniformly distributed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the probability of an event is 0.3, what is the probability that it doesn't occur? Can you explain why these must sum to 1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two events A and B are independent. If P(A) = 0.4 and P(B) = 0.5, what is P(A and B)? What if they were mutually exclusive instead?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a game, you win if you roll a die and get 5 or 6 on the first roll, OR you roll a 6 on the second roll. How would you calculate your probability of winning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sample space (S)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Certain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Impossible?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Partial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand \"Or\" (union)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand \"And\" (intersection)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example with a die?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Weather?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Medical diagnosis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Lottery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quality control?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Theoretical probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Complement rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mutually exclusive events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Independent events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sample space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Favorable outcome?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Sample Space: All Possible Outcomes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Events: Subsets of the Sample Space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Theoretical Probability Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Complementary Events: The \"Not\" Relationship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Multiple Events: Combined Probabilities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Applications: From Theory to Decision-Making?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Coin flip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Single die roll?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Two coin flips?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Selecting a card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

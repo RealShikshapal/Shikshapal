@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Trigonometry is the mathematics of triangles and angles." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Introduction to Trigonometry",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter8.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter8.html#learning-resource",
+        "name": "Introduction to Trigonometry — Class 10 Math · ShikshaPal",
+        "description": "Trigonometry is the mathematics of triangles and angles.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter8.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Introduction to Trigonometry",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter8.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter8.html#learning-resource",
-      "name": "Introduction to Trigonometry — Class 10 Math · ShikshaPal",
-      "description": "Trigonometry is the mathematics of triangles and angles.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter8.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter8.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Introduction to Trigonometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Introduction to Trigonometry is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Labeling convention?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- The right angle is at C"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In a right triangle, once you know one acute angle, the shape is determined (by chapter-06-triangles similarity). Different right triangles with the same angle are all similar, so the ratios of sides remain constant!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Critical property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "These ratios depend ONLY on the angle, not on the size of the triangle. This is why you can calculate hidden measurements using just an angle measurement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Pythagorean Identity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(from the Pythagorean theorem):"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The scenario?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You want to find the height of a building. You know:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using tan(angle) = opposite/adjacent:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standing 50 meters from a building, you measure an elevation angle of 60°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sin(A) = opposite/hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- cos(A) = adjacent/hypotenuse"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is tan(A) = opposite/adjacent = sin(A)/cos(A)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- sin²(A) + cos²(A) = 1 (Pythagorean Identity)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is tan(A) = 1/cot(A)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- sin(A) = cos(90° − A) (Complementary angles)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Right Triangles: The Foundation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All trigonometry in this chapter begins with right triangles—triangles with one 90° angle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Six Trigonometric Ratios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For angle A in a right triangle, the ratios are: sin(A) = opposite/hypotenuse cos(A) = adjacent/hypotenuse tan(A) = opposite/adjacent csc(A) = hypotenuse/opposite (reciprocal of sine) sec(A) = hypotenuse/adjacent…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Trigonometric Ratios for Standard Angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The ratios for 0°, 30°, 45°, 60°, and 90° appear so frequently they're worth memorizing: Angle | sin | cos | tan 0° | 0 | 1 | 0 30° | 1/2 | √3/2 | 1/√3 45° | 1/√2 | 1/√2 | 1 60° | √3/2 | 1/2 | √3 90° | 1 | 0 | ∞ These…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Trigonometric Identities: Fundamental Relationships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pythagorean Identity (from the Pythagorean theorem): sin²(A) + cos²(A) = 1 This identity connects sine and cosine, allowing you to find one if you know the other."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Application: Heights and Angles of Elevation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The scenario: You want to find the height of a building."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trigonometry builds naturally into: - chapter-06-triangles: Similar triangles justify why trig ratios depend only on angles - chapter-07-coordinate-geometry: Angles in coordinate geometry use trigonometric concepts -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Ratios and Identities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- sin(A) = opposite/hypotenuse - cos(A) = adjacent/hypotenuse - tan(A) = opposite/adjacent = sin(A)/cos(A) - sin²(A) + cos²(A) = 1 (Pythagorean Identity) - tan(A) = 1/cot(A) - sin(A) = cos(90° − A) (Complementary angles)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The right angle is at C?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The right angle is at C"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The angle of interest (say, A) is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The angle of interest (say, A) is at a vertex"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The side opposite to angle A is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The side opposite to angle A is labeled 'a' (or 'opposite')"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The side adjacent to angle A is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The side adjacent to angle A is labeled 'b' (or 'adjacent')"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The side opposite the right angle is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The side opposite the right angle is the hypotenuse (labeled 'h')"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sine = Opposite/Hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sine = Opposite/Hypotenuse"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cosine = Adjacent/Hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cosine = Adjacent/Hypotenuse"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Tangent = Opposite/Adjacent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tangent = Opposite/Adjacent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Your distance from the building (adjacent side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your distance from the building (adjacent side)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The angle of elevation (angle from horizontal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The angle of elevation (angle from horizontal to your line of sight)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is height = distance × tan(elevation angle)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "height = distance × tan(elevation angle)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Height = 50 × tan(60°) = 50?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Height = 50 × tan(60°) = 50 × √3 ≈ 86.6 meters"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Similar triangles justify why trig ratios depend only on angles"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-07-coordinate-geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angles in coordinate geometry use trigonometric concepts"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-09-some-applications-of-trigonometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Real-world applications of angle and distance problems"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-10-circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angles and radii in circles use trigonometric relationships"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is cos(A) = adjacent/hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cos(A) = adjacent/hypotenuse"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sin²(A) + cos²(A) = 1 (Pythagorean Identity)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "sin²(A) + cos²(A) = 1 (Pythagorean Identity)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sin(A) = cos(90° − A) (Complementary angles)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "sin(A) = cos(90° − A) (Complementary angles)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: sin(A) = opposite/hypotenuse cos(A) = adjacent/h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: Angle | sin | cos | tan -------|-------|-------|?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: sin²(A) + cos²(A) = 1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do trigonometric ratios depend only on the angle, not on the size of the triangle? What property of triangles ensures this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If sin(30°) = 1/2, what is sin(60°)? Use the complementary angle relationship to explain your answer.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a right triangle, if sin(A) = 3/5, can you find cos(A) without finding the actual angle A? How?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is tan(45°) = 1? What does this tell you about a 45°-45°-90° triangle's shape?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you're standing closer to a building, does the angle of elevation to its roof increase or decrease? Why does this make intuitive sense from the tangent ratio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Introduction to Trigonometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Labeling convention?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key insight?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Critical property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Pythagorean Identity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The scenario?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand sin(A) = opposite/hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand tan(A) = opposite/adjacent = sin(A)/cos(A)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand tan(A) = 1/cot(A)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Right Triangles: The Foundation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Six Trigonometric Ratios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Trigonometric Ratios for Standard Angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Trigonometric Identities: Fundamental Relationships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Application: Heights and Angles of Elevation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Ratios and Identities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The right angle is at C?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The angle of interest (say, A) is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The side opposite to angle A is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The side adjacent to angle A is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The side opposite the right angle is?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sine = Opposite/Hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cosine = Adjacent/Hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Tangent = Opposite/Adjacent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Your distance from the building (adjacent side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The angle of elevation (angle from horizontal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand height = distance × tan(elevation angle)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Height = 50 × tan(60°) = 50?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-07-coordinate-geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-09-some-applications-of-trigonometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-10-circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand cos(A) = adjacent/hypotenuse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

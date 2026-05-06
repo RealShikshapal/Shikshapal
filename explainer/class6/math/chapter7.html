@@ -21,70 +21,147 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Fractions",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter7.html#learning-resource",
+        "name": "Fractions — Class 6 Math · ShikshaPal",
+        "description": "Understanding equal shares and parts of wholes — fractional units, the number line, mixed fractions, equivalence, and operations.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Fractions",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter7.html#learning-resource",
-      "name": "Fractions — Class 6 Math · ShikshaPal",
-      "description": "Understanding equal shares and parts of wholes — fractional units, the number line, mixed fractions, equivalence, and operations.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If one roti is shared equally among 8 children, how much does each child get?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 1/8 roti. When 1 roti is divided into 8 equal parts, each part is 1/8 roti."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is larger: 1/5 or 1/8?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 1/5 is larger. When dividing one roti: 5 people share = larger pieces than 8 people share. Therefore 1/5 > 1/8."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Convert 3⅖ to an improper fraction.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 17/5. 3⅖ = (3×5+2)/5 = 17/5."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is reading 3/4 as \"3 times 1/4\" more helpful than \"three quarters\"?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Reading 3/4 as \"3 times 1/4\" clarifies the structure: you have 3 copies of the unit fraction 1/4. This understanding makes operations intuitive. For example, 3/4 + 1/4 becomes \"3 units of 1/4 plus 1 unit of 1/4 = 4 units of 1/4 = 1 whole.\" This structural understanding extends to all fraction operations naturally."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Explain why 2/4 and 1/2 represent the same quantity.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: If you divide a chocolate into 4 pieces and take 2, that's the same as dividing it into 2 pieces and taking 1. Both give you half the chocolate. Mathematically: 2/4 = (2÷2)/(4÷2) = 1/2. We're dividing both parts by 2, which doesn't change the value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A pizza is cut into 5 equal slices. Ram eats 2/5, and Sita eats 1/5. How much of the pizza remains?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 2/5 of the pizza. Total eaten = 2/5 + 1/5 = 3/5. Remaining = 1 - 3/5 = 5/5 - 3/5 = 2/5."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Add: 2/3 + 1/4. Express the answer as a fraction in lowest terms.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 11/12. Common denominator = 12. 2/3 = 8/12; 1/4 = 3/12; 2/3 + 1/4 = 8/12 + 3/12 = 11/12 (already in lowest terms)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Subtract: 5/6 - 1/4. Express as a fraction in lowest terms.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 7/12. Common denominator = 12. 5/6 = 10/12; 1/4 = 3/12; 5/6 - 1/4 = 10/12 - 3/12 = 7/12 (already in lowest terms)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

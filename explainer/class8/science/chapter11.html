@@ -21,70 +21,251 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class8/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Keeping Time with the Skies",
+            "item": "https://www.shikshapal.com/explainer/class8/science/chapter11.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/science/chapter11.html#learning-resource",
+        "name": "Keeping Time with the Skies — Class 8 Science · ShikshaPal",
+        "description": "Understanding the Moon's Phases and How We Measure Time.",
+        "url": "https://www.shikshapal.com/explainer/class8/science/chapter11.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class8/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Keeping Time with the Skies",
-          "item": "https://www.shikshapal.com/explainer/class8/science/chapter11.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/science/chapter11.html#learning-resource",
-      "name": "Keeping Time with the Skies — Class 8 Science · ShikshaPal",
-      "description": "Understanding the Moon's Phases and How We Measure Time.",
-      "url": "https://www.shikshapal.com/explainer/class8/science/chapter11.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/science/chapter11.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Moon Shape Change?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Different amounts of Moon lit by Sun based on positions"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Moon Phases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New, waxing crescent, quarter, gibbous, full, waning—29.5 day cycle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Lunar Eclipse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Moon passes through Earth shadow, appears reddish"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solar Eclipse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Moon between Sun and Earth, blocks sunlight"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Lunar Cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "29.5 days (synodic month) for all phases"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Time Measurement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Day (rotation), year (revolution), month (phases)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Leap Year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "366 days every 4 years to account for 365.25-day orbit"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Calendar Systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Track days/months/years using celestial cycles"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the Moon appear to change shape throughout the month?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We see different amounts of the Moon's illuminated side as it orbits Earth. Correct! Moon phases result from our changing perspective of the Moon's illuminated side as it orbits Earth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A Full Moon occurs when the Moon is _____ Earth from the Sun.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On the opposite side of. Correct! When the Moon is on the opposite side of Earth from the Sun, we see the entire illuminated side—a Full Moon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take for the Moon to complete one full cycle of phases (from Full Moon to Full Moon)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "29.5 days. Correct! A complete lunar cycle takes about 29.5 days (a lunation or synodic month)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why don't we have a solar eclipse every New Moon and a lunar eclipse every Full Moon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Moon's orbit is tilted about 5 degrees relative to Earth's orbit. Correct! The Moon's orbital tilt means that most New and Full Moons occur when the Sun, Earth, and Moon are not perfectly aligned."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 1: If tomorrow is a Full Moon and you come back to the same place at sunrise, what will you see?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A bit less than full—still mostly bright, but you'll notice a small shadow starting to appear on one edge. This is the start of the waning phase. The Moon would be in the western sky (opposite where the Sun rises in the east)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 2: In the torch and ball experiment, what would you see if your friend held the ball directly toward the torch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You'd see almost no light—just a thin crescent outline, if anything. This is like looking at a New Moon, where the dark side of the Moon faces Earth because the Moon is between Earth and the Sun."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 3: Why can you sometimes see the Moon during the day?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "During the waxing (growing) phase, the Moon is not too far from the Sun in the sky, but it's far enough that its bright side is still well-lit. If the Moon rises or is overhead while the Sun is still up, you can see it shining in the sky."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 4: Why does the Moon rise approximately 50 minutes later each day?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Earth rotates completely in 24 hours (one day). But during those 24 hours, the Moon also moves forward in its orbit around Earth. So Earth has to rotate extra to bring the same spot back to the Moon's new position. This takes about 50 extra minutes, which is why the Moon rises 50 minutes later each day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 5: Why do different cultures call Full Moon \"Purnima\" and New Moon \"Amavasya\"?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient people couldn't read clocks. But they could watch the Moon's shape change in a reliable, repeating pattern every 29-30 days. They created special names and calendars based on these phases because the Moon was their most reliable \"clock.\" In India and other cultures, naming the Full and New Moons helped organize festivals, farming seasons, and daily life."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 6: If the Moon's orbit wasn't tilted relative to Earth's orbit around the Sun, what would be different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We'd have a solar eclipse every New Moon and a lunar eclipse every Full Moon! The tilt (5 degrees) is actually protective—it means most New and Full Moons happen without eclipses. Eclipses are rare and special because the tilt means the Moon's and Earth's shadows mostly miss each other."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 7: Imagine you're living on Mars for a year. Mars has two small moons: Phobos and Deimos. How would keeping time on Mars be different from keeping time on Earth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mars days (sols) are about 24.6 hours—close to Earth. But the two moons have very different orbital speeds. Phobos orbits every 7.7 hours, completing over 3 cycles per Mars day. Deimos takes 30.3 hours, slower than Mars rotates. You couldn't create a simple lunar calendar like Earth has. Your calendar might be based on the Martian year (687 Earth days) or a combination of the two moon cycles, making it much more complex."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 8: Ancient cultures used Moon phases to plan planting and harvesting. How would this knowledge be useful if you were a farmer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Farmers could predict planting times because lunar months roughly match agricultural seasons in many regions. In India, Makar Sankranti (based on the Sun's position) and lunar festivals align with harvest times. Some crops grow in monsoon seasons that follow patterns observable through Moon phases. By tracking the Moon's cycles over years, farmers could predict when soil would be moist enough for planting, when to expect rain, and when harvests would be ready. The Moon's predictable cycle became nature's calendar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 9: If Earth had no Moon, what would happen to our ability to keep time and measure months?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Without the Moon's obvious monthly cycle, cultures would need to develop calendars based solely on the Sun's position, the stars, or purely arbitrary division of the year. Many ancient calendars (Hindu, Islamic, Hebrew, and others) are lunar or lunisolar—based on Moon phases. Without the Moon, these cultural calendars wouldn't exist. We'd likely use the solar year (365 days) and divide it arbitrarily into 10, 12, or some other number of units. The names \"month\" itself comes from \"moon,\" showing how central it was to timekeeping!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

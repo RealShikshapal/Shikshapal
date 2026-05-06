@@ -21,70 +21,195 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Symmetry",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter9.html#learning-resource",
+        "name": "Symmetry — Class 6 Math · ShikshaPal",
+        "description": "Reflection and rotation — discover how parts of a figure repeat in patterns of beauty and balance.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Symmetry",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter9.html#learning-resource",
-      "name": "Symmetry — Class 6 Math · ShikshaPal",
-      "description": "Reflection and rotation — discover how parts of a figure repeat in patterns of beauty and balance.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If you fold an equilateral triangle along a line from one vertex to the midpoint of the opposite side, will the two halves overlap exactly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! An equilateral triangle has 3 lines of symmetry, each passing from a vertex through the midpoint of the opposite side. When you fold along any of these lines, the two halves are perfect mirror images."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You fold a paper twice (once vertically, once horizontally) and then punch a hole in the center. When you unfold, how many holes will appear?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Four holes! The double fold (vertical and horizontal) means the paper is folded into 4 sections. One hole punched through all 4 sections creates 4 matching holes when unfolded. These 4 holes would be positioned symmetrically about both the vertical and horizontal fold lines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many lines of symmetry does a square have? a) 1 b) 2 c) 4 d) Infinite",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: c) 4. Two vertical/horizontal lines through the centre and two diagonals. Each creates a fold where both halves overlap exactly because a square has equal sides and equal angles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A figure has rotational symmetry of order 3. Which is an angle of symmetry? a) 90° b) 120° c) 60° d) 180°",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: b) 120°. Order 3 means the figure repeats 3 times in 360°. So the smallest angle is 360° ÷ 3 = 120°. All angles of symmetry are multiples: 120°, 240°, 360°. None of the others (90°, 60°, 180°) are factors of 360 that give exactly 3 repetitions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does a square have 4 lines of symmetry while a rectangle (non-square) has only 2 lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A square has all sides equal and all angles 90°. Its symmetry is complete in all directions: vertical, horizontal, and both diagonals all create mirror halves. A non-square rectangle has unequal adjacent sides, so diagonal folds don't create mirror halves. Only vertical and horizontal fold lines divide it into matching halves. The additional symmetry comes from the square's equal sides."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does a regular hexagon have the same number of lines of symmetry as its order of rotational symmetry (both equal 6)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For any regular polygon with n sides, both values always equal n. This is because of the polygon's perfect regularity: all sides are equal, all angles are equal, and all vertices are equivalent. The 6 lines of symmetry in a hexagon correspond to its 6-fold rotational symmetry. Both express the same underlying symmetry principle—the shape's 6-fold regularity creates both 6 reflection axes and 6 rotational positions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You fold a rectangular piece of paper along a diagonal and press it flat. Do the two halves overlap completely? a) Yes, always b) No, never c) Only if it's a square d) Only if the length is twice the width",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: c) Only if it's a square. A diagonal is a line of symmetry only for squares. For any other rectangle, folding along the diagonal leaves gaps and overlaps because the sides aren't all equal. The two halves are congruent triangles, but they don't align perfectly when folded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A figure has radial arms with rotational symmetry. If the smallest angle of symmetry is 60°, how many arms does it have? a) 2 b) 4 c) 6 d) 8",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: c) 6. Use the formula: Number of arms = 360° ÷ smallest angle = 360° ÷ 60° = 6. With 6 equally spaced arms, rotating by 60° brings the figure back to itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You ink-blot a folded piece of paper (ink on one half). When unfolded, what type of symmetry does the resulting figure have? a) Only rotational symmetry b) Only reflection symmetry c) Both types d) No symmetry",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: b) Only reflection symmetry. By design, the ink-blot creates a mirror image across the fold line, giving reflection symmetry with the fold as the line of symmetry. It doesn't necessarily have rotational symmetry—it looks the same when mirrored, not when rotated."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A figure has rotational symmetry with a smallest angle of 40°. How many times will it look identical as you rotate it 360° (including the starting position)? What are all the angles of rotational symmetry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Number of times: Order = 360° ÷ 40° = 9. The figure looks identical 9 times (at 40°, 80°, 120°, 160°, 200°, 240°, 280°, 320°, and 360°). All angles of rotational symmetry: 40°, 80°, 120°, 160°, 200°, 240°, 280°, 320°, 360°. (Each is a multiple of 40°.) This would be like a figure with 9 identical radial arms arranged evenly around a center."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Design a quadrilateral (4-sided figure) that has rotational symmetry but NO reflection symmetry. Describe how many angles of rotational symmetry it has and what they are.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Example shape: A non-rectangular parallelogram or slanted rectangle with unequal angles. Simplest answer: A non-rectangular parallelogram has 180° rotational symmetry only, with order 2. The angles of rotational symmetry are 180° and 360°. Why no reflection symmetry: Even though it can rotate 180° and look the same, no line divides it into mirror halves. This is possible because rotation is about turning (not flipping), which is mathematically different from reflection (mirror imaging)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a figure have exactly 3 lines of symmetry but no rotational symmetry? Explain why or why not.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: No, this is impossible. An equilateral triangle has 3 lines of symmetry (one from each vertex to the opposite side's midpoint). It also has rotational symmetry of order 3 (angles: 120°, 240°, 360°). In fact, when a figure has multiple lines of symmetry that are not all parallel, it must have rotational symmetry. The angles between the lines of symmetry determine the angles of rotational symmetry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The Ashoka Chakra (a 24-spoke wheel in the Indian flag) has how many lines of symmetry and angles of rotational symmetry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 24 lines of symmetry and 24 angles of rotational symmetry (order 24). With 24 equally spaced spokes, the smallest angle of symmetry is 360° ÷ 24 = 15°. There are 24 angles of symmetry: 15°, 30°, 45°, ..., 360°. With 24 spokes, there are also 24 lines of symmetry (through each spoke and through the midpoints between spokes)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sketch a quadrilateral with rotational symmetry but no reflection symmetry. What shape would it be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: A non-square rhombus (parallelogram with all sides equal) or a pinwheel quadrilateral. A non-square rhombus has rotational symmetry of order 2 (180°, 360°) because opposite sides and angles are equal. However, it has NO lines of symmetry if the angles are not 90° (if they were 90°, it'd be a square with 4 lines). The diagonals bisect each other but don't create mirror halves."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

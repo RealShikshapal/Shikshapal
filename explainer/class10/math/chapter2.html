@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Polynomials are expressions built from variables and constants using only addition, subtraction, and multiplication." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Polynomials",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter2.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter2.html#learning-resource",
+        "name": "Polynomials — Class 10 Math · ShikshaPal",
+        "description": "Polynomials are expressions built from variables and constants using only addition, subtraction, and multiplication.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter2.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Polynomials",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter2.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter2.html#learning-resource",
-      "name": "Polynomials — Class 10 Math · ShikshaPal",
-      "description": "Polynomials are expressions built from variables and constants using only addition, subtraction, and multiplication.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter2.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter2.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polynomials is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key characteristics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Variables have whole number exponents (0, 1, 2, 3, ...)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Linear: 2x + 3 (degree 1)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why degree matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The highest power in a polynomial tells you its degree. Degree-1 polynomials are straight lines when graphed. Degree-2 polynomials are parabolas. Higher degrees create more complex curves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Think of a polynomial as a recipe, and roots as ingredients that make the recipe \"work\" (result in zero). The Factor Theorem says that if you know a working ingredient, you can identify a piece of the recipe it came from."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Practical example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- If p(x) = x² − 5x + 6 and p(2) = 0, then (x − 2) is a factor"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Think of dividing polynomials like dividing numbers. When you divide 17 by 5, the remainder is 2 (which is 17 mod 5). The Remainder Theorem is the polynomial version of this idea."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Divide p(x) = x³ + 2x² − 5x + 3 by (x − 1)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Connection to real numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Remember chapter-01-real-numbers? Prime factorization breaks numbers into prime components. Similarly, you can break polynomials into simpler polynomial factors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Degree?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The highest power of the variable in the polynomial"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Factor Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If p(a) = 0, then (x − a) is a factor of p(x)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Remainder Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When p(x) is divided by (x − a), remainder = p(a)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadratic formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x = [−b ± √(b² − 4ac)] / 2a"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of What Are Polynomials? Variables with Powers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A polynomial is an expression like 3x² + 2x + 5, where you add terms containing a variable (like x) raised to whole number powers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Factor Theorem: Connecting Roots to Factors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Here's a beautiful connection: if a number a makes a polynomial equal zero (so p(a) = 0), then (x − a) is a factor of that polynomial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Remainder Theorem: What's Left Over?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you divide a polynomial p(x) by (x − a), the remainder is simply p(a). This gives you a quick way to find remainders without doing long division. Why this works: Think of dividing polynomials like dividing numbers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Zeros and Factorization: Breaking Polynomials Apart?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A zero (or root) of a polynomial is a value that makes it equal zero. Finding zeros is like solving puzzles—and once you find them, you can completely factor the polynomial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Polynomials build naturally into: - chapter-04-quadratic-equations: Solving polynomial equations by setting them to zero - chapter-03-pair-of-linear-equations: Linear polynomials in multiple variables -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Degree: The highest power of the variable in the polynomial - Factor Theorem: If p(a) = 0, then (x − a) is a factor of p(x) - Remainder Theorem: When p(x) is divided by (x − a), remainder = p(a) - Quadratic formula:…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Variables have whole number exponents (0, 1,?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Variables have whole number exponents (0, 1, 2, 3, ...)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coefficients can be any real number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coefficients can be any real number"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Terms are separated by + or −?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Terms are separated by + or −"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Linear?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2x + 3 (degree 1)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadratic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x² − 5x + 6 (degree 2)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cubic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x³ + 2x² − x + 4 (degree 3)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If p(x) = x² − 5x +?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If p(x) = x² − 5x + 6 and p(2) = 0, then (x − 2) is a factor"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is You can verify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x² − 5x + 6 = (x − 2)(x − 3)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Divide p(x) = x³ + 2x² −?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Divide p(x) = x³ + 2x² − 5x + 3 by (x − 1)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Instead of long division, just calculate p(1)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Instead of long division, just calculate p(1) = 1 + 2 − 5 + 3 = 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The remainder is 1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The remainder is 1"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Find zeros using the quadratic formula or?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Find zeros using the quadratic formula or factoring"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If zeros are r and s, the?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If zeros are r and s, the polynomial = a(x − r)(x − s)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solving polynomial equations by setting them to zero"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-03-pair-of-linear-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linear polynomials in multiple variables"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geometric shapes can be expressed using polynomial equations"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why What Are Polynomials? Variables with Powers matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "What Are Polynomials? Variables with Powers matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why The Factor Theorem: Connecting Roots to Factors matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Factor Theorem: Connecting Roots to Factors matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why The Remainder Theorem: What's Left Over matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Remainder Theorem: What's Left Over matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Zeros and Factorization: Breaking Polynomials Apart matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zeros and Factorization: Breaking Polynomials Apart matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Connecting to Related Topics matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connecting to Related Topics matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a polynomial p(x) has degree 5, how many zeros (roots) can it possibly have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You know that (x − 3) is a factor of polynomial p(x). What does this tell you about the value p(3)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you divide a polynomial by (x − 2) and get a remainder of 5, what is p(2)? Explain your reasoning.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A quadratic polynomial has zeros at x = 1 and x = 4. Can you write down the polynomial without doing any calculations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do you think the Factor Theorem is more powerful than simply finding zeros by trial-and-error?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key characteristics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why degree matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Practical example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connection to real numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Degree?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Factor Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Remainder Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadratic formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand What Are Polynomials? Variables with Powers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Factor Theorem: Connecting Roots to Factors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Remainder Theorem: What's Left Over?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Zeros and Factorization: Breaking Polynomials Apart?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Variables have whole number exponents (0, 1,?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Coefficients can be any real number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Terms are separated by + or −?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Linear?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadratic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cubic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand If p(x) = x² − 5x +?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand You can verify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Divide p(x) = x³ + 2x² −?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Instead of long division, just calculate p(1)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The remainder is 1?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Find zeros using the quadratic formula or?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand If zeros are r and s, the?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-03-pair-of-linear-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

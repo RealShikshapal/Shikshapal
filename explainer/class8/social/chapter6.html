@@ -21,70 +21,251 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Social Studies",
+            "item": "https://www.shikshapal.com/explainer/class8/social/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "The Parliamentary System: Legislature and Executive",
+            "item": "https://www.shikshapal.com/explainer/class8/social/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/social/chapter6.html#learning-resource",
+        "name": "The Parliamentary System: Legislature and Executive — Class 8 Social · ShikshaPal",
+        "description": "Governance & Democracy: How Government Is Structured & How Laws Are Made.",
+        "url": "https://www.shikshapal.com/explainer/class8/social/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Social Studies",
-          "item": "https://www.shikshapal.com/explainer/class8/social/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "The Parliamentary System: Legislature and Executive",
-          "item": "https://www.shikshapal.com/explainer/class8/social/chapter6.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/social/chapter6.html#learning-resource",
-      "name": "The Parliamentary System: Legislature and Executive — Class 8 Social · ShikshaPal",
-      "description": "Governance & Democracy: How Government Is Structured & How Laws Are Made.",
-      "url": "https://www.shikshapal.com/explainer/class8/social/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/social/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Parliament's primary function?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Parliament is India's supreme legislative body where representatives elected by people make laws. It is the voice of people in government."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the two houses of Parliament called?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lok Sabha (House of People, 550 members elected directly) and Rajya Sabha (Council of States, 245 members elected by state MLAs)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is \"separation of powers\" in government?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three branches—Legislature (makes laws), Executive (implements laws), Judiciary (ensures fairness). Each checks others, preventing any from becoming too powerful."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is the head of Executive in India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "President is the ceremonial Head of State. Prime Minister is the chief executive with real power and must answer to Parliament."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is \"Question Hour\" in Parliament?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The first hour of Parliament sessions where MPs can question ministers about government policies, holding executive accountable to legislature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can courts do if Parliament makes an unconstitutional law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Courts can strike down the law as unconstitutional. Judicial review ensures even Parliament must follow the Constitution, protecting fundamental rights."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are powers distributed in India's federal system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Union List (Center), State List (States), and Concurrent List (both). This prevents centralized tyranny and lets states address local needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Parliament deliberately move slowly in making laws instead of voting immediately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deliberation ensures good decisions; bills are debated, committees review, problems are caught before laws harm millions. Correct! Democracy prioritizes GOOD decisions over FAST ones—the opposite of dictatorship."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it mean when we say the PM must answer to Parliament?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If Parliament votes no-confidence in PM, they must resign; PM can't ignore Parliament. Correct! Accountability to Parliament prevents PM from becoming a dictator."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is an independent judiciary crucial for democracy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Courts can stop Parliament/Executive if they act unconstitutionally, protecting fundamental rights from majority oppression. Correct! Judicial independence is democracy's final check—preventing tyranny of majority or government abuse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a government official refuses to follow a court order, what does this indicate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contempt of court—a constitutional crisis because Executive is ignoring Judiciary's authority. Correct! No one—not even government—is above courts. Defiance breaks separation of powers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does India distribute power between Center and States instead of having one national government?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "India is HUGE and diverse; states handle local needs, power distribution prevents tyranny, federalism respects diversity. Correct! Federalism balances unity with diversity—essential for a large, complex nation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q1: If Parliament and Executive were the same people (e.g., PM and Cabinet ARE Parliament members), what might happen to accountability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Accountability weakens. Government can't question itself. Laws could be passed and executed without scrutiny. BUT—India actually DOES combine Legislature and Executive (PM is from Parliament). The check is: if MPs lose confidence, PM falls. This is called \"parliamentary supremacy.\" It's different from \"separation of powers\" (USA model). India's system: Parliament supervises Executive, but Executive comes from Parliament. This creates accountability through internal pressure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q2: If courts couldn't strike down laws, what might Parliament do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Parliament might pass oppressive laws (restrict freedom, discriminate against minorities) knowing no one could stop them. The right to vote is meaningless if Parliament denies fundamental freedoms. Courts provide the final check: \"No, this violates Constitution.\" Without judicial review, democracy becomes \"tyranny of the majority\"—majority oppresses minorities with no legal recourse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q3: A government minister embezzles (steals) crores of public money. Parliament is too busy to investigate. Court case takes 20 years. What's the problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Even with checks and balances, the system is slow. Justice delayed is justice denied. The minister enjoys stolen money for 20 years before facing consequence. This shows: perfect accountability doesn't exist. Systems depend on active citizens demanding justice, alert media exposing corruption, and officials with integrity. Structures help, but they need PEOPLE to make them work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q4: Why does Parliament debate bills for months instead of just voting quickly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Deliberation ensures good decisions. When a bill affecting millions is rushed through, mistakes happen. Debates expose problems. Committees suggest improvements. Concerns from all parties are heard. Yes, it's slow. But it's slow on PURPOSE. Democracy prioritizes GOOD decisions over FAST decisions. A quick dictatorship makes fast choices, but they're often bad. Democracy is slower because it's accountable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q5: Why does India have both a President and a Prime Minister instead of just one leader?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: President is the ceremonial Head of State—represents the nation's unity, stays above politics, protects constitution. PM is the working executive—handles day-to-day governance, answers to Parliament. This division protects democracy: If PM becomes unpopular, people can change PM through elections without losing the President as a stable symbol of nation. It also limits any one person's power. PM can't become dictator because President (and courts) provide checks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q6: Why do Standing Committees examine bills before full Parliament debates them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Full Parliament is 543 MPs—too large to examine details. Committees (smaller, diverse groups) study bills thoroughly, hear experts, suggest improvements, then report to full Parliament. This saves time and improves quality. Also, committees from ALL parties ensure no single group dominates. Minorities get a voice in committees, which might not happen in full Parliament."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q7: If you discovered your MP hadn't attended Parliament in 6 months, what could you do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: You could: (1) Write to MP demanding explanation, (2) File complaint with Election Commission, (3) Organize community meeting asking MP to attend, (4) Contact local media, (5) Vote for someone else next election, (6) Check MP's attendance record on Lok Sabha website. An MP's job is to represent constituents. Absence means neglect. Citizens must hold them accountable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q8: You witness a government official refusing to implement a court order. What's happening and what should happen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: This is contempt of court—defying judicial authority. It means Executive is refusing to follow Judiciary's decision. This is a CRISIS because it breaks separation of powers. The court can: (1) Fine the official, (2) Jail them, (3) Order their dismissal. If government doesn't comply, courts can ask President to remove the official. No one—not even government—is above law or courts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q9: Design your ideal government structure. What powers would you give to Parliament, Executive, and Judiciary? How would you prevent any from becoming too powerful?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: A good structure includes: (1) Parliament makes laws with diverse representation, (2) Executive is chosen by Parliament and answers to it, (3) Judiciary is independent and can strike down unjust laws, (4) Regular elections for Parliament to ensure accountability, (5) Citizens can petition courts if rights violated, (6) Media can report on all branches, (7) Constitutional amendments need super-majority (hard to change), (8) Emergency powers are strictly limited. Your design should balance: efficiency (government can act), representation (all voices heard), and accountability (leaders can be removed)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

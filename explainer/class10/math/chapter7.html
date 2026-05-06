@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Coordinate geometry merges algebra and geometry, allowing you to represent geometric shapes using numbers and equations." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Coordinate Geometry",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter7.html#learning-resource",
+        "name": "Coordinate Geometry — Class 10 Math · ShikshaPal",
+        "description": "Coordinate geometry merges algebra and geometry, allowing you to represent geometric shapes using numbers and equations.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Coordinate Geometry",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter7.html#learning-resource",
-      "name": "Coordinate Geometry — Class 10 Math · ShikshaPal",
-      "description": "Coordinate geometry merges algebra and geometry, allowing you to represent geometric shapes using numbers and equations.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Coordinate Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coordinate Geometry is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Written as?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(x, y), this system divides the plane into four quadrants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Like GPS coordinates (latitude, longitude) that pinpoint any location on Earth, (x, y) coordinates pinpoint any location on a 2D plane."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- (4, 8): 4 units right, 8 units up"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Derivation intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula comes from the Pythagorean theorem. The horizontal distance is |x₂ − x₁| and the vertical distance is |y₂ − y₁|. These form the two legs of a right triangle; the distance is the hypotenuse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distance from A(1, 2) to B(4, 6)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Midpoint Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If P(x₁, y₁) and Q(x₂, y₂) are endpoints, the midpoint M is:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The midpoint coordinates are simply the averages of the endpoint coordinates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Section Formula (advanced)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a point divides a line segment in ratio m:n internally, its coordinates are:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula emerges from the cross product concept. The absolute value ensures you always get a positive area."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can verify that three points are collinear (lie on the same line) by checking if this area equals zero—if they're on the same line, they enclose zero area."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Two-point form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a line passes through P(x₁, y₁) and Q(x₂, y₂):"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slope-intercept form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "y = mx + c, where m is slope and c is the y-intercept"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Connection to chapter-03-pair-of-linear-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The equations studied there represent lines in this coordinate system. Solving pairs of equations means finding where two lines intersect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Perpendicular lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Product of slopes = −1 (slopes are negative reciprocals)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Collinear points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area from the determinant formula = 0"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Similar triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "chapter-06-triangles can be verified using coordinate ratios"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = √[(x₂ − x₁)² + (y₂ − y₁)²]"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Section formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area of triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(1/2)|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "m = (y₂ − y₁)/(x₂ − x₁)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Line equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": ": y − y₁ = m(x − x₁)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Coordinate System: Locating Points in a Plane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To locate a point on a plane, you need two pieces of information: 1. x-coordinate (abscissa): Distance from the y-axis (positive right, negative left) 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Distance Formula: Measuring Between Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To find the distance between two points P(x₁, y₁) and Q(x₂, y₂): d = √[(x₂ − x₁)² + (y₂ − y₁)²] Derivation intuition: This formula comes from the Pythagorean theorem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Section Formula: Finding Midpoints and Dividing Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Midpoint Formula: If P(x₁, y₁) and Q(x₂, y₂) are endpoints, the midpoint M is: M = ((x₁ + x₂)/2, (y₁ + y₂)/2) Intuition: The midpoint coordinates are simply the averages of the endpoint coordinates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Area of a Triangle: The Determinant Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Given vertices A(x₁, y₁), B(x₂, y₂), C(x₃, y₃), the area is: Area = (1/2)|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)| Why this works: This formula emerges from the cross product concept."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Equations of Lines: From Points to Algebra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two-point form: If a line passes through P(x₁, y₁) and Q(x₂, y₂): (y − y₁)/(x − x₁) = (y₂ − y₁)/(x₂ − x₁) The slope m = (y₂ − y₁)/(x₂ − x₁) tells how steeply the line rises or falls."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Geometric Properties Through Coordinates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using coordinates, you can verify geometric properties algebraically: - Parallel lines: Have equal slopes - Perpendicular lines: Product of slopes = −1 (slopes are negative reciprocals) - Collinear points: Area from…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coordinate geometry provides the framework for: - chapter-08-introduction-to-trigonometry: Angles and distances use coordinates - chapter-10-circles: Circle equations (x − h)² + (y − k)² = r² use coordinates -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Distance formula: d = √[(x₂ − x₁)² + (y₂ − y₁)²] - Midpoint formula: ((x₁ + x₂)/2, (y₁ + y₂)/2) - Section formula: ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n)) - Area of triangle: (1/2)|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ −…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (4, 8)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 units right, 8 units up"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (−3, 5)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3 units left, 5 units up"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (6, −2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "6 units right, 2 units down"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is d = √[(4−1)² + (6−2)²] = √[9?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = √[(4−1)² + (6−2)²] = √[9 + 16] = √25 = 5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Parallel lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Have equal slopes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-08-introduction-to-trigonometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angles and distances use coordinates"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-10-circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circle equations (x − h)² + (y − k)² = r² use coordinates"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-11-areas-related-to-circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculating areas from coordinate descriptions"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: d = √[(x₂ − x₁)² + (y₂ − y₁)²]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: M = ((x₁ + x₂)/2, (y₁ + y₂)/2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If two points have the same x-coordinate but different y-coordinates, what does the distance formula reduce to? What does this represent geometrically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the midpoint formula related to finding the average of numbers on a number line? Why does the same logic apply to the 2D plane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the area of a triangle calculated using the determinant formula equals zero, what can you conclude about the three vertices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two lines have slopes m₁ = 2 and m₂ = −1/2. What is the geometric relationship between them? How does the slope relationship ensure this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is it important that the distance formula works for any two points, regardless of their quadrant? What would change if it didn't?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Coordinate Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Written as?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Derivation intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Midpoint Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Section Formula (advanced)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Two-point form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope-intercept form?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connection to chapter-03-pair-of-linear-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Perpendicular lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Collinear points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Similar triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Distance formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Section formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Area of triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Slope?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Line equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Coordinate System: Locating Points in a Plane?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Distance Formula: Measuring Between Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Section Formula: Finding Midpoints and Dividing Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Area of a Triangle: The Determinant Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Equations of Lines: From Points to Algebra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Geometric Properties Through Coordinates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (4, 8)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (−3, 5)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (6, −2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand d = √[(4−1)² + (6−2)²] = √[9?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Parallel lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

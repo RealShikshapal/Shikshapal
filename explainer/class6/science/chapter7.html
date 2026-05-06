@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class6/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Temperature and its Measurement",
+            "item": "https://www.shikshapal.com/explainer/class6/science/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/science/chapter7.html#learning-resource",
+        "name": "Temperature and its Measurement — Class 6 Science · ShikshaPal",
+        "description": "Discover how we measure hotness and coldness. From feeling with our hands to using thermometers, learn the science behind temperature—and why your senses can trick you!",
+        "url": "https://www.shikshapal.com/explainer/class6/science/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class6/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Temperature and its Measurement",
-          "item": "https://www.shikshapal.com/explainer/class6/science/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/science/chapter7.html#learning-resource",
-      "name": "Temperature and its Measurement — Class 6 Science · ShikshaPal",
-      "description": "Discover how we measure hotness and coldness. From feeling with our hands to using thermometers, learn the science behind temperature—and why your senses can trick you!",
-      "url": "https://www.shikshapal.com/explainer/class6/science/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/science/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Question 1: Lambok has a fever. His mother touches his forehead and thinks he has a high fever. Can she always be sure just by touching?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, she cannot always be sure. Skin only senses temperature differences, not absolute temperature. A forehead might feel hot because heat is flowing from the body to the cooler hand—but that doesn't always mean a high fever. Different skin temperatures can give false impressions. A thermometer is the only reliable way to know for sure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 4: Why is a mercury thermometer being replaced by digital thermometers, even though mercury thermometers worked perfectly well for over 100 years?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mercury is extremely toxic. If a mercury thermometer breaks, the liquid mercury spills out, and its vapours can poison the person. People who are exposed to mercury can suffer serious health problems. Digital thermometers use safe heat sensors instead. Plus, they're faster, easier to read, and don't contain poison—so they're a much better choice for safety reasons."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 7: A laboratory thermometer has 50 equal divisions between 0°C and 100°C. If you need to measure 25.5°C, what is the smallest value this thermometer can measure, and can you accurately read 25.5°C with it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each division represents: 100°C ÷ 50 = 2°C per small mark. So the smallest value this thermometer can measure is 2°C. You cannot accurately read 25.5°C because the thermometer can only show readings in 2°C intervals (like 24°C, 26°C, 28°C, etc.). You could estimate that 25.5°C is halfway between two marks, but you cannot measure it precisely."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

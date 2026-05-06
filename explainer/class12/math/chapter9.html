@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="A differential equation is an equation involving derivatives—it relates a function to its rates of change." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Differential Equations",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter9.html#learning-resource",
+        "name": "Differential Equations — Class 12 Math · ShikshaPal",
+        "description": "A differential equation is an equation involving derivatives—it relates a function to its rates of change.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Differential Equations",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter9.html#learning-resource",
-      "name": "Differential Equations — Class 12 Math · ShikshaPal",
-      "description": "A differential equation is an equation involving derivatives—it relates a function to its rates of change.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Differential Equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An equation involving an unknown function and its derivatives, e.g., dy/dx = f(x, y)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Order of a DE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The order is the highest derivative present (e.g., d²y/dx² → order 2)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Degree of a DE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The power of the highest-order derivative when the equation is polynomial in derivatives (and free of radicals/fractions of derivatives)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is General vs Particular Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "General solution contains arbitrary constants; a particular solution is determined by an initial condition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Variables Separable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If dy/dx = f(x)·g(y), then ∫dy/g(y) = ∫f(x) dx + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Homogeneous DE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "dy/dx = F(y/x). Substitute y = vx so dy/dx = v + x·dv/dx and the equation becomes separable in v and x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Linear DE (first order)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "dy/dx + P(x)y = Q(x). Integrating factor μ = e^(∫P dx); then d/dx(μy) = μQ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Integrating Factor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "μ(x) = e^(∫P(x) dx) for dy/dx + P(x)y = Q(x). Multiplying turns the left side into d/dx[μ(x) y]."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Exponential Growth/Decay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "dy/dt = ky has solution y = y₀ e^(kt). k > 0 grows; k < 0 decays."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Newton's Law of Cooling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "dT/dt = k(T − Tₐ) ⇒ T = Tₐ + (T₀ − Tₐ)e^(kt), with k < 0 for cooling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The order of the differential equation d²y/dx² + 3(dy/dx)⁵ + y = 0 is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2. The highest derivative present is d²y/dx², so the order is 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Solve dy/dx = y with y(0) = 1.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "y = e^x. Separating: dy/y = dx ⇒ ln|y| = x + C; y(0) = 1 ⇒ C = 0, so y = e^x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For dy/dx + (1/x) y = x, the integrating factor is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x. P(x) = 1/x; μ = e^(∫(1/x) dx) = e^(ln x) = x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The general solution of dy/dx = x/y is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "y² − x² = C. y dy = x dx ⇒ y²/2 − x²/2 = C/2 ⇒ y² − x² = C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A radioactive sample obeys dN/dt = −0.1 N with N(0) = 100. The mass after 10 years is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "100 e^(−1). N(t) = 100 e^(−0.1 t); at t = 10, N = 100 e^(−1)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

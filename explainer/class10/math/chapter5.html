@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Arithmetic progressions (sequences where each term increases by a constant amount) appear everywhere in nature and life." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Arithmetic Progressions",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter5.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter5.html#learning-resource",
+        "name": "Arithmetic Progressions — Class 10 Math · ShikshaPal",
+        "description": "Arithmetic progressions (sequences where each term increases by a constant amount) appear everywhere in nature and life.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter5.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Arithmetic Progressions",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter5.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter5.html#learning-resource",
-      "name": "Arithmetic Progressions — Class 10 Math · ShikshaPal",
-      "description": "Arithmetic progressions (sequences where each term increases by a constant amount) appear everywhere in nature and life.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter5.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter5.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Arithmetic Progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arithmetic Progressions is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Reena's salary: 8000, 8500, 9000, 8500, ... (increases by 500 each year)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this formula??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To reach the nth term, you start at 'a' and add the common difference (n − 1) times."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the sequence 2, 5, 8, 11, 14, ..."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If Reena's starting salary is 8000 with a 500-rupee annual increase, her salary in the 6th year is: a₆ = 8000 + (6 − 1)(500) = 10500 rupees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pair up terms from the beginning and end. The first + last = constant. The second + second-last = same constant. This pattern halves the work needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Salary growth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "With fixed annual raises, your cumulative earnings follow AP sums."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ladder rungs, stacked materials, or seating arrangements often form APs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance and motion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Objects moving at constant acceleration (like a car speeding up steadily) cover distances that form APs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Compound problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many chapter-04-quadratic-equations problems arise from AP scenarios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sum of n terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sₙ = (n/2)[2a + (n − 1)d] or Sₙ = (n/2)[a + l]"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Arithmetic mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For three terms in AP (a, b, c), b = (a + c)/2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of What Is an Arithmetic Progression??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An arithmetic progression (AP) is a sequence where the difference between consecutive terms is always the same constant value. Examples: - Reena's salary: 8000, 8500, 9000, 8500, ..."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Finding the nth Term: General Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the first term is 'a' and the common difference is 'd', the nth term is: aₙ = a + (n − 1)d Why this formula? To reach the nth term, you start at 'a' and add the common difference (n − 1) times."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Finding the Sum: Efficient Calculation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculating the sum of an AP by adding terms one-by-one is tedious. The formula is: Sₙ = (n/2)[2a + (n − 1)d] Or equivalently: Sₙ = (n/2)[a + l] where 'l' is the last (nth) term."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Identifying Arithmetic Progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Given a sequence, check if the common difference is constant: - Sequence: 3, 7, 11, 15, 19, ... - Differences: 4, 4, 4, 4, ... (constant!) - This is an AP with d = 4 If differences are not constant, it's not an AP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Applications: When Patterns Matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salary growth: With fixed annual raises, your cumulative earnings follow AP sums. Construction: Ladder rungs, stacked materials, or seating arrangements often form APs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Arithmetic progressions connect naturally to: - chapter-01-real-numbers: APs use divisibility and ordering of integers - chapter-02-polynomials: Finding general terms sometimes involves polynomial expressions -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- nth term: aₙ = a + (n − 1)d - Common difference: d = aₙ − aₙ₋₁ - Sum of n terms: Sₙ = (n/2)[2a + (n − 1)d] or Sₙ = (n/2)[a + l] - Arithmetic mean: For three terms in AP (a, b, c), b = (a + c)/2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Reena's salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "8000, 8500, 9000, 8500, ... (increases by 500 each year)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ladder rungs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "45, 43, 41, 39, ... (decrease by 2 cm each rung)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Simple sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2, 5, 8, 11, 14, ... (increases by 3 each term)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a = 2 (first term)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a = 2 (first term)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is d = 3 (common difference)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = 3 (common difference)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 10th term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a₁₀ = 2 + (10 − 1)(3) = 2 + 27 = 29"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is S₁₀ = (10/2)[2(2) + (10 − 1)(3)]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S₁₀ = (10/2)[2(2) + (10 − 1)(3)]"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is S₁₀ = 5[4 + 27] = 5(31)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "S₁₀ = 5[4 + 27] = 5(31) = 155"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3, 7, 11, 15, 19, ..."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Differences?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4, 4, 4, 4, ... (constant!)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is This is an AP with d =?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is an AP with d = 4"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-01-real-numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "APs use divisibility and ordering of integers"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-02-polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Finding general terms sometimes involves polynomial expressions"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some AP problems lead to quadratic equations"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geometric progressions (similar but multiplicative) relate to scaling shapes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is nth term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "aₙ = a + (n − 1)d"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Common difference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = aₙ − aₙ₋₁"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: aₙ = a + (n − 1)d?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: Sₙ = (n/2)[2a + (n − 1)d]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does this formula or relation mean: Sₙ = (n/2)[a + l]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This formula or symbolic relation appears in the chapter. Explain what each part represents before using it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why What Is an Arithmetic Progression? matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "What Is an Arithmetic Progression? matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you know the first term and the common difference of an AP, can you find any term without calculating all previous terms? How?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the formula Sₙ = (n/2)[a + l] more intuitive than Sₙ = (n/2)[2a + (n − 1)d]? What does pairing tell you?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a salary scenario with raises of 500 rupees yearly, why is the total earnings an AP problem rather than a simple multiplication?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If three consecutive terms of an AP are x − d, x, and x + d, what can you say about their average? Why is this relationship important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How would finding the sum change if you needed to calculate every 3rd term of an AP instead of every term? What pattern emerges?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Arithmetic Progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Examples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this formula??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Salary growth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Distance and motion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Compound problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sum of n terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Arithmetic mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand What Is an Arithmetic Progression??",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Finding the nth Term: General Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Finding the Sum: Efficient Calculation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Identifying Arithmetic Progressions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Applications: When Patterns Matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Reena's salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Ladder rungs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Simple sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand a = 2 (first term)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand d = 3 (common difference)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 10th term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand S₁₀ = (10/2)[2(2) + (10 − 1)(3)]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand S₁₀ = 5[4 + 27] = 5(31)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Differences?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand This is an AP with d =?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-01-real-numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-02-polynomials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-04-quadratic-equations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand chapter-06-triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand nth term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

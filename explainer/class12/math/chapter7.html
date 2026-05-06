@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="If derivatives answer &quot;How fast is something changing?&quot;, integrals answer &quot;What is the total amount accumulated?&quot; An integral is the reverse of a…" />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Integrals",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter7.html#learning-resource",
+        "name": "Integrals — Class 12 Math · ShikshaPal",
+        "description": "If derivatives answer \"How fast is something changing?\", integrals answer \"What is the total amount accumulated?\" An integral is the reverse of a…",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Integrals",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter7.html#learning-resource",
-      "name": "Integrals — Class 12 Math · ShikshaPal",
-      "description": "If derivatives answer \"How fast is something changing?\", integrals answer \"What is the total amount accumulated?\" An integral is the reverse of a…",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Indefinite Integral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫f(x)dx = F(x) + C, the antiderivative of f plus an arbitrary constant C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power Rule for Integration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫xⁿ dx = xⁿ⁺¹/(n+1) + C for n ≠ −1. Special case: ∫(1/x) dx = ln|x| + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Integration by Substitution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For ∫f(g(x))·g′(x) dx, let u = g(x), du = g′(x) dx ⇒ ∫f(u) du. Reverses the chain rule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Integration by Parts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫u dv = uv − ∫v du. Use the LIATE rule (Log, Inverse trig, Algebraic, Trig, Exponential) to choose u."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ∫sin x dx and ∫cos x dx?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫sin x dx = −cos x + C; ∫cos x dx = sin x + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ∫sec²x dx and ∫1/(1+x²) dx?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫sec²x dx = tan x + C; ∫1/(1+x²) dx = arctan x + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Partial Fractions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A proper rational P(x)/Q(x) is split into simpler fractions (e.g., A/(x−a) + B/(x−b)) before integrating."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Fundamental Theorem of Calculus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If F′ = f and f is continuous on [a,b], then ∫ₐᵇ f(x) dx = F(b) − F(a)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Definite Integral as Area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "∫ₐᵇ f(x) dx is the signed area between y = f(x) and the x-axis on [a,b]; use |f(x)| for total area."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Property: ∫ₐᵇ f(x) dx = ∫ₐᵇ f(a+b−x) dx?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Substitution t = a + b − x. A standard symmetry property used to simplify many definite integrals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Evaluate ∫ x² dx.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x³/3 + C. By the power rule ∫xⁿ dx = xⁿ⁺¹/(n+1) + C, with n = 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Compute ∫ x e^x dx.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x e^x − e^x + C. Use parts: u = x, dv = e^x dx ⇒ x e^x − ∫e^x dx = x e^x − e^x + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Evaluate ∫₀^{π/2} sin x dx.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. [−cos x] from 0 to π/2 = −cos(π/2) + cos 0 = 0 + 1 = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "∫ 1/(1 + x²) dx equals",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "arctan x + C. Standard inverse-trig integral: ∫dx/(1+x²) = arctan x + C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Use substitution u = x² + 1 to find ∫ 2x/(x² + 1) dx.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ln|x² + 1| + C. With u = x²+1, du = 2x dx ⇒ ∫du/u = ln|u| + C = ln|x²+1| + C."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

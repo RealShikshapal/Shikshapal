@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="You inherit your eye color from your parents. Your talent for music or mathematics might run in your family. Yet you&#x27;re not an exact copy of either parent." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class10/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Heredity",
+            "item": "https://www.shikshapal.com/explainer/class10/science/chapter8.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/science/chapter8.html#learning-resource",
+        "name": "Heredity — Class 10 Science · ShikshaPal",
+        "description": "You inherit your eye color from your parents. Your talent for music or mathematics might run in your family. Yet you're not an exact copy of either parent.",
+        "url": "https://www.shikshapal.com/explainer/class10/science/chapter8.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class10/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Heredity",
-          "item": "https://www.shikshapal.com/explainer/class10/science/chapter8.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/science/chapter8.html#learning-resource",
-      "name": "Heredity — Class 10 Science · ShikshaPal",
-      "description": "You inherit your eye color from your parents. Your talent for music or mathematics might run in your family. Yet you're not an exact copy of either parent.",
-      "url": "https://www.shikshapal.com/explainer/class10/science/chapter8.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/science/chapter8.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Heredity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heredity is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Free vs. Attached Earlobes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Free earlobes are dominant. If both parents have attached earlobes, all children will have attached earlobes (homozygous recessive). If one parent has free earlobes, there's a 50% chance each child will have free earlobes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Hair Color?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "More complex than simple dominance, but darker colors are generally dominant over lighter ones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Genetic Diseases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some diseases like cystic fibrosis and sickle cell anemia follow Mendelian inheritance patterns. A child inherits the disease only if both parents contribute the recessive gene."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Gene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A unit of heredity; a section of DNA coding for a protein."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Allele?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Different versions of the same gene."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Dominant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An allele that expresses its trait when present with a recessive allele."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Recessive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An allele that expresses its trait only when paired with another recessive allele."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Heterozygous?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Having two different alleles for a trait."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Homozygous?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Having two identical alleles for a trait."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Phenotype?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The observable characteristics of an organism."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Genotype?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The genetic makeup of an organism."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding inheritance helps predict genetic disease risk"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Agriculture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Selective breeding improves crop yield and disease resistance"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Counseling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Genetic counselors help families understand inherited disease risks"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Conservation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding genetics helps save endangered species"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Personalized medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Genetic tests reveal disease predisposition for preventive care"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Variation in Populations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look at a group of people. Despite sharing a common species, you see tremendous variation: different heights, skin colors, hair types, and body shapes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Mendel's Experiments: Finding the Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gregor Mendel discovered the patterns of inheritance by carefully breeding pea plants. He tracked how simple traits (tall vs. short, yellow vs. green seeds) passed from parents to offspring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Dominant and Recessive Traits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mendel observed that when he crossed a tall plant with a short plant, all offspring were tall. Yet when these tall plants self-pollinated, some offspring were short."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Inherited Traits in Humans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Free vs. Attached Earlobes: Free earlobes are dominant. If both parents have attached earlobes, all children will have attached earlobes (homozygous recessive)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Dominant vs. Recessive at the Molecular Level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Genes code for proteins. A dominant allele produces a functional protein. A recessive allele produces a non-functional or absent protein."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Punnett Squares: Predicting Inheritance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Punnett square is a simple tool for predicting offspring traits. List possible alleles from each parent on the sides of a grid, fill in the combinations, and you can calculate the probability of each trait appearing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gene: A unit of heredity; a section of DNA coding for a protein. Allele: Different versions of the same gene. Dominant: An allele that expresses its trait when present with a recessive allele."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Medicine: Understanding inheritance helps predict genetic disease risk - Agriculture: Selective breeding improves crop yield and disease resistance - Counseling: Genetic counselors help families understand inherited…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Variation in Populations matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Variation in Populations matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Mendel's Experiments: Finding the Rules matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mendel's Experiments: Finding the Rules matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Dominant and Recessive Traits matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dominant and Recessive Traits matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Inherited Traits in Humans matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inherited Traits in Humans matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Dominant vs. Recessive at the Molecular Level matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dominant vs. Recessive at the Molecular Level matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Punnett Squares: Predicting Inheritance matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Punnett Squares: Predicting Inheritance matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Key Concepts matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key Concepts matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Real-World Applications matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Real-World Applications matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Variation in Populations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Variation in Populations should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Mendel's Experiments: Finding the Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Mendel's Experiments: Finding the Rules should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Dominant and Recessive Traits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Dominant and Recessive Traits should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Inherited Traits in Humans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Inherited Traits in Humans should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Dominant vs. Recessive at the Molecular Level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Dominant vs. Recessive at the Molecular Level should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Punnett Squares: Predicting Inheritance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Punnett Squares: Predicting Inheritance should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good example of Key Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good example of Key Concepts should show the idea in action rather than only repeat its definition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a trait skips generations (appears in a grandparent and grandchild but not the parent), what does this tell you about whether it's dominant or recessive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's evidence and explain the reasoning step by step.. Correct. A strong answer uses the evidence and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is genetic variation so important that nature invented sexual reproduction with its complexity, rather than simply cloning parents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's evidence and explain the reasoning step by step.. Correct. A strong answer uses the evidence and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you wanted to predict the likelihood of a genetic disease in your children, what information would you need about your family history, and how would scientists use Punnett squares to calculate the probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's evidence and explain the reasoning step by step.. Correct. A strong answer uses the evidence and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Some traits show incomplete dominance (the heterozygous individual has an intermediate phenotype)—what does this tell us about how dominant and recessive alleles interact at the molecular level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's evidence and explain the reasoning step by step.. Correct. A strong answer uses the evidence and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does understanding heredity help explain why siblings who share the same parents can be quite different from each other, yet still resemble their family?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's evidence and explain the reasoning step by step.. Correct. A strong answer uses the evidence and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Heredity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Free vs. Attached Earlobes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Hair Color?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Genetic Diseases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Gene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Allele?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Dominant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Recessive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Heterozygous?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Homozygous?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Phenotype?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Genotype?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Agriculture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Counseling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Conservation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Personalized medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Variation in Populations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mendel's Experiments: Finding the Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Dominant and Recessive Traits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inherited Traits in Humans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Dominant vs. Recessive at the Molecular Level?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Punnett Squares: Predicting Inheritance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Applications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Variation in Populations matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Mendel's Experiments: Finding the Rules matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Dominant and Recessive Traits matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Inherited Traits in Humans matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Dominant vs. Recessive at the Molecular Level matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Punnett Squares: Predicting Inheritance matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Key Concepts matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why Real-World Applications matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Variation in Populations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example of Mendel's Experiments: Finding the Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

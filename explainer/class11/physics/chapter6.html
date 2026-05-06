@@ -18,36 +18,204 @@
   <meta name="twitter:description" content="Most objects aren't point particles—they have size and shape. A spinning top, a rolling wheel, a tumbling asteroid—these rotate as well as translate." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shikshapal.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Explainer", "item": "https://www.shikshapal.com/explainer/"},
-        {"@type": "ListItem", "position": 3, "name": "Class 11", "item": "https://www.shikshapal.com/explainer/class11/"},
-        {"@type": "ListItem", "position": 4, "name": "Physics", "item": "https://www.shikshapal.com/explainer/class11/physics/"},
-        {"@type": "ListItem", "position": 5, "name": "System of Particles and Rotational Motion", "item": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html"}
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html#learning-resource",
-      "name": "System of Particles and Rotational Motion — Class 11 Physics · ShikshaPal",
-      "description": "Most objects aren't point particles—they have size and shape. A spinning top, a rolling wheel, a tumbling asteroid—these rotate as well as translate.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "NCERT"},
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "CBSE"}
-      ],
-      "publisher": {"@id": "https://www.shikshapal.com/#organization"}
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "System of Particles and Rotational Motion",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html#learning-resource",
+        "name": "System of Particles and Rotational Motion — Class 11 Physics · ShikshaPal",
+        "description": "Most objects aren't point particles—they have size and shape. A spinning top, a rolling wheel, a tumbling asteroid—these rotate as well as translate.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Centre of Mass (CM)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "R⃗_cm = Σmᵢr⃗ᵢ / Σmᵢ. Mass-weighted mean position; for an isolated system it moves as if all mass and external forces acted at this point."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Moment of inertia (I)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I = Σmᵢrᵢ². Rotational analogue of mass; depends on mass distribution about the chosen axis. SI unit kg·m²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Torque (τ)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "τ⃗ = r⃗ × F⃗. Magnitude τ = rF sin θ. The rotational analogue of force; SI unit N·m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Newton's 2nd law for rotation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "τ_net = I α (about a fixed axis). Equivalently τ⃗ = dL⃗/dt for a system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angular momentum (L)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L⃗ = r⃗ × p⃗ for a particle; L = Iω for a rigid body about a fixed axis. SI unit kg·m²/s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Conservation of angular momentum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If net external torque is zero, L⃗ is constant. A skater pulling in arms reduces I, so ω increases (Iω = constant)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Parallel-axis theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I = I_cm + Md². Moment of inertia about an axis equals the value about a parallel axis through the CM plus Md², where d is the separation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rolling without slipping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v_cm = ωR; the contact point is instantaneously at rest. Total KE = ½Mv_cm² + ½I_cmω²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rotational kinetic energy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "K_rot = ½ I ω². Work done by a constant torque is W = τ Δθ; power P = τ ω."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Conditions for a rigid body in equilibrium?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Translational: ΣF⃗ = 0. Rotational: Στ⃗ = 0 about any axis. Both must hold simultaneously."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two particles of mass 2 kg and 3 kg are placed at x = 0 and x = 5 m respectively on the x-axis. The x-coordinate of their centre of mass is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3.0 m. Correct. X_cm = (2·0 + 3·5)/5 = 15/5 = 3 m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A solid disc of mass M and radius R rotates about an axis through its centre, perpendicular to its plane. Its moment of inertia is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(1/2)MR². Correct. For a uniform solid disc about its symmetry axis, I = ½MR²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A figure skater rotating at ω₀ pulls her arms in, reducing her moment of inertia from I₀ to I₀/2. Her new angular speed is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2ω₀. Correct. L conserved: I₀ω₀ = (I₀/2)ω ⇒ ω = 2ω₀."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A force of 20 N is applied tangentially at the rim of a wheel of radius 0.5 m. The torque about the wheel's centre is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10 N·m. Correct. τ = rF sin 90° = 0.5 × 20 = 10 N·m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A solid sphere and a hollow sphere of equal mass and radius are released from rest down identical inclines. Assuming they roll without slipping, which reaches the bottom first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The solid sphere (smaller I/MR²). Correct. Acceleration a = g sin θ /(1 + I/MR²); solid sphere has I/MR² = 2/5 (smaller) so larger a."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

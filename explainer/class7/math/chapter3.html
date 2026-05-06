@@ -21,70 +21,131 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class7/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "A Peek Beyond the Point",
+            "item": "https://www.shikshapal.com/explainer/class7/math/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter3.html#learning-resource",
+        "name": "A Peek Beyond the Point — Class 7 Math · ShikshaPal",
+        "description": "Discover decimal numbers and learn how to measure lengths with precision beyond whole numbers.",
+        "url": "https://www.shikshapal.com/explainer/class7/math/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class7/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "A Peek Beyond the Point",
-          "item": "https://www.shikshapal.com/explainer/class7/math/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/math/chapter3.html#learning-resource",
-      "name": "A Peek Beyond the Point — Class 7 Math · ShikshaPal",
-      "description": "Discover decimal numbers and learn how to measure lengths with precision beyond whole numbers.",
-      "url": "https://www.shikshapal.com/explainer/class7/math/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "1. The length of an object is between 3 and 4 cm. It measures 3.7 cm. How many tenths is this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3.7 = 3 units + 7 tenths = 30 tenths + 7 tenths = 37 tenths. We can also write it as 37/10 cm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "2. Compare: Which is bigger, 0.5 or 0.05?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.5 = 5 tenths = 50 hundredths. 0.05 = 5 hundredths. So 0.5 > 0.05 (fifty hundredths is bigger than five hundredths)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "3. Why is the place value system for decimals an extension of the place value system for whole numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both follow the base-10 pattern. Moving left, you multiply by 10. Moving right, you divide by 10. This pattern continues across the decimal point: 10 units = 1 ten (left), and 1 unit = 10 tenths (right). It's consistent!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "4. When adding 3.7 + 4.8, we get 3 + 4 = 7 units, and 7 + 8 = 15 tenths. Why do we convert 15 tenths to 1 unit and 5 tenths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10 tenths = 1 unit. So 15 tenths = 10 tenths + 5 tenths = 1 unit + 5 tenths. We \"carry\" the 1 unit to the units place, leaving 0.5 in the tenths position. This is identical to carrying in whole number addition!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "5. Find the total length of a honeybee if head = 2.3 units, thorax = 5.4 units, abdomen = 7.5 units.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Units: 2 + 5 + 7 = 14. Tenths: 3 + 4 + 5 = 12 tenths = 1 unit + 2 tenths. Total: 14 + 1 + 0.2 = 15.2 units."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "6. A Celestial Pearl Danio fish is 2.4 cm long. A Philippine Goby is 0.9 cm long. What's the difference in their lengths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2.4 – 0.9: We can't subtract 9 tenths from 4 tenths, so borrow 1 unit from 2. Convert 2.4 to 1.14 (1 unit + 14 tenths). Now: 1 – 0 = 1 unit, 14 – 9 = 5 tenths. Result: 1.5 cm difference."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

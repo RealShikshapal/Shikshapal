@@ -18,36 +18,204 @@
   <meta name="twitter:description" content="Gravity shapes the cosmos. It holds planets in orbit, keeps our feet on the ground, and governs the life and death of stars." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shikshapal.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Explainer", "item": "https://www.shikshapal.com/explainer/"},
-        {"@type": "ListItem", "position": 3, "name": "Class 11", "item": "https://www.shikshapal.com/explainer/class11/"},
-        {"@type": "ListItem", "position": 4, "name": "Physics", "item": "https://www.shikshapal.com/explainer/class11/physics/"},
-        {"@type": "ListItem", "position": 5, "name": "Gravitation", "item": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html"}
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html#learning-resource",
-      "name": "Gravitation — Class 11 Physics · ShikshaPal",
-      "description": "Gravity shapes the cosmos. It holds planets in orbit, keeps our feet on the ground, and governs the life and death of stars.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "NCERT"},
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "CBSE"}
-      ],
-      "publisher": {"@id": "https://www.shikshapal.com/#organization"}
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Gravitation",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html#learning-resource",
+        "name": "Gravitation — Class 11 Physics · ShikshaPal",
+        "description": "Gravity shapes the cosmos. It holds planets in orbit, keeps our feet on the ground, and governs the life and death of stars.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Newton's Universal Law of Gravitation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "F = G m₁m₂ / r², always attractive, along the line joining the masses. G ≈ 6.67 × 10⁻¹¹ N·m²/kg²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Kepler's Third Law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "T² ∝ r³. Specifically T² = (4π²/GM) r³ for an orbit of radius r about a central mass M."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Areal velocity (Kepler's 2nd Law)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "dA/dt = L/(2m) = constant. Follows from conservation of angular momentum because gravity is a central force."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Acceleration due to gravity (g)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "g = GM/R² at the surface. At height h: g(h) ≈ g(1 − 2h/R) for h ≪ R. Inside Earth: g(d) = g(1 − d/R)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Gravitational PE (point masses)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "U(r) = −G m₁m₂ / r, with U(∞) = 0. Negative because gravity is attractive (bound systems have E < 0)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Gravitational potential V?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "V(r) = −GM/r. Work done per unit mass to bring a test mass from infinity. Related to PE: U = mV."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Orbital velocity (circular orbit)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v_orb = √(GM/r). Total energy of the orbit E = −GMm/(2r)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Escape Velocity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v_e = √(2GM/R) = √2 · v_orb(R) ≈ 11.2 km/s for Earth. Independent of the escaping object's mass."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Geostationary satellite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Period T = 24 h, equatorial orbit; from Kepler's 3rd law r ≈ 4.22 × 10⁷ m (height ≈ 36 000 km above the surface)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Weightlessness in orbit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Astronaut and spacecraft are in continuous free fall around Earth; both have the same gravitational acceleration, so the normal force from the floor is zero."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the distance between two masses is doubled while the masses are kept the same, the gravitational force between them becomes:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "One-fourth the original. Correct. F ∝ 1/r², so r → 2r gives F → F/4."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The escape velocity from Earth's surface is approximately (R = 6.4 × 10⁶ m, g = 9.8 m/s²):",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "11.2 km/s. Correct. v_e = √(2gR) = √(2·9.8·6.4×10⁶) ≈ 11.2 km/s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A satellite is in a circular orbit just above Earth's surface (taking R = 6400 km, g = 10 m/s²). Its orbital speed is approximately:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7.9 km/s. Correct. v_orb = √(gR) = √(10·6.4×10⁶) ≈ 8.0 km/s ≈ 7.9 km/s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two satellites orbit Earth in circular orbits with radii r and 4r. The ratio of their periods T₁ : T₂ is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1 : 8. Correct. T² ∝ r³, so T₂/T₁ = (4)^(3/2) = 8."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A planet has the same density as Earth but twice Earth's radius. The acceleration due to gravity at its surface compared with Earth's is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Twice. Correct. g = GM/R² and M = (4/3)πR³ρ, so g ∝ ρR. Same ρ and 2R gives 2g."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -21,70 +21,259 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "We Distribute, Yet Things Multiply",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter6.html#learning-resource",
+        "name": "We Distribute, Yet Things Multiply — Class 8 Math · ShikshaPal",
+        "description": "The Distributive Property and the Power of Algebra to Show How Products Change.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "We Distribute, Yet Things Multiply",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter6.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter6.html#learning-resource",
-      "name": "We Distribute, Yet Things Multiply — Class 8 Math · ShikshaPal",
-      "description": "The Distributive Property and the Power of Algebra to Show How Products Change.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Algebraic Expression?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A mathematical phrase containing variables, numbers, and operations (no equals sign). Example: 3x + 5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distributive Property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a(b + c) = ab + ac. Multiply the outside term by each term inside. Example: 2(x + 3) = 2x + 6"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Variable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A letter or symbol representing an unknown number. Commonly x, y, or other letters"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coefficient?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number multiplying a variable. In 5x, the coefficient is 5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Constant Term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number in an expression that doesn't change (not attached to a variable). In 3x + 7, the constant is 7"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Like Terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Terms with the same variable raised to the same power. 3x and 5x are like terms; 3x and 3y are not"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Simplify an Expression?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Combine like terms and apply operations to write an expression in its simplest form"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Expand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the distributive property to remove parentheses and write out all terms"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Expand: 3(x + 4)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3x + 12. Correct! 3(x + 4) = 3·x + 3·4 = 3x + 12"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Simplify: 5x + 3 + 2x - 1",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7x + 2. Correct! Combine like terms: 5x + 2x = 7x, and 3 - 1 = 2"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the coefficient of x in the expression 7x - 5?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7. Correct! The coefficient is the number multiplying the variable: 7"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Expand: 2(a - 3)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2a - 6. Correct! 2(a - 3) = 2a - 6"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which pair are like terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4m and 9m. Correct! Both have the same variable m to the same power"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 1: Expand (x+5)². What is the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x² + 10x + 25. We have a² = x², 2ab = 2(x)(5) = 10x, and b² = 25."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 2: What is 104 × 96 using the identity (a+b)(a−b) = a² − b²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "9984. 104 × 96 = (100+4)(100−4) = 100² − 4² = 10000 − 16 = 9984."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 3: Expand (2m−3n)². What is the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4m² − 12mn + 9n². We have a² = 4m², 2ab = 2(2m)(3n) = 12mn, and b² = 9n²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 4: Why does (a+1)(b+1) = ab + a + b + 1? Explain using a geometric picture.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Picture a rectangle with length (a+1) and width (b+1). Split it into 4 parts: the main a×b rectangle (area ab), a 1×b top strip (area b), an a×1 right strip (area a), and a 1×1 corner square (area 1). Total: ab + a + b + 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 5: Why is the coefficient of the middle term in (a+b)² always \"2\"? Why not \"1\" or something else?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When expanding (a+b)(a+b), we get a² + ab + ab + b². The a×b product appears TWICE (once from a×b, once from b×a), so we get 2ab."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 6: Explain why (a+b)(a−b) = a² − b² and why the middle terms \"disappear.\"",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(a+b)(a−b) = a² − ab + ab − b² = a² − b². The −ab and +ab cancel, leaving only the a² and −b² terms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 7: Compute 47 × 11 using distributive property (without a calculator).",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "517. 47 × 11 = 47 × (10+1) = 470 + 47 = 517."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 8: A square garden has side length (x+3). What is its area? If x = 5, what is the actual area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (x+3)² = x² + 6x + 9. When x = 5: 25 + 30 + 9 = 64 sq. units. (Or check: 8² = 64 ✓)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 9: Verify that (m+2)(m+5) = m² + 7m + 10 by testing with m = 3.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Left: 5 × 8 = 40. Right: 9 + 21 + 10 = 40 ✓. They match, so the expansion is correct."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -21,70 +21,163 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Data Handling and Presentation",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter4.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter4.html#learning-resource",
+        "name": "Data Handling and Presentation — Class 6 Math · ShikshaPal",
+        "description": "Understanding data, organizing it with tally marks and frequency tables, and presenting it through pictographs and bar graphs.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter4.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Data Handling and Presentation",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter4.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter4.html#learning-resource",
-      "name": "Data Handling and Presentation — Class 6 Math · ShikshaPal",
-      "description": "Understanding data, organizing it with tally marks and frequency tables, and presenting it through pictographs and bar graphs.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter4.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter4.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Q1: Which of the following requires data collection before answering? A) \"What is the capital of France?\" B) \"What is the most popular TV show among students in your class?\"",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B. The capital of France is a known fact (you can look it up in a book). But to find the most popular TV show in your class, you must ask students and collect their preferences. This requires data collection!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q2: Look at this tally mark: ||||. How many items does it represent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 5 items. In tally marking, four vertical lines crossed by a diagonal line represents 5. This grouping of 5 makes counting easier and reduces mistakes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q3: A pictograph shows three symbols next to \"Apples\" with a key \"1 symbol = 2 apples\". How many apples does this represent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 6 apples. Three symbols × 2 apples per symbol = 6 apples. Always multiply the number of symbols by the scale value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q4: Why is a bar graph better than a frequency table for showing the most popular item in data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: A bar graph shows data visually. The tallest bar immediately shows the most popular item without needing to read and compare numbers. Our eyes can compare heights faster than reading and comparing numbers in a table."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q5: Why must pictographs and bar graphs always include a scale or key?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Without a scale, readers don't know what each symbol or unit represents. For example, if you see 5 symbols, do they mean 5 items or 50 items? The scale/key clarifies this so everyone interprets the data the same way."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q6: A teacher collected data on how many books each student read. Most students read 2–5 books, but one read 50 books. What problem might you face when choosing a scale for a bar graph?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: If you use a scale where 1 unit = 1 book, the graph becomes very tall (50 units) just to show one bar! A better scale would be 1 unit = 5 books. This keeps the graph manageable while still showing all data accurately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q7: You've collected data on 45 students' favorite sports: Cricket (18), Basketball (12), Tennis (10), Football (5). Create a frequency table and describe what scale you'd use for a bar graph. Why that scale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer (Table): Cricket: 18; Basketball: 12; Tennis: 10; Football: 5. Scale Choice: 1 unit = 2 students (or 1 unit = 1 student for more detail). Why? The maximum value is 18. Using 1 unit = 2 students means the tallest bar is 9 units high—reasonable for standard paper. It's easy to scale (all numbers divide evenly by 2)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q8: Interpret this scenario: A bar graph shows daily vehicle counts at a highway toll booth. The bars are tallest from 7–9 a.m., shorter from 10 a.m.–4 p.m., and tall again from 5–7 p.m. What real-world reasons might explain this pattern?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: The pattern shows two peak hours: 7–9 a.m.: Morning rush hour when people commute to work/school; 5–7 p.m.: Evening rush hour when people return home from work/school; 10 a.m.–4 p.m.: Lower traffic because most people have already reached their destinations. This pattern is typical in most urban areas and helps traffic planning!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q9: You want to compare the heights of the 10 tallest buildings in India. Would you use a horizontal bar graph or vertical bar graph? Explain your choice.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Vertical bar graph (column graph). Reasoning: Heights are measured vertically upward from the ground. Using vertical bars makes the visual representation more intuitive—taller bars literally represent taller buildings, matching how we think about height in the real world. Horizontal bars would be misleading because they don't match the actual orientation of the data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q10: If you were making an infographic comparing the longest rivers on each continent, would vertical or horizontal bars be more appropriate? Why?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Horizontal bars. Reasoning: River lengths are measured horizontally across the landscape. Using horizontal bars matches this natural orientation, making the visualization intuitive and accurate. Vertical bars would not represent the actual directional nature of rivers."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

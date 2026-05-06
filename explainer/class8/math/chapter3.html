@@ -21,70 +21,235 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "A Story of Numbers",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter3.html#learning-resource",
+        "name": "A Story of Numbers — Class 8 Math · ShikshaPal",
+        "description": "Journey through 4000 years of how humans invented counting and number systems.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "A Story of Numbers",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter3.html#learning-resource",
-      "name": "A Story of Numbers — Class 8 Math · ShikshaPal",
-      "description": "Journey through 4000 years of how humans invented counting and number systems.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Hindu-Arabic Numerals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The decimal number system we use today (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) developed in ancient India and adopted by Arabs"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Place Value?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The value of a digit based on its position in a number. In 523, the 5 is in the hundreds place (5 × 100)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Decimal System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A base-10 number system where each place is 10 times larger than the place to its right"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Positional Notation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A system where the position of a digit determines its value. 42 is different from 24 because digits are in different positions"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Roman Numerals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An ancient numeral system using letters (I=1, V=5, X=10, L=50, C=100, D=500, M=1000) still used for some purposes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Tally System?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "One of the earliest number systems using marks or lines to represent quantities, one mark per unit"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Regrouping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The process of exchanging units in one place value for units in another, like trading 10 ones for 1 ten"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ancient Numeral Systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Earlier ways of writing numbers used by civilizations like Egyptians, Babylonians, and Greeks before the Hindu-Arabic system"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the number 47,836, what is the place value of the digit 7?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7,000. Correct! The 7 is in the thousands place, so its value is 7 × 1,000 = 7,000"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the Hindu-Arabic numeral system use as its base?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Base 10. Correct! The Hindu-Arabic system is a base-10 system using digits 0-9"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which ancient civilization developed the numeral system we use today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient India. Correct! The Hindu-Arabic numeral system was developed in ancient India and later adopted by the Arab world"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the number 5,234, by how much is the digit 2 less than the digit 5?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4,970. Correct! 5 is in the thousands place (5,000) and 2 is in the hundreds place (200). Difference: 5,000 - 200 = 4,800. Wait, let me recalculate: The difference between their VALUES is 5,000 - 200 = 4,800. Actually, the digit difference is: The 5's place value is 5,000 and 2's place value is 200. So 5,000 - 200 = 4,800"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many different symbols does the Hindu-Arabic system need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10. Correct! The Hindu-Arabic system uses 10 symbols: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Reading Place Value: In the number 3407, what does the 0 represent? A) Nothing B) Zero ones C) Zero tens D) Zero hundreds",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: C) Zero tens. In 3407: 3 is in the thousands place, 4 is in the hundreds place, 0 is in the tens place, 7 is in the ones place. So the 0 means \"zero tens\" (no tens). This is why 3407 is different from 347—it has no tens!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Roman Numerals: Convert XLVII to Hindu numerals. A) 67 B) 47 C) 42 D) 52",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) 47. XL = 40 (X before L means 10 before 50), V = 5, II = 2. So XL + V + II = 40 + 5 + 2 = 47. Notice how XLVII uses 4 symbols for one number, while 47 uses just 2!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Place Value Matters: Which is larger: 101 or 110? A) 101 B) 110 C) They're equal D) Can't compare",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) 110 is larger. 101 = 1×100 + 0×10 + 1×1 = 101 110 = 1×100 + 1×10 + 0×1 = 110 The position of the digits matters! Moving a digit one place to the left multiplies its value by 10."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Zero was Necessary: Explain why Roman numerals didn't need a zero symbol, but our system does.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: In Roman numerals, each symbol has a fixed value no matter where it appears. You write 10 as X and 100 as C. If a position is empty, you just don't write anything (like how you write 4 as IV, not IVnothing). But with place value, if you skip a position, it's ambiguous. Is 1_7 (with blank) meant to be 17 or 107? Zero (0) fills that blank and says \"nothing here.\" This makes the system unambiguous."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Place Value Explanation: Explain how the digit 5 has different values in the numbers 5, 50, 500, and 5000. What rule is at work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Place Value Rule: The position of a digit determines its value by multiplying by powers of 10. 5 = 5 × 1 = 5 × 10⁰ 50 = 5 × 10 = 5 × 10¹ 500 = 5 × 100 = 5 × 10² 5000 = 5 × 1000 = 5 × 10³ Each position to the left multiplies the value by 10. This is the genius of place value—it lets us express any number with just 10 symbols!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Design Your Own Number System: Invent a number system that uses base 5 (only digits 0-4) instead of base 10. What would the number \"10\" in base 5 mean in our system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: In base 5, \"10\" means 1×5¹ + 0×5⁰ = 5 in our base 10 system. Examples in base 5: 1₅ = 1₁₀ 4₅ = 4₁₀ 10₅ = 5₁₀ 24₅ = 2×5¹ + 4×5⁰ = 10 + 4 = 14₁₀ The principle is the same: Place value works in any base! Our base 10 is just a choice (probably because we have 10 fingers)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

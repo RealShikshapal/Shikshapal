@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Triangles are the simplest polygon but extraordinarily rich in properties and relationships." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Triangles",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter7.html#learning-resource",
+        "name": "Triangles — Class 9 Math · ShikshaPal",
+        "description": "Triangles are the simplest polygon but extraordinarily rich in properties and relationships.",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Triangles",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter7.html#learning-resource",
-      "name": "Triangles — Class 9 Math · ShikshaPal",
-      "description": "Triangles are the simplest polygon but extraordinarily rich in properties and relationships.",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Triangles is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle sum property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The sum of all interior angles in any triangle is 180°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Classification by angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Acute triangle: All angles less than 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Right triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "One angle equals 90° (the side opposite the right angle is called the hypotenuse)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Obtuse triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "One angle greater than 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Classification by sides?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Scalene triangle: All three sides have different lengths"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isosceles triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two sides have equal length (the equal sides are called legs, the third is the base)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Equilateral triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All three sides have equal length (all angles are 60°)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world structures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Triangles are used extensively in construction because they're rigid—once the three side lengths are fixed, the triangle's shape cannot change. This is why roof trusses are triangular."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The challenge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To verify congruence, must we check all six measurements (three sides and three angles)? Fortunately, no! Several rules guarantee congruence with fewer checks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SSS (Side-Side-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- If three sides of one triangle equal the three sides of another triangle, the triangles are congruent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SAS (Side-Angle-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- If two sides and the included angle (the angle between them) of one triangle equal two sides and the included angle of another triangle, the triangles are congruent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ASA (Angle-Side-Angle)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- If two angles and the included side (the side between them) of one triangle equal two angles and the included side of another triangle, the triangles are congruent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is AAS (Angle-Angle-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- If two angles and a non-included side of one triangle equal two angles and the corresponding non-included side of another triangle, the triangles are congruent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is RHS (Right angle-Hypotenuse-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- For right triangles: If the hypotenuse and one other side of a right triangle equal the hypotenuse and corresponding side of another right triangle, the triangles are congruent"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Important non-rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AAA (three equal angles) does NOT guarantee congruence! Triangles can have the same angles but different sizes (similar but not congruent)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isosceles triangle properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- The base angles (angles opposite the equal sides) are equal"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Equilateral triangle properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- All three angles are 60°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Can sides of length 3, 4, and 8 form a triangle?"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This inequality ensures that three line segments can actually \"close\" into a triangle. If one side is too long, the other two cannot reach each other."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment from a vertex to the midpoint of the opposite side"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A perpendicular line segment from a vertex to the opposite side (or its extension)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle bisector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment from a vertex that bisects the angle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle sum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Interior angles sum to 180°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Congruence criteria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSS, SAS, ASA, AAS, RHS"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isosceles property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Equal sides have equal opposite angles"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Triangle inequality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sum of any two sides > third side"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Pythagorean theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(for right triangles): a² + b² = c²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(1/2) × base × height"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Triangle Basics: Definitions and Classification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A triangle is a polygon with three sides, three angles, and three vertices. The vertices are usually labeled A, B, C and the opposite sides as a, b, c."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Congruence of Triangles: When Triangles Are Identical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two triangles are congruent if they have the same shape and size. We write ∠ABC ≅ ∠DEF."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Congruence Rules (Criteria)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSS (Side-Side-Side): - If three sides of one triangle equal the three sides of another triangle, the triangles are congruent - You don't need to check any angles—equal sides guarantee equal angles!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Properties of Isosceles and Equilateral Triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Isosceles triangle properties: - The base angles (angles opposite the equal sides) are equal - Conversely, if two angles in a triangle are equal, the sides opposite those angles are equal - The angle bisector from the…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Triangle Inequalities: What Sides CAN Form a Triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The triangle inequality theorem: The sum of the lengths of any two sides of a triangle must be greater than the length of the third side."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Medians, Altitudes, and Angle Bisectors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Median: A line segment from a vertex to the midpoint of the opposite side - Every triangle has three medians - The three medians intersect at the centroid, which divides each median in a 2:1 ratio Altitude: A…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding triangles prepares you for: - chapter-08-quadrilaterals: Quadrilaterals can be divided into triangles - chapter-09-circles: Triangles can be inscribed in or circumscribed around circles -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Angle sum: Interior angles sum to 180° - Congruence criteria: SSS, SAS, ASA, AAS, RHS - Isosceles property: Equal sides have equal opposite angles - Triangle inequality: Sum of any two sides > third side -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Acute triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All angles less than 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Scalene triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All three sides have different lengths"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Corresponding angles are equal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Corresponding angles are equal"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does SSS (Side-Side-Side) congruence work? Why can't two different shaped triangles have the same three side lengths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If two triangles have all three angles equal (AAA), are they congruent? Why or why not? Can you sketch two different triangles with the same angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The triangle inequality ensures that a + b > c. What happens geometrically when a + b = c? Can you visualize what happens as you approach this limiting case?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An isosceles triangle has two equal sides. Why must the angles opposite those equal sides also be equal? Can you prove this using congruence rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why are triangles chosen for structural strength in architecture and engineering? How do congruence rules ensure that a triangular frame maintains its shape?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle sum property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Classification by angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Right triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Obtuse triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Classification by sides?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Isosceles triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Equilateral triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world structures?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The challenge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand SSS (Side-Side-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand SAS (Side-Angle-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand ASA (Angle-Side-Angle)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand AAS (Angle-Angle-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand RHS (Right angle-Hypotenuse-Side)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Important non-rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Isosceles triangle properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Equilateral triangle properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle bisector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle sum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Congruence criteria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Isosceles property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Triangle inequality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Pythagorean theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Triangle area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Triangle Basics: Definitions and Classification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Congruence of Triangles: When Triangles Are Identical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Congruence Rules (Criteria)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Properties of Isosceles and Equilateral Triangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Triangle Inequalities: What Sides CAN Form a Triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Medians, Altitudes, and Angle Bisectors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

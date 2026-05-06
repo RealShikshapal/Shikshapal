@@ -21,70 +21,139 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Lines and Angles",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter2.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter2.html#learning-resource",
+        "name": "Lines and Angles — Class 6 Math · ShikshaPal",
+        "description": "From points and rays to angles and the protractor — the precise vocabulary of geometry begins here.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter2.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Lines and Angles",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter2.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter2.html#learning-resource",
-      "name": "Lines and Angles — Class 6 Math · ShikshaPal",
-      "description": "From points and rays to angles and the protractor — the precise vocabulary of geometry begins here.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter2.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter2.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Two rays start at point O, with one pointing to the right (0°) and another pointing straight up (90°). What is the measure of the angle between them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 90° (a right angle). Explanation: The difference between 90° and 0° is 90°. This is the classic \"corner\" angle you see in squares, windows, and rooms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "At what time do the hour and minute hands of a clock form a right angle (90°)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: At 3:00 (and also at 9:00). Explanation: At 3:00, the minute hand points at 12, and the hour hand points at 3. The angle between them is exactly 90°. At 9:00, the minute hand points at 12, hour hand at 9, which is also 90°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When you fold a paper so that one edge overlaps another edge perfectly, why does the resulting crease create two equal angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: When you fold paper, you're creating a reflection. The fold line (crease) becomes a \"mirror\" that creates two identical angles on either side. Since both angles are identical, they must be equal in size. Because you're folding a straight angle (180°) in half, each resulting angle is 180° ÷ 2 = 90°. Key insight: Folding is a physical way to bisect an angle—to divide it into two equal parts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two lines that meet at a right angle are perpendicular. Why is this relationship special in geometry and architecture?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Perpendicular lines are special because right angles (90°) are the most stable and symmetric configuration. Buildings, rooms, and furniture are built with perpendicular lines because: 90° angles are perfectly vertical and horizontal—stable; they divide space evenly and predictably; perpendicular lines are easiest to construct accurately; most structures in nature and human design use 90° angles. Without perpendicular lines, buildings would collapse and furniture would be unstable!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a triangle, two angles measure 50° and 60°. What is the measure of the third angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 70°. Calculation: Since the sum of all angles in a triangle is 180°: Third angle = 180° - (50° + 60°) = 180° - 110° = 70°. Application: This triangle angle sum property applies to EVERY triangle, no matter what shape it is. It's one of the most fundamental properties in geometry!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An architect wants to design a ramp that climbs at a 30° angle from the horizontal ground. If the ramp must rise 3 meters, approximately how long does the ramp need to be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Approximately 6 meters (this requires trigonometry, which you'll study later). Explanation: In a right triangle: the vertical rise = 3 meters; the angle = 30°; the ramp length = rise ÷ sin(30°) = 3 ÷ 0.5 = 6 meters. Why this matters: Architects, engineers, and construction workers use angles constantly to design structures. Understanding angles helps them build safely and accurately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the Ashoka Chakra (the wheel on India's flag) there are 24 equally-spaced spokes. What is the angle between any two adjacent spokes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 15°. Calculation: A full rotation = 360°. With 24 equal spokes: Angle between adjacent spokes = 360° ÷ 24 = 15°. Application: This same principle applies to clock divisions, pie charts, wheels, and any circular design that's divided into equal parts."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

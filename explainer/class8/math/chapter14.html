@@ -21,70 +21,243 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Area",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter14.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter14.html#learning-resource",
+        "name": "Area — Class 8 Math · ShikshaPal",
+        "description": "Measuring Surfaces: From Rectangles to Complex Polygons.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter14.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Area",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter14.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter14.html#learning-resource",
-      "name": "Area — Class 8 Math · ShikshaPal",
-      "description": "Measuring Surfaces: From Rectangles to Complex Polygons.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter14.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter14.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Area of Triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (1/2) × base × height. The height is perpendicular to the base"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area of Parallelogram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = base × height. The height is perpendicular to the base, not the slant side"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area of Trapezium?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (1/2) × (sum of parallel sides) × height = (1/2) × (a + b) × h"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Base?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The bottom or reference side of a 2D shape"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The perpendicular distance from the base to the opposite vertex or side"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Altitude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A perpendicular line from a vertex to the opposite side in a triangle or polygon"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Square Units?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The unit of measurement for area. Example: cm², m², sq. km"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Composite Shape?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A shape made by combining or subtracting simpler shapes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find the area of a triangle with base 8 cm and height 6 cm",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "24 cm². Correct! Area = (1/2) × 8 × 6 = 24 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find the area of a parallelogram with base 10 cm and height 5 cm",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50 cm². Correct! Area = base × height = 10 × 5 = 50 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find the area of a trapezium with parallel sides 6 cm and 8 cm, and height 4 cm",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "28 cm². Correct! Area = (1/2) × (6 + 8) × 4 = (1/2) × 14 × 4 = 28 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A triangle has area 36 cm². If its base is 9 cm, what is its height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "8 cm. Correct! Using Area = (1/2) × b × h: 36 = (1/2) × 9 × h, so h = 8 cm"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which statement is true about the height of a triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's perpendicular to the base. Correct! Height is always perpendicular (at 90°) to the base"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Height Matters: Two rectangles have the same area of 30 cm². One is 5 cm × 6 cm. What could the dimensions of the other rectangle be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many answers work! Examples: 3 cm × 10 cm (area = 30 cm²), 2 cm × 15 cm, 1 cm × 30 cm. Any pair where length × width = 30 works."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Perpendicular Height? Why must the height of a parallelogram be perpendicular to the base, not along the slanted side?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you dissect a parallelogram into a rectangle, the height of the rectangle is perpendicular to the base. A rectangle's area depends only on its length and width (measured at right angles), not on the slant of the sides. So the parallelogram's area uses the perpendicular height, not the slanted edge length."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Triangle Calculation: A triangle has a base of 12 cm and a height of 8 cm. What is its area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = ½ × 12 × 8 = ½ × 96 = 48 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Trapezium Area: A trapezium has parallel sides of 6 m and 10 m, with a height of 5 m. Find its area.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = ½ × 5 × (6 + 10) = ½ × 5 × 16 = ½ × 80 = 40 m²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Rhombus Diagonals: A rhombus has diagonals of 20 cm and 15 cm. What is its area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = ½ × 20 × 15 = ½ × 300 = 150 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Unit Conversion: A room has an area of 20 m². How many cm² is that?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1 m² = 10,000 cm². So 20 m² = 20 × 10,000 = 200,000 cm²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Irregular Polygon: You want to find the area of a quadrilateral that isn't a standard parallelogram or trapezium. What's your strategy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Draw a diagonal to divide the quadrilateral into two triangles. Find the area of each triangle using base and height, then add them. Alternatively, divide it into a rectangle and triangles, or any combination of simple shapes."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

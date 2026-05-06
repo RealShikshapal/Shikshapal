@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Vectors are quantities that have both magnitude and direction, unlike scalars which are just numbers." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Vector Algebra",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter10.html#learning-resource",
+        "name": "Vector Algebra — Class 12 Math · ShikshaPal",
+        "description": "Vectors are quantities that have both magnitude and direction, unlike scalars which are just numbers.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Vector Algebra",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter10.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter10.html#learning-resource",
-      "name": "Vector Algebra — Class 12 Math · ShikshaPal",
-      "description": "Vectors are quantities that have both magnitude and direction, unlike scalars which are just numbers.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Vector vs Scalar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A scalar has only magnitude (mass, temperature). A vector has magnitude and direction (force, velocity)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Magnitude of a 3-D Vector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "|a| = √(a₁² + a₂² + a₃²) for a = a₁i + a₂j + a₃k."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Unit Vector?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A vector of magnitude 1. The unit vector along a is â = a/|a|."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Direction Cosines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cos α, cos β, cos γ (angles with x, y, z axes); they satisfy cos²α + cos²β + cos²γ = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Dot Product?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a · b = |a||b| cos θ = a₁b₁ + a₂b₂ + a₃b₃. Zero iff a ⟂ b (and both nonzero)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cross Product?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a × b is perpendicular to both a and b, with |a × b| = |a||b| sin θ. Direction by right-hand rule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area of Parallelogram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "|a × b| equals the area of the parallelogram with adjacent sides a and b."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Scalar Triple Product?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[a b c] = a · (b × c) = volume of the parallelepiped; equals the 3×3 determinant of components."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Projection of a on b?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scalar projection = (a · b)/|b|; vector projection = ((a · b)/|b|²) b."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Section Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Position vector dividing AB in ratio m:n internally is (m·b + n·a)/(m + n)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If a = i + 2j + 2k, then |a| equals",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3. |a| = √(1² + 2² + 2²) = √9 = 3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For a = (1, 2, 3) and b = (4, −5, 6), a · b equals",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "12. a · b = 1·4 + 2·(−5) + 3·6 = 4 − 10 + 18 = 12."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two vectors a and b are perpendicular if",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "a · b = 0. The dot product vanishes exactly when vectors are perpendicular (and nonzero)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "i × j equals",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "k. By the right-hand rule, i × j = k (cyclic)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Area of the parallelogram with sides a = i + j and b = i − j is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2. a × b = (i+j) × (i−j) = −2k, so area = |a × b| = 2."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

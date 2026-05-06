@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="A pebble dropped in water creates ripples that spread outward." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Waves",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html#learning-resource",
+        "name": "Waves — Class 11 Physics · ShikshaPal",
+        "description": "A pebble dropped in water creates ripples that spread outward.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 11",
-          "item": "https://www.shikshapal.com/explainer/class11/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Physics",
-          "item": "https://www.shikshapal.com/explainer/class11/physics/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Waves",
-          "item": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html#learning-resource",
-      "name": "Waves — Class 11 Physics · ShikshaPal",
-      "description": "A pebble dropped in water creates ripples that spread outward.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter14.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Wave?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A disturbance that transfers energy through a medium (or vacuum, for EM waves) without permanent transport of matter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Transverse vs Longitudinal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transverse: particle motion ⟂ wave direction (e.g., string, light). Longitudinal: parallel (e.g., sound)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Wave Speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v = fλ. Speed equals frequency times wavelength."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Speed on a String?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v = √(T/μ), where T is tension and μ is mass per unit length."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Speed of Sound in Gas (Newton-Laplace)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v = √(γP/ρ), where γ is the adiabatic ratio (Cp/Cv), P is pressure, ρ is density."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Travelling Wave?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "y(x, t) = A sin(kx − ωt), where k = 2π/λ is the wave number and ω = 2πf is the angular frequency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Principle of Superposition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When two waves overlap, the resultant displacement is the algebraic sum of the individual displacements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Standing Wave?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pattern formed by two equal waves travelling in opposite directions; has fixed nodes (zero amplitude) and antinodes (max amplitude)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Beats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Periodic intensity variation when two waves of slightly different frequencies superpose. Beat frequency = |f₁ − f₂|."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Doppler Effect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apparent change in frequency due to relative motion between source and observer. f' = f(v ± v_o)/(v ∓ v_s)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A wave has frequency 50 Hz and wavelength 0.4 m. What is its speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "20 m/s. Correct. v = fλ = 50 × 0.4 = 20 m/s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two tuning forks of frequency 256 Hz and 260 Hz are sounded together. The number of beats heard per second is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4. Correct. Beat frequency = |f₁ − f₂| = |260 − 256| = 4 beats/sec."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A string of mass per unit length 0.01 kg/m is under tension 100 N. Wave speed is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "100 m/s. Correct. v = √(T/μ) = √(100/0.01) = √10000 = 100 m/s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sound waves in air are:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Longitudinal and need a medium. Correct. Sound is a mechanical longitudinal wave; air molecules oscillate parallel to the wave direction, and a medium is required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A train moves toward a stationary observer at 30 m/s, sounding a 600 Hz horn. Speed of sound = 330 m/s. Apparent frequency heard?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "660 Hz. Correct. f' = f · v/(v − v_s) = 600 × 330/(330 − 30) = 600 × 330/300 = 660 Hz."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,649 +343,98 @@
         </ol>
         <hr />
       <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Waves?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Waves is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Transverse waves?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The medium oscillates perpendicular to the wave&#x27;s direction of travel. A wave on a string moves forward while the string vibrates up and down. Light waves are transverse—electric and magnetic fields oscillate perpendicular to the light&#x27;s propagation direction.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Longitudinal waves?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The medium oscillates parallel to the wave&#x27;s direction. Sound waves compress and rarefact the air along the propagation direction. P-waves (primary seismic waves) are longitudinal and propagate through Earth&#x27;s interior, while S-waves (secondary) are transverse</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Wavelength?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(λ): Distance between successive crests (or troughs) of a wave. Longer wavelength means more spaced-out oscillations.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Frequency?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(f): Oscillations per unit time. Higher frequency means faster oscillation.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Period?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(T = 1/f): Time for one complete oscillation.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Amplitude?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(A): Maximum displacement of the medium from equilibrium. Larger amplitude means more intense wave (louder sound, brighter light).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Wave speed?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(v): Distance the wave travels per unit time. Crucially, wave speed depends on the medium, not on frequency or amplitude!</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Sound in air?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">v ≈ 340 m/s (depends on temperature; faster in warm air)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Sound in water?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">v ≈ 1480 m/s (faster because water is denser and less compressible)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Waves on a string?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">v = √(T/μ), where T is tension and μ is linear mass density. Tighter, lighter strings have faster waves.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Light in vacuum?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">c = 3 × 10⁸ m/s (constant everywhere)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Light in material?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">v &lt; c (light slows in denser media, explaining refraction)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Constructive interference?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Waves align in phase, their amplitudes add, producing a wave of larger amplitude.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Destructive interference?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Waves align opposite in phase (out of phase by π), their amplitudes cancel. If equal in amplitude, they cancel completely.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is f&#x27; = f × [v/(v − v_s)]?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where v is wave speed. As v_s approaches v, f&#x27; → ∞ (frequency shifts extremely).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is f&#x27; = f × [(v + v_o)/v]?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The effects are different! Approaching a sound source and having a sound source approach you produce slightly different frequency shifts (relativistic effects, absent for sound, produce identical shifts).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Radar and radar guns?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Measure vehicle speeds from Doppler shift</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Astronomy?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Determine if stars approach or recede (redshift/blueshift)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Medical ultrasound?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Measure blood flow velocity from Doppler shift</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Ambulance sirens?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Pitch rises as they approach, drops as they pass</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Transverse and Longitudinal Waves?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A wave is a disturbance that propagates through space. Unlike oscillations (which occur at a fixed location), waves carry energy from one place to another.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Wave Properties?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Wavelength (λ): Distance between successive crests (or troughs) of a wave. Longer wavelength means more spaced-out oscillations. Frequency (f): Oscillations per unit time. Higher frequency means faster oscillation.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Displacement Relation in a Traveling Wave?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A harmonic wave (sinusoidal oscillation) traveling in the positive x-direction is described by: y(x,t) = A sin(kx − ωt + φ) where: - A is amplitude - k = 2π/λ is the wave number - ω = 2πf is the angular frequency - φ…</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Speed of Waves in Different Media?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Wave speed depends on the medium&#x27;s properties: Sound in air: v ≈ 340 m/s (depends on temperature; faster in warm air) Sound in water: v ≈ 1480 m/s (faster because water is denser and less compressible) Waves on a…</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Interference of Waves?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">When two waves occupy the same space, they superpose—the displacement at each point is the sum of both waves&#x27; displacements.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Standing Waves and Resonance?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A wave confined to a region (like a string tied at both ends) can reflect from boundaries.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of The Doppler Effect?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">When a source moves toward an observer, the observed frequency increases. When moving away, it decreases. This is the Doppler effect.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Diffraction: Waves Bending Around Obstacles?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Waves don&#x27;t travel strictly in straight lines—they bend around obstacles, a phenomenon called diffraction. This is especially noticeable when wavelength is comparable to obstacle size.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Refraction: Waves Changing Speed?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">When waves enter a medium where their speed changes, their wavelength changes, but frequency stays constant (determined by the source). This is refraction.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is k = 2π/λ is the wave number?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">k = 2π/λ is the wave number</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is ω = 2πf is the angular frequency?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">ω = 2πf is the angular frequency</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is φ is the phase constant?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">φ is the phase constant</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Phase difference = 0 (or multiples of 2π)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Constructive</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is In between?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Partial interference</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Transverse and Longitudinal Waves matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Transverse and Longitudinal Waves matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Wave Properties matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Wave Properties matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Displacement Relation in a Traveling Wave matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Displacement Relation in a Traveling Wave matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Speed of Waves in Different Media matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Speed of Waves in Different Media matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Interference of Waves matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Interference of Waves matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Wave</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">A disturbance that transfers energy through a medium (or vacuum, for EM waves) without permanent transport of matter.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Transverse vs Longitudinal</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Transverse: particle motion ⟂ wave direction (e.g., string, light). Longitudinal: parallel (e.g., sound).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Wave Speed</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">v = fλ. Speed equals frequency times wavelength.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Speed on a String</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">v = √(T/μ), where T is tension and μ is mass per unit length.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Speed of Sound in Gas (Newton-Laplace)</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">v = √(γP/ρ), where γ is the adiabatic ratio (Cp/Cv), P is pressure, ρ is density.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Travelling Wave</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">y(x, t) = A sin(kx − ωt), where k = 2π/λ is the wave number and ω = 2πf is the angular frequency.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Principle of Superposition</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">When two waves overlap, the resultant displacement is the algebraic sum of the individual displacements.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Standing Wave</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Pattern formed by two equal waves travelling in opposite directions; has fixed nodes (zero amplitude) and antinodes (max amplitude).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Beats</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Periodic intensity variation when two waves of slightly different frequencies superpose. Beat frequency = |f₁ − f₂|.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Doppler Effect</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Apparent change in frequency due to relative motion between source and observer. f' = f(v ± v_o)/(v ∓ v_s).</div></div>
+          </div></div>
+        </div></section>
       <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
           <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Wave speed depends on the medium, but frequency is set by the source. If sound&#x27;s frequency is fixed, how does wavelength change when sound travels from air into water (where sound is faster)?</div>
+            <div class="mcq-stem">A wave has frequency 50 Hz and wavelength 0.4 m. What is its speed?</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 0.008 m/s</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 20 m/s</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 50 m/s</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 125 m/s</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. v = fλ = 50 × 0.4 = 20 m/s." data-wrong="The correct answer is B. v = fλ = 50 Hz × 0.4 m = 20 m/s."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">A guitar string and a piano string play the same note (same fundamental frequency). Yet they sound different. How does the concept of harmonics explain this timbral difference?</div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">Two tuning forks of frequency 256 Hz and 260 Hz are sounded together. The number of beats heard per second is:</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 1</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 2</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 4</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 256</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. Beat frequency = |f₁ − f₂| = |260 − 256| = 4 beats/sec." data-wrong="The correct answer is C. Beat frequency is the difference of the two source frequencies, |260 − 256| = 4 Hz."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Interference can cause two sound waves of equal intensity to produce either maximum intensity (constructive) or silence (destructive). How can adding waves sometimes produce zero amplitude?</div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">A string of mass per unit length 0.01 kg/m is under tension 100 N. Wave speed is:</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 100 m/s</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 10 m/s</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 1000 m/s</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 31.6 m/s</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. v = √(T/μ) = √(100/0.01) = √10000 = 100 m/s." data-wrong="The correct answer is A. v = √(T/μ); √(100/0.01) = √10000 = 100 m/s."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">When an ambulance passes you, its siren frequency drops abruptly. Use the Doppler effect formula to explain why. What changes: the sound&#x27;s actual frequency, the observed frequency, or the wavelength?</div>
+          <div class="mcq-item" data-answer="D">
+            <div class="mcq-stem">Sound waves in air are:</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Transverse and need a vacuum</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Transverse and need a medium</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Longitudinal and travel in vacuum</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Longitudinal and need a medium</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. Sound is a mechanical longitudinal wave; air molecules oscillate parallel to the wave direction, and a medium is required." data-wrong="The correct answer is D. Sound is longitudinal (compressions/rarefactions) and cannot propagate through vacuum."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Why can you hear someone calling from around a corner (diffraction) but not see them (minimal diffraction of visible light)? What property of waves and obstacles determines diffraction?</div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">A train moves toward a stationary observer at 30 m/s, sounding a 600 Hz horn. Speed of sound = 330 m/s. Apparent frequency heard?</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 545 Hz</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 600 Hz</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 660 Hz</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 720 Hz</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. f' = f · v/(v − v_s) = 600 × 330/(330 − 30) = 600 × 330/300 = 660 Hz." data-wrong="The correct answer is C. With source approaching: f' = f·v/(v − v_s) = 600 × 330/300 = 660 Hz."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Waves?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Transverse waves?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Longitudinal waves?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Wavelength?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Frequency?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Period?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Amplitude?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Wave speed?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Sound in air?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Sound in water?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Waves on a string?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Light in vacuum?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Light in material?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Constructive interference?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Destructive interference?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand f&#x27; = f × [v/(v − v_s)]?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand f&#x27; = f × [(v + v_o)/v]?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Radar and radar guns?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Astronomy?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Medical ultrasound?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Ambulance sirens?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Transverse and Longitudinal Waves?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Wave Properties?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Displacement Relation in a Traveling Wave?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Speed of Waves in Different Media?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Interference of Waves?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Standing Waves and Resonance?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand The Doppler Effect?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Diffraction: Waves Bending Around Obstacles?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Refraction: Waves Changing Speed?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand k = 2π/λ is the wave number?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand ω = 2πf is the angular frequency?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand φ is the phase constant?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Phase difference = 0 (or multiples of 2π)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand In between?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
         </div></section>
       <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter13.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Oscillations</span></a><a href="index.html" class="next"><span class="nav-label">Back →</span><span class="nav-title">Physics Index</span></a></nav>
     </main>

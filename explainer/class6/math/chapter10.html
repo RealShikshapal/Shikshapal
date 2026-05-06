@@ -21,70 +21,203 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "The Other Side of Zero",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter10.html#learning-resource",
+        "name": "The Other Side of Zero — Class 6 Math · ShikshaPal",
+        "description": "Exploring numbers beyond zero — how negative numbers, the complete number line, and integer operations describe the real world.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "The Other Side of Zero",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter10.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter10.html#learning-resource",
-      "name": "The Other Side of Zero — Class 6 Math · ShikshaPal",
-      "description": "Exploring numbers beyond zero — how negative numbers, the complete number line, and integer operations describe the real world.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Q1: Which of these is a negative integer? -5, +3, 0, or 8?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: -5. A negative integer has a minus sign. -5 means 5 units to the left of zero on the number line. It represents something \"less than zero\" — like 5 floors below ground, or 5 degrees below freezing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q2: What is the inverse of +7?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: -7. Inverse numbers cancel out: (+7) + (-7) = 0. If you go up 7 floors (+7) and then down 7 floors (-7), you're back where you started (floor 0)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q3: Is -10 greater than or less than -3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: -10 is less than -3. We write this as: -10 < -3. On the number line, -10 is further to the left than -3. Smaller numbers are always to the left of bigger numbers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q4: Calculate: (+3) + (-5)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: -2. Start at floor +3. Go down 5 floors (-5). You end up at floor -2. Think of it: from +3, go back 3 to reach 0, then back 2 more to reach -2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q5: What does Floor 0 represent in Bela's Building of Fun?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: The ground floor (the reference point). Zero is neither positive nor negative. It's the middle point. Floors above it are positive, floors below it are negative. This is why zero is so important — it's the anchor point for the entire integer system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q1: Why does (-1) - (-2) = +1? Explain using the Building of Fun.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Starting at Floor -2, you need to reach Floor -1. Movement = (-1) - (-2). From Floor -2, you need to go UP 1 floor to reach Floor -1. So the answer is +1. This shows that moving from a lower floor to a higher floor requires an upward (positive) movement. Algebraic way: Subtracting a negative is like reversing a \"go down\" instruction. The -(-2) becomes +2. So: (-1) - (-2) = (-1) + (+2) = +1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q2: Why do we say \"all negative numbers are less than zero\"? What does this mean in real life?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: On the number line, negative numbers are always to the left of zero, and numbers to the left are always smaller. In real life: -10°C is colder than 0°C (less warmth). A bank balance of -₹50 (owing money) is less than 0 (having no money). A position of -5 meters (5 meters below sea level) is lower than 0 meters (sea level). Negative literally means \"less than the reference point.\""
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q3: A lift starts at Floor -3, presses +2, then presses -5. Where does it end, and what's the total expression?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: The expression is: (-3) + (+2) + (-5). Step by step: Start: -3; After +2: (-3) + (+2) = -1; After -5: (-1) + (-5) = -6. So: (-3) + (+2) + (-5) = -6. The lift ends at Floor -6."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q4: Is zero (0) a positive or negative number? Why is this important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Zero is NEITHER positive nor negative. This is important because: zero is the reference point between positive and negative; it marks the balance point (in bank accounts, 0 means you owe nothing and have nothing); it's the starting point for the lift in the Building of Fun; without zero as a neutral anchor, the integer system wouldn't work — we'd have no clear dividing line."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q5: Explain why (+2) - (-3) = (+2) + (+3) = +5. What rule does this illustrate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: This illustrates the rule: \"Subtracting a negative number is the same as adding the corresponding positive number.\" Why does this work? Imagine you're at Floor +2. If you're told to subtract a \"go down by 3\" instruction, it's the same as adding a \"go up by 3\" instruction! The minus sign in front of the -3 flips the operation. So when you subtract a negative, you're really adding a positive. Mathematical insight: - (- 3) = + 3. Two negatives make a positive!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q1: A bank account starts at ₹100. There's a credit of ₹60, then a debit of ₹30, then a debit of ₹150. What's the final balance? Is it positive or negative?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: The expression is: 100 + 60 - 30 - 150 = -20. Step by step: Start: ₹100; After credit of ₹60: 100 + 60 = ₹160; After debit of ₹30: 160 - 30 = ₹130; After debit of ₹150: 130 - 150 = -₹20. Final balance: -₹20 (negative). This means the account holder owes ₹20 to the bank."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q2: The temperature at noon is +14°C. By midnight, it has dropped to -4°C. What is the change in temperature?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Change = Final Temperature - Initial Temperature. Change = (-4) - (+14) = -4 - 14 = -18. The temperature has dropped 18°C. (We say \"dropped\" because the change is negative — the temperature decreased.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q3: On a number line, you start at position -8. You need to reach position +6. What is the distance you must travel, and in which direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Movement = Target - Starting Position. Movement = (+6) - (-8) = 6 + 8 = +14. You must travel 14 units to the RIGHT. Why 14? From -8, you go right 8 units to reach 0, then right 6 more units to reach +6. Total: 8 + 6 = 14 units."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q4: In a sequence, the numbers are: -5, -2, 1, 4, 7, .... If you continue this pattern, what are the next three numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: The next three numbers are: 10, 13, 16. Pattern analysis: -5 to -2: difference is +3; -2 to 1: difference is +3; 1 to 4: difference is +3; 4 to 7: difference is +3. Each term is 3 more than the previous. So: 7 + 3 = 10, 10 + 3 = 13, 13 + 3 = 16."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Q5: The height of Mount Everest above sea level is +8,848 m. The depth of the Challenger Deep below sea level is -10,994 m. What is the total vertical distance between the highest and lowest points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Distance = Higher Point - Lower Point. Distance = (+8,848) - (-10,994) = 8,848 + 10,994 = 19,842 meters. The vertical distance between Mount Everest's peak and Challenger Deep's bottom is 19,842 meters — nearly 20 kilometers! This shows the incredible range of elevations on Earth."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

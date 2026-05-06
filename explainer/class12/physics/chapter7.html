@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Unlike the constant voltage of a battery, household electricity oscillates sinusoidally—it swaps direction 50 or 60 times per second depending on your…" />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class12/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Alternating Current",
+            "item": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html#learning-resource",
+        "name": "Alternating Current — Class 12 Physics · ShikshaPal",
+        "description": "Unlike the constant voltage of a battery, household electricity oscillates sinusoidally—it swaps direction 50 or 60 times per second depending on your…",
+        "url": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Physics",
-          "item": "https://www.shikshapal.com/explainer/class12/physics/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Alternating Current",
-          "item": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html#learning-resource",
-      "name": "Alternating Current — Class 12 Physics · ShikshaPal",
-      "description": "Unlike the constant voltage of a battery, household electricity oscillates sinusoidally—it swaps direction 50 or 60 times per second depending on your…",
-      "url": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/physics/chapter7.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is RMS Current?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I = i_m/√2 ≈ 0.707 i_m; equivalent dc current that produces the same average heating in a resistor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is RMS Voltage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "V = v_m/√2; the 220 V household value is rms; peak ≈ 311 V."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inductive Reactance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "X_L = ωL = 2πfL (Ω); current lags voltage by π/2; rises with frequency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Capacitive Reactance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "X_C = 1/(ωC) (Ω); current leads voltage by π/2; falls with frequency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Impedance of Series LCR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Z = √[R² + (X_L − X_C)²]; relates rms current to rms voltage as I = V/Z."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Resonance Frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ω₀ = 1/√(LC); at this frequency X_L = X_C, Z = R, and current is maximum."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power Factor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "cos ϕ = R/Z; average power P = V·I·cos ϕ; equals 1 for pure R, 0 for pure L or C."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Wattless Current?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Current 90° out of phase with voltage in pure L or C; transfers no average power."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Phasor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rotating vector of length equal to peak value, spinning at ω; its vertical projection gives the instantaneous sinusoid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Transformer Turns Ratio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "V_s/V_p = N_s/N_p; for an ideal transformer I_s/I_p = N_p/N_s, conserving power."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A 220 V (rms), 50 Hz mains has what approximate peak voltage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "311 V. Peak v_m = √2·V_rms = 1.414×220 ≈ 311 V."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a series LCR circuit at resonance, the impedance equals:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "R. At resonance X_L = X_C, so Z = √(R² + 0) = R."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A pure inductor of 25 mH is across a 50 Hz source. Its inductive reactance is approximately:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7.85 Ω. X_L = 2πfL = 2π(50)(0.025) ≈ 7.85 Ω."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a purely capacitive ac circuit, the current:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "leads the voltage by π/2. For a capacitor i = i_m sin(ωt + π/2), so current leads voltage by 90°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An ideal transformer steps 220 V down to 22 V. If the primary draws 0.5 A, the secondary current is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "5 A. V_p I_p = V_s I_s ⇒ I_s = (220/22)·0.5 = 5 A."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

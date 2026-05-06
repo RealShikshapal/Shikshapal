@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Coordinate geometry is the bridge between algebra and geometry—it uses numbers and equations to describe shapes and positions in space." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Coordinate Geometry",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter3.html#learning-resource",
+        "name": "Coordinate Geometry — Class 9 Math · ShikshaPal",
+        "description": "Coordinate geometry is the bridge between algebra and geometry—it uses numbers and equations to describe shapes and positions in space.",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Coordinate Geometry",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter3.html#learning-resource",
-      "name": "Coordinate Geometry — Class 9 Math · ShikshaPal",
-      "description": "Coordinate geometry is the bridge between algebra and geometry—it uses numbers and equations to describe shapes and positions in space.",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Coordinate Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coordinate Geometry is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The two axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Horizontal axis (x-axis): Extends left and right"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Vertical axis (y-axis)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extends up and down"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Origin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The point (0, 0) where the axes intersect"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The two axes divide the plane into four regions:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Cartesian plane is like a street grid. The x-coordinate tells you how far east or west to go, while the y-coordinate tells you how far north or south. The ordered pair (3, 5) means 3 units east and 5 units north from the origin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is x-coordinate (abscissa)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Horizontal distance from the y-axis"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is y-coordinate (ordinate)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vertical distance from the x-axis"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is How to plot point (a, b)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Start at the origin (0, 0)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plot point A at (2, 3)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance = √[(x₂ - x₁)² + (y₂ - y₁)²]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Derivation: Imagine a right triangle where the two points are diagonal from each other. The horizontal distance is |x₂ - x₁| and the vertical distance is |y₂ - y₁|. The distance between the points is the hypotenuse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GPS systems use this formula to calculate the straight-line distance between two locations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Midpoint Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For points A(x₁, y₁) and B(x₂, y₂), the midpoint M is:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is M = ((x₁ + x₂)/2, (y₁ + y₂)/2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This simply averages the x-coordinates and y-coordinates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Section Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(dividing in ratio m:n): If point P divides segment AB in ratio m:n:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is P = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is useful when you need to find a point that divides a segment into parts with a specific ratio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Address/Location systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cities sometimes use coordinate systems where blocks are labeled with coordinates, making addresses precise."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Computer graphics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every pixel on a screen has coordinates. Animation works by changing coordinates over time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Engineering and construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Architects use coordinates to specify exact positions of buildings, roads, and infrastructure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surveying and mapping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Land surveyors use coordinates to map terrain and property boundaries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d = √[(x₂ - x₁)² + (y₂ - y₁)²]"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coordinates axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x-axis is horizontal, y-axis is vertical, they meet at origin (0, 0)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrant properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Signs determine which quadrant a point lies in"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Cartesian Plane: A Number Grid in Space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Cartesian plane (named after mathematician René Descartes) is a two-dimensional grid formed by two perpendicular number lines that intersect at a point called the origin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Plotting Points: Reading Coordinates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A point in the coordinate plane is located by an ordered pair (x, y): - x-coordinate (abscissa): Horizontal distance from the y-axis - y-coordinate (ordinate): Vertical distance from the x-axis How to plot point (a,…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Distance Formula: Measuring Straight Lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The distance between two points can be calculated using the Pythagorean theorem."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Section Formula: Finding Points Between Two Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes you need to find a point that lies exactly between two points, or divides the segment in a specific ratio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Practical Applications in Navigation and Design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Address/Location systems: Cities sometimes use coordinate systems where blocks are labeled with coordinates, making addresses precise. Computer graphics: Every pixel on a screen has coordinates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Understanding coordinate geometry prepares you for: - chapter-04-linear-equations-in-two-variables: Lines are graphs of equations in the coordinate plane - chapter-06-lines-and-angles: Angles can be measured using…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Distance formula: d = √[(x₂ - x₁)² + (y₂ - y₁)²] - Midpoint formula: M = ((x₁ + x₂)/2, (y₁ + y₂)/2) - Section formula: P = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n)) for ratio m:n - Coordinates axes: x-axis is…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Horizontal axis (x-axis)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Extends left and right"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrant I?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x > 0, y > 0 (upper right)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrant II?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x 0 (upper left)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrant III?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x < 0, y < 0 (lower left)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quadrant IV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "x > 0, y < 0 (lower right)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Move 2 units right along the x-axis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Move 2 units right along the x-axis"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is From there, move 3 units up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From there, move 3 units up"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Move 2 units left along the x-axis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Move 2 units left along the x-axis"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is From there, move 4 units up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From there, move 4 units up"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Distance = √[(4-1)² + (6-2)²] = √[3²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distance = √[(4-1)² + (6-2)²] = √[3² + 4²] = √[9 + 16] = √25 = 5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do we use two numbers (ordered pair) to locate a point in a plane? Could we locate every point uniquely with just one number? Why or why not?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you know the distances from point A to two other fixed points B and C, can you determine A's exact location? How would coordinates help solve this problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The midpoint formula averages the coordinates. Why does averaging give us the point exactly halfway between two points? What mathematical property makes this work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the distance formula, why do we square the differences before adding them? What would happen if we just added |x₂ - x₁| + |y₂ - y₁| instead? (This is called the Manhattan distance)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cities sometimes layout streets in a rectangular grid like a coordinate plane. What are the advantages and disadvantages of this layout compared to natural street patterns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Coordinate Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The two axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Vertical axis (y-axis)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Origin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world analogy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand x-coordinate (abscissa)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand y-coordinate (ordinate)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand How to plot point (a, b)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Distance = √[(x₂ - x₁)² + (y₂ - y₁)²]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Midpoint Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand M = ((x₁ + x₂)/2, (y₁ + y₂)/2)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Section Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand P = ((mx₂ + nx₁)/(m+n), (my₂ + ny₁)/(m+n))?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Address/Location systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Computer graphics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Engineering and construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surveying and mapping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Distance formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Coordinates axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrant properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Cartesian Plane: A Number Grid in Space?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Plotting Points: Reading Coordinates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Distance Formula: Measuring Straight Lines?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Section Formula: Finding Points Between Two Points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Practical Applications in Navigation and Design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Horizontal axis (x-axis)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrant I?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrant II?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrant III?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Quadrant IV?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

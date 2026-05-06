@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class7/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "The Ever-Evolving World of Science",
+            "item": "https://www.shikshapal.com/explainer/class7/science/chapter1.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter1.html#learning-resource",
+        "name": "The Ever-Evolving World of Science — Class 7 Science · ShikshaPal",
+        "description": "An invitation to question, experiment, and explore the beautiful world we live in.",
+        "url": "https://www.shikshapal.com/explainer/class7/science/chapter1.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class7/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "The Ever-Evolving World of Science",
-          "item": "https://www.shikshapal.com/explainer/class7/science/chapter1.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/science/chapter1.html#learning-resource",
-      "name": "The Ever-Evolving World of Science — Class 7 Science · ShikshaPal",
-      "description": "An invitation to question, experiment, and explore the beautiful world we live in.",
-      "url": "https://www.shikshapal.com/explainer/class7/science/chapter1.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter1.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If science is a process rather than just facts, what do you think will be MORE important in your learning: memorizing information or asking questions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Asking questions is more important. Science is fundamentally about curiosity and investigation. The textbook reminds us: \"To be a wise person, you must be a whys person.\" Scientists ask amazing questions first, then design experiments to answer them. Knowing facts is useful, but asking good questions is what drives discovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does this chapter mention that different areas of science (physics, chemistry, biology, earth sciences) are interconnected? What's the point of learning that they're connected?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nature doesn't exist in separate categories — it all works together as one system. Scientific ideas in one area often inspire discoveries in another. When you understand acids and bases (chemistry), you can apply that knowledge to understand soil health and farming (earth science) or even how our bodies work (biology). This interconnectedness helps you see that all of science tells one big story about how our world operates. It also means that learning one concept gives you tools to understand many other phenomena."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Think about something in your daily life that you've always taken for granted — like why an apple turns brown, why salt dissolves in water, or why a plant needs sunlight. How would a scientist approach understanding this? What questions would they ask first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A scientist would start with curiosity and observation. For example, with an apple turning brown, they might ask: \"Why does this happen?\" \"What causes the color change?\" \"Is it related to something touching the apple or something inside it?\" \"Can I slow it down or speed it up by changing conditions?\" They would then design experiments to test their ideas. They wouldn't look for one final answer, but would continue asking deeper questions based on what they discover. This is exactly what you'll do in the chapters that follow — turning everyday mysteries into scientific investigations!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

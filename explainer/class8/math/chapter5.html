@@ -21,70 +21,259 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Number Play",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter5.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter5.html#learning-resource",
+        "name": "Number Play — Class 8 Math · ShikshaPal",
+        "description": "Understanding Divisibility, Parity, and the Hidden Patterns in Numbers.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter5.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Number Play",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter5.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter5.html#learning-resource",
-      "name": "Number Play — Class 8 Math · ShikshaPal",
-      "description": "Understanding Divisibility, Parity, and the Hidden Patterns in Numbers.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter5.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter5.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Divisibility?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number is divisible by another if it divides evenly with no remainder"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Multiple?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A multiple of a number is obtained by multiplying it by any whole number. Multiples of 5: 5, 10, 15, 20, 25..."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Factor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A factor of a number divides it evenly. Factors of 12 are: 1, 2, 3, 4, 6, 12"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Prime Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number greater than 1 that has exactly two factors: 1 and itself. Examples: 2, 3, 5, 7, 11, 13"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Composite Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number greater than 1 that has more than two factors. Examples: 4, 6, 8, 9, 10, 12"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Even Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number divisible by 2 (ends in 0, 2, 4, 6, or 8)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Odd Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number not divisible by 2 (ends in 1, 3, 5, 7, or 9)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Divisibility Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shortcuts to check if a number is divisible by another without dividing. Example: divisible by 5 if it ends in 0 or 5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which number is divisible by both 3 and 5?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "30. Correct! 30 ÷ 3 = 10 and 30 ÷ 5 = 6"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are all the factors of 20?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1, 2, 4, 5, 10, 20. Correct! All factors: 1×20, 2×10, 4×5"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is 17 prime or composite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prime (only factors 1 and 17). Correct! 17 is prime—it's only divisible by 1 and itself"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is a multiple of 7?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "56. Correct! 56 = 7 × 8"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many multiples of 6 are there between 1 and 50?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "8. Correct! They are: 6, 12, 18, 24, 30, 36, 42, 48 (8 multiples)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 1: Without calculating, is 789 divisible by 9?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The sum of digits is 7 + 8 + 9 = 24. Since 24 is not divisible by 9, neither is 789. (In fact, 24 leaves remainder 6 when divided by 9, so 789 also leaves remainder 6.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 2: If you add two numbers that each leave remainder 3 when divided by 7, what remainder will their sum leave?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Remainder 6. If a ≡ 3 (mod 7) and b ≡ 3 (mod 7), then a + b ≡ 3 + 3 ≡ 6 (mod 7)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 3: Is the product of two even numbers always divisible by 4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not always! Counterexample: 2 × 6 = 12, and 12 ÷ 4 = 3 ✓. But 2 × 2 = 4, and 4 ÷ 4 = 1 ✓. Actually, the product of two even numbers IS always divisible by 4 because both numbers have factor 2, so together they have factor 4. But 2 × 3 = 6 isn't even, so we're looking at even numbers. Let me reconsider: 2 × 2 = 4 ✓; 2 × 6 = 12 ✓; 6 × 6 = 36 ✓. Yes, always!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 4: Why does the divisibility rule for 9 (sum of digits) work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because 10 ≡ 1 (mod 9), 100 ≡ 1 (mod 9), 1000 ≡ 1 (mod 9), and so on. So a number like dcba = d×1000 + c×100 + b×10 + a ≡ d + c + b + a (mod 9). Therefore, the remainder is the same!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 5: If a number is divisible by 12, why must it be divisible by both 3 and 4?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "12 = 3 × 4, and 3 and 4 are coprime (no common factors). If 12 divides a number, then the number has factors 3 and 4. Therefore it's divisible by both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 6: Explain why the sum of two multiples of 8 is always a multiple of 8.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If m = 8a and n = 8b, then m + n = 8a + 8b = 8(a + b). Since a + b is an integer, m + n is a multiple of 8."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 7: A number leaves remainder 2 when divided by 5 and remainder 3 when divided by 7. What is the smallest such number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "17. The number must be 5k + 2. Check: 2 (leaves 2 mod 7), 7 (leaves 0 mod 7), 12 (leaves 5 mod 7), 17 (leaves 3 mod 7) ✓. So 17 is the answer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 8: Your friend claims that 3p7q8 is divisible by 44 if p = 3 and q = 2. Check if this is true.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number is 337928. Last two digits: 28. Is 28 divisible by 4? 28 ÷ 4 = 7 ✓. For 11: 8 − 2 + 9 − 7 + 3 − 3 = 8. Is 8 divisible by 11? No. So 337928 is NOT divisible by 44."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Question 9: Find three consecutive even numbers such that their sum is divisible by 6.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any three consecutive even numbers work! If they are 2n, 2n+2, 2n+4, the sum is 6n + 6 = 6(n+1), which is always divisible by 6. Examples: 2, 4, 6 (sum 12); 10, 12, 14 (sum 36)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

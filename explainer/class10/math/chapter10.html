@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Circles are one of nature&#x27;s most elegant shapes—perfectly symmetric in all directions. This chapter explores the relationship between circles and lines." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Circles",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter10.html#learning-resource",
+        "name": "Circles — Class 10 Math · ShikshaPal",
+        "description": "Circles are one of nature's most elegant shapes—perfectly symmetric in all directions. This chapter explores the relationship between circles and lines.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Circles",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter10.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter10.html#learning-resource",
-      "name": "Circles — Class 10 Math · ShikshaPal",
-      "description": "Circles are one of nature's most elegant shapes—perfectly symmetric in all directions. This chapter explores the relationship between circles and lines.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circles is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Radius: Distance from center to any point on the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Diameter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A chord passing through the center (diameter = 2r)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Chord?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment joining any two points on the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Secant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line that intersects the circle at two points"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Tangent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line that touches the circle at exactly one point (the point of tangency)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 1. Non-intersecting line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- The line and circle have no common points"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 2. Secant (intersecting at two points)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- The line crosses through the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 3. Tangent (touching at one point)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- The line touches the circle at exactly one point"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line tangent to a circle is perpendicular to the radius at the point of tangency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This single property unlocks many relationships. If you know a point on the circle and the center, you immediately know the tangent line is perpendicular to the radius—no calculation needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Proof intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Imagine a circle and a line touching it at point P. The center O and point P form the radius OP. If the tangent weren't perpendicular to OP, you could pivot it slightly to get closer to O at some points and further at others. But touching at only one point is"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "From point P outside a circle, draw two tangent lines touching the circle at points A and B."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Geometric consequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The line joining P to the center O bisects the angle between the two tangents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This property is used in satellite dish design and antenna positioning—two equal-length supports provide balance and stability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle subtended by an arc?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Central angle: Angle at the center O. This angle equals the arc measure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angle at a point on the circle. This angle equals half the central angle subtending the same arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An inscribed angle is half the central angle subtending the same arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Tangent perpendicularity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tangent ⊥ radius at point of tangency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power of a point?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PA × PB = constant for all secants through P"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inscribed angle theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inscribed angle = (1/2) × central angle (same arc)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Circle equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(x − h)² + (y − k)² = r² for center (h, k) and radius r"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Circle: Definition and Basic Properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A circle is the set of all points in a plane at a constant distance (the radius r) from a fixed point (the center O)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Lines and Circles: Three Possible Relationships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When a line and circle are given in a plane, exactly one of three scenarios occurs: 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Tangent Theorem: A Crucial Property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Theorem: A line tangent to a circle is perpendicular to the radius at the point of tangency. Why this matters: This single property unlocks many relationships."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Tangents from an External Point: Two Equal Lengths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Theorem: If two tangent lines are drawn to a circle from an external point, they have equal length. Example: From point P outside a circle, draw two tangent lines touching the circle at points A and B."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Power of a Point: A Unifying Concept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For any point P and circle, the \"power\" of the point is constant: - If a line through P intersects the circle at points A and B: PA × PB = constant - If a line through P is tangent to the circle at point T: PT² =…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Angles and Arcs: Relationships in Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Angle subtended by an arc: - Central angle: Angle at the center O. This angle equals the arc measure. - Inscribed angle: Angle at a point on the circle. This angle equals half the central angle subtending the same arc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Circles connect fundamentally to other chapters: - chapter-07-coordinate-geometry: Circle equations in algebraic form - chapter-08-introduction-to-trigonometry: Angles in circles relate to trigonometric functions -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Tangent perpendicularity: Tangent ⊥ radius at point of tangency - Two tangents from external point: Equal lengths - Power of a point: PA × PB = constant for all secants through P - Inscribed angle theorem: Inscribed…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Radius?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Distance from center to any point on the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The line and circle have no common?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The line and circle have no common points"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The perpendicular distance from center to line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The perpendicular distance from center to line > radius"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Geometrically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "the line misses the circle entirely"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The line crosses through the circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The line crosses through the circle"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The line intersects at two distinct points?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The line intersects at two distinct points"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The line touches the circle at exactly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The line touches the circle at exactly one point"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is The tangent line is perpendicular to the?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tangent line is perpendicular to the radius at the point of tangency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If a line through P intersects the circle at points A and B?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PA × PB = constant"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is If a line through P is tangent to the circle at point T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PT² = constant"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why must a tangent line be perpendicular to the radius at the point of tangency? What would happen if it weren't?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you draw two tangent lines from an external point P to a circle, why must they be equal in length?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A line is at distance 5 units from the center of a circle with radius 7. Is this line a tangent, secant, or non-intersecting line? Explain your reasoning.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An inscribed angle subtends the same arc as a central angle of 60°. What is the inscribed angle? Why is the relationship always \"half\"?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you know the coordinates of a circle's center and one point on the circle, can you write the circle's equation without calculating the radius directly? How?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key terms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Diameter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Chord?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Secant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Tangent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 1. Non-intersecting line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 2. Secant (intersecting at two points)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 3. Tangent (touching at one point)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why this matters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Proof intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Geometric consequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angle subtended by an arc?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Tangent perpendicularity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Power of a point?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inscribed angle theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Circle equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Circle: Definition and Basic Properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Lines and Circles: Three Possible Relationships?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Tangent Theorem: A Crucial Property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Tangents from an External Point: Two Equal Lengths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Power of a Point: A Unifying Concept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Angles and Arcs: Relationships in Circles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Theorems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Radius?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The line and circle have no common?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The perpendicular distance from center to line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Geometrically?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The line crosses through the circle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

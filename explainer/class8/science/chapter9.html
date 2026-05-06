@@ -21,70 +21,251 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class8/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "The Amazing World of Solutes, Solvents, and Solutions",
+            "item": "https://www.shikshapal.com/explainer/class8/science/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/science/chapter9.html#learning-resource",
+        "name": "The Amazing World of Solutes, Solvents, and Solutions — Class 8 Science · ShikshaPal",
+        "description": "Why salt dissolves but sand doesn't, and why density makes objects float.",
+        "url": "https://www.shikshapal.com/explainer/class8/science/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class8/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "The Amazing World of Solutes, Solvents, and Solutions",
-          "item": "https://www.shikshapal.com/explainer/class8/science/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/science/chapter9.html#learning-resource",
-      "name": "The Amazing World of Solutes, Solvents, and Solutions — Class 8 Science · ShikshaPal",
-      "description": "Why salt dissolves but sand doesn't, and why density makes objects float.",
-      "url": "https://www.shikshapal.com/explainer/class8/science/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/science/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Homogeneous mixture: solute dissolves in solvent uniformly"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Solubility?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maximum solute that can dissolve in solvent at given conditions"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Saturation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "State when no more solute can dissolve; extra remains solid"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Temperature Effect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most solids: higher temp = higher solubility. Gases: opposite"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Concentration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Amount of solute in solution; measured as percentage or molarity"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Dissolving vs Melting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dissolving: solute enters solvent. Melting: solid becomes liquid"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Osmosis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Water movement through membrane from low to high solute concentration"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Supersaturation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unstable solution with more solute than normally possible"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a salt solution, salt is the ____ and water is the ____?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solute and solvent. Correct! The solute is the substance that dissolves (salt), and the solvent is the substance that dissolves it (water)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to the solubility of most solids when temperature increases?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solubility increases. Correct! Heat increases the movement of solvent molecules, allowing more solute particles to dissolve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ice floats on water even though ice is the solid form of water. This is because ice is _____ dense than liquid water.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Less. Correct! Ice is less dense because water expands when it freezes, creating more space between molecules. Less density means it floats."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The Dead Sea has such high salt concentration that people can float effortlessly. This is because the salty water has _____ density than the human body.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Higher. Correct! Objects float when the liquid is denser than the object. Salty water has higher density due to dissolved salt, allowing easy floating."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "1. Predicting Saturation: If you have a saturated salt solution at 20°C and you heat it to 60°C, what happens to the dissolved salt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The salt dissolves! Even more salt could now dissolve (the solution becomes unsaturated). Heating the saturated solution \"makes room\" for more solute. The same solution at 60°C is no longer at its maximum capacity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "2. Predicting Oxygen Levels: A fish tank at 10°C has plenty of oxygen. If you warm it to 25°C without adding air, will the fish have more or less oxygen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Less oxygen! Warm water can't hold as much dissolved oxygen. Gas solubility decreases with temperature (opposite of solids). The fish will struggle to breathe in warm water. This is why summer fish kills happen in stagnant ponds—warm = low oxygen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "3. Predicting Density Changes: You have a block of ice. When it melts into water, does the resulting water take up more or less volume?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Less volume! Ice is less dense (more space between molecules), so the same mass of water takes up less volume when liquid. This is why ice floats and why frozen water pipes burst—the expanding ice has nowhere to go."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "1. Why Salt Dissolves But Sand Doesn't: Why does salt dissolve in water but sand and water remain separate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salt crystals are tiny ionic compounds that break apart and get surrounded by water molecules at the microscopic level, forming a uniform solution. Sand grains are much larger mineral particles that don't break down and are heavier than water, so they sink. Particle size and chemical nature matter!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "2. Why Density Determines Floating: Why does a plastic boat float while an iron anchor sinks, even if both are the same size?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Iron is denser than plastic. The same volume of iron is much heavier than the same volume of plastic. Iron's density > water's density, so it sinks. Plastic's density < water's density, so it floats. Density, not size, determines floating!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "3. Why Measuring Cylinders Are Tall and Narrow: Why are measuring cylinders designed tall and narrow instead of wide and short?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In a narrow cylinder, the same volume change creates a larger height change, making it easier to read accurately. In a wide cylinder, the height barely changes for the same volume, making precise reading impossible. Precision depends on geometry!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "1. Making Homemade ORS: Your friend is dehydrated. You dissolve 1 teaspoon of salt and 6 teaspoons of sugar in 1 liter of water. Is this a saturated solution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, it's unsaturated. You could dissolve much more (a full cup of salt or sugar would still dissolve). But ORS doesn't need saturation—it needs the RIGHT concentration for medical effectiveness. Too concentrated and it backfires. The specific amounts matter, not saturation!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "2. Explaining the Dead Sea Mystery: Why can people float so easily in the Dead Sea when they'd sink in a fresh water lake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dead Sea water has extremely high salt concentration (30% salinity), making it much denser than fresh water or even ocean water. When water density is higher, you float more easily—your body's density is more likely to be less than the water's. Same principle: denser liquid = better floating."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "3. Debugging a Fish Tank: Your goldfish tank is warm (26°C) and the fish seem lethargic. You know fish need oxygen. What's happening, and what should you do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The warm water can't hold as much dissolved oxygen. Your fish are slowly suffocating! Cool the tank to 20-22°C (oxygen solubility increases) and add an aerator (bubbles increase oxygen contact with air). This is applied chemistry saving your pet's life!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -4,86 +4,219 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Probability — Class 12 Math · ShikshaPal</title>
-  <meta name="description" content="Probability quantifies uncertainty.">
+  <meta name="description" content="NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial.">
   <!-- SEO: canonical, social, and structured data -->
   <link rel="canonical" href="https://www.shikshapal.com/explainer/class12/math/chapter13.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta property="og:site_name" content="ShikshaPal" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Probability — Class 12 Math · ShikshaPal" />
-  <meta property="og:description" content="Probability quantifies uncertainty." />
+  <meta property="og:description" content="NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial." />
   <meta property="og:url" content="https://www.shikshapal.com/explainer/class12/math/chapter13.html" />
   <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Probability — Class 12 Math · ShikshaPal" />
-  <meta name="twitter:description" content="Probability quantifies uncertainty." />
+  <meta name="twitter:description" content="NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Probability",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter13.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter13.html#learning-resource",
+        "name": "Probability — Class 12 Math · ShikshaPal",
+        "description": "NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter13.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Probability",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter13.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter13.html#learning-resource",
-      "name": "Probability — Class 12 Math · ShikshaPal",
-      "description": "Probability quantifies uncertainty.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter13.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter13.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Conditional Probability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(A|B) = P(A ∩ B)/P(B), assuming P(B) > 0. Probability of A given that B has occurred."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Multiplication Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(A ∩ B) = P(A|B) · P(B) = P(B|A) · P(A)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Independent Events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A and B are independent iff P(A ∩ B) = P(A) · P(B), equivalently P(A|B) = P(A)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mutually Exclusive Events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A ∩ B = ∅. Then P(A ∪ B) = P(A) + P(B). Mutual exclusivity is not the same as independence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Total Probability Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If B₁, …, Bₙ partition S, then P(A) = Σᵢ P(A|Bᵢ) · P(Bᵢ)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Bayes' Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P(Bⱼ|A) = P(A|Bⱼ) P(Bⱼ) / Σᵢ P(A|Bᵢ) P(Bᵢ). Updates a prior into a posterior using evidence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Random Variable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A real-valued function on the sample space. Discrete RV takes countably many values with P(X = xᵢ) = pᵢ, Σpᵢ = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Expected Value (Mean)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E[X] = Σ xᵢ · P(X = xᵢ). Long-run average value of X."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Variance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Var(X) = E[(X − μ)²] = E[X²] − (E[X])². Standard deviation = √Var(X)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Bernoulli / Binomial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Binomial X ~ B(n, p): P(X = r) = C(n, r) pʳ (1 − p)^(n − r). Mean = np, Variance = np(1 − p)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If P(A) = 0.4, P(B) = 0.5, and A, B are independent, then P(A ∩ B) =",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.20. For independent events P(A ∩ B) = P(A)·P(B) = 0.4 · 0.5 = 0.2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A card is drawn from a standard deck. Given it is a face card, the probability it is a king is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1/3. There are 12 face cards and 4 kings; P(king|face) = 4/12 = 1/3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A bag has 3 red and 2 blue balls. Two balls are drawn one at a time without replacement. Probability both are red is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3/10. P(R₁) · P(R₂|R₁) = (3/5)·(2/4) = 6/20 = 3/10."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For a binomial distribution with n = 10 and p = 0.5, the mean is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "5. Mean of B(n,p) is np = 10 × 0.5 = 5."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A factory has machines A and B producing 60% and 40% of output, with defect rates 1% and 2% respectively. The probability a randomly chosen item is defective is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.014. P(D) = 0.6·0.01 + 0.4·0.02 = 0.006 + 0.008 = 0.014 by total probability."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,9 +245,9 @@
         <li><a href="chapter13.html" class="active"><span class="num">13</span><span class="title">Probability</span></a></li>
       </ol></aside>
     <main class="exp-main">
-      <header class="exp-hero"><span class="eyebrow">Class 12 · Math</span><h1>Probability</h1><p class="lede">Probability quantifies uncertainty.</p></header>
+      <header class="exp-hero"><span class="eyebrow">Class 12 · Math</span><h1>Probability</h1><p class="lede">NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial.</p></header>
       <section class="hook-box"><div class="hook-label">Feynman Lens</div><p>Start with the simplest version: this lesson is about <strong>Probability</strong>. If you can explain the core idea to a friend using everyday language, examples, and one clear reason why it matters, you have moved from memorising to understanding.</p></section>
-        <p>Probability quantifies uncertainty. From predicting election outcomes to assessing medical test accuracy to designing fair games, probability is the mathematical language of uncertainty. This chapter extends the foundational concepts from Class 11—sample spaces, events, and basic probability—to sophisticated tools: conditional probability (probability when you have partial information), independent events (when one event doesn't influence another), and Bayes' theorem (updating beliefs with evidence). These concepts underpin statistics, machine learning, and decision-making under uncertainty.</p>
+        <p>NCERT Class 12 probability — conditional probability, Bayes' theorem, random variables, and probability distributions including the binomial. From predicting election outcomes to assessing medical test accuracy to designing fair games, probability is the mathematical language of uncertainty. This chapter extends the foundational concepts from Class 11—sample spaces, events, and basic probability—to sophisticated tools: conditional probability (probability when you have partial information), independent events (when one event doesn't influence another), and Bayes' theorem (updating beliefs with evidence). These concepts underpin statistics, machine learning, and decision-making under uncertainty.</p>
         <h2 id="recalling-foundations-from-class-11">Recalling Foundations from Class 11</h2>
         <p>Class 11 introduced:</p>
         <ul>

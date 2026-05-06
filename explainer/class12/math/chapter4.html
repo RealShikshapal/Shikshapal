@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="The determinant of a square matrix is a single number that reveals crucial information about that matrix—whether it has an inverse, whether a system of…" />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Determinants",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter4.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter4.html#learning-resource",
+        "name": "Determinants — Class 12 Math · ShikshaPal",
+        "description": "The determinant of a square matrix is a single number that reveals crucial information about that matrix—whether it has an inverse, whether a system of…",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter4.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Determinants",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter4.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter4.html#learning-resource",
-      "name": "Determinants — Class 12 Math · ShikshaPal",
-      "description": "The determinant of a square matrix is a single number that reveals crucial information about that matrix—whether it has an inverse, whether a system of…",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter4.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter4.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Determinant of 2×2 Matrix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "det[a b; c d] = ad − bc. Multiply main diagonal, subtract product of anti-diagonal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Singular vs Non-singular?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A is singular if |A| = 0 (no inverse). Non-singular if |A| ≠ 0 (invertible)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cofactor C_ij?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "C_ij = (−1)^(i+j) · M_ij, where M_ij is the minor obtained by deleting row i and column j."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Expansion along a Row?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "|A| = a_i1·C_i1 + a_i2·C_i2 + a_i3·C_i3 for any row i. Same value for any row or column expansion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is det(kA) for n×n?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "det(kA) = kⁿ·det(A) where n is the order. For 3×3, det(2A) = 8·det(A)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is det(AB) Property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "det(AB) = det(A)·det(B). Also det(Aᵀ) = det(A) and det(A⁻¹) = 1/det(A)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Adjoint (adj A)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "adj(A) = transpose of the cofactor matrix [C_ij]. Satisfies A·adj(A) = adj(A)·A = |A|·I."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inverse Formula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A⁻¹ = (1/|A|)·adj(A), valid only when |A| ≠ 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Area of Triangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Area = (1/2)|det[x₁ y₁ 1; x₂ y₂ 1; x₃ y₃ 1]|. If determinant is 0, the three points are collinear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Row Operations Rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Swapping two rows: |A| → −|A|. Adding a multiple of one row to another: |A| unchanged. Identical rows or zero row: |A| = 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Evaluate the determinant |2 4; 3 5|.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "−2. Correct. ad − bc = (2)(5) − (4)(3) = 10 − 12 = −2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If A is a 3×3 matrix with |A| = 5, then |2A| equals:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "40. Correct. |kA| = kⁿ|A|, so |2A| = 2³·5 = 8·5 = 40."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A square matrix A is invertible if and only if:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "det(A) ≠ 0. Correct. A square matrix has an inverse exactly when it is non-singular, i.e. det(A) ≠ 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Three points (1, 2), (3, 4), (5, k) are collinear. Find k.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "6. Correct. Setting the area determinant to 0: |1 2 1; 3 4 1; 5 k 1| = 0 ⇒ 1(4−k) − 2(3−5) + (3k−20) = 0 ⇒ k = 6."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If A is a 3×3 non-singular matrix, then |adj A| equals:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "|A|². Correct. For an n×n matrix, |adj A| = |A|^(n−1); for n = 3 this is |A|²."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -21,70 +21,227 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Fractions in Disguise",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter8.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter8.html#learning-resource",
+        "name": "Fractions in Disguise — Class 8 Math · ShikshaPal",
+        "description": "Percentages, Profit & Loss, Simple & Compound Interest.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter8.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Fractions in Disguise",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter8.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter8.html#learning-resource",
-      "name": "Fractions in Disguise — Class 8 Math · ShikshaPal",
-      "description": "Percentages, Profit & Loss, Simple & Compound Interest.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter8.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter8.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Percentage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A ratio expressed as a part of 100. Symbol: %. Example: 25% = 25/100"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Profit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The money gained after selling something. Profit = Selling Price - Cost Price"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The money lost when selling below the cost. Loss = Cost Price - Selling Price"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Profit Percentage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Profit % = (Profit / Cost Price) × 100"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Simple Interest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Interest calculated only on the principal. Formula: I = (P × R × T) / 100"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Compound Interest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Interest calculated on both principal and accumulated interest, compounded over time periods"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Principal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The original amount of money invested or borrowed"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rate of Interest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The percentage of principal charged as interest per year, usually expressed as p.a. (per annum)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 30% of 150?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "45. Correct! 30% of 150 = 0.30 × 150 = 45"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A shopkeeper buys a shirt for $20 and sells it for $30. What is the profit percentage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50%. Correct! Profit = 30 - 20 = 10. Profit % = (10/20) × 100 = 50%"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find simple interest on $500 at 8% p.a. for 2 years",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$80. Correct! SI = (500 × 8 × 2) / 100 = 8000/100 = $80"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If 20% of a number is 40, what is the number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "200. Correct! If 20% of x = 40, then x = 40 ÷ 0.20 = 200"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A coat marked at $100 is sold at 15% discount. What is the selling price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$85. Correct! Discount = 15% of 100 = 15. Selling price = 100 - 15 = $85"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Express 1/5 as a percentage. What is 1/5 of 200?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1/5 as percentage: 1/5 = 20/100 = 20% 1/5 of 200: 20% of 200 = 0.2 × 200 = 40"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is compound interest better for savers but compound interest worse for borrowers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As a saver, you want compound interest because it multiplies your money: you earn interest on your original amount AND on the accumulated interest. As a borrower, compound interest is worse because the interest you owe also multiplies! You end up paying more than with simple interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A shop has a 30% discount on all items. If a shirt originally costs ₹500, what is the discounted price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Discount = 30% of 500 = (30/100) × 500 = ₹150 Discounted Price = 500 - 150 = ₹350 OR: If 30% discount, you pay 70% = (70/100) × 500 = ₹350"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A trader buys a watch for ₹800 and sells it for ₹1000. What is the profit percentage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CP = 800, SP = 1000 Profit = 1000 - 800 = ₹200 Profit % = (200 / 800) × 100 = 25%"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You borrow ₹5000 at 8% per annum for 18 months. How much simple interest will you pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P = 5000, R = 8%, T = 18 months = 18/12 = 1.5 years SI = (5000 × 8 × 1.5) / 100 = 60000 / 100 = ₹600"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

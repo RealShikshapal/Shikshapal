@@ -21,70 +21,227 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Exploring Some Geometric Themes",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter11.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter11.html#learning-resource",
+        "name": "Exploring Some Geometric Themes — Class 8 Math · ShikshaPal",
+        "description": "Fractals, Nets, Projections & Visualization.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter11.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Exploring Some Geometric Themes",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter11.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter11.html#learning-resource",
-      "name": "Exploring Some Geometric Themes — Class 8 Math · ShikshaPal",
-      "description": "Fractals, Nets, Projections & Visualization.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter11.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter11.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Fractal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A geometric shape that repeats at every scale. Each part looks similar to the whole. Example: Mandelbrot set"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Self-Similarity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The property where a shape is similar to itself at different scales or zoom levels"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Net?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 2D pattern that can be folded to create a 3D solid. Blueprint of a 3D shape"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Polyhedron?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 3D solid shape with flat faces, straight edges, and vertices"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isometric View?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 2D drawing showing a 3D object from an angle to display length, width, and depth"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cube Net?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An unfolded cube showing all 6 square faces arranged in a 2D pattern"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Edge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment where two faces of a polyhedron meet"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Vertex?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A corner where edges meet in a 3D shape"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A cube has how many faces, edges, and vertices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "6, 12, 8. Correct! A cube has 6 faces, 12 edges, and 8 vertices"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many different nets does a cube have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "11. Correct! There are 11 distinct nets that can be folded into a cube"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which property defines a fractal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It repeats itself at different scales. Correct! Fractals show self-similarity at different magnification levels"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many faces does a square pyramid have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "5. Correct! 1 square base + 4 triangular sides = 5 faces"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In an isometric drawing, which three dimensions are shown?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Height, width, and depth. Correct! Isometric drawings display height, width, and depth in one view"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the Sierpinski Carpet, how many remaining squares are there after step 2?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using Rₙ = 8ⁿ: R₂ = 8² = 64 squares"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the Koch Snowflake have infinite perimeter but finite area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each step adds bumps to the perimeter. At each step, you add more and more bumps, each of which extends the perimeter. This continues infinitely, so the perimeter grows without bound. However, the added bumps get smaller and smaller. The total area added in each step decreases, so the total area converges to a finite value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which of these is a valid net for a cube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A valid cube net must have 6 connected squares that can fold without overlapping. Classic patterns include: - The cross (one center square with 4 attached, and one more) - The T-shape - The zigzag pattern An invalid net might have an arrangement that would cause overlap when folded."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you look at a cube from the front and see a square, from the side see a rectangle, and from the top see a rectangle, what can you conclude about the cube's orientation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cube is tilted! It's not in standard orientation (where all three views are squares). The front view being a square suggests the cube is facing you fully. The side and top being rectangles means the cube is compressed or stretched in those viewing directions, indicating a tilt or non-standard angle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A tetrahedron (4 triangular faces) has a net. Can you describe what this net looks like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A tetrahedron net has 4 equilateral triangles arranged so they can fold into a tetrahedron. One common arrangement: 1 central triangle with 3 triangles attached to each side of the central one. When folded, the three outer triangles meet at a single point above the center triangle. Alternatively: 3 triangles in a row, with 1 triangle attached to the middle of the row."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

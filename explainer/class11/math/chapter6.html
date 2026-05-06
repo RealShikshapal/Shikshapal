@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Counting might seem elementary, but systematic counting of complex arrangements is profoundly important." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class11/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Permutations and Combinations",
+            "item": "https://www.shikshapal.com/explainer/class11/math/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/math/chapter6.html#learning-resource",
+        "name": "Permutations and Combinations — Class 11 Math · ShikshaPal",
+        "description": "Counting might seem elementary, but systematic counting of complex arrangements is profoundly important.",
+        "url": "https://www.shikshapal.com/explainer/class11/math/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 11",
-          "item": "https://www.shikshapal.com/explainer/class11/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class11/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Permutations and Combinations",
-          "item": "https://www.shikshapal.com/explainer/class11/math/chapter6.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/math/chapter6.html#learning-resource",
-      "name": "Permutations and Combinations — Class 11 Math · ShikshaPal",
-      "description": "Counting might seem elementary, but systematic counting of complex arrangements is profoundly important.",
-      "url": "https://www.shikshapal.com/explainer/class11/math/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/math/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Fundamental Counting Principle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If one event can occur in m ways and a following event in n ways, the two together can occur in m × n ways."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Factorial n!?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "n! = n · (n−1) · (n−2) · … · 2 · 1, the product of the first n positive integers. By convention 0! = 1."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Permutation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An arrangement of objects in a definite order — order matters. (Different orderings count as different permutations.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Permutations nPr?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "nPr = n!/(n − r)! — the number of ways to arrange r distinct objects chosen from n, with order mattering."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Combination?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A selection of objects where order does NOT matter — only which objects are chosen, not the sequence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Combinations nCr?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "nCr = n!/[r!(n − r)!] — the number of ways to choose r objects from n without regard to order."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is P–C relationship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "nPr = nCr × r!. Each unordered selection of r objects can be arranged in r! orders."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Symmetry of combinations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "nCr = nC(n − r). Choosing which r to include is the same as choosing which (n − r) to exclude."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Permutations with repeated objects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For n objects with kinds of frequency p₁, p₂, …, pₖ: total arrangements = n!/(p₁! · p₂! · … · pₖ!)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Circular permutations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number of distinct circular arrangements of n distinct objects is (n − 1)! because rotations are considered the same."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The value of 6! is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "720. Correct. 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In how many ways can 4 letters be selected and arranged in a row from the 7 distinct letters of the word READING?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "840. Correct. P(7, 4) = 7!/3! = 7 × 6 × 5 × 4 = 840 since READING has 7 distinct letters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A committee of 3 is to be chosen from 8 people. In how many ways can this be done?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "56. Correct. Order does not matter, so use C(8, 3) = 8!/(3!·5!) = 56."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many distinct arrangements are there of the letters of the word BALLOON?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1260. Correct. 7 letters with 2 L's and 2 O's: 7!/(2!·2!) = 5040/4 = 1260."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If C(n, 9) = C(n, 8), what is n?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "17. Correct. By the symmetry C(n, r) = C(n, n − r), C(n, 9) = C(n, 8) implies 9 + 8 = n, so n = 17."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

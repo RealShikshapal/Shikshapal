@@ -21,70 +21,259 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "A Square and A Cube",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter1.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter1.html#learning-resource",
+        "name": "A Square and A Cube — Class 8 Math · ShikshaPal",
+        "description": "Discover why some numbers are special and can be built in perfect geometric shapes.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter1.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "A Square and A Cube",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter1.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter1.html#learning-resource",
-      "name": "A Square and A Cube — Class 8 Math · ShikshaPal",
-      "description": "Discover why some numbers are special and can be built in perfect geometric shapes.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter1.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter1.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Square Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number that is the product of a number multiplied by itself (e.g., 4 = 2 × 2 = 2²)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Perfect Square?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A whole number that equals n² for some integer n. Examples: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Square Root?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number that, when multiplied by itself, gives the original number. √16 = 4 because 4 × 4 = 16"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cubic Number?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A number obtained by multiplying a number by itself three times (e.g., 8 = 2 × 2 × 2 = 2³)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Perfect Cube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A whole number that equals n³ for some integer n. Examples: 1, 8, 27, 64, 125, 216"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cube Root?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number that, when multiplied by itself three times, gives the original number. ∛27 = 3 because 3 × 3 × 3 = 27"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Exponent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The small number written above and to the right of a base number, telling you how many times to multiply. In 5³, the exponent is 3"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Last Digit Pattern?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Perfect squares only end in 0, 1, 4, 5, 6, or 9. They never end in 2, 3, 7, or 8"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 12²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "144. Correct! 12 × 12 = 144"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which of these is a perfect cube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "125. Correct! 125 = 5³ (5 × 5 × 5)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cube root of 64?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4. Correct! ∛64 = 4 because 4 × 4 × 4 = 64"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which number can be written as both 1³ + 12³ and 9³ + 10³?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1729. Correct! 1729 is famous as Ramanujan's number (also called Hardy-Ramanujan number)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the area of a square is 225 m², what is the perimeter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "60 m. Correct! Side = √225 = 15 m. Perimeter = 4 × 15 = 60 m"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Square Challenge: Which of these is NOT a perfect square? A) 49 B) 81 C) 50 D) 100",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: C) 50. Why? 50 ends in 0, which looks like it could be a square (like 10² = 100). But remember the rule: squares only end in 0, 1, 4, 5, 6, or 9. 50 ends in 0, so you need to check further. There's no whole number that when squared equals 50. (7² = 49, 8² = 64.)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cubic Pattern: If 2³ = 8, what is 4³? A) 12 B) 32 C) 64 D) 128",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: C) 64. Why? 4³ = 4 × 4 × 4 = 16 × 4 = 64. Notice that when you double the base (from 2 to 4), the cube gets 8 times bigger (from 8 to 64). That's because 2³ is multiplied by 2³ again!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Odd Sum Pattern: Using the pattern 1 + 3 = 4 = 2², what is 1 + 3 + 5? A) 8 B) 9 C) 10 D) 12",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) 9 = 3². Why? The pattern is that the sum of the first n odd numbers equals n². Here we have three odd numbers (1, 3, 5), so the answer is 3² = 9."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Squares End in Only Certain Digits: Explain why squares can only end in 0, 1, 4, 5, 6, or 9. (Hint: Think about what the last digit of n determines.)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: The last digit of n² depends only on the last digit of n. Let's check: If n ends in 0: 0² = 0 (ends in 0) If n ends in 1: 1² = 1 (ends in 1) If n ends in 2: 2² = 4 (ends in 4) If n ends in 3: 3² = 9 (ends in 9) If n ends in 4: 4² = 16 (ends in 6) If n ends in 5: 5² = 25 (ends in 5) If n ends in 6: 6² = 36 (ends in 6) If n ends in 7: 7² = 49 (ends in 9) If n ends in 8: 8² = 64 (ends in 4) If n ends in 9: 9² = 81 (ends in 1) The only last digits that appear are 0, 1, 4, 5, 6, 9. So any number ending in 2, 3, 7, or 8 cannot be a perfect square!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Lockers with Prime Numbers were Touched Twice: In the locker puzzle, why do prime numbers get toggled exactly twice? Explain using factors.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: A prime number has exactly two factors: 1 and itself. For example, locker #7 gets touched by Person 1 (opening it) and Person 7 (closing it). That's 2 toggles—an even number, so it ends up closed. This is true for any prime: 2, 3, 5, 7, 11, etc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why the Sum of Odd Numbers Gives Squares: Why does 1 + 3 + 5 + 7 = 16 = 4²? Can you visualize this with a diagram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: Imagine building a square layer by layer: Start: A 1×1 square uses 1 dot Layer 1: • (add 3 dots in an L-shape) = 4 dots = 2×2 Layer 2: •• (add 5 dots in an L-shape) = 9 dots = 3×3 Layer 3: ••• (add 7 dots in an L-shape) = 16 dots = 4×4 Each layer adds the next odd number. That's why the sum of consecutive odd numbers starting from 1 always equals a perfect square!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Real-World Squares: You want to plant a square garden with area 144 m². How many meters of fence do you need for one side? What's the total perimeter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: Step 1: Find the side length. If area = 144 m², then side length = √144 = 12 m Step 2: Find the perimeter. Perimeter = 4 × side = 4 × 12 = 48 m of fence needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cubes in Storage: A storage container is a perfect cube with side length 5 meters. How many cubic meters can it hold? How many cubic meters more than a 4-meter cube?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: Step 1: Volume of 5-meter cube = 5³ = 125 m³ Step 2: Volume of 4-meter cube = 4³ = 64 m³ Step 3: Difference = 125 − 64 = 61 m³ more"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Finding Taxicab Numbers: We know 1729 = 1³ + 12³ = 9³ + 10³. Can you find another number that is the sum of two cubes in two different ways?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: The next taxicab number is 4104. Let's verify: 4104 = 2³ + 16³ = 8 + 4096 = 4104 ✓ 4104 = 9³ + 15³ = 729 + 3375 = 4104 ✓ Challenge: Can you find 13832? It's the third taxicab number!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

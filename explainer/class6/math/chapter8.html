@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Playing with Constructions",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter8.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter8.html#learning-resource",
+        "name": "Playing with Constructions — Class 6 Math · ShikshaPal",
+        "description": "Master ruler and compass to draw circles, construct perpendiculars, and create geometric shapes with precision.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter8.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Playing with Constructions",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter8.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter8.html#learning-resource",
-      "name": "Playing with Constructions — Class 6 Math · ShikshaPal",
-      "description": "Master ruler and compass to draw circles, construct perpendiculars, and create geometric shapes with precision.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter8.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter8.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If you draw a circle with center P and radius 5 cm, and then draw another circle with the same radius but center at point Q (which is 7 cm away from P), what will happen where the circles intersect?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The two circles will intersect at two points. Each intersection point is exactly 5 cm from both P and Q (since it lies on both circles). These are the points equidistant from both centers—a fundamental construction principle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is it necessary to draw perpendiculars at exact right angles (90°) when constructing squares and rectangles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Squares and rectangles are defined by having all angles equal to 90°. If the angles aren't exactly right angles, the shape no longer satisfies the definition. The perpendicular ensures the 90° angle is created automatically using the geometric properties of circles and compass."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You need to construct a square where one corner point A is at a specific location, and side AB lies along a given line, with side length 6 cm. Describe the full construction process using compass and ruler.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Construction steps: Mark point A on the given line Using compass set to 6 cm, mark point B on the line such that AB = 6 cm At A, construct a perpendicular to the line (using compass to find equidistant points above and below the line) On this perpendicular, mark point D such that AD = 6 cm (using compass) At B, construct another perpendicular and mark point C such that BC = 6 cm Connect C and D to complete the square ABCD This applies all fundamental construction techniques: drawing exact lengths with compass, creating perpendiculars, and verifying the result is a square."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Calculus is the mathematics of change. This chapter introduces limits and derivatives, the foundational concepts of differential calculus." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class11/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Limits and Derivatives",
+            "item": "https://www.shikshapal.com/explainer/class11/math/chapter12.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/math/chapter12.html#learning-resource",
+        "name": "Limits and Derivatives — Class 11 Math · ShikshaPal",
+        "description": "Calculus is the mathematics of change. This chapter introduces limits and derivatives, the foundational concepts of differential calculus.",
+        "url": "https://www.shikshapal.com/explainer/class11/math/chapter12.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 11",
-          "item": "https://www.shikshapal.com/explainer/class11/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class11/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Limits and Derivatives",
-          "item": "https://www.shikshapal.com/explainer/class11/math/chapter12.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/math/chapter12.html#learning-resource",
-      "name": "Limits and Derivatives — Class 11 Math · ShikshaPal",
-      "description": "Calculus is the mathematics of change. This chapter introduces limits and derivatives, the foundational concepts of differential calculus.",
-      "url": "https://www.shikshapal.com/explainer/class11/math/chapter12.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/math/chapter12.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Limit of a Function?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "lim(x→a) f(x) = L means f(x) gets arbitrarily close to L as x gets arbitrarily close to a (with x ≠ a). The limit can exist even if f(a) is undefined."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sum Rule for Limits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "lim[f(x) + g(x)] = lim f(x) + lim g(x). Limits distribute over sums (and similarly over products and quotients when defined)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Continuity at x = a?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f is continuous at a if (1) f(a) is defined, (2) lim(x→a) f(x) exists, and (3) those values are equal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Derivative (first principles)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f'(a) = lim(h→0) [f(a + h) − f(a)] / h. The slope of the tangent line at x = a."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Power Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d/dx (xⁿ) = n xⁿ⁻¹. So d/dx (x⁵) = 5x⁴."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Product Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(fg)' = f'g + fg'. Used when the integrand is a product of two functions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Quotient Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(f/g)' = (f'g − fg') / g². Note the order — denominator squared."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Chain Rule?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If h(x) = f(g(x)), then h'(x) = f'(g(x)) · g'(x). Differentiate the outside, multiply by the derivative of the inside."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Standard Limit: sin x / x?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "lim(x→0) (sin x)/x = 1. Foundational for differentiating trigonometric functions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Higher-Order Derivative?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f''(x) = d²f/dx² is the derivative of f'. For motion, position → velocity → acceleration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Evaluate lim(x→2) (x² − 4) / (x − 2).",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4. Correct. Factor: (x² − 4)/(x − 2) = (x − 2)(x + 2)/(x − 2) = x + 2. As x → 2, this → 4."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If f(x) = 3x⁴, what is f'(x)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "12x³. Correct. Power rule: d/dx(xⁿ) = nxⁿ⁻¹; d/dx(3x⁴) = 3·4x³ = 12x³."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find d/dx [x² sin x].",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2x sin x + x² cos x. Correct. Product rule: (fg)' = f'g + fg' = 2x · sin x + x² · cos x."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Find lim(x→0) (sin 3x)/x.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3. Correct. Rewrite: (sin 3x)/x = 3 · (sin 3x)/(3x) → 3 · 1 = 3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For f(x) = (sin x)², use the chain rule to find f'(x).",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2 sin x cos x. Correct. d/dx[(sin x)²] = 2(sin x) · cos x = 2 sin x cos x = sin(2x)."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

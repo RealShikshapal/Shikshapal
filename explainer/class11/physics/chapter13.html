@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Motion repeats: a pendulum swings back and forth, a mass on a spring bounces up and down, a guitar string vibrates." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Oscillations",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html#learning-resource",
+        "name": "Oscillations — Class 11 Physics · ShikshaPal",
+        "description": "Motion repeats: a pendulum swings back and forth, a mass on a spring bounces up and down, a guitar string vibrates.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 11",
-          "item": "https://www.shikshapal.com/explainer/class11/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Physics",
-          "item": "https://www.shikshapal.com/explainer/class11/physics/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Oscillations",
-          "item": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html#learning-resource",
-      "name": "Oscillations — Class 11 Physics · ShikshaPal",
-      "description": "Motion repeats: a pendulum swings back and forth, a mass on a spring bounces up and down, a guitar string vibrates.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter13.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Periodic Motion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Motion that repeats itself in equal intervals of time. The interval is called the period T."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Simple Harmonic Motion (SHM)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Periodic motion where restoring force is proportional to displacement and directed toward the mean position: F = −kx."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SHM Differential Equation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "d²x/dt² = −ω²x. Solution: x(t) = A cos(ωt + φ), where A is amplitude, ω is angular frequency, φ is phase."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angular Frequency ω?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ω = 2π/T = 2πf. For spring-mass: ω = √(k/m). For pendulum: ω = √(g/L)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Spring-Mass Period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "T = 2π√(m/k), where m is mass and k is spring constant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Simple Pendulum Period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "T = 2π√(L/g), valid for small angular displacements (<5°). Independent of mass."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Total Energy in SHM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E = ½kA² = ½mω²A². Constant; oscillates between KE and PE as motion proceeds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Damped Oscillation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SHM with energy loss due to friction/resistance; amplitude decreases exponentially: A(t) = A₀ e^(−bt/2m)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Resonance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When driving frequency matches the system's natural frequency, amplitude grows large. Same principle as pushing a swing at the right rhythm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Velocity & Acceleration in SHM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "v(t) = −Aω sin(ωt + φ), max speed v_max = Aω. a(t) = −Aω² cos(ωt + φ), max accel a_max = Aω²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A spring of constant k = 200 N/m has a 0.5 kg mass attached. What is the period of oscillation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.31 s. Correct. T = 2π√(m/k) = 2π√(0.5/200) = 2π × 0.05 ≈ 0.314 s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A simple pendulum on Earth (g = 9.8 m/s²) has length 1 m. Approximate period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2.0 s. Correct. T = 2π√(L/g) = 2π√(1/9.8) ≈ 2π × 0.319 ≈ 2.0 s."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In SHM with amplitude A, where is the kinetic energy maximum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At the mean position (x = 0). Correct. Speed is maximum at x = 0 (the mean position), so KE = ½mv² is maximum there. PE is zero."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the length of a simple pendulum is quadrupled, the new period is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Double the original. Correct. T ∝ √L, so T_new = √4 × T_old = 2T_old."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A particle in SHM has amplitude 5 cm and angular frequency 4 rad/s. What is its maximum speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "0.20 m/s. Correct. v_max = Aω = 0.05 × 4 = 0.20 m/s."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -198,649 +331,98 @@
         </ol>
         <hr />
       <section class="flashcard-section"><div class="section-label flashcards">🃏 Flashcards — Quick Recall</div><div class="flashcard-deck">
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Oscillations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Oscillations is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Periodic motion?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">repeats itself at regular time intervals. The period (T) is the time for one complete cycle. The frequency (f) is cycles per unit time, measured in hertz (Hz):</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is f = 1/T?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Not all periodic motion is oscillatory. A planet orbiting the sun is periodic (returns to the same position yearly) but not oscillatory (doesn&#x27;t return to a central position, then leave again).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Oscillatory motion?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">is periodic motion about a central equilibrium. A pendulum oscillates around the lowest point. A mass on a spring oscillates around the equilibrium position. Oscillatory systems have restoring forces pulling them back toward equilibrium.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is F = −kx?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where k is the spring constant and x is displacement from equilibrium. The negative sign shows force opposes displacement.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is a = −(k/m)x = −ω²x?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where ω = √(k/m) is the angular frequency.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is x(t) = A cos(ωt + φ)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where A is amplitude (maximum displacement) and φ is the phase constant.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Amplitude?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(A): Maximum displacement. Larger amplitude means wider swings.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Period?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(T = 2π/ω): Time for one complete oscillation. For a mass-spring system: T = 2π√(m/k). Heavier masses oscillate more slowly (larger inertia); stiffer springs oscillate faster (stronger restoring force).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Velocity and acceleration?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">vary with position:</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Energy?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">alternates between kinetic and potential:</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is T = 2π√(L/g)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where L is string length. The period is independent of amplitude (for small swings) and independent of mass. This is why Galileo could time a chandelier&#x27;s swing using his pulse—its period didn&#x27;t depend on how far it swung.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is x(t) = A₀e^(−t/τ) cos(ωt + φ)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">where τ is the time constant—time for amplitude to decrease by a factor of e.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Underdamped?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(light damping): Oscillates many times before stopping</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Critically damped?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Returns to equilibrium fastest without oscillating</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Overdamped?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">(heavy damping): Slowly returns to equilibrium, oscillating slowly or not at all</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Resonance?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">occurs when the driving frequency equals the natural frequency. The amplitude reaches a maximum and can be extremely large even with modest driving force.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Periodic and Oscillatory Motion?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Periodic motion repeats itself at regular time intervals. The period (T) is the time for one complete cycle.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Simple Harmonic Motion (SHM)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The most important oscillatory motion is simple harmonic motion (SHM).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Characteristics of SHM?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Amplitude (A): Maximum displacement. Larger amplitude means wider swings. Period (T = 2π/ω): Time for one complete oscillation. For a mass-spring system: T = 2π√(m/k).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of The Pendulum: Gravity as a Restoring Force?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">A pendulum bob swinging from a string exhibits SHM for small angles.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Damped Oscillations?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Real oscillations lose energy to friction and air resistance—they damp. The amplitude decreases exponentially: x(t) = A₀e^(−t/τ) cos(ωt + φ) where τ is the time constant—time for amplitude to decrease by a factor of e.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Forced Oscillations and Resonance?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Apply a periodic driving force to an oscillating system, and it oscillates at the driving frequency—forced oscillation. The amplitude depends on whether the driving frequency matches the system&#x27;s natural frequency.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Damping and Resonance?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Damping reduces resonant amplitude. A heavily damped system has a lower maximum amplitude at resonance, but the resonant peak is broader (occurs over a wider frequency range).</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is the core idea of Coupled Oscillations and Normal Modes?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Two coupled pendulums exchange energy. If one is set swinging, it gradually transfers energy to the other. This occurs through a normal mode—a pattern of coordinated motion.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is At maximum displacement (x = A)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">velocity = 0, acceleration = maximum (directed toward equilibrium)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is At equilibrium (x = 0)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">velocity = maximum, acceleration = 0</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is The particle speeds up approaching equilibrium, slows?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The particle speeds up approaching equilibrium, slows down leaving it</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Maximum potential energy at maximum displacement (KE?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Maximum potential energy at maximum displacement (KE = 0)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Maximum kinetic energy at equilibrium (PE =?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Maximum kinetic energy at equilibrium (PE = 0)</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Total mechanical energy E = (1/2)kA² is?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Total mechanical energy E = (1/2)kA² is constant</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Underdamped (light damping)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Oscillates many times before stopping</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">What is Overdamped (heavy damping)?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Slowly returns to equilibrium, oscillating slowly or not at all</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Periodic and Oscillatory Motion matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Periodic and Oscillatory Motion matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Simple Harmonic Motion (SHM) matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Simple Harmonic Motion (SHM) matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Characteristics of SHM matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Characteristics of SHM matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why The Pendulum: Gravity as a Restoring Force matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">The Pendulum: Gravity as a Restoring Force matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Damped Oscillations matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Damped Oscillations matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Forced Oscillations and Resonance matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Forced Oscillations and Resonance matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-          <div class="flashcard">
-            <div class="flashcard-inner">
-              <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Why Damping and Resonance matters?</div><div class="fc-tap">tap to flip</div></div>
-              <div class="flashcard-back"><div class="fc-answer">Damping and Resonance matters because it connects the chapter idea to a reason, pattern, or method you can apply in problems.</div></div>
-            </div>
-          </div>
-        </div><div class="flashcard-counter">40 cards — click any card to flip</div></section>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Periodic Motion</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Motion that repeats itself in equal intervals of time. The interval is called the period T.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Simple Harmonic Motion (SHM)</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">Periodic motion where restoring force is proportional to displacement and directed toward the mean position: F = −kx.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">SHM Differential Equation</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">d²x/dt² = −ω²x. Solution: x(t) = A cos(ωt + φ), where A is amplitude, ω is angular frequency, φ is phase.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Angular Frequency ω</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">ω = 2π/T = 2πf. For spring-mass: ω = √(k/m). For pendulum: ω = √(g/L).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Spring-Mass Period</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">T = 2π√(m/k), where m is mass and k is spring constant.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Simple Pendulum Period</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">T = 2π√(L/g), valid for small angular displacements (&lt;5°). Independent of mass.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Energy</div><div class="fc-question">Total Energy in SHM</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">E = ½kA² = ½mω²A². Constant; oscillates between KE and PE as motion proceeds.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Damped Oscillation</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">SHM with energy loss due to friction/resistance; amplitude decreases exponentially: A(t) = A₀ e^(−bt/2m).</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Term / Concept</div><div class="fc-question">Resonance</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">When driving frequency matches the system's natural frequency, amplitude grows large. Same principle as pushing a swing at the right rhythm.</div></div>
+          </div></div>
+          <div class="flashcard"><div class="flashcard-inner">
+            <div class="flashcard-front"><div class="fc-label">Equation</div><div class="fc-question">Velocity &amp; Acceleration in SHM</div><div class="fc-tap">tap to flip</div></div>
+            <div class="flashcard-back"><div class="fc-answer">v(t) = −Aω sin(ωt + φ), max speed v_max = Aω. a(t) = −Aω² cos(ωt + φ), max accel a_max = Aω².</div></div>
+          </div></div>
+        </div></section>
       <section class="mcq-section"><div class="section-label mcq">📝 Quick Quiz — Test Yourself</div><div class="mcq-quiz">
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Why does a mass on a spring always undergo simple harmonic motion, while a pendulum only does so for small angles? What assumption breaks down for large angles?</div>
+          <div class="mcq-item" data-answer="C">
+            <div class="mcq-stem">A spring of constant k = 200 N/m has a 0.5 kg mass attached. What is the period of oscillation?</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 0.10 s</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 0.20 s</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 0.31 s</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 1.00 s</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. T = 2π√(m/k) = 2π√(0.5/200) = 2π × 0.05 ≈ 0.314 s." data-wrong="The correct answer is C. T = 2π√(m/k) = 2π√(0.0025) ≈ 0.314 s."></div>
           </div>
           <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">The period of a pendulum is T = 2π√(L/g), independent of mass. Explain physically why a heavier pendulum bob swings with the same period.</div>
+            <div class="mcq-stem">A simple pendulum on Earth (g = 9.8 m/s²) has length 1 m. Approximate period?</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 1.0 s</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 2.0 s</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 3.1 s</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 6.3 s</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. T = 2π√(L/g) = 2π√(1/9.8) ≈ 2π × 0.319 ≈ 2.0 s." data-wrong="The correct answer is B. T = 2π√(L/g) ≈ 2.0 s for a 1 m pendulum on Earth."></div>
+          </div>
+          <div class="mcq-item" data-answer="A">
+            <div class="mcq-stem">In SHM with amplitude A, where is the kinetic energy maximum?</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> At the mean position (x = 0)</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> At extreme positions (x = ±A)</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> At x = A/2</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> KE is constant throughout</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. Speed is maximum at x = 0 (the mean position), so KE = ½mv² is maximum there. PE is zero." data-wrong="The correct answer is A. KE peaks at x = 0 (where speed is highest); PE peaks at the extremes."></div>
+          </div>
+          <div class="mcq-item" data-answer="D">
+            <div class="mcq-stem">If the length of a simple pendulum is quadrupled, the new period is:</div>
+            <ul class="mcq-options">
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Half the original</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> The same</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Quadruple the original</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Double the original</li>
+            </ul>
+            <div class="mcq-feedback" data-correct="Correct. T ∝ √L, so T_new = √4 × T_old = 2T_old." data-wrong="The correct answer is D. T = 2π√(L/g); making L 4× makes T = √4 = 2× the original."></div>
           </div>
           <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">A damped oscillator loses energy to friction. Where does this energy go, and why does the amplitude decrease exponentially rather than linearly?</div>
+            <div class="mcq-stem">A particle in SHM has amplitude 5 cm and angular frequency 4 rad/s. What is its maximum speed?</div>
             <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
+              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> 0.05 m/s</li>
+              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> 0.20 m/s</li>
+              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> 0.80 m/s</li>
+              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> 5.00 m/s</li>
             </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
+            <div class="mcq-feedback" data-correct="Correct. v_max = Aω = 0.05 × 4 = 0.20 m/s." data-wrong="The correct answer is B. v_max = Aω; convert A to metres (0.05 m), multiply by ω = 4 rad/s → 0.20 m/s."></div>
           </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">At resonance, the amplitude of a driven oscillation can be very large. Yet, if the driving force is weak, why does the amplitude become large? What determines the maximum amplitude at resonance?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">A building&#x27;s natural vibration frequency can be determined by dropping a heavy object and analyzing oscillations. Why would knowing this frequency matter to a building engineer?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Memorize the exact line without checking the reasoning.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Use the chapter&#x27;s quantity or law and explain the reasoning step by step.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Ignore the examples and rely only on a keyword.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Treat the idea as unrelated to the rest of the lesson.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Correct. A strong answer uses the quantity or law and explains the reasoning clearly." data-wrong="The best answer is B. For Physics, the goal is to reason from the concept and evidence, not just recall words."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Oscillations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Periodic motion?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand f = 1/T?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Oscillatory motion?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand F = −kx?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand a = −(k/m)x = −ω²x?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand x(t) = A cos(ωt + φ)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Amplitude?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Period?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Velocity and acceleration?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Energy?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand T = 2π√(L/g)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand x(t) = A₀e^(−t/τ) cos(ωt + φ)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Underdamped?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Critically damped?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Overdamped?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Resonance?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Periodic and Oscillatory Motion?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Simple Harmonic Motion (SHM)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Characteristics of SHM?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand The Pendulum: Gravity as a Restoring Force?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Damped Oscillations?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Forced Oscillations and Resonance?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Damping and Resonance?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Coupled Oscillations and Normal Modes?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand At maximum displacement (x = A)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand At equilibrium (x = 0)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand The particle speeds up approaching equilibrium, slows?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Maximum potential energy at maximum displacement (KE?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Maximum kinetic energy at equilibrium (PE =?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Total mechanical energy E = (1/2)kA² is?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Underdamped (light damping)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Overdamped (heavy damping)?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Why Periodic and Oscillatory Motion matters?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-item" data-answer="B">
-            <div class="mcq-stem">Which approach best shows that you understand Why Simple Harmonic Motion (SHM) matters?</div>
-            <ul class="mcq-options">
-              <li class="mcq-option" data-letter="A"><span class="opt-letter">A</span> Repeat its name from memory.</li>
-              <li class="mcq-option" data-letter="B"><span class="opt-letter">B</span> Explain it using a simple example and the reason it works.</li>
-              <li class="mcq-option" data-letter="C"><span class="opt-letter">C</span> Skip the conditions where it applies.</li>
-              <li class="mcq-option" data-letter="D"><span class="opt-letter">D</span> Use it only when the textbook wording is identical.</li>
-            </ul>
-            <div class="mcq-feedback" data-correct="Understanding means explaining the idea, example, and reason together." data-wrong="The best answer is B. In Physics, concepts become useful when you can apply them with the right reasoning."></div>
-          </div>
-          <div class="mcq-score-bar"><span class="score-text">0 / 40</span><div class="bar-track"><div class="bar" style="width:0%"></div></div><button class="mcq-reset-btn">Reset Quiz</button></div>
         </div></section>
       <nav class="chapter-nav" aria-label="Chapter navigation"><a href="chapter12.html" class="prev"><span class="nav-label">← Previous</span><span class="nav-title">Kinetic Theory</span></a><a href="chapter14.html" class="next"><span class="nav-label">Next →</span><span class="nav-title">Waves</span></a></nav>
     </main>

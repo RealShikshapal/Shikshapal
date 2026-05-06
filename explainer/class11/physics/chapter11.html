@@ -18,36 +18,204 @@
   <meta name="twitter:description" content="Thermodynamics governs all energy transformations involving heat." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shikshapal.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Explainer", "item": "https://www.shikshapal.com/explainer/"},
-        {"@type": "ListItem", "position": 3, "name": "Class 11", "item": "https://www.shikshapal.com/explainer/class11/"},
-        {"@type": "ListItem", "position": 4, "name": "Physics", "item": "https://www.shikshapal.com/explainer/class11/physics/"},
-        {"@type": "ListItem", "position": 5, "name": "Thermodynamics", "item": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html"}
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html#learning-resource",
-      "name": "Thermodynamics — Class 11 Physics · ShikshaPal",
-      "description": "Thermodynamics governs all energy transformations involving heat.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "NCERT"},
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "CBSE"}
-      ],
-      "publisher": {"@id": "https://www.shikshapal.com/#organization"}
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Thermodynamics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html#learning-resource",
+        "name": "Thermodynamics — Class 11 Physics · ShikshaPal",
+        "description": "Thermodynamics governs all energy transformations involving heat.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter11.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Zeroth law of thermodynamics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If A↔C and B↔C are in thermal equilibrium, then A↔B is too. Justifies temperature as a state variable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is First law of thermodynamics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ΔU = Q − W. Heat added to a system minus work done by it equals the change in internal energy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is State function vs. path function?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "U, P, V, T are state functions. Q and W depend on the path between states."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Isothermal process (ideal gas)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "T constant ⇒ ΔU = 0; W = nRT ln(V₂/V₁); Q = W. Follows PV = constant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Adiabatic process (ideal gas)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Q = 0; PV^γ = constant; T V^(γ−1) = constant; W = (P₁V₁ − P₂V₂)/(γ − 1)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mayer's relation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "C_p − C_v = R per mole. The ratio γ = C_p/C_v: 5/3 (monatomic), 7/5 (diatomic at room T)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Second law (Kelvin–Planck)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No process can have as its sole result the complete conversion of heat from a single reservoir into work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Second law (Clausius)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No process can have as its sole result the transfer of heat from a colder to a hotter body."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Carnot efficiency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "η_Carnot = 1 − T_C/T_H (with temperatures in kelvin). The upper bound on the efficiency of any heat engine operating between those reservoirs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Coefficient of performance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "COP = Q_C / W. For a Carnot refrigerator: COP = T_C / (T_H − T_C); it falls as the temperature gap widens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a process a gas absorbs 200 J of heat and does 80 J of work on the surroundings. The change in internal energy is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "120 J. Correct. ΔU = Q − W = 200 − 80 = 120 J."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A Carnot engine operates between 600 K and 300 K. Its maximum efficiency is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50%. Correct. η = 1 − T_C/T_H = 1 − 300/600 = 0.5 = 50%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For an ideal gas in an isothermal process, which is true?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ΔU = 0 and Q = W. Correct. For an ideal gas U depends only on T; isothermal ⇒ ΔU = 0, so Q = W."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "An ideal gas is compressed adiabatically. Which statement is correct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Temperature and internal energy increase. Correct. Q = 0; work done on the gas raises its internal energy and hence its temperature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For a monatomic ideal gas, the ratio γ = C_p/C_v is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "5/3. Correct. C_v = (3/2)R, C_p = (5/2)R, γ = 5/3."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

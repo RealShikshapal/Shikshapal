@@ -21,70 +21,107 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Science",
+            "item": "https://www.shikshapal.com/explainer/class7/science/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Electricity: Circuits and their Components",
+            "item": "https://www.shikshapal.com/explainer/class7/science/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter3.html#learning-resource",
+        "name": "Electricity: Circuits and their Components — Class 7 Science · ShikshaPal",
+        "description": "Build circuits, understand conductors and insulators, and unlock the power of portable electricity.",
+        "url": "https://www.shikshapal.com/explainer/class7/science/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Science",
-          "item": "https://www.shikshapal.com/explainer/class7/science/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Electricity: Circuits and their Components",
-          "item": "https://www.shikshapal.com/explainer/class7/science/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/science/chapter3.html#learning-resource",
-      "name": "Electricity: Circuits and their Components — Class 7 Science · ShikshaPal",
-      "description": "Build circuits, understand conductors and insulators, and unlock the power of portable electricity.",
-      "url": "https://www.shikshapal.com/explainer/class7/science/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/science/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "If you connect a lamp to a cell using two wires, but one wire is not fully connected (just touching loosely), will the lamp glow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The lamp will not glow. For a circuit to work, there must be a complete, unbroken path for electricity to flow from the positive terminal, through the lamp, and back to the negative terminal. If even one connection is loose or incomplete, the circuit is \"open\" and current cannot flow. This demonstrates why proper connections are essential in electrical work. A loose wire breaks the path just as much as a disconnected wire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why can you connect an incandescent lamp in a circuit without worrying about which terminal goes where, but an LED requires the longer wire to connect to the positive terminal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Incandescent lamps work regardless of polarity because the filament simply heats up and glows when current passes through it in either direction. The physics doesn't depend on direction. LEDs, however, are semiconductors that only emit light when current flows through them in one specific direction — from the positive wire to the negative wire. The longer wire is the positive terminal (anode) and the shorter wire is the negative terminal (cathode). This polarity requirement shows that different electronic components have different requirements based on their internal structure. Understanding these requirements is crucial for working with modern electronics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You have a circuit with a cell, a lamp, and a switch. The switch is in the ON position, but the lamp doesn't glow. What are all the possible reasons this could happen? What would you check first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possible reasons the lamp won't glow even when the switch is ON: (1) The filament inside the incandescent lamp is broken (fused), preventing current from flowing. (2) One of the wires is loose or disconnected. (3) The cell is dead (run out of energy). (4) There's poor contact between the wire and terminal. (5) The insulation hasn't been removed from the wire ends, preventing connection. To troubleshoot: First, check if the cell is working by testing it with a known working lamp. Second, visually inspect all connections for looseness or damage. Third, check if the wire insulation has been properly removed at connection points. Fourth, try replacing the lamp to see if it's the lamp that's faulty. This systematic approach shows how scientists solve problems — they identify possible causes and test them one by one."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

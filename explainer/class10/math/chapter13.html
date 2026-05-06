@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Statistics is the mathematics of data—organizing it, summarizing it, and drawing meaningful conclusions from it." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Statistics",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter13.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter13.html#learning-resource",
+        "name": "Statistics — Class 10 Math · ShikshaPal",
+        "description": "Statistics is the mathematics of data—organizing it, summarizing it, and drawing meaningful conclusions from it.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter13.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Statistics",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter13.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter13.html#learning-resource",
-      "name": "Statistics — Class 10 Math · ShikshaPal",
-      "description": "Statistics is the mathematics of data—organizing it, summarizing it, and drawing meaningful conclusions from it.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter13.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter13.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Statistics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statistics is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heights of 100 students"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key terminology?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Class: A range like 150-155 cm"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Class width?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The width of each range (5 cm in the example)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "How many data points fall in each class"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Class mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The midpoint of a class (152.5 cm for 150-155)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Just as (2 + 2 + 3)/3 = (2×2 + 3×1)/3 uses weighted averaging, grouped data uses class marks weighted by frequency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is For grouped data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Find the cumulative frequency (running total of frequencies)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Connection to reality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The modal class tells which range is most common—useful for understanding typical values in practical situations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is How to construct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Plot points (upper class boundary, cumulative frequency)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Why ogives matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Read the median: Find where cumulative frequency = N/2, trace to curve, then down to x-axis"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Find percentiles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Find where cumulative frequency = k% of N"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Visualize distribution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "See if data is concentrated or spread out"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Σ(class mark × frequency) / total frequency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L + [(N/2 − F)/f] × w"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Modal class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The class with highest frequency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cumulative frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Running total of frequencies"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ogive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Graph of cumulative frequency vs. class boundaries"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of From Raw Data to Understanding: The Process?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statistics follows a clear workflow: 1. Collect data: Gather information (test scores, heights, incomes, etc.) 2. Organize it: Group data into frequency distributions 3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Grouped Frequency Distribution: Organizing Data Into Classes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you have many data points, organizing them individually is unwieldy. Instead, group them into classes (ranges)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Mean of Grouped Data: The Weighted Average?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For grouped data, calculate the mean by treating each class as represented by its class mark: Mean = Σ(class mark × frequency) / total frequency Intuition: Just as (2 + 2 + 3)/3 = (2×2 + 3×1)/3 uses weighted averaging,…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Median of Grouped Data: The Middle Value?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The median is the value that splits the data in half: 50% below, 50% above. For grouped data: 1. Find the cumulative frequency (running total of frequencies) 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Mode of Grouped Data: The Most Frequent Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The mode (or modal class) is the class with the highest frequency. It's the class \"most students fall into.\" For grouped data, you typically report the modal class rather than a specific value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Cumulative Frequency: Building Totals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cumulative frequency shows the running total: \"How many data points are at or below this value?\" Example: If frequencies are 10, 25, 15, 20, cumulative frequencies are: - After class 1: 10 - After class 2: 10 + 25 = 35…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Ogives: The Cumulative Frequency Curve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An ogive is a graph of cumulative frequency. It's an S-shaped or J-shaped curve showing how the cumulative frequency increases. How to construct: 1. Plot points (upper class boundary, cumulative frequency) 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statistics builds on foundational concepts: - chapter-05-arithmetic-progressions: Sequences of data can form progressions - chapter-04-quadratic-equations: Some statistical relationships are quadratic -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas and Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Mean: Σ(class mark × frequency) / total frequency - Median: L + [(N/2 − F)/f] × w - Modal class: The class with highest frequency - Cumulative frequency: Running total of frequencies - Ogive: Graph of cumulative…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Instead of listing 100 heights, group them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "150-155 cm, 155-160 cm, 160-165 cm, etc."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Count how many students fall in each?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Count how many students fall in each range (frequency)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is This grouped frequency distribution is much easier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This grouped frequency distribution is much easier to work with"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A range like 150-155 cm"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 10 students in 150-155 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10 students in 150-155 cm range (mark 152.5)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 25 students in 155-160 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "25 students in 155-160 cm range (mark 157.5)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 15 students in 160-165 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "15 students in 160-165 cm range (mark 162.5)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mean = (152.5×10 + 157.5×25 + 162.5×15)/(10+25+15)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mean = (152.5×10 + 157.5×25 + 162.5×15)/(10+25+15) = 157.5 cm"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is L = lower boundary of median class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L = lower boundary of median class"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is N = total frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "N = total frequency"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is F = cumulative frequency before median class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "F = cumulative frequency before median class"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is f = frequency of median class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "f = frequency of median class"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is After class 2?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10 + 25 = 35"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do you use class marks (midpoints) to calculate the mean of grouped data instead of using the actual individual values?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the median falls exactly on a class boundary (where cumulative frequency = N/2), what does the formula give you?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the cumulative frequency curve always increasing (never decreasing) as you move left to right?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a dataset with 100 points, if you need to find the 75th percentile, what cumulative frequency would you look for on the ogive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you determine the exact median value for grouped data, or only an estimate? Why the difference?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Statistics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key terminology?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Class width?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Class mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Intuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand For grouped data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connection to reality?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand How to construct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Why ogives matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Find percentiles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Visualize distribution?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Modal class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cumulative frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Ogive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand From Raw Data to Understanding: The Process?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Grouped Frequency Distribution: Organizing Data Into Classes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mean of Grouped Data: The Weighted Average?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Median of Grouped Data: The Middle Value?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mode of Grouped Data: The Most Frequent Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cumulative Frequency: Building Totals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Ogives: The Cumulative Frequency Curve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas and Concepts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Instead of listing 100 heights, group them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Count how many students fall in each?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand This grouped frequency distribution is much easier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 10 students in 150-155 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 25 students in 155-160 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 15 students in 160-165 cm range (mark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mean = (152.5×10 + 157.5×25 + 162.5×15)/(10+25+15)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

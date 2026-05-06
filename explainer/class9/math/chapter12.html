@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="Statistics is the science of collecting, organizing, analyzing, and interpreting numerical data to understand patterns and make decisions." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 9",
+            "item": "https://www.shikshapal.com/explainer/class9/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class9/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Statistics",
+            "item": "https://www.shikshapal.com/explainer/class9/math/chapter12.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter12.html#learning-resource",
+        "name": "Statistics — Class 9 Math · ShikshaPal",
+        "description": "Statistics is the science of collecting, organizing, analyzing, and interpreting numerical data to understand patterns and make decisions.",
+        "url": "https://www.shikshapal.com/explainer/class9/math/chapter12.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 9",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 9",
-          "item": "https://www.shikshapal.com/explainer/class9/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class9/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Statistics",
-          "item": "https://www.shikshapal.com/explainer/class9/math/chapter12.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class9/math/chapter12.html#learning-resource",
-      "name": "Statistics — Class 9 Math · ShikshaPal",
-      "description": "Statistics is the science of collecting, organizing, analyzing, and interpreting numerical data to understand patterns and make decisions.",
-      "url": "https://www.shikshapal.com/explainer/class9/math/chapter12.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 9",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class9/math/chapter12.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Statistics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statistics is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Information collected, such as heights, test scores, temperatures, or survey responses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Population vs. Sample?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Population: The entire group you want to study (all students in a school)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sample?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A subset selected for study (100 students chosen from the school)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Real-world example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A polling organization wants to predict election results. They can't interview all voters (the population), so they survey a representative sample of 1000 voters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The number of times a value appears in the data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A group of values (e.g., 0-10, 10-20, 20-30)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Class width?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The range of each class (e.g., width = 10 for 0-10 class)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Frequency distribution table?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shows classes and their frequencies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Test scores for 20 students:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is When to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When comparing quantities across distinct categories (months, products, groups)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is How to read a bar graph?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Look at the axis labels to understand what's being measured"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Advantages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Easy to compare values at a glance"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Key features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Bars touch each other (unlike bar graphs) because they represent continuous ranges"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Histogram with uniform class widths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each class has the same width, so bar height directly represents frequency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Histogram with varying class widths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Classes have different widths. In this case, you must use frequency density (frequency ÷ class width) for the height, or the visual representation becomes misleading."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In a histogram with varying widths, areas (not heights) of bars represent frequencies!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is How to construct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Find the midpoint of each class"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shows the overall shape and trend of data distribution more clearly than histograms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cumulative frequency polygon (ogive)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shows cumulative frequencies (running total), useful for finding medians and quartiles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Broken axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Starting the y-axis at a non-zero value exaggerates differences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Inappropriate scale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using different scales on different graphs makes comparison unfair."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 3D effects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adding unnecessary dimensions can distort relative sizes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Omitted context?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Showing only part of the data or not explaining what was measured."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Critical skill?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Always check the axes, scales, and full context before accepting a graph's conclusion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mean (average)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sum of all values ÷ number of values. Affected by extreme values."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Middle value when data is arranged in order. Unaffected by extreme values."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most frequently occurring value. Useful for categorical data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Range?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Difference between maximum and minimum values. Measures spread, not center."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sales data visualization guides marketing decisions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clinical trial results displayed as graphs help doctors understand treatment effectiveness."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Climate science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Temperature and precipitation graphs show long-term trends."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Player statistics and team performance graphs inform strategy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Government?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Census and economic data drive policy decisions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Frequency density?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Frequency ÷ class width"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Bar graph?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For categorical data comparison"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Histogram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For grouped numerical data"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Frequency polygon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Line connecting class midpoints"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of What is Statistics: Data and Information?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Statistics is the process of: 1. Collection: Gathering data from observations or surveys 2. Organization: Arranging data in meaningful groups (frequency tables) 3."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Organizing Data: Frequency Tables and Classes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you have raw data—a list of numbers—organizing it into groups (called classes) reveals patterns that aren't obvious in the raw list. Frequency: The number of times a value appears in the data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is it important to organize raw data into classes and frequency tables? What patterns become visible that weren't obvious in the raw data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a histogram with varying class widths, why must you use frequency density (height) rather than just frequency? What would happen if you used frequency directly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The mean, median, and mode are all \"averages\" but they measure center differently. When would you use each one? Can you think of a dataset where they're very different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A graph shows sales increasing dramatically, but the y-axis starts at 95% instead of 0%. How does this mislead viewers? What would the graph look like with a proper y-axis starting at 0?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Statistics requires collecting data from a sample rather than an entire population. How can conclusions about a sample validly apply to the population? What could go wrong?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Statistics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Population vs. Sample?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sample?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-world example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Frequency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Class?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Class width?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Frequency distribution table?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand When to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand How to read a bar graph?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Advantages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key features?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Histogram with uniform class widths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Histogram with varying class widths?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand How to construct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Advantage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cumulative frequency polygon (ogive)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Broken axes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Inappropriate scale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 3D effects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Omitted context?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Critical skill?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mean (average)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Median?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Mode?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Range?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Climate science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Government?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Frequency density?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

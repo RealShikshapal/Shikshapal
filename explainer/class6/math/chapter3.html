@@ -21,70 +21,139 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Number Play",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter3.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter3.html#learning-resource",
+        "name": "Number Play — Class 6 Math · ShikshaPal",
+        "description": "Numbers aren't just for counting — they carry hidden messages, form surprising patterns, and can even play games.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter3.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Number Play",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter3.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter3.html#learning-resource",
-      "name": "Number Play — Class 6 Math · ShikshaPal",
-      "description": "Numbers aren't just for counting — they carry hidden messages, form surprising patterns, and can even play games.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter3.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter3.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "In a row of 7 cells, what is the maximum number of supercells?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4 supercells. Pattern: Big, Small, Big, Small, Big, Small, Big. Positions 1, 3, 5, 7 are supercells."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is 12321 a palindrome?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Backwards it reads 1-2-3-2-1 — the same. Fun fact: 111 × 111 = 12321."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the taller-neighbour game with 5 children standing shortest to tallest, what's the sequence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1, 1, 1, 1, 0. Everyone except the tallest (at the end) has one taller neighbour to their right."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is it impossible to have a row with NO supercells?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The largest number in the row is always a supercell — it is bigger than every other number, including its neighbours. So at least one supercell always exists."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the digit-sum rule work for divisibility by 9?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because every power of 10 leaves remainder 1 when divided by 9 (10 = 9+1, 100 = 99+1, etc.). So the number's remainder when divided by 9 equals the digit-sum's remainder."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A shopkeeper has 5 price tags (₹50, ₹120, ₹80, ₹200, ₹30). How should she arrange them so exactly 2 are supercells?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "One way: ₹50, ₹200, ₹30, ₹120, ₹80. Here ₹200 beats 50 and 30, ₹120 beats 30 and 80. Exactly 2 supercells!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Your friend's 4-digit phone PIN is a palindrome with all different digits. How many possible PINs are there?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Form ABBA: A has 9 choices (1–9, can't be 0), B has 9 choices (0–9 except A). Total: 9 × 9 = 81 possible PINs."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

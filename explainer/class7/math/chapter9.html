@@ -21,70 +21,131 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 7",
+            "item": "https://www.shikshapal.com/explainer/class7/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class7/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Geometric Twins",
+            "item": "https://www.shikshapal.com/explainer/class7/math/chapter9.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter9.html#learning-resource",
+        "name": "Geometric Twins — Class 7 Math · ShikshaPal",
+        "description": "Understanding Congruence — When Shapes Are Exact Copies",
+        "url": "https://www.shikshapal.com/explainer/class7/math/chapter9.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 7",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 7",
-          "item": "https://www.shikshapal.com/explainer/class7/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class7/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Geometric Twins",
-          "item": "https://www.shikshapal.com/explainer/class7/math/chapter9.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class7/math/chapter9.html#learning-resource",
-      "name": "Geometric Twins — Class 7 Math · ShikshaPal",
-      "description": "Understanding Congruence — When Shapes Are Exact Copies",
-      "url": "https://www.shikshapal.com/explainer/class7/math/chapter9.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 7",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class7/math/chapter9.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Two triangles have sides 3 cm, 4 cm, and 5 cm. Are they definitely congruent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Yes, they are definitely congruent. The SSS (Side-Side-Side) condition guarantees this. If two triangles have all three sides equal, they must be congruent. The three side lengths completely determine the angles (by geometric necessity), so there's only one possible shape."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Two right triangles both have a right angle and a hypotenuse of 10 cm. Are they congruent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Not necessarily. You have the hypotenuse, but the RHS condition requires one right angle, the hypotenuse, AND one other side (a leg). Just the right angle and hypotenuse aren't enough — the third side could vary. You'd need to also know one leg length (say, 6 cm) to guarantee congruence via RHS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the AAS condition (two angles and a non-included side) guarantee congruence when SSA (two sides and a non-included angle) doesn't?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Key Difference: With two angles, you can find the third angle (since all angles sum to 180°). Once you know all three angles, the triangle's shape is determined. You only need one side to scale the triangle, and that one side fixes its size. Combined, the triangle is completely determined. With SSA, two sides determine directions, but a non-included angle doesn't \"lock\" the triangle's shape because there's ambiguity about where the third vertex lands — it could be in two different positions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In the example with the rectangle ABCD, why are ∆ABD and ∆CDB congruent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Analysis: Since ABCD is a rectangle: AB = CD (opposite sides of rectangle) AD = CB (opposite sides of rectangle) BD = DB (same segment, common side) All three pairs of sides are equal, so SSS condition is satisfied. Therefore ∆ABD ≅ ∆CDB. The diagonal BD acts as a line of symmetry that \"reflects\" triangle ABD onto triangle CDB."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A triangle has angles 50°, 60°, and 70°, with the side opposite the 50° angle measuring 5 cm. Can you construct another triangle that's NOT congruent to this one but has the same three angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Yes, easily! Draw a triangle with angles 50°, 60°, and 70°, but make the side opposite the 50° angle 8 cm instead of 5 cm. This new triangle has the same angles but is scaled larger, so it's NOT congruent. This illustrates why AAA (all three angles equal) is NOT a congruence condition — it only guarantees similarity, not congruence. You need at least one side measurement to fix the scale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "You want to prove that two congruent triangles share the same perimeter. Which congruence condition would be easiest to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: SSS is most direct. If two triangles have all three sides equal (SSS condition), then they're congruent AND their perimeters are obviously equal (same three sides sum to the same total). While any congruence condition guarantees equal perimeters, SSS makes this most transparent because the congruence directly shows sides are identical."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

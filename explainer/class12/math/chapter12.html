@@ -19,71 +19,204 @@
   <meta name="twitter:description" content="Linear programming solves optimization problems with linear constraints. Imagine a factory that produces two products." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 12",
+            "item": "https://www.shikshapal.com/explainer/class12/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class12/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Linear Programming",
+            "item": "https://www.shikshapal.com/explainer/class12/math/chapter12.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter12.html#learning-resource",
+        "name": "Linear Programming — Class 12 Math · ShikshaPal",
+        "description": "Linear programming solves optimization problems with linear constraints. Imagine a factory that produces two products.",
+        "url": "https://www.shikshapal.com/explainer/class12/math/chapter12.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 12",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 12",
-          "item": "https://www.shikshapal.com/explainer/class12/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class12/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Linear Programming",
-          "item": "https://www.shikshapal.com/explainer/class12/math/chapter12.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class12/math/chapter12.html#learning-resource",
-      "name": "Linear Programming — Class 12 Math · ShikshaPal",
-      "description": "Linear programming solves optimization problems with linear constraints. Imagine a factory that produces two products.",
-      "url": "https://www.shikshapal.com/explainer/class12/math/chapter12.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 12",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class12/math/chapter12.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Linear Programming Problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maximize/minimize a linear objective Z = c₁x + c₂y subject to linear inequalities and x, y ≥ 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Objective Function?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The linear function Z = c₁x + c₂y to be optimised (maximised or minimised)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Constraints?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linear inequalities limiting variables, e.g., a₁x + b₁y ≤ c₁, plus non-negativity x, y ≥ 0."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Feasible Region?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The set of all (x, y) satisfying every constraint; a convex polygon (possibly unbounded)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Corner Point Theorem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If a maximum/minimum of Z exists on a bounded feasible region, it occurs at a corner (vertex)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Bounded vs Unbounded Region?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bounded ⇒ optimum always exists at a vertex. Unbounded ⇒ Z may have no finite max/min."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Multiple Optimal Solutions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When Z is parallel to a boundary edge, every point on that edge gives the same optimal Z."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Slack Variable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For aᵢx + bᵢy ≤ cᵢ, slack sᵢ ≥ 0 satisfies aᵢx + bᵢy + sᵢ = cᵢ. It represents unused resource."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Graphical Method?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plot constraints, identify feasible region, list corners, compute Z at each, pick the best."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Diet / Manufacturing Problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common LP applications: minimize diet cost subject to nutritional constraints; maximize profit subject to resource limits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "For a bounded feasible region, the maximum of a linear objective function occurs",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "at a corner (vertex). By the Corner Point Theorem, optimal values occur at vertices of the feasible region."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Maximize Z = 3x + 2y subject to x + y ≤ 4, 2x + y ≤ 7, x, y ≥ 0. Maximum Z is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "11. Corners are (0,0), (0,4), (3,1), (3.5,0); Z reaches 11 at (3,1)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the feasible region is unbounded, the linear objective Z",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "may have no finite maximum or minimum. On unbounded regions, Z can grow without bound, so an extremum may fail to exist."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A slack variable s₁ ≥ 0 introduced for the constraint 2x + y ≤ 8 represents",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "the unused amount of the resource. 2x + y + s₁ = 8 ⇒ s₁ = 8 − (2x + y), the unused resource."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Minimize Z = x + y subject to x + 2y ≥ 10, 3x + y ≥ 12, x, y ≥ 0. The minimum value of Z is",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "6.4. Solving the system, the corner where both bind is (14/5, 18/5); Z = 14/5 + 18/5 = 32/5 = 6.4."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

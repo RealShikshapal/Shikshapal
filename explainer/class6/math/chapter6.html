@@ -21,70 +21,147 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 6",
+            "item": "https://www.shikshapal.com/explainer/class6/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class6/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Perimeter and Area",
+            "item": "https://www.shikshapal.com/explainer/class6/math/chapter6.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter6.html#learning-resource",
+        "name": "Perimeter and Area — Class 6 Math · ShikshaPal",
+        "description": "Measuring boundaries and enclosed regions — from rectangles and squares to triangles and composite shapes.",
+        "url": "https://www.shikshapal.com/explainer/class6/math/chapter6.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 6",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 6",
-          "item": "https://www.shikshapal.com/explainer/class6/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class6/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Perimeter and Area",
-          "item": "https://www.shikshapal.com/explainer/class6/math/chapter6.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class6/math/chapter6.html#learning-resource",
-      "name": "Perimeter and Area — Class 6 Math · ShikshaPal",
-      "description": "Measuring boundaries and enclosed regions — from rectangles and squares to triangles and composite shapes.",
-      "url": "https://www.shikshapal.com/explainer/class6/math/chapter6.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 6",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class6/math/chapter6.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "A square has a side of 5 cm. What is its perimeter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 20 cm. Perimeter of square = 4 × side = 4 × 5 = 20 cm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A rectangle is 10 m long and 6 m wide. What is its area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 60 m². Area of rectangle = length × width = 10 × 6 = 60 m²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A triangle has base 12 cm and height 8 cm. What is its area?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 48 cm². Area of triangle = ½ × base × height = ½ × 12 × 8 = 48 cm²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is the area of a triangle exactly half the area of a rectangle with the same base and height?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: When you draw a diagonal across a rectangle, it divides the rectangle into two congruent (identical) triangles. Since both triangles are equal in size and together they form the complete rectangle, each triangle must have exactly half the area of the rectangle. This is why we use the ½ in the triangle area formula: Area = ½ × base × height."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can two shapes have the same perimeter but different areas? Give an example.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Yes, absolutely! Perimeter and area are independent measurements. Example: Rectangle A: 10 cm × 2 cm → Perimeter = 24 cm, Area = 20 cm². Rectangle B (square): 6 cm × 6 cm → Perimeter = 24 cm, Area = 36 cm². Both have the same perimeter (24 cm) but different areas (20 cm² vs 36 cm²)! The square, being closer to regular, has greater area for the same perimeter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A farmer has a rectangular field 230 m long and 160 m wide. He wants to fence it with 3 rounds of rope. What is the total length of rope needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 2340 m. Perimeter of field = 2 × (230 + 160) = 2 × 390 = 780 m. For 3 rounds: 3 × 780 = 2340 m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A floor is 5 m long and 4 m wide. A square carpet of side 3 m is laid on it. Find the area of the floor NOT covered by the carpet.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 11 m². Floor area = 5 × 4 = 20 m². Carpet area = 3 × 3 = 9 m². Uncovered area = 20 - 9 = 11 m²."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A complex property consists of: a main building (15 ft × 12 ft) and a triangular storage area (base 15 ft, height 4 ft). Find the total area.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: 210 sq ft. Building area = 15 × 12 = 180 sq ft. Storage area = ½ × 15 × 4 = 30 sq ft. Total = 180 + 30 = 210 sq ft."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

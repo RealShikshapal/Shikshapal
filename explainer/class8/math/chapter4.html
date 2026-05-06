@@ -21,70 +21,259 @@
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 8",
+            "item": "https://www.shikshapal.com/explainer/class8/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Maths",
+            "item": "https://www.shikshapal.com/explainer/class8/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Quadrilaterals",
+            "item": "https://www.shikshapal.com/explainer/class8/math/chapter4.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter4.html#learning-resource",
+        "name": "Quadrilaterals — Class 8 Math · ShikshaPal",
+        "description": "Discover the hidden properties of four-sided shapes through logical deduction.",
+        "url": "https://www.shikshapal.com/explainer/class8/math/chapter4.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 8",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 8",
-          "item": "https://www.shikshapal.com/explainer/class8/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Maths",
-          "item": "https://www.shikshapal.com/explainer/class8/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Quadrilaterals",
-          "item": "https://www.shikshapal.com/explainer/class8/math/chapter4.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class8/math/chapter4.html#learning-resource",
-      "name": "Quadrilaterals — Class 8 Math · ShikshaPal",
-      "description": "Discover the hidden properties of four-sided shapes through logical deduction.",
-      "url": "https://www.shikshapal.com/explainer/class8/math/chapter4.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 8",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class8/math/chapter4.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Quadrilateral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A polygon with exactly four sides and four angles"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rectangle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A quadrilateral with four right angles (90°) and opposite sides equal"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Square?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A special rectangle where all four sides are equal and all angles are 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Parallelogram?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A quadrilateral where opposite sides are parallel and equal in length"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Trapezium?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A quadrilateral with exactly one pair of parallel sides"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Rhombus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A parallelogram where all four sides are equal (looks like a tilted square)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Angle Sum Property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The sum of all interior angles in any quadrilateral is always 360°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Diagonal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A line segment joining two non-adjacent vertices of a polygon"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the sum of all interior angles in a quadrilateral?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "360°. Correct! The angle sum property states that all angles in a quadrilateral sum to 360°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a rectangle, if one angle is 90°, what are the other three angles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "90°, 90°, 90°. Correct! All angles in a rectangle are 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which quadrilateral has all sides equal but angles don't have to be 90°?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rhombus. Correct! A rhombus has all four sides equal (like a diamond shape)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A quadrilateral has angles of 85°, 95°, and 100°. What is the fourth angle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "80°. Correct! 85° + 95° + 100° + 80° = 360°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which statement is true about a square?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All sides equal AND all angles 90°. Correct! A square has both all sides equal and all angles at 90°"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Angle Sum: In any quadrilateral, if three angles are 80°, 100°, and 95°, what is the fourth angle? A) 85° B) 275° C) 360° D) 95°",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: A) 85°. Why? All angles in a quadrilateral sum to 360°. So: 80° + 100° + 95° + x = 360°. Therefore x = 360° - 275° = 85°."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Rectangle Properties: A rectangle has a diagonal of 10 cm. What can you say about the other diagonal? A) It's longer than 10 cm B) It's 10 cm C) It's shorter than 10 cm D) Can't determine",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) It's 10 cm. Why? In a rectangle, both diagonals have equal length (we proved this using congruent triangles). So if one diagonal is 10 cm, the other must also be 10 cm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Opposite Sides: In rectangle ABCD, side AB = 8 cm. What is side CD? A) Unknown B) 8 cm C) Greater than 8 cm D) Less than 8 cm",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: B) 8 cm. Why? AB and CD are opposite sides in the rectangle. By definition, opposite sides of a rectangle are equal. So CD = AB = 8 cm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Are Diagonals Equal? Explain (in simple terms) why the two diagonals of a rectangle must have equal length, without measuring them.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: Draw two diagonals in rectangle ABCD. They form two triangles: ADC and DAB. These triangles are congruent because: AD = AD (same side in both triangles) Angles at D and A are both 90° (rectangle definition) AB = DC (opposite sides of a rectangle) By SAS congruence, triangle ADC ≅ triangle DAB. Therefore, their diagonals (corresponding parts) must be equal: AC = BD."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Do Diagonals Bisect Each Other? Why must the diagonals cross exactly at their midpoints? What property guarantees this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: We proved that diagonals AC and BD cross at point O. Consider triangles AOB and COD (opposite triangles). We know: AB = CD (opposite sides of rectangle) Angles AOB and COD are vertically opposite (equal) AC = BD (diagonals are equal, proved earlier) By SAS congruence, triangle AOB ≅ triangle COD. So OA = OC and OB = OD, meaning O bisects both diagonals!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why Does Angle Not Matter? We proved that if two equal segments bisect each other, the angles must all be 90° regardless of the angle between the segments. Why is this surprising?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explanation: It seems like the angle between diagonals should matter. But it doesn't! Here's why: If the diagonals form angle x at their crossing, the isosceles triangle has base angles = 90° - x/2. The adjacent triangle has angle 180° - x, so its base angles = x/2. When you add them: (90° - x/2) + x/2 = 90°! The x cancels out! No matter what angle the diagonals form, the quadrilateral angles are always 90°. This is a beautiful example of mathematical inevitability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The Architect's Ceiling: An architect is designing a rectangular ceiling with diagonals 12 m long. At what distance from a corner will the diagonals meet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: Diagonals of a rectangle bisect each other, meaning they cross at their midpoints. From any corner to the crossing point = (length of diagonal) ÷ 2 = 12 ÷ 2 = 6 m The diagonals will meet 6 m from each corner!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Verifying a Rectangle: You measure a quadrilateral and find: diagonal 1 = 10 cm, diagonal 2 = 10 cm, they cross at 5 cm from each end. Is this a rectangle? Why or why not?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Answer: Yes, this is evidence of a rectangle! Why? Both conditions are satisfied: Diagonals are equal (both 10 cm) They bisect each other (cross at 5 cm from each end, which is the midpoint) These are the exact properties we proved are necessary and sufficient for a rectangle. So yes, this must be a rectangle (though you'd still want to check the angles are 90°)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "The Garden Plot: You're staking out a rectangular garden plot. You place stakes at opposite corners 15 m apart (diagonal). How far apart should the other two corners be, and where should you place the center stake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: Distance between other two corners: 15 m (diagonals of a rectangle are equal) Where to place center stake: 7.5 m from any corner along the diagonal (bisection point) The two diagonals, each 15 m long, will cross at their midpoints, which is 7.5 m from each corner. Place your center stake there!"
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

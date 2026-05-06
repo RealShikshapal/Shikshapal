@@ -19,71 +19,724 @@
   <meta name="twitter:description" content="This chapter extends geometry from 2D shapes into three-dimensional solids." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.shikshapal.com/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 10",
+            "item": "https://www.shikshapal.com/explainer/class10/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Math",
+            "item": "https://www.shikshapal.com/explainer/class10/math/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Surface Areas and Volumes",
+            "item": "https://www.shikshapal.com/explainer/class10/math/chapter12.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter12.html#learning-resource",
+        "name": "Surface Areas and Volumes — Class 10 Math · ShikshaPal",
+        "description": "This chapter extends geometry from 2D shapes into three-dimensional solids.",
+        "url": "https://www.shikshapal.com/explainer/class10/math/chapter12.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 10",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Explainer",
-          "item": "https://www.shikshapal.com/explainer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Class 10",
-          "item": "https://www.shikshapal.com/explainer/class10/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Math",
-          "item": "https://www.shikshapal.com/explainer/class10/math/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Surface Areas and Volumes",
-          "item": "https://www.shikshapal.com/explainer/class10/math/chapter12.html"
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
         }
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class10/math/chapter12.html#learning-resource",
-      "name": "Surface Areas and Volumes — Class 10 Math · ShikshaPal",
-      "description": "This chapter extends geometry from 2D shapes into three-dimensional solids.",
-      "url": "https://www.shikshapal.com/explainer/class10/math/chapter12.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 10",
-      "educationalAlignment": [
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "NCERT"
-        },
-        {
-          "@type": "AlignmentObject",
-          "alignmentType": "educationalFramework",
-          "targetName": "CBSE"
-        }
-      ],
-      "publisher": {
-        "@id": "https://www.shikshapal.com/#organization"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class10/math/chapter12.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Surface Areas and Volumes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface Areas and Volumes is the central idea of this lesson. Use the chapter examples to explain what it means and why it matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 1. Cuboid (rectangular prism)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Surface area = 2(lw + lh + wh)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 2. Cylinder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Surface area = 2πr² + 2πrh (two circular bases + curved surface)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 3. Cone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Surface area = πr² + πrl (circular base + curved surface)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 4. Sphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Surface area = 4πr²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Strategy for composite solids?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1. Identify the components: Break the solid into basic shapes"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A container with a cylindrical base (radius 5 m, height 8 m) and hemispherical top:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Scaling principle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you scale all dimensions by factor k:"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Packaging design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculate material needed (surface area) and capacity (volume)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Determine concrete needed for foundations, material for coverings, and space available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Manufacturing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optimize materials to minimize cost while meeting strength requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Environmental science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calculate pollutant dispersal in tanks, water storage capacity, and emission from stacks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dosage calculations for spherical pills or cylindrical syringes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cuboid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SA = 2(lw + lh + wh), V = lwh"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cylinder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SA = 2πr² + 2πrh, V = πr²h"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SA = πr² + πrl, V = (1/3)πr²h"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SA = 4πr², V = (4/3)πr³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Hemisphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SA = 3πr², V = (2/3)πr³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Scaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If linear dimension × k, then volume × k³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of The Basic Solids: Building Blocks of 3D Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This chapter focuses on combinations of four fundamental shapes: 1. Cuboid (rectangular prism): - Surface area = 2(lw + lh + wh) - Volume = lwh - (l = length, w = width, h = height) 2."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Composite Solids: Combining Basic Shapes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Real structures rarely consist of a single basic shape. A truck container is a cylinder with hemispheres at the ends. A test tube is a cylinder topped with a hemisphere. A rocket is a cylinder with a cone on top."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Surface Area Calculations: Identifying Exposed Surfaces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When calculating surface area of composite solids, only count exposed surfaces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Volume Formulas: The Principle of Scaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Notice that volume formulas always include a dimension cubed (or multiplied by area, which is 2D): - Cone volume = (1/3) × base area × height - Cylinder volume = base area × height - Sphere volume has r³ because it's…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Real-World Applications: From Theory to Practice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Packaging design: Calculate material needed (surface area) and capacity (volume). Construction: Determine concrete needed for foundations, material for coverings, and space available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface areas and volumes build on and extend: - chapter-07-coordinate-geometry: Coordinates can define 3D positions - chapter-10-circles: Circular cross-sections appear in cylinders and cones -…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the core idea of Key Formulas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "- Cuboid: SA = 2(lw + lh + wh), V = lwh - Cylinder: SA = 2πr² + 2πrh, V = πr²h - Cone: SA = πr² + πrl, V = (1/3)πr²h - Sphere: SA = 4πr², V = (4/3)πr³ - Hemisphere: SA = 3πr², V = (2/3)πr³ - Scaling: If linear…"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surface area = 2(lw + lh +?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface area = 2(lw + lh + wh)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (l = length, w = width, h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(l = length, w = width, h = height)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surface area = 2πr² + 2πrh (two?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface area = 2πr² + 2πrh (two circular bases + curved surface)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (r = radius, h = height)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(r = radius, h = height)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surface area = πr² + πrl (circular?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface area = πr² + πrl (circular base + curved surface)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Volume = (1/3)πr²h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Volume = (1/3)πr²h"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is (r = radius, l = slant height,?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "(r = radius, l = slant height, h = height)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Surface area = 4πr²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Surface area = 4πr²"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cylinder volume = πr²h = π(5)²(8) =?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cylinder volume = πr²h = π(5)²(8) = 200π m³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Hemisphere volume = (2/3)πr³ = (2/3)π(5)³ =?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hemisphere volume = (2/3)πr³ = (2/3)π(5)³ = (250/3)π m³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Total volume = 200π + (250/3)π ≈?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total volume = 200π + (250/3)π ≈ 862 m³"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cylinder curved surface = 2πrh (include)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cylinder curved surface = 2πrh (include)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cylinder bottom base = πr² (include)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cylinder bottom base = πr² (include)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Cylinder top base = πr² (DON'T include—it's?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cylinder top base = πr² (DON'T include—it's inside, not exposed)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If you double the radius of a cylinder while keeping its height fixed, does the volume double? Calculate to verify your intuition.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A cone and cylinder have the same base and height. Why is the cone's volume always 1/3 of the cylinder's volume?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A spherical ball has radius r. If you create a cylinder whose height and diameter both equal 2r, compare their volumes. Which holds more?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "In a composite solid (like a cylinder with hemispheric ends), why is it crucial to identify which surfaces are exposed and which are internal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A contractor needs to paint a dome-shaped roof (hemisphere) of radius 10 meters. If paint costs per square meter, how would you calculate the cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the chapter's formula or relation and explain the reasoning step by step.. Correct. A strong answer uses the formula or relation and explains the reasoning clearly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface Areas and Volumes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 1. Cuboid (rectangular prism)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 2. Cylinder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 3. Cone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand 4. Sphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Strategy for composite solids?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Scaling principle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Packaging design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Construction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Manufacturing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Environmental science?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Medicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cuboid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cylinder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Sphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Hemisphere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Scaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand The Basic Solids: Building Blocks of 3D Geometry?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Composite Solids: Combining Basic Shapes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface Area Calculations: Identifying Exposed Surfaces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Volume Formulas: The Principle of Scaling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Real-World Applications: From Theory to Practice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Connecting to Related Topics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Key Formulas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface area = 2(lw + lh +?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (l = length, w = width, h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface area = 2πr² + 2πrh (two?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (r = radius, h = height)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface area = πr² + πrl (circular?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Volume = (1/3)πr²h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand (r = radius, l = slant height,?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Surface area = 4πr²?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which approach best shows that you understand Cylinder volume = πr²h = π(5)²(8) =?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Explain it using a simple example and the reason it works.. Understanding means explaining the idea, example, and reason together."
+            }
+          }
+        ]
       }
-    }
-  ]
-}
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

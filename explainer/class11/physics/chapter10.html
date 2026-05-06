@@ -18,36 +18,204 @@
   <meta name="twitter:description" content="Heat and temperature govern the behavior of matter. Bridges expand in summer, food cooks when thermal energy transfers." />
   <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shikshapal.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Explainer", "item": "https://www.shikshapal.com/explainer/"},
-        {"@type": "ListItem", "position": 3, "name": "Class 11", "item": "https://www.shikshapal.com/explainer/class11/"},
-        {"@type": "ListItem", "position": 4, "name": "Physics", "item": "https://www.shikshapal.com/explainer/class11/physics/"},
-        {"@type": "ListItem", "position": 5, "name": "Thermal Properties of Matter", "item": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html"}
-      ]
-    },
-    {
-      "@type": "LearningResource",
-      "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html#learning-resource",
-      "name": "Thermal Properties of Matter — Class 11 Physics · ShikshaPal",
-      "description": "Heat and temperature govern the behavior of matter.",
-      "url": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html",
-      "inLanguage": "en-IN",
-      "learningResourceType": "Explainer lesson",
-      "educationalLevel": "Class 11",
-      "educationalAlignment": [
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "NCERT"},
-        {"@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "CBSE"}
-      ],
-      "publisher": {"@id": "https://www.shikshapal.com/#organization"}
-    }
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.shikshapal.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Explainer",
+            "item": "https://www.shikshapal.com/explainer/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Class 11",
+            "item": "https://www.shikshapal.com/explainer/class11/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Physics",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Thermal Properties of Matter",
+            "item": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html"
+          }
+        ]
+      },
+      {
+        "@type": "LearningResource",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html#learning-resource",
+        "name": "Thermal Properties of Matter — Class 11 Physics · ShikshaPal",
+        "description": "Heat and temperature govern the behavior of matter.",
+        "url": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html",
+        "inLanguage": "en-IN",
+        "learningResourceType": "Explainer lesson",
+        "educationalLevel": "Class 11",
+        "educationalAlignment": [
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "NCERT"
+          },
+          {
+            "@type": "AlignmentObject",
+            "alignmentType": "educationalFramework",
+            "targetName": "CBSE"
+          }
+        ],
+        "publisher": {
+          "@id": "https://www.shikshapal.com/#organization"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            ".exp-hero h1",
+            ".exp-hero .lede"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.shikshapal.com/explainer/class11/physics/chapter10.html#faqs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Heat vs. temperature?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Temperature is a state property (avg KE per particle, in kelvin). Heat is energy in transit driven by a temperature difference, in joules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ideal gas law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PV = nRT, R = 8.314 J/(mol·K). Equivalently PV = NkT with k = 1.38 × 10⁻²³ J/K."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Linear thermal expansion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ΔL = α L₀ ΔT. For isotropic solids: area coefficient β ≈ 2α; volume coefficient γ ≈ 3α."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Anomalous expansion of water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Water contracts when heated from 0 °C to 4 °C; density is maximum at 4 °C. Ice floats; lakes freeze from the top."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Specific heat capacity (c)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Q = m c ΔT. Heat per unit mass per unit temperature rise. SI unit J/(kg·K). Water: c ≈ 4186 J/(kg·K)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Latent heat (L)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Q = m L. Energy per unit mass to change phase at constant temperature. For water: L_f ≈ 3.34 × 10⁵ J/kg, L_v ≈ 2.26 × 10⁶ J/kg."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Calorimetry (mixture rule)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In an isolated system, heat lost = heat gained: m₁c₁(T₁ − T_f) = m₂c₂(T_f − T₂)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Steady-state conduction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H = dQ/dt = k A (T_H − T_C)/L. k is the thermal conductivity (W/(m·K))."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Stefan–Boltzmann law?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A blackbody radiates power per unit area σ T⁴, with σ = 5.67 × 10⁻⁸ W·m⁻²·K⁻⁴. For a real body: e σ T⁴ (e = emissivity)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Newton's law of cooling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For small ΔT, dT/dt = −k (T − T_s). Solution: T(t) − T_s = (T₀ − T_s) e^(−kt)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A 2 kg mass of water is heated from 25 °C to 75 °C. The heat absorbed is (c_water = 4186 J/(kg·K)):",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "4.19 × 10⁵ J. Correct. Q = mcΔT = 2 × 4186 × 50 ≈ 4.19 × 10⁵ J."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A steel rod of length 1.000 m at 20 °C is heated to 220 °C. Its new length is (α = 1.2 × 10⁻⁵ K⁻¹):",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1.0024 m. Correct. ΔL = αL₀ΔT = 1.2×10⁻⁵ × 1 × 200 = 2.4 × 10⁻³ m, so L = 1.0024 m."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much heat is required to convert 0.5 kg of ice at 0 °C completely to water at 0 °C? (L_f = 3.34 × 10⁵ J/kg)",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1.67 × 10⁵ J. Correct. Q = m L_f = 0.5 × 3.34 × 10⁵ = 1.67 × 10⁵ J."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the absolute temperature of a blackbody is doubled, the total power radiated per unit area becomes:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "16 times. Correct. Stefan–Boltzmann: power ∝ T⁴; doubling T multiplies by 16."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "100 g of water at 20 °C is mixed with 100 g of water at 80 °C. Assuming no heat loss, the equilibrium temperature is:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "50 °C. Correct. Equal masses with the same c → T_f is the average = 50 °C."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
