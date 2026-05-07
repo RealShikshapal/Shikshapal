@@ -669,5 +669,16 @@
   <footer class="exp-footer">Class 12 · Physics · ShikshaPal Explainer</footer>
   <script src="../../js/chapter-shell.js"></script>
   <script src="../../js/quiz-engine.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
 </body>
 </html>
