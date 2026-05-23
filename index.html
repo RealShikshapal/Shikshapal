@@ -132,13 +132,27 @@
   body {
     margin: 0;
     font-family: var(--font-body);
-    background: var(--bg);
     color: var(--fg);
     font-size: 16px;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+
+    /* Parallax image backdrop for the whole page. The hero overrides this
+       locally with its own video. The image stays fixed in the viewport as
+       content scrolls over it (graceful fallback to `scroll` on iOS). */
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(180deg, rgba(0,18,34,.45) 0%, rgba(0,12,24,.92) 90%),
+      url('./assets/ShikshaPalImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  @media (max-width: 768px) {
+    body { background-attachment: scroll; }
   }
   body.nav-locked { overflow: hidden; }
   img, svg { display: block; max-width: 100%; }
@@ -149,28 +163,27 @@
   .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
   /* =========================================================
-     Background video + scrim
+     Page stacking + hero-only video backdrop
      ========================================================= */
-  .bg-stage {
-    position: fixed; inset: 0; z-index: 0; overflow: hidden;
-    background:
-      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
-      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
-      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
+  .page { position: relative; z-index: 1; }
+
+  .hero-video {
+    position: absolute; inset: 0; z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
   }
-  .bg-stage video {
-    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
-    opacity: 1;
+  .hero-video video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
   }
-  .bg-stage::after {
+  .hero-video::after {
     content: ''; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(180deg,
-      rgba(0,33,52,.55) 0%,
-      rgba(0,33,52,.40) 30%,
-      rgba(0,33,52,.78) 75%,
-      rgba(0,33,52,.95) 100%);
+      rgba(0,33,52,.45) 0%,
+      rgba(0,33,52,.35) 35%,
+      rgba(0,18,34,.85) 100%);
   }
-  .page { position: relative; z-index: 1; }
 
   /* =========================================================
      Atoms — glass, eyebrow, headline, buttons
@@ -444,8 +457,12 @@
      ========================================================= */
   .hero {
     position: relative;
+    isolation: isolate;
+    overflow: hidden;
     padding: 110px 24px 140px;
     text-align: center;
+  }
+  .hero-inner {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -995,13 +1012,6 @@
 </head>
 <body>
 
-<!-- ========== BACKGROUND VIDEO + SCRIM ========== -->
-<div class="bg-stage" aria-hidden="true">
-  <video autoplay loop muted playsinline preload="auto" poster="">
-    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
-  </video>
-</div>
-
 <div class="page">
 
 <!-- ========== NAV ========== -->
@@ -1154,12 +1164,19 @@
   </div>
 </aside>
 
-<!-- ========== HERO ========== -->
+<!-- ========== HERO (video backdrop scoped to this section) ========== -->
 <main class="hero">
-  <h1 class="fade-rise">A quiet <em>AI tutor,</em> for India's <em>curious minds.</em></h1>
-  <p class="fade-rise delay-1">We build personalised tools for the students who ask <em>why</em> — and for the parents, teachers, and schools that trust them to keep asking. NCERT-aligned, mobile-first, designed for India.</p>
-  <div class="hero-cta fade-rise delay-2">
-    <a href="./shikshapal-form.html" class="btn liquid-glass btn-glass btn-lg">Begin Journey</a>
+  <div class="hero-video" aria-hidden="true">
+    <video autoplay loop muted playsinline preload="auto">
+      <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero-inner">
+    <h1 class="fade-rise">A quiet <em>AI tutor,</em> for India's <em>curious minds.</em></h1>
+    <p class="fade-rise delay-1">We build personalised tools for the students who ask <em>why</em> — and for the parents, teachers, and schools that trust them to keep asking. NCERT-aligned, mobile-first, designed for India.</p>
+    <div class="hero-cta fade-rise delay-2">
+      <a href="./shikshapal-form.html" class="btn liquid-glass btn-glass btn-lg">Begin Journey</a>
+    </div>
   </div>
 </main>
 
