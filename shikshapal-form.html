@@ -40,7 +40,7 @@
   :root {
     --bg: hsl(201 100% 13%);
     --fg: #ffffff;
-    --muted: hsl(240 4% 66%);
+    --muted: rgba(255, 255, 255, .65);
     --muted-2: rgba(255,255,255,.55);
     --border: rgba(255,255,255,.10);
     --border-strong: rgba(255,255,255,.18);
@@ -144,7 +144,7 @@
     line-height: 1.05; letter-spacing: -.02em;
     color: var(--fg); margin: 0;
   }
-  .headline em { font-style: normal; color: var(--muted); }
+  .headline em { font-style: normal; color: var(--fg); }
 
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -263,7 +263,7 @@
     margin: 0;
     color: var(--fg);
   }
-  .form-hero h1 em { font-style: normal; color: var(--muted); }
+  .form-hero h1 em { font-style: normal; color: var(--fg); }
   .form-hero p {
     margin: 28px auto 0;
     max-width: 580px;
@@ -297,7 +297,7 @@
     margin: 0 0 8px;
     color: var(--fg);
   }
-  .form-card .lead h2 em { font-style: normal; color: var(--muted); }
+  .form-card .lead h2 em { font-style: normal; color: var(--fg); }
   .form-card .lead p { margin: 0 0 26px; color: var(--muted); font-size: 14px; }
 
   .fld { display: flex; flex-direction: column; margin-bottom: 14px; }
@@ -388,7 +388,7 @@
     line-height: 1.05; letter-spacing: -.02em;
     margin: 0 0 14px; color: var(--fg);
   }
-  .thanks h4 em { font-style: normal; color: var(--muted); }
+  .thanks h4 em { font-style: normal; color: var(--fg); }
   .thanks p {
     color: var(--muted); margin: 0 auto 28px;
     max-width: 420px; font-size: 15px; line-height: 1.6;
@@ -403,7 +403,7 @@
     font-size: 22px; line-height: 1.15; letter-spacing: -.015em;
     margin: 0 0 18px; color: var(--fg);
   }
-  .side-card h3 em { font-style: normal; color: var(--muted); }
+  .side-card h3 em { font-style: normal; color: var(--fg); }
   .side-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
   .side-list li { display: flex; gap: 12px; align-items: flex-start; }
   .side-list .t { color: var(--fg); font-size: 13.5px; font-weight: 500; line-height: 1.3; }

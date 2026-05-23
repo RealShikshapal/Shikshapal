@@ -38,7 +38,7 @@
   :root {
     --bg: hsl(201 100% 13%);
     --fg: #ffffff;
-    --muted: hsl(240 4% 66%);
+    --muted: rgba(255, 255, 255, .65);
     --border: rgba(255,255,255,.10);
     --tile-bg: rgba(255,255,255,.06);
     --tile-border: rgba(255,255,255,.12);
@@ -165,7 +165,7 @@
     margin: 0 0 22px;
     color: var(--fg);
   }
-  .doc-head h1 em { font-style: normal; color: var(--muted); }
+  .doc-head h1 em { font-style: normal; color: var(--fg); }
   .doc-meta {
     color: var(--muted); font-size: 13.5px;
     padding-bottom: 26px;
@@ -196,7 +196,7 @@
     color: var(--fg);
     scroll-margin-top: 100px;
   }
-  main.doc h2 em { font-style: normal; color: var(--muted); }
+  main.doc h2 em { font-style: normal; color: var(--fg); }
   main.doc h3 {
     font-family: var(--font-display);
     font-weight: 400;

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Privacy Policy — ShikshaPal</title>
-<meta name="description" content="ShikshaPal&#x27;s Privacy Policy explains how we handle student and parent data under India&#x27;s Digital Personal Data Protection Act, 2023." />
+<meta name="description" content="ShikshaPal's Privacy Policy: how we collect, use, and protect your family's data, written in plain language and compliant with India's DPDP Act, 2023." />
 
-<!-- SEO: canonical, social, and structured data -->
 <link rel="canonical" href="https://www.shikshapal.com/privacy.html" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#002142" />
 <meta property="og:site_name" content="ShikshaPal" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Privacy Policy — ShikshaPal" />
-<meta property="og:description" content="ShikshaPal&#x27;s Privacy Policy explains how we handle student and parent data under India&#x27;s Digital Personal Data Protection Act, 2023." />
+<meta property="og:description" content="ShikshaPal's Privacy Policy: how we collect, use, and protect your family's data, written in plain language and compliant with India's DPDP Act, 2023." />
 <meta property="og:url" content="https://www.shikshapal.com/privacy.html" />
 <meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Privacy Policy — ShikshaPal" />
-<meta name="twitter:description" content="ShikshaPal&#x27;s Privacy Policy explains how we handle student and parent data under India&#x27;s Digital Personal Data Protection Act, 2023." />
+<meta name="twitter:description" content="ShikshaPal's Privacy Policy: how we collect, use, and protect your family's data, written in plain language and compliant with India's DPDP Act, 2023." />
 <meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
 <script type="application/ld+json">
 {
@@ -26,315 +26,325 @@
   "@id": "https://www.shikshapal.com/privacy.html#webpage",
   "url": "https://www.shikshapal.com/privacy.html",
   "name": "Privacy Policy — ShikshaPal",
-  "isPartOf": {
-    "@id": "https://www.shikshapal.com/#website"
-  }
+  "isPartOf": { "@id": "https://www.shikshapal.com/#website" }
 }
 </script>
-<link rel="icon" href="./assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="./assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
 <style>
   :root {
-    --ink: #1a2332;
-    --ink-soft: #3a4556;
-    --paper: #faf6f0;
-    --paper-warm: #f3ecdf;
-    --rule: #d9cfbe;
-    --accent: #1e3a5f;
-    --accent-soft: #2c4a73;
-    --highlight: #c9a96e;
-    --danger-bg: #fef3e7;
-    --danger-border: #d48b3c;
-    --note-bg: #eaf0f6;
-    --note-border: #1e3a5f;
-    --max-w: 720px;
+    --bg: hsl(201 100% 13%);
+    --fg: #ffffff;
+    --muted: rgba(255, 255, 255, .65);
+    --border: rgba(255,255,255,.10);
+    --glass-bg: rgba(255,255,255,.025);
+    --font-display: 'Instrument Serif', 'Times New Roman', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --radius-lg: 22px;
+    --container: 800px;
   }
-
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
-
   body {
     margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 17px;
-    line-height: 1.7;
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 16.5px;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
+  img, svg { display: block; max-width: 100%; }
+  a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,.4); }
+  a:hover { text-decoration-color: var(--fg); }
+  ::selection { background: rgba(255,255,255,.22); }
+  code { font-family: var(--font-mono); font-size: .92em; background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 6px; }
 
-  /* Subtle paper texture */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
+  .container-wide { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+
+  /* Background */
+  .bg-stage {
+    position: fixed; inset: 0; z-index: 0; overflow: hidden;
+    background:
+      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
+      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
+      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
+  }
+  .bg-stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .bg-stage::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(180deg,
+      rgba(0,33,52,.70) 0%, rgba(0,33,52,.60) 30%,
+      rgba(0,33,52,.92) 75%, rgba(0,33,52,.98) 100%);
+  }
+  .page { position: relative; z-index: 1; }
+
+  .liquid-glass {
+    position: relative; overflow: hidden;
+    background: rgba(255,255,255,.01);
+    backdrop-filter: blur(4px) saturate(140%);
+    -webkit-backdrop-filter: blur(4px) saturate(140%);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.10);
+    transition: transform .25s ease, background .25s ease;
+  }
+  .liquid-glass::before {
+    content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1.4px;
+    background: linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(255,255,255,.15) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,.15) 80%, rgba(255,255,255,.45) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
     pointer-events: none;
-    background-image:
-      radial-gradient(circle at 1px 1px, rgba(26,35,50,0.025) 1px, transparent 0);
-    background-size: 24px 24px;
-    z-index: 0;
   }
+  .liquid-glass:hover { background: rgba(255,255,255,.04); }
 
-  .wrap {
-    position: relative;
-    z-index: 1;
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 4rem 1.5rem 6rem;
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    text-transform: uppercase; letter-spacing: .2em;
+    font-size: 11.5px; font-weight: 500; color: var(--muted);
   }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 999px; background: rgba(255,255,255,.6); }
 
-  /* Masthead */
-  .masthead {
-    border-bottom: 2px solid var(--ink);
-    padding-bottom: 1.25rem;
-    margin-bottom: 3rem;
-  }
-  .masthead .brand {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .masthead .brand-name {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-  }
-  .masthead .brand-name .dot {
-    color: var(--highlight);
-  }
-  .masthead nav {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--ink-soft);
-  }
-  .masthead nav a {
-    color: var(--ink-soft);
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 10px 18px; border-radius: 999px;
+    font-size: 13.5px; font-weight: 500;
+    transition: transform .25s ease, background .25s ease;
+    cursor: pointer; white-space: nowrap; color: var(--fg);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s, color 0.2s;
-    margin-left: 1.25rem;
   }
-  .masthead nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-  .masthead nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .btn:hover { transform: scale(1.03); }
 
-  /* Document head */
-  .doc-eyebrow {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-    font-weight: 600;
+  /* NAV */
+  .nav {
+    position: sticky; top: 0; z-index: 40;
+    padding: 18px 0;
+    background: rgba(0,20,36,.55);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid rgba(255,255,255,.06);
   }
-  h1 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 600;
-    font-size: clamp(2.25rem, 5vw, 3rem);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 0 0 1rem;
-    color: var(--ink);
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-size: 26px; line-height: 1; letter-spacing: -.01em;
+    text-decoration: none;
   }
+  .logo img { width: 28px; height: 28px; filter: drop-shadow(0 0 8px rgba(255,255,255,.18)); }
+  .logo sup { font-size: 11px; font-family: var(--font-body); margin-left: 2px; }
+  .nav-links { display: inline-flex; align-items: center; gap: 22px; }
+  .nav-links a {
+    color: rgba(255,255,255,.65); font-size: 14px;
+    text-decoration: none; transition: color .2s ease;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--fg); }
+  @media (max-width: 720px) { .nav-links { display: none; } }
+
+  /* DOC HEAD */
+  .doc-head {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 80px 24px 24px;
+  }
+  .doc-head .eyebrow { margin-bottom: 22px; }
+  .doc-head h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 5.6vw, 72px);
+    line-height: 1;
+    letter-spacing: -.025em;
+    margin: 0 0 22px;
+    color: var(--fg);
+  }
+  .doc-head h1 em { font-style: normal; color: var(--fg); }
   .doc-meta {
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--rule);
+    color: var(--muted); font-size: 13.5px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(255,255,255,.10);
+    font-family: var(--font-mono);
+    letter-spacing: .02em;
   }
-  .doc-meta strong { color: var(--ink); }
+  .doc-meta strong { color: var(--fg); font-weight: 500; }
 
-  /* Section */
-  h2 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    letter-spacing: -0.01em;
-    margin: 3rem 0 1rem;
-    padding-top: 1rem;
-    color: var(--accent);
-    position: relative;
+  /* DOC BODY */
+  main.doc {
+    max-width: var(--container);
+    margin: 32px auto;
+    padding: 0 24px 48px;
   }
-  h2::before {
-    content: '§';
-    position: absolute;
-    left: -1.5rem;
-    top: 1rem;
-    color: var(--highlight);
-    font-size: 1.4rem;
-    opacity: 0.6;
+  main.doc p { color: rgba(255,255,255,.85); margin: 0 0 18px; }
+  main.doc > p:first-of-type {
+    font-size: 18px; line-height: 1.75;
+    color: rgba(255,255,255,.92);
   }
-  h3 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 600;
-    font-size: 1.15rem;
-    margin: 2rem 0 0.5rem;
-    color: var(--ink);
+  main.doc h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(28px, 3.4vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    margin: 56px 0 16px;
+    color: var(--fg);
+    scroll-margin-top: 100px;
   }
-
-  p { margin: 0 0 1.1rem; }
-
-  ul, ol {
-    margin: 0 0 1.25rem;
-    padding-left: 1.4rem;
+  main.doc h2 em { font-style: normal; color: var(--fg); }
+  main.doc h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(20px, 2.4vw, 24px);
+    line-height: 1.2;
+    margin: 36px 0 12px;
+    color: var(--fg);
   }
-  li { margin-bottom: 0.4rem; }
-
-  a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: var(--ink); }
-
-  strong { color: var(--ink); font-weight: 600; }
-
-  code, .mono {
-    font-family: 'SF Mono', ui-monospace, 'Menlo', monospace;
-    font-size: 0.92em;
-    background: var(--paper-warm);
-    padding: 0.1em 0.4em;
-    border-radius: 3px;
-  }
-
-  /* Callout boxes */
-  .note {
-    background: var(--note-bg);
-    border-left: 4px solid var(--note-border);
-    padding: 1.1rem 1.3rem;
-    margin: 1.5rem 0;
-    font-size: 0.97rem;
-    border-radius: 0 4px 4px 0;
-  }
-  .note .label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-    display: block;
-  }
-  .note p:last-child { margin-bottom: 0; }
-
-  .important {
-    background: var(--danger-bg);
-    border-left: 4px solid var(--danger-border);
-    padding: 1.1rem 1.3rem;
-    margin: 1.5rem 0;
-    border-radius: 0 4px 4px 0;
-  }
-  .important .label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: #8b4513;
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-    display: block;
-  }
+  main.doc h3 em { font-style: italic; color: var(--fg); }
+  main.doc ul, main.doc ol { padding-left: 22px; margin: 0 0 18px; color: rgba(255,255,255,.85); }
+  main.doc li { margin-bottom: 8px; }
+  main.doc li strong { color: var(--fg); font-weight: 500; }
+  main.doc strong { color: var(--fg); font-weight: 500; }
 
   /* TOC */
   .toc {
-    background: var(--paper-warm);
-    border: 1px solid var(--rule);
-    padding: 1.5rem 1.75rem;
-    margin: 2.5rem 0 3rem;
-    border-radius: 2px;
+    margin: 32px 0 48px;
+    padding: 28px 32px;
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255,255,255,.08);
   }
   .toc-title {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--ink-soft);
-    margin: 0 0 0.9rem;
-    font-weight: 600;
+    text-transform: uppercase; letter-spacing: .2em;
+    font-size: 11px; color: var(--muted); font-weight: 500;
+    margin-bottom: 14px;
   }
   .toc ol {
-    margin: 0;
-    padding-left: 1.4rem;
-    columns: 2;
-    column-gap: 2rem;
-    font-size: 0.93rem;
+    margin: 0; padding-left: 1.4rem;
+    columns: 2; column-gap: 32px;
+    font-size: 14px;
   }
-  .toc li { margin-bottom: 0.35rem; break-inside: avoid; }
-  .toc a { color: var(--ink); text-decoration: none; }
-  .toc a:hover { color: var(--accent); text-decoration: underline; }
+  .toc li { margin-bottom: 8px; break-inside: avoid; }
+  .toc a { color: rgba(255,255,255,.85); text-decoration: none; }
+  .toc a:hover { color: var(--fg); }
+  @media (max-width: 600px) { .toc ol { columns: 1; } }
 
-  @media (max-width: 600px) {
-    .toc ol { columns: 1; }
-    h2::before { display: none; }
-    .wrap { padding: 2.5rem 1.25rem 4rem; }
+  /* Callouts */
+  .note, .important {
+    margin: 26px 0;
+    padding: 22px 26px;
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    border: 1px solid rgba(255,255,255,.08);
+    border-left: 3px solid rgba(255,255,255,.45);
   }
-
-  /* Footer */
-  footer {
-    margin-top: 5rem;
-    padding-top: 2rem;
-    border-top: 2px solid var(--ink);
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
+  .important { border-left-color: rgba(255,138,138,.65); }
+  .note .label, .important .label {
+    display: inline-block;
+    text-transform: uppercase; letter-spacing: .2em;
+    font-size: 11px; color: var(--muted); font-weight: 500;
+    margin-bottom: 8px;
   }
-  footer a { color: var(--ink-soft); }
+  .important .label { color: rgba(255,138,138,.85); }
+  .note p, .important p { margin: 0 0 10px; color: rgba(255,255,255,.88); }
+  .note p:last-child, .important p:last-child { margin-bottom: 0; }
 
-  /* Definition list for data table */
+  /* Data table */
   dl.data-table {
-    margin: 1rem 0 1.5rem;
-    padding: 0;
-    border-top: 1px solid var(--rule);
+    margin: 18px 0 24px; padding: 0;
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    border: 1px solid rgba(255,255,255,.08);
+    overflow: hidden;
   }
   dl.data-table > div {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 1.5rem;
-    padding: 0.9rem 0;
-    border-bottom: 1px solid var(--rule);
+    display: grid; grid-template-columns: 200px 1fr;
+    gap: 24px;
+    padding: 18px 24px;
+    border-bottom: 1px solid rgba(255,255,255,.06);
   }
-  dl.data-table dt {
-    font-weight: 600;
-    color: var(--ink);
-    font-size: 0.95rem;
-  }
-  dl.data-table dd {
-    margin: 0;
-    color: var(--ink-soft);
-    font-size: 0.95rem;
-  }
+  dl.data-table > div:last-child { border-bottom: 0; }
+  dl.data-table dt { color: var(--fg); font-weight: 500; font-size: 14.5px; }
+  dl.data-table dd { margin: 0; color: rgba(255,255,255,.78); font-size: 14.5px; line-height: 1.6; }
   @media (max-width: 600px) {
-    dl.data-table > div { grid-template-columns: 1fr; gap: 0.3rem; }
-    dl.data-table dt { font-size: 0.9rem; }
+    dl.data-table > div { grid-template-columns: 1fr; gap: 4px; padding: 16px 20px; }
+  }
+
+  /* FOOTER */
+  .footer {
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding: 40px 24px 28px;
+    margin-top: 60px;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+    font-size: 13px; color: var(--muted);
+  }
+  .footer-inner a { color: var(--muted); text-decoration: none; }
+  .footer-inner a:hover { color: var(--fg); }
+
+  @media (max-width: 600px) {
+    .doc-head { padding: 56px 20px 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="masthead">
-    <div class="brand">
-      <div class="brand-name">ShikshaPal<span class="dot">.</span></div>
-      <nav>
-        <a href="privacy.html" class="active">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="help.html">Help</a>
-      </nav>
+<!-- ========== BACKGROUND ========== -->
+<div class="bg-stage" aria-hidden="true">
+  <video autoplay loop muted playsinline preload="auto">
+    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="page">
+
+<!-- ========== NAV ========== -->
+<header class="nav">
+  <div class="container-wide nav-inner">
+    <a href="./index.html" class="logo" aria-label="ShikshaPal home">
+      <img src="./assets/logo.png" alt="" />
+      <span>ShikshaPal<sup>®</sup></span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./explainer/index.html">Explainer</a>
+      <a href="./help.html">Help</a>
+      <a href="./privacy.html" class="active">Privacy</a>
+      <a href="./terms.html">Terms</a>
     </div>
-  </header>
-
-  <div class="doc-eyebrow">Privacy Policy</div>
-  <h1>How we handle your family's data</h1>
-  <div class="doc-meta">
-    <strong>Effective:</strong> [29 April 2026] &nbsp;·&nbsp; <strong>Last updated:</strong> [30 April 2026] &nbsp;·&nbsp; <strong>Version:</strong> 1.0
+    <a href="./index.html" class="btn liquid-glass">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to home
+    </a>
   </div>
+</header>
+
+<!-- ========== HEAD ========== -->
+<section class="doc-head">
+  <span class="eyebrow"><span class="dot"></span> Privacy Policy</span>
+  <h1>How we handle <em>your family's data.</em></h1>
+  <div class="doc-meta">
+    <strong>Effective:</strong> [29 April 2026] &nbsp;·&nbsp;
+    <strong>Last updated:</strong> [30 April 2026] &nbsp;·&nbsp;
+    <strong>Version:</strong> 1.0
+  </div>
+</section>
+
+<!-- ========== BODY ========== -->
+<main class="doc">
 
   <p>
     ShikshaPal is built for school students in India. Because most of our users are minors, we have written this Privacy Policy in plain language for parents, guardians, and older students to read together. This Policy is written to comply with the <strong>Digital Personal Data Protection Act, 2023</strong> ("DPDP Act") and other applicable Indian laws.
@@ -367,12 +377,8 @@
   </div>
 
   <h2 id="who">1. Who we are</h2>
-  <p>
-    ShikshaPal is operated by <strong>[Legal Entity Name]</strong> ("ShikshaPal", "we", "us", or "our"), a [proprietorship / private limited company / LLP — to be confirmed] organised under the laws of India and based in Bengaluru, Karnataka. For all matters relating to your personal data, we act as a <strong>Data Fiduciary</strong> as defined under the DPDP Act.
-  </p>
-  <p>
-    You can write to us at <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>.
-  </p>
+  <p>ShikshaPal is operated by <strong>[Legal Entity Name]</strong> ("ShikshaPal", "we", "us", or "our"), a [proprietorship / private limited company / LLP — to be confirmed] organised under the laws of India and based in Bengaluru, Karnataka. For all matters relating to your personal data, we act as a <strong>Data Fiduciary</strong> as defined under the DPDP Act.</p>
+  <p>You can write to us at <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>.</p>
 
   <h2 id="scope">2. What this Policy covers</h2>
   <p>This Policy applies to:</p>
@@ -381,22 +387,16 @@
     <li>Our website at shikshapal.com and any related domains;</li>
     <li>Any communication you have with us by email.</li>
   </ul>
-  <p>
-    It does <strong>not</strong> apply to third-party services we link to or rely on, such as Hugging Face (where our AI models are hosted) or any donation processor we may use in future. Each of those services has its own privacy policy.
-  </p>
+  <p>It does <strong>not</strong> apply to third-party services we link to or rely on, such as Hugging Face (where our AI models are hosted) or any donation processor we may use in future. Each of those services has its own privacy policy.</p>
 
   <h2 id="minors">3. Children and parental consent</h2>
-  <p>
-    Most students who use ShikshaPal are under the age of 18. Under the DPDP Act, anyone under 18 is treated as a <strong>Child</strong>, and we must obtain <strong>verifiable consent from a parent or lawful guardian</strong> before processing a child's personal data.
-  </p>
+  <p>Most students who use ShikshaPal are under the age of 18. Under the DPDP Act, anyone under 18 is treated as a <strong>Child</strong>, and we must obtain <strong>verifiable consent from a parent or lawful guardian</strong> before processing a child's personal data.</p>
   <div class="important">
     <span class="label">For parents</span>
     <p>When a student under 18 creates an account, we ask them to provide a parent or guardian email address. We send a consent request to that address, and the account is activated only after the parent confirms. By giving consent, you agree to this Policy on behalf of your child.</p>
     <p>You can withdraw consent and ask us to delete the child's account at any time by writing to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>.</p>
   </div>
-  <p>
-    We do <strong>not</strong> knowingly process the data of any child without parental consent. We do not track children's behaviour for advertising or profiling, and we do not use children's data for any purpose that is likely to cause them harm.
-  </p>
+  <p>We do <strong>not</strong> knowingly process the data of any child without parental consent. We do not track children's behaviour for advertising or profiling, and we do not use children's data for any purpose that is likely to cause them harm.</p>
 
   <h2 id="data">4. Data we collect</h2>
   <p>We have deliberately designed ShikshaPal to collect as little as possible. This is what we collect, and nothing more:</p>
@@ -434,9 +434,7 @@
     <li>Contacts, photos, or any other files on the device;</li>
     <li>Aadhaar, PAN, phone numbers, or any other identity documents.</li>
   </ul>
-  <p>
-    All tutoring conversations stay on the student's device. They are never transmitted to our servers and are never sent anywhere else.
-  </p>
+  <p>All tutoring conversations stay on the student's device. They are never transmitted to our servers and are never sent anywhere else.</p>
 
   <h2 id="purposes">5. Why we collect this data</h2>
   <p>We use the limited data above only for these purposes:</p>
@@ -486,14 +484,10 @@
     <li>Access controls so that only authorised personnel can reach the database;</li>
     <li>Regular backups and basic intrusion monitoring.</li>
   </ul>
-  <p>
-    No system on the internet is perfectly secure. If we ever discover a personal data breach that is likely to result in significant harm, we will notify the Data Protection Board of India and affected users as required under the DPDP Act.
-  </p>
+  <p>No system on the internet is perfectly secure. If we ever discover a personal data breach that is likely to result in significant harm, we will notify the Data Protection Board of India and affected users as required under the DPDP Act.</p>
 
   <h2 id="transfers">10. International transfers</h2>
-  <p>
-    We aim to keep all personal data within India. If we ever transfer data outside India (for example, to use a particular email provider), we will only do so to jurisdictions that the Government of India has not restricted, and we will protect the data with appropriate contractual safeguards.
-  </p>
+  <p>We aim to keep all personal data within India. If we ever transfer data outside India (for example, to use a particular email provider), we will only do so to jurisdictions that the Government of India has not restricted, and we will protect the data with appropriate contractual safeguards.</p>
 
   <h2 id="rights">11. Your rights under the DPDP Act</h2>
   <p>As a Data Principal (or, in the case of a minor, the parent acting on their behalf), you have the right to:</p>
@@ -505,44 +499,38 @@
     <li><strong>Nominate</strong> another individual to exercise your rights in case of your death or incapacity;</li>
     <li><strong>Lodge a grievance</strong> with us, and if unresolved, escalate to the Data Protection Board of India.</li>
   </ul>
-  <p>
-    To exercise any of these rights, write to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a> from the email address registered to the account. We will respond within 30 days.
-  </p>
+  <p>To exercise any of these rights, write to <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a> from the email address registered to the account. We will respond within 30 days.</p>
 
   <h2 id="cookies">12. Cookies and analytics</h2>
-  <p>
-    The ShikshaPal mobile application does not use cookies. Our website uses only essential cookies needed to keep you signed in to your account dashboard. We do not use Google Analytics, Facebook Pixel, or any third-party advertising or behavioural tracking on the app or the site.
-  </p>
+  <p>The ShikshaPal mobile application does not use cookies. Our website uses only essential cookies needed to keep you signed in to your account dashboard. We do not use Google Analytics, Facebook Pixel, or any third-party advertising or behavioural tracking on the app or the site.</p>
 
   <h2 id="donations">13. Donations</h2>
-  <p>
-    ShikshaPal is free to use. If you choose to make a voluntary donation to support the project, the payment is processed by an external donation processor (to be confirmed at launch). That processor will collect the information needed to process your payment, and their handling of that information is governed by their own privacy policy. We do not store full card or bank details on our servers.
-  </p>
+  <p>ShikshaPal is free to use. If you choose to make a voluntary donation to support the project, the payment is processed by an external donation processor (to be confirmed at launch). That processor will collect the information needed to process your payment, and their handling of that information is governed by their own privacy policy. We do not store full card or bank details on our servers.</p>
 
   <h2 id="changes">14. Changes to this Policy</h2>
-  <p>
-    We may update this Policy from time to time. If we make a material change, we will email registered users at least 14 days before the change takes effect. The "Last updated" date at the top of this page always shows the most recent version.
-  </p>
+  <p>We may update this Policy from time to time. If we make a material change, we will email registered users at least 14 days before the change takes effect. The "Last updated" date at the top of this page always shows the most recent version.</p>
 
   <h2 id="contact">15. Contact and grievances</h2>
+  <p>For any privacy question, request, or complaint, please write to:</p>
   <p>
-    For any privacy question, request, or complaint, please write to:
-  </p>
-  <p>
-    <strong>Grievance Officer / Data Protection Officer</strong><br>
-    [Legal Entity Name]<br>
-    Bengaluru, Karnataka, India<br>
+    <strong>Grievance Officer / Data Protection Officer</strong><br />
+    [Legal Entity Name]<br />
+    Bengaluru, Karnataka, India<br />
     Email: <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>
   </p>
-  <p>
-    If you are not satisfied with our response, you may approach the <strong>Data Protection Board of India</strong> in accordance with the DPDP Act.
-  </p>
+  <p>If you are not satisfied with our response, you may approach the <strong>Data Protection Board of India</strong> in accordance with the DPDP Act.</p>
 
-  <footer>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
     <div>© [2026] ShikshaPal. Made for Indian students.</div>
-    <div><a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="help.html">Help</a></div>
-  </footer>
+    <div><a href="./terms.html">Terms</a> &nbsp;·&nbsp; <a href="./help.html">Help</a></div>
+  </div>
+</footer>
 
-</div>
+</div><!-- /.page -->
+
 </body>
 </html>

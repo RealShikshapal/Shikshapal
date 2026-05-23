@@ -40,7 +40,7 @@
   :root {
     --bg: hsl(201 100% 13%);
     --fg: #ffffff;
-    --muted: hsl(240 4% 66%);
+    --muted: rgba(255, 255, 255, .65);
     --border: rgba(255,255,255,.10);
     --tile-bg: rgba(255,255,255,.06);
     --tile-border: rgba(255,255,255,.12);
@@ -163,7 +163,7 @@
     margin: 0;
     color: var(--fg);
   }
-  .hero h1 em { font-style: normal; color: var(--muted); }
+  .hero h1 em { font-style: normal; color: var(--fg); }
   .hero p.lede {
     margin: 28px auto 0;
     max-width: 660px;

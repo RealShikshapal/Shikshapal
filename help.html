@@ -17,7 +17,7 @@
   :root {
     --bg: hsl(201 100% 13%);
     --fg: #ffffff;
-    --muted: hsl(240 4% 66%);
+    --muted: rgba(255, 255, 255, .65);
     --muted-2: rgba(255,255,255,.55);
     --border: rgba(255,255,255,.10);
     --tile-bg: rgba(255,255,255,.06);
@@ -218,7 +218,7 @@
     margin: 0;
     color: var(--fg);
   }
-  .doc-hero h1 em { font-style: normal; color: var(--muted); }
+  .doc-hero h1 em { font-style: normal; color: var(--fg); }
   .doc-hero .lede {
     margin: 28px auto 0;
     max-width: 640px;
@@ -280,7 +280,7 @@
     color: var(--fg);
     scroll-margin-top: 100px;
   }
-  main.doc h2 em { font-style: normal; color: var(--muted); }
+  main.doc h2 em { font-style: normal; color: var(--fg); }
   main.doc h3 {
     font-family: var(--font-display);
     font-weight: 400;
@@ -290,7 +290,7 @@
     margin: 42px 0 14px;
     color: var(--fg);
   }
-  main.doc h3 em { font-style: italic; color: var(--muted); }
+  main.doc h3 em { font-style: italic; color: var(--fg); }
   main.doc p { color: rgba(255,255,255,.82); font-size: 16px; line-height: 1.75; margin: 0 0 16px; }
   main.doc ul, main.doc ol { padding-left: 22px; margin: 0 0 18px; color: rgba(255,255,255,.82); }
   main.doc ul ul, main.doc ol ul { margin-top: 8px; }

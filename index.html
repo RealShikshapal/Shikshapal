@@ -110,7 +110,7 @@
     --bg: hsl(201 100% 13%);
     --bg-deep: hsl(201 100% 9%);
     --fg: #ffffff;
-    --muted: hsl(240 4% 66%);
+    --muted: rgba(255, 255, 255, .65);
     --muted-2: rgba(255,255,255,.55);
     --border: rgba(255,255,255,.10);
     --border-strong: rgba(255,255,255,.18);
@@ -231,7 +231,7 @@
   }
   .headline em {
     font-style: normal;
-    color: var(--muted);
+    color: var(--fg);
   }
 
   .lede {
@@ -459,7 +459,7 @@
     margin: 0 auto;
     color: var(--fg);
   }
-  .hero h1 em { font-style: normal; color: var(--muted); }
+  .hero h1 em { font-style: normal; color: var(--fg); }
   .hero p {
     margin: 32px auto 0;
     max-width: 640px;
@@ -744,7 +744,7 @@
     font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -.02em;
     margin: 0 0 16px; color: var(--fg);
   }
-  .principal h3 em { font-style: normal; color: var(--muted); }
+  .principal h3 em { font-style: normal; color: var(--fg); }
   .principal p { margin: 0 0 24px; color: var(--muted); font-size: 15.5px; line-height: 1.65; }
   .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
   .tag-pill {
@@ -837,7 +837,7 @@
     font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1;
     margin: 0 0 12px; color: var(--fg);
   }
-  .app-cta h3 em { font-style: normal; color: var(--muted); }
+  .app-cta h3 em { font-style: normal; color: var(--fg); }
   .app-cta p { margin: 0 0 28px; color: var(--muted); font-size: 15px; }
   .stores { display: inline-flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
   .store {
