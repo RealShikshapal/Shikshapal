@@ -15,11 +15,11 @@
 <meta property="og:title" content="ShikshaPal — AI-Powered Learning for India" />
 <meta property="og:description" content="ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools, focused on CBSE and NCERT-aligned concept mastery." />
 <meta property="og:url" content="https://www.shikshapal.com/" />
-<meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta property="og:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="ShikshaPal — AI-Powered Learning for India" />
 <meta name="twitter:description" content="ShikshaPal is an AI-powered learning copilot for Indian K-12 students, parents, teachers, and schools, focused on CBSE and NCERT-aligned concept mastery." />
-<meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta name="twitter:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,10 +85,10 @@
         },
         {
           "@type": "Question",
-          "name": "Who can use ShikshaPal?",
+          "name": "Who is ShikshaPal for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ShikshaPal is designed for students, parents, teachers, and schools. Students use it for doubt solving and concept mastery; teachers and schools use it for lesson planning, assessments, and learning analytics."
+            "text": "ShikshaPal is built for students who need concept clarity, parents who want safe AI help, teachers who need planning and grading support, and schools that want learning analytics."
           }
         }
       ]
@@ -190,6 +190,11 @@
       rgba(0,33,52,.45) 0%,
       rgba(0,33,52,.35) 35%,
       rgba(0,18,34,.85) 100%);
+  }
+  /* On phones, skip the 3.5 MB video — the page-bg image + scrim still
+     render the dark cinematic backdrop, just without motion. */
+  @media (max-width: 768px) {
+    .hero-video video { display: none; }
   }
 
   /* =========================================================
@@ -1021,7 +1026,10 @@
 
 <!-- ========== PAGE-WIDE PARALLAX IMAGE ========== -->
 <div class="page-bg" aria-hidden="true">
-  <img src="./assets/ShikshaPalImage.png" alt="" />
+  <picture>
+    <source srcset="./assets/ShikshaPalImage.webp" type="image/webp" />
+    <img src="./assets/ShikshaPalImage.png" alt="" loading="eager" decoding="async" />
+  </picture>
 </div>
 
 <div class="page">
@@ -1179,7 +1187,7 @@
 <!-- ========== HERO (video backdrop scoped to this section) ========== -->
 <main class="hero">
   <div class="hero-video" aria-hidden="true">
-    <video autoplay loop muted playsinline preload="auto">
+    <video autoplay loop muted playsinline preload="metadata">
       <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
     </video>
   </div>

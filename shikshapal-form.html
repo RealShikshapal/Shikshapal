@@ -15,11 +15,11 @@
 <meta property="og:title" content="Book a ShikshaPal Demo — AI Learning for Indian Schools" />
 <meta property="og:description" content="Book a free ShikshaPal demo for your school and see CBSE and NCERT-aligned AI learning support for students, teachers, parents, and school leaders." />
 <meta property="og:url" content="https://www.shikshapal.com/shikshapal-form.html" />
-<meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta property="og:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Book a ShikshaPal Demo — AI Learning for Indian Schools" />
 <meta name="twitter:description" content="Book a free ShikshaPal demo for your school and see CBSE and NCERT-aligned AI learning support for students, teachers, parents, and school leaders." />
-<meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta name="twitter:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -81,22 +81,19 @@
 
   .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
-  /* Background stage */
-  .bg-stage {
-    position: fixed; inset: 0; z-index: 0; overflow: hidden;
-    background:
-      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
-      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
-      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
+  /* Page-wide parallax image backdrop */
+  .page-bg {
+    position: fixed; inset: 0; z-index: 0;
+    overflow: hidden; pointer-events: none;
   }
-  .bg-stage video {
-    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  .page-bg img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center center;
   }
-  .bg-stage::after {
-    content: ''; position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(180deg,
-      rgba(0,33,52,.60) 0%, rgba(0,33,52,.50) 30%,
-      rgba(0,33,52,.85) 75%, rgba(0,33,52,.96) 100%);
+  .page-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,18,34,.55) 0%, rgba(0,12,24,.94) 90%);
   }
   .page { position: relative; z-index: 1; }
 
@@ -492,11 +489,12 @@
 </head>
 <body>
 
-<!-- ========== BACKGROUND VIDEO + SCRIM ========== -->
-<div class="bg-stage" aria-hidden="true">
-  <video autoplay loop muted playsinline preload="auto">
-    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
-  </video>
+<!-- ========== PAGE-WIDE PARALLAX IMAGE ========== -->
+<div class="page-bg" aria-hidden="true">
+  <picture>
+    <source srcset="./assets/ShikshaPalImage.webp" type="image/webp" />
+    <img src="./assets/ShikshaPalImage.png" alt="" loading="eager" decoding="async" />
+  </picture>
 </div>
 
 <div class="page">

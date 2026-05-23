@@ -6,8 +6,28 @@
 <title>Help &amp; Support — ShikshaPal</title>
 <meta name="description" content="Get help setting up and using ShikshaPal — an offline AI tutor for Class 6–12 students aligned to the NCERT curriculum." />
 <link rel="canonical" href="https://www.shikshapal.com/help.html" />
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#002142" />
+<meta property="og:site_name" content="ShikshaPal" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Help &amp; Support — ShikshaPal" />
+<meta property="og:description" content="Get help setting up and using ShikshaPal — an offline AI tutor for Class 6–12 students aligned to the NCERT curriculum." />
+<meta property="og:url" content="https://www.shikshapal.com/help.html" />
+<meta property="og:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Help &amp; Support — ShikshaPal" />
+<meta name="twitter:description" content="Get help setting up and using ShikshaPal — an offline AI tutor for Class 6–12 students aligned to the NCERT curriculum." />
+<meta name="twitter:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.shikshapal.com/help.html#webpage",
+  "url": "https://www.shikshapal.com/help.html",
+  "name": "Help &amp; Support — ShikshaPal",
+  "isPartOf": { "@id": "https://www.shikshapal.com/#website" }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
@@ -53,20 +73,19 @@
 
   .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
-  /* Background */
-  .bg-stage {
-    position: fixed; inset: 0; z-index: 0; overflow: hidden;
-    background:
-      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
-      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
-      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
+  /* Page-wide parallax image backdrop */
+  .page-bg {
+    position: fixed; inset: 0; z-index: 0;
+    overflow: hidden; pointer-events: none;
   }
-  .bg-stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .bg-stage::after {
-    content: ''; position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(180deg,
-      rgba(0,33,52,.65) 0%, rgba(0,33,52,.55) 30%,
-      rgba(0,33,52,.88) 75%, rgba(0,33,52,.97) 100%);
+  .page-bg img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center center;
+  }
+  .page-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,18,34,.62) 0%, rgba(0,12,24,.95) 90%);
   }
   .page { position: relative; z-index: 1; }
 
@@ -506,11 +525,12 @@
 </head>
 <body>
 
-<!-- ========== BACKGROUND VIDEO + SCRIM ========== -->
-<div class="bg-stage" aria-hidden="true">
-  <video autoplay loop muted playsinline preload="auto">
-    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
-  </video>
+<!-- ========== PAGE-WIDE PARALLAX IMAGE ========== -->
+<div class="page-bg" aria-hidden="true">
+  <picture>
+    <source srcset="./assets/ShikshaPalImage.webp" type="image/webp" />
+    <img src="./assets/ShikshaPalImage.png" alt="" loading="eager" decoding="async" />
+  </picture>
 </div>
 
 <div class="page">

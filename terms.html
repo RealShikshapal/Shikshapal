@@ -14,11 +14,11 @@
 <meta property="og:title" content="Terms of Service — ShikshaPal" />
 <meta property="og:description" content="ShikshaPal's Terms of Service for use of the ShikshaPal application and website." />
 <meta property="og:url" content="https://www.shikshapal.com/terms.html" />
-<meta property="og:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta property="og:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Terms of Service — ShikshaPal" />
 <meta name="twitter:description" content="ShikshaPal's Terms of Service for use of the ShikshaPal application and website." />
-<meta name="twitter:image" content="https://www.shikshapal.com/assets/img3.jpg" />
+<meta name="twitter:image" content="https://www.shikshapal.com/assets/ShikshaPalImage-og.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -70,20 +70,19 @@
   .container-wide { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
-  /* Background */
-  .bg-stage {
-    position: fixed; inset: 0; z-index: 0; overflow: hidden;
-    background:
-      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
-      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
-      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
+  /* Page-wide parallax image backdrop */
+  .page-bg {
+    position: fixed; inset: 0; z-index: 0;
+    overflow: hidden; pointer-events: none;
   }
-  .bg-stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .bg-stage::after {
-    content: ''; position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(180deg,
-      rgba(0,33,52,.70) 0%, rgba(0,33,52,.60) 30%,
-      rgba(0,33,52,.92) 75%, rgba(0,33,52,.98) 100%);
+  .page-bg img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center center;
+  }
+  .page-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,18,34,.68) 0%, rgba(0,12,24,.96) 90%);
   }
   .page { position: relative; z-index: 1; }
 
@@ -282,11 +281,12 @@
 </head>
 <body>
 
-<!-- ========== BACKGROUND ========== -->
-<div class="bg-stage" aria-hidden="true">
-  <video autoplay loop muted playsinline preload="auto">
-    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
-  </video>
+<!-- ========== PAGE-WIDE PARALLAX IMAGE ========== -->
+<div class="page-bg" aria-hidden="true">
+  <picture>
+    <source srcset="./assets/ShikshaPalImage.webp" type="image/webp" />
+    <img src="./assets/ShikshaPalImage.png" alt="" loading="eager" decoding="async" />
+  </picture>
 </div>
 
 <div class="page">
