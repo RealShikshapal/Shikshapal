@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -9,6 +9,7 @@
 <!-- SEO: canonical, social, and structured data -->
 <link rel="canonical" href="https://www.shikshapal.com/shikshapal-form.html" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#002142" />
 <meta property="og:site_name" content="ShikshaPal" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Book a ShikshaPal Demo — AI Learning for Indian Schools" />
@@ -27,206 +28,491 @@
   "url": "https://www.shikshapal.com/shikshapal-form.html",
   "name": "Book a ShikshaPal Demo",
   "description": "Contact ShikshaPal to book a free product demo for your school.",
-  "about": {
-    "@id": "https://www.shikshapal.com/#organization"
-  }
+  "about": { "@id": "https://www.shikshapal.com/#organization" }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="./assets/logo.png" />
+
 <style>
-  :root{
-    --primary:#1132a0; --primary-2:#1035c2;
-    --green:#00af58; --orange:#fb7c00; --teal:#00848b; --purple:#7f22fe; --red:#d41e1e;
-    --bg:#f6f9ff; --ink:#03010d; --muted:#526487; --line:#e6eaf3;
-    --radius-xl:32px;
+  :root {
+    --bg: hsl(201 100% 13%);
+    --fg: #ffffff;
+    --muted: hsl(240 4% 66%);
+    --muted-2: rgba(255,255,255,.55);
+    --border: rgba(255,255,255,.10);
+    --border-strong: rgba(255,255,255,.18);
+    --tile-bg: rgba(255,255,255,.06);
+    --tile-border: rgba(255,255,255,.12);
+    --glass-bg: rgba(255,255,255,.025);
+    --glass-bg-hover: rgba(255,255,255,.04);
+    --field-bg: rgba(255,255,255,.04);
+    --field-border: rgba(255,255,255,.12);
+    --field-border-focus: rgba(255,255,255,.40);
+    --err: #ff8a8a;
+    --ok: #7be3a6;
+    --font-display: 'Instrument Serif', 'Times New Roman', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 32px;
+    --container: 1200px;
   }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter','Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  img{max-width:100%;display:block}
-  .container{width:min(1240px,92%);margin:0 auto}
-
-  /* ======= Top bar ======= */
-  .topbar{background:var(--primary);color:#fff;font-size:13px;letter-spacing:.4px;text-align:center;padding:8px 12px;font-weight:500}
-
-  /* ======= Nav ======= */
-  .nav{position:sticky;top:0;z-index:40;backdrop-filter:saturate(180%) blur(12px);background:rgba(255,255,255,.84);border-bottom:1px solid var(--line)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.4px;font-family:'Inter','Plus Jakarta Sans',sans-serif}
-  .logo .mark{width:40px;height:40px;border-radius:10px;background:#fff;box-shadow:0 4px 14px rgba(17,50,160,.18),inset 0 0 0 1px rgba(17,50,160,.06);display:inline-grid;place-items:center;overflow:hidden}
-  .logo .mark img{width:28px;height:28px;object-fit:contain}
-  .logo .dark-word{color:#0a1b5a}
-  .logo .light-word{color:#5fb4f2}
-  .menu{display:flex;gap:34px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500;color:#222}
-  .menu>li{position:relative}
-  .menu a{display:inline-flex;align-items:center;gap:4px;padding:6px 0;cursor:pointer}
-  .menu a:hover{color:var(--primary)}
-  .menu .caret{display:inline-flex;align-items:center;margin-left:4px;opacity:.85;transition:transform .18s ease,opacity .18s ease,color .18s ease}
-  .menu .caret svg{width:16px;height:16px}
-  .menu>li:hover .caret{transform:rotate(180deg);opacity:1;color:var(--primary)}
-  .nav-cta{display:flex;align-items:center;gap:12px}
-
-  /* ----- Hamburger + mobile drawer ----- */
-  .hamburger{display:none;width:44px;height:44px;border-radius:10px;background:#fff;border:1px solid var(--line);padding:0;cursor:pointer;align-items:center;justify-content:center;color:var(--ink)}
-  .hamburger svg{width:22px;height:22px}
-  .hamburger:hover{border-color:#c7cfe3}
-  @media (max-width: 960px){
-    .menu{display:none}
-    .nav-cta{display:none}
-    .hamburger{display:inline-flex}
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
-  .nav-overlay{position:fixed;inset:0;background:rgba(8,18,60,.45);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s;z-index:99}
-  .nav-overlay.on{opacity:1;visibility:visible}
-  body.nav-locked{overflow:hidden}
-  .mobile-nav{position:fixed;top:0;right:0;height:100vh;width:min(340px,88%);background:#fff;box-shadow:-20px 0 60px rgba(8,18,60,.22);transform:translateX(100%);transition:transform .3s cubic-bezier(.4,.0,.2,1);z-index:100;display:flex;flex-direction:column;padding:20px;overflow-y:auto}
-  .mobile-nav.open{transform:translateX(0)}
-  .mobile-nav-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:8px}
-  .mobile-nav .close{width:40px;height:40px;border-radius:10px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;cursor:pointer}
-  .mobile-nav ul{list-style:none;margin:0;padding:6px 0;display:grid;gap:2px}
-  .mobile-nav > ul > li > a, .mobile-nav details > summary{display:flex;align-items:center;justify-content:space-between;padding:14px 10px;font-size:16px;font-weight:600;color:var(--ink);border-radius:10px;cursor:pointer;text-decoration:none}
-  .mobile-nav > ul > li > a:hover, .mobile-nav details > summary:hover{background:#f3f6ff;color:var(--primary)}
-  .mobile-nav details > summary{list-style:none}
-  .mobile-nav details > summary::-webkit-details-marker{display:none}
-  .mobile-nav details > summary::after{content:'▾';font-size:11px;color:var(--muted);margin-left:10px;transition:transform .2s ease}
-  .mobile-nav details[open] > summary::after{transform:rotate(180deg);color:var(--primary)}
-  .mobile-nav details ul{padding:2px 6px 8px;gap:0}
-  .mobile-nav details li a{display:block;padding:10px 14px;font-weight:500;font-size:14.5px;color:var(--muted);border-radius:8px;text-decoration:none}
-  .mobile-nav details li a:hover{background:#f3f6ff;color:var(--primary)}
-  .mobile-nav .mob-cta{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:10px}
-  .mobile-nav .mob-cta .btn{width:100%;justify-content:center}
+  body.nav-locked { overflow: hidden; }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+  ::selection { background: rgba(255,255,255,.22); }
 
-  /* ======= Buttons ======= */
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .12s ease,box-shadow .18s ease,background .15s;white-space:nowrap}
-  .btn-primary{background:linear-gradient(180deg,var(--primary) 0%,var(--primary-2) 100%);color:#fff;box-shadow:0 8px 20px -6px rgba(17,50,160,.45)}
-  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 28px -8px rgba(17,50,160,.55)}
-  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
-  .btn-ghost:hover{border-color:#c7cfe3}
-  .btn-white{background:#fff;color:var(--primary)}
-  .btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
-  /* ======= Hero ======= */
-  .form-hero{padding:64px 0 32px;text-align:center;position:relative}
-  .form-hero::before{content:"";position:absolute;inset:0 0 auto 0;height:360px;background:radial-gradient(70% 80% at 50% 0%,rgba(17,50,160,.10),transparent 70%);z-index:0;pointer-events:none}
-  .form-hero .container{position:relative;z-index:1}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e8edff;color:var(--primary);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;letter-spacing:.2px}
-  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 0 4px rgba(17,50,160,.18);animation:pulse 1.6s infinite}
-  @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(17,50,160,.18)}50%{box-shadow:0 0 0 8px rgba(17,50,160,.05)}}
-  .form-hero h1{font-family:'Inter','Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-1.5px;font-size:clamp(34px,4.6vw,56px);line-height:1.06;margin:16px auto 12px;max-width:760px}
-  .form-hero h1 .accent{background:linear-gradient(90deg,#1132a0,#5fb4f2);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .form-hero p.lede{font-size:17px;color:var(--muted);max-width:640px;margin:0 auto;line-height:1.6}
-
-  /* ======= Form layout ======= */
-  .form-wrap{padding:28px 0 90px}
-  .form-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
-  @media (max-width: 900px){.form-grid{grid-template-columns:1fr;gap:28px}}
-
-  /* ----- Left benefits panel ----- */
-  .benefits{background:linear-gradient(160deg,#eaf0ff 0%,#dfe8ff 60%,#d6e2ff 100%);border:1px solid var(--line);border-radius:var(--radius-xl);padding:36px;position:relative;overflow:hidden}
-  .benefits::after{content:"";position:absolute;right:-60px;bottom:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(17,50,160,.18),transparent 60%);pointer-events:none}
-  .benefits h2{font-size:24px;font-weight:800;margin:0 0 6px;letter-spacing:-.4px}
-  .benefits .sub{color:var(--muted);font-size:14.5px;line-height:1.55;margin:0 0 22px}
-  .bpoints{display:grid;gap:14px;margin:0;padding:0;list-style:none;position:relative;z-index:1}
-  .bpoint{display:flex;gap:12px;align-items:flex-start;padding:14px;background:rgba(255,255,255,.68);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.9);border-radius:14px}
-  .bpoint .ic{flex:0 0 auto;width:36px;height:36px;border-radius:10px;background:#fff;display:grid;place-items:center;color:var(--primary);box-shadow:0 4px 10px -3px rgba(17,50,160,.2)}
-  .bpoint .ic svg{width:18px;height:18px}
-  .bpoint .t{font-weight:700;font-size:14.5px;color:var(--ink);margin:0 0 2px}
-  .bpoint .s{font-size:13px;color:var(--muted);margin:0;line-height:1.45}
-  .trust-row{margin-top:26px;padding-top:22px;border-top:1px dashed rgba(17,50,160,.22);position:relative;z-index:1}
-  .trust-row .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px;font-weight:600}
-  .trust-stats{display:flex;gap:22px;flex-wrap:wrap}
-  .trust-stats .stat{min-width:90px}
-  .trust-stats .v{font-family:'Inter','Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.6px;color:var(--ink)}
-  .trust-stats .l{font-size:12px;color:var(--muted);margin-top:2px}
-
-  /* ----- Right form card ----- */
-  .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-xl);padding:36px;box-shadow:0 30px 70px -30px rgba(8,18,60,.18)}
-  .form-card h3{margin:0 0 4px;font-size:20px;font-weight:800;letter-spacing:-.3px}
-  .form-card .sub{color:var(--muted);font-size:14px;margin:0 0 22px}
-  .field{display:flex;flex-direction:column;margin-bottom:16px}
-  .field label{font-size:13px;font-weight:600;color:#2a3656;margin-bottom:6px;letter-spacing:.1px}
-  .field label .req{color:var(--red);margin-left:2px}
-  .field input, .field select, .field textarea{
-    appearance:none;-webkit-appearance:none;
-    font:inherit;font-size:15px;color:var(--ink);
-    background:#f7f9fe;
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:12px 14px;
-    outline:none;
-    transition:border-color .15s ease, background .15s ease, box-shadow .15s ease;
+  /* Background stage */
+  .bg-stage {
+    position: fixed; inset: 0; z-index: 0; overflow: hidden;
+    background:
+      radial-gradient(1200px 700px at 50% -10%, hsl(201 100% 22%) 0%, transparent 60%),
+      radial-gradient(900px 600px at 90% 110%, hsl(220 60% 15%) 0%, transparent 65%),
+      linear-gradient(180deg, hsl(201 100% 13%) 0%, hsl(201 100% 9%) 100%);
   }
-  .field input::placeholder{color:#9aa7c4}
-  .field input:focus, .field select:focus, .field textarea:focus{
-    border-color:var(--primary);
-    background:#fff;
-    box-shadow:0 0 0 4px rgba(17,50,160,.12);
+  .bg-stage video {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
   }
-  .field select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5l5 5 5-5' stroke='%23526487' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;color:#6b7896}
-  .field select.has-value{color:var(--ink)}
-  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  @media (max-width: 540px){.field-row{grid-template-columns:1fr}}
+  .bg-stage::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(180deg,
+      rgba(0,33,52,.60) 0%, rgba(0,33,52,.50) 30%,
+      rgba(0,33,52,.85) 75%, rgba(0,33,52,.96) 100%);
+  }
+  .page { position: relative; z-index: 1; }
 
-  .consent{display:flex;gap:10px;align-items:flex-start;margin:6px 0 18px;font-size:13px;color:var(--muted);line-height:1.5}
-  .consent input{margin-top:3px;accent-color:var(--primary)}
-  .consent a{color:var(--primary);text-decoration:underline;text-underline-offset:2px}
-  .submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-  .submit-row .btn{padding:13px 26px;font-size:15.5px}
-  .submit-row .btn[disabled]{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none}
-  .submit-row .tiny{color:var(--muted);font-size:12.5px}
-  .form-error{display:none;margin-top:14px;padding:10px 14px;border-radius:10px;background:rgba(212,30,30,.08);color:var(--red);font-size:13.5px;line-height:1.45}
-  .form-error.on{display:block}
-  .hp-field{position:absolute;left:-10000px;width:1px;height:1px;opacity:0;pointer-events:none}
+  /* Atoms */
+  .liquid-glass {
+    position: relative; overflow: hidden;
+    background: rgba(255,255,255,.01);
+    backdrop-filter: blur(4px) saturate(140%);
+    -webkit-backdrop-filter: blur(4px) saturate(140%);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.10);
+    transition: transform .25s ease, background .25s ease;
+  }
+  .liquid-glass::before {
+    content: ''; position: absolute; inset: 0; border-radius: inherit; padding: 1.4px;
+    background: linear-gradient(180deg,
+      rgba(255,255,255,.45) 0%, rgba(255,255,255,.15) 20%,
+      rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%,
+      rgba(255,255,255,.15) 80%, rgba(255,255,255,.45) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  .liquid-glass:hover { background: rgba(255,255,255,.04); }
 
-  /* Success / thank you ----- */
-  .thanks{display:none;text-align:center;padding:10px 6px 6px}
-  .thanks.on{display:block}
-  .thanks .check{width:64px;height:64px;border-radius:50%;background:#e6f7ee;color:var(--green);display:grid;place-items:center;margin:0 auto 14px}
-  .thanks .check svg{width:34px;height:34px}
-  .thanks h4{font-size:22px;font-weight:800;margin:0 0 6px;letter-spacing:-.3px}
-  .thanks p{color:var(--muted);margin:0 auto 16px;max-width:420px;font-size:14.5px;line-height:1.55}
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-lg);
+    transition: transform .3s ease, background .3s ease, border-color .3s ease;
+  }
 
-  /* ======= Footer ======= */
-  .footer{background:#070d25;color:#d9dfee;padding:64px 0 36px;margin-top:60px}
-  .footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
-  @media (max-width: 900px){.footer .grid{grid-template-columns:1fr 1fr;gap:26px}}
-  .footer h5{color:#fff;font-size:15px;margin:0 0 14px;font-weight:700;letter-spacing:.1px}
-  .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:14px}
-  .footer ul a{color:#aab2c8}
-  .footer ul a:hover{color:#fff}
-  .footer .logo-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;font-size:22px;font-weight:800;color:#fff}
-  .footer .logo-row .m{width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center;overflow:hidden}
-  .footer .logo-row .m img{width:28px;height:28px;object-fit:contain}
-  .footer .logo-row .lw{color:#5fb4f2}
-  .footer p.tag{color:#a9b1c7;font-size:14px;max-width:340px;margin:0 0 16px;line-height:1.55}
-  .footer .footer-cta{display:inline-flex;align-items:center;gap:8px;background:#111a3d;border:1px solid #202a55;padding:10px 14px;border-radius:999px;margin-right:8px;margin-bottom:8px;font-size:13.5px;color:#e0e5f4}
-  .footer-bottom{margin-top:40px;padding-top:20px;border-top:1px solid #1a2450;display:flex;justify-content:space-between;gap:14px;font-size:13px;color:#8893b0;flex-wrap:wrap}
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    text-transform: uppercase; letter-spacing: .2em;
+    font-size: 11.5px; font-weight: 500; color: var(--muted);
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 999px; background: rgba(255,255,255,.6); }
+
+  .headline {
+    font-family: var(--font-display); font-weight: 400;
+    line-height: 1.05; letter-spacing: -.02em;
+    color: var(--fg); margin: 0;
+  }
+  .headline em { font-style: normal; color: var(--muted); }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 12px 22px; border-radius: 999px;
+    font-size: 14px; font-weight: 500;
+    transition: transform .25s ease, background .25s ease, opacity .15s ease;
+    cursor: pointer; white-space: nowrap;
+  }
+  .btn-glass { color: var(--fg); }
+  .btn-glass:hover { transform: scale(1.03); }
+  .btn-white { background: #fff; color: #0a0a0a; }
+  .btn-white:hover { transform: scale(1.03); }
+  .btn[disabled] { opacity: .6; cursor: not-allowed; transform: none; }
+
+  .tile {
+    width: 36px; height: 36px; flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--tile-bg);
+    border: 1px solid var(--tile-border);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--fg);
+  }
+  .tile svg { width: 18px; height: 18px; }
+  .sicon { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* NAV */
+  .nav {
+    position: sticky; top: 0; z-index: 40;
+    padding: 18px 0;
+    background: rgba(0,20,36,.55);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-size: 26px; line-height: 1; letter-spacing: -.01em;
+  }
+  .logo img { width: 28px; height: 28px; filter: drop-shadow(0 0 8px rgba(255,255,255,.18)); }
+  .logo sup { font-size: 11px; font-family: var(--font-body); margin-left: 2px; }
+  .nav-cta .btn { padding: 10px 18px; font-size: 13.5px; }
+
+  .hamburger {
+    display: none;
+    width: 40px; height: 40px; align-items: center; justify-content: center;
+    border-radius: 12px; color: var(--fg);
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.10);
+  }
+  .hamburger svg { width: 20px; height: 20px; }
+
+  /* Mobile drawer */
+  .nav-overlay {
+    position: fixed; inset: 0; background: rgba(0,10,20,.6);
+    backdrop-filter: blur(4px);
+    opacity: 0; pointer-events: none;
+    transition: opacity .25s ease;
+    z-index: 80;
+  }
+  .nav-overlay.on { opacity: 1; pointer-events: auto; }
+  .mobile-nav {
+    position: fixed; top: 0; right: 0; height: 100%;
+    width: min(86vw, 360px);
+    background: rgba(6,18,32,.96);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(255,255,255,.10);
+    transform: translateX(100%);
+    transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+    z-index: 90;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex; flex-direction: column;
+  }
+  .mobile-nav.open { transform: translateX(0); }
+  .mobile-nav-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .mobile-nav-head .close {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.10);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .mobile-nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+  .mobile-nav > ul { flex: 1; }
+  .mobile-nav summary, .mobile-nav > ul > li > a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 12px; border-radius: 10px;
+    color: var(--fg); font-size: 15px; font-weight: 500;
+    cursor: pointer; list-style: none;
+  }
+  .mobile-nav summary::-webkit-details-marker { display: none; }
+  .mobile-nav summary::after { content: '⌄'; color: var(--muted); margin-left: 8px; }
+  .mobile-nav details ul { padding: 4px 0 8px 16px; }
+  .mobile-nav details ul li a, .mobile-nav details ul li span {
+    display: block; padding: 10px 12px; color: var(--muted-2); font-size: 14px;
+  }
+  .mobile-nav details ul li a:hover { color: var(--fg); }
+  .mob-cta { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  .mob-cta .btn { width: 100%; }
+
+  /* HERO */
+  .form-hero {
+    padding: 70px 24px 40px;
+    text-align: center;
+    max-width: 880px; margin: 0 auto;
+  }
+  .form-hero .eyebrow { margin-bottom: 22px; }
+  .form-hero h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: .98;
+    letter-spacing: -.025em;
+    margin: 0;
+    color: var(--fg);
+  }
+  .form-hero h1 em { font-style: normal; color: var(--muted); }
+  .form-hero p {
+    margin: 28px auto 0;
+    max-width: 580px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .form-hero .trust {
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  /* FORM AREA */
+  .form-section { padding: 32px 24px 96px; }
+  .form-inner { max-width: 1080px; margin: 0 auto; }
+  .form-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 22px;
+    align-items: start;
+  }
+
+  .form-card { padding: 36px; }
+  .form-card .lead h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(28px, 3.4vw, 38px);
+    line-height: 1.05;
+    letter-spacing: -.015em;
+    margin: 0 0 8px;
+    color: var(--fg);
+  }
+  .form-card .lead h2 em { font-style: normal; color: var(--muted); }
+  .form-card .lead p { margin: 0 0 26px; color: var(--muted); font-size: 14px; }
+
+  .fld { display: flex; flex-direction: column; margin-bottom: 14px; }
+  .fld label {
+    font-size: 12.5px; color: var(--muted);
+    margin-bottom: 8px; font-weight: 500; letter-spacing: .01em;
+  }
+  .fld label .req { color: var(--err); margin-left: 2px; }
+  .fld input,
+  .fld select,
+  .fld textarea {
+    appearance: none; -webkit-appearance: none;
+    font: inherit; font-size: 14.5px;
+    color: var(--fg);
+    background: var(--field-bg);
+    border: 1px solid var(--field-border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color .18s ease, background .18s ease, box-shadow .18s ease;
+  }
+  .fld input::placeholder, .fld textarea::placeholder { color: rgba(255,255,255,.35); }
+  .fld input:focus,
+  .fld select:focus,
+  .fld textarea:focus {
+    border-color: var(--field-border-focus);
+    background: rgba(255,255,255,.06);
+    box-shadow: 0 0 0 4px rgba(255,255,255,.06);
+  }
+  .fld select {
+    color: rgba(255,255,255,.55);
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5l5 5 5-5' stroke='%23a6a6ad' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+  }
+  .fld select.has-value, .fld select option { color: var(--fg); }
+  .fld select option {
+    background: hsl(201 100% 10%);
+    color: var(--fg);
+  }
+
+  .fld-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .consent {
+    display: flex; gap: 10px; align-items: flex-start;
+    margin: 12px 0 22px;
+    font-size: 12.5px; color: var(--muted); line-height: 1.5;
+    max-width: 560px;
+  }
+  .consent input { margin-top: 3px; accent-color: #fff; }
+  .consent a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; }
+
+  .submit-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .submit-row .tiny { color: var(--muted); font-size: 12px; }
+
+  .form-error {
+    display: none;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(255,90,90,.10);
+    border: 1px solid rgba(255,90,90,.30);
+    color: var(--err);
+    font-size: 13.5px; line-height: 1.5;
+  }
+  .form-error.on { display: block; }
+
+  .hp-field {
+    position: absolute; left: -10000px; width: 1px; height: 1px;
+    opacity: 0; pointer-events: none;
+  }
+
+  /* THANKS */
+  .thanks { display: none; padding: 30px 6px 6px; text-align: center; }
+  .thanks.on { display: block; }
+  .thanks .check {
+    width: 64px; height: 64px; border-radius: 999px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.18);
+    display: grid; place-items: center; margin: 0 auto 22px;
+    color: var(--fg);
+  }
+  .thanks .check svg { width: 28px; height: 28px; }
+  .thanks h4 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.05; letter-spacing: -.02em;
+    margin: 0 0 14px; color: var(--fg);
+  }
+  .thanks h4 em { font-style: normal; color: var(--muted); }
+  .thanks p {
+    color: var(--muted); margin: 0 auto 28px;
+    max-width: 420px; font-size: 15px; line-height: 1.6;
+  }
+  .thanks-row { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+  /* SIDEBAR */
+  .side { display: flex; flex-direction: column; gap: 16px; }
+  .side-card { padding: 28px; }
+  .side-card h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 22px; line-height: 1.15; letter-spacing: -.015em;
+    margin: 0 0 18px; color: var(--fg);
+  }
+  .side-card h3 em { font-style: normal; color: var(--muted); }
+  .side-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
+  .side-list li { display: flex; gap: 12px; align-items: flex-start; }
+  .side-list .t { color: var(--fg); font-size: 13.5px; font-weight: 500; line-height: 1.3; }
+  .side-list .s { color: var(--muted); font-size: 12.5px; margin-top: 4px; line-height: 1.5; }
+  .talk a {
+    display: flex; align-items: center; gap: 12px;
+    color: var(--fg); font-size: 14px; margin-bottom: 10px;
+  }
+  .talk a .ic { color: var(--muted); }
+  .talk .ftr-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px; border-radius: 999px;
+    color: var(--fg); font-size: 13.5px; margin-top: 6px;
+  }
+  .legal-note { color: var(--muted); font-size: 12px; line-height: 1.5; padding: 0 4px; }
+  .legal-note a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; }
+
+  /* FOOTER */
+  .footer {
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding: 56px 24px 36px;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-top {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,.10);
+  }
+  .footer .brand {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--font-display);
+    font-size: 24px; color: var(--fg);
+    margin-bottom: 16px;
+  }
+  .footer .brand img { width: 26px; height: 26px; }
+  .footer p { margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+  .footer .contact a { color: rgba(255,255,255,.85); display: block; }
+  .footer .contact a:hover { color: var(--fg); }
+  .footer .ftr-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    margin-top: 14px; margin-right: 8px;
+    border-radius: 999px;
+    color: rgba(255,255,255,.9); font-size: 13.5px;
+  }
+  .footer h5 {
+    margin: 0 0 16px;
+    text-transform: uppercase; letter-spacing: .2em;
+    font-size: 11.5px; color: var(--fg); font-weight: 500;
+  }
+  .footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .footer ul a, .footer ul span { color: var(--muted); font-size: 14px; transition: color .2s ease; }
+  .footer ul a:hover { color: var(--fg); }
+  .footer ul span { opacity: .55; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+    padding-top: 22px;
+    color: var(--muted); font-size: 12px;
+  }
+
+  /* Responsive */
+  @media (max-width: 960px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .nav-cta { display: none; }
+    .hamburger { display: inline-flex; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .form-card { padding: 26px 22px; }
+    .fld-row { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .form-hero { padding: 50px 20px 24px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 </style>
 </head>
 <body>
 
-<!-- ========== TOP BAR ========== -->
-<div class="topbar">AI-Powered Learning for India</div>
+<!-- ========== BACKGROUND VIDEO + SCRIM ========== -->
+<div class="bg-stage" aria-hidden="true">
+  <video autoplay loop muted playsinline preload="auto">
+    <source src="./assets/ShikshaPal.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="page">
 
 <!-- ========== NAV ========== -->
 <header class="nav">
   <div class="container nav-inner">
     <a href="./index.html" class="logo" aria-label="ShikshaPal home">
-      <span class="mark" aria-hidden="true"><img src="./assets/logo.png" alt=""></span>
-      <span><span class="dark-word">Shiksha</span><span class="light-word">Pal</span></span>
+      <img src="./assets/logo.png" alt="" />
+      <span>ShikshaPal<sup>®</sup></span>
     </a>
-    <nav>
-      <ul class="menu">
-        <li><a href="./index.html#products">Products <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a></li>
-        <li><a href="./index.html#products">Solutions <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a></li>
-        <li><a href="./index.html#resources">Resources <span class="caret"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span></a></li>
-        <li><a href="./index.html#about">About Us</a></li>
-      </ul>
-    </nav>
     <div class="nav-cta">
-      <a href="#form" class="btn btn-primary">Start Free Trial →</a>
+      <a href="./index.html" class="btn liquid-glass btn-glass">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to home
+      </a>
     </div>
     <button class="hamburger" aria-label="Open menu" onclick="openMobileNav()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -238,15 +524,16 @@
 <div class="nav-overlay" onclick="closeMobileNav()"></div>
 <aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
   <div class="mobile-nav-head">
-    <a href="./index.html" class="logo" style="font-size:20px">
-      <span class="mark"><img src="./assets/logo.png" alt=""></span>
-      <span><span class="dark-word">Shiksha</span><span class="light-word">Pal</span></span>
+    <a href="./index.html" class="logo" style="font-size:22px">
+      <img src="./assets/logo.png" alt="" />
+      <span>ShikshaPal<sup>®</sup></span>
     </a>
     <button class="close" aria-label="Close menu" onclick="closeMobileNav()">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
     </button>
   </div>
   <ul>
+    <li><a href="./index.html">Home</a></li>
     <li>
       <details>
         <summary>Products</summary>
@@ -263,9 +550,9 @@
         <ul>
           <li><a href="./index.html#products">Academic Support</a></li>
           <li><a href="./index.html#products">Technology Support</a></li>
-          <li><a href="./index.html#products">Teacher Solution</a></li>
-          <li><a href="./index.html#products">Assessment Solution</a></li>
-          <li><a href="./index.html#products">Real-Time Progress Monitoring</a></li>
+          <li><a href="./index.html#teachers">Teacher Solution</a></li>
+          <li><a href="./index.html#assessments">Assessment Solution</a></li>
+          <li><a href="./index.html#analytics">Real-Time Progress Monitoring</a></li>
         </ul>
       </details>
     </li>
@@ -273,88 +560,38 @@
       <details>
         <summary>Resources</summary>
         <ul>
-          <li><a href="./index.html#resources">Blog</a></li>
-          <li><a href="./index.html#resources">Case Studies</a></li>
-          <li><a href="./index.html#resources">Help Center</a></li>
-          <li><a href="./index.html#resources">Documentation</a></li>
-          <li><a href="./index.html#resources">Webinars</a></li>
+          <li><a href="./explainer/index.html">Explainer</a></li>
+          <li><a href="./help.html">Help Center</a></li>
         </ul>
       </details>
     </li>
-    <li><a href="./index.html#about">About Us</a></li>
+    <li><a href="./index.html#about">About</a></li>
   </ul>
   <div class="mob-cta">
-    <a href="#form" class="btn btn-primary">Start Free Trial →</a>
-    <a href="#form" class="btn btn-ghost">Get A Free Demo</a>
+    <a href="./index.html" class="btn btn-white">← Back to home</a>
   </div>
 </aside>
 
 <!-- ========== HERO ========== -->
 <section class="form-hero">
-  <div class="container">
-    <span class="eyebrow"><span class="dot"></span> We'd love to hear from you</span>
-    <h1>Get in touch <span class="accent">with us today!</span></h1>
-    <p class="lede">Empowering every student to move from concept clarity to true mastery through intelligent, adaptive AI learning.</p>
-  </div>
+  <span class="eyebrow"><span class="dot"></span> Book a demo</span>
+  <h1>See ShikshaPal <em>in your classrooms.</em></h1>
+  <p>Tell us a little about your school and we'll set up a 30-minute walkthrough with someone from our team. No slides, no pitch — just your real questions.</p>
+  <div class="trust">Trusted by 1,113+ schools across 204 cities · CBSE, NCERT, ICSE &amp; state board aligned</div>
 </section>
 
 <!-- ========== FORM ========== -->
-<section class="form-wrap" id="form">
-  <div class="container">
+<section class="form-section" id="form">
+  <div class="form-inner">
     <div class="form-grid">
 
-      <!-- Left panel -->
-      <aside class="benefits">
-        <h2>Talk to a ShikshaPal specialist</h2>
-        <p class="sub">Tell us a bit about your school — we'll tailor a walk-through of AI Tutor Copilot, EvalAI, and the Principal Dashboard for your setting.</p>
-
-        <ul class="bpoints">
-          <li class="bpoint">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
-            <div>
-              <p class="t">Personalized demo in 24 hours</p>
-              <p class="s">A live product tour scoped to your board, grades, and languages.</p>
-            </div>
-          </li>
-          <li class="bpoint">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg></span>
-            <div>
-              <p class="t">Free 30-day pilot, zero risk</p>
-              <p class="s">Test with one grade or section before a school-wide rollout.</p>
-            </div>
-          </li>
-          <li class="bpoint">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
-            <div>
-              <p class="t">Dedicated onboarding manager</p>
-              <p class="s">Hands-on help with teacher training and curriculum mapping.</p>
-            </div>
-          </li>
-          <li class="bpoint">
-            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v4M16 4v4"/></svg></span>
-            <div>
-              <p class="t">Board &amp; curriculum aligned</p>
-              <p class="s">CBSE, ICSE, and major state boards — across 22+ Indian languages.</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="trust-row">
-          <div class="label">Trusted by schools across India</div>
-          <div class="trust-stats">
-            <div class="stat"><div class="v">1,113+</div><div class="l">Schools</div></div>
-            <div class="stat"><div class="v">9,513+</div><div class="l">Teachers</div></div>
-            <div class="stat"><div class="v">1M+</div><div class="l">Students</div></div>
-            <div class="stat"><div class="v">204+</div><div class="l">Cities</div></div>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Right form card -->
-      <div class="form-card">
+      <!-- Form card -->
+      <div class="glass-card form-card">
         <div id="form-body">
-          <h3>Request your free demo</h3>
-          <p class="sub">Fill this out and a ShikshaPal expert will reach out within one business day.</p>
+          <div class="lead">
+            <h2>Tell us about <em>your school.</em></h2>
+            <p>All fields are required unless marked optional.</p>
+          </div>
 
           <form id="leadForm" novalidate onsubmit="return handleSubmit(event)">
             <!-- FormSubmit control fields (https://formsubmit.co) -->
@@ -363,37 +600,37 @@
             <input type="hidden" name="_captcha" value="false" />
             <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true" />
 
-            <div class="field-row">
-              <div class="field">
-                <label for="fullName">Full Name<span class="req">*</span></label>
-                <input id="fullName" name="fullName" type="text" placeholder="Jane Smith" autocomplete="name" required />
+            <div class="fld-row">
+              <div class="fld">
+                <label for="fullName">Full name<span class="req">*</span></label>
+                <input id="fullName" name="fullName" type="text" placeholder="Priya Sharma" autocomplete="name" required />
               </div>
-              <div class="field">
-                <label for="workEmail">Work Email<span class="req">*</span></label>
-                <input id="workEmail" name="workEmail" type="email" placeholder="harry@gmail.com" autocomplete="email" required />
-              </div>
-            </div>
-
-            <div class="field-row">
-              <div class="field">
-                <label for="phone">Phone Number<span class="req">*</span></label>
-                <input id="phone" name="phone" type="tel" placeholder="+91 657 879 6542" autocomplete="tel" required />
-              </div>
-              <div class="field">
-                <label for="schoolName">School Name<span class="req">*</span></label>
-                <input id="schoolName" name="schoolName" type="text" placeholder="Shikshapal" required />
+              <div class="fld">
+                <label for="workEmail">Work email<span class="req">*</span></label>
+                <input id="workEmail" name="workEmail" type="email" placeholder="priya@dpsbangalore.edu" autocomplete="email" required />
               </div>
             </div>
 
-            <div class="field">
-              <label for="schoolLocation">School Location<span class="req">*</span></label>
+            <div class="fld-row">
+              <div class="fld">
+                <label for="phone">Phone number<span class="req">*</span></label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 98XXX XXXXX" autocomplete="tel" required />
+              </div>
+              <div class="fld">
+                <label for="schoolName">School name<span class="req">*</span></label>
+                <input id="schoolName" name="schoolName" type="text" placeholder="Delhi Public School" required />
+              </div>
+            </div>
+
+            <div class="fld">
+              <label for="schoolLocation">School location<span class="req">*</span></label>
               <input id="schoolLocation" name="schoolLocation" type="text" placeholder="City, State" required />
             </div>
 
-            <div class="field">
-              <label for="role">Role At School<span class="req">*</span></label>
+            <div class="fld">
+              <label for="role">Role at school<span class="req">*</span></label>
               <select id="role" name="role" required onchange="this.classList.toggle('has-value', !!this.value)">
-                <option value="" disabled selected>Role</option>
+                <option value="" disabled selected>Select a role…</option>
                 <option>Director</option>
                 <option>Principal</option>
                 <option>School Owner</option>
@@ -404,20 +641,20 @@
               </select>
             </div>
 
-            <div class="field-row">
-              <div class="field">
-                <label for="students">No. of Students in your School<span class="req">*</span></label>
+            <div class="fld-row">
+              <div class="fld">
+                <label for="students">Number of students<span class="req">*</span></label>
                 <select id="students" name="students" required onchange="this.classList.toggle('has-value', !!this.value)">
-                  <option value="" disabled selected>No of Students</option>
+                  <option value="" disabled selected>Choose a range…</option>
                   <option>Less than 200</option>
                   <option>200 to 800</option>
                   <option>More than 800</option>
                 </select>
               </div>
-              <div class="field">
-                <label for="fees">Annual Fees Charged Per Student<span class="req">*</span></label>
+              <div class="fld">
+                <label for="fees">Annual fees per student<span class="req">*</span></label>
                 <select id="fees" name="fees" required onchange="this.classList.toggle('has-value', !!this.value)">
-                  <option value="" disabled selected>Annual Fees</option>
+                  <option value="" disabled selected>Choose a range…</option>
                   <option>INR 8,000 or Less</option>
                   <option>INR 8,000 - 10,000</option>
                   <option>INR 10,000 - 15,000</option>
@@ -436,7 +673,10 @@
             </label>
 
             <div class="submit-row">
-              <button type="submit" class="btn btn-primary" id="submitBtn">Submit →</button>
+              <button type="submit" class="btn liquid-glass btn-glass" id="submitBtn">
+                Request demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
               <span class="tiny">We respond within 1 business day.</span>
             </div>
             <div class="form-error" id="formError" role="alert"></div>
@@ -446,13 +686,73 @@
         <!-- Success state -->
         <div id="thanks" class="thanks">
           <div class="check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
           </div>
-          <h4>Thanks — we've got your details!</h4>
-          <p>A ShikshaPal specialist will reach out within one business day to schedule your personalized demo. In the meantime, feel free to browse the site.</p>
-          <a href="./index.html" class="btn btn-ghost">← Back to home</a>
+          <h4>Thank you. <em>We'll be in touch.</em></h4>
+          <p>A ShikshaPal specialist will reach out within one business day to schedule your personalised walkthrough. Keep an eye on your inbox — and your WhatsApp.</p>
+          <div class="thanks-row">
+            <a href="./index.html" class="btn liquid-glass btn-glass">Back to home</a>
+            <button type="button" class="btn btn-white" onclick="resetForm()">Submit another</button>
+          </div>
         </div>
       </div>
+
+      <!-- Sidebar -->
+      <aside class="side">
+        <div class="glass-card side-card">
+          <h3>What to <em>expect.</em></h3>
+          <ul class="side-list">
+            <li>
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+              <div>
+                <div class="t">A 30-min walkthrough</div>
+                <div class="s">Tailored to your subjects, year groups, and infrastructure.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M3 21a6 6 0 0112 0M16 11a4 4 0 100-8M21 21a6 6 0 00-3-5.196"/></svg></span>
+              <div>
+                <div class="t">Real questions</div>
+                <div class="s">Bring your principal, IT lead, or a curious teacher — we'll answer all of them.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><rect x="8" y="4" width="12" height="16" rx="2"/><path d="M4 8h4M4 12h4M4 16h4M12 8h4M12 12h4"/></svg></span>
+              <div>
+                <div class="t">A pilot plan</div>
+                <div class="s">If it's a fit, we'll outline a no-pressure pilot you can run with one classroom.</div>
+              </div>
+            </li>
+            <li>
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <div>
+                <div class="t">No spam, no upsell</div>
+                <div class="s">Your details stay with our team. We'll never call you out of the blue.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glass-card side-card">
+          <h3>Prefer to talk?</h3>
+          <p style="color:var(--muted); font-size:13.5px; line-height:1.6; margin: 0 0 18px;">Reach our team directly. We usually reply within a working day.</p>
+          <div class="talk">
+            <a href="mailto:contact@shikshapal.com">
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              contact@shikshapal.com
+            </a>
+            <a href="tel:+919353160648">
+              <span class="tile"><svg class="sicon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              +91-9353160648
+            </a>
+            <a href="https://wa.me/919353160648" target="_blank" rel="noopener" class="liquid-glass ftr-cta">💬 Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="legal-note">
+          By submitting this form, you agree to our <a href="./terms.html">Terms</a> and <a href="./privacy.html">Privacy Policy</a>.
+        </div>
+      </aside>
 
     </div>
   </div>
@@ -460,23 +760,22 @@
 
 <!-- ========== FOOTER ========== -->
 <footer class="footer" id="about">
-  <div class="container">
-    <div class="grid">
+  <div class="footer-inner">
+    <div class="footer-top">
       <div>
-        <div class="logo-row">
-          <span class="m"><img src="./assets/logo.png" alt=""></span>
-          <span>Shiksha<span class="lw">Pal</span></span>
+        <div class="brand">
+          <img src="./assets/logo.png" alt="" />
+          <span>ShikshaPal<sup style="font-size:11px; font-family:var(--font-body);">®</sup></span>
         </div>
-        <p class="tag">AI-powered learning copilot that personalizes education for every student across India's K–12.</p>
-        <p style="color:#dee3ee;font-size:13.5px;margin:0 0 14px">
-          <a href="mailto:contact@shikshapal.com" style="color:#dee3ee">contact@shikshapal.com</a><br/>
-          <a href="tel:+919353160648" style="color:#dee3ee">+91-9353160648</a>
+        <p>AI-powered learning copilot that personalises education for every student in India.</p>
+        <p class="contact">
+          <a href="mailto:contact@shikshapal.com">contact@shikshapal.com</a>
+          <a href="tel:+919353160648">+91-9353160648</a>
         </p>
-        <a href="https://wa.me/919353160648" target="_blank" rel="noopener" class="footer-cta">💬 Chat with us on WhatsApp</a>
-        <a href="#form" class="footer-cta">🎬 Get a Free Demo</a>
+        <a href="https://wa.me/919353160648" target="_blank" rel="noopener" class="liquid-glass ftr-cta">💬 Chat on WhatsApp</a>
       </div>
       <div>
-        <h5>Company</h5>
+        <h5>Studio</h5>
         <ul>
           <li><a href="./index.html#about">About Us</a></li>
           <li><span>Career</span></li>
@@ -484,31 +783,34 @@
         </ul>
       </div>
       <div>
-        <h5>Services</h5>
+        <h5>Features</h5>
         <ul>
           <li><a href="./index.html#products">Solutions</a></li>
           <li><a href="./index.html#products">Academic Support</a></li>
           <li><a href="./index.html#products">Technology Support</a></li>
           <li><a href="./index.html#teachers">Teacher Solution</a></li>
           <li><a href="./index.html#assessments">Assessment Solution</a></li>
-          <li><a href="./index.html#analytics">Real-Time Progress Monitoring</a></li>
+          <li><a href="./index.html#analytics">Progress Monitoring</a></li>
         </ul>
       </div>
       <div>
-        <h5>Legal</h5>
+        <h5>Reach Us</h5>
         <ul>
           <li><a href="./terms.html">Terms &amp; Conditions</a></li>
           <li><a href="./privacy.html">Security / GDPR</a></li>
           <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li><a href="./help.html">Help Center</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 ShikshaPal. All rights reserved.</span>
-      <span>Made with ♥ for India's students.</span>
+      <div>© All rights reserved. ShikshaPal®</div>
+      <div>Built with care in India 🇮🇳</div>
     </div>
   </div>
 </footer>
+
+</div><!-- /.page -->
 
 <script>
   function openMobileNav(){
@@ -539,7 +841,7 @@
 
     errBox.classList.remove('on');
     errBox.textContent = '';
-    const originalLabel = btn.textContent;
+    const originalLabel = btn.innerHTML;
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
@@ -561,11 +863,22 @@
       window.scrollTo({ top: document.getElementById('form').offsetTop - 40, behavior: 'smooth' });
     } catch(err){
       btn.disabled = false;
-      btn.textContent = originalLabel;
+      btn.innerHTML = originalLabel;
       errBox.textContent = err.message || 'Something went wrong. Please try again.';
       errBox.classList.add('on');
     }
     return false;
+  }
+
+  function resetForm(){
+    const form = document.getElementById('leadForm');
+    form.reset();
+    document.querySelectorAll('#leadForm select').forEach(s => s.classList.remove('has-value'));
+    document.getElementById('thanks').classList.remove('on');
+    document.getElementById('form-body').style.display = '';
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = false;
+    btn.innerHTML = 'Request demo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
   }
 </script>
 
